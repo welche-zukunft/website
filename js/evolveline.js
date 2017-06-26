@@ -150,9 +150,9 @@ function ungrow(num,d){
 }		
 
 function removeItem(v) {
-		v.material.dispose();
-		v.geometry.dispose();
-		scene.remove(v);
+	v.material.dispose();
+	v.geometry.dispose();
+	scene.remove(v);
 }
 
 // ANIMATE ---------------------------------

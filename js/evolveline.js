@@ -1,4 +1,4 @@
-var  renderer, scene, camera, controls, stats;
+var renderer, scene, camera, controls, stats;
 var nEnd = 0, nMax, nStep = 90; 
 var geometry = [];
 var mesh = [];
@@ -153,7 +153,7 @@ function removeItem(v) {
 		v.material.dispose();
 		v.geometry.dispose();
 		scene.remove(v);
-		}
+}
 
 // ANIMATE ---------------------------------
 function animate() {

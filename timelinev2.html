@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>WELCHE ZUKUNFT - PROTO</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #f0f0f0;
+				margin: 0px;
+				overflow: hidden;
+			}
+			#info {
+				position: absolute;
+				top: 0px;
+				width: 100%;
+				padding: 5px;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="container"></div>
+		<div id="info">welche zukunft</div>
+
+		<script src="js/three.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		<script src="js/CurveExtras.js"></script>
+		<script src="js/stats.min.js"></script>
+		<script type='text/javascript' src='js/tween.js'></script>
+
+		<script>
+		var container, stats;
+		var camera, scene, renderer, splineCamera, cameraHelper, cameraEye;
+		var light = new THREE.PointLight( 0xffffff,3,50 );	
+		var binormal = new THREE.Vector3();
+		var normal = new THREE.Vector3();
+		var timelineLength = 10;
+		var lastpoint;
+		// HELPERS THAT SYMPOLIZE POSITION CAM ON SPLINE 0. - 1. & SPEED OF MOVEMENT
+		var normalizedCameraPosition = 0.;
+		var delta = 0.1;
+		var offset = new THREE.Vector3(0,0.3,4);
+
+		//CREATE SPLINE STARTING WITH SPLINE BEHIND CAMERA & CROSSING ZERO
+		var splinearray = [ new THREE.Vector3( 0, 0, 0 )];
+		createSpline();
+		function createSpline(){
+				var oldpoint = 0;
+				for(i = 0; i < timelineLength; i++){
+					var x = ((Math.random() * 5) - 2.5)*(i/timelineLength);
+					var z = (Math.random() * -20);
+					var y = ((Math.random() * 5) - 2.5)*(i/timelineLength);
+					var newer = new THREE.Vector3( x, y, z - oldpoint );
+					oldpoint -= z;
+					splinearray.push(newer);
+				}
+				//CALCULATE Z-DEPTH
+				lastpoint = splinearray[splinearray.length-1].z;
+		}
+		
+		
+		var sampleSpline = new THREE.CatmullRomCurve3( splinearray );
+		sampleSpline.type = 'chordal';
+		sampleSpline.closed = false;
+		// Keep a dictionary of Curve instances
+		var splines = {
+			SampleSpline: sampleSpline
+		};
+		var parent, tubeGeometry, group;
+		var params = {
+			spline: 'SampleSpline',
+			scale: 1,
+			extrusionSegments: 800,
+			radiusSegments: 10,
+			closed: false,
+			animationView: false,
+			lookAhead: false,
+			cameraHelper: true,
+		};
+		var material = new THREE.MeshLambertMaterial( { color: 0xffffff } );
+		var wireframeMaterial = new THREE.MeshBasicMaterial( { color: 0x000000, opacity: 0.3, wireframe: false, transparent: true } );
+		
+
+		
+		function addTube() {
+			if ( group !== undefined ) {
+				parent.remove( group );
+				group.children[ 0 ].geometry.dispose();
+				group.children[ 1 ].geometry.dispose();
+			}
+			var extrudePath = splines[ params.spline ];
+			tubeGeometry = new THREE.TubeBufferGeometry( extrudePath, params.extrusionSegments, 0.1, params.radiusSegments, params.closed );
+			addGeometry( tubeGeometry );
+			setScale();
+		}
+		function setScale() {
+			group.scale.set( params.scale, params.scale, params.scale );
+		}
+		function addGeometry( geometry ) {
+			// 3D shape
+			group = THREE.SceneUtils.createMultiMaterialObject( geometry, [ material, wireframeMaterial ] );
+			parent.add( group );
+		}
+		
+		init();
+		animate();
+		
+		renderer.domElement.addEventListener( 'wheel', onMouseWheel, false );
+		
+		//MOUSEWHEEL MOVEMENT
+		function onMouseWheel( event ) {
+			handleMouseWheel( event );
+		}
+		
+		function handleMouseWheel( event ) {
+			dolly(event.deltaY );
+		}
+		
+		function dolly(direction){
+		 var from = {
+			w: normalizedCameraPosition
+        };
+
+        var to = {
+			w: normalizedCameraPosition - (delta * (direction/Math.abs(direction)))
+        };
+		
+        var tween = new TWEEN.Tween(from)
+            .to(to, 1200)
+			.easing(TWEEN.Easing.Quadratic.InOut)
+			.onUpdate(function () {
+			var newpos = tubeGeometry.parameters.path.getPointAt(Math.abs(this.w));
+            camera.position.set(newpos.x,newpos.y+offset.y,newpos.z+offset.z);
+			normalizedCameraPosition = Math.abs(this.w);
+        })
+            .onComplete(function () {
+            //camera.lookAt(new THREE.Vector3(0, 0, 0));
+			//console.log(normalizedCameraPosition);
+        })
+            .start();
+		}		
+		
+	
+		function init() {
+			container = document.getElementById( 'container' );
+			// camera
+			camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.01, 10000 );
+
+			
+			// scene
+			scene = new THREE.Scene();
+			scene.background = new THREE.Color( 0x000000 );
+			//scene.fog = new THREE.FogExp2( 0xefd1b5,0.005 );
+			// light
+
+			light.position.set( 0, 0, 1 );
+			scene.add( light );
+			// tube
+			parent = new THREE.Object3D();
+			scene.add( parent );
+			//splineCamera = new THREE.PerspectiveCamera( 84, window.innerWidth / window.innerHeight, 0.01, 1000 );
+			//parent.add( splineCamera );
+			//cameraHelper = new THREE.CameraHelper( splineCamera );
+			//scene.add( cameraHelper );
+			addTube();
+			// debug camera
+			cameraEye = new THREE.Mesh( new THREE.SphereGeometry( 0.3 ), new THREE.MeshBasicMaterial( { color: 0xffdddd,opacity: 0.0, wireframe: true, transparent: true  } ) );
+			parent.add( cameraEye );
+
+			//cameraHelper.visible = params.cameraHelper;
+			cameraEye.visible = params.cameraHelper;
+			// renderer
+			renderer = new THREE.WebGLRenderer( { antialias: true } );
+			renderer.setClearColor( 0xf0f0f0 );
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			container.appendChild( renderer.domElement );
+			// stats
+			stats = new Stats();
+			container.appendChild( stats.dom );
+			// coordinate 
+			//var axisHelper = new THREE.AxisHelper( 5 );
+			//scene.add( axisHelper );
+			// controls
+			//controls = new THREE.OrbitControls( camera, renderer.domElement );
+			var newpos = tubeGeometry.parameters.path.getPointAt(normalizedCameraPosition);
+			camera.position.set(newpos.x,newpos.y+offset.y,newpos.z+offset.z);
+			// event listener
+			window.addEventListener( 'resize', onWindowResize, false );
+		}
+		function onWindowResize() {
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+		}
+		//
+		function animate() {
+			requestAnimationFrame( animate );
+			TWEEN.update();
+			render();
+			stats.update();
+		}
+		function render() {
+			// animate camera along spline
+			//var time = Date.now();
+			//var looptime = 20 * 1000;
+			//var t = ( time % looptime ) / looptime;
+			var t = normalizedCameraPosition;//Math.abs(camera.position.z)/Math.abs(lastpoint);
+			//t = clamp(t,0,Math.abs(lastpoint));
+			//console.log(t);
+			var pos = tubeGeometry.parameters.path.getPointAt( t );
+			// interpolation
+			var segments = tubeGeometry.tangents.length;
+			var pickt = t * segments;
+			var pick = Math.floor( pickt );
+			var pickNext = ( pick + 1 ) % segments;
+			binormal.subVectors( tubeGeometry.binormals[ pickNext ], tubeGeometry.binormals[ pick ] );
+			binormal.multiplyScalar( pickt - pick ).add( tubeGeometry.binormals[ pick ] );
+			var dir = tubeGeometry.parameters.path.getTangentAt( t );
+			var offset = 0;
+			normal.copy( binormal ).cross( dir );
+			// we move on a offset on its binormal
+			pos.add( normal.clone().multiplyScalar( offset ) );
+			//splineCamera.position.copy( pos );
+			cameraEye.position.copy( pos );
+			// using arclength for stablization in look ahead
+			var lookAt = tubeGeometry.parameters.path.getPointAt( ( t + 50 / tubeGeometry.parameters.path.getLength() ) % 1 ).multiplyScalar( params.scale );
+			// camera orientation 2 - up orientation via normal
+			//if ( ! params.lookAhead ) lookAt.copy( pos ).add( dir );
+			//splineCamera.matrix.lookAt( splineCamera.position, lookAt, normal );
+			//splineCamera.rotation.setFromRotationMatrix( splineCamera.matrix, splineCamera.rotation.order );
+			//cameraHelper.update();
+			camera.lookAt(pos);
+			light.position.set(camera.position.x,camera.position.y,camera.position.z);
+			renderer.render( scene, camera );
+		}
+		
+		
+		function clamp(val, min, max){
+			return Math.max(min, Math.min(max, val));
+		}
+
+	</script>
+	</body>
+</html>

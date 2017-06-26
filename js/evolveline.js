@@ -108,58 +108,58 @@ function addit(x,y,z,d){
 	grow(mesh[i],d);
 }
 
-		function grow(mesh,d){
-			var from = {
-				w: 0
-			};
-			var to = {
-				w: nMax
-			};
-			var tween = new TWEEN.Tween(from)
-				.delay(d)
-				.to(to, 250)
-				.easing(TWEEN.Easing.Quadratic.InOut)
-				.onUpdate(function () {
-				mesh.geometry.setDrawRange( 0, this.w );
-			})
-				.onComplete(function () {
-			})
-				.start();
-		}	
-		
-		// REMOVE LINES ---------------------------------
-		function ungrow(num,d){
-			var meshy = mesh[num];
-			var from = {
-				w: nMax
-			};
-			var to = {
-				w: 0
-			};
-			var tween = new TWEEN.Tween(from)
-				.delay(d)
-				.to(to, 250)
-				.easing(TWEEN.Easing.Quadratic.InOut)
-				.onUpdate(function () {
-				meshy.geometry.setDrawRange( 0, this.w );
-			})
-				.onComplete(function () {
-				removeItem(meshy);
-			})
-				.start();
-		}		
-		
-		function removeItem(v) {
-				v.material.dispose();
-				v.geometry.dispose();
-				scene.remove(v);
-				}
-		
-		// ANIMATE ---------------------------------
-		function animate() {
-			requestAnimationFrame( animate );
-			TWEEN.update();
-			renderer.render( scene, camera );
-			stats.update();
+function grow(mesh,d){
+	var from = {
+		w: 0
+	};
+	var to = {
+		w: nMax
+	};
+	var tween = new TWEEN.Tween(from)
+		.delay(d)
+		.to(to, 250)
+		.easing(TWEEN.Easing.Quadratic.InOut)
+		.onUpdate(function () {
+		mesh.geometry.setDrawRange( 0, this.w );
+	})
+		.onComplete(function () {
+	})
+		.start();
+}	
+
+// REMOVE LINES ---------------------------------
+function ungrow(num,d){
+	var meshy = mesh[num];
+	var from = {
+		w: nMax
+	};
+	var to = {
+		w: 0
+	};
+	var tween = new TWEEN.Tween(from)
+		.delay(d)
+		.to(to, 250)
+		.easing(TWEEN.Easing.Quadratic.InOut)
+		.onUpdate(function () {
+		meshy.geometry.setDrawRange( 0, this.w );
+	})
+		.onComplete(function () {
+		removeItem(meshy);
+	})
+		.start();
+}		
+
+function removeItem(v) {
+		v.material.dispose();
+		v.geometry.dispose();
+		scene.remove(v);
 		}
+
+// ANIMATE ---------------------------------
+function animate() {
+	requestAnimationFrame( animate );
+	TWEEN.update();
+	renderer.render( scene, camera );
+	stats.update();
+}
 

@@ -45,7 +45,7 @@
 		var normal = new THREE.Vector3();
 		var timelineLength = 10;
 		var lastpoint;
-		// HELPERS THAT SYMPOLIZE POSITION CAM ON SPLINE 0. - 1. & SPEED OF MOVEMENT
+		// HELPERS THAT SYMBOLIZE POSITION CAM ON SPLINE 0. - 1. & SPEED OF MOVEMENT
 		var normalizedCameraPosition = 0.;
 		var delta = 0.1;
 		var offset = new THREE.Vector3(0,0.3,4);
@@ -101,17 +101,17 @@
 			var extrudePath = splines[ params.spline ];
 			tubeGeometry = new THREE.TubeBufferGeometry( extrudePath, params.extrusionSegments, 0.05, params.radiusSegments, false );
 			addGeometry( tubeGeometry );
-			setScale();
+			//setScale();
 		}
 		
 		
 		function setScale() {
-			//group.scale.set( params.scale, params.scale, params.scale );
+			group.scale.set( params.scale, params.scale, params.scale );
 		}
 		function addGeometry( geometry ) {
 			// 3D shape
-			//group = THREE.SceneUtils.createMultiMaterialObject( geometry, [ material, wireframeMaterial ] );
-			group = geometry;
+			group = THREE.SceneUtils.createMultiMaterialObject( geometry, [ material, wireframeMaterial ] );
+			//group = geometry;
 			parent.add( group );
 		}
 		
@@ -129,13 +129,8 @@
 		animate();
 		//----------------------------------------------////////////////////////KEY
 		window.addEventListener( 'keydown', onKeyDown, false );
-		var splinearray2 = [ new THREE.Vector3( 0, 0, 3 ),new THREE.Vector3( 1, 0, 3 )];
-		var sampleSpline2 = new THREE.CatmullRomCurve3( splinearray2 );
-		sampleSpline2.type = 'chordal';
-		sampleSpline2.closed = false;
-		var line2 = new THREE.TubeBufferGeometry(sampleSpline2, params.extrusionSegments, 0.0025, params.radiusSegments, false);
-		addGeometry( line2 );
-		console.log(parent);
+		
+		//console.log(parent);
 		var lineisanimating = false;
 		var linelength  = 1.;
 		
@@ -147,7 +142,7 @@
 			//console.log(event.keyCode );
 			switch ( event.keyCode ) {
 			case 65:
-				addLiner();
+				//addLiner();
 				break;
 			}
 		}	
@@ -167,7 +162,7 @@
 				.to(to, 1200)
 				.easing(TWEEN.Easing.Quadratic.InOut)
 				.onUpdate(function () {
-				parent.children[2].geometry.setDrawRange( 0, this.x );
+				group.children[ 1 ].geometry.setDrawRange( 0, this.x );
 			})
 				.onComplete(function () {
 				
@@ -283,8 +278,8 @@
 			stats = new Stats();
 			container.appendChild( stats.dom );
 			// coordinate 
-			//var axisHelper = new THREE.AxisHelper( 5 );
-			//scene.add( axisHelper );
+			var axisHelper = new THREE.AxisHelper( 5 );
+			scene.add( axisHelper );
 
 			var newpos = tubeGeometry.parameters.path.getPointAt(normalizedCameraPosition);
 			camera.position.set(newpos.x,newpos.y+offset.y,newpos.z+offset.z);
@@ -323,7 +318,7 @@
 			//splineCamera.position.copy( pos );
 			cameraEye.position.copy( pos );
 			// using arclength for stablization in look ahead
-			var lookAt = tubeGeometry.parameters.path.getPointAt( ( t + 50 / tubeGeometry.parameters.path.getLength() ) % 1 ).multiplyScalar( params.scale );
+			//var lookAt = tubeGeometry.parameters.path.getPointAt( ( t + 50 / tubeGeometry.parameters.path.getLength() ) % 1 ).multiplyScalar( params.scale );
 			// camera orientation 2 - up orientation via normal
 			//if ( ! params.lookAhead ) lookAt.copy( pos ).add( dir );
 			//splineCamera.matrix.lookAt( splineCamera.position, lookAt, normal );

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>WELCHE ZUKUNFT - PROTO</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
+		<style>
+			body {
+				font-family: 'Questrial', sans-serif;
+				background-color: #f0f0f0;
+				margin: 0px;
+				overflow: hidden;
+			}
+			#info {
+				position: absolute;
+				top: 0px;
+				width: 100%;
+				padding: 5px;
+				font-family:'Questrial', sans-serif;
+				font-size:43px;
+				text-align:left;
+				color: #ffffff;
+			}
+			#contentplane {
+				color: black;
+				height: 100vh;
+			}
+			div.dragbox {
+				position: absolute;
+				padding: 2ch; /*room for handler*/
+				overflow: visible;
+			}
+			div.contentbox {
+				border: solid thin;
+				max-width: 30vw;
+				overflow-y: auto;
+				padding: 2ch; /* scrollbar will be in the padding area */
+				background: rgba(240,240,240,0.8);
+			}
+			span.handle, div.dragscroll {
+				cursor : -webkit-grab;
+                                cursor : -moz-grab;
+                                cursor : -o-grab;
+                                cursor : grab;
+			}
+			span.handle:active, div.dragscroll:active {
+				cursor : -webkit-grabbing;
+				cursor : -moz-grabbing;
+				cursor : -o-grabbing;
+				cursor : grabbing;
+			}
+			div.contentbox * {
+				max-width: 100%;
+			}
+			div.contentbox, div.contentbox * {
+				max-height: calc(30vw * 0.5625);
+			}
+			div.contentbox div.content {
+				cursor: initial;
+			}
+			div.contentbox div:active {
+				cursor: initial
+			}
+			span.handle {
+				border-radius: 50%;
+				border: solid thin black;
+				color: fuchsia;
+				background: fuchsia;
+				position: absolute;
+				height: 3ch;
+				width: 3ch;
+				bottom: 0;
+				left: 0;
+				
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<div id="container"></div>
+		<div id="info">WELCHE<br>ZUKUNFT<br>?!</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-ui/jquery-ui.min.js"></script>
+		<!--<script src="js/jquery.getscrollbarwidth.js"></script>-->
+		<script src="js/jquery.ui.touch-punch.min.js"></script>
+		<!--<script src="js/dragscroll.js"></script>-->
+
+		<div id="contentplane"></div>
+		<script type='text/javascript' src='js/contentboxes.js'></script>
+	</body>
+</html>
+

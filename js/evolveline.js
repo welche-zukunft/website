@@ -40,35 +40,112 @@ function init() {
 	stats = new Stats();
 	container.appendChild( stats.dom );			
 
-	var fontloader = new THREE.FontLoader();
-	fontloader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
-		var xMid, text;
-		var textShape = new THREE.BufferGeometry();
-		var color = 0x006699;
-		var matDark = new THREE.LineBasicMaterial( {
-			color: color,
-			side: THREE.DoubleSide
-		} );
-//		var matLite = new THREE.MeshBasicMaterial( {
-//			color: color,
-//			transparent: true,
-//			opacity: 0.4,
-//			side: THREE.DoubleSide
-//		} );
-		var message = "   Three.js\nSimple text.";
-		var shapes = font.generateShapes( message, 100, 2 );
-		var geometry = new THREE.ShapeGeometry( shapes );
-		geometry.computeBoundingBox();
-		xMid = -0.5 * ( geometry.boundingBox.max.x - geometry.boundingBox.min.x );
-		geometry.translate( xMid, 0, 0 );
-		// make shape ( N.B. edge view not visible )
-		textShape.fromGeometry( geometry );
-//		text = new THREE.Mesh( textShape, matLite );
-		text = new THREE.Mesh( textShape, matDark );
-		text.position.z = 0;
-		scene.add( text );
+	var geometries = [];
+	var meshes = [];
 
-	} ); //end load function
+	var material = new THREE.LineBasicMaterial();
+
+	//  create boxes
+
+	for (var i = 0; i<10; ++i){
+		geometries.push(new THREE.BoxGeometry(3, 5, 5));
+		var geo = new THREE.EdgesGeometry(geometries[i]);
+		var mat = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 2 } );
+		var wireframe = new THREE.LineSegments( geo, mat );
+
+		meshes.push(wireframe);
+		meshes[i].position.set(-i*2, 0, 0);
+		scene.add(meshes[i]);
+	}
+
+
+	//	create lines
+
+	var par_mat = new THREE.MeshPhongMaterial( {
+			color: 0x65c6f6,
+			transparent: true,
+			//opacity: 0.4,
+			side: THREE.DoubleSide
+	} );
+
+	var line_geometry = new THREE.BufferGeometry();
+	var par_geometry = new THREE.Geometry();
+
+	var positions = new Float32Array( 12 * 3 ); // 3 vertices per point
+	line_geometry.addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+
+	var next_x = 0;
+	var index = 0;
+
+    for ( var i = 0; i < 12; i ++ ) {
+
+    	var particle = new THREE.Mesh( new THREE.SphereGeometry(0.1), par_mat );
+    	particle.position.x = positions[index++] = next_x;
+    	particle.position.y = positions[index++] = (6*(Math.random()-0.5)) *  i/12;
+    	particle.position.z = positions[index++] = (6*(Math.random()-0.5)) *  i/12; 
+        
+        next_x -= Math.random() * 3;
+        //particle.position.normalize();
+        //particle.position.multiplyScalar( Math.random() * 10 + 450 );
+
+        scene.add( particle );
+
+        par_geometry.vertices.push( particle.position );
+        //console.log("Vertice x : " + par_geometry.vertices[i].x);
+        //console.log("Vertice y : " + par_geometry.vertices[i].y);
+
+    }
+
+    var line = new THREE.Line( line_geometry, new THREE.LineBasicMaterial( { color: 0x65c6f6, opacity: 1, linewidth: 2} ) );
+    scene.add( line );
+
+
+    //	move particles
+
+    var time = new Date();
+
+	function render() {
+  		// delta in ms
+  		var newTime = new Date();
+  		var delta = newTime - time;
+  		time = newTime;
+  		var sec = newTime.getTime();
+
+  		var reposition = line.geometry.attributes.position.array;
+  		var index = 0;
+
+  		var random = Math.random();
+  		for ( var i = 0; i < 12; i ++ ) {
+  			
+  			delta_x = (Math.random()-0.5) * 0.5 * i/10;
+  			delta_y = (Math.random()-0.5) * 0.5 * i/10;
+  			delta_z = (Math.random()-0.5) * 0.5 * i/10;
+
+  			//console.log(random);
+
+  			par_geometry.vertices[i].x += delta_x;
+  			par_geometry.vertices[i].y += delta_y;
+  		  	par_geometry.vertices[i].z += delta_z;
+
+  			//line.geometry.vertices[i].x += (Math.random()-0.5) * 0.1;
+
+  			//par_geometry.vertices[i].y += (Math.random()-0.5) * 0.1;
+  			reposition[index] = reposition[index++] + delta_x;
+  			reposition[index] = reposition[index++] + delta_y;
+  			reposition[index] = reposition[index++] + delta_z;
+  		
+  			//console.log("neue Position");
+		}
+		line.geometry.attributes.position.needsUpdate = true; // required after the first render
+  		renderer.render(scene, camera);
+
+  		requestAnimationFrame(render);
+	};
+
+	requestAnimationFrame(render);
+
+
+
 }
 
 // PRESS "1" TO (UN)REVEAL POINTERs ---------------------------------
@@ -76,6 +153,33 @@ window.addEventListener( 'keydown', onKeyDown, false );
 var bunch = false;
 function onKeyDown(event){
 console.log
+	
+	////
+
+	var geometries = [];
+	geometries.push(new THREE.PlaneGeometry(1, 1, 5));
+	//geometries.push(new THREE.BoxGeometry(1, 3, 0.75));
+
+	var material = new THREE.MeshNormalMaterial({
+	  color: 0xff0000
+	});
+
+
+	var meshes = [];
+
+	var badge = new THREE.Mesh(geometries[0], material);
+
+	//meshes[1].position.set(-2, 0, 0);
+	//scene.add(meshes[1]);
+
+	var time = new Date();
+
+
+
+
+	////
+
+
 	switch ( event.keyCode ) {
 	case 49:
 		if(bunch == false){
@@ -134,10 +238,13 @@ function addit(x,y,z,d){
 	mesh[i] = new THREE.Mesh( geometry[i], material );
 	scene.add( mesh[i] );
 	mesh[i].geometry.setDrawRange( 0, 0 );
-	grow(mesh[i],d);
+	grow(mesh[i],d,x,y,z);
 }
 
-function grow(mesh,d){
+function grow(mesh,d,x,y,z){
+
+
+
 	var from = {
 		w: 0
 	};
@@ -150,10 +257,65 @@ function grow(mesh,d){
 		.easing(TWEEN.Easing.Quadratic.InOut)
 		.onUpdate(function () {
 		mesh.geometry.setDrawRange( 0, this.w );
+
+		//mesh.geometry.vertices[1];
+		scene.add(badge);
+
+
+
 	})
 		.onComplete(function () {
 	})
 		.start();
+
+		var geometry = new THREE.PlaneGeometry(1, 1, 5);
+
+		var material = new THREE.MeshPhongMaterial({
+	  		color: 0xffffff,
+	  		side: THREE.DoubleSide
+		});
+
+		var badge = new THREE.Mesh(geometry, material);
+
+		badge.lookAt(new THREE.Vector3(1,0,0));
+		badge.position.set(x+4,y-0.4,z-0.4);
+
+
+		var fontloader = new THREE.FontLoader();
+		fontloader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
+		var xMid, text;
+		var textShape = new THREE.BufferGeometry();
+		var color = 0x006699;
+		var matDark = new THREE.LineBasicMaterial( {
+			color: color,
+			side: THREE.DoubleSide
+		} );
+//		var matLite = new THREE.MeshBasicMaterial( {
+//			color: color,
+//			transparent: true,
+//			opacity: 0.4,
+//			side: THREE.DoubleSide
+//		} );
+		var message = " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
+		var shapes = font.generateShapes( message, 0.1, 0.1 );
+		var geometry = new THREE.ShapeGeometry( shapes );
+		geometry.computeBoundingBox();
+		xMid = -0.5 * ( geometry.boundingBox.max.x - geometry.boundingBox.min.x );
+		geometry.translate( xMid, 0, 0 );
+		// make shape ( N.B. edge view not visible )
+		textShape.fromGeometry( geometry );
+//		text = new THREE.Mesh( textShape, matLite );
+		text = new THREE.Mesh( textShape, matDark );
+
+
+		text.position.set(x+4,y-0.4,z-0.4);
+
+		//text.position.z = 0;
+		text.lookAt(new THREE.Vector3(1,0,0))
+		scene.add(text);
+
+	} ); //end load function
+
 }	
 
 // REMOVE LINES ---------------------------------

@@ -1,6 +1,7 @@
 ## License
 
-License is, if not otherwise noted here, defined in file LICENSE.
+License is, if not otherwise noted here or in the respective files, defined in
+./LICENSE.
 
 ### Differently licensed files
 

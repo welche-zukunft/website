@@ -3,12 +3,6 @@ var nEnd = 0, nMax, nStep = 90;
 var geometry = [];
 var mesh = [];
 
-// msgs / fonts
-var msg = "…";
-var loadedfont;
-var textShape;
-var matDark;
-
 init();
 animate();
 
@@ -152,54 +146,6 @@ function init() {
 	requestAnimationFrame(render);
 
 
-	// load font
-        var fontloader = new THREE.FontLoader();
-        fontloader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
-                var xMid, text;
-                textShape = new THREE.BufferGeometry();
-                var color = 0x006699;
-                matDark = new THREE.LineBasicMaterial( {
-                        color: color,
-                        side: THREE.DoubleSide
-                } );
-//              var matLite = new THREE.MeshBasicMaterial( {
-//                      color: color,
-//                      transparent: true,
-//                      opacity: 0.4,
-//                      side: THREE.DoubleSide
-//              } );
-		loadedfont = font;
-	});
-
-}
-
-function loadmsg(){
-        var msgloader = new THREE.FileLoader();
-
-	msgloader.load(
-                // resource URL
-                'txt/test.txt',
-
-                // Function when resource is loaded
-                function ( data ) {
-                        updatemsg(data);
-                }
-        );
-}
-
-function updatemsg(msg){
-                // font.generateShapes( Text, Size, Divisions );
-                var shapes = loadedfont.generateShapes( msg, 1, 2 );
-                var geometry = new THREE.ShapeGeometry( shapes );
-                geometry.computeBoundingBox();
-                xMid = -0.5 * ( geometry.boundingBox.max.x - geometry.boundingBox.min.x );
-                geometry.translate( xMid, 0, 0 );
-                // make shape ( N.B. edge view not visible )
-                textShape.fromGeometry( geometry );
-//              text = new THREE.Mesh( textShape, matLite );
-                text = new THREE.Mesh( textShape, matDark );
-                text.position.z = 0;
-                scene.add( text );
 }
 
 // PRESS "1" TO (UN)REVEAL POINTERs ---------------------------------
@@ -334,42 +280,6 @@ function grow(mesh,d,x,y,z){
 		badge.lookAt(new THREE.Vector3(1,0,0));
 		badge.position.set(x+4,y-0.4,z-0.4);
 
-
-		var fontloader = new THREE.FontLoader();
-		fontloader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
-		var xMid, text;
-		var textShape = new THREE.BufferGeometry();
-		var color = 0x006699;
-		var matDark = new THREE.LineBasicMaterial( {
-			color: color,
-			side: THREE.DoubleSide
-		} );
-//		var matLite = new THREE.MeshBasicMaterial( {
-//			color: color,
-//			transparent: true,
-//			opacity: 0.4,
-//			side: THREE.DoubleSide
-//		} );
-		var message = " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";
-		var shapes = font.generateShapes( message, 0.1, 0.1 );
-		var geometry = new THREE.ShapeGeometry( shapes );
-		geometry.computeBoundingBox();
-		xMid = -0.5 * ( geometry.boundingBox.max.x - geometry.boundingBox.min.x );
-		geometry.translate( xMid, 0, 0 );
-		// make shape ( N.B. edge view not visible )
-		textShape.fromGeometry( geometry );
-//		text = new THREE.Mesh( textShape, matLite );
-		text = new THREE.Mesh( textShape, matDark );
-
-
-		text.position.set(x+4,y-0.4,z-0.4);
-
-		//text.position.z = 0;
-		text.lookAt(new THREE.Vector3(1,0,0))
-		scene.add(text);
-
-	} ); //end load function
-
 }	
 
 // REMOVE LINES ---------------------------------
@@ -403,11 +313,6 @@ function removeItem(v) {
 // ANIMATE ---------------------------------
 function animate() {
 
-	if (typeof(loadedfont) != "undefined") {
-		loadmsg();
-	}
-
-	//msgloader.load.needsUpdate = true;
 	requestAnimationFrame( animate );
 	TWEEN.update();
 	renderer.render( scene, camera );

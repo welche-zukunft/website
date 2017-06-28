@@ -82,7 +82,13 @@ function init() {
 	stats.showPanel( 1 );
 	container.appendChild( stats.dom );			
 
+	// content stuff
 
+	add_sphere("white");
+	// content_line_draw(sObj_pos,dObj_pos,color)
+	content_line_draw(content_sObj.position,content_dObj_pos,"fuchsia");
+
+	//
 
 	var material = new THREE.LineBasicMaterial();
 
@@ -183,11 +189,12 @@ function animate() {
 		moveBranch(i);
 	}
 
+	requestAnimationFrame(animate);
+
+	content_line_pos();
+
   	renderer.render(scene, camera);
 	stats.update();
-
-	requestAnimationFrame(animate);
-  		
 }
 
 

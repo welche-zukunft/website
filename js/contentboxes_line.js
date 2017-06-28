@@ -1,6 +1,4 @@
 var camera, scene, renderer;
-var content_sObj, content_line;
-var content_dObj_pos = {"x":0, "y":0, "z":0};
 
 init();
 animate();

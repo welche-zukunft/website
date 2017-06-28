@@ -4,11 +4,25 @@ var geometry = [];
 var mesh = [];
 var wind = false;
 var steps = 100;
+var timelineCount = 12;
 var initialized = false;
 var time = new Date();
 
-var line_geometry = new THREE.BufferGeometry();
-var par_geometry = new THREE.Geometry();
+//arrays for lines
+var line = [];
+var par_mat = [];
+
+var line_geometry = [];
+var par_geometry = [];
+
+var rgb = [];
+
+for(var i = 0; i < timelineCount; i++)
+    rgb.push('#' + Math.floor(Math.random() * 16777215).toString(16));
+
+//arrays for boxes
+var geometries = [];
+var meshes = [];
 
 init();
 animate();
@@ -41,15 +55,13 @@ function init() {
 	light.position.set( 20, 20, 0 );
 	camera.add( light );
 	
-	// axes
+	// axes & stats
 	scene.add( new THREE.AxisHelper( 20 ) );
-
 	stats = new Stats();
-
+	stats.showPanel( 1 );
 	container.appendChild( stats.dom );			
 
-	var geometries = [];
-	var meshes = [];
+
 
 	var material = new THREE.LineBasicMaterial();
 
@@ -98,44 +110,46 @@ function init() {
 
 	//	create lines
 
-	var par_mat = new THREE.MeshPhongMaterial( {
-			color: 0x65c6f6,
+	for ( var h = 0; h < timelineCount; h ++ ) {
+		var next_x = 0;
+		var index = 0;
+		var positions = new Float32Array( 12 * 3 ); // 3 vertices per point		
+		par_geometry.push(new THREE.Geometry());
+		line_geometry.push(new THREE.BufferGeometry());
+		line_geometry[h].addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+		
+		par_mat.push(new THREE.MeshPhongMaterial( {
+			color: rgb[h],
 			transparent: true,
 			//opacity: 0.4,
 			side: THREE.DoubleSide
-	} );
+		} ));
+		
+		for ( var i = 0; i < 12; i ++ ) {
+			
+			var particle = new THREE.Mesh( new THREE.SphereGeometry(0.1), par_mat[h] );
+			particle.position.x = positions[index++] = next_x;
+			particle.position.y = positions[index++] = (6*(Math.random()-0.5)) *  i/12;
+			particle.position.z = positions[index++] = (6*(Math.random()-0.5)) *  i/12; 
+			
+			next_x -= Math.random() * 3;
+			//particle.position.normalize();
+			//particle.position.multiplyScalar( Math.random() * 10 + 450 );
 
+			scene.add( particle );
 
-	par_geometry.name = "linie";
+			par_geometry[h].vertices.push( particle.position );
+			par_geometry[h].name = "linie";
+			//console.log("Vertice x : " + par_geometry.vertices[i].x);
+			//console.log("Vertice y : " + par_geometry.vertices[i].y);
+
+		}
 	
-	var positions = new Float32Array( 12 * 3 ); // 3 vertices per point
-	line_geometry.addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
 
-	var next_x = 0;
-	var index = 0;
-
-    for ( var i = 0; i < 12; i ++ ) {
-
-    	var particle = new THREE.Mesh( new THREE.SphereGeometry(0.1), par_mat );
-    	particle.position.x = positions[index++] = next_x;
-    	particle.position.y = positions[index++] = (6*(Math.random()-0.5)) *  i/12;
-    	particle.position.z = positions[index++] = (6*(Math.random()-0.5)) *  i/12; 
-        
-        next_x -= Math.random() * 3;
-        //particle.position.normalize();
-        //particle.position.multiplyScalar( Math.random() * 10 + 450 );
-
-        scene.add( particle );
-
-        par_geometry.vertices.push( particle.position );
-        //console.log("Vertice x : " + par_geometry.vertices[i].x);
-        //console.log("Vertice y : " + par_geometry.vertices[i].y);
-
-    }
-
-    var line = new THREE.Line( line_geometry, new THREE.LineBasicMaterial( { color: 0x65c6f6, opacity: 1, linewidth: 2} ) );
-	line.name = "test";
-    scene.add( line );
+    line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: rgb[h], opacity: 1, linewidth: 2} ) ));
+	line[h].name = "test"+h.toString();
+    scene.add( line[h] );
+	}
 }
 
 

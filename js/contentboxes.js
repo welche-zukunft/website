@@ -8,19 +8,24 @@ var contents = [
 ];
 
 function contentbox_create(num) {
+  // create dragbox, contenbox, handle
   var dragbox = document.createElement( 'div' );
   var contentbox = document.createElement( 'div' );
   var handle = document.createElement( 'span' );
+  // give them unique ids
   dragbox.id = 'dragbox_' + num;
   contentbox.id = 'contentbox_' + num;
   handle.id = 'handle_' + num;
+  // give them classes
   dragbox.className += " dragbox";
   contentbox.className += " contentbox";
   handle.className += " handle";
+  // where to spwan them
   var x = 200;
   var y = 50 + 50 * num;
   dragbox.style.left = x + 'px';
   dragbox.style.top = y + 'px';
+  // make them draggable
   $(function() {
     $( dragbox ).draggable({
       containment: "parent",
@@ -30,24 +35,40 @@ function contentbox_create(num) {
       //distance: 10,
       cancel: "div.nodrag",
       drag: function(){
+        // track the position of the handler
         var id = $(this).attr("id");
         var currhandler = $("#" + id + " > span.handle");
-        var currhandlerid = $(currhandler).attr("id");
-        var offset = $("#" + currhandlerid ).offset();
-        var xPos = offset.left;
-        var yPos = offset.top;
-        console.log( "DRAG: " + currhandlerid + ";" + xPos + ";" + yPos );
+        var handler_pos = track_pos_handler(currhandler);
+        console.log( handler_pos );
       }
      });
     //$( contentbox ).resizable();
   });
+  // fill contentbox with content
   contentbox.innerHTML = '<div class="nodrag content">' + contents[num] + '</div>';
+  // add dragbox to div "contentplane"
   document.getElementById("contentplane").appendChild(dragbox);
+  // add contentbox to dragbox
   dragbox.appendChild(contentbox);
+  // add handle to dragbox
   dragbox.appendChild(handle);
 }
 
+// iterate over available content to create boxes for them
 for (i = 0; i < contents.length; i++) { 
   contentbox_create(i);
+}
+
+function track_pos_handler(handler) {
+  var handlerid = $(handler).attr("id");
+  var offset = $("#" + handlerid).offset();
+  var xPos = offset.left;
+  var yPos = offset.top;
+
+  return {
+    "id":handlerid
+    ,"x":xPos
+    ,"y":yPos
+    };
 }
 

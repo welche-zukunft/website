@@ -24,11 +24,32 @@ for(var i = 0; i < timelineCount; i++)
 var geometries = [];
 var meshes = [];
 
+
+/* SINUS PARAMETERS */
+
+var noise_objects = []
+
+function noise_object() {
+    this.sin_arg_global = 0;
+    this.sin_arg_x = Math.random();
+    this.sin_arg_y = Math.random();
+    this.sin_arg_z = Math.random();
+    this.a = Math.random() * 20;
+    this.b = Math.random() * 20;
+    this.c = Math.random() * 20;
+    this.z = Math.random();
+}
+
+
+
 init();
-animate();
+animate(Math.random(),
+	Math.random(),
+	Math.random());
 
 //INIT ---------------------------------
 function init() {
+
 
 	// renderer
 	renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -81,7 +102,6 @@ function init() {
 		meshes[i].position.set(-i*2, 0, 0);
 		scene.add(meshes[i]);
 	}
-	
 	
 
 	// add image + objects
@@ -136,12 +156,15 @@ function init() {
 			//particle.position.normalize();
 			//particle.position.multiplyScalar( Math.random() * 10 + 450 );
 
+
 			scene.add( particle );
 
 			par_geometry[h].vertices.push( particle.position );
 			par_geometry[h].name = "linie";
 			//console.log("Vertice x : " + par_geometry.vertices[i].x);
 			//console.log("Vertice y : " + par_geometry.vertices[i].y);
+			noise_objects.push(new noise_object());
+			console.log(noise_objects[i]);
 
 		}
 	
@@ -154,47 +177,68 @@ function init() {
 
 
 
-	function animate() {
-		requestAnimationFrame(animate);
-  		// delta in ms
-  		var newTime = new Date();
-  		var delta = newTime - time;
-  		time = newTime;
-  		var sec = newTime.getTime();
+function animate() {
 
+	for (var i = 0; i<12; i++){
+		moveBranch(i);
+	}
+
+  	renderer.render(scene, camera);
+	stats.update();
+
+	requestAnimationFrame(animate);
   		
-  		var index = 0;
+}
 
-  		var random = Math.random();
-		if(wind == true){
-			var reposition = scene.getObjectByName("test").geometry.attributes.position.array;
-			for ( var i = 0; i < 12; i ++ ) {
+
+function moveBranch(j){
+	//console.log(noise_objects[j]);
+
+  	noise_objects[j].sin_arg_x += 0.01;
+  	noise_objects[j].sin_arg_y += 0.01;
+  	noise_objects[j].sin_arg_z += 0.01;
+  	noise_objects[j].sin_arg_global += 0.01;
+
+
+  	if (Math.abs (Math.sin(noise_objects[j].z * noise_objects[j].sin_arg_global)) < 0.01){
+ 		noise_objects[j].sin_arg_x = Math.PI * Math.random();
+  		noise_objects[j].sin_arg_y = Math.PI * Math.random();
+  		noise_objects[j].sin_arg_z = Math.PI * Math.random();
+
+  		noise_objects[j].a = Math.random() * 20;
+  		noise_objects[j].b = Math.random() * 20;
+  		noise_objects[j].c = Math.random() * 20;
+
+  		z = Math.random();
+  	}
+
+  	var index = 0;
+
+  	var random = Math.random();
+	if(wind == true){
+		var reposition = scene.getObjectByName("test"+j).geometry.attributes.position.array;
+		for ( var i = 0; i < 12; i ++ ) {
 				
-				delta_x = (Math.random()-0.5) * 0.5 * i/100;
-				delta_y = (Math.random()-0.5) * 0.5 * i/100;
-				delta_z = (Math.random()-0.5) * 0.5 * i/100;
+  			delta_x = (Math.random()) * Math.cos(noise_objects[j].z * noise_objects[j].sin_arg_global) * Math.cos(noise_objects[j].sin_arg_x *noise_objects[j].a) * Math.pow(i,1.6)/1000;
+  			delta_y = (Math.random()) * Math.cos(noise_objects[j].z * noise_objects[j].sin_arg_global) * Math.cos(noise_objects[j].sin_arg_y *noise_objects[j].b) * Math.pow(i,1.6)/1000;
+  			delta_z = (Math.random()) * Math.cos(noise_objects[j].z * noise_objects[j].sin_arg_global) * Math.cos(noise_objects[j].sin_arg_z *noise_objects[j].c) * Math.pow(i,1.6)/1000;
 
-				//console.log(random);
+			par_geometry[j].vertices[i].x += delta_x;
+			par_geometry[j].vertices[i].y += delta_y;
+			par_geometry[j].vertices[i].z += delta_z;
 
-				par_geometry.vertices[i].x += delta_x;
-				par_geometry.vertices[i].y += delta_y;
-				par_geometry.vertices[i].z += delta_z;
-
-				//line.geometry.vertices[i].x += (Math.random()-0.5) * 0.1;
-
-				//par_geometry.vertices[i].y += (Math.random()-0.5) * 0.1;
-				reposition[index] = reposition[index++] + delta_x;
-				reposition[index] = reposition[index++] + delta_y;
-				reposition[index] = reposition[index++] + delta_z;
+			reposition[index] = reposition[index++] + delta_x;
+			reposition[index] = reposition[index++] + delta_y;
+			reposition[index] = reposition[index++] + delta_z;
 			
-				//console.log("neue Position");
-			}
-			scene.getObjectByName("test").geometry.attributes.position.needsUpdate = true; // required after the first render
 		}
-  		renderer.render(scene, camera);
-		stats.update();
-  		
-	};
+		scene.getObjectByName("test"+j).geometry.attributes.position.needsUpdate = true; // required after the first render
+	}
+
+}
+
+
+
 
 
 // PRESS "1" TO (UN)REVEAL POINTERs ---------------------------------
@@ -232,109 +276,8 @@ function onKeyDown(event){
 	}
 }
 
-function bunchstart(num){
-	for(i = 0; i < num; i++){
-		addit(Math.random()*2.,(Math.random()*4.)-2.,Math.random()*10,0+(100*i));
-	}
-}
 
-function bunchend(num){
-	for(i = 0; i < num; i++){
-		ungrow(i,0+(100*i));
-	}
-	// SHOULD BE DONE WHEN TWEENS READY NOT YET
-	mesh = [];
-	geometry = [];
-}
 
-// ADD LINES ---------------------------------
-function addit(x,y,z,d){
-// points
-	var points = [new THREE.Vector3(0,0,0)];
-	for ( var i = 1; i < 2; i ++ ) {
-		points.push( new THREE.Vector3( x+(i*4), y,z ));
-	}
-	// path
-	var path = new THREE.CatmullRomCurve3( points );
-	// params
-	var pathSegments = 120;
-	var tubeRadius = 0.07;
-	var radiusSegments = 8;
-	var closed = false;
-	// geometry
-	var i = geometry.length;
-	geometry[i] = new THREE.TubeGeometry( path, pathSegments, tubeRadius, radiusSegments, closed );
-	// to buffer goemetry
-	geometry[i] = new THREE.BufferGeometry().fromGeometry( geometry[i] );
-	nMax = geometry[i].attributes.position.count;
-	// material
-	var material = new THREE.MeshPhongMaterial( {
-		color: 0xffffff,
-		side: THREE.DoubleSide
-	} );
-	// mesh
-	mesh[i] = new THREE.Mesh( geometry[i], material );
-	scene.add( mesh[i] );
-	mesh[i].geometry.setDrawRange( 0, 0 );
-	grow(mesh[i],d,x,y,z);
-}
-
-function grow(mesh,d,x,y,z){
-	var from = {
-		w: 0
-	};
-	var to = {
-		w: nMax
-	};
-	var tween = new TWEEN.Tween(from)
-		.delay(d)
-		.to(to, 250)
-		.easing(TWEEN.Easing.Quadratic.InOut)
-		.onUpdate(function () {
-		mesh.geometry.setDrawRange( 0, this.w );
-
-		//mesh.geometry.vertices[1];
-		scene.add(badge);
-	})
-		.onComplete(function () {
-	})
-		.start();
-
-	var geometry = new THREE.PlaneGeometry(1, 1, 5);
-
-	var material = new THREE.MeshPhongMaterial({
-	  		color: 0xffffff,
-	  		side: THREE.DoubleSide
-		});
-
-	var badge = new THREE.Mesh(geometry, material);
-
-	badge.lookAt(new THREE.Vector3(1,0,0));
-	badge.position.set(x+4,y-0.4,z-0.4);
-
-}	
-
-// REMOVE LINES ---------------------------------
-function ungrow(num,d){
-	var meshy = mesh[num];
-	var from = {
-		w: nMax
-	};
-	var to = {
-		w: 0
-	};
-	var tween = new TWEEN.Tween(from)
-		.delay(d)
-		.to(to, 250)
-		.easing(TWEEN.Easing.Quadratic.InOut)
-		.onUpdate(function () {
-		meshy.geometry.setDrawRange( 0, this.w );
-	})
-		.onComplete(function () {
-		removeItem(meshy);
-	})
-		.start();
-}		
 
 function removeItem(v) {
 	v.material.dispose();

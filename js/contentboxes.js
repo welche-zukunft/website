@@ -35,11 +35,12 @@ function contentbox_create(num) {
       //distance: 10,
       cancel: "div.nodrag",
       drag: function(){
-        // track the position of the handler
+        // track the position of the handle
         var id = $(this).attr("id");
-        var currhandler = $("#" + id + " > span.handle");
-        var handler_pos = track_pos_handler(currhandler);
-        console.log( handler_pos );
+        var currhandle = $("#" + id + " > span.handle");
+	// handle_pos is global var
+        handle_pos = track_pos_handle(currhandle);
+        //console.log( handle_pos );
       }
      });
     //$( contentbox ).resizable();
@@ -47,7 +48,7 @@ function contentbox_create(num) {
   // fill contentbox with content
   contentbox.innerHTML = '<div class="nodrag content">' + contents[num] + '</div>';
   // add dragbox to div "contentplane"
-  document.getElementById("contentplane").appendChild(dragbox);
+  document.body.appendChild(dragbox);
   // add contentbox to dragbox
   dragbox.appendChild(contentbox);
   // add handle to dragbox
@@ -59,16 +60,23 @@ for (i = 0; i < contents.length; i++) {
   contentbox_create(i);
 }
 
-function track_pos_handler(handler) {
-  var handlerid = $(handler).attr("id");
-  var offset = $("#" + handlerid).offset();
+function track_pos_handle(handle) {
+  var handleid = $(handle).attr("id");
+  var offset = $("#" + handleid).offset();
   var xPos = offset.left;
   var yPos = offset.top;
 
+  //return {
+  //  "id":handleid
+  //  ,"x":xPos
+  //  ,"y":yPos
+  //  };
+
+  // add the radius of the handle
   return {
-    "id":handlerid
-    ,"x":xPos
-    ,"y":yPos
-    };
+    "x":xPos + 14
+    ,"y":yPos + 14
+    ,"z":0
+  };
 }
 

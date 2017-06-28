@@ -2,6 +2,13 @@ var renderer, scene, camera, controls, stats;
 var nEnd = 0, nMax, nStep = 90; 
 var geometry = [];
 var mesh = [];
+var wind = false;
+var steps = 100;
+var initialized = false;
+var time = new Date();
+
+var line_geometry = new THREE.BufferGeometry();
+var par_geometry = new THREE.Geometry();
 
 init();
 animate();
@@ -30,7 +37,7 @@ function init() {
 	scene.add( new THREE.AmbientLight( 0xffffff, 0.4 ) );
 	
 	// light
-	var light = new THREE.PointLight( 0xffffff, 0.5 );
+	var light = new THREE.PointLight( 0xffffff, 0.2,50,0.3 );
 	light.position.set( 20, 20, 0 );
 	camera.add( light );
 	
@@ -51,14 +58,43 @@ function init() {
 	for (var i = 0; i<10; ++i){
 		geometries.push(new THREE.BoxGeometry(3, 5, 5));
 		var geo = new THREE.EdgesGeometry(geometries[i]);
-		var mat = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 2 } );
+	
+		var mat = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 2} );
+		
 		var wireframe = new THREE.LineSegments( geo, mat );
-
+		wireframe.material.opacity = 0.25;
+		wireframe.material.transparent = true;
 		meshes.push(wireframe);
+	
 		meshes[i].position.set(-i*2, 0, 0);
 		scene.add(meshes[i]);
 	}
+	
+	
 
+	// add image + objects
+	// instantiate a loader
+	var loader = new THREE.TextureLoader();
+	var pics = ["timelines/numbers_web.jpg","timelines/oel_web.jpg"];
+	var TEXmaterial = [];
+	var plane = [];
+	var IMGtexture = [];
+	// load a resource
+	for(i = 0; i < pics.length; i++){	
+		IMGtexture[i] = loader.load(pics[i]);
+
+		TEXmaterial[i] = new THREE.MeshPhongMaterial( {map: IMGtexture[i]} );
+
+		plane[i] = new THREE.Mesh(new THREE.PlaneGeometry(50, 25), TEXmaterial[i]);
+		plane[i].material.side = THREE.DoubleSide;
+
+		plane[i].position.y = -5+(i*10);	
+		plane[i].position.x = -20;
+		plane[i].rotation.x = Math.PI / 2;
+		scene.add(plane[i]);
+
+	}
+ 
 
 	//	create lines
 
@@ -69,9 +105,9 @@ function init() {
 			side: THREE.DoubleSide
 	} );
 
-	var line_geometry = new THREE.BufferGeometry();
-	var par_geometry = new THREE.Geometry();
 
+	par_geometry.name = "linie";
+	
 	var positions = new Float32Array( 12 * 3 ); // 3 vertices per point
 	line_geometry.addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
 
@@ -98,91 +134,70 @@ function init() {
     }
 
     var line = new THREE.Line( line_geometry, new THREE.LineBasicMaterial( { color: 0x65c6f6, opacity: 1, linewidth: 2} ) );
+	line.name = "test";
     scene.add( line );
+}
 
 
-    //	move particles
 
-    var time = new Date();
-
-	function render() {
+	function animate() {
+		requestAnimationFrame(animate);
   		// delta in ms
   		var newTime = new Date();
   		var delta = newTime - time;
   		time = newTime;
   		var sec = newTime.getTime();
 
-  		var reposition = line.geometry.attributes.position.array;
+  		
   		var index = 0;
 
   		var random = Math.random();
-  		for ( var i = 0; i < 12; i ++ ) {
-  			
-  			delta_x = (Math.random()-0.5) * 0.5 * i/10;
-  			delta_y = (Math.random()-0.5) * 0.5 * i/10;
-  			delta_z = (Math.random()-0.5) * 0.5 * i/10;
+		if(wind == true){
+			var reposition = scene.getObjectByName("test").geometry.attributes.position.array;
+			for ( var i = 0; i < 12; i ++ ) {
+				
+				delta_x = (Math.random()-0.5) * 0.5 * i/100;
+				delta_y = (Math.random()-0.5) * 0.5 * i/100;
+				delta_z = (Math.random()-0.5) * 0.5 * i/100;
 
-  			//console.log(random);
+				//console.log(random);
 
-  			par_geometry.vertices[i].x += delta_x;
-  			par_geometry.vertices[i].y += delta_y;
-  		  	par_geometry.vertices[i].z += delta_z;
+				par_geometry.vertices[i].x += delta_x;
+				par_geometry.vertices[i].y += delta_y;
+				par_geometry.vertices[i].z += delta_z;
 
-  			//line.geometry.vertices[i].x += (Math.random()-0.5) * 0.1;
+				//line.geometry.vertices[i].x += (Math.random()-0.5) * 0.1;
 
-  			//par_geometry.vertices[i].y += (Math.random()-0.5) * 0.1;
-  			reposition[index] = reposition[index++] + delta_x;
-  			reposition[index] = reposition[index++] + delta_y;
-  			reposition[index] = reposition[index++] + delta_z;
-  		
-  			//console.log("neue Position");
+				//par_geometry.vertices[i].y += (Math.random()-0.5) * 0.1;
+				reposition[index] = reposition[index++] + delta_x;
+				reposition[index] = reposition[index++] + delta_y;
+				reposition[index] = reposition[index++] + delta_z;
+			
+				//console.log("neue Position");
+			}
+			scene.getObjectByName("test").geometry.attributes.position.needsUpdate = true; // required after the first render
 		}
-		line.geometry.attributes.position.needsUpdate = true; // required after the first render
   		renderer.render(scene, camera);
-
-  		requestAnimationFrame(render);
+		stats.update();
+  		
 	};
 
-	requestAnimationFrame(render);
-
-
-}
 
 // PRESS "1" TO (UN)REVEAL POINTERs ---------------------------------
 window.addEventListener( 'keydown', onKeyDown, false );
 var bunch = false;
+
 function onKeyDown(event){
-console.log
-	
-	////
-
-	var geometries = [];
-	geometries.push(new THREE.PlaneGeometry(1, 1, 5));
-	//geometries.push(new THREE.BoxGeometry(1, 3, 0.75));
-
-	var material = new THREE.MeshNormalMaterial({
-	  color: 0xff0000
-	});
-
-
-	var meshes = [];
-
-	var badge = new THREE.Mesh(geometries[0], material);
-
-	//meshes[1].position.set(-2, 0, 0);
-	//scene.add(meshes[1]);
-
 	var time = new Date();
-
-
-
-
-	////
-
 
 	switch ( event.keyCode ) {
 	case 49:
 		if(bunch == false){
+			var geometries = [];
+			geometries.push(new THREE.PlaneGeometry(1, 1, 5));
+			var material = new THREE.MeshNormalMaterial({color: 0xff0000});
+			var meshes = [];
+			var badge = new THREE.Mesh(geometries[0], material);
 			bunchstart(10);
 			bunch = true;
 		}
@@ -191,6 +206,15 @@ console.log
 			bunch = false;
 		}
 		break;	
+	case 50:
+		if(wind == false){
+			steps = 100;
+			wind = true;
+		}
+		else{
+			wind = false;
+		}
+		break;
 	}
 }
 
@@ -242,9 +266,6 @@ function addit(x,y,z,d){
 }
 
 function grow(mesh,d,x,y,z){
-
-
-
 	var from = {
 		w: 0
 	};
@@ -260,25 +281,22 @@ function grow(mesh,d,x,y,z){
 
 		//mesh.geometry.vertices[1];
 		scene.add(badge);
-
-
-
 	})
 		.onComplete(function () {
 	})
 		.start();
 
-		var geometry = new THREE.PlaneGeometry(1, 1, 5);
+	var geometry = new THREE.PlaneGeometry(1, 1, 5);
 
-		var material = new THREE.MeshPhongMaterial({
+	var material = new THREE.MeshPhongMaterial({
 	  		color: 0xffffff,
 	  		side: THREE.DoubleSide
 		});
 
-		var badge = new THREE.Mesh(geometry, material);
+	var badge = new THREE.Mesh(geometry, material);
 
-		badge.lookAt(new THREE.Vector3(1,0,0));
-		badge.position.set(x+4,y-0.4,z-0.4);
+	badge.lookAt(new THREE.Vector3(1,0,0));
+	badge.position.set(x+4,y-0.4,z-0.4);
 
 }	
 
@@ -310,12 +328,4 @@ function removeItem(v) {
 	scene.remove(v);
 }
 
-// ANIMATE ---------------------------------
-function animate() {
-
-	requestAnimationFrame( animate );
-	TWEEN.update();
-	renderer.render( scene, camera );
-	stats.update();
-}
 

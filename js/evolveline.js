@@ -191,7 +191,7 @@ function init() {
 		for(var i = 0; i < timelineCount; i++){
 
 			if(i == num){
-				scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i]);
+				scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i].replace(/#/g , "0x"));
 				console.log(rgb[i]);
 				par_mat[i].color.setHex( rgb[i] );
 			}

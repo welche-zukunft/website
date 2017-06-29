@@ -188,7 +188,7 @@ function init() {
 			//console.log("Vertice x : " + par_geometry.vertices[i].x);
 			//console.log("Vertice y : " + par_geometry.vertices[i].y);
 			noise_objects.push(new noise_object());
-			console.log(noise_objects[i]);
+			//console.log(noise_objects[i]);
 
 		}
 	

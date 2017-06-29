@@ -11,12 +11,10 @@ var time = new Date();
 //arrays for lines
 var line = [];
 var par_mat = [];
-
 var line_geometry = [];
 var par_geometry = [];
 
 var rgb = [];
-
 for(var i = 0; i < timelineCount; i++)
     rgb.push('#' + Math.floor(Math.random() * 16777215).toString(16));
 
@@ -150,6 +148,9 @@ function init() {
 			//opacity: 0.4,
 			side: THREE.DoubleSide
 		} ));
+		par_mat[h].name = "color"+h.toString();
+		
+		workshopdot_create(h , rgb[h]);
 		
 		for ( var i = 0; i < 12; i ++ ) {
 			
@@ -179,8 +180,28 @@ function init() {
 	line[h].name = "test"+h.toString();
     scene.add( line[h] );
 	}
+	
+	
 }
 
+
+	function swapworkshop(num){
+		console.log(num);
+		
+		for(var i = 0; i < timelineCount; i++){
+
+			if(i == num){
+				scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i]);
+				console.log(rgb[i]);
+				par_mat[i].color.setHex( rgb[i] );
+			}
+			else {
+				scene.getObjectByName("test"+i.toString()).material.color.setHex(0xd3d3d3);
+				par_mat[i].color.setHex( 0xd3d3d3);
+			}
+			
+		}
+	}
 
 
 function animate() {

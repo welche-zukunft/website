@@ -28,6 +28,7 @@ var geometries = [];
 var meshes = [];
 
 
+
 /* SINUS PARAMETERS */
 
 var noise_objects = []
@@ -73,7 +74,7 @@ function init() {
 
 	// scene
 	scene = new THREE.Scene();
-	
+	scene.fog = new THREE.FogExp2( 0x000000, 0.05 );
 	// camera
 	camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
 	camera.position.set( 15, 5, 15 );
@@ -92,7 +93,7 @@ function init() {
 	camera.add( light );
 	
 	// axes & stats
-	scene.add( new THREE.AxisHelper( 20 ) );
+	//scene.add( new THREE.AxisHelper( 20 ) );
 	stats = new Stats();
 	stats.showPanel( 1 );
 	container.appendChild( stats.dom );			
@@ -208,12 +209,15 @@ function init() {
 		for(var i = 0; i < timelineCount; i++){
 
 			if(i == num){
-				scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i].replace(/#/g , "0x"));
+				scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i].replace(/#/g , "0x"));				scene.getObjectByName("test"+i.toString()).material.opacity = 1;
+				scene.getObjectByName("test"+i.toString()).material.transparent = false;
 				console.log(rgb[i]);
-				par_mat[i].color.setHex( rgb[i] );
+				par_mat[i].color.setHex(rgb[i].replace(/#/g , "0x"));
 			}
 			else {
 				scene.getObjectByName("test"+i.toString()).material.color.setHex(0xd3d3d3);
+				scene.getObjectByName("test"+i.toString()).material.opacity = 0.3;
+				scene.getObjectByName("test"+i.toString()).material.transparent = true;
 				par_mat[i].color.setHex( 0xd3d3d3);
 			}
 			

@@ -1,5 +1,6 @@
 var content_sObj, content_line;
 var content_dObj_pos = {"x":0, "y":0, "z":0};
+//var content_group = new THREE.Group();
 
 function content_line_draw(sObj_pos,dObj_pos,color) {
   var lineGeom = new THREE.Geometry();
@@ -11,7 +12,9 @@ function content_line_draw(sObj_pos,dObj_pos,color) {
   });
   content_line = new THREE.Line(lineGeom, lineMat);
 
-  scene.add(content_line);
+  content_group.add( content_line );
+
+  //scene.add(content_line);
 }
 
 function content_line_pos() {
@@ -54,6 +57,22 @@ function add_sphere(color) {
   }
 
   content_sObj = new sphereObj(color);
-  scene.add(content_sObj);
+  content_group.add( content_sObj );
+  //scene.add(content_sObj);
 }
 
+
+// broken yet
+
+function visibilty(obj,status) {
+  obj.traverseHierarchy( object, function ( object ) { object.visible = status; } );
+}
+
+function visibilty_toggle(obj) {
+  if ( obj.visible == false ) {
+    visibilty(obj,true)
+  }
+  else {
+    visibilty(obj,false)
+  }
+}

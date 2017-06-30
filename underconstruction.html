@@ -37,9 +37,9 @@
  line-height: 50px;
  text-align: center;
  /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);
- transform:translateX(100%);
+ -moz-transform:translateX(100vw);
+ -webkit-transform:translateX(100vw);
+ transform:translateX(100vw);
  /* Apply animation to this element */
  -moz-animation: scroll-left 10s linear infinite;
  -webkit-animation: scroll-left 10s linear infinite;
@@ -47,23 +47,23 @@
 }
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
+ 0%   { -moz-transform: translateX(100vw); }
+ 100% { -moz-transform: translateX(-1053px); }
 }
 @-webkit-keyframes scroll-left {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
+ 0%   { -webkit-transform: translateX(100vw); }
+ 100% { -webkit-transform: translateX(-1053px); }
 }
 @keyframes scroll-left {
  0%   {
- -moz-transform: translateX(100%); /* Browser bug fix */
- -webkit-transform: translateX(100%); /* Browser bug fix */
- transform: translateX(100%);
+ -moz-transform: translateX(100vw); /* Browser bug fix */
+ -webkit-transform: translateX(100vw); /* Browser bug fix */
+ transform: translateX(100vw);
  }
  100% {
- -moz-transform: translateX(-100%); /* Browser bug fix */
- -webkit-transform: translateX(-100%); /* Browser bug fix */
- transform: translateX(-100%);
+ -moz-transform: translateX(-1053px); /* Browser bug fix */
+ -webkit-transform: translateX(-1053px); /* Browser bug fix */
+ transform: translateX(-1053px);
  }
 }
 			#info {

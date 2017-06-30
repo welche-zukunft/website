@@ -1,6 +1,6 @@
 //var contents_json = '{ "date":"123", "contents":[ "arma", "virumque", "cano" ] }';
 
-var url = "http://0101010.one/cgi-bin/cgi-json.sh";
+var url = "https://0101010.one/cgi-bin/cgi-json.sh";
 
 $.get( url, jsontocontents );
 

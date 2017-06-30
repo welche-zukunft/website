@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width">
 		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet"> 
 		<style>
+
 			body {
 				font-family: 'Zilla Slab', serif;
 				background-color: rgb(238, 238, 238);
@@ -37,14 +38,46 @@
  line-height: 50px;
  text-align: center;
  /* Starting position */
- -moz-transform:translateX(100vw);
- -webkit-transform:translateX(100vw);
- transform:translateX(100vw);
+ -moz-transform:translateX(808px);
+ -webkit-transform:translateX(808px);
+ transform:translateX(808px);
  /* Apply animation to this element */
  -moz-animation: scroll-left 10s linear infinite;
  -webkit-animation: scroll-left 10s linear infinite;
  animation: scroll-left 10s linear infinite;
 }
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(808px); }
+ 100% { -moz-transform: translateX(-1053px); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(808px); }
+ 100% { -webkit-transform: translateX(-1053px); }
+}
+@keyframes scroll-left {
+ 0%   {
+ -moz-transform: translateX(808px); /* Browser bug fix */
+ -webkit-transform: translateX(808px); /* Browser bug fix */
+ transform: translateX(808px);
+ }
+ 100% {
+ -moz-transform: translateX(-1053px); /* Browser bug fix */
+ -webkit-transform: translateX(-1053px); /* Browser bug fix */
+ transform: translateX(-1053px);
+ }
+}
+
+
+@media screen and (max-width: 808px) {
+
+.marquee span {
+ /* Starting position */
+ -moz-transform:translateX(100vw);
+ -webkit-transform:translateX(100vw);
+ transform:translateX(100vwpx);
+}
+
 /* Move it (define the animation) */
 @-moz-keyframes scroll-left {
  0%   { -moz-transform: translateX(100vw); }
@@ -54,6 +87,7 @@
  0%   { -webkit-transform: translateX(100vw); }
  100% { -webkit-transform: translateX(-1053px); }
 }
+
 @keyframes scroll-left {
  0%   {
  -moz-transform: translateX(100vw); /* Browser bug fix */
@@ -66,6 +100,9 @@
  transform: translateX(-1053px);
  }
 }
+
+}
+
 			#info {
 				position: absolute;
 				top: 0px;

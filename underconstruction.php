@@ -313,7 +313,7 @@
 		<h4>Umweltveränderungen</h4>
 		<p class="workshop">Wie viele Menschen können wir ernähren, wenn die Äcker und Obstgärten durch Klimawandel und Überdüngung vernichtet sind - wo sind die Anbauflächen der Zukunft und wem gehören sie? <span class=bold>Dr. Monika Zurek</span> erforscht diese Fragen in der Food Systems Group am Environmental Change Institute der University of Oxford. Es geht um unser Überleben, aber auch darum, wem die Weinberge im Norden Schottlands gehören werden und wer sie jetzt schon plant.  </p>  
 		<h4>Elite & Demokratie</h4>
-		<p class="workshop">Der Soziologe <span class=bold>Michael Hartmann</span> hat die Leistungselite zum Mythos erklärt - soll uns das Hoffnung machen? Oder ein Corbyn, und ein Sanders - werden die der steigenden Ungleichheit ein Ende setzen oder waren sie nur Strohfeuer? Soziale Mobilität ist in Europa wieder Geschichte, und während sich die Eliten noch über die Ursachen der Krise streiten, drehen die USA und UK das Rad noch weiter zurück. </p>  
+		<p class="workshop">Soziologe <span class=bold>Michael Hartmann</span> forscht zu der Rolle der bundesrepublikanischen und europäischen Leistungselite. Bleiben angesichts der Selbstrekrutierung dieser Führungszirkel Chancengleichheit und Verteilungsgerechtigkeit leere Versprechen? Und wie verstärkt die von Hartmann konstituierte soziale Immobilität eine neue Wirtschafts- und Finanzkrise? Oder ist sie sogar einer ihrer Ursachen? </p>
 
 		<p>Detaillierte Informationen und Anmeldung:</p>  
 		<p>Ab  1. August 2017 unter <a href="http://www.welchezukunft.org">www.welchezukunft.org</a></p> 

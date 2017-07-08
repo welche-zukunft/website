@@ -240,6 +240,7 @@
 		<link href="css/contentboxes.css" rel="stylesheet">
 
 	</head>
+		<?php require './nl.php';?>
 		<body>
 		<div id="banner">
 			<div class="marquee">
@@ -317,21 +318,19 @@
 		<p>Detaillierte Informationen und Anmeldung:</p>  
 		<p>Ab  1. August 2017 unter <a href="http://www.welchezukunft.org">www.welchezukunft.org</a></p> 
 
-<!--
-		<form method="POST" action="/addMailSubscriber" id="newsletter">
+		<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#newsletter" id="newsletter">
 			<label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hier bitte ihren Namen und ihre Mailadresse ein.</label> 
 			<br>
 			<label >Vorname</label> 
-			<input type="text" name="vorname" id="vorname" maxlength="60">
+			<input type="text" name="vorname" id="vorname" value="<?php echo $name_first;?>">
 			<label >Name</label> 
-			<input type="text" name="name" id="name" maxlength="60">
+			<input type="text" name="name" id="name" value="<?php echo $name_last;?>">
 			<label >E-Mailadresse</label> 
-			<input type="text" name="mailadresse" id="mailadresse" maxlength="60">
+			<input type="text" name="mailadresse" id="mailadresse" value="<?php echo $sub_mail;?>">
 			<br>
 			<button type="submit">Newsletter abonnieren</button>
-			<label class="result">Danke! Wir haben eine Mail zur Bestätigung an die eingegebene Adresse versandt.</label> 
+			<label class="result" style="<?php echo $result_display;?>"><?php echo $feedback;?></label>
 		</form>
--->
 		
 		<p><span class=bold>Pressekontakt:</span><br>
 		Katharina Wenzel <br>

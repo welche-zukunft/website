@@ -28,6 +28,7 @@ function select_active() {
   hidable_vis.push( $($(".dragbox").get()) );
   var hidable_dis = $($(".scroll-up").get());
   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    $("#info").detach().appendTo("#container");
     $("#container").addClass('front');
     $("#container").removeClass('back');
     hidable_vis.each(function() {
@@ -41,6 +42,7 @@ function select_active() {
       $current.removeClass('nodisplay');
     });
   } else {
+    $("#info").detach().appendTo("body");
     $("#container").addClass('back');
     $("#container").removeClass('front');
     hidable_vis.each(function() {

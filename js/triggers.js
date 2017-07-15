@@ -1,5 +1,7 @@
-var $hidable_vis = $($(".handle").get());
-var $hidable_dis = $($(".scroll-up").get());
+var hidable_vis = $($(".handle").get());
+hidable_vis.push( $($(".dragbox").get()) );
+console.log(hidable_vis);
+var hidable_dis = $($(".scroll-up").get());
 
 // throttle function, enforces a minimum time interval
 function throttle(fn, interval) {
@@ -22,15 +24,18 @@ function throttle(fn, interval) {
 }
 
 function select_active() {
+  var hidable_vis = $($(".handle").get());
+  hidable_vis.push( $($(".dragbox").get()) );
+  var hidable_dis = $($(".scroll-up").get());
   if($(window).scrollTop() + $(window).height() == $(document).height()) {
     $("#container").addClass('front');
     $("#container").removeClass('back');
-    $hidable_vis.each(function() {
+    hidable_vis.each(function() {
       var $current = $(this);
       $current.addClass('nothidden');
       $current.removeClass('hidden');
     });
-    $hidable_dis.each(function() {
+    hidable_dis.each(function() {
       var $current = $(this);
       $current.addClass('display');
       $current.removeClass('nodisplay');
@@ -38,12 +43,12 @@ function select_active() {
   } else {
     $("#container").addClass('back');
     $("#container").removeClass('front');
-    $hidable_vis.each(function() {
+    hidable_vis.each(function() {
       var $current = $(this);
       $current.addClass('hidden');
       $current.removeClass('nothidden');
     });
-    $hidable_dis.each(function() {
+    hidable_dis.each(function() {
       var $current = $(this);
       $current.addClass('nodisplay');
       $current.removeClass('display');
@@ -51,4 +56,7 @@ function select_active() {
   }
 }
 
+// fire once at start
+select_active();
+// and after that on scroll
 $(window).scroll( throttle(select_active,100) );

@@ -28,6 +28,18 @@ div.scroll-up {
 
 /* style */
 
+span.handle {
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid thin black;
+  color: fuchsia;
+  background: fuchsia;
+  position: absolute;
+  height: 3ch;
+  width: 3ch;
+  bottom: 0;
+  left: 0;
+}
 p.big {
   font-size: x-large;
 }
@@ -97,8 +109,8 @@ div.scroll-up {
 
 /* activity */
 
-.handle {
-  visibility: hidden;
+.handle, .dragbox {
+  z-index: 90;
 }
 .back {
   z-index: -1;

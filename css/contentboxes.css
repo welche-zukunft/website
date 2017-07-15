@@ -3,7 +3,7 @@
   height: 100vh;
 }
 div.dragbox {
-  position: absolute;
+  position: fixed;
   padding: 2ch; /*room for handler*/
   overflow: visible;
 }
@@ -14,13 +14,13 @@ div.contentbox {
   padding: 0.5ch;
   background: rgba(240,240,240,0.8);
 }
-span.handle, div.dragscroll {
+div.dragbox span.handle, div.dragscroll {
   cursor : -webkit-grab;
   cursor : -moz-grab;
   cursor : -o-grab;
   cursor : grab;
 }
-span.handle:active, div.dragscroll:active {
+div.dragbox span.handle:active, div.dragscroll:active {
   cursor : -webkit-grabbing;
   cursor : -moz-grabbing;
   cursor : -o-grabbing;
@@ -37,16 +37,5 @@ div.contentbox div.content {
 }
 div.contentbox div:active {
   cursor: initial
-}
-span.handle {
-  border-radius: 50%;
-  border: solid thin black;
-  color: fuchsia;
-  background: fuchsia;
-  position: absolute;
-  height: 3ch;
-  width: 3ch;
-  bottom: 0;
-  left: 0;
 }
 

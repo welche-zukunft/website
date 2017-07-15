@@ -51,7 +51,7 @@ function contentbox_create(num) {
   });
   // fill contentbox with content
   contentbox.innerHTML = '<div class="nodrag content">' + contents.contents[num] + '</div>';
-  // add dragbox to div "contentplane"
+  // add dragbox directly to body
   document.body.appendChild(dragbox);
   // add contentbox to dragbox
   dragbox.appendChild(contentbox);

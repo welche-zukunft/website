@@ -32,6 +32,7 @@ function contentbox_create(num) {
   // make them draggable
   $(function() {
     $( dragbox ).draggable({
+      scroll: false,
       containment: "parent",
       stack: "div.dragbox",
       handle: "span.handle",

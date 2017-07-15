@@ -18,6 +18,7 @@ var line = [];
 var par_mat = [];
 var line_geometry = [];
 var par_geometry = [];
+var particles = [];
 
 var rgb = [];
 for(var i = 0; i < timelineCount; i++)
@@ -49,9 +50,11 @@ var content_group = new THREE.Group();
 var contentboxes_first_setup = 1;
 function contentboxes_obj_setup() {
 	if ( contentboxes_first_setup == 1 ) {
-		add_sphere("white");
+		//add_sphere("white");
+		content_sObj = particles[0];
+		console.log(content_sObj.position);
 		// content_line_draw(sObj_pos,dObj_pos,color)
-		content_line_draw(content_sObj.position,content_dObj_pos,"fuchsia");
+		content_line_draw(content_sObj.position,content_dObj_pos,"white");
 		contentboxes_first_setup = 0;
 	}
 }
@@ -183,6 +186,7 @@ function init() {
 
 
 			scene.add( particle );
+			particles.push(particle);
 
 			par_geometry[h].vertices.push( particle.position );
 			par_geometry[h].name = "linie";
@@ -325,21 +329,6 @@ function onKeyDown(event){
 		}
 		break;
 	// b
-	case 66:
-		if ( contentboxes == 1 ) {
-			contentboxes = 0;
-			scene.remove(content_group);
-			//visibilty_toggle(content_group);
-			contentbox_delete_all();
-		}
-		else {
-			contentbox_create_all();
-			contentboxes_obj_setup();
-			//visibilty_toggle(content_group);
-			scene.add(content_group);
-			contentboxes = 1;
-		}
-		break;
 	}
 }
 

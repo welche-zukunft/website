@@ -42,8 +42,14 @@ function contentbox_create(num) {
         // track the position of the handle
         var id = $(this).attr("id");
         var currhandle = $("#" + id + " > span.handle");
+	// pos of dragbox, so we can track it rel. to threejs container
+        var box_pos = track_pos_handle(this);
+	// handle_pos rel to box
+        var handle_pos_rel = track_pos_handle(currhandle);
 	// handle_pos is global var
-        handle_pos = track_pos_handle(currhandle);
+        handle_pos.x = box_pos.x - handle_pos_rel.x + 14;
+        handle_pos.y = box_pos.y + handle_pos_rel.y + 14;
+        handle_pos.z = box_pos.z - handle_pos_rel.z;
         //console.log( handle_pos );
       }
      });
@@ -51,8 +57,8 @@ function contentbox_create(num) {
   });
   // fill contentbox with content
   contentbox.innerHTML = '<div class="nodrag content">' + contents.contents[num] + '</div>';
-  // add dragbox directly to body
-  document.body.appendChild(dragbox);
+  // add dragbox directly to threejs container
+  document.getElementById("container").appendChild(dragbox);
   // add contentbox to dragbox
   dragbox.appendChild(contentbox);
   // add handle to dragbox
@@ -70,11 +76,11 @@ function contentbox_delete_all() {
   $("div.dragbox").remove();
 }
 
-function track_pos_handle(handle) {
-  var handleid = $(handle).attr("id");
-  var offset = $("#" + handleid).offset();
-  var xPos = offset.left;
-  var yPos = offset.top;
+function track_pos_handle(elem) {
+  var elemid = $(elem).attr("id");
+  var position = $("#" + elemid).position();
+  var xPos = position.left;
+  var yPos = position.top;
 
   //return {
   //  "id":handleid
@@ -82,19 +88,20 @@ function track_pos_handle(handle) {
   //  ,"y":yPos
   //  };
 
-  // add the radius of the handle
   return {
-    "x":xPos + 14
-    ,"y":yPos + 14
+    "x":xPos
+    ,"y":yPos
     ,"z":0
   };
 }
 
 function contentboxes_get() {
+  contentboxes = 0;
   scene.remove(content_group);
   contentbox_delete_all();
   contentbox_create_all();
   contentboxes_obj_setup();
   scene.add(content_group);
+  contentboxes = 1;
 }
 

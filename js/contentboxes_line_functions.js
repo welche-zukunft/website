@@ -19,9 +19,9 @@ function content_line_draw(sObj_pos,dObj_pos,color) {
 
 function content_line_pos() {
   // source position
-  var timestamp = new Date() * 0.0005;
-  content_sObj.position.x = Math.cos(timestamp) * 7;
-  content_sObj.position.z = Math.sin(timestamp) * 7;
+  //var timestamp = new Date() * 0.0005;
+  //content_sObj.position.x = Math.cos(timestamp) * 7;
+  //content_sObj.position.z = Math.sin(timestamp) * 7;
 
   // vector for handle pos
   var vector = new THREE.Vector3();

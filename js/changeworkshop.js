@@ -1,3 +1,7 @@
+function color_theme_set(color) {
+  var contentbox_handles = $($( "div.dragbox > span.handle" ).get());
+  contentbox_handles.css('background', color);
+}
 
 function workshopdot_create(num , color) {
   // handle
@@ -9,8 +13,9 @@ function workshopdot_create(num , color) {
   //handle.css('color', color);
   $(handle).css('background', color, 'important');
   $(handle).click(function() {
-  swapworkshop(handle.id);
-});
+    swapworkshop(handle.id);
+    color_theme_set(color);
+  });
 
   // where to spwan them
   var x = 40;

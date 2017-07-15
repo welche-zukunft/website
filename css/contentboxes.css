@@ -8,6 +8,7 @@ div.dragbox {
   overflow: visible;
 }
 div.contentbox {
+  border-radius: 10px;
   border: solid thin;
   max-width: 20vw;
   overflow-y: auto;

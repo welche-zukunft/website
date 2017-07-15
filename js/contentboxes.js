@@ -90,3 +90,11 @@ function track_pos_handle(handle) {
   };
 }
 
+function contentboxes_get() {
+  scene.remove(content_group);
+  contentbox_delete_all();
+  contentbox_create_all();
+  contentboxes_obj_setup();
+  scene.add(content_group);
+}
+

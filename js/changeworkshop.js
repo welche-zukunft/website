@@ -14,6 +14,7 @@ function workshopdot_create(num , color) {
   $(handle).css('background', color, 'important');
   $(handle).click(function() {
     swapworkshop(handle.id);
+    contentboxes_get();
     color_theme_set(color);
   });
 

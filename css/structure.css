@@ -1,16 +1,39 @@
 /* structure */
 
-#signe {
+#handle_container {
+  position: fixed;
+  top: 100px;
+  margin-left: 1ch;
+  height: calc( 100% - 20% - 120px );
+  width: 20px;
+  column-count: 2;
+  column-gap: 10px;
+  column-width: 20px;
+}
+div#handle_container span {
+  display: inline-block;
+  position: relative;
+}
+#signe_div {
   position: fixed;
   bottom: 0;
-  left: -250px;
+  width: 250px;
   background: transparent;
+  height: 20%;
+  overflow: hidden;
+}
+#signe {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+  max-width: none;
 }
 #topmenu {
   position: fixed;
   top: 0;
 }
-#signe, #topmenu {
+.foreground {
   z-index: 10;
 }
 div#container {
@@ -39,6 +62,11 @@ div.scroll-up {
 
 /* style */
 
+div#handle_container span {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0.5ch;
+}
 div.vert-center {
   display: flex;
   align-items: center;

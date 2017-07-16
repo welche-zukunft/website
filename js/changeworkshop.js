@@ -18,12 +18,6 @@ function workshopdot_create(num , color) {
     color_theme_set(color);
   });
 
-  // where to spwan them
-  var x = 40;
-  var y = 250 + 50 * num;
-  handle.style.left = x + 'px';
-  handle.style.top = y + 'px';
-  
-  // add dragbox to div "contentplane"
-  document.getElementById("container").appendChild(handle);
+  // add handle to div "handle_container"
+  document.getElementById("handle_container").appendChild(handle);
 }

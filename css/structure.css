@@ -1,8 +1,16 @@
 /* structure */
 
+#signe {
+  position: fixed;
+  bottom: 0;
+  left: -250px;
+  background: transparent;
+}
 #topmenu {
   position: fixed;
   top: 0;
+}
+#signe, #topmenu {
   z-index: 10;
 }
 div#container {

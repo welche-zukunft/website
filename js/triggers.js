@@ -30,6 +30,7 @@ function select_active() {
   // allow 100px of tolerance
   if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
     $("#topmenu").detach().appendTo("#container");
+    $("#signe_div").detach().appendTo("#container");
     $("#container").addClass('front');
     $("#container").removeClass('back');
     hidable_vis.each(function() {
@@ -44,6 +45,7 @@ function select_active() {
     });
   } else {
     $("#topmenu").detach().appendTo("body");
+    $("#signe_div").detach().appendTo("body");
     $("#container").addClass('back');
     $("#container").removeClass('front');
     hidable_vis.each(function() {

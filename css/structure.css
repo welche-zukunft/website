@@ -39,6 +39,9 @@ div#handle_container span {
   bottom: 0;
   right: 0;
 }
+#signe_div, #anmeldung_link {
+  max-width: 45%;
+}
 .foreground {
   z-index: 10;
 }

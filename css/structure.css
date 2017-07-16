@@ -137,8 +137,25 @@ div.paper {
   padding: 2ch;
   border-radius: 25px;
 }
-div.paper, #topmenu, #anmeldung_link {
+div.paper {
   opacity: 0.9;
+}
+#topmenu, #anmeldung_link {
+  opacity: 0.9;
+}
+#topmenu {
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #9ebba2 , #e3969b); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #9ebba2, #e3969b); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #9ebba2, #e3969b); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #9ebba2 , #e3969b); /* Standard syntax */
+}
+#anmeldung_link {
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, #9ebba2 , #e3969b); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #9ebba2, #e3969b); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, #9ebba2, #e3969b); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #9ebba2 , #e3969b); /* Standard syntax */
 }
 p.subtitle {
   font-weight: bold;

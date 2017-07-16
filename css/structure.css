@@ -33,6 +33,11 @@ div#handle_container span {
   position: fixed;
   top: 0;
 }
+#anmeldung_link {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
 .foreground {
   z-index: 10;
 }
@@ -72,12 +77,24 @@ div.vert-center {
   align-items: center;
 }
 #topmenu {
-  background: white;
-  padding: 10px;
   border-bottom-right-radius: 25px;
-  color: black;
   max-width: 250px;
+}
+#anmeldung_link {
+  border-top-left-radius: 25px;
+}
+.foreground a {
+  text-decoration: none;
+  color: black;
+}
+.foreground a:hover {
+  border-bottom: solid thin;
+}
+#topmenu, #anmeldung_link {
+  padding: 10px;
   font-size: 1.7em;
+  background: white;
+  color: black;
 }
 span.handle {
   cursor: pointer;
@@ -120,7 +137,7 @@ div.paper {
   padding: 2ch;
   border-radius: 25px;
 }
-div.paper, #topmenu {
+div.paper, #topmenu, #anmeldung_link {
   opacity: 0.9;
 }
 p.subtitle {

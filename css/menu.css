@@ -104,12 +104,4 @@ nav {
   margin-left: 38px;
   padding-bottom: 0.5ch;
 }
-nav a {
-  color: black;
-  text-decoration: none;
-}
-nav a:hover {
-  border-bottom: solid thin;
-}
-  
 

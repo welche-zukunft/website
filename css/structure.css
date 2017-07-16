@@ -1,6 +1,8 @@
 /* structure */
 
 #info {
+  position: fixed;
+  top: 0;
   z-index: 10;
 }
 div#container {
@@ -29,6 +31,18 @@ div.scroll-up {
 
 /* style */
 
+div.vert-center {
+  display: flex;
+  align-items: center;
+}
+#info {
+  background: white;
+  padding: 10px;
+  border-bottom-right-radius: 25px;
+  color: black;
+  max-width: 250px;
+  font-size: 1.7em;
+}
 span.handle {
   cursor: pointer;
   border-radius: 50%;
@@ -67,9 +81,11 @@ div.flex {
 }
 div.paper {
   background: white;
-  opacity: 0.9;
   padding: 2ch;
   border-radius: 25px;
+}
+div.paper, #info {
+  opacity: 0.9;
 }
 p.subtitle {
   font-weight: bold;

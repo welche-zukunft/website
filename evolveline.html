@@ -12,17 +12,8 @@
 				background-color: #f0f0f0;
 				margin: 0px;
 			}
-			#info {
-				position: fixed;
-				top: 0px;
-				width: 100%;
-				padding: 5px;
-				font-family:'Questrial', sans-serif;
-				font-size:43px;
-				text-align:left;
-				color: #ffffff;
-			}
 		</style>
+		<link href="css/menu.css" rel="stylesheet">
 		<link href="css/underconstruction.css" rel="stylesheet">
 		<link href="css/structure.css" rel="stylesheet">
 		<link href="css/contentboxes.css" rel="stylesheet">
@@ -30,7 +21,25 @@
 	</head>
 	<body>
 
-		<div id="info">WELCHE<br>ZUKUNFT<br>?!</div>
+		<div id="info">
+			<input class="burger-check" id="burger-check" type="checkbox">
+			<label for="burger-check" class="burger"></label>
+			<label>Welche Zukunft?!</label>
+			<nav id="navigation1" class="navigation">
+			<ul>
+				<li><a href="#info">Info</a></li>
+				<li><a href="#workshops">Workshops</a>
+					<ul>
+						<li><a href="#uebersicht">Übersicht</a>
+						<li><a href="#inhalte">Inhalte</a>
+					</ul>
+				</li>
+				<li><a href="#anmeldung">Anmeldung</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#kontakt">Kontakt</a></li>
+			</ul>
+			</nav>
+		</div>
 		<main>
 		<article>
 

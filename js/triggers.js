@@ -27,7 +27,8 @@ function select_active() {
   var hidable_vis = $($(".handle").get());
   hidable_vis.push( $($(".dragbox").get()) );
   var hidable_dis = $($(".scroll-up").get());
-  if($(window).scrollTop() + $(window).height() == $(document).height()) {
+  // allow 100px of tolerance
+  if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
     $("#info").detach().appendTo("#container");
     $("#container").addClass('front');
     $("#container").removeClass('back');

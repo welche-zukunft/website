@@ -127,6 +127,7 @@ p.subtitle {
   font-weight: bold;
 }
 div.scroll-up {
+  display: none;
 }
 .arrow {
     color: #fff;

@@ -1,8 +1,3 @@
-var hidable_vis = $($(".handle").get());
-hidable_vis.push( $($(".dragbox").get()) );
-console.log(hidable_vis);
-var hidable_dis = $($(".scroll-up").get());
-
 // throttle function, enforces a minimum time interval
 function throttle(fn, interval) {
   var lastCall, timeoutId;

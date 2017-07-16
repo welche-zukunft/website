@@ -5,7 +5,8 @@
   top: 100px;
   margin-left: 1ch;
   height: calc( 100% - 20% - 120px );
-  width: 20px;
+  width: 22px;
+  overflow: visible;
   column-count: 2;
   column-gap: 10px;
   column-width: 20px;

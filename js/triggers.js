@@ -29,7 +29,7 @@ function select_active() {
   var hidable_dis = $($(".scroll-up").get());
   // allow 100px of tolerance
   if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
-    $("#info").detach().appendTo("#container");
+    $("#topmenu").detach().appendTo("#container");
     $("#container").addClass('front');
     $("#container").removeClass('back');
     hidable_vis.each(function() {
@@ -43,7 +43,7 @@ function select_active() {
       $current.removeClass('nodisplay');
     });
   } else {
-    $("#info").detach().appendTo("body");
+    $("#topmenu").detach().appendTo("body");
     $("#container").addClass('back');
     $("#container").removeClass('front');
     hidable_vis.each(function() {

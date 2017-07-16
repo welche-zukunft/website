@@ -1,6 +1,6 @@
 /* structure */
 
-#info {
+#topmenu {
   position: fixed;
   top: 0;
   z-index: 10;
@@ -35,7 +35,7 @@ div.vert-center {
   display: flex;
   align-items: center;
 }
-#info {
+#topmenu {
   background: white;
   padding: 10px;
   border-bottom-right-radius: 25px;
@@ -84,7 +84,7 @@ div.paper {
   padding: 2ch;
   border-radius: 25px;
 }
-div.paper, #info {
+div.paper, #topmenu {
   opacity: 0.9;
 }
 p.subtitle {

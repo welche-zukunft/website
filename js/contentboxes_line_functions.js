@@ -12,38 +12,40 @@ function content_line_draw(sObj_pos,dObj_pos,color) {
   });
   content_line = new THREE.Line(lineGeom, lineMat);
 
-  content_group.add( content_line );
+  //content_group.add( content_line );
 
   //scene.add(content_line);
+  return content_line;
 }
 
-function content_line_pos() {
-  // source position
-  //var timestamp = new Date() * 0.0005;
-  //content_sObj.position.x = Math.cos(timestamp) * 7;
-  //content_sObj.position.z = Math.sin(timestamp) * 7;
+function convert_pos_to_3d(vector) {
+  ///////console.log(vector);
+  // new vector to be returned
+  var new_vector = new THREE.Vector3();
+  var raycaster = new THREE.Raycaster(); // create once
+  // plane representing the windows
+  var planeZ = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
 
-  // vector for handle pos
-  var vector = new THREE.Vector3();
+  // normalize 0 - 1
+  vector.x = ( vector.x / renderer.domElement.clientWidth ) * 2 - 1;
+  vector.y = - ( vector.y / renderer.domElement.clientHeight ) * 2 + 1;
 
-  vector.set(
-    ( handle_pos.x / window.innerWidth ) * 2 - 1,
-    - ( handle_pos.y / window.innerHeight ) * 2 + 1,
-    0.5
-  );
+  raycaster.setFromCamera( vector, camera );
 
-  vector.unproject( camera );
-  var dir = vector.sub( camera.position ).normalize();
-  var content_targetZ = 0;
-  var distance = (content_targetZ - camera.position.z) / dir.z;
-  pos = camera.position.clone().add( dir.multiplyScalar( distance ) );
-  //
+  var intersect = raycaster.ray.intersectPlane( planeZ );
 
-  content_dObj_pos.x = pos.x;
-  content_dObj_pos.y = pos.y;
-  content_dObj_pos.z = pos.z;
-  //console.log( content_dObj_pos );
-  content_line.geometry.verticesNeedUpdate = true;
+  pos = intersect;
+
+  // sometimes, there is no intersection with the plane (?)
+  // so we update position only when there is one
+  //if ( pos != null ) {
+  //  content_dObj_pos.x = pos.x;
+  //  content_dObj_pos.y = pos.y;
+  //};
+
+  //content_line.geometry.verticesNeedUpdate = true;
+
+  return pos;
 }
 
 function add_sphere(color) {

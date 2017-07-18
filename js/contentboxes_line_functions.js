@@ -20,8 +20,6 @@ function content_line_draw(sObj_pos,dObj_pos,color) {
 
 function convert_pos_to_3d(vector) {
   ///////console.log(vector);
-  // new vector to be returned
-  var new_vector = new THREE.Vector3();
   var raycaster = new THREE.Raycaster(); // create once
   // plane representing the windows
   var planeZ = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);

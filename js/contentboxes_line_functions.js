@@ -12,20 +12,23 @@ function content_line_draw(sObj_pos,dObj_pos,color) {
   });
   content_line = new THREE.Line(lineGeom, lineMat);
 
-  content_group.add( content_line );
+  //content_group.add( content_line );
 
   //scene.add(content_line);
+  return content_line;
 }
 
-function content_line_pos() {
-  // vector for handle pos
-  var vector = new THREE.Vector2();
+function convert_pos_to_3d(vector) {
+  ///////console.log(vector);
+  // new vector to be returned
+  var new_vector = new THREE.Vector3();
   var raycaster = new THREE.Raycaster(); // create once
   // plane representing the windows
   var planeZ = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
 
-  vector.x = ( handle_pos.x / renderer.domElement.clientWidth ) * 2 - 1;
-  vector.y = - ( handle_pos.y / renderer.domElement.clientHeight ) * 2 + 1;
+  // normalize 0 - 1
+  vector.x = ( vector.x / renderer.domElement.clientWidth ) * 2 - 1;
+  vector.y = - ( vector.y / renderer.domElement.clientHeight ) * 2 + 1;
 
   raycaster.setFromCamera( vector, camera );
 
@@ -35,12 +38,14 @@ function content_line_pos() {
 
   // sometimes, there is no intersection with the plane (?)
   // so we update position only when there is one
-  if ( pos != null ) {
-    content_dObj_pos.x = pos.x;
-    content_dObj_pos.y = pos.y;
-  };
+  //if ( pos != null ) {
+  //  content_dObj_pos.x = pos.x;
+  //  content_dObj_pos.y = pos.y;
+  //};
 
-  content_line.geometry.verticesNeedUpdate = true;
+  //content_line.geometry.verticesNeedUpdate = true;
+
+  return pos;
 }
 
 function add_sphere(color) {

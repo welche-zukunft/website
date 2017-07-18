@@ -45,22 +45,6 @@ function noise_object() {
     this.z = Math.random();
 }
 
-// contentboxes stuff
-var content_group = new THREE.Group();
-var contentboxes_first_setup = 1;
-function contentboxes_obj_setup() {
-	if ( contentboxes_first_setup == 1 ) {
-		//add_sphere("white");
-		content_sObj = particles[0];
-		console.log(content_sObj.position);
-		// content_line_draw(sObj_pos,dObj_pos,color)
-		content_line_draw(content_sObj.position,content_dObj_pos,"white");
-		contentboxes_first_setup = 0;
-	}
-}
-
-//
-
 init();
 animate(Math.random(),
 	Math.random(),
@@ -102,12 +86,6 @@ function init() {
 	container.appendChild( stats.dom );			
 
 	// content stuff
-
-	if ( contentboxes == 1 ) {
-		contentboxes_obj_setup();
-	}
-
-	//
 
 	var material = new THREE.LineBasicMaterial();
 
@@ -158,7 +136,10 @@ function init() {
 	for ( var h = 0; h < timelineCount; h ++ ) {
 		var next_x = 0;
 		var index = 0;
-		var positions = new Float32Array( 12 * 3 ); // 3 vertices per point		
+		var positions = new Float32Array( 12 * 3 ); // 3 vertices per point
+
+		var line_particles = [];
+
 		par_geometry.push(new THREE.Geometry());
 		line_geometry.push(new THREE.BufferGeometry());
 		line_geometry[h].addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
@@ -186,7 +167,7 @@ function init() {
 
 
 			scene.add( particle );
-			particles.push(particle);
+			line_particles.push(particle);
 
 			par_geometry[h].vertices.push( particle.position );
 			par_geometry[h].name = "linie";
@@ -194,16 +175,17 @@ function init() {
 			//console.log("Vertice y : " + par_geometry.vertices[i].y);
 			noise_objects.push(new noise_object());
 			//console.log(noise_objects[i]);
-
 		}
 	
+		particles.push(line_particles);
 
-    line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: rgb[h], opacity: 1, linewidth: 2} ) ));
-	line[h].name = "test"+h.toString();
-    scene.add( line[h] );
+		line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: rgb[h], opacity: 1, linewidth: 2} ) ));
+		line[h].name = "test"+h.toString();
+		scene.add( line[h] );
 	}
-	
-	
+	// contentboxes
+        // ???
+	get_workshop_contentboxes(1);
 }
 
 
@@ -237,10 +219,19 @@ function animate() {
 
 	requestAnimationFrame(animate);
 
-	if ( contentboxes == 1 ) {
-		content_line_pos();
-	}
+	// contentboxes
+	// ???
+	var current_workshop = workshops[current_workshop_id];
 
+	//console.log("### Current Workshop");
+	//console.log(current_workshop);
+	if (typeof current_workshop  !== 'undefined') {
+		for (var i = 0; i < current_workshop.boxes.length; i++){
+			//console.log("change box lines");
+			var box = current_workshop.boxes[i];
+			//update_box_position(box);
+		}
+	}
   	renderer.render(scene, camera);
 	stats.update();
 }

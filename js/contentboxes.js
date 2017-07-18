@@ -2,24 +2,71 @@
 
 var url = "https://0101010.one/cgi-bin/cgi-json.sh";
 
-$.get( url, jsontocontents );
+//$.get( url, jsontocontents );
 
 var contents;
+var workshops = [];
+// array of array of contentboxes
+var all_boxes = [];
+var all_contents = [];
 
-function jsontocontents(data) {
-  console.log(data);
-  contents = JSON.parse(JSON.stringify(data)); 
+function workshop_obj(id) {
+  this.id = id;
+  this.boxes = [];
 }
 
-function contentbox_create(num) {
+function box_object(id, s_obj, content) {
+  this.id = id;
+  this.pos = new THREE.Vector3(0,0,0);
+  this.pos2d = new THREE.Vector3(0,0,0);
+  this.s_obj = s_obj;
+  this.line  = null;
+  this.content = content;
+}
+
+function jsontocontents(data, j) {
+  console.log(data);
+  contents = JSON.parse(JSON.stringify(data)); 
+  all_contents.push(contents);
+}
+
+function update_box_position(box) {
+  //console.log(box.pos2d);
+  var pos2d = box.pos2d;
+  var pos = convert_pos_to_3d(pos2d);
+  //console.log(pos);
+
+  if ( pos != null) {
+    //console.log(pos);
+    box.pos.x = pos.x;
+    box.pos.y = pos.y;
+    box.pos.z = pos.z;
+  }
+  if ( box.line != null) {
+    //console.log("verticesNeedUpdate");
+    box.line.geometry.verticesNeedUpdate = true;
+  };
+}
+
+function contentbox_create(j, num, content) {
+  var handle_pos = new THREE.Vector3(0,0,0);
+
+  // console.log("Content : " + content);
+  // console.log("Create Box " + num + " for workshop " + j);
+
+  var box = new box_object(i, particles[j][3], content);
+  var box_id = 100 * j + num;
+
+  workshops[j].boxes[num] = box;
+
   // create dragbox, contenbox, handle
   var dragbox = document.createElement( 'div' );
   var contentbox = document.createElement( 'div' );
   var handle = document.createElement( 'span' );
   // give them unique ids
-  dragbox.id = 'dragbox_' + num;
-  contentbox.id = 'contentbox_' + num;
-  handle.id = 'handle_' + num;
+  dragbox.id = 'dragbox_' + box_id;
+  contentbox.id = 'contentbox_' + box_id;
+  handle.id = 'handle_' + box_id;
   // give them classes
   dragbox.className += " dragbox";
   contentbox.className += " contentbox";
@@ -40,6 +87,7 @@ function contentbox_create(num) {
       //distance: 10,
       cancel: "div.nodrag",
       drag: function(){
+        var handle_pos = new THREE.Vector3(0,0,0);
         // track the position of the handle
         var id = $(this).attr("id");
         var currhandle = $("#" + id + " > span.handle");
@@ -52,28 +100,76 @@ function contentbox_create(num) {
         handle_pos.y = box_pos.y + handle_pos_rel.y + 14;
         handle_pos.z = box_pos.z - handle_pos_rel.z;
         //console.log( handle_pos );
+
+        var pos_2d = new THREE.Vector3(handle_pos.x, handle_pos.y, 0);
+
+        var regex = /\d+/g;
+
+        var id_num = parseInt(id.match(regex), 10);
+        var workshop_id = Math.floor(id_num / 100);
+        var box_number = id_num % 100;
+
+        var box = workshops[workshop_id].boxes[box_number];
+        box.pos2d = pos_2d;
+
+        update_box_position(box);
       }
      });
     //$( contentbox ).resizable();
   });
   // fill contentbox with content
-  contentbox.innerHTML = '<div class="nodrag content">' + contents.contents[num] + '</div>';
+  contentbox.innerHTML = '<div class="nodrag content">' + content + '</div>';
   // add dragbox directly to threejs container
   document.getElementById("container").appendChild(dragbox);
   // add contentbox to dragbox
   dragbox.appendChild(contentbox);
   // add handle to dragbox
   dragbox.appendChild(handle);
+
+  //console.log("Inner HTML: " + contentbox.innerHTML);
+
+  var currhandle = $("#" + handle.id );
+  var elemid = $(currhandle).attr("id");
+  var handle_pos_rel = track_pos_handle(currhandle);
+
+  handle_pos.x = x - handle_pos_rel.x + 14;
+  handle_pos.y = y + handle_pos_rel.y + 14;
+
+  var pos2d = new THREE.Vector3(handle_pos.x, handle_pos.y, 0);
+
+  box.pos2d = pos2d;
+
+  update_box_position(box);
+  box.line = content_line_draw(box.s_obj.position, box.pos,"white");
+
+  scene.add(box.line);
+
+  //console.log(pos);
+  //console.log(box);
 }
 
 // iterate over available content to create boxes for them
-function contentbox_create_all() {
-  for (i = 0; i < contents.contents.length; i++) { 
-    contentbox_create(i);
-  }
+function workshop_create_all_contents(j) {
+  var contents;
+
+  $.get( url, function(data){
+    //console.log(data);
+    contents = JSON.parse(JSON.stringify(data));
+    all_contents.push(contents);
+
+    // ToDo: create workshop objects earlier (maybe at timeline creation)
+    var workshop = new workshop_obj(j);
+    workshops[j] = workshop;
+
+    //console.log("CONTENT LENGTH : " + contents.contents.length);
+
+    for (i = 0; i < contents.contents.length; i++) {
+      contentbox_create(j, i, contents.contents[i]);
+    }
+  });
 }
 
-function contentbox_delete_all() {
+function workshop_delete_all_contents() {
   $("div.dragbox").remove();
 }
 
@@ -96,13 +192,15 @@ function track_pos_handle(elem) {
   };
 }
 
-function contentboxes_get() {
-  contentboxes = 0;
-  scene.remove(content_group);
-  contentbox_delete_all();
-  contentbox_create_all();
-  contentboxes_obj_setup();
-  scene.add(content_group);
+function get_workshop_contentboxes(j) {
+  //contentboxes = 0;
+  //scene.remove(content_group);
+  //contentbox_delete_all();
+  //contentbox_create_all();
+  //contentboxes_obj_setup();
+  //scene.add(content_group);
+  workshop_delete_all_contents();
+  workshop_create_all_contents(j);
   contentboxes = 1;
 }
 

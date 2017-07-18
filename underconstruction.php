@@ -256,7 +256,7 @@
 		<p><span class="italic">Eurokrise, Robotik, Staatsbankrott, Dürrekatastrophen. Oder: Bedingungsloses Grundeinkommen, Energiewende, globale Grundrechte. Was steht uns bevor? Kommt die Zukunft über uns und wir sind nur die Crash-Test Dummies der Geschichte?<br><br>Oder können wir selbst gestalten und wählen?</span> </p>
 		<p>Auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien entwirft <span class=bold>Welche Zukunft?!</span> eine mögliche Geschichte von unserer Zukunft – und blickt dann von dort zurück in jene Zeit, in der man „das Schlimmste hätte verhindern können“: ins Heute.</p>
 		<p>Am <span class=bold>Deutschen Theater Berlin</span> entwickeln Film- und Theaterregisseur <span class=bold>Andres Veiel</span> (<span class=italic>Beuys, Das Himbeerreich</span>) und <span class=bold>Jutta Doberstein</span> mit hochkarätigen Experten und dem Publikum ein mögliches Zukunftsszenario für die kommenden 10 Jahre. Einen ganzen Tag lang, in Workshops und Panels, am Samstag, dem <span class=bold>16. September</span>, im ganzen Haus des Deutschen Theaters.</p>
-		<p>Geleitet werden die Workshops von Vertretern namenhafter Institute: PIK, IASS, Universität Oxford, Stratfor, Royal Dutch Shell, die Universitäten Passau, Würzburg, Bremen, Fairesearch usw. Das Publikum wird zum aktiven Mitgestalter. Besucher melden sich im Vorfeld für einen der Workshops an, an dem sie den ganzen Tag teilnehmen und zusammen mit den Experten verschiedene Szenarien entwerfen. Im gemeinsamen Plenum werden diese Entwürfe schließlich zu einer plausiblen, faktenbasierten Science Fiction Erzählung zusammengetragen.</p>
+		<p>Geleitet werden die Workshops von Vertretern namenhafter Institute: PIK, IASS, Stratfor, Royal Dutch Shell, die Universitäten Passau, Würzburg, Bremen, Fairesearch usw. Das Publikum wird zum aktiven Mitgestalter. Besucher melden sich im Vorfeld für einen der Workshops an, an dem sie den ganzen Tag teilnehmen und zusammen mit den Experten verschiedene Szenarien entwerfen. Im gemeinsamen Plenum werden diese Entwürfe schließlich zu einer plausiblen, faktenbasierten Science Fiction Erzählung zusammengetragen.</p>
 		<p>Die Ergebnisse des <span class=bold>Welche Zukunft?!</span>-Labors fließen in ein gleichnamiges Theaterstück ein, das im September 2018, am Deutschen Theater uraufgeführt wird: In einem Untersuchungsausschuss wird diese Zukunft auf den Prüfstand gestellt. Zeugen und Verantwortliche werden einbestellt und wir fragen: Was hätten wir wissen können, wenn wir es hätten wissen wollen? Was hätten wir verhindern können?  </p>
 		
 		<p>Workshop- und Paneltag<br>
@@ -269,8 +269,13 @@
 		<hr>
 		<p><span class=italic>Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</span></p>
 		<div class=logos>
+		<img src="image0.png" alt="logo">
 		<img src="image1.png" alt="logo">
 		<img src="image2.png" alt="logo">
+		</div>
+		<p>Medienpartner:</p>
+		<div class=logos>
+		<img src="image3.png" alt="logo">
 		</div>
 		<hr>
 		
@@ -310,8 +315,6 @@
 		<p class="workshop">In 10 Jahren wird es keine Arbeitsplätze im Bereich von Logistik und Retail geben. Und das ist nur die Robotik. Was passiert mit den Juristen, Bankangestellten und Medizinern, wenn künstliche Intelligenz den Markt übernimmt? Können wir uns darauf vorbereiten? <span class=bold>Cornelia Daheim</span> von Future Impacts leitet die deutsche Vertretung des „Millenium Project“, das jährlich den „State of the Future“ Report zur Zukunft der Arbeit veröffentlicht.</p>  
 		<h4>Arbeit II</h4>
 		<p class="workshop"><span class=bold>Dr. Martin Burckhardt</span> hat mit „Score“ seine eigene Vision von einer Gesellschaft entworfen, in der Spiel und Arbeit identisch sind. Nach dem Zusammenbruch der Weltwirtschaft wird unsere Identität Sinnstiftung und Währung zugleich. Können wir konsumieren, was wir nicht produzieren?</p>
-		<h4>Umweltveränderungen</h4>
-		<p class="workshop">Wie viele Menschen können wir ernähren, wenn die Äcker und Obstgärten durch Klimawandel und Überdüngung vernichtet sind - wo sind die Anbauflächen der Zukunft und wem gehören sie? <span class=bold>Dr. Monika Zurek</span> erforscht diese Fragen in der Food Systems Group am Environmental Change Institute der University of Oxford. Es geht um unser Überleben, aber auch darum, wem die Weinberge im Norden Schottlands gehören werden und wer sie jetzt schon plant.  </p>  
 		<h4>Elite & Demokratie</h4>
 		<p class="workshop">Soziologe <span class=bold>Michael Hartmann</span> forscht zu der Rolle der bundesrepublikanischen und europäischen Leistungselite. Bleiben angesichts der Selbstrekrutierung dieser Führungszirkel Chancengleichheit und Verteilungsgerechtigkeit leere Versprechen? Und wie verstärkt die von Hartmann konstituierte soziale Immobilität eine neue Wirtschafts- und Finanzkrise? Oder ist sie sogar einer ihrer Ursachen? </p>
 

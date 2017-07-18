@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backend welche zukunft ?!</title>
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+	<link href="backend_zukunft.css" rel="stylesheet">
+  </head>
+  
+  
+
+  <body>
+	<div class="main">
+	  <table align="center" class="backendTable" border="1">
+	  <tr>
+		<!-- menue -->
+		<td class="linkespalte">
+		   <h4>Welche Zukunft Backend</h4>
+			<ul>
+			  <li><a href="index.html">Startseite</a></li>
+			  <li><a href="anmeldungen.html">Anmeldungen</a></li>
+			  <li><a href="workshops.html">Workshops</a></li>
+			  <li><a href="#">Inhalte ändern</a>
+				<ul class="unterliste">
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 1</a></li> 
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 2</a></li>
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 3</a></li> 
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 4</a></li>
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 5</a></li> 
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 6</a></li>
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 7</a></li> 
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 8</a></li>
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 9</a></li> 
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 10</a></li>
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 11</a></li> 
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 12</a></li>
+					<li class="untermenue"><a href="changecontent.html">Workshoptitel 13</a></li>					
+					</ul>
+			  </li>
+			  <li><a href="mailing.html">Email versenden</a></li>
+			</ul>
+		</td>
+		
+		
+		<!-- formular -->
+		<td class="mittespalte">	
+		<h4>Inhalte verändern</h4>
+		<form action="" id="person">
+			<label class="h2" form="person">WorkshopleiterIn</label>
+			<input type="text" name="vorname" id="vorname" maxlength="50" size="50" >
+		 
+			<label for="zuname">Titel Workshop</label>  
+			<input type="text" name="zuname" id="zuname" maxlength="80" size="50"> 
+
+			<label for="zuname">Logline</label>  	
+			<textarea rows="5" cols="50"></textarea>
+			
+			<label for="zuname">Kurzintro</label>  
+			<textarea rows="7" cols="50"></textarea>	
+
+			<label for="zuname">Intro</label>  
+			<textarea rows="15" cols="50"></textarea>
+
+			<label for="zuname">CV WorkshopleiterIn</label>  
+			<textarea rows="15" cols="50"></textarea>
+			
+			<label for="zuname">Foto WorkshopleiterIn</label> 
+			<table>
+			<tr>
+				<td width="25vh"><button class="informular" type="upload">Foto hochladen</button>
+				<p class="anmerkung">
+				Bitte nur jpg oder png mit einer Grösse von 300x200px.
+				Dateigrösse ca 180kb. Danke!
+				</p>
+				
+				</td>
+				<td><img src="vorschau_person.jpg" alt="vorschau"></td>
+			</tr>
+			</table>
+			<hr>
+			<label class="h2" form="person">Name ModeratorIn</label>
+			<input type="text" name="vorname" id="vorname" maxlength="50" size="50" >
+			
+			<label for="zuname">CV ModeratoIn</label>  
+			<textarea rows="15" cols="50"></textarea>
+			<hr>
+			<button type="reset">Eingaben zurücksetzen</button>
+			<button type="submit">Eingaben speichern</button>
+			<br>
+			<br>
+		</form>
+		</td>
+		<td class="rechtespalte">
+		<h4 class="batchtitle">Event 1</h4> 
+		<label for="zuname">Überschrift</label> 
+		<input type="text" name="zuname" id="zuname" maxlength="80" size="50"> 
+		<label for="zuname">Jahr</label> 
+		<input type="text" name="zuname" id="zuname" maxlength="4" size="10"> 
+		<label for="zuname">Text</label> 
+		<textarea rows="7" cols="50"></textarea>
+		<label for="zuname">Embed Code</label> 
+		<textarea rows="2" cols="50"></textarea>
+		<label for="zuname">Foto hochladen</label> 
+		<table>
+		<tr>
+				<td width="25vh"><button class="informular" type="upload">Foto hochladen</button>
+				<p class="anmerkung">
+				Bitte nur jpg oder png mit einer Grösse von 300x200px.
+				Dateigrösse ca 180kb. Danke!
+				</p>
+				
+				</td>
+				<td><img src="vorschau_event.jpg" alt="vorschau"></td>
+		</tr>
+		</table>
+		<button type="reset">Event löschen</button>
+		<hr>
+		
+		<h4 class="batchtitle">Event 2</h4> 
+		<label for="zuname">Überschrift</label> 
+		<input type="text" name="zuname" id="zuname" maxlength="80" size="50"> 
+		<label for="zuname">Jahr</label> 
+		<input type="text" name="zuname" id="zuname" maxlength="4" size="10"> 
+		<label for="zuname">Text</label> 
+		<textarea rows="7" cols="50"></textarea>
+		<label for="zuname">Embed Code</label> 
+		<textarea rows="2" cols="50"></textarea>
+		<label for="zuname">Foto hochladen</label> 
+		<table>
+		<tr>
+				<td width="25vh"><button class="informular" type="upload">Foto hochladen</button>
+				<p class="anmerkung">
+				Bitte nur jpg oder png mit einer Grösse von 300x200px.
+				Dateigrösse ca 180kb. Danke!
+				</p>
+				
+				</td>
+				<td><img src="noimage.jpg" alt="vorschau"></td>
+		</tr>
+		</table>
+		<button type="reset">Event löschen</button>
+		<hr>
+		<button type="reset"> + Event hinzufügen</button>
+		</td>
+	  </tr>
+	</table>
+	</div>
+  </body>
+</html>
+

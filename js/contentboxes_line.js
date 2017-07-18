@@ -23,7 +23,7 @@ function init() {
 function animate() {
   requestAnimationFrame(animate);
 
-  content_line_pos();
+  convert_pos_to_3d();
 
   renderer.render(scene, camera);
 }

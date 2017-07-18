@@ -2,6 +2,7 @@
 
 var contentboxes = 0;
 
+
 //
 var renderer, scene, camera, controls, stats;
 var nEnd = 0, nMax, nStep = 90; 
@@ -47,17 +48,6 @@ function noise_object() {
 
 // contentboxes stuff
 var content_group = new THREE.Group();
-var contentboxes_first_setup = 1;
-function contentboxes_obj_setup() {
-	if ( contentboxes_first_setup == 1 ) {
-		//add_sphere("white");
-		content_sObj = particles[0];
-		console.log(content_sObj.position);
-		// content_line_draw(sObj_pos,dObj_pos,color)
-		content_line_draw(content_sObj.position,content_dObj_pos,"white");
-		contentboxes_first_setup = 0;
-	}
-}
 
 //
 
@@ -88,6 +78,7 @@ function init() {
 	controls.minDistance = 5;
 	controls.maxDistance = 20;
 	// ambient
+
 	scene.add( new THREE.AmbientLight( 0xffffff, 0.4 ) );
 	
 	// light
@@ -101,11 +92,6 @@ function init() {
 	stats.showPanel( 1 );
 	container.appendChild( stats.dom );			
 
-	// content stuff
-
-	if ( contentboxes == 1 ) {
-		contentboxes_obj_setup();
-	}
 
 	//
 
@@ -159,6 +145,9 @@ function init() {
 		var next_x = 0;
 		var index = 0;
 		var positions = new Float32Array( 12 * 3 ); // 3 vertices per point		
+
+		var line_particles = [];
+
 		par_geometry.push(new THREE.Geometry());
 		line_geometry.push(new THREE.BufferGeometry());
 		line_geometry[h].addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
@@ -186,7 +175,7 @@ function init() {
 
 
 			scene.add( particle );
-			particles.push(particle);
+			line_particles.push(particle);
 
 			par_geometry[h].vertices.push( particle.position );
 			par_geometry[h].name = "linie";
@@ -196,12 +185,16 @@ function init() {
 			//console.log(noise_objects[i]);
 
 		}
-	
+		
+		particles.push(line_particles);
 
-    line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: rgb[h], opacity: 1, linewidth: 2} ) ));
-	line[h].name = "test"+h.toString();
-    scene.add( line[h] );
+
+    	line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: rgb[h], opacity: 1, linewidth: 2} ) ));
+		line[h].name = "test"+h.toString();
+    	scene.add( line[h] );
 	}
+
+	get_workshop_contentboxes(1);
 	
 	
 }
@@ -237,9 +230,10 @@ function animate() {
 
 	requestAnimationFrame(animate);
 
-	if ( contentboxes == 1 ) {
-		content_line_pos();
-	}
+	for (var i = 0; i < workshops[current_workshop_id].boxes.length; i++){
+		console.log("change box lines");
+		workshops[current_workshop_id].boxes[i].line.geometry.verticesNeedsUpdate = true; 
+	}	
 
   	renderer.render(scene, camera);
 	stats.update();

@@ -131,9 +131,7 @@ function contentbox_create(j, num, content,color) {
 
   //console.log("Inner HTML: " + contentbox.innerHTML);
 
-  var currhandle = $("#" + handle.id );
-  var elemid = $(currhandle).attr("id");
-  var handle_pos_rel = track_pos_handle(currhandle);
+  var handle_pos_rel = track_pos_handle(handle);
 
   handle_pos.x = x - handle_pos_rel.x + 14;
   handle_pos.y = y + handle_pos_rel.y + 14;

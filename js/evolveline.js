@@ -269,7 +269,7 @@ function animate() {
 		for (var i = 0; i < current_workshop.boxes.length; i++){
 			//console.log("change box lines");
 			var box = current_workshop.boxes[i];
-			//update_box_position(box);
+			update_box_position(box);
 		}
 	}
 	

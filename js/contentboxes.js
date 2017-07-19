@@ -18,8 +18,8 @@ function workshop_obj(id) {
 
 function box_object(id, s_obj, content,color) {
   this.id = id;
-  this.pos = new THREE.Vector3(0,0,0);
-  this.pos2d = new THREE.Vector3(0,0,0);
+  this.position = {"x":0, "y":0, "z":0};
+  this.pos2d = {"x":0, "y":0, "z":0};
   this.s_obj = s_obj;
   this.line  = null;
   this.content = content;
@@ -34,15 +34,18 @@ function jsontocontents(data, j) {
 
 function update_box_position(box) {
   //console.log(box.pos2d);
-  var pos2d = box.pos2d;
+  var pos2d = {"x":0, "y":0, "z":0};
+  pos2d.x = box.pos2d.x;
+  pos2d.y = box.pos2d.y;
+  pos2d.z = box.pos2d.z;
   var pos = convert_pos_to_3d(pos2d);
   //console.log(pos);
 
   if ( pos != null) {
     //console.log(pos);
-    box.pos.x = pos.x;
-    box.pos.y = pos.y;
-    box.pos.z = pos.z;
+    box.position.x = pos.x;
+    box.position.y = pos.y;
+    box.position.z = pos.z;
   }
   if ( box.line != null) {
     //console.log("verticesNeedUpdate");
@@ -104,8 +107,6 @@ function contentbox_create(j, num, content,color) {
         handle_pos.z = box_pos.z - handle_pos_rel.z;
         //console.log( handle_pos );
 
-        var pos_2d = new THREE.Vector3(handle_pos.x, handle_pos.y, 0);
-
         var regex = /\d+/g;
 
         var id_num = parseInt(id.match(regex), 10);
@@ -113,7 +114,9 @@ function contentbox_create(j, num, content,color) {
         var box_number = id_num % 100;
 
         var box = workshops[workshop_id].boxes[box_number];
-        box.pos2d = pos_2d;
+        box.pos2d.x = handle_pos.x;
+        box.pos2d.y = handle_pos.y;
+        box.pos2d.z = handle_pos.z;
 
         update_box_position(box);
       }
@@ -138,15 +141,14 @@ function contentbox_create(j, num, content,color) {
 
   var pos2d = new THREE.Vector3(handle_pos.x, handle_pos.y, 0);
 
-  box.pos2d = pos2d;
+  box.pos2d.x = handle_pos.x;
+  box.pos2d.y = handle_pos.y;
+  box.pos2d.z = handle_pos.z;
 
   update_box_position(box);
-  box.line = content_line_draw(box.s_obj.position, box.pos,"white");
+  box.line = content_line_draw(box.s_obj.position, box.position,"white");
 
   current_lines_group.add( box.line );
-
-  //console.log(pos);
-  //console.log(box);
 }
 
 // iterate over available content to create boxes for them

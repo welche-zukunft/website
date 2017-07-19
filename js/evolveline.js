@@ -200,6 +200,7 @@ function init() {
 		line[h].name = "test"+h.toString();
 		scene.add( line[h] );
 	}
+	workshopdot_deselect(timelineCount);
 	window.addEventListener( 'resize', onWindowResize, false );
 	// contentboxes
         // ???
@@ -207,30 +208,43 @@ function init() {
 }
 
 
-	function swapworkshop(num){
-		//console.log(num);
-		for(var i = 0; i < timelineCount; i++){
-
-			if(i == num){
-				scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i].replace(/#/g , "0x"));				scene.getObjectByName("test"+i.toString()).material.opacity = 1.;
-				scene.getObjectByName("test"+i.toString()).material.transparent = false;
-				par_mat[i].color.setHex(rgb[i].replace(/#/g , "0x"));
-				for(var j = 0; j < particles[i].length; j++){
-					particles[i][j].scale.set( 2., 2., 2. );
-				}
+function swapworkshop(num){
+	//console.log(num);
+	for(var i = 0; i < timelineCount; i++){
+		if(i == num){
+			scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i].replace(/#/g , "0x"));				
+			scene.getObjectByName("test"+i.toString()).material.opacity = 1.;
+			scene.getObjectByName("test"+i.toString()).material.transparent = false;
+			par_mat[i].color.setHex(rgb[i].replace(/#/g , "0x"));
+			for(var j = 0; j < particles[i].length; j++){
+				particles[i][j].scale.set( 2., 2., 2. );
 			}
-			else {
-				scene.getObjectByName("test"+i.toString()).material.color.setHex(0xd3d3d3);
-				scene.getObjectByName("test"+i.toString()).material.opacity = 0.3;
-				scene.getObjectByName("test"+i.toString()).material.transparent = true;
-				par_mat[i].color.setHex( 0xd3d3d3);
-				for(var j = 0; j < particles[i].length; j++){
-					particles[i][j].scale.set( 1., 1., 1. );
-				}
-			}
-			
 		}
+		else {
+			scene.getObjectByName("test"+i.toString()).material.color.setHex(0xd3d3d3);
+			scene.getObjectByName("test"+i.toString()).material.opacity = 0.3;
+			scene.getObjectByName("test"+i.toString()).material.transparent = true;
+			par_mat[i].color.setHex( 0xd3d3d3);
+			for(var j = 0; j < particles[i].length; j++){
+				particles[i][j].scale.set( 1., 1., 1. );
+				}
+			}	
 	}
+}
+	
+function deselectworkshop(){
+	for(var i = 0; i < timelineCount; i++){
+			scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i].replace(/#/g , "0x"));				
+			scene.getObjectByName("test"+i.toString()).material.opacity = 1.;
+			scene.getObjectByName("test"+i.toString()).material.transparent = false;
+			par_mat[i].color.setHex(rgb[i].replace(/#/g , "0x"));
+			for(var j = 0; j < particles[i].length; j++){
+				particles[i][j].scale.set( 1., 1., 1. );
+			}
+		}
+		workshop_delete_all_contents();
+	
+}
 
 
 function animate() {

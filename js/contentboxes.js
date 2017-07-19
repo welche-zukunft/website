@@ -15,13 +15,14 @@ function workshop_obj(id) {
   this.boxes = [];
 }
 
-function box_object(id, s_obj, content) {
+function box_object(id, s_obj, content,color) {
   this.id = id;
   this.pos = new THREE.Vector3(0,0,0);
   this.pos2d = new THREE.Vector3(0,0,0);
   this.s_obj = s_obj;
   this.line  = null;
   this.content = content;
+  this.color = color;
 }
 
 function jsontocontents(data, j) {
@@ -48,13 +49,13 @@ function update_box_position(box) {
   };
 }
 
-function contentbox_create(j, num, content) {
+function contentbox_create(j, num, content,color) {
   var handle_pos = new THREE.Vector3(0,0,0);
 
   // console.log("Content : " + content);
   // console.log("Create Box " + num + " for workshop " + j);
 
-  var box = new box_object(i, particles[j][3], content);
+  var box = new box_object(i, particles[j][3], content,color);
   var box_id = 100 * j + num;
 
   workshops[j].boxes[num] = box;
@@ -63,6 +64,7 @@ function contentbox_create(j, num, content) {
   var dragbox = document.createElement( 'div' );
   var contentbox = document.createElement( 'div' );
   var handle = document.createElement( 'span' );
+  $(handle).css('background', color, 'important');
   // give them unique ids
   dragbox.id = 'dragbox_' + box_id;
   contentbox.id = 'contentbox_' + box_id;
@@ -164,7 +166,7 @@ function workshop_create_all_contents(j) {
     //console.log("CONTENT LENGTH : " + contents.contents.length);
 
     for (i = 0; i < contents.contents.length; i++) {
-      contentbox_create(j, i, contents.contents[i]);
+      contentbox_create(j, i, contents.contents[i],rgb[j]);
     }
   });
 }

@@ -6,6 +6,7 @@ function color_theme_set(color) {
 }
 
 function workshopdot_create(num , color) {
+	console.log(color);
   // handle
   var handle = document.createElement( 'span' );
   // give them unique ids

@@ -1,10 +1,5 @@
 var current_workshop_id = 0;
 
-function color_theme_set(color) {
-  var contentbox_handles = $($( "div.dragbox > span.handle" ).get());
-  contentbox_handles.css('background', color);
-}
-
 function workshopdot_create(num , color) {
 	console.log(color);
   // handle
@@ -22,7 +17,6 @@ function workshopdot_create(num , color) {
     //contentboxes_get();
     get_workshop_contentboxes(handle.id);
     current_workshop_id = handle.id;
-    color_theme_set(color);
   });
 
   // add handle to div "handle_container"
@@ -45,7 +39,6 @@ function workshopdot_deselect(num){
     //contentboxes_get();
     //get_workshop_contentboxes(handle.id);
     current_workshop_id = 0;
-    //color_theme_set(color);
   });
 
   // add handle to div "handle_container"

@@ -202,9 +202,6 @@ function init() {
 	}
 	workshopdot_deselect(timelineCount);
 	window.addEventListener( 'resize', onWindowResize, false );
-	// contentboxes
-        // ???
-	get_workshop_contentboxes(1);
 }
 
 

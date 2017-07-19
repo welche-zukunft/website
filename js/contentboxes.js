@@ -9,6 +9,7 @@ var workshops = [];
 // array of array of contentboxes
 var all_boxes = [];
 var all_contents = [];
+var current_lines_group = new THREE.Group();
 
 function workshop_obj(id) {
   this.id = id;
@@ -144,7 +145,7 @@ function contentbox_create(j, num, content,color) {
   update_box_position(box);
   box.line = content_line_draw(box.s_obj.position, box.pos,"white");
 
-  scene.add(box.line);
+  current_lines_group.add( box.line );
 
   //console.log(pos);
   //console.log(box);
@@ -153,6 +154,8 @@ function contentbox_create(j, num, content,color) {
 // iterate over available content to create boxes for them
 function workshop_create_all_contents(j) {
   var contents;
+  // clear group of lines
+  current_lines_group = new THREE.Group();
 
   $.get( url, function(data){
     //console.log(data);
@@ -169,6 +172,7 @@ function workshop_create_all_contents(j) {
       contentbox_create(j, i, contents.contents[i],rgb[j]);
     }
   });
+  scene.add( current_lines_group );
 }
 
 function workshop_delete_all_contents() {

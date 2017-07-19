@@ -232,8 +232,8 @@
 			}
 			.logos img{
 				margin-right: 30px;
-				width: 40%;
-				max-width:191px;
+				width: 100%;
+				max-width:230px;
 			}
 			
 		</style>
@@ -269,14 +269,15 @@
 		<hr>
 		<p><span class=italic>Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</span></p>
 		<div class=logos>
-		<img src="image0.png" alt="logo">
-		<img src="image1.png" alt="logo">
-		<img src="image2.png" alt="logo">
+		<a href="https://www.deutschestheater.de"><img src="image0.png" alt="logo"></a>
+		<a href="http://humboldtforum.com/de-DE/"><img src="image2.png" alt="logo"></a>
+		<a href="https://www.bundesregierung.de/Webs/Breg/DE/Bundesregierung/BeauftragtefuerKulturundMedien/beauftragte-fuer-kultur-und-medien.html"><img src="image1.png" alt="logo"></a>
 		</div>
-		<p>Medienpartner:</p>
+		<p><span class=italic>Medienpartner:</span></p>
 		<div class=logos>
-		<img src="image3.png" alt="logo">
+		<a href="http://www.deutschlandfunkkultur.de"><img src="image3.png" alt="logo"></a>
 		</div>
+		<br>
 		<hr>
 		
 		

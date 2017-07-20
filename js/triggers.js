@@ -1,3 +1,5 @@
+var active = false;
+
 // throttle function, enforces a minimum time interval
 function throttle(fn, interval) {
   var lastCall, timeoutId;
@@ -24,6 +26,7 @@ function select_active() {
   var hidable_dis = $($(".scroll-up").get());
   // allow 100px of tolerance
   if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
+    active = true;
     $("#topmenu").detach().appendTo("#container");
     $("#signe_div").detach().appendTo("#container");
     $("#anmeldung_link").detach().appendTo("#container");
@@ -40,6 +43,7 @@ function select_active() {
       $current.removeClass('nodisplay');
     });
   } else {
+    active = false;
     $("#topmenu").detach().appendTo("body");
     $("#signe_div").detach().appendTo("body");
     $("#anmeldung_link").detach().appendTo("body");

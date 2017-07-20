@@ -13,11 +13,7 @@ function workshopdot_create(num , color) {
   $(handle).attr("data-tooltip","Vorname,Name - Workshopname");
   $(handle).attr("data-tooltip-position","right");
   $(handle).click(function() {
-    scene.remove( current_lines_group );
     swapworkshop(handle.id);
-    //contentboxes_get();
-    get_workshop_contentboxes(handle.id);
-    current_workshop_id = handle.id;
   });
 
   // add handle to div "handle_container"
@@ -36,10 +32,8 @@ function workshopdot_deselect(num){
   $(handle).attr("data-tooltip","alle Workshops anzeigen");
   $(handle).attr("data-tooltip-position","right");
   $(handle).click(function() {
-    scene.remove( current_lines_group );
+    flush_lines();
     deselectworkshop();
-    //contentboxes_get();
-    //get_workshop_contentboxes(handle.id);
     current_workshop_id = 0;
   });
 

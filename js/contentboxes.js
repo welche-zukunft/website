@@ -151,12 +151,18 @@ function contentbox_create(j, num, content,color) {
   current_lines_group.add( box.line );
 }
 
+function flush_lines() {
+  for (i = current_lines_group.children.length - 1; i >= 0; i--) {
+    current_lines_group.remove(current_lines_group.children[i]);
+  }
+}
+
 // iterate over available content to create boxes for them
 function workshop_create_all_contents(j) {
   var contents;
-  // clear group of lines
-  current_lines_group = new THREE.Group();
-
+  // remove bontentboxes and lines here and also in again in get, cause async
+  workshop_delete_all_contents();
+  flush_lines();
   $.get( url, function(data){
     //console.log(data);
     contents = JSON.parse(JSON.stringify(data));
@@ -167,12 +173,16 @@ function workshop_create_all_contents(j) {
     workshops[j] = workshop;
 
     //console.log("CONTENT LENGTH : " + contents.contents.length);
-
+    workshop_delete_all_contents();
+    // clear group of lines
+    //current_lines_group = new THREE.Group();
+    flush_lines();
     for (i = 0; i < contents.contents.length; i++) {
       contentbox_create(j, i, contents.contents[i],rgb[j]);
     }
+    scene.add( current_lines_group );
+    //console.log(current_lines_group.children.length);
   });
-  scene.add( current_lines_group );
 }
 
 function workshop_delete_all_contents() {
@@ -199,14 +209,7 @@ function track_pos_handle(elem) {
 }
 
 function get_workshop_contentboxes(j) {
-  //contentboxes = 0;
-  //scene.remove(content_group);
-  //contentbox_delete_all();
-  //contentbox_create_all();
-  //contentboxes_obj_setup();
-  //scene.add(content_group);
-  workshop_delete_all_contents();
+  current_workshop_id = j;
   workshop_create_all_contents(j);
-  contentboxes = 1;
 }
 

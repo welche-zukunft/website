@@ -227,6 +227,7 @@ function swapworkshop(num){
 				}
 			}	
 	}
+	get_workshop_contentboxes(num);
 }
 	
 function deselectworkshop(){

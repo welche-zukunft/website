@@ -1,7 +1,7 @@
 var current_workshop_id = 0;
 
 function workshopdot_create(num , color) {
-	console.log(color);
+	//console.log(color);
   // handle
   var handle = document.createElement( 'span' );
   // give them unique ids

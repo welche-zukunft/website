@@ -124,7 +124,7 @@ function init() {
 
 	// add image + objects
 	// instantiate a loader
-	var loader = new THREE.TextureLoader();
+	/*var loader = new THREE.TextureLoader();
 	var pics = ["timelines/numbers_web.jpg","timelines/oel_web.jpg"];
 	var TEXmaterial = [];
 	var plane = [];
@@ -144,7 +144,7 @@ function init() {
 		plane[i].rotation.y = Math.PI / 2;
 		scene.add(plane[i]);
 
-	}
+	}*/
  
 
 	//	create lines
@@ -201,6 +201,7 @@ function init() {
 		scene.add( line[h] );
 	}
 	workshopdot_deselect(timelineCount);
+	createNumberWalls();
 	window.addEventListener( 'resize', onWindowResize, false );
 }
 
@@ -262,6 +263,8 @@ function animate() {
 	
 	requestAnimationFrame(animate);
 
+	
+	changeuniforms();
 	// contentboxes
 	// ???
 	var current_workshop = workshops[current_workshop_id];

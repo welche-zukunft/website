@@ -36,8 +36,14 @@ div#handle_container span {
 }
 #anmeldung_link {
   position: fixed;
-  bottom: 0;
+  bottom: 1.7em;
   right: 0;
+}
+#workshopmenu {
+	position:fixed;
+	bottom:0;
+	right:0;
+	
 }
 #signe_div, #anmeldung_link {
   max-width: 45%;
@@ -94,8 +100,8 @@ div.vert-center {
 .foreground a:hover {
   border-bottom: solid thin;
 }
-#topmenu, #anmeldung_link {
-  padding: 10px;
+#topmenu, #anmeldung_link, #workshopmenu{
+  padding: 0.3em;
   font-size: 1.7em;
   background: white;
   color: black;

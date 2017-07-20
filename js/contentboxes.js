@@ -151,18 +151,18 @@ function contentbox_create(j, num, content,color) {
   current_lines_group.add( box.line );
 }
 
-function flush_lines() {
+function flush_boxes() {
   for (i = current_lines_group.children.length - 1; i >= 0; i--) {
     current_lines_group.remove(current_lines_group.children[i]);
   }
+  workshop_delete_all_contents();
 }
 
 // iterate over available content to create boxes for them
 function workshop_create_all_contents(j) {
   var contents;
   // remove bontentboxes and lines here and also in again in get, cause async
-  workshop_delete_all_contents();
-  flush_lines();
+  flush_boxes();
   $.get( url, function(data){
     //console.log(data);
     contents = JSON.parse(JSON.stringify(data));
@@ -173,10 +173,8 @@ function workshop_create_all_contents(j) {
     workshops[j] = workshop;
 
     //console.log("CONTENT LENGTH : " + contents.contents.length);
-    workshop_delete_all_contents();
-    // clear group of lines
     //current_lines_group = new THREE.Group();
-    flush_lines();
+    flush_boxes();
     for (i = 0; i < contents.contents.length; i++) {
       contentbox_create(j, i, contents.contents[i],rgb[j]);
     }

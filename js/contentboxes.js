@@ -163,7 +163,7 @@ function workshop_create_all_contents(j) {
   var contents;
   // remove bontentboxes and lines here and also in again in get, cause async
   flush_boxes();
-  $.get( url, function(data){
+  $.getJSON( url, function(data){
     //console.log(data);
     contents = JSON.parse(JSON.stringify(data));
     all_contents.push(contents);

@@ -1,8 +1,5 @@
-//var contents_json = '{ "date":"123", "contents":[ "arma", "virumque", "cano" ] }';
-
 var url = "https://0101010.one/cgi-bin/cgi-json.sh";
-
-//$.get( url, jsontocontents );
+//var url = "./contents/workshop_test.json";
 
 var contents;
 var workshops = [];

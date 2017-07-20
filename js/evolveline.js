@@ -110,7 +110,7 @@ function init() {
 		geometries.push(new THREE.BoxGeometry(boxwidth, boxheight, boxdepth));
 		var geo = new THREE.EdgesGeometry(geometries[i]);
 	
-		var mat = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 4} );
+		var mat = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 2} );
 		
 		var wireframe = new THREE.LineSegments( geo, mat );
 		wireframe.material.opacity = 0.25;

@@ -1,5 +1,6 @@
 var url = "https://0101010.one/cgi-bin/cgi-json.sh";
 //var url = "./contents/workshop_test.json";
+//var url = "./contents/small_test.json";
 
 var contents;
 var workshops = [];

@@ -88,6 +88,8 @@ label.burger-ws {
 
 #workshopmenu {
   max-width: 100%;
+  max-height: calc( 100vh - 50px );
+  overflow-y: hidden;
   border-top-left-radius: 25px;
   padding: 0;
   text-align: initial;
@@ -96,6 +98,8 @@ label.burger-ws {
 
 #workshopmenu .navigation {
   max-width: 100%;
+  /*max-height: calc( 100vh - 50px - 80px );*/
+  overflow-y: auto;
   font-size: initial;
 }
 
@@ -113,8 +117,14 @@ label.burger-ws {
   float: left;
 }
 
-#ws_content_span {
-  display: block;
+.ws_content p {
+  margin: 1ch;
+}
+
+#ws_info p {
+}
+#ws_vita p, #ws_intro p {
+  font-size: smaller;
 }
 
 #ws_image, #ws_content_span {

@@ -35,6 +35,7 @@ div#handle_container span {
   top: 0;
 }
 #bottom_menus {
+  max-height: 100%;
   position: fixed;
   bottom: 0;
   right: 0;

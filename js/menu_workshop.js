@@ -16,12 +16,36 @@ function update_workshop_menu(j) {
 
   // info
   var menu_content = $("#ws_menu_content");
-  menu_content.html('<span id="ws_content_span">' + info + '</span>');
+  menu_content.html(
+    '<div id="ws_info" class="ws_content">'
+    + '<p>'
+    + info
+    + '</p>'
+    + '</div>'
+  );
   // title
   var menu_title = $("#ws_menu_title");
   menu_title.html(title);
   // image
-  menu_content.prepend('<img id="ws_image" src="./images/ws/' + pic + '" />')
+  menu_content.append(
+    '<div id="ws_vita" class="ws_content">'
+    + '<img id="ws_image" src="./images/ws/'
+    + pic
+    + '" />'
+    + '<p>'
+    + vita
+    + '</p>'
+    + '</div>'
+  );
+  menu_content.append(
+    '<div id="ws_intro" class="ws_content">'
+    + '<p>'
+    + intro_short
+    + '</p>'
+    + '<p>'
+    + intro_long
+    + '</p>'
+  );
 
 }
 

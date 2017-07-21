@@ -1,5 +1,6 @@
-var url = "https://0101010.one/cgi-bin/cgi-json.sh";
+//var url = "https://0101010.one/cgi-bin/cgi-json.sh";
 //var url = "./contents/workshop_test.json";
+var url = "./contents/small_test.json";
 
 var contents;
 var workshops = [];
@@ -56,7 +57,8 @@ function contentbox_create(j, num, content,color) {
   // console.log("Content : " + content);
   // console.log("Create Box " + num + " for workshop " + j);
 
-  var box = new box_object(i, particles[j][num], content,color);
+
+  var box = new box_object(i, particles[j][num % 12], content,color);
   var box_id = 100 * j + num;
 
   workshops[j].boxes[num] = box;
@@ -75,8 +77,8 @@ function contentbox_create(j, num, content,color) {
   contentbox.className += " contentbox";
   handle.className += " handle";
   // where to spwan them
-  var x = 200;
-  var y = 50 + 50 * num;
+  var x = 50 + (num + 1) * 75 % (innerWidth - 200);
+  var y = 50 + (num + 1) * 50 % (innerHeight * 0.2);
   dragbox.style.left = x + 'px';
   dragbox.style.top = y + 'px';
   // make them draggable

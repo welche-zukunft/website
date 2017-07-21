@@ -31,12 +31,12 @@
 			<ul>
 				<li><a href="#info">Info</a></li>
 				<li><a href="#workshops">Workshops</a>
-					<ul>
+					<!--<ul>
 						<li><a href="#uebersicht">Übersicht</a>
 						<li><a href="#inhalte">Inhalte</a>
-					</ul>
+					</ul>-->
 				</li>
-				<li><a href="#anmeldung">Anmeldung</a></li>
+				<li><a class="pseudo anmeldung">Anmeldung</a></li>
 				<li><a href="#team">Team</a></li>
 				<li><a href="#kontakt">Kontakt</a></li>
 			</ul>
@@ -126,18 +126,21 @@
 		</section>
 		</article>
 
+		<section id="container_section">
 		<div class="back" id="container">
-		<a href="#anmeldung">
+		<a href="#workshops">
 		<div class="scroll-up nodisplay">
 			<span class="arrow"><span class="left"></span><span class="right"></span></span>
 		</div><!-- scroll-up -->
 		</a>
-		
+
 		<div class="handle_container" class="foreground"></div>
-		</div>
+		</div> <!-- container -->
+		</section> <!-- container_section -->
+
                 <div id="bottom_menus" class="foreground">
                 <div id="anmeldung_link">
-                        <a class="pseudo">&lt;&lt; zur Anmeldung</a>
+                        <a class="pseudo anmeldung">&lt;&lt; zur Anmeldung</a>
                 </div><!-- anmeldung_link -->
                 <div id="workshopmenu">
                         <input class="burger-ws-check" id="burger-ws-check" type="checkbox">
@@ -146,7 +149,32 @@
                         <div id="ws_menu_content" class="navigation paper"></div>
                 </div><!-- workshopmenu -->
                 </div><!-- bottom_menus -->
-		<!-- container -->
+
+		<div class="after_container">
+                <section id="team"> <div class="flex">
+                <div class="paper">
+			<h2>Team</h2>
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </div><!-- paper -->
+                </div><!-- flex --> </section><!-- team -->
+
+                <section id="kontakt"> <div class="flex">
+                <div class="paper">
+			<h2>Kontakt</h2>
+                <p><span class=bold>Pressekontakt:</span><br>
+                Katharina Wenzel <br>
+                Leitung Presse und Kommunikation <br>
+                030-28441234<br>
+                <a href="mailto:wenzel@deutschestheater.de">wenzel@deutschestheater.de</a><br>
+                In den Theaterferien zwischen 19. Juli und 28. August:<br>
+                Luisa Männel <br>
+                <a href="mailto:maennel@welchezukunft.org">maennel@welchezukunft.org</a><br></p>
+                <br><br>
+                <p ><a class=impressum href="impressum.html">Impressum</a></p>
+                </div><!-- paper -->
+                </div><!-- flex --> </section><!-- kontakt -->
+                </div><!-- after_container -->
+
 		</main>
 
                 <section id="anmeldung"> <div class="flex">
@@ -173,17 +201,6 @@ r bitte ihren Namen und ihre Mailadresse ein.</label>
                         <button type="submit">Newsletter abonnieren</button>
                         <label class="result" style=""></label>
                 </form>
-
-                <p><span class=bold>Pressekontakt:</span><br>
-                Katharina Wenzel <br>
-                Leitung Presse und Kommunikation <br>
-                030-28441234<br>
-                <a href="mailto:wenzel@deutschestheater.de">wenzel@deutschestheater.de</a><br>
-                In den Theaterferien zwischen 19. Juli und 28. August:<br>
-                Luisa Männel <br>
-                <a href="mailto:maennel@welchezukunft.org">maennel@welchezukunft.org</a><br></p>
-                <br><br>
-                <p ><a class=impressum href="impressum.html">Impressum</a></p>
                 </div>
                 </div><!-- paper -->
                 </div><!-- flex -->

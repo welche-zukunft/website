@@ -1,5 +1,9 @@
 /* structure */
 
+section#container_section {
+  height: 150vh;
+}
+
 #workshopmenu div.handle_container {
 }
 #container > .handle_container {
@@ -68,7 +72,7 @@ div#container {
 }
 main {
   background: transparent;
-  padding-bottom: 100vh;
+  /*padding-bottom: 100vh;*/
 }
 article {
 }
@@ -146,15 +150,18 @@ p.center {
 a {
   color: #9dbaa1;
 }
-article {
+article, div.after_container {
   max-width: 80ch;
 }
-article, div.paper {
+article, div.paper, div.after_container {
   margin-left: auto;
   margin-right: auto;
 }
 section {
   margin-bottom: 20vh;
+}
+section:last-child {
+  margin-bottom: 0;
 }
 div.flex {
   min-height: 100vh;

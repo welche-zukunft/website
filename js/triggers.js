@@ -25,8 +25,19 @@ function select_active() {
   hidable_vis.push( $($(".dragbox").get()) );
   var hidable_dis = $($(".scroll-up").get());
   hidable_dis.push( $($("#bottom_menus").get()) );
+
+  var scrollPosition = $(window).scrollTop();
+  var toleratePosition = scrollPosition + 80;
+
+  targetSection = $("#container_section");
+  var sectionTop = targetSection.offset().top;
+  var sectionBottom = sectionTop + targetSection.height();
+
   // allow 100px of tolerance
-  if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
+  //if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
+
+  // test whether we are on a specific section instead
+  if (toleratePosition >= sectionTop && toleratePosition <= sectionBottom ) {
     active = true;
     $("#topmenu").detach().appendTo("#container");
     $("#signe_div").detach().appendTo("#container");

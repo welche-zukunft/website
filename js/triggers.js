@@ -24,6 +24,7 @@ function select_active() {
   var hidable_vis = $($(".handle").get());
   hidable_vis.push( $($(".dragbox").get()) );
   var hidable_dis = $($(".scroll-up").get());
+  hidable_dis.push( $($("#bottom_menus").get()) );
   // allow 100px of tolerance
   if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
     active = true;
@@ -39,7 +40,7 @@ function select_active() {
     });
     hidable_dis.each(function() {
       var $current = $(this);
-      $current.addClass('display');
+      //$current.addClass('display');
       $current.removeClass('nodisplay');
     });
   } else {
@@ -57,7 +58,7 @@ function select_active() {
     hidable_dis.each(function() {
       var $current = $(this);
       $current.addClass('nodisplay');
-      $current.removeClass('display');
+      //$current.removeClass('display');
     });
   }
 }

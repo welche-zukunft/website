@@ -212,35 +212,6 @@ div.scroll-up {
 
 /* end style */
 
-/* activity */
-
-.handle, .dragbox {
-  z-index: 90;
-}
-.back {
-  z-index: -1;
-}
-.front {
-  z-index: 1;
-}
-.hidden {
-  visibility: hidden;
-}
-.nothidden {
-  visibility: visible;
-}
-.display {
-  display: block;
-}
-.nodisplay {
-  display: none;
-}
-[data-tooltip] {
-    display: inline-block;
-    position: relative;
-    cursor: help;
-    padding: 0px;
-}
 /* Tooltip styling */
 [data-tooltip]:before {
     content: attr(data-tooltip);
@@ -283,4 +254,3 @@ div.scroll-up {
     display: block;
     z-index: 1;
 }
-/* end activity */

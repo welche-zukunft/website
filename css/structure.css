@@ -34,18 +34,24 @@ div#handle_container span {
   position: fixed;
   top: 0;
 }
-#anmeldung_link {
+#bottom_menus {
   position: fixed;
-  bottom: 1.7em;
+  bottom: 0;
   right: 0;
+  text-align: right;
+  display: inline-block;
 }
-#workshopmenu {
-	position:fixed;
-	bottom:0;
-	right:0;
-	
+#anmeldung_link, #workshopmenu {
+  display: block;
 }
-#signe_div, #anmeldung_link {
+#anmeldung_link {
+  background: white;
+  margin-left: auto;
+  margin-right: 0;
+  display: inline-block;
+  max-width: calc( 100% - 40px );
+}
+#signe_div, #bottom_menus {
   max-width: 45%;
 }
 .foreground {
@@ -142,15 +148,15 @@ div.flex {
   display: flex;
   align-items: center;
 }
-div.paper {
-  background: white;
+article div.paper {
   padding: 2ch;
   border-radius: 25px;
 }
 div.paper {
+  background: white;
   opacity: 0.9;
 }
-#topmenu, #anmeldung_link {
+#topmenu, #anmeldung_link, #workshopmenu {
   opacity: 0.9;
 }
 #topmenu {
@@ -160,7 +166,7 @@ div.paper {
   background: -moz-linear-gradient(right, #9ebba2, #e3969b); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #9ebba2 , #e3969b); /* Standard syntax */
 }
-#anmeldung_link {
+#workshopmenu {
   background: white; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #9ebba2 , #e3969b); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #9ebba2, #e3969b); /* For Opera 11.1 to 12.0 */

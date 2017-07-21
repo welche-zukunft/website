@@ -1,21 +1,21 @@
 // example by https://codepen.io/eduardoboucas/
-.burger {
+.burger-ws {
   display: inline-block;
   border: 0;
   background: none;
   outline: 0;
   padding: 0;
   cursor: pointer;
-  border-bottom: 4px solid currentColor;
+  /*border-bottom: 4px solid currentColor;*/
   width: 28px;
   transition: border-bottom 1s ease-in-out;
   -webkit-transition: border-bottom 1s ease-in-out;
 }
-.burger::-moz-focus-inner {
+.burger-ws::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
-.burger:before {
+.burger-ws:before {
   content: "";
   display: block;
   border-bottom: 4px solid currentColor;
@@ -26,7 +26,7 @@
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
-.burger:after {
+.burger-ws:after {
   content: "";
   display: block;
   border-bottom: 4px solid currentColor;
@@ -38,25 +38,25 @@
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
 
-label.burger {
+label.burger-ws {
   width: 28px;
   display: block;
   float: left;
   margin: 10px;
-  margin-left: 0;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
-.burger-check {
+.burger-ws-check {
   display: none;
 }
 
-.burger-check:checked ~ .burger {
+.burger-ws-check:checked ~ .burger-ws {
   border-bottom: 4px solid transparent;
   transition: border-bottom 0.8s ease-in-out;
   -webkit-transition: border-bottom 0.8s ease-in-out;
 }
-.burger-check:checked ~ .burger:before {
+.burger-ws-check:checked ~ .burger-ws:before {
   transform: rotate(-405deg) translateY(1px) translateX(-3px);
   -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
   transition: -webkit-transform 0.5s ease-in-out;
@@ -64,7 +64,7 @@ label.burger {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
-.burger-check:checked ~ .burger:after {
+.burger-ws-check:checked ~ .burger-ws:after {
   transform: rotate(405deg) translateY(-4px) translateX(-5px);
   -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
   transition: -webkit-transform 0.5s ease-in-out;
@@ -80,36 +80,43 @@ label.burger {
   transition: max-height 0.5s ease-in-out;
 }
 
-.burger-check:checked ~ .navigation {
+.burger-ws-check:checked ~ .navigation {
   max-height: 500px;
   -webkit-transition: max-height 0.5s ease-in-out;
   transition: max-height 0.5s ease-in-out;
 }
 
-ul {
-  margin: 0;
-  padding-left: 2ch;
-  list-style-type: disc;
-}
-
-nav > ul {
-  margin-top: 0.5ch;
-}
-
-li {
-}
-
-nav {
-  font-size: large;
-  margin-left: 38px;
-  padding-bottom: 0.5ch;
+#workshopmenu {
+  max-width: 100%;
+  border-top-left-radius: 25px;
+  padding: 0;
+  text-align: initial;
+  max-width: 80ch;
 }
 
 #workshopmenu .navigation {
-  max-width: 50%;
+  max-width: 100%;
+  font-size: initial;
 }
 
-#workshopmenu.navigation img#ws_image {
-  max-width: 50%;
+#ws_menu_title {
+  display: inline-block;
+  max-width: calc( 100% - 70px );
+  padding: 0.3em;
 }
 
+#workshopmenu label {
+}
+
+#ws_image {
+  max-width: 50%;
+  float: left;
+}
+
+#ws_content_span {
+  display: block;
+}
+
+#ws_image, #ws_content_span {
+  margin: 1ch;
+}

@@ -29,7 +29,7 @@ function select_active() {
     active = true;
     $("#topmenu").detach().appendTo("#container");
     $("#signe_div").detach().appendTo("#container");
-    $("#anmeldung_link").detach().appendTo("#container");
+    //$("#bottom_menus").detach().appendTo("#container");
     $("#container").addClass('front');
     $("#container").removeClass('back');
     hidable_vis.each(function() {
@@ -46,7 +46,7 @@ function select_active() {
     active = false;
     $("#topmenu").detach().appendTo("body");
     $("#signe_div").detach().appendTo("body");
-    $("#anmeldung_link").detach().appendTo("body");
+    //$("#bottom_menu").detach().appendTo("body");
     $("#container").addClass('back');
     $("#container").removeClass('front');
     hidable_vis.each(function() {

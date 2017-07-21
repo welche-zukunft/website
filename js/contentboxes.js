@@ -12,6 +12,7 @@ var current_lines_group = new THREE.Group();
 function workshop_obj(id) {
   this.id = id;
   this.boxes = [];
+  this.contents = [];
 }
 
 function box_object(id, s_obj, content,color) {
@@ -169,6 +170,8 @@ function workshop_create_all_contents(j) {
     // ToDo: create workshop objects earlier (maybe at timeline creation)
     var workshop = new workshop_obj(j);
     workshops[j] = workshop;
+    workshops[j].contents = contents;
+    update_workshop_menu(j);
 
     //console.log("CONTENT LENGTH : " + contents.contents.length);
     //current_lines_group = new THREE.Group();

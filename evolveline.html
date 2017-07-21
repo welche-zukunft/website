@@ -13,9 +13,10 @@
 				margin: 0px;
 			}
 		</style>
-		<link href="css/menu.css" rel="stylesheet">
 		<link href="css/underconstruction.css" rel="stylesheet">
 		<link href="css/structure.css" rel="stylesheet">
+		<link href="css/menu.css" rel="stylesheet">
+		<link href="css/menu_ws.css" rel="stylesheet">
 		<link href="css/contentboxes.css" rel="stylesheet">
 
 	</head>
@@ -40,14 +41,6 @@
 			</ul>
 			</nav>
 		</div><!-- topmenu -->
-		<div id="anmeldung_link" class="foreground">
-			<a href="#anmeldung">&gt;&gt; zur Anmeldung</a>
-		</div><!-- anmeldung_link -->
-		<div id="workshopmenu" class="foreground">
-		<input class="burger-check" id="burger-check" type="checkbox">
-		<label for="burger-check" class="burger"></label>
-		<label>WORKSHOP TITEL</label>
-		</div>
 		<div id="signe_div" class="foreground">
 			<img id="signe" alt="signe" src="./images/signe.png">
 		</div><!-- signe_div -->
@@ -173,6 +166,17 @@
 		
 		<div id="handle_container" class="foreground"></div>
 		</div>
+                <div id="bottom_menus" class="foreground">
+                <div id="anmeldung_link">
+                        <a href="#anmeldung">&gt;&gt; zur Anmeldung</a>
+                </div><!-- anmeldung_link -->
+                <div id="workshopmenu">
+                        <input class="burger-ws-check" id="burger-ws-check" type="checkbox">
+                        <label for="burger-ws-check" class="burger-ws"></label>
+                        <label id="ws_menu_title" class="title">WORKSHOP TITEL</label>
+                        <div id="ws_menu_content" class="navigation paper"></div>
+                </div><!-- workshopmenu -->
+                </div><!-- bottom_menus -->
 		<!-- container -->
 		</main>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -275,6 +279,7 @@
 		<script type='text/javascript' src='js/triggers.js'></script>
 		<script type='text/javascript' src='js/smoothscroll.js'></script>
 		<script type='text/javascript' src='js/dynamiccontent.js'></script>
+		<script type='text/javascript' src='js/menu_workshop.js'></script>
 		</body>
 </html>
 

@@ -24,6 +24,7 @@ function select_active() {
   var hidable_vis = $($(".handle").get());
   hidable_vis.push( $($(".dragbox").get()) );
   var hidable_dis = $($(".scroll-up").get());
+  hidable_dis.push( $($(".scroll-down").get()) );
   hidable_dis.push( $($("#bottom_menus").get()) );
 
   var scrollPosition = $(window).scrollTop();

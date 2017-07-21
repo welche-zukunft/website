@@ -121,38 +121,6 @@
 		</div><!-- paper -->
 		</div><!-- flex --> </section><!-- workshops -->
 
-		<section id="anmeldung"> <div class="flex">
-		<div class="paper">
-<p>Detaillierte Informationen und Anmeldung:</p>  
-		<p>Ab  1. August 2017 unter <a href="http://www.welchezukunft.org">www.welchezukunft.org</a></p> 
-
-		<form method="POST" action="/index.php#newsletter" id="newsletter">
-			<label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hier bitte ihren Namen und ihre Mailadresse ein.</label> 
-			<br>
-			<label >Vorname</label> 
-			<input type="text" name="vorname" id="vorname" value="">
-			<label >Name</label> 
-			<input type="text" name="name" id="name" value="">
-			<label >E-Mailadresse</label> 
-			<input type="text" name="mailadresse" id="mailadresse" value="">
-			<br>
-			<button type="submit">Newsletter abonnieren</button>
-			<label class="result" style=""></label>
-		</form>
-		
-		<p><span class=bold>Pressekontakt:</span><br>
-		Katharina Wenzel <br>
-		Leitung Presse und Kommunikation <br>
-		030-28441234<br>
-		<a href="mailto:wenzel@deutschestheater.de">wenzel@deutschestheater.de</a><br>
-		In den Theaterferien zwischen 19. Juli und 28. August:<br>
-		Luisa Männel <br>
-		<a href="mailto:maennel@welchezukunft.org">maennel@welchezukunft.org</a><br></p>
-		<br><br>
-		<p ><a class=impressum href="impressum.html">Impressum</a></p>
-		</div><!-- paper -->
-		</div><!-- flex --> 
-		</section><!-- anmeldung -->
 		<section id="#inhalte">
 		test
 		</section>
@@ -169,7 +137,7 @@
 		</div>
                 <div id="bottom_menus" class="foreground">
                 <div id="anmeldung_link">
-                        <a href="#anmeldung">&gt;&gt; zur Anmeldung</a>
+                        <a class="pseudo">&lt;&lt; zur Anmeldung</a>
                 </div><!-- anmeldung_link -->
                 <div id="workshopmenu">
                         <input class="burger-ws-check" id="burger-ws-check" type="checkbox">
@@ -180,6 +148,47 @@
                 </div><!-- bottom_menus -->
 		<!-- container -->
 		</main>
+
+                <section id="anmeldung"> <div class="flex">
+                <div class="paper">
+			<div class="align_right">
+                        <a class="pseudo">&gt;&gt;</a>
+			</div>
+                	<div>
+		<p>Detaillierte Informationen und Anmeldung:</p>
+                <p>Ab  1. August 2017 unter <a href="http://www.welchezukunft.org">www.welchezuk
+unft.org</a></p>
+
+                <form method="POST" action="/index.php#newsletter" id="newsletter">
+                        <label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hie
+r bitte ihren Namen und ihre Mailadresse ein.</label>
+                        <br>
+                        <label >Vorname</label>
+                        <input type="text" name="vorname" id="vorname" value="">
+                        <label >Name</label>
+                        <input type="text" name="name" id="name" value="">
+                        <label >E-Mailadresse</label>
+                        <input type="text" name="mailadresse" id="mailadresse" value="">
+                        <br>
+                        <button type="submit">Newsletter abonnieren</button>
+                        <label class="result" style=""></label>
+                </form>
+
+                <p><span class=bold>Pressekontakt:</span><br>
+                Katharina Wenzel <br>
+                Leitung Presse und Kommunikation <br>
+                030-28441234<br>
+                <a href="mailto:wenzel@deutschestheater.de">wenzel@deutschestheater.de</a><br>
+                In den Theaterferien zwischen 19. Juli und 28. August:<br>
+                Luisa Männel <br>
+                <a href="mailto:maennel@welchezukunft.org">maennel@welchezukunft.org</a><br></p>
+                <br><br>
+                <p ><a class=impressum href="impressum.html">Impressum</a></p>
+                </div>
+                </div><!-- paper -->
+                </div><!-- flex -->
+                </section><!-- anmeldung -->
+
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="js/three.js"></script>
 		<script src="js/CurveExtras.js"></script>
@@ -281,6 +290,7 @@
 		<script type='text/javascript' src='js/smoothscroll.js'></script>
 		<script type='text/javascript' src='js/dynamiccontent.js'></script>
 		<script type='text/javascript' src='js/menu_workshop.js'></script>
+		<script type='text/javascript' src='js/activity.js'></script>
 		</body>
 </html>
 

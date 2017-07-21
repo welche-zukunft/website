@@ -1,5 +1,30 @@
 /* activity */
 
+section#anmeldung {
+  top: 0;
+  left: 0;
+  position: fixed;
+  left: 100vw;
+  z-index: 900;
+  width: 100%;
+}
+section#anmeldung a.pseudo {
+  display: inline-block;
+  margin: 10px;
+  margin-top: 0;
+  color: black;
+  font-size: large;
+}
+
+section#anmeldung div.paper {
+  max-height: 90vh;
+  opacity: 0.98;
+}
+section#anmeldung div.paper > div {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
 .handle, .dragbox {
   z-index: 90;
 }

@@ -86,6 +86,12 @@ div.scroll-up {
 
 /* style */
 
+a.pseudo {
+  cursor: pointer;
+}
+div.align_right {
+  text-align: right;
+}
 div.handle_container span {
   width: 20px;
   height: 20px;
@@ -151,7 +157,7 @@ div.flex {
   display: flex;
   align-items: center;
 }
-article div.paper {
+section > div.flex > div.paper {
   padding: 2ch;
   border-radius: 25px;
 }

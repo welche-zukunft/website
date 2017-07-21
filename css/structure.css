@@ -1,6 +1,8 @@
 /* structure */
 
-#handle_container {
+#workshopmenu div.handle_container {
+}
+#container > .handle_container {
   position: fixed;
   top: 100px;
   margin-left: 1ch;
@@ -11,7 +13,7 @@
   column-gap: 10px;
   column-width: 20px;
 }
-div#handle_container span {
+div.handle_container span {
   display: inline-block;
   position: relative;
 }
@@ -84,7 +86,7 @@ div.scroll-up {
 
 /* style */
 
-div#handle_container span {
+div.handle_container span {
   width: 20px;
   height: 20px;
   margin-bottom: 0.5ch;

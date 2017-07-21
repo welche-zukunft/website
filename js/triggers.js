@@ -63,6 +63,11 @@ function select_active() {
   }
 }
 
+function highlight(elem) {
+  //console.log("flashing:"); console.log(elem);
+  $(elem).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+}
+
 // fire once at start
 select_active();
 // and after that on scroll

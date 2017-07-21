@@ -1,5 +1,23 @@
 // contents via get in js/contentboxes.js
 
+reset_ws();
+
+function reset_ws() {
+  var title = 'Workshop wählen';
+  var menu_title = $("#ws_menu_title");
+  menu_title.html(title);
+  $('#workshopmenu').click(function() {
+    handles = $('#container > div.handle_container');
+    highlight(handles);
+  });
+  var menu_content = $("#ws_menu_content");
+  menu_content.html("");
+  //content = $('#container > .handle_container').clone();
+  //menu_content.html(
+  //  content
+  //);
+}
+
 function update_workshop_menu(j) {
 
   var workshop = workshops[j];

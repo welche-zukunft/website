@@ -241,7 +241,7 @@ function deselectworkshop(){
 				particles[i][j].scale.set( 1., 1., 1. );
 			}
 		}
-		workshop_delete_all_contents();
+		workshop_delete_all_events();
 	
 }
 

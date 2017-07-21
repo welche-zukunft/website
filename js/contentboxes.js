@@ -1,6 +1,7 @@
 //var url = "https://0101010.one/cgi-bin/cgi-json.sh";
 //var url = "./contents/workshop_test.json";
-var url = "./contents/small_test.json";
+//var url = "./contents/small_test.json";
+var url = "./contents/small_test2.json";
 
 var contents;
 var workshops = [];
@@ -122,8 +123,10 @@ function contentbox_create(j, num, content,color) {
      });
     //$( contentbox ).resizable();
   });
+  var title = content.title;
+  var text = content.text;
   // fill contentbox with content
-  contentbox.innerHTML = '<div class="nodrag content">' + content + '</div>';
+  contentbox.innerHTML = '<div class="nodrag content">' + title + '</div>';
   // add dragbox directly to threejs container
   document.getElementById("container").appendChild(dragbox);
   // add contentbox to dragbox
@@ -154,7 +157,7 @@ function flush_boxes() {
   for (i = current_lines_group.children.length - 1; i >= 0; i--) {
     current_lines_group.remove(current_lines_group.children[i]);
   }
-  workshop_delete_all_contents();
+  workshop_delete_all_events();
 }
 
 // iterate over available content to create boxes for them
@@ -173,18 +176,18 @@ function workshop_create_all_contents(j) {
     workshops[j].contents = contents;
     update_workshop_menu(j);
 
-    //console.log("CONTENT LENGTH : " + contents.contents.length);
+    //console.log("CONTENT LENGTH : " + contents.events.length);
     //current_lines_group = new THREE.Group();
     flush_boxes();
-    for (i = 0; i < contents.contents.length; i++) {
-      contentbox_create(j, i, contents.contents[i],rgb[j]);
+    for (i = 0; i < contents.events.length; i++) {
+      contentbox_create(j, i, contents.events[i],rgb[j]);
     }
     scene.add( current_lines_group );
     //console.log(current_lines_group.children.length);
   });
 }
 
-function workshop_delete_all_contents() {
+function workshop_delete_all_events() {
   $("div.dragbox").remove();
 }
 

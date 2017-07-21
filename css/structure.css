@@ -7,11 +7,13 @@
   top: 100px;
   margin-left: 1ch;
   height: calc( 100% - 20% - 120px );
-  width: 22px;
+  width: 27px;
   overflow: visible;
-  column-count: 2;
+  column-count: 1;
+  /*
   column-gap: 10px;
-  column-width: 20px;
+  column-width: 30px;
+  */
 }
 div.handle_container span {
   display: inline-block;
@@ -93,8 +95,10 @@ div.align_right {
   text-align: right;
 }
 div.handle_container span {
+  /*
   width: 20px;
   height: 20px;
+  */
   margin-bottom: 0.5ch;
 }
 div.vert-center {

@@ -4,7 +4,7 @@ var uniforms;
 
 
 // CREATE FONT ALTAS WITH NUMBERS
-var fontSize = 64;
+var fontSize = 32;
 var lettersPerSide = 4;
 var c = document.createElement('canvas');
 c.width = fontSize*lettersPerSide;
@@ -39,7 +39,7 @@ function createNumberWalls(){
 
 	var j=0, ln=0,k = 0;
 
-	for (i=0; i<18500; i++) {
+	for (i=0; i<9000; i++) {
 		var num = Math.floor(Math.random()*16.)+45;
 					
 		var code = num;
@@ -82,7 +82,7 @@ function createNumberWalls(){
 		}
 	}
 
-	var topy = new THREE.Group();
+	var sides = new THREE.Group();
 				  
 					
 	var width = window.innerWidth,
@@ -107,27 +107,25 @@ function createNumberWalls(){
 	shaderMaterial.transparent = true;
 	shaderMaterial.depthTest = false;
 
-	var books = [];
-	var w = 80 * 1.1;
+	var slides = [];
 	var n = 2;
-	var r = w * 1/2 * 1/Math.PI * n;
-	
+	var scaleFactor = 0.5;
 	
 	for (var i=0; i<n; i++) {
-		var book = new THREE.Mesh(geo,shaderMaterial);
-		book.doubleSided = true;
+		var slide = new THREE.Mesh(geo,shaderMaterial);
+		slide.doubleSided = true;
 		var a = i/n * Math.PI*2 + Math.PI/2;
-		var box = new THREE.Box3().setFromObject( book );
-		book.position.x = -10. + (20.*i);
-		book.position.y = (box.getSize().y * 0.3)/2.;
-		book.position.z = 0.-(box.getSize().x * i * 0.3);
-		book.rotation.y = Math.PI/2 + (Math.PI*i);
-		book.scale.set(0.3,0.3,0.3);
-		books.push(book);
-		topy.add(book);
+		var box = new THREE.Box3().setFromObject( slide );
+		slide.position.x = -10. + (20.*i);
+		slide.position.y = (box.getSize().y * scaleFactor)/2.;
+		slide.position.z = 0.-(box.getSize().x * i * scaleFactor);
+		slide.rotation.y = Math.PI/2 + (Math.PI*i);
+		slide.scale.set(scaleFactor,scaleFactor,scaleFactor);
+		slides.push(slide);
+		sides.add(slide);
 	}
 
-	scene.add(topy);
+	scene.add(sides);
 }
 
 //animate shader with call from animate()

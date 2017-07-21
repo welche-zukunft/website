@@ -230,8 +230,8 @@
 			u = u*u*(3.0-2.0*u);
 			
 			 float res = mix(
-				mix(rand(ip),rand(ip+vec2(1.0,0.0)),u.x+sin(speed.x*10.)+fract(sin(time/500.))),
-				mix(rand(ip+vec2(0.0,1.0)),rand(ip+vec2(1.0,1.0)),u.x),u.y+cos(speed.y*10.)+fract(sin(time/1000.)));
+				mix(rand(ip),rand(ip+vec2(1.0,0.0)),u.x+sin(speed.x*1.)+fract(sin(time/5.))),
+				mix(rand(ip+vec2(0.0,1.0)),rand(ip+vec2(1.0,1.0)),u.x),u.y+cos(speed.y*1.)+fract(sin(time/10.)));
 			return res*res;
 		}
 	  

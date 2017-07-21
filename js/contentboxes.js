@@ -56,7 +56,7 @@ function contentbox_create(j, num, content,color) {
   // console.log("Content : " + content);
   // console.log("Create Box " + num + " for workshop " + j);
 
-  var box = new box_object(i, particles[j][3], content,color);
+  var box = new box_object(i, particles[j][num], content,color);
   var box_id = 100 * j + num;
 
   workshops[j].boxes[num] = box;
@@ -118,10 +118,13 @@ function contentbox_create(j, num, content,color) {
         update_box_position(box);
       }
      });
+	 $( dragbox ).dblclick(function() {
+		console.log("double click");
+	});
     //$( contentbox ).resizable();
   });
   // fill contentbox with content
-  contentbox.innerHTML = '<div class="nodrag content">' + content + '</div>';
+  contentbox.innerHTML = '<div class="nodrag content unselectable">' + content + '</div>';
   // add dragbox directly to threejs container
   document.getElementById("container").appendChild(dragbox);
   // add contentbox to dragbox

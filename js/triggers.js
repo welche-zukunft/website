@@ -45,6 +45,8 @@ function select_active() {
     });
   } else {
     active = false;
+    flush_boxes();
+    reset_ws();
     $("#topmenu").detach().appendTo("body");
     $("#signe_div").detach().appendTo("body");
     //$("#bottom_menu").detach().appendTo("body");

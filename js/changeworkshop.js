@@ -33,7 +33,6 @@ function workshopdot_deselect(num){
   $(handle).attr("data-tooltip","alle Workshops anzeigen");
   $(handle).attr("data-tooltip-position","right");
   $(handle).click(function() {
-    flush_boxes();
     deselectworkshop();
     reset_ws();
     current_workshop_id = 0;

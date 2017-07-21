@@ -248,11 +248,11 @@ function deselectworkshop(){
 
 function animate() {
 
-	if(current_lines_group.children.length > 0) {
-		if(active == false) {
-			flush_boxes();
-		}
-	}
+	//if(current_lines_group.children.length > 0) {
+	//	if(active == false) {
+	//		flush_boxes();
+	//	}
+	//}
 
 	if(wind == true){
 		console.log("wind");

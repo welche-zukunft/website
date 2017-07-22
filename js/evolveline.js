@@ -241,18 +241,18 @@ function deselectworkshop(){
 				particles[i][j].scale.set( 1., 1., 1. );
 			}
 		}
-		workshop_delete_all_contents();
+		workshop_delete_all_events();
 	
 }
 
 
 function animate() {
 
-	if(current_lines_group.children.length > 0) {
-		if(active == false) {
-			flush_boxes();
-		}
-	}
+	//if(current_lines_group.children.length > 0) {
+	//	if(active == false) {
+	//		flush_boxes();
+	//	}
+	//}
 
 	if(wind == true){
 		console.log("wind");

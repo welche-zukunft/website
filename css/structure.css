@@ -1,17 +1,25 @@
 /* structure */
 
-#handle_container {
+section#container_section {
+  height: 150vh;
+}
+
+#workshopmenu div.handle_container {
+}
+#container > .handle_container {
   position: fixed;
   top: 100px;
   margin-left: 1ch;
   height: calc( 100% - 20% - 120px );
-  width: 22px;
+  width: 27px;
   overflow: visible;
-  column-count: 2;
+  column-count: 1;
+  /*
   column-gap: 10px;
-  column-width: 20px;
+  column-width: 30px;
+  */
 }
-div#handle_container span {
+div.handle_container span {
   display: inline-block;
   position: relative;
 }
@@ -34,18 +42,25 @@ div#handle_container span {
   position: fixed;
   top: 0;
 }
-#anmeldung_link {
+#bottom_menus {
+  max-height: 100%;
   position: fixed;
-  bottom: 1.7em;
+  bottom: 0;
   right: 0;
+  text-align: right;
+  display: inline-block;
 }
-#workshopmenu {
-	position:fixed;
-	bottom:0;
-	right:0;
-	
+#anmeldung_link, #workshopmenu {
+  display: block;
 }
-#signe_div, #anmeldung_link {
+#anmeldung_link {
+  background: white;
+  margin-left: auto;
+  margin-right: 0;
+  display: inline-block;
+  max-width: calc( 100% - 40px );
+}
+#signe_div, #bottom_menus {
   max-width: 45%;
 }
 .foreground {
@@ -57,29 +72,36 @@ div#container {
 }
 main {
   background: transparent;
-  padding-bottom: 100vh;
+  /*padding-bottom: 100vh;*/
 }
 article {
 }
 img {
   max-width: 100%;
 }
-div.scroll-up {
-  position: relative;
-  top: 50px;
-  width: 75px;
-  z-index: 20;
-  margin-left: auto;
-  margin-right: auto;
+div.scroll-up, div.scroll-down {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
-
+div.scroll-down {
+  bottom: 0
+}
 /* end structure */
 
 /* style */
 
-div#handle_container span {
+a.pseudo {
+  cursor: pointer;
+}
+div.align_right {
+  text-align: right;
+}
+div.handle_container span {
+  /*
   width: 20px;
   height: 20px;
+  */
   margin-bottom: 0.5ch;
 }
 div.vert-center {
@@ -127,30 +149,33 @@ p.center {
 a {
   color: #9dbaa1;
 }
-article {
+article, div.after_container {
   max-width: 80ch;
 }
-article, div.paper {
+article, div.paper, div.after_container {
   margin-left: auto;
   margin-right: auto;
 }
 section {
   margin-bottom: 20vh;
 }
+section:last-child {
+  margin-bottom: 0;
+}
 div.flex {
   min-height: 100vh;
   display: flex;
   align-items: center;
 }
-div.paper {
-  background: white;
+section > div.flex > div.paper {
   padding: 2ch;
   border-radius: 25px;
 }
 div.paper {
+  background: white;
   opacity: 0.9;
 }
-#topmenu, #anmeldung_link {
+#topmenu, #anmeldung_link, #workshopmenu {
   opacity: 0.9;
 }
 #topmenu {
@@ -160,7 +185,7 @@ div.paper {
   background: -moz-linear-gradient(right, #9ebba2, #e3969b); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, #9ebba2 , #e3969b); /* Standard syntax */
 }
-#anmeldung_link {
+#workshopmenu {
   background: white; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(right, #9ebba2 , #e3969b); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left, #9ebba2, #e3969b); /* For Opera 11.1 to 12.0 */
@@ -171,7 +196,6 @@ p.subtitle {
   font-weight: bold;
 }
 div.scroll-up {
-  display: none;
 }
 .arrow {
     color: #fff;
@@ -179,6 +203,7 @@ div.scroll-up {
     width: 40px;
     margin: 0 auto;
     height: 30px;
+    padding-top: 25px;
 }
 .arrow .left,
 .arrow .right {
@@ -202,38 +227,24 @@ div.scroll-up {
     -o-transform: rotate(20deg) translate(50%);
     transform: rotate(20deg) translate(50%);
 }
+.scroll-down .arrow .left {
+    -webkit-transform: rotate(-20deg) translate(50%);
+    -moz-transform: rotate(-20deg) translate(50%);
+    -ms-transform: rotate(-20deg) translate(50%);
+    -o-transform: rotate(-20deg) translate(50%);
+    transform: rotate(-20deg) translate(50%);
+}
+.scroll-down .arrow .right {
+    -webkit-transform: rotate(20deg) translate(-50%);
+    -moz-transform: rotate(20deg) translate(-50%);
+    -ms-transform: rotate(20deg) translate(-50%);
+    -o-transform: rotate(20deg) translate(-50%);
+    transform: rotate(20deg) translate(-50%);
+}
+
 
 /* end style */
 
-/* activity */
-
-.handle, .dragbox {
-  z-index: 90;
-}
-.back {
-  z-index: -1;
-}
-.front {
-  z-index: 1;
-}
-.hidden {
-  visibility: hidden;
-}
-.nothidden {
-  visibility: visible;
-}
-.display {
-  display: block;
-}
-.nodisplay {
-  display: none;
-}
-[data-tooltip] {
-    display: inline-block;
-    position: relative;
-    cursor: help;
-    padding: 0px;
-}
 /* Tooltip styling */
 [data-tooltip]:before {
     content: attr(data-tooltip);
@@ -276,6 +287,7 @@ div.scroll-up {
     display: block;
     z-index: 1;
 }
+
 .unselectable {
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -287,3 +299,4 @@ div.scroll-up {
 	
 	
 /* end activity */
+

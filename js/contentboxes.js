@@ -1,10 +1,3 @@
-//var url = "https://0101010.one/cgi-bin/cgi-json.sh";
-//var url = "./contents/workshop_test.json";
-//var url = "./contents/small_test.json";
-//var url = "./contents/small_test2.json";
-var url = "./contents/workshop_oeko3_bofinger.json";
-
-
 
 var contents;
 var workshops = [];
@@ -82,16 +75,13 @@ function contentbox_create(j, num, content,color) {
   handle.className += " handle";
   //get position of timelineobject
   var directionx = particles[j][num % 12].position.x;
-  console.log(directionx);
   var x = 0.;
   var y = 0.;
   if(directionx <= 0.){
-	  console.log("lefty");
-	  x	= 80 + Math.random()*130;
-	  y = innerHeight - 100 - (((num%12)+1) * 40);
+	  x	= innerWidth /  2. - (Math.random()*130) - (innerWidth/4.);
+	  y = innerHeight - 100 - (((num%12)+1) * 60);
 	}
   if(directionx > 0.){
-	  console.log("righty");
 	  x	= innerWidth/2.+80 + Math.random()*100;
 	  //y =  50 + (num * 50);
 	  y = innerHeight - 100 - (((num%12)+1) * 40);
@@ -227,26 +217,19 @@ function workshop_create_all_contents(j) {
   var contents;
   // remove contentboxes and lines here and also in again in get, cause async
   flush_boxes();
-  $.getJSON( url, function(data){
-    //console.log(data);
-    contents = JSON.parse(JSON.stringify(data));
-    all_contents.push(contents);
+  // ToDo: create workshop objects earlier (maybe at timeline creation)
+  var workshop = new workshop_obj(j);
+  workshops[j] = workshop;
+ 
+  update_workshop_menu(j);
 
-    // ToDo: create workshop objects earlier (maybe at timeline creation)
-    var workshop = new workshop_obj(j);
-    workshops[j] = workshop;
-    workshops[j].contents = contents;
-    update_workshop_menu(j);
+  flush_boxes();
 
-    //console.log("CONTENT LENGTH : " + contents.events.length);
-    //current_lines_group = new THREE.Group();
-    flush_boxes();
-    for (i = 0; i < contents.events.length; i++) {
-      contentbox_create(j, i, contents.events[i],rgb[j]);
+  for (i = 0; i < metacontents[j].events.length; i++) {
+      contentbox_create(j, i, metacontents[j].events[i],metacontents[j].color);
     }
     scene.add( current_lines_group );
-    //console.log(current_lines_group.children.length);
-  });
+    
 }
 
 function workshop_delete_all_events() {

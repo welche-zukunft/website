@@ -3,19 +3,19 @@
 function update_workshop_menu(j) {
 
   var workshop = workshops[j];
-  var contents = workshop.contents;
-  var logline = contents.logline;
+  //var contents = workshop.contents;
+  var logline = metacontents[j].logline;
   var name = [];
   var vita = [];
   var pic = [];
-  for(var i = 0; i < contents.experten.length; i++){
-	name[i] = contents.experten[i].name;
-	pic[i] = contents.experten[i].pic;
-	vita[i] = contents.experten[i].vita;
+  for(var i = 0; i < metacontents[j].experten.length; i++){
+	name[i] = metacontents[j].experten[i].name;
+	pic[i] = metacontents[j].experten[i].pic;
+	vita[i] = metacontents[j].experten[i].vita;
   }
-  var title = contents.title[0];
-  var title2 = contents.title[1]; 
-  var intro_short = contents.intro_short;
+  var title = metacontents[j].title[0];
+  var title2 = metacontents[j].title[1]; 
+  var intro_short = metacontents[j].intro_short;
 
 
   // menu elements

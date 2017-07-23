@@ -24,11 +24,6 @@ var line_geometry = [];
 var par_geometry = [];
 var particles = [];
 
-var rgb = [];
-//for(var i = 0; i < timelineCount; i++)
-//    rgb.push('#' + Math.floor(Math.random() * 16777215).toString(16));
-
-rgb = ['#fcf197','#fbb100','#f87676','#ea373d','#b91a2e','#cf3571','#b8d8d3','#72c2a9','#4dac5b','#add396','#91b8df','#0092c3','#01559e'];
 
 //arrays for boxes
 var geometries = [];
@@ -63,7 +58,8 @@ function noise_object() {
     this.c = Math.random() * 20;
     this.z = Math.random();
 }
-var metainfos = "./contents/workshop_meta.json";
+var metainfos = "./contents/database.json";
+
 var metacontents = [];
 // get meta info about workshops from json
 get_metainformations();
@@ -152,7 +148,7 @@ function init() {
 		line_geometry[h].addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
 		
 		par_mat.push(new THREE.MeshPhongMaterial( {
-			color: rgb[h],
+			color: metacontents[h].color,
 			transparent: true,
 			//opacity: 0.4,
 			side: THREE.DoubleSide
@@ -185,10 +181,10 @@ function init() {
 			//console.log(noise_objects[i]);
 		}
 		particles.push(events);
-		line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: rgb[h], opacity: 1, linewidth: 4} ) ));
+		line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: metacontents[h].color, opacity: 1, linewidth: 4} ) ));
 		line[h].name = "test"+h.toString();
 		scene.add( line[h] );
-		workshopdot_create(h , rgb[h]);
+		workshopdot_create(h , metacontents[h].color);
 	}
 	
 	workshopdot_deselect(timelineCount);
@@ -201,10 +197,10 @@ function swapworkshop(num){
 	//console.log(num);
 	for(var i = 0; i < timelineCount; i++){
 		if(i == num){
-			scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i].replace(/#/g , "0x"));				
+			scene.getObjectByName("test"+i.toString()).material.color.setHex(metacontents[i].color.replace(/#/g , "0x"));				
 			scene.getObjectByName("test"+i.toString()).material.opacity = 1.;
 			scene.getObjectByName("test"+i.toString()).material.transparent = false;
-			par_mat[i].color.setHex(rgb[i].replace(/#/g , "0x"));
+			par_mat[i].color.setHex(metacontents[i].color.replace(/#/g , "0x"));
 			for(var j = 0; j < particles[i].length; j++){
 				particles[i][j].scale.set( 2., 2., 2. );
 			}
@@ -224,10 +220,10 @@ function swapworkshop(num){
 	
 function deselectworkshop(){
 	for(var i = 0; i < timelineCount; i++){
-			scene.getObjectByName("test"+i.toString()).material.color.setHex(rgb[i].replace(/#/g , "0x"));				
+			scene.getObjectByName("test"+i.toString()).material.color.setHex(metacontents[i].color.replace(/#/g , "0x"));				
 			scene.getObjectByName("test"+i.toString()).material.opacity = 1.;
 			scene.getObjectByName("test"+i.toString()).material.transparent = false;
-			par_mat[i].color.setHex(rgb[i].replace(/#/g , "0x"));
+			par_mat[i].color.setHex(metacontents[i].color.replace(/#/g , "0x"));
 			for(var j = 0; j < particles[i].length; j++){
 				particles[i][j].scale.set( 1., 1., 1. );
 			}

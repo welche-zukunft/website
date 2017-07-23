@@ -27,8 +27,8 @@ div.handle_container span {
 #signe_div {
   position: fixed;
   bottom: 0;
-  width: 20%;
- height: 20%;
+  width: 33vh;
+  height: 9vh;
   background: transparent;
   overflow: hidden;
 }

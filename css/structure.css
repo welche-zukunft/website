@@ -175,7 +175,7 @@ div.paper {
   opacity: 0.9;
 }
 #topmenu, #anmeldung_link, #workshopmenu {
-  opacity: 0.95;
+  opacity: 0.98;
 }
 #topmenu {
   background: white; /* For browsers that do not support gradients */

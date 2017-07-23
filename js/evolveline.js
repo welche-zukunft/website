@@ -14,6 +14,7 @@ var mesh = [];
 var wind = false;
 var steps = 100;
 var timelineCount = 12;
+var eventCount = 15;
 var initialized = false;
 var time = new Date();
 
@@ -142,7 +143,7 @@ function init() {
 	for ( var h = 0; h < timelineCount; h ++ ) {
 		var next_z = 0;
 		var index = 0;
-		var positions = new Float32Array( 12 * 3 ); // 3 vertices per point
+		var positions = new Float32Array( 15 * 3 ); // 3 vertices per point
 
 		var line_particles = [];
 
@@ -160,12 +161,12 @@ function init() {
 		
 		var events = [];
 		
-		for ( var i = 0; i < 12; i ++ ) {
+		for ( var i = 0; i < eventCount; i ++ ) {
 			
 			var particle = new THREE.Mesh( new THREE.SphereGeometry(0.05), par_mat[h] );
 			
-			particle.position.x = positions[index++] = (boxwidth*(Math.random()-0.5)) *  i/12;
-			particle.position.y = positions[index++] = ((boxheight*(Math.random()-0.5)) *  i/12)-(1.*  (1.-i/12)); 
+			particle.position.x = positions[index++] = (boxwidth*(Math.random()-0.5)) *  i/eventCount;
+			particle.position.y = positions[index++] = ((boxheight*(Math.random()-0.5)) *  i/eventCount)-(1.*  (1.-i/eventCount)); 
 			particle.position.z = positions[index++] = next_z;
 			
 			next_z -= Math.random() * boxdepth;

@@ -49,13 +49,13 @@ function update_box_position(box) {
   };
 }
 
-function contentbox_create(j, num, content,color) {
-  var handle_pos = new THREE.Vector3(0,0,0);
+function contentbox_create(j, num, content,color,positions) {
+	var handle_pos = new THREE.Vector3(0,0,0);
 
   // console.log("Content : " + content);
   // console.log("Create Box " + num + " for workshop " + j);
 
-  var box = new box_object(i, particles[j][num % 12], content,color);
+  var box = new box_object(i, particles[j][num], content,color);
   var box_id = 100 * j + num;
 
   workshops[j].boxes[num] = box;
@@ -74,19 +74,33 @@ function contentbox_create(j, num, content,color) {
   contentbox.className += " contentbox eventbatchclose";
   handle.className += " handle";
   //get position of timelineobject
-  var directionx = particles[j][num % 12].position.x;
+  var directionx = particles[j][num].position.x;
   var x = 0.;
   var y = 0.;
-  if(directionx <= 0.){
-	  x	= innerWidth /  2. - (Math.random()*130) - (innerWidth/4.);
-	  y = innerHeight - 100 - (((num%12)+1) * 60);
+  if(directionx <= positions){
+	  var checkposition = boxesRight.slice(0,num);
+	  var count = 0;
+	  for(var i = 0; i < checkposition.length; ++i){
+		if(checkposition[i] == true)
+			count++;
+	  }
+	  x	= innerWidth /  2. - (innerWidth/4.) + (directionx * innerWidth/16.);
+	  y = innerHeight - (innerHeight*0.2) - (((count)) * heightStepRight);
 	}
-  if(directionx > 0.){
-	  x	= innerWidth/2.+80 + Math.random()*100;
+  if(directionx > positions){
+	  var checkposition = boxesLeft.slice(0,num);
+	  var count = 0;
+	  for(var i = 0; i < checkposition.length; ++i){
+		if(checkposition[i] == true)
+			count++;
+	  }
+	  x	= innerWidth/2. + (innerWidth/8.)+(directionx * innerWidth/32.);
 	  //y =  50 + (num * 50);
-	  y = innerHeight - 100 - (((num%12)+1) * 40);
+	  y = innerHeight - (innerHeight*0.2) - (((count)) * heightStepLeft);
 	};
-	
+  if(y <= 80) y = 80;
+  if(x <= 80) x = 80;
+  if(x >= innerWidth - (innerWidth*0.1))  x = innerWidth - (innerWidth*0.1);
   
   // where to spwan them
   /*var x = 50 + (num + 1) * 75 % (innerWidth - 200);
@@ -132,6 +146,7 @@ function contentbox_create(j, num, content,color) {
         update_box_position(box);
       }
      });
+	 //open & close on doubleclick
 	$( dragbox ).dblclick(function() {
 		var sub = $(this).children();
 		var sub2 = sub.get(0);
@@ -211,10 +226,52 @@ function flush_boxes() {
   }
   workshop_delete_all_events();
 }
+  var middle;
+  var boxesLeft;
+  var boxesRight;
+  var heightStepLeft;
+  var heightStepRight;
+
+
 
 // iterate over available content to create boxes for them
 function workshop_create_all_contents(j) {
   var contents;
+  
+//calculate middle x for boxes
+  middle = 0.;
+  boxesLeft = new Array(metacontents[j].events.length);
+  boxesRight = new Array(metacontents[j].events.length);
+  for (i = 0; i < metacontents[j].events.length; i++) {
+	middle += particles[j][i].position.x;
+  }
+  middle = middle / metacontents[j].events.length;
+  //calculate postions
+  for (i = 0; i < metacontents[j].events.length; i++) {
+	if(particles[j][i].position.x > middle){
+		boxesLeft[i] = true;
+		}
+	if(particles[j][i].position.x <= middle){
+		boxesRight[i] = true;
+		}
+  }
+  
+   var count = 0;
+	  for(var i = 0; i < boxesLeft.length; ++i){
+		if(boxesLeft[i] == true)
+			count++;
+	  }
+	console.log(count);
+   heightStepLeft = (innerHeight * 0.8) / count;
+	
+	count = 0;
+	  for(var i = 0; i < boxesRight.length; ++i){
+		if(boxesRight[i] == true)
+			count++;
+	  }
+console.log(count);
+   heightStepRight = (innerHeight * 0.8) / count;
+ console.log(heightStepLeft,heightStepRight);
   // remove contentboxes and lines here and also in again in get, cause async
   flush_boxes();
   // ToDo: create workshop objects earlier (maybe at timeline creation)
@@ -226,7 +283,7 @@ function workshop_create_all_contents(j) {
   flush_boxes();
 
   for (i = 0; i < metacontents[j].events.length; i++) {
-      contentbox_create(j, i, metacontents[j].events[i],metacontents[j].color);
+      contentbox_create(j, i, metacontents[j].events[i],metacontents[j].color,middle);
     }
     scene.add( current_lines_group );
     

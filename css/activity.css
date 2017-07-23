@@ -51,6 +51,7 @@ section#anmeldung div.paper > div {
     position: relative;
     cursor: help;
     padding: 0px;
+	z-index: 101;
 }
 /* end activity */
 

@@ -3,14 +3,12 @@
 function update_workshop_menu(j) {
 
   var workshop = workshops[j];
-  console.log(workshop);
   var contents = workshop.contents;
   var logline = contents.logline;
   var name = [];
   var vita = [];
   var pic = [];
   for(var i = 0; i < contents.experten.length; i++){
-	console.log(contents.experten[i]);
 	name[i] = contents.experten[i].name;
 	pic[i] = contents.experten[i].pic;
 	vita[i] = contents.experten[i].vita;

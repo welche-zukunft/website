@@ -80,9 +80,27 @@ function contentbox_create(j, num, content,color) {
   dragbox.className += " dragbox";
   contentbox.className += " contentbox eventbatchclose";
   handle.className += " handle";
+  //get position of timelineobject
+  var directionx = particles[j][num % 12].position.x;
+  console.log(directionx);
+  var x = 0.;
+  var y = 0.;
+  if(directionx <= 0.){
+	  console.log("lefty");
+	  x	= 80 + Math.random()*130;
+	  y = innerHeight - 100 - (((num%12)+1) * 40);
+	}
+  if(directionx > 0.){
+	  console.log("righty");
+	  x	= innerWidth/2.+80 + Math.random()*100;
+	  //y =  50 + (num * 50);
+	  y = innerHeight - 100 - (((num%12)+1) * 40);
+	};
+	
+  
   // where to spwan them
-  var x = 50 + (num + 1) * 75 % (innerWidth - 200);
-  var y = 50 + (num + 1) * 50 % (innerHeight * 0.2);
+  /*var x = 50 + (num + 1) * 75 % (innerWidth - 200);
+  var y = 50 + (num + 1) * 50 % (innerHeight * 0.2);*/
   dragbox.style.left = x + 'px';
   dragbox.style.top = y + 'px';
   // make them draggable

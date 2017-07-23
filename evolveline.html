@@ -26,7 +26,7 @@
 		<div id="topmenu" class="foreground">
 			<input class="burger-check" id="burger-check" type="checkbox">
 			<label for="burger-check" class="burger"></label>
-			<label>Welche Zukunft?!</label>
+			<label for="burger-check" >Welche Zukunft?!</label>
 			<nav id="navigation1" class="navigation">
 			<ul>
 				<li><a href="#info">Info</a></li>
@@ -77,7 +77,7 @@
 
 		<section id="workshops"> <div class="flex">
 		<div class="paper">
-<h2>Die Workshops</h2>
+		<h2>Die Workshops</h2>
 		<p>Je 20 WorkshopteilnehmerInnen werden mit den ExpertInnen zusammen Szenarien entwerfen.</p>
 		
 		<h3>Ökonomie I</h3>
@@ -153,7 +153,7 @@
                 <div id="workshopmenu">
                         <input class="burger-ws-check" id="burger-ws-check" type="checkbox">
                         <label for="burger-ws-check" class="burger-ws"></label>
-                        <label id="ws_menu_title" class="title"></label>
+                        <label for="burger-ws-check" id="ws_menu_title" class="title"></label>
                         <div id="ws_menu_content" class="navigation paper"></div>
                 </div><!-- workshopmenu -->
                 </div><!-- bottom_menus -->
@@ -217,7 +217,7 @@ r bitte ihren Namen und ihre Mailadresse ein.</label>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script src="js/three.js"></script>
 		<script src="js/CurveExtras.js"></script>
-		<script src="js/OrbitControls.js"></script>
+		<!--<script src="js/OrbitControls.js"></script>-->
 		<script src="js/stats.min.js"></script>
 		<script type='text/javascript' src='js/tween.js'></script>
 
@@ -270,7 +270,7 @@ r bitte ihren Namen und ihre Mailadresse ein.</label>
 				
 				 float res = mix(
 					mix(rand(ip),rand(ip+vec2(1.0,0.0)),u.x+sin(speed.x*10.)+fract(sin(time/500.))),
-					mix(rand(ip+vec2(0.0,1.0)),rand(ip+vec2(1.0,1.0)),u.x),u.y+cos(speed.y*10.)+fract(sin(time/1000.)));
+					mix(rand(ip+vec2(0.0,1.0)),rand(ip+vec2(1.0,1.0)),u.x),u.y+cos(speed.y*20.));//+fract(sin(time/1000.)));
 				return res*res;
 			}
 		  
@@ -286,8 +286,8 @@ r bitte ihren Namen und ihre Mailadresse ein.</label>
 			float v = floor( vPosition.y / d ) * d;
 			float v2 = floor( vPosition.y / d2 ) * d2;
 			
-			float stepx = floor(noise(vec2(u,v))*4.)/4.;
-			float stepy = floor(noise(vec2(u,v))*4.)/4.;
+			float stepx = floor(noise(vec2(u,v))*16.)/4.;
+			float stepy = floor(noise(vec2(u,v))*2.*(fract(sin(time/10.)))*10.)/4.;
 			
 			float colstepred = floor(noise(vec2(u2,v2))*2.)/2.;
 			float colstepgreen = floor(noise(vec2(u2,v2))*2.)/2.;

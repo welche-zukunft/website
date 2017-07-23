@@ -13,7 +13,7 @@ div.contentbox {
   max-width: 20vw;
   overflow-y: auto;
   padding: 0.5ch;
-  background: rgba(240,240,240,0.8);
+  background: rgba(240,240,240,0.95);
 }
 div.dragbox span.handle, div.dragscroll {
   cursor : -webkit-grab;

@@ -33,10 +33,18 @@ div.contentbox * {
 div.contentbox, div.contentbox * {
   max-height: calc(20vw * 0.5625);
 }
-div.contentbox div.content {
-  cursor: initial;
-}
-div.contentbox div:active {
-  cursor: initial
+
+
+.eventbatchclose {
+	cursor : -webkit-zoom-in;
+	cursor : -moz-zoom-in;
+	cursor : -o-zoom-in;
+	cursor : zoom-in;
 }
 
+.eventbatchopen {
+	cursor : -webkit-zoom-out;
+	cursor : -moz-zoom-out;
+	cursor : -o-zoom-out;
+	cursor : zoom-out;
+}

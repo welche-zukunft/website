@@ -63,10 +63,26 @@ function noise_object() {
     this.c = Math.random() * 20;
     this.z = Math.random();
 }
+var metainfos = "./contents/workshop_meta.json";
+var metacontents = [];
+// get meta info about workshops from json
+get_metainformations();
 
+function get_metainformations(){
+	$.getJSON( metainfos, function(data){
+		metacontents = JSON.parse(JSON.stringify(data));
+	})
+	.done(function(){
+		init();
+		animate();
+		// fire once at start
+		select_active();
+		// contents via get in js/contentboxes.js
+		// reset_ws via changeworkshop.js
+		reset_ws();
+	});
+}
 
-init();
-animate();
 
 //INIT ---------------------------------
 function init() {
@@ -96,9 +112,9 @@ function init() {
 	
 	// axes & stats
 	//scene.add( new THREE.AxisHelper( 20 ) );
-	stats = new Stats();
+	/*stats = new Stats();
 	stats.showPanel( 1 );
-	container.appendChild( stats.dom );			
+	container.appendChild( stats.dom );	*/		
 
 	// content stuff
 
@@ -122,31 +138,6 @@ function init() {
 	}
 	
 
-	// add image + objects
-	// instantiate a loader
-	/*var loader = new THREE.TextureLoader();
-	var pics = ["timelines/numbers_web.jpg","timelines/oel_web.jpg"];
-	var TEXmaterial = [];
-	var plane = [];
-	var IMGtexture = [];
-	// load a resource
-	for(i = 0; i < pics.length; i++){	
-		IMGtexture[i] = loader.load(pics[i]);
-
-		TEXmaterial[i] = new THREE.MeshPhongMaterial( {map: IMGtexture[i]} );
-
-		plane[i] = new THREE.Mesh(new THREE.PlaneGeometry(90, 65), TEXmaterial[i]);
-		plane[i].material.side = THREE.DoubleSide;
-
-		plane[i].position.y = 0;
-		plane[i].position.x = -15+(i*30);	
-
-		plane[i].rotation.y = Math.PI / 2;
-		scene.add(plane[i]);
-
-	}*/
- 
-
 	//	create lines
 
 	for ( var h = 0; h < timelineCount; h ++ ) {
@@ -167,8 +158,6 @@ function init() {
 			side: THREE.DoubleSide
 		} ));
 		par_mat[h].name = "color"+h.toString();
-		
-		workshopdot_create(h , rgb[h]);
 		
 		var events = [];
 		
@@ -199,7 +188,9 @@ function init() {
 		line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: rgb[h], opacity: 1, linewidth: 4} ) ));
 		line[h].name = "test"+h.toString();
 		scene.add( line[h] );
+		workshopdot_create(h , rgb[h]);
 	}
+	
 	workshopdot_deselect(timelineCount);
 	createNumberWalls();
 	window.addEventListener( 'resize', onWindowResize, false );
@@ -287,7 +278,7 @@ function animate() {
 	camera.lookAt(looky);
 	
   	renderer.render(scene, camera);
-	stats.update();
+	//stats.update();
 }
 
 

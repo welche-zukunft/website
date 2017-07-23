@@ -14,6 +14,7 @@ section#container_section {
   width: 27px;
   overflow: visible;
   column-count: 1;
+  z-index:100;
   /*
   column-gap: 10px;
   column-width: 30px;
@@ -26,17 +27,15 @@ div.handle_container span {
 #signe_div {
   position: fixed;
   bottom: 0;
-  width: 250px;
+  width: 20%;
+ height: 20%;
   background: transparent;
-  height: 20%;
   overflow: hidden;
 }
 #signe {
   position: absolute;
   right: 0;
   bottom: 0;
-  max-height: 100%;
-  max-width: none;
 }
 #topmenu {
   position: fixed;
@@ -64,7 +63,7 @@ div.handle_container span {
   max-width: 45%;
 }
 .foreground {
-  z-index: 10;
+  z-index: 100;
 }
 div#container {
   position: fixed;
@@ -258,6 +257,7 @@ div.scroll-up {
     min-width: 180px;
     text-align: left;
     border-radius: 2px;
+	z-index: 101;
 }
 [data-tooltip-position="right"]:before,
 [data-tooltip-position="left"]:before {
@@ -266,24 +266,37 @@ div.scroll-up {
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+	z-index: 101;
 }
 [data-tooltip-position="right"]:before {
     left: 100%;
     margin-left: 6px;
+	z-index: 101;
 }
 [data-tooltip-position="right"]:after,
 [data-tooltip-position="left"]:after {
     top: 50%;
     margin-top: -6px;
+	z-index: 101;
 }
 [data-tooltip-position="right"]:after {
     left: 100%;
     border-width: 6px 6px 6px 0;
     border-right-color: #000;
+	z-index: 101;
 }
 /* Show the tooltip when hovering */
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
     display: block;
-    z-index: 1;
+    z-index: 101;
+}
+
+.unselectable {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }

@@ -1,7 +1,10 @@
 //var url = "https://0101010.one/cgi-bin/cgi-json.sh";
 //var url = "./contents/workshop_test.json";
 //var url = "./contents/small_test.json";
-var url = "./contents/small_test2.json";
+//var url = "./contents/small_test2.json";
+var url = "./contents/workshop_oeko3_bofinger.json";
+
+
 
 var contents;
 var workshops = [];
@@ -75,7 +78,7 @@ function contentbox_create(j, num, content,color) {
   handle.id = 'handle_' + box_id;
   // give them classes
   dragbox.className += " dragbox";
-  contentbox.className += " contentbox";
+  contentbox.className += " contentbox eventbatchclose";
   handle.className += " handle";
   // where to spwan them
   var x = 50 + (num + 1) * 75 % (innerWidth - 200);
@@ -121,12 +124,53 @@ function contentbox_create(j, num, content,color) {
         update_box_position(box);
       }
      });
+	$( dragbox ).dblclick(function() {
+		var sub = $(this).children();
+		var sub2 = sub.get(0);
+		var sub3 = $(sub2).children();
+		var sub4 = sub3.get(1);
+        if (sub4.style.display == 'block'){
+            sub4.style.display = 'none';
+			$(sub).removeClass('eventbatchopen');
+			$(sub).addClass('eventbatchclose');
+        }
+        else {
+            sub4.style.display = 'block';
+			$(sub).removeClass('eventbatchclose');
+			$(sub).addClass('eventbatchopen');
+        }
+		var regex = /\d+/g;
+		var id = $(this).attr("id");
+		var currhandle = $("#" + id + " > span.handle");
+		var box_pos = track_pos_handle(this);
+		// handle_pos rel to box
+        var handle_pos_rel = track_pos_handle(currhandle);
+		// handle_pos is global var
+        handle_pos.x = box_pos.x - handle_pos_rel.x + 14;
+        handle_pos.y = box_pos.y + handle_pos_rel.y + 14;
+        handle_pos.z = box_pos.z - handle_pos_rel.z;
+        var id_num = parseInt(id.match(regex), 10);
+        var workshop_id = Math.floor(id_num / 100);
+        var box_number = id_num % 100;
+        var box = workshops[workshop_id].boxes[box_number];
+        box.pos2d.x = handle_pos.x;
+        box.pos2d.y = handle_pos.y;
+        box.pos2d.z = handle_pos.z;
+		update_box_position(box);
+	});
     //$( contentbox ).resizable();
   });
   var title = content.title;
   var text = content.text;
   // fill contentbox with content
-  contentbox.innerHTML = '<div class="nodrag content">' + title + '</div>';
+  contentbox.innerHTML = '<div class="nodrag content unselectable">' + title + '</div>';
+  contentbox.innerHTML += (
+    '<div class="unselectable" style="display:none">'
+    + '<p>'
+    + text
+    + '</p>'
+	+ '</div>'
+  );
   // add dragbox directly to threejs container
   document.getElementById("container").appendChild(dragbox);
   // add contentbox to dragbox
@@ -163,7 +207,7 @@ function flush_boxes() {
 // iterate over available content to create boxes for them
 function workshop_create_all_contents(j) {
   var contents;
-  // remove bontentboxes and lines here and also in again in get, cause async
+  // remove contentboxes and lines here and also in again in get, cause async
   flush_boxes();
   $.getJSON( url, function(data){
     //console.log(data);

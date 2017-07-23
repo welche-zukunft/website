@@ -1,7 +1,8 @@
+
+
 var current_workshop_id = 0;
 
 function workshopdot_create(num , color) {
-	//console.log(color);
   // handle
   var handle = document.createElement( 'span' );
   // give them unique ids
@@ -10,7 +11,7 @@ function workshopdot_create(num , color) {
   handle.className += " handle";
   //handle.css('color', color);
   $(handle).css('background', color, 'important');
-  $(handle).attr("data-tooltip","Vorname,Name - Workshopname");
+  $(handle).attr("data-tooltip",metacontents[num].expert);
   $(handle).attr("data-tooltip-position","right");
   $(handle).click(function() {
     swapworkshop(handle.id);

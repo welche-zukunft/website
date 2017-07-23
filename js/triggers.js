@@ -82,7 +82,5 @@ function highlight(elem) {
   $(elem).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 }
 
-// fire once at start
-select_active();
 // and after that on scroll
 $(window).scroll( throttle(select_active,100) );

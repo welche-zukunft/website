@@ -1,52 +1,62 @@
-// contents via get in js/contentboxes.js
-// reset_ws via changeworkshop.js
 
-reset_ws();
 
 function update_workshop_menu(j) {
 
   var workshop = workshops[j];
+  console.log(workshop);
   var contents = workshop.contents;
-  var info = contents.info;
-  var name = contents.name;
-  var title = contents.title;
+  var logline = contents.logline;
+  var name = [];
+  var vita = [];
+  var pic = [];
+  for(var i = 0; i < contents.experten.length; i++){
+	console.log(contents.experten[i]);
+	name[i] = contents.experten[i].name;
+	pic[i] = contents.experten[i].pic;
+	vita[i] = contents.experten[i].vita;
+  }
+  var title = contents.title[0];
+  var title2 = contents.title[1]; 
   var intro_short = contents.intro_short;
-  var intro_long = contents.intro_long;
-  var vita = contents.vita;
-  var pic = contents.pic;
+
 
   // menu elements
 
-  // info
+  // logline
   var menu_content = $("#ws_menu_content");
   menu_content.html(
     '<div id="ws_info" class="ws_content">'
     + '<p>'
-    + info
+    + logline
     + '</p>'
     + '</div>'
   );
   // title
   var menu_title = $("#ws_menu_title");
-  menu_title.html(title);
+  menu_title.html(title + " - " + title2 );
   // image
+  for(var i = 0; i < name.length; i++){
   menu_content.append(
     '<div id="ws_vita" class="ws_content">'
-    + '<img id="ws_image" src="./images/ws/'
-    + pic
+    + '<img id="ws_image" src="./images/cv/'
+    + pic[i]
     + '" />'
+	+ '<p>'
+    + name[i]
+    + '</p>'
     + '<p>'
-    + vita
+    + vita[i]
     + '</p>'
     + '</div>'
+	+ '<br><br>'
   );
+  }
   menu_content.append(
     '<div id="ws_intro" class="ws_content">'
     + '<p>'
     + intro_short
     + '</p>'
     + '<p>'
-    + intro_long
     + '</p>'
   );
 

@@ -40,6 +40,8 @@ function select_active() {
   // test whether we are on a specific section instead
   if (toleratePosition >= sectionTop && toleratePosition <= sectionBottom ) {
     active = true;
+    // disable scrolling out of container
+    $("body").css("overflow", "hidden");
     $("#topmenu").detach().appendTo("#container");
     $("#signe_div").detach().appendTo("#container");
     //$("#bottom_menus").detach().appendTo("#container");
@@ -57,6 +59,7 @@ function select_active() {
     });
   } else {
     active = false;
+    $("body").css("overflow", "initial");
     flush_boxes();
     reset_ws();
     $("#topmenu").detach().appendTo("body");

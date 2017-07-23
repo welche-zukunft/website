@@ -136,13 +136,12 @@ body {
 				margin-top: 0px;
 			}
 			form {
-			    max-width: 500px;
+			    max-width: 700px;
+				min-width:300px;
 				padding: 10px 20px;
-				background: #f4f7f8;
-				margin: 10px 0px;
-				padding: 20px;
-				background: #f4f7f8;
-				border-radius: 8px;
+				margin: 0px 10px 10px 10px;;
+				background: #e1e5e6;
+				border-radius: 0px 8px 8px 8px;
 			
 			}
 			form fieldset{
@@ -176,6 +175,7 @@ body {
 			
 			form  input
 			{
+			font-family: 'Zilla Slab', serif;
 			background: rgba(255,255,255,.1);
 			border: none;
 			border-radius: 4px;
@@ -193,7 +193,27 @@ body {
 			box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 			margin-bottom: 30px;
 			}
-			
+
+			form select
+			{
+			font-family: 'Zilla Slab', serif;
+			background: rgba(255,255,255,.1);
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			margin: 0;
+			outline: 0;
+			padding: 7px;
+			width: 100%;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			background-color: #e8eeef;
+			color:#8a97a0;
+			-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+			box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+			margin-bottom: 30px;
+			}			
 			.result{
 			text-align: center;
 			padding: 12px 77px 12px 77px;

@@ -1,0 +1,63 @@
+textarea {
+		display: block;
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+        box-sizing: border-box;
+		resize:none;
+		margin-top: 2vh;
+		background: rgba(255,255,255,.1);
+		border: none;
+		border-radius: 4px;
+		font-size: 16px;
+		margin: 0;
+		outline: 0;
+		padding: 7px;
+		width: 100%;
+		background-color: #e8eeef;
+		color:#8a97a0;
+		-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+		box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+		margin-bottom: 30px;
+		font-family: 'Zilla Slab', serif;
+}
+
+.hl_form{
+	font-size: 26px;
+	text-align: center ;
+	padding: 7px 25px 7px 25px;
+	margin-left: 10px;
+	margin-top:0px;
+	margin-bottom: 0px;
+	max-width: 50%;
+	clear: both;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background:#e1e5e6;
+	display: inline-table;
+	cursor: pointer;
+}	
+
+	
+	
+.formular {
+	width: 100%;
+}
+
+
+textarea {
+    display: block;
+}
+
+#getinfos {
+	background:#f1f1f1;
+}
+
+.anmeldeinfos {
+	max-width: 700px;
+	min-width:300px;
+	padding: 10px 20px;
+	margin: 0px 10px 10px 10px;;
+	background: #e1e5e6;
+	border-radius: 0px 8px 8px 8px;	
+}

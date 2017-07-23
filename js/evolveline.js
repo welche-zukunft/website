@@ -69,6 +69,9 @@ function get_metainformations(){
 		metacontents = JSON.parse(JSON.stringify(data));
 	})
 	.done(function(){
+		//fill names of workshops to form
+		addoptions();
+		//start threejs
 		init();
 		animate();
 		// fire once at start

@@ -19,6 +19,8 @@
 		<link href="css/menu_ws.css" rel="stylesheet">
 		<link href="css/contentboxes.css" rel="stylesheet">
 		<link href="css/activity.css" rel="stylesheet">
+		<link href="css/formular.css" rel="stylesheet">
+		
 
 	</head>
 	<body>
@@ -187,17 +189,20 @@
 
                 <section id="anmeldung"> <div class="flex">
                 <div class="paper">
-			<div class="align_right">
+				<div class="align_right">
                         <a class="pseudo">&gt;&gt;</a>
-			</div>
-                	<div>
-		<p>Detaillierte Informationen und Anmeldung:</p>
-                <p>Ab  1. August 2017 unter <a href="http://www.welchezukunft.org">www.welchezuk
-unft.org</a></p>
-
-                <form method="POST" action="/index.php#newsletter" id="newsletter">
-                        <label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hie
-r bitte ihren Namen und ihre Mailadresse ein.</label>
+				</div>
+                <div class="formular">
+				<div class="formmenu">
+				<p id="signup" class="hl_form">Anmeldung</p><p id="getinfos" class="hl_form">Infos</p>
+				</div>
+				<div id="anmeldeformular">
+                <form method="POST" action="/index.php#newsletter" id="anmeldung">
+                        <p>Anmeldezeitraum: 1. August bis 9. September 2017, 12 Uhr<br>
+						finale Rückmeldungen Ihrerseits: 10. bis 13. September 2017<br>
+						Vergabe frei gewordener Plätze an Anmelder/innen der Wartelisten: 14. September 2017<br>
+						<br>
+						Hinweis: Die Teilnahme am „Welche Zukunft?!“-Labor ist kostenlos. Die Teilnehmer/innenzahl unserer Workshops ist begrenzt. Je nach Workshop gibt es 10 bis 25 verfügbare Plätze. Daher bitten wir Sie um eine verbindliche Anmeldung.</p>
                         <br>
                         <label >Vorname</label>
                         <input type="text" name="vorname" id="vorname" value="">
@@ -205,10 +210,40 @@ r bitte ihren Namen und ihre Mailadresse ein.</label>
                         <input type="text" name="name" id="name" value="">
                         <label >E-Mailadresse</label>
                         <input type="text" name="mailadresse" id="mailadresse" value="">
+                       <label >E-Mailadresse bestätigen</label>
+                        <input type="text" name="mailadresse" id="mailadresse" value="">
+                        <label >Mein Zukunftsszenario</label>
+						<p>Haben Sie schon eine Vorstellung, was in den nächsten 10 Jahren passieren könnte? Erzählen Sie uns, wenn Sie mögen davon!</p>
+						<textarea rows="15"></textarea>
+                        <label >Ich möchte mich für folgenden Workshop anmelden:</label>
+						<select id="wunsch_ws" name="wunschworkshop" size="1">
+							<option></option>
+							<option value='-1'>olympisch – Hauptsache dabei!</option>
+						</select>
+						<div id="sprache">
+						<label>Ich spreche folgende Sprache:</label>
+						<select size="1">
+							<option>deutsch</option>
+							<option>english</option>
+							<option>beides/both</option>
+						</select>
+						</div>
                         <br>
-                        <button type="submit">Newsletter abonnieren</button>
+                        <button type="submit">Jetzt anmelden</button>
                         <label class="result" style=""></label>
                 </form>
+				</div>
+				<div id="anmeldeinfos" class="anmeldeinfos"><br>
+				So gestalten Sie mit uns die Zukunft (Anmeldung zum Workshop):<br><br>
+				1. Ausfüllen des Online-Formulars. Die Anmeldung ist nur einmalig möglich. Sie wählen einen Workshop, an dem Sie am 16. September den ganzen Tag aktiv mitarbeiten möchten. Ein „Hopping“ zwischen den Workshops ist nicht möglich.<br><br>
+				2. Es gilt das Prinzip 'first come first serve'. Sollten alle Plätze in Ihrem Wunschworkshop bereits belegt sein, erscheint im Auswahl-Menü hinter dem Workshopnamen „Warteliste“. Sie können sich dann für die Warteliste zum Workshop anmelden. Oder noch besser: Sie melden sich bei einem anderen, noch freien Workshop an. Für die Olympioniken unter Ihnen gibt es auch die Option „Hauptsache dabei!“. Dann übernehmen wir für Sie die Entscheidung und teilen Ihnen anschließend mit, an welchem Workshop Sie teilnehmen werden.<br><br>
+				3. Sie erhalten eine automatisch generierte E-Mail mit einem Bestätigungslink. Erst durch Anklicken dieses Links gilt Ihre Anmeldung – entweder für Ihren Wunsch-Workshop, die Warteliste oder einen Workshop, den wir für Sie bestimmen werden – als eingegangen. Diese Mail berechtigt jedoch noch nicht zur Teilnahme am Workshop-Tag am 16. September (siehe Punkt 6: finale Rückbestätigung & Punkt 7: Vergabe frei gewordener Plätze). <br><br>
+				4. Nach erfolgreicher Anmeldung werden Sie von uns entweder als Teilnehmer oder Interessent (Warteliste) für Ihren Wunsch-Workshop eingetragen. Haben Sie die Option „Hauptsache dabei!“ gewählt, suchen wir für Sie einen Workshop aus. Sie erhalten von uns per E-Mail eine personalisierte Teilnahmebestätigung oder eine Bestätigung über Ihren Wartelistenplatz. <br><br>
+				5. Ab sofort gehören Sie zur Community des jeweiligen Workshops und erhalten von uns interessantes Material zur Vorbereitung auf Ihren jeweiligen Workshop. Dieses Material ist nur für diesen Zweck vorgesehen und darf nicht an Dritte weitergegeben oder veröffentlicht werden. (Das Material erhalten Sie auch, wenn Sie auf der Warteliste für den Workshop stehen.)<br><br>
+				6. Am 9. September werden wir die vorläufig angemeldeten Teilnehmer/innen um eine finale Rückmeldung bitten (per Mail). Diese endgültige Bestätigung zur Teilnahme muss zwischen dem 10. und 13. September von Ihnen per Mail an uns erfolgen. Diese Rückbestätigung ist die Voraussetzung für Ihre Teilnahme am „Welche Zukunft?!“-Labor und dem jeweiligen Workshop.<br><br>
+				7. Frei gewordene Plätze werden am 14. und 15. September per Losverfahren an Anmelder/innen aus der Warteliste vergeben. Sie werden ebenso per E-Mail benachrichtigt.<br><br>
+				8. Und jetzt bitte anmelden! Die Zukunft wartet nicht. <br><br>
+				</div>
                 </div>
                 </div><!-- paper -->
                 </div><!-- flex -->
@@ -318,6 +353,7 @@ r bitte ihren Namen und ihre Mailadresse ein.</label>
 		<script type='text/javascript' src='js/dynamiccontent.js'></script>
 		<script type='text/javascript' src='js/menu_workshop.js'></script>
 		<script type='text/javascript' src='js/activity.js'></script>
+		<script type='text/javascript' src='js/formular.js'></script>
 		</body>
 </html>
 

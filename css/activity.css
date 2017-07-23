@@ -21,7 +21,7 @@ section#anmeldung div.paper {
   opacity: 0.98;
 }
 section#anmeldung div.paper > div {
-  max-height: 80vh;
+  max-height: 70vh;
   overflow-y: auto;
 }
 

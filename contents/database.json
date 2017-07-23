@@ -12,7 +12,7 @@
 	"experten": [{
 			"name": "Prof. Dr. Rudolph Hickel",
 			"vita": "",
-			"pic": ""
+			"pic": "hickel.jpg"
 		}
 	],
 	"events": [{
@@ -35,7 +35,7 @@
 	"experten": [{
 			"name": "Dr. Dieter Hein",
 			"vita": "",
-			"pic": ""
+			"pic": "hein.jpg"
 		}
 	],
 	"events": [{
@@ -157,12 +157,12 @@
 	"experten": [{
 			"name": "Dr. Armin Haas",
 			"vita": "",
-			"pic": ""
+			"pic": "haas.jpg"
 		},
 		{
 			"name": "Joseph Rini",
 			"vita": "",
-			"pic": ""
+			"pic": "rini.jpg"
 		}
 	],
 	"events": [{
@@ -185,7 +185,7 @@
 	"experten": [{
 			"name": "Prof. Dr. Kai von Lewinski ",
 			"vita": "",
-			"pic": ""
+			"pic": "lewinski.jpg"
 		}
 	],
 	"events": [{
@@ -208,7 +208,7 @@
 	"experten": [{
 			"name": "Prof. Dr. Volker Deville",
 			"vita": "",
-			"pic": ""
+			"pic": "deville.jpg"
 		}
 	],
 	"events": [{
@@ -231,11 +231,11 @@
 	"experten": [{
 			"name": "Dr. Cho-Oon Khong",
 			"vita": "",
-			"pic": ""
+			"pic": "khong.jpg"
 		},{
 			"name": "Geraldine Wessing",
 			"vita": "",
-			"pic": ""
+			"pic": "wessing.jpg"
 		}
 	],
 	"events": [{
@@ -258,19 +258,19 @@
 	"experten": [{
 			"name": "Kornhuber",
 			"vita": "",
-			"pic": ""
+			"pic": "kornhuber.jpg"
 		},{
 			"name": "Kretschmer",
 			"vita": "",
-			"pic": ""
+			"pic": "kretschmer.jpg"
 		},{
 			"name": "Lehmann",
 			"vita": "",
-			"pic": ""
+			"pic": "lehmann.jpg"
 		},{
 			"name": "Molnos",
 			"vita": "",
-			"pic": ""
+			"pic": "molnos.jpg"
 		}
 	],
 	"events": [{
@@ -293,7 +293,7 @@
 	"experten": [{
 			"name": "Dr. Rodger Baker",
 			"vita": "",
-			"pic": ""
+			"pic": "baker.jpg"
 		}
 	],
 	"events": [{
@@ -316,7 +316,7 @@
 	"experten": [{
 			"name": "Cornelia Daheim",
 			"vita": "",
-			"pic": ""
+			"pic": "daheim.jpg"
 		}
 	],
 	"events": [{
@@ -339,7 +339,7 @@
 	"experten": [{
 			"name": "Dr. Martin Burckhardt",
 			"vita": "",
-			"pic": ""
+			"pic": "burckhardt.jpg"
 		}
 	],
 	"events": [{
@@ -362,7 +362,7 @@
 	"experten": [{
 			"name": "Michael Hartmann ",
 			"vita": "",
-			"pic": ""
+			"pic": "hartmann.jpg"
 		}
 	],
 	"events": [{
@@ -385,12 +385,12 @@
 	"experten": [{
 			"name": "Dr. Ariella Helfgott",
 			"vita": "",
-			"pic": ""
+			"pic": "helfgott.jpg"
 		},
 		{
 			"name": "Dr. George Garbutt",
 			"vita": "",
-			"pic": ""
+			"pic": "garbutt.jpg"
 		}
 	],
 	"events": [{

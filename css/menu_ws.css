@@ -130,6 +130,6 @@ label.burger-ws {
 #ws_image, #ws_content_span {
   margin: 1ch;
 }
-#ws_intro {
+#ws_intro, #ws_vita {
 	clear:both;
 }

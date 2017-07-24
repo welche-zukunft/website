@@ -16,7 +16,9 @@ function update_workshop_menu(j) {
   var title = metacontents[j].title[0];
   var title2 = metacontents[j].title[1]; 
   var intro_short = metacontents[j].intro_short;
-
+  var namemoderator = metacontents[j].namemoderator;
+  var vitamoderator = metacontents[j].vitamoderator;
+  var material = metacontents[j].material;
 
   // menu elements
 
@@ -31,15 +33,27 @@ function update_workshop_menu(j) {
   );
   // title
   var menu_title = $("#ws_menu_title");
-  menu_title.html(title + " - " + title2 );
-  // image
-  for(var i = 0; i < name.length; i++){
+  var menu_subtitle = $("#ws_menu_subtitle");
+  menu_title.html(title + ":");
+  menu_subtitle.html(title2);
   menu_content.append(
+    '<div id="ws_intro" class="ws_content">'
+    + '<p>'
+    + intro_short
+    + '</p>'
+    + '<p class="ws_hl">'
+	+ "Experten"
+    + '</p>'
+	+ '</div>'
+  ); 
+  // image
+  for(var i = 0; i < name.length; i++){ 
+	menu_content.append(
     '<div id="ws_vita" class="ws_content">'
     + '<img id="ws_image" src="./images/cv/'
     + pic[i]
     + '" />'
-	+ '<p>'
+	+ '<p class="ws_name">'
     + name[i]
     + '</p>'
     + '<p>'
@@ -49,14 +63,33 @@ function update_workshop_menu(j) {
 	+ '<br><br>'
   );
   }
-  menu_content.append(
-    '<div id="ws_intro" class="ws_content">'
-    + '<p>'
-    + intro_short
+if(namemoderator != ""){
+	menu_content.append(
+    '<div id="ws_vita" class="ws_content">'
+    + '<p class="ws_hl">'
+	+ "Moderation"
+    + '</p>'
+	+ '<p class="ws_name">'
+    + namemoderator
     + '</p>'
     + '<p>'
+    + vitamoderator
     + '</p>'
-  );
+	+ '</div>'
+  ); 
+}
+	if(material != ""){
+	menu_content.append(
+	'<div id="ws_intro" class="ws_content">'
+	+'<p>'
+	+ '<a href="./pdf/' + material + '" target="_blank">'
+    + ">> Link zu Workshop-PDF"
+    + '</a>'
+	+ '</p>'
+	+ '</div>'
+	);
+}
+	//menu_content.append('</div>');
 
 }
 

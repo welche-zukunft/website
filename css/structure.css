@@ -12,9 +12,9 @@ section#container_section {
   margin-left: 1ch;
   height: calc( 100% - 20% - 120px );
   width: 27px;
-  overflow: visible;
+  overflow:display !important;
   column-count: 1;
-  z-index:100;
+  z-index:90;
   /*
   column-gap: 10px;
   column-width: 30px;
@@ -109,7 +109,7 @@ div.vert-center {
 }
 #topmenu {
   border-bottom-right-radius: 25px;
-  max-width: 250px;
+  max-width: 280px;
 }
 #anmeldung_link {
   border-top-left-radius: 25px;
@@ -131,8 +131,6 @@ span.handle {
   cursor: pointer;
   border-radius: 50%;
   border: solid thin black;
-  color: fuchsia;
-  background: fuchsia;
   position: absolute;
   height: 3ch;
   width: 3ch;
@@ -248,42 +246,46 @@ div.scroll-up {
 [data-tooltip]:before {
     content: attr(data-tooltip);
     display: none;
-    position: absolute;
-    background: darkgray;
-    color: #fff;
+    position: absolute;	
+	background-color: #000;
+	color: currentColor;
+	border-color: white;
+	border: 1px;
     padding: 2px 2vh;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.;
-    min-width: 180px;
+    min-width: 280px;
     text-align: left;
     border-radius: 2px;
-	z-index: 101;
+	z-index: 80;
+    border-style: solid;
+	overflow:visible;
+white-space: nowrap;
 }
-[data-tooltip-position="right"]:before,
-[data-tooltip-position="left"]:before {
+
+[data-tooltip-position="right"]:before{
     top: 50%;
     -ms-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-	z-index: 101;
+	z-index: 80;
 }
 [data-tooltip-position="right"]:before {
     left: 100%;
     margin-left: 6px;
-	z-index: 101;
+	z-index: 80;
 }
-[data-tooltip-position="right"]:after,
-[data-tooltip-position="left"]:after {
+[data-tooltip-position="right"]:after{
     top: 50%;
     margin-top: -6px;
-	z-index: 101;
+	z-index:80;
 }
 [data-tooltip-position="right"]:after {
     left: 100%;
     border-width: 6px 6px 6px 0;
     border-right-color: #000;
-	z-index: 101;
+	z-index: 80;
 }
 /* Show the tooltip when hovering */
 [data-tooltip]:hover:before,

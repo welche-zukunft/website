@@ -126,7 +126,7 @@ function init() {
 		geometries.push(new THREE.BoxGeometry(boxwidth, boxheight, boxdepth));
 		var geo = new THREE.EdgesGeometry(geometries[i]);
 	
-		var mat = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 2} );
+		var mat = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 1} );
 		
 		var wireframe = new THREE.LineSegments( geo, mat );
 		wireframe.material.opacity = 0.25;
@@ -185,7 +185,7 @@ function init() {
 			//console.log(noise_objects[i]);
 		}
 		particles.push(events);
-		line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: metacontents[h].color, opacity: 1, linewidth: 4} ) ));
+		line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: metacontents[h].color, opacity: 1, linewidth: 1} ) ));
 		line[h].name = "test"+h.toString();
 		scene.add( line[h] );
 		workshopdot_create(h , metacontents[h].color);
@@ -341,20 +341,6 @@ function onKeyDown(event){
 
 	switch ( event.keyCode ) {
 	case 49:
-		if(bunch == false){
-			var geometries = [];
-			geometries.push(new THREE.PlaneGeometry(1, 1, 5));
-			var material = new THREE.MeshNormalMaterial({color: 0xff0000});
-			var meshes = [];
-			var badge = new THREE.Mesh(geometries[0], material);
-			bunchstart(10);
-			bunch = true;
-		}
-		else{
-			bunchend(10);
-			bunch = false;
-		}
-		break;	
 	case 50:
 		if(wind == false){
 			steps = 100;

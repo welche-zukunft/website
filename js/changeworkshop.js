@@ -8,11 +8,11 @@ function workshopdot_create(num , color) {
   // give them unique ids
   handle.id =  num;
   // give them classes
-  handle.className += " handle";
-  //handle.css('color', color);
+  handle.className += " handle tooltip";
+  $(handle).css('color', color);
   $(handle).css('background', color, 'important');
-  $(handle).attr("data-tooltip",metacontents[num].expert);
-  $(handle).attr("data-tooltip-position","right");
+ $(handle).append('<span class="tooltiptext" style="background: '+color+'">'+metacontents[num].title[0] + ' - ' + metacontents[num].title[1]+'</span>');
+ 	
   $(handle).click(function() {
     swapworkshop(handle.id);
     $('#workshopmenu').unbind("click");
@@ -28,11 +28,13 @@ function workshopdot_deselect(num){
   // give them unique ids
   handle.id =  num;
   // give them classes
-  handle.className += " handle";
+  handle.className += " handle tooltip";
   //handle.css('color', color);
   $(handle).css('background', '#ffffff', 'important');
-  $(handle).attr("data-tooltip","alle Workshops anzeigen");
-  $(handle).attr("data-tooltip-position","right");
+  $(handle).css('color', '#ffffff');
+  $(handle).append('<span class="tooltiptext" style="background: #fff">'+'alle Workshops anzeigen'+'</span>');
+
+ 
   $(handle).click(function() {
     reset_ws();
   });
@@ -45,6 +47,9 @@ function reset_ws() {
   var title = 'Workshop wählen';
   var menu_title = $("#ws_menu_title");
   menu_title.html(title);
+  var subtitle = '';
+  var menu_subtitle = $("#ws_menu_subtitle");
+  menu_subtitle.html(subtitle);
   var menu = $('#workshopmenu');
   menu.unbind("click");
   menu.click(function() {

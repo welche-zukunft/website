@@ -4,23 +4,77 @@
 		<title>WELCHE ZUKUNFT - PROTO</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet"> 
 		<style>
 			body {
-				font-family: 'Questrial', sans-serif;
+				font-family: 'Oxygen', sans-serif;
 				background-color: #f0f0f0;
 				margin: 0px;
 			}
 		</style>
-		<link href="css/underconstruction.css" rel="stylesheet">
+		<link href="css/underconstruction2.css" rel="stylesheet">
 		<link href="css/structure.css" rel="stylesheet">
 		<link href="css/menu.css" rel="stylesheet">
 		<link href="css/menu_ws.css" rel="stylesheet">
 		<link href="css/contentboxes.css" rel="stylesheet">
 		<link href="css/activity.css" rel="stylesheet">
 		<link href="css/formular.css" rel="stylesheet">
-		
+		<link href="css/tooltips.css" rel="stylesheet">
+		<script>
+		function hasWebGL() {
+			var supported;
+
+			try {
+				var canvas = document.createElement('canvas');
+				supported = !! window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+			} catch(e) { supported = false; }
+
+			try {
+				// let is by no means required, but will help us rule out some old browsers/devices with potentially buggy implementations: http://caniuse.com/#feat=let
+				eval('let foo = 123;');
+			} catch (e) { supported = false; }
+
+			if (supported === false) {
+				alert("WebGL is not supported");
+			}
+
+			canvas = undefined;
+
+			alert("webGL is supportet");
+		}
+		//hasWebGL();
+			function isMobile() {
+			  var index = navigator.appVersion.indexOf("Mobile");
+			  alert(index > -1);
+			}
+		//isMobile();
+		var system;
+		function getOS() {
+		  var userAgent = window.navigator.userAgent,
+			  platform = window.navigator.platform,
+			  macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+			  windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+			  iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+			  os = null;
+
+		  if (macosPlatforms.indexOf(platform) !== -1) {
+			os = 'Mac OS';
+		  } else if (iosPlatforms.indexOf(platform) !== -1) {
+			os = 'iOS';
+		  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+			os = 'Windows';
+		  } else if (/Android/.test(userAgent)) {
+			os = 'Android';
+		  } else if (!os && /Linux/.test(platform)) {
+			os = 'Linux';
+		  }
+
+		  return os;
+		}
+
+		system = getOS();
+		</script>
 
 	</head>
 	<body>
@@ -59,20 +113,60 @@
 
 		<section id="info"> <div class="flex">
 		<div class="paper">
+				
 		<h1>Welche Zukunft?! </h1>
 		<p class="subtitle">Von Andres Veiel und Jutta Doberstein </p>
-		<p class="subtitle">am 16. September 2017, Deutsches Theater Berlin</p>
-		<br>
-		<p><i>Eurokrise, Robotik, Staatsbankrott, Dürrekatastrophen. Oder: Bedingungsloses Grundeinkommen, Energiewende, globale Grundrechte. Was steht uns bevor? Kommt die Zukunft über uns und wir sind nur die Crash-Test Dummies der Geschichte?<br><br>Oder können wir selbst gestalten und wählen?</i> </p>
-		<p>Auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien entwirft <b>Welche Zukunft?!</b> eine mögliche Geschichte von unserer Zukunft – und blickt dann von dort zurück in jene Zeit, in der man „das Schlimmste hätte verhindern können“: ins Heute.</p>
-		<p>Am <b>Deutschen Theater Berlin</b> entwickeln Film- und Theaterregisseur <b>Andres Veiel</b> (<i>Beuys, Das Himbeerreich</i>) und <b>Jutta Doberstein</b> mit hochkarätigen Experten und dem Publikum ein mögliches Zukunftsszenario für die kommenden 10 Jahre. Einen ganzen Tag lang, in Workshops und Panels, am Samstag, dem <b>16. September</b>, im ganzen Haus des Deutschen Theaters.</p>
-		<p>Geleitet werden die Workshops von Vertretern namenhafter Institute: PIK, IASS, Universität Oxford, Stratfor, Royal Dutch Shell, die Universitäten Passau, Würzburg, Bremen, Fairesearch usw. Das Publikum wird zum aktiven Mitgestalter. Besucher melden sich im Vorfeld für einen der Workshops an, an dem sie den ganzen Tag teilnehmen und zusammen mit den Experten verschiedene Szenarien entwerfen. Im gemeinsamen Plenum werden diese Entwürfe schließlich zu einer plausiblen, faktenbasierten Science Fiction Erzählung zusammengetragen.</p>
-		<p>Die Ergebnisse des <b>Welche Zukunft?!</b>-Labors fließen in ein gleichnamiges Theaterstück ein, das im September 2018, am Deutschen Theater uraufgeführt wird: In einem Untersuchungsausschuss wird diese Zukunft auf den Prüfstand gestellt. Zeugen und Verantwortliche werden einbestellt und wir fragen: Was hätten wir wissen können, wenn wir es hätten wissen wollen? Was hätten wir verhindern können?  </p>
-		
-		<p>Workshop- und Paneltag<br>
+		<h2>
 		Samstag, 16. September 2017<br>
 		Deutsches Theater Berlin (im ganzen Haus)<br>
-		Von 10:00 bis 20:15 Uhr </p>	
+		<p>Workshop- und Panels<br>
+		Von 10:00 bis 20:15 Uhr <br>
+		Kostenlose Teilnahme. Jetzt anmelden!</h2>
+		<br>
+
+		<p><i>Eurokrise, Robotik, Staatsbankrott, Dürrekatastrophen. Oder:
+		Bedingungsloses Grundeinkommen, Energiewende, globale Grundrechte. Was
+		steht uns bevor? Kommt die Zukunft über uns und wir sind nur die
+		Crash-Test Dummies der Geschichte? — Oder können wir selbst
+		gestalten und wählen?</i> </p>
+		<p>Auf Grundlage von Studien, Forschungsprojekten, Prognosen und
+		Szenarien entwirft <b>Welche Zukunft?!</b> eine mögliche Geschichte von
+		unserer Zukunft – und blickt dann von dort zurück in jene Zeit, in der
+		man „das Schlimmste hätte verhindern können“: ins Heute.</p>
+		<p>Am Deutschen Theater Berlin entwickeln Film- und
+		Theaterregisseur Andres Veiel (<i>Beuys, Das Himbeerreich</i>)
+		und Jutta Doberstein mit hochkarätigen Experten und dem Publikum
+		ein mögliches Zukunftsszenario für die kommenden 10 Jahre. Einen ganzen
+		Tag lang, in Workshops und Panels, am Samstag, dem 16. September,
+		im ganzen Haus des Deutschen Theaters.</p>
+		<p>Geleitet werden die Workshops von Vertretern namenhafter Institute:
+		PIK, IASS, Universität Oxford, Stratfor, Royal Dutch Shell, die
+		Universitäten Passau, Würzburg, Bremen, Fairesearch usw. Das Publikum
+		wird zum aktiven Mitgestalter. Besucher melden sich im Vorfeld für einen
+		der Workshops an, an dem sie den ganzen Tag teilnehmen und zusammen mit
+		den Experten verschiedene Szenarien entwerfen. Im gemeinsamen Plenum
+		werden diese Entwürfe schließlich zu einer plausiblen, faktenbasierten
+		Science Fiction Erzählung zusammengetragen.</p>
+		<p>Die Ergebnisse des <b>Welche Zukunft?!</b>-Labors fließen in ein
+		gleichnamiges Theaterstück ein, das im September 2018, am Deutschen
+		Theater uraufgeführt wird: In einem Untersuchungsausschuss wird diese
+		Zukunft auf den Prüfstand gestellt. Zeugen und Verantwortliche werden
+		einbestellt und wir fragen: Was hätten wir wissen können, wenn wir es
+		hätten wissen wollen? Was hätten wir verhindern können?  </p>
+		
+		<hr>
+		<p><span class=italic>Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</span></p>
+		<div class=logos>
+		<a href="https://www.deutschestheater.de"><img src="image0.png" alt="logo"></a>
+		<a href="http://humboldtforum.com/de-DE/"><img src="image2.png" alt="logo"></a>
+		<a href="https://www.bundesregierung.de/Webs/Breg/DE/Bundesregierung/BeauftragtefuerKulturundMedien/beauftragte-fuer-kultur-und-medien.html"><img src="image1.png" alt="logo"></a>
+		</div>
+		<p><span class=italic>Medienpartner:</span></p>
+		<div class=logos>
+		<a href="http://www.deutschlandfunkkultur.de"><img src="image3.png" alt="logo"></a>
+		</div>
+		<br>
+		<hr>
 
 		<a href="#workshops"><p class="big center">&gt;&gt; zu den Workshops</p></a>
 		</div><!-- paper -->
@@ -80,45 +174,103 @@
 
 		<section id="workshops"> <div class="flex">
 		<div class="paper">
+				
 		<h2>Die Workshops</h2>
-		<p>Je 20 WorkshopteilnehmerInnen werden mit den ExpertInnen zusammen Szenarien entwerfen.</p>
-		
-		<h3>Ökonomie I</h3>
-		<p class="workshop">Die Geister von Reagan und Thatcher... <span class=bold>Prof. Dr. Rudolph Hickel</span> vom Lehrstuhl für Politische Ökonomie in Bremen untersucht, wie sich die Deregulierung der US Banken durch Trump auf das weltweite Finanzsystem auswirken wird.  
+		<p>Am 16. September veranstalten wir von 10 bis 20 Uhr im gesamten Haus des Deutschen Theaters parallel 13 Workshops mit unterschiedlichen Themenschwerpunkten. Sie können sich zur Teilnahme an einem dieser Workshops anmelden und gemeinsam mit den ExpertInnen ein Szenario für die kommenden zehn Jahre entwerfen. Pro Workshop können 10 bis 25 Personen teilnehmen. Am Ende des Tages werden schließlich alle Workshops im Saal der Kammerspiele zusammenkommen, um die einzelnen Prognosen zu einer gemeinsamen Erzählung für die Zukunft zusammenzutragen. </p>
+		<h3>1 – Ökonomie: Fiskalische und andere Götterdämmerungen</h3>
+		<p class="workshop">Die Geister von Reagan und Thatcher... <span
+		class=bold>Prof. Dr. Rudolph Hickel</span> vom Lehrstuhl für Politische
+		Ökonomie in Bremen untersucht, wie sich die Deregulierung der US Banken
+		durch Trump auf das weltweite Finanzsystem auswirken wird.
 
-		<h3>Ökonomie II</h3>
-		<p class="workshop">Too big to fail? Können Deutsche Bank, Goldman-Sachs oder Credit Suisse die Weltwirtschaft lahmlegen? <span class=bold>Dr. Dieter Hein</span> vom unabhängigen Analyse-Institut Fairesearch entwickelt ein Szenario, in dem die Banken die Politik zum nächsten Bail-out zwingen. </p> 
+		<h3>2 – Ökonomie: Patient Zero - der Indexpatient Deutsche Bank</h3>
+		<p class="workshop">Too big to fail? Können Deutsche Bank,
+		Goldman-Sachs oder Credit Suisse die Weltwirtschaft lahmlegen? <span
+		class=bold>Dr. Dieter Hein</span> vom unabhängigen Analyse-Institut
+		Fairesearch entwickelt ein Szenario, in dem die Banken die Politik zum
+		nächsten Bail-out zwingen. </p>
 
-		<h3>Ökonomie III</h3>
-		<p class="workshop">Retten wir den Euro, und lassen dafür Italien und Griechenland über die Klinge springen? <span class=bold>Prof. Dr. Peter Bofinger</span>, dienstältestes Mitglied des Sachverständigenrates für Wirtschaft und <span class=bold>Dr. Dirk Ehnts</span>, Spezialist für Makroökonomie an der TU Chemnitz erforschen unsere Zukunft in einem Weltmarkt, der aus den Fugen gerät und in dem uns auch die D-Mark nicht mehr retten kann. </p>  
+		<h3>3 – Ökonomie: Armageddon</h3>
+		<p class="workshop">Retten wir den Euro, und lassen dafür Italien und
+		Griechenland über die Klinge springen? <span class=bold>Prof. Dr. Peter
+		Bofinger</span>, dienstältestes Mitglied des Sachverständigenrates für
+		Wirtschaft und <span class=bold>Dr. Dirk Ehnts</span>, Spezialist für
+		Makroökonomie an der TU Chemnitz erforschen unsere Zukunft in einem
+		Weltmarkt, der aus den Fugen gerät und in dem uns auch die D-Mark nicht
+		mehr retten kann. </p>
 
-		<h3>Nachhaltige Ökonomie</h3>
-		<p class="workshop">Können unsere sozialen Protokolle mit den Algorithmen mithalten? <span class=bold>Dr. Armin Haas</span> vom Institute for Advanced Sustainability Studies, Potsdam forscht zu viraler Ansteckung im Markt und fragt, wie viel uns die Geschichte des Marktes über seine Zukunft verrät. </p>  
+		<h3>4 – Ökonomie: Der Weg zur Hölle ist mit guten Vorsätzen gepflastert</h3>
+		<p class="workshop">Können unsere sozialen Protokolle mit den
+		Algorithmen mithalten? <span class=bold>Dr. Armin Haas</span> vom
+		Institute for Advanced Sustainability Studies, Potsdam forscht zu
+		viraler Ansteckung im Markt und fragt, wie viel uns die Geschichte des
+		Marktes über seine Zukunft verrät. </p>
 
-		<h3>Staatsbankrott </h3>
-		<p class="workshop">Was, wenn Italien, Griechenland und Portugal den Bankrott erklären und Deutschland auf den Schulden sitzen bleibt? Wenn die Polizei nicht mehr zur Arbeit kommt? <span class=bold>Prof. Dr. Kai von Lewinski</span> lehrt Öffentliches Recht an der Universität Passau und kann die Folgen des Bankrott für unsere Gesellschaft anschaulich beschreiben. War es das, was die Neo-Cons mit: „weniger Staat“ gemeint haben?  </p>  
+		<h3>5 – Recht und Gesetz: Staatsverluste?!</h3>
+		<p class="workshop">Was, wenn Italien, Griechenland und Portugal den
+		Bankrott erklären und Deutschland auf den Schulden sitzen bleibt? Wenn
+		die Polizei nicht mehr zur Arbeit kommt? <span class=bold>Prof. Dr. Kai
+		von Lewinski</span> lehrt Öffentliches Recht an der Universität Passau
+		und kann die Folgen des Bankrott für unsere Gesellschaft anschaulich
+		beschreiben. War es das, was die Neo-Cons mit: „weniger Staat“ gemeint
+		haben?  </p>
 
-		<h3>Risikomanagement</h3>
-		<p class="workshop"><span class=bold>Prof. Dr. Volker Deville</span> von der Allianz Versicherung spielt mit Wild Cards: Ein Ausbruch der Phlegräischen Felder in Italien oder ein Durchbruch bei der Tumorforschung, der das Rentensystem endgültig zum Erliegen bringt. Die Versicherer sind Experten für das Unerwartete, dafür entwickeln sie Modelle. Sind die Versicherer die neuen Auguren?</p>  
+		<h3>6 – Risikomanagement: Guter Rat – Notvorrat …</h3>
+		<p class="workshop"><span class=bold>Prof. Dr. Volker Deville</span>
+		von der Allianz Versicherung spielt mit Wild Cards: Ein Ausbruch der
+		Phlegräischen Felder in Italien oder ein Durchbruch bei der
+		Tumorforschung, der das Rentensystem endgültig zum Erliegen bringt. Die
+		Versicherer sind Experten für das Unerwartete, dafür entwickeln sie
+		Modelle. Sind die Versicherer die neuen Auguren?</p>
 
-		<h3>Energieversorgung</h3>
-		<p class="workshop">Transnationale Korporationen betrachten die Zukunft nüchtern, analytisch. Es wird Krieg geben, oder nicht - wer weiß das schon? Aber die Energiewende ist sicher. <span class=bold>Dr. Cho-On Khong</span> ist Chief Analyst für Royal Dutch Shell. Von London aus entwirft 
-		er Szenarien für die radikalen Umwälzungen, die der Firma - und damit auch uns - bevorstehen.</p>  
+		<h3>7 – Energy supply: Titel fehlt noch (in engl. Sprache)</h3>
+		<p class="workshop">Transnationale Korporationen betrachten die
+		Zukunft nüchtern, analytisch. Es wird Krieg geben, oder nicht - wer weiß
+		das schon? Aber die Energiewende ist sicher. <span class=bold>Dr. Cho-On
+		Khong</span> ist Chief Analyst für Royal Dutch Shell. Von London aus
+		entwirft er Szenarien für die radikalen Umwälzungen, die der Firma - und damit auch uns - bevorstehen.</p>
 
-		<h3>Extremwetter</h3>
-		<p class="workshop">Alle reden vom Klima - <span class=bold>Kai Kornhuber und Marlene Kretschmer</span> aus der Arbeitsgruppe Earth Systems Analysis am PIK reden vom Wetter. Extreme Sommer, extreme Winter - die Vorboten des Klimawandels. Wann ist der „Point of No Return“? Wann ist Extrem-Wetter Normalität und wir treten den geordneten Rückzug ins Binnenland an?</p>
+		<h3>8 – Wetter: Eine neue Normalität</h3>
+		<p class="workshop">Alle reden vom Klima - die vier Forscher <span class=bold>Kornhuber, Kretschmer, Lehmann und Molnos</span> aus der Arbeitsgruppe Earth Systems Analysis am PIK reden vom Wetter. Extreme Sommer, extreme Winter - die Vorboten des Klimawandels. Wann ist der „Point of No Return“? Wann ist Extrem-Wetter Normalität und wir treten den geordneten Rückzug ins Binnenland an?</p>
 
-		<h3>Geopolitik</h3>
-		<p class="workshop">Geopolitik - die Politik des Raumes. Ist der Traum der Welt ohne Grenzen bereits ausgeträumt und wir reden wieder von lokalen Hegemonialmächten, Zugang zu Wasserwegen und einem Weltkrieg, der im Weltall ausgetragen wird? <span class=bold>Dr. Rodger Baker</span> von Stratfor berät Regierungen, Geheimdienste und Konzerne, die über Krieg und Frieden entscheiden müssen.</p>  
+		<h3>9 – Geopolitics: Intersections (in engl. Sprache)</h3>
+		<p class="workshop">Geopolitik - die Politik des Raumes. Ist der Traum der Welt ohne Grenzen bereits ausgeträumt und wir reden wieder von
+		lokalen Hegemonialmächten, Zugang zu Wasserwegen und einem Weltkrieg,
+		der im Weltall ausgetragen wird? <span class=bold>Dr. Rodger
+		Baker</span> von Stratfor berät Regierungen, Geheimdienste und Konzerne,
+		die über Krieg und Frieden entscheiden müssen.</p>
 
-		<h3>Arbeit I</h3>
-		<p class="workshop">In 10 Jahren wird es keine Arbeitsplätze im Bereich von Logistik und Retail geben. Und das ist nur die Robotik. Was passiert mit den Juristen, Bankangestellten und Medizinern, wenn künstliche Intelligenz den Markt übernimmt? Können wir uns darauf vorbereiten? <span class=bold>Cornelia Daheim</span> von Future Impacts leitet die deutsche Vertretung des „Millenium Project“, das jährlich den „State of the Future“ Report zur Zukunft der Arbeit veröffentlicht.</p>  
-		<h3>Arbeit II</h3>
-		<p class="workshop"><span class=bold>Dr. Martin Burckhardt</span> hat mit „Score“ seine eigene Vision von einer Gesellschaft entworfen, in der Spiel und Arbeit identisch sind. Nach dem Zusammenbruch der Weltwirtschaft wird unsere Identität Sinnstiftung und Währung zugleich. Können wir konsumieren, was wir nicht produzieren?</p>
-		<h3>Umweltveränderungen</h3>
-		<p class="workshop">Wie viele Menschen können wir ernähren, wenn die Äcker und Obstgärten durch Klimawandel und Überdüngung vernichtet sind - wo sind die Anbauflächen der Zukunft und wem gehören sie? <span class=bold>Dr. Monika Zurek</span> erforscht diese Fragen in der Food Systems Group am Environmental Change Institute der University of Oxford. Es geht um unser Überleben, aber auch darum, wem die Weinberge im Norden Schottlands gehören werden und wer sie jetzt schon plant.  </p>  
-		<h3>Elite & Demokratie</h3>
-		<p class="workshop">Soziologe <span class=bold>Michael Hartmann</span> forscht zu der Rolle der bundesrepublikanischen und europäischen Leistungselite. Bleiben angesichts der Selbstrekrutierung dieser Führungszirkel Chancengleichheit und Verteilungsgerechtigkeit leere Versprechen? Und wie verstärkt die von Hartmann konstituierte soziale Immobilität eine neue Wirtschafts- und Finanzkrise? Oder ist sie sogar einer ihrer Ursachen? </p>
+		<h3>10 – Arbeit: Zukunft ohne Arbeitgeber?</h3>
+		<p class="workshop">In 10 Jahren wird es keine Arbeitsplätze im
+		Bereich von Logistik und Retail geben. Und das ist nur die Robotik. Was
+		passiert mit den Juristen, Bankangestellten und Medizinern, wenn
+		künstliche Intelligenz den Markt übernimmt? Können wir uns darauf
+		vorbereiten? <span class=bold>Cornelia Daheim</span> von Future Impacts
+		leitet die deutsche Vertretung des „Millenium Project“, das jährlich den
+		„State of the Future“ Report zur Zukunft der Arbeit veröffentlicht.</p>
+
+		<h3>11 – Identitäten: Heiße Luft</h3>
+		<p class="workshop"><span class=bold>Dr. Martin Burckhardt</span> hat
+		mit „Score“ seine eigene Vision von einer Gesellschaft entworfen, in der
+		Spiel und Arbeit identisch sind. Nach dem Zusammenbruch der
+		Weltwirtschaft wird unsere Identität Sinnstiftung und Währung zugleich.
+		Können wir konsumieren, was wir nicht produzieren?</p>
+
+
+		<h3>12 – Elite & Demokratie: Rolle rückwärts</h3>
+		<p class="workshop">Soziologe <span class=bold>Michael Hartmann</span>
+		forscht zu der Rolle der bundesrepublikanischen und europäischen
+		Leistungselite. Bleiben angesichts der Selbstrekrutierung dieser
+		Führungszirkel Chancengleichheit und Verteilungsgerechtigkeit leere
+		Versprechen? Und wie verstärkt die von Hartmann konstituierte soziale
+		Immobilität eine neue Wirtschafts- und Finanzkrise? Oder ist sie sogar
+		einer ihrer Ursachen? </p>
+
+		<h3>13 – Versorgungssicherheit: food/landgrabbing/agriculture (in engl. Sprache)</h3>
+		<p class="workshop">Wie viele Menschen können wir ernähren, wenn die Äcker und Obstgärten durch Klimawandel und Überdüngung vernichtet sind - wo sind die Anbauflächen der Zukunft und wem gehören sie? <span
+		class=bold>richtiger Text fehlt noch</span> erforscht diese Fragen in der Food Systems Group am Environmental Change Institute der University of Oxford. Es geht um unser Überleben, aber auch darum, wem die Weinberge
+		im Norden Schottlands gehören werden und wer sie jetzt schon plant.  </p>
+
 
 
 		</div><!-- paper -->
@@ -157,6 +309,7 @@
                         <input class="burger-ws-check" id="burger-ws-check" type="checkbox">
                         <label for="burger-ws-check" class="burger-ws"></label>
                         <label for="burger-ws-check" id="ws_menu_title" class="title"></label>
+						<label for="burger-ws-check" id="ws_menu_subtitle" class="subtitle"></label>
                         <div id="ws_menu_content" class="navigation paper"></div>
                 </div><!-- workshopmenu -->
                 </div><!-- bottom_menus -->
@@ -191,7 +344,7 @@
                 <section id="anmeldung"> <div class="flex">
                 <div class="paper">
 				<div class="align_right">
-                        <a class="pseudo">&gt;&gt;</a>
+                        <a class="pseudo">&Chi;</a>
 				</div>
                 <div class="formular">
 				<div class="formmenu">
@@ -205,17 +358,6 @@
 						<br>
 						Hinweis: Die Teilnahme am „Welche Zukunft?!“-Labor ist kostenlos. Die Teilnehmer/innenzahl unserer Workshops ist begrenzt. Je nach Workshop gibt es 10 bis 25 verfügbare Plätze. Daher bitten wir Sie um eine verbindliche Anmeldung.</p>
                         <br>
-                        <label >Vorname</label>
-                        <input type="text" name="vorname" id="vorname" value="">
-                        <label >Name</label>
-                        <input type="text" name="name" id="name" value="">
-                        <label >E-Mailadresse</label>
-                        <input type="text" name="mailadresse" id="mailadresse" value="">
-                       <label >E-Mailadresse bestätigen</label>
-                        <input type="text" name="mailadresse" id="mailadresse" value="">
-                        <label >Mein Zukunftsszenario</label>
-						<p>Haben Sie schon eine Vorstellung, was in den nächsten 10 Jahren passieren könnte? Erzählen Sie uns, wenn Sie mögen davon!</p>
-						<textarea rows="15"></textarea>
                         <label >Ich möchte mich für folgenden Workshop anmelden:</label>
 						<select id="wunsch_ws" name="wunschworkshop" size="1">
 							<option></option>
@@ -229,6 +371,17 @@
 							<option>beides/both</option>
 						</select>
 						</div>
+						<label >Vorname</label>
+                        <input type="text" name="vorname" id="vorname" value="">
+                        <label >Name</label>
+                        <input type="text" name="name" id="name" value="">
+                        <label >E-Mailadresse</label>
+                        <input type="text" name="mailadresse" id="mailadresse" value="">
+                       <label >E-Mailadresse bestätigen</label>
+                        <input type="text" name="mailadresse" id="mailadresse" value="">
+                        <label >Mein Zukunftsszenario</label>
+						<p>Haben Sie schon eine Vorstellung, was in den nächsten 10 Jahren passieren könnte? Erzählen Sie uns, wenn Sie mögen davon!</p>
+						<textarea rows="15"></textarea>
                         <br>
                         <button type="submit">Jetzt anmelden</button>
                         <label class="result" style=""></label>

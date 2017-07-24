@@ -113,6 +113,7 @@ function contentbox_create(j, num, content,color,positions) {
       scroll: false,
       containment: "parent",
       stack: "div.dragbox",
+	  distance:0,
       handle: "span.handle",
       //delay: 300,
       //distance: 10,
@@ -147,7 +148,7 @@ function contentbox_create(j, num, content,color,positions) {
       }
      });
 	 //open & close on doubleclick
-	$( dragbox ).dblclick(function() {
+	$( dragbox ).click(function() {
 		var sub = $(this).children();
 		var sub2 = sub.get(0);
 		var sub3 = $(sub2).children();
@@ -180,6 +181,17 @@ function contentbox_create(j, num, content,color,positions) {
         box.pos2d.y = handle_pos.y;
         box.pos2d.z = handle_pos.z;
 		update_box_position(box);
+
+        var zmax = 0;
+        $('.dragbox').each(function () {
+            var cur = $(this).css('z-index');
+			console.log("current: ", cur, zmax);
+            zmax = cur > zmax ? $(this).css('z-index') : zmax;
+			
+        });
+		console.log("maximum: " , zmax);
+        $(this).css('z-index', Number(zmax) + 1);
+
 	});
     //$( contentbox ).resizable();
   });
@@ -261,7 +273,6 @@ function workshop_create_all_contents(j) {
 		if(boxesLeft[i] == true)
 			count++;
 	  }
-	console.log(count);
    heightStepLeft = (innerHeight * 0.8) / count;
 	
 	count = 0;
@@ -269,9 +280,8 @@ function workshop_create_all_contents(j) {
 		if(boxesRight[i] == true)
 			count++;
 	  }
-console.log(count);
+
    heightStepRight = (innerHeight * 0.8) / count;
- console.log(heightStepLeft,heightStepRight);
   // remove contentboxes and lines here and also in again in get, cause async
   flush_boxes();
   // ToDo: create workshop objects earlier (maybe at timeline creation)

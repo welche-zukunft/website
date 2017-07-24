@@ -26,7 +26,7 @@ section#anmeldung div.paper > div {
 }
 
 .handle, .dragbox {
-  z-index: 90;
+  z-index: 50;
 }
 .back {
   z-index: -1;

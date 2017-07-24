@@ -18,7 +18,7 @@
 .burger-ws:before {
   content: "";
   display: block;
-  border-bottom: 4px solid currentColor;
+  border-bottom: 2px solid currentColor;
   width: 100%;
   margin-bottom: 5px;
   transition: -webkit-transform 0.5s ease-in-out;
@@ -29,7 +29,7 @@
 .burger-ws:after {
   content: "";
   display: block;
-  border-bottom: 4px solid currentColor;
+  border-bottom: 2px solid currentColor;
   width: 100%;
   margin-bottom: 5px;
   transition: -webkit-transform 0.5s ease-in-out;
@@ -52,7 +52,7 @@ label.burger-ws {
 }
 
 .burger-ws-check:checked ~ .burger-ws {
-  border-bottom: 4px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: border-bottom 0.8s ease-in-out;
   -webkit-transition: border-bottom 0.8s ease-in-out;
 }
@@ -106,7 +106,13 @@ label.burger-ws {
 #ws_menu_title {
   display: inline-block;
   max-width: calc( 100% - 70px );
-  padding: 0.3em;
+  padding: 0.3em 0em 0.3em 0.3em;
+}
+
+#ws_menu_subtitle {
+  display: inline-block;
+  max-width: calc( 100% - 70px );
+  padding: 0.3em 0.3em 0.3em 0em;
 }
 
 #workshopmenu label {
@@ -118,18 +124,28 @@ label.burger-ws {
 }
 
 .ws_content p {
-  margin: 1ch;
+  margin: 2vh;
 }
 
 #ws_info p {
 }
 #ws_vita p, #ws_intro p {
+  margin-bottom: 3vh;	
+}
+
+#ws_vita p {
   font-size: smaller;
 }
 
 #ws_image, #ws_content_span {
-  margin: 1ch;
+  margin: 0vh 2vh 1vh 2vh;
 }
 #ws_intro, #ws_vita {
 	clear:both;
+}
+.ws_hl {
+font-size: 1.4em !important;
+}
+.ws_name {
+ font-weight: bold;
 }

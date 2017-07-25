@@ -1,5 +1,6 @@
 /* activity */
 
+/*
 section#anmeldung {
   top: 0;
   left: 0;
@@ -8,6 +9,7 @@ section#anmeldung {
   z-index: 900;
   width: 100%;
 }
+*/
 section#anmeldung a.pseudo {
   display: inline-block;
   margin: 10px;
@@ -16,6 +18,7 @@ section#anmeldung a.pseudo {
   font-size: large;
 }
 
+/*
 section#anmeldung div.paper {
   max-height: 90vh;
   opacity: 0.98;
@@ -24,6 +27,7 @@ section#anmeldung div.paper > div {
   max-height: 70vh;
   overflow-y: auto;
 }
+*/
 
 .handle, .dragbox {
   z-index: 50;

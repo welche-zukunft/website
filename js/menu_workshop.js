@@ -1,7 +1,7 @@
 
 
 function update_workshop_menu(j) {
-
+	console.log(j);
   var workshop = workshops[j];
   //var contents = workshop.contents;
   var logline = metacontents[j].logline;
@@ -53,9 +53,6 @@ function update_workshop_menu(j) {
     + '<img id="ws_image" src="./images/cv/'
     + pic[i]
     + '" />'
-	+ '<p class="ws_name">'
-    + name[i]
-    + '</p>'
     + '<p>'
     + vita[i]
     + '</p>'

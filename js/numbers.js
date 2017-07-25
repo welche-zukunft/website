@@ -31,8 +31,8 @@ function createNumberWalls(){
 	var texture = loader.load('images/shader1.jpg', function () {  
 	texture.flipY = false;
 	texture.needsUpdate = true; 
+	texture.minFilter = THREE.LinearFilter;
 	var mat2 = new THREE.MeshBasicMaterial({map: texture});
-	mat2.transparent = true;
 	});
 				  
 	var geo = new THREE.Geometry();
@@ -105,7 +105,7 @@ function createNumberWalls(){
 		fragmentShader : document.querySelector('#fragment').textContent
 	});
 	shaderMaterial.transparent = true;
-	shaderMaterial.depthTest = false;
+	shaderMaterial.depthTest = true;
 
 	var books = [];
 	var w = 80 * 1.1;

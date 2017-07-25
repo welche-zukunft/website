@@ -299,8 +299,18 @@ function workshop_create_all_contents(j) {
     
 }
 
+function workshop_create_all_contents_3d(j) {
+  // ToDo: create workshop objects earlier (maybe at timeline creation)
+  var workshop = new workshop_obj(j);
+  workshops[j] = workshop;
+  update_workshop_menu(j);
+ 
+}
+
 function workshop_delete_all_events() {
-  $("div.dragbox").remove();
+  //$("div.dragbox").remove();
+  removePins();
+initCamera();
 }
 
 function track_pos_handle(elem) {
@@ -324,6 +334,14 @@ function track_pos_handle(elem) {
 
 function get_workshop_contentboxes(j) {
   current_workshop_id = j;
-  workshop_create_all_contents(j);
+  workshop_create_all_contents_3d(j);
+	initCamera();
+}
+
+function initCamera(){
+	camposIntern = -1;
+	campos = 0;
+	setOverview = true;
+
 }
 

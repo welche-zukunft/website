@@ -52,12 +52,12 @@
 		"expert": "Prof. Dr. Peter Bofinger (Ökonom, Universität Passau) &  Dr. Dirk Ehnts (TU Chemnitz)",
 		"experten": [{
 				"name": "Prof. Dr. Peter Bofinger",
-				"vita": "Peter Bofinger ist Professor für Volkswirtschaftslehre an der Universität Würzburg. Im März 2004 wurde er in den Sachverständigenrat berufen und ist heute dienstältestes Mitglied. Sein Arbeitsgebiet im Rat ist die Europapolitik. Zu seinen Forschungsschwerpunkten gehören die Europäische Integration, die Geld- und Währungspolitik und die Energiepolitik. Peter Bofinger promovierte im Jahr 1984 mit dem Thema „Währungswettbewerb“. Er ist Autor der Bücher „Wir sind besser, als wir glauben – Wohlstand für alle“ und „Zurück zur D-Mark? Deutschland braucht den Euro“ sowie des Lehrbuches „Grundzüge der Volkswirtschaftslehre“.",
+				"vita": "<b>Prof. Dr. Peter Bofinger</b> ist Professor für Volkswirtschaftslehre an der Universität Würzburg. Im März 2004 wurde er in den Sachverständigenrat berufen und ist heute dienstältestes Mitglied. Sein Arbeitsgebiet im Rat ist die Europapolitik. Zu seinen Forschungsschwerpunkten gehören die Europäische Integration, die Geld- und Währungspolitik und die Energiepolitik. Peter Bofinger promovierte im Jahr 1984 mit dem Thema „Währungswettbewerb“. Er ist Autor der Bücher „Wir sind besser, als wir glauben – Wohlstand für alle“ und „Zurück zur D-Mark? Deutschland braucht den Euro“ sowie des Lehrbuches „Grundzüge der Volkswirtschaftslehre“.",
 				"pic": "bofinger.jpg"
 			},
 			{
 				"name": "Dr. Dirk Ehnts",
-				"vita": "Dr. Dirk Ehnts ist Dozent an der Technischen Universität Chemnitz am Lehrstuhl für Makroökonomie, insbesondere internationale Wirtschaftsbeziehungen. Er studierte Volkswirtschaftslehre in Göttingen und València und promovierte mit einem Stipendium in Oldenburg mit summa cum laude. Dr. Ehnts forscht über Geldtheorie, Makroökonomie und internationale Wirtschaft. In seinem Buch „Geld und Kredit: eine €-päische Perspektive“ von 2014 stellt er die These auf, dass die Eurozone nur zwei Optionen hat: Rückkehr zu nationalen Währungen oder Einführung eines europäischen Finanzministeriums.",
+				"vita": "<b>Dr. Dirk Ehnts</b> ist Dozent an der Technischen Universität Chemnitz am Lehrstuhl für Makroökonomie, insbesondere internationale Wirtschaftsbeziehungen. Er studierte Volkswirtschaftslehre in Göttingen und València und promovierte mit einem Stipendium in Oldenburg mit summa cum laude. Dr. Ehnts forscht über Geldtheorie, Makroökonomie und internationale Wirtschaft. In seinem Buch „Geld und Kredit: eine €-päische Perspektive“ von 2014 stellt er die These auf, dass die Eurozone nur zwei Optionen hat: Rückkehr zu nationalen Währungen oder Einführung eines europäischen Finanzministeriums.",
 				"pic": "ehnts.jpg"
 			}
 
@@ -65,7 +65,7 @@
 		"events": [{
 				"order": "1",
 				"title": "2018 – Kapitalflucht aus Italien",
-				"text": "Eine Wirtschaftskrise und Bankenkrise in Italien führt zur <b>Kapitalflucht aus Italien<\/b>. Die italienischen Zinsen steigen und die Gefahr, dass die Staatsverschuldung nicht mehr tragbar ist, wird immer größer. Die EZB kann wegen der Begrenzung durch das Bundesverfassungsgericht die Krise nicht stoppen. Das Rettungsprogramm für Italien scheitert wegen mangelnder Bereitschaft des italienischen Parlaments, Konditionen zu akzeptieren. Am Ende des Jahres scheidet Italien unter dem wachsenden Druck der Finanzmärkte aus der Eurozone aus."
+				"text": "Eine Wirtschaftskrise und Bankenkrise in Italien führt zur Kapitalflucht aus Italien. Die italienischen Zinsen steigen und die Gefahr, dass die Staatsverschuldung nicht mehr tragbar ist, wird immer größer. Die EZB kann wegen der Begrenzung durch das Bundesverfassungsgericht die Krise nicht stoppen. Das Rettungsprogramm für Italien scheitert wegen mangelnder Bereitschaft des italienischen Parlaments, Konditionen zu akzeptieren. Am Ende des Jahres scheidet Italien unter dem wachsenden Druck der Finanzmärkte aus der Eurozone aus."
 			},
 			{
 				"order": "2",
@@ -100,7 +100,7 @@
 			{
 				"order": "8",
 				"title": "2021 – Deutschland tritt aus EU aus",
-				"text": "Die Situation in Deutschland verschlechtert sich weiter. Die Arbeitslosenzahlen steigen erneut auf 4 Millionen. Die Bundesregierung sieht sich wegen der Schuldenbremse im Grundgesetz nur bedingt in der Lage, auf die Situation fiskalpolitisch zu reagieren. Bei der Bundestagswahl 2021 gewinnt die AfD 30 % der Stimmen, weil die ungünstige wirtschaftliche Entwicklung vor allem auf den Euro geschoben wird. Die neugewählte Große Koalition entschließt sich unter dem starken Druck der Öffentlichkeit für einen Austritt aus dem Euro. Anstelle der Währungsunion gibt es jetzt wieder die nationalen Währungen."
+				"text": "Die Situation in Deutschland verschlechtert sich weiter. Die Arbeitslosenzahlen steigen erneut auf 4 Millionen. Die Bundesregierung sieht sich wegen der Schuldenbremse im Grundgesetz nur bedingt in der Lage, auf die Situation fiskalpolitisch zu reagieren. Bei der Bundestagswahl 2021 gewinnt die AfD 30% der Stimmen, weil die ungünstige wirtschaftliche Entwicklung vor allem auf den Euro geschoben wird. Die neugewählte Große Koalition entschließt sich unter dem starken Druck der Öffentlichkeit für einen Austritt aus dem Euro. Anstelle der Währungsunion gibt es jetzt wieder die nationalen Währungen."
 			},
 			{
 				"order": "9",
@@ -120,7 +120,7 @@
 			{
 				"order": "12",
 				"title": "2023 – schwere Deflation in Deutschland",
-				"text": "In Deutschland wertet die D-Mark trotz der schlechten Wirtschaftslage immer weiter auf. Der deutsche Notenbank-Präsident sieht keinen Grund, dagegen vorzugehen. Die starke D-Mark wirke als Produktivitätspeitsche für die deutsche Wirtschaft. Bei der weiter steigenden Arbeitslosigkeit werden die Löhne pauschal um 15 % gesenkt, wie das der Präsident des ifo-Instituts und auch der Sachverständigenrat vorgeschlagen hatten. Deutschland gerät in eine schwere Deflation. Die Verbraucherpreise sinken mit einer Jahresrate von 5 %."
+				"text": "In Deutschland wertet die D-Mark trotz der schlechten Wirtschaftslage immer weiter auf. Der deutsche Notenbank-Präsident sieht keinen Grund, dagegen vorzugehen. Die starke D-Mark wirke als Produktivitätspeitsche für die deutsche Wirtschaft. Bei der weiter steigenden Arbeitslosigkeit werden die Löhne pauschal um 15% gesenkt, wie das der Präsident des ifo-Instituts und auch der Sachverständigenrat vorgeschlagen hatten. Deutschland gerät in eine schwere Deflation. Die Verbraucherpreise sinken mit einer Jahresrate von 5%."
 			},
 			{
 				"order": "13",
@@ -130,7 +130,7 @@
 			{
 				"order": "14",
 				"title": "2025 – Die AfD stellt den Bundeskanzler",
-				"text": "Es kommt zu politischen Unruhen in Deutschland. Viele Menschen haben in der Bankenkrise ihre Ersparnisse und Ansprüche aus Lebensversicherungen verloren. Die Regierung hat wegen der schlechten Wirtschaftslage die Renten um 25 % gekürzt. Die meisten Rentner haben nur noch eine Rente in Höhe der Grundsicherung. Die AfD gewinnt mehrere Landtagswahlen und erreicht bei der Bundestagswahl 40 %. Es kommt zu einer Koalition mit der FDP. Die AfD stellt den Bundeskanzler."
+				"text": "Es kommt zu politischen Unruhen in Deutschland. Viele Menschen haben in der Bankenkrise ihre Ersparnisse und Ansprüche aus Lebensversicherungen verloren. Die Regierung hat wegen der schlechten Wirtschaftslage die Renten um 25% gekürzt. Die meisten Rentner haben nur noch eine Rente in Höhe der Grundsicherung. Die AfD gewinnt mehrere Landtagswahlen und erreicht bei der Bundestagswahl 40%. Es kommt zu einer Koalition mit der FDP. Die AfD stellt den Bundeskanzler."
 			},
 			{
 				"order": "15",

@@ -1,7 +1,5 @@
 // States
-
-var STATE = { NONE: - 1, ROTATE: 0 };
-var state = STATE.NONE;
+var stats = false;
 
 // switches
 var contentboxes = 0;
@@ -12,6 +10,7 @@ var nEnd = 0, nMax, nStep = 90;
 var geometry = [];
 var mesh = [];
 var wind = false;
+var batchescreated = false;
 var steps = 100;
 var timelineCount = 12;
 var eventCount = 15;
@@ -24,7 +23,13 @@ var par_mat = [];
 var line_geometry = [];
 var par_geometry = [];
 var particles = [];
+var years = [];
 
+// cameraProperties
+var currentLookX = 0.;
+var currentLookY = 0.;
+var currentLookZ = 0.;
+var movespeed = 0.04;
 
 //arrays for boxes
 var geometries = [];
@@ -41,6 +46,10 @@ var windowHalfY = window.innerHeight / 2;
 var boxwidth = window.innerWidth*0.01;
 var boxheight = window.innerHeight*0.005;
 var boxdepth = 7.;
+
+var font;
+var textGeo;
+var loader = new THREE.FontLoader();
 
 document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
@@ -89,7 +98,7 @@ function init() {
 
 
 	// renderer
-	renderer = new THREE.WebGLRenderer({ antialias: true });
+	renderer = new THREE.WebGLRenderer({ antialias: true,logarithmicDepthBuffer: true });
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	container.appendChild( renderer.domElement );
 
@@ -97,10 +106,12 @@ function init() {
 	scene = new THREE.Scene();
 	scene.fog = new THREE.FogExp2( 0x000000, 0.015 );
 	// camera
-	camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
-	camera.position.set( 0, 0, 5 );
+	camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 0.01, 100 );
+	camera.position.set( 0, 3, 10 );
+	camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
 	camera.up = new THREE.Vector3(0,1,0);
 	scene.add( camera ); //required, since camera has a child light
+
 
 	// ambient
 	scene.add( new THREE.AmbientLight( 0xffffff, 0.4 ) );
@@ -109,12 +120,15 @@ function init() {
 	var light = new THREE.PointLight( 0xffffff, 0.2,50,0.3 );
 	light.position.set( 20, 20, 0 );
 	camera.add( light );
-	
+
 	// axes & stats
 	//scene.add( new THREE.AxisHelper( 20 ) );
-	/*stats = new Stats();
-	stats.showPanel( 1 );
-	container.appendChild( stats.dom );	*/		
+	if(stats == true){
+		stats = new Stats();
+		stats.showPanel( 1 );
+		container.appendChild( stats.dom );		
+	}
+	createNumberWalls();
 
 	// content stuff
 
@@ -122,7 +136,8 @@ function init() {
 
 	//  create boxes
 
-	for (var i = 0; i<10; ++i){
+	for (var i = 0; i<=10; i++){
+
 		geometries.push(new THREE.BoxGeometry(boxwidth, boxheight, boxdepth));
 		var geo = new THREE.EdgesGeometry(geometries[i]);
 	
@@ -135,6 +150,43 @@ function init() {
 	
 		meshes[i].position.set(0, 0, -i*boxdepth);
 		scene.add(meshes[i]);
+
+
+		var year = 2018 + i;
+
+		
+		loader.load( 'fonts/helvetiker_bold.typeface.json', function ( font ) {
+
+			textGeo = new THREE.TextGeometry( year, {
+
+				font: font,
+
+				size: 2,
+				height: 1,
+				curveSegments: 6,
+
+				bevelThickness: 2,
+				bevelSize: 5,
+				bevelEnabled: false
+
+			});
+			
+
+			var textMaterial = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0xffffff } );
+
+			var mesh = new THREE.Mesh( textGeo, textMaterial );
+
+			mesh.castShadow = true;
+			mesh.receiveShadow = true;
+			
+			years.push(mesh);
+console.log(years,i);
+			years[i].position.set(0, 3, -i*boxdepth);
+			scene.add(years[i] );
+
+		} );
+
+
 	}
 	
 
@@ -153,9 +205,9 @@ function init() {
 		
 		par_mat.push(new THREE.MeshPhongMaterial( {
 			color: metacontents[h].color,
-			transparent: true,
+			transparent: true
 			//opacity: 0.4,
-			side: THREE.DoubleSide
+			//side: THREE.DoubleSide
 		} ));
 		par_mat[h].name = "color"+h.toString();
 		
@@ -169,20 +221,20 @@ function init() {
 			particle.position.y = positions[index++] = ((boxheight*(Math.random()-0.5)) *  i/eventCount)-(1.*  (1.-i/eventCount)); 
 			particle.position.z = positions[index++] = next_z;
 			
-			next_z -= Math.random() * boxdepth;
+			next_z -= (Math.random() * (boxdepth*0.8)) + (boxdepth*0.2);
 			//particle.position.normalize();
 			//particle.position.multiplyScalar( Math.random() * 10 + 450 );
 
 
 			scene.add( particle );
 			events.push(particle);
-
+			
 			par_geometry[h].vertices.push( particle.position );
 			par_geometry[h].name = "linie";
-			//console.log("Vertice x : " + par_geometry.vertices[i].x);
-			//console.log("Vertice y : " + par_geometry.vertices[i].y);
+			
 			noise_objects.push(new noise_object());
-			//console.log(noise_objects[i]);
+
+			
 		}
 		particles.push(events);
 		line.push(new THREE.Line( line_geometry[h], new THREE.LineBasicMaterial( { color: metacontents[h].color, opacity: 1, linewidth: 1} ) ));
@@ -190,15 +242,19 @@ function init() {
 		scene.add( line[h] );
 		workshopdot_create(h , metacontents[h].color);
 	}
+
 	
 	workshopdot_deselect(timelineCount);
-	createNumberWalls();
+	
 	window.addEventListener( 'resize', onWindowResize, false );
 }
 
 
+
 function swapworkshop(num){
 	//console.log(num);
+	removePins();
+	drawPin(num,15);
 	for(var i = 0; i < timelineCount; i++){
 		if(i == num){
 			scene.getObjectByName("test"+i.toString()).material.color.setHex(metacontents[i].color.replace(/#/g , "0x"));				
@@ -235,7 +291,7 @@ function deselectworkshop(){
 		workshop_delete_all_events();
 	
 }
-
+var shifter = 0.;
 
 function animate() {
 
@@ -251,11 +307,11 @@ function animate() {
 			moveBranch(i);
 		}
 	}
-	
+	changeuniforms();
 	requestAnimationFrame(animate);
 
 	
-	changeuniforms();
+
 	// contentboxes
 	// ???
 	var current_workshop = workshops[current_workshop_id];
@@ -270,15 +326,46 @@ function animate() {
 		}
 	}
 	
-	camera.position.x += ( mouseX - camera.position.x ) * .02;
-	camera.position.y += ( - mouseY - camera.position.y ) * .02;
-	camera.position.z = (Math.cos(camera.position.x)*2.)+5;
+	camera.position.x += ( mouseX - camera.position.x ) * movespeed;
+	camera.position.y += ( - mouseY - camera.position.y ) * movespeed;
+	//camera.position.z = (Math.cos(camera.position.x)*2.)+5;
 	
-	var looky = new THREE.Vector3(scene.position.x,scene.position.y,scene.position.z + (5.-camera.position.z * 0.005)*-1.);
-	camera.lookAt(looky);
+	if (typeof current_workshop  !== 'undefined' &&  batchescreated == true && setOverview == false) {
+		var newz = par_geometry[current_workshop.id].vertices[campos].z;
+		//console.log(allpins[campos+1]);
+		var newx = (allpincontents[campos].geometry.vertices[0].x +allpincontents[campos].geometry.vertices[2].x)/2.;
+		var newy = (allpincontents[campos].geometry.vertices[0].y + allpincontents[campos].geometry.vertices[2].y)/2.;
+		//console.log(newx,newy,newz-5);
+		camera.position.x += (newx - camera.position.x) * movespeed;
+		camera.position.y += (newy - camera.position.y) * movespeed;
+		camera.position.z += ((newz + 5.) - camera.position.z) * movespeed;
+		currentLookX += ( newx - currentLookX) * movespeed;
+		currentLookY += ( newy - currentLookY) * movespeed;
+		currentLookZ += ( newz  - currentLookZ) * movespeed;
+		camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
+	}
 	
+	if(setOverview == true){
+		camera.position.x += (0. - camera.position.x) * movespeed;
+		camera.position.y += (3. - camera.position.y) * movespeed;
+		camera.position.z += (10. - camera.position.z) * movespeed;
+		currentLookX += ( 0. - currentLookX) * movespeed;
+		currentLookY += ( 0. - currentLookY) * movespeed;
+		currentLookZ += ( 0. - currentLookZ) * movespeed;
+		camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
+	}
+
+
+
+
+
+	/*var looky = new THREE.Vector3(scene.position.x,scene.position.y,scene.position.z + (5.-camera.position.z * 0.005)*-1.);
+	camera.lookAt(looky);*/
+
   	renderer.render(scene, camera);
-	//stats.update();
+	if(stats == true){
+		stats.update();
+	}
 }
 
 
@@ -366,20 +453,9 @@ function removeItem(v) {
 function onDocumentMouseMove(event) {
 		//console.log(event.clientX,event.clientY);
 		mouseX = ( event.clientX - windowHalfX )*0.005;
-		mouseY = ( event.clientY - window.innerHeight  )*0.003;
+		mouseY = ( event.clientY - window.innerHeight  )*0.008;
 }
 
-function onMouseDown(event){
-	if(event.button == 0){
-		state = STATE.ROTATE;
-	};
-}
-
-function onMouseUp(event){
-	if(event.button == 0){
-		state = STATE.NONE;
-	};
-}
 	
 function onWindowResize() {
 	windowHalfX = window.innerWidth / 2;
@@ -388,3 +464,26 @@ function onWindowResize() {
 	camera.updateProjectionMatrix();
 	renderer.setSize( window.innerWidth, window.innerHeight );
 }
+
+var camposIntern = -1;
+var campos = camposIntern + 1;
+var setOverview = true;
+
+window.addEventListener('wheel', function(e){
+	if(e.deltaY < 0) camposIntern += 1;
+	if(e.deltaY > 0) camposIntern -= 1;
+
+	if(camposIntern >=13) camposIntern = 13;
+	
+	if(camposIntern < -1 ) {
+		camposIntern = -1;
+		if(setOverview == false){
+			setOverview = true;
+			}
+	}
+	if(setOverview == true && camposIntern > -1 && batchescreated == true){
+		setOverview = false;
+		camposIntern = -1;
+	}
+	campos = camposIntern + 1;
+});

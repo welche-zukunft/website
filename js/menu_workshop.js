@@ -1,7 +1,7 @@
 
 
 function update_workshop_menu(j) {
-	console.log(j);
+	//console.log(j);
   var workshop = workshops[j];
   //var contents = workshop.contents;
   var logline = metacontents[j].logline;

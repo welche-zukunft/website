@@ -7,6 +7,9 @@ var pincontents;
 var pintextures = [];
 var pincanvases = [];
 
+var yeartextures = [];
+var yearcanvases = [];
+
 
 var pinmat = new THREE.MeshPhongMaterial( {
 			color: 0xffffff,
@@ -63,9 +66,11 @@ function drawPin(index,j){
 		pintextures.push(texture);
 		pin.computeFaceNormals();
 		pin.computeVertexNormals();
-		pinmat = new THREE.MeshBasicMaterial({ map: pintextures[i],specular: 0xffffff });
+		pinmat = new THREE.MeshPhongMaterial({ map: pintextures[i],specular: 0x373737 });
 		pinmat.side = THREE.DoubleSide;
+		pinmat.shininess = 90;
 		pinmat.transparent = false;
+		pinmat.shading = THREE.SmoothShading;
 		pinmat2.color.setHex(metacontents[index].color.replace(/#/g , "0x"));
 
 		//create connection to timeline
@@ -153,7 +158,6 @@ var spaceHL = 15;
 function createTexture(index,eventnum,content,title){
 	var d = document.createElement('canvas');
 	pincanvases.push(d);
-	//index = 2;
 	var fontSize = 32;
 	if(content != undefined){
 		d.width = colwidth * fontSize/2. + paddingleft + paddingright;
@@ -178,6 +182,27 @@ function createTexture(index,eventnum,content,title){
 	var tex = new THREE.Texture(d);
 	tex.minFilter = THREE.LinearFilter;
 	tex.flipY = false;
+	tex.needsUpdate = true;
+	return tex;
+}
+
+function createYears(year){
+	var e = document.createElement('canvas');
+	yearcanvases.push(e);
+	var fontSize = 64;
+	e.width = 4*fontSize;
+	e.height = fontSize;
+	var ctx = e.getContext('2d');
+	ctx.fillStyle = 'black';
+	ctx.fillRect(0, 0, e.width, e.height);
+	ctx.fillStyle = 'white';
+	ctx.textAlign = "left";
+	ctx.textBaseline = "top";
+	ctx.font = 'bold ' + fontSize+'px Monospace';
+	ctx.fillText(year, 0,0);
+	var tex = new THREE.Texture(e);
+	tex.minFilter = THREE.LinearFilter;
+	tex.flipY = true;
 	tex.needsUpdate = true;
 	return tex;
 }

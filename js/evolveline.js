@@ -28,7 +28,7 @@ var years = [];
 // cameraProperties
 var currentLookX = 0.;
 var currentLookY = 0.;
-var currentLookZ = 0.;
+var currentLookZ = -10.;
 var movespeed = 0.04;
 
 //arrays for boxes
@@ -47,9 +47,7 @@ var boxwidth = window.innerWidth*0.01;
 var boxheight = window.innerHeight*0.005;
 var boxdepth = 7.;
 
-var font;
-var textGeo;
-var loader = new THREE.FontLoader();
+var yearmat;
 
 document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
@@ -72,13 +70,17 @@ var metainfos = "./contents/database.json";
 
 var metacontents = [];
 // get meta info about workshops from json
+
+
 get_metainformations();
+
 
 function get_metainformations(){
 	$.getJSON( metainfos, function(data){
 		metacontents = JSON.parse(JSON.stringify(data));
 	})
 	.done(function(){
+		console.log("database loaded");
 		//fill names of workshops to form
 		addoptions();
 		//start threejs
@@ -104,21 +106,21 @@ function init() {
 
 	// scene
 	scene = new THREE.Scene();
-	scene.fog = new THREE.FogExp2( 0x000000, 0.015 );
+	scene.fog = new THREE.FogExp2( 0x000000, 0.03 );
 	// camera
 	camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 0.01, 100 );
-	camera.position.set( 0, 3, 10 );
+	camera.position.set( 0, 5, 10 );
 	camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
 	camera.up = new THREE.Vector3(0,1,0);
 	scene.add( camera ); //required, since camera has a child light
 
 
 	// ambient
-	scene.add( new THREE.AmbientLight( 0xffffff, 0.4 ) );
+	scene.add( new THREE.AmbientLight( 0xffffff, 1. ) );
 	
 	// light
-	var light = new THREE.PointLight( 0xffffff, 0.2,50,0.3 );
-	light.position.set( 20, 20, 0 );
+	var light = new THREE.PointLight( 0xffffff, 0.7,50,0.3 );
+	light.position.set( 0, 0, 0 );
 	camera.add( light );
 
 	// axes & stats
@@ -152,43 +154,20 @@ function init() {
 		scene.add(meshes[i]);
 
 
-		var year = 2018 + i;
+		var year = 2018 + i;	
+		var yeartexture = createYears(year);
+		yeartextures.push(yeartexture);
+		yearmat = new THREE.MeshBasicMaterial({ map: yeartextures[i],specular: 0xffffff });
+		yearmat.side = THREE.DoubleSide;
+		yearmat.alphaTest= 0.5; // if transparent is false
+		yearmat.transparent= false;
+		yearmat.alphaMap = yeartextures[i];
+		var geometry = new THREE.PlaneGeometry( 2, 0.5, 0.5 );
+		var plane = new THREE.Mesh( geometry, yearmat );
+		plane.position.set((boxwidth/2. * -1.)+1.,(boxheight/2. * -1.)-0.2, (-i*boxdepth)+(boxdepth/2.));
+		scene.add( plane );
 
-		
-		loader.load( 'fonts/helvetiker_bold.typeface.json', function ( font ) {
-
-			textGeo = new THREE.TextGeometry( year, {
-
-				font: font,
-
-				size: 2,
-				height: 1,
-				curveSegments: 6,
-
-				bevelThickness: 2,
-				bevelSize: 5,
-				bevelEnabled: false
-
-			});
-			
-
-			var textMaterial = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0xffffff } );
-
-			var mesh = new THREE.Mesh( textGeo, textMaterial );
-
-			mesh.castShadow = true;
-			mesh.receiveShadow = true;
-			
-			years.push(mesh);
-console.log(years,i);
-			years[i].position.set(0, 3, -i*boxdepth);
-			scene.add(years[i] );
-
-		} );
-
-
-	}
-	
+		} 
 
 	//	create lines
 
@@ -205,6 +184,8 @@ console.log(years,i);
 		
 		par_mat.push(new THREE.MeshPhongMaterial( {
 			color: metacontents[h].color,
+			specular: 0x111010,
+			shininess: 90,
 			transparent: true
 			//opacity: 0.4,
 			//side: THREE.DoubleSide
@@ -347,11 +328,11 @@ function animate() {
 	
 	if(setOverview == true){
 		camera.position.x += (0. - camera.position.x) * movespeed;
-		camera.position.y += (3. - camera.position.y) * movespeed;
+		camera.position.y += (5. - camera.position.y) * movespeed;
 		camera.position.z += (10. - camera.position.z) * movespeed;
 		currentLookX += ( 0. - currentLookX) * movespeed;
 		currentLookY += ( 0. - currentLookY) * movespeed;
-		currentLookZ += ( 0. - currentLookZ) * movespeed;
+		currentLookZ += ( -10. - currentLookZ) * movespeed;
 		camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
 	}
 
@@ -442,8 +423,6 @@ function onKeyDown(event){
 }
 
 
-
-
 function removeItem(v) {
 	v.material.dispose();
 	v.geometry.dispose();
@@ -453,7 +432,7 @@ function removeItem(v) {
 function onDocumentMouseMove(event) {
 		//console.log(event.clientX,event.clientY);
 		mouseX = ( event.clientX - windowHalfX )*0.005;
-		mouseY = ( event.clientY - window.innerHeight  )*0.008;
+		mouseY = ( event.clientY - windowHalfY  )*0.008;
 }
 
 	
@@ -469,7 +448,7 @@ var camposIntern = -1;
 var campos = camposIntern + 1;
 var setOverview = true;
 
-window.addEventListener('wheel', function(e){
+window.addEventListener('wheel', throttle(function movecamera(e){
 	if(e.deltaY < 0) camposIntern += 1;
 	if(e.deltaY > 0) camposIntern -= 1;
 
@@ -486,4 +465,17 @@ window.addEventListener('wheel', function(e){
 		camposIntern = -1;
 	}
 	campos = camposIntern + 1;
-});
+},200));
+
+
+
+function throttle(func, interval) {
+    var lastCall = 0;
+    return function() {
+        var now = Date.now();
+        if (lastCall + interval < now) {
+            lastCall = now;
+            return func.apply(this, arguments);
+        }
+    };
+}

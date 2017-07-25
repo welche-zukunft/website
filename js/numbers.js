@@ -39,7 +39,7 @@ function createNumberWalls(){
 
 	var j=0, ln=0,k = 0;
 
-	for (i=0; i<18500; i++) {
+	for (i=0; i<5000; i++) {
 		var num = Math.floor(Math.random()*16.)+45;
 					
 		var code = num;
@@ -95,7 +95,7 @@ function createNumberWalls(){
 		map2 : { type: "t", value: texture },
 		effectAmount : { type: "f", value: 0.0 },
 		amount : {type: "v2", value: new THREE.Vector2(1.,8.) },
-		resolution : {type: "v2",value: new THREE.Vector2(200.,25.)},
+		resolution : {type: "v2",value: new THREE.Vector2(200.,25)},
 		speed : {type: "v2",value: new THREE.Vector2(speedx, speedy)}
 	};
 
@@ -120,9 +120,9 @@ function createNumberWalls(){
 		var box = new THREE.Box3().setFromObject( book );
 		book.position.x = -10. + (20.*i);
 		book.position.y = (box.getSize().y * 0.3)/2.;
-		book.position.z = 0.-(box.getSize().x * i * 0.3);
+		book.position.z = -3.-(box.getSize().x * i * 0.3);
 		book.rotation.y = Math.PI/2 + (Math.PI*i);
-		book.scale.set(0.3,0.3,0.3);
+		book.scale.set(0.4,0.4,0.4);
 		books.push(book);
 		topy.add(book);
 	}
@@ -133,7 +133,7 @@ function createNumberWalls(){
 //animate shader with call from animate()
 function changeuniforms(){
 	uniforms.time.value += 0.05;
-	speedx += (Math.random() * 0.05) - 0.025;
-	speedy += (Math.random() * 0.05) - 0.025;
+	speedx += (Math.random() * 0.01) - 0.005;
+	speedy += (Math.random() * 0.01) - 0.005;
 	uniforms.speed.value = new THREE.Vector2(speedx, speedy);
 }

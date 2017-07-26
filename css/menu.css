@@ -1,15 +1,30 @@
 #topmenu {
   position: fixed;
   top: 0;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+}
+#topmenu a, #topmenu li {
+  background: white;
+  color: black;
+}
+#topmenu a:hover {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+#topmenu li.li-box {
+  border: solid thin;
+  align-items: center;
+  background: transparent;
+  color: white;
 }
 
 @media screen and (min-width: 600px) {
 
 #topmenu {
   display: inline-table;
-  text-transform: uppercase;
-  background: transparent;
-  color: white;
   font-size: 11px;
 
   text-align: center;
@@ -24,15 +39,6 @@
 }
 #topmenu .right {
   right: 0.3em;
-}
-
-#topmenu a, #topmenu li {
-  background: white;
-  color: black;
-}
-#topmenu a:hover {
-  text-decoration: underline;
-  border-bottom: none;
 }
 
 #topmenu a, #topmenu span.menu {
@@ -56,11 +62,8 @@
   padding-left: 0;
 }
 
-#topmenu li.li-box {
-  border: solid thin;
-  align-items: center;
-  background: transparent;
-  color: white;
+#topmenu .li-box ul li a {
+  padding: 4px;
 }
 li.li-box li:first-child {
   margin-left: 8px;
@@ -69,29 +72,30 @@ li.li-box li:last-child {
   margin-right: 8px;
 }
 
-#topmenu .li-box ul li a {
-  padding: 4px;
-}
-
 } /* @media min-width 600 */
 
 @media screen and (max-width: 599px) {
 
 #topmenu {
-  border-bottom-right-radius: 25px;
   max-width: 280px;
+  border-bottom: solid thin;
+  border-right: solid thin;
 }
 
-#topmenu {
-  background: white; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #9ebba2 , #e3969b); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #9ebba2, #e3969b); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #9ebba2, #e3969b); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #9ebba2 , #e3969b); /* Standard syntax */
+#topmenu li {
+  margin: 3px;
+}
+
+#topmenu a, #topmenu span.menu {
+  display: block;
+  padding: 2px;
 }
 
 #topmenu .center, #topmenu .right {
   display: none;
+}
+
+#topmenu li.li-box {
 }
 
 // example for css burger menu by https://codepen.io/eduardoboucas/
@@ -184,13 +188,11 @@ label.burger {
 }
 
 ul {
-  margin: 0;
-  padding-left: 2ch;
-  list-style-type: disc;
+  padding-left: 0;
 }
 
 nav > ul {
-  margin-top: 0.5ch;
+  margin: 0.5ch;
 }
 
 li {
@@ -198,7 +200,6 @@ li {
 
 nav {
   font-size: large;
-  margin-left: 38px;
   padding-bottom: 0.5ch;
 }
 

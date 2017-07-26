@@ -3,28 +3,79 @@
   top: 0;
 }
 
-@media screen and (min-width: 401px) {
+@media screen and (min-width: 600px) {
 
 #topmenu {
-  width: 100%;
+  display: inline-table;
+  text-transform: uppercase;
   background: transparent;
-}
-#topmenu, #topmenu a {
   color: white;
+  font-size: 11px;
+
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#topmenu .left, #topmenu .right {
+  position: absolute;
+}
+#topmenu .left {
+  left: 0.3em;
+}
+#topmenu .right {
+  right: 0.3em;
+}
+
+#topmenu a, #topmenu li {
+  background: white;
+  color: black;
+}
+#topmenu a:hover {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+#topmenu a, #topmenu span.menu {
+  padding: 6px;
 }
 
 #topmenu .burger, #topmenu .burger-check {
   display: none;
 }
 #topmenu nav ul, #topmenu nav li {
-  display: inline-block;
+  display: inline-flex;
+}
+#topmenu nav li {
+  margin-left: 4px;
+  align-items: center;
+}
+#topmenu nav li:first-child {
+  margin-left: 0;
+}
+#topmenu nav ul {
+  padding-left: 0;
 }
 
-} /* @media min-width 401 */
+#topmenu li.li-box {
+  border: solid thin;
+  align-items: center;
+  background: transparent;
+  color: white;
+}
+li.li-box li:first-child {
+  margin-left: 8px;
+}
+li.li-box li:last-child {
+  margin-right: 8px;
+}
 
-@media screen and (max-width: 400px) {
+#topmenu .li-box ul li a {
+  padding: 4px;
+}
 
+} /* @media min-width 600 */
 
+@media screen and (max-width: 599px) {
 
 #topmenu {
   border-bottom-right-radius: 25px;
@@ -39,6 +90,9 @@
   background: linear-gradient(to right, #9ebba2 , #e3969b); /* Standard syntax */
 }
 
+#topmenu .center, #topmenu .right {
+  display: none;
+}
 
 // example for css burger menu by https://codepen.io/eduardoboucas/
 
@@ -156,4 +210,4 @@ nav {
   max-width: 50%;
 }
 
-} /* @media max-width 400 */
+} /* @media max-width 599 */

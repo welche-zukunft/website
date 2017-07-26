@@ -181,6 +181,7 @@ function createTexture(index,eventnum,content,title){
 	}
 	var tex = new THREE.Texture(d);
 	tex.minFilter = THREE.LinearFilter;
+	//tex.magFilter = THREE.NearestFilter;
 	tex.flipY = false;
 	tex.needsUpdate = true;
 	return tex;
@@ -189,16 +190,16 @@ function createTexture(index,eventnum,content,title){
 function createYears(year){
 	var e = document.createElement('canvas');
 	yearcanvases.push(e);
-	var fontSize = 64;
+	var fontSize = 32;
 	e.width = 4*fontSize;
-	e.height = fontSize;
+	e.height = fontSize + 3;
 	var ctx = e.getContext('2d');
 	ctx.fillStyle = 'black';
 	ctx.fillRect(0, 0, e.width, e.height);
 	ctx.fillStyle = 'white';
 	ctx.textAlign = "left";
 	ctx.textBaseline = "top";
-	ctx.font = 'bold ' + fontSize+'px Monospace';
+	ctx.font = 'bold ' + fontSize+'px Courier';
 	ctx.fillText(year, 0,0);
 	var tex = new THREE.Texture(e);
 	tex.minFilter = THREE.LinearFilter;

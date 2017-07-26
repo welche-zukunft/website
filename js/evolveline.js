@@ -1,11 +1,13 @@
 // States
-var stats = false;
+var statistics = true;
+var showWalls = true;
 
 // switches
 var contentboxes = 0;
 
 //
 var renderer, scene, camera, controls, stats;
+var FOV;
 var nEnd = 0, nMax, nStep = 90; 
 var geometry = [];
 var mesh = [];
@@ -48,6 +50,7 @@ var boxheight = window.innerHeight*0.005;
 var boxdepth = 7.;
 
 var yearmat;
+var controlPlanePosition = 0;
 
 document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
@@ -71,8 +74,14 @@ var metainfos = "./contents/database.json";
 var metacontents = [];
 // get meta info about workshops from json
 
+if (Detector.webgl) {
+    // Initiate function or other initializations here
+    get_metainformations();
+} else {
+    var warning = Detector.getWebGLErrorMessage();
+    document.getElementById('container').appendChild(warning);
+}
 
-get_metainformations();
 
 
 function get_metainformations(){
@@ -101,15 +110,25 @@ function init() {
 
 	// renderer
 	renderer = new THREE.WebGLRenderer({ antialias: true,logarithmicDepthBuffer: true });
+	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	container.appendChild( renderer.domElement );
-
+	
+	var distance = window.innerWidth - ( window.innerWidth * 0.05);
+	if(window.innerWidth > window.innerHeight){
+		distance = window.innerWidth - ( window.innerWidth * 0.50);
+	}
+	FOV = 2 * Math.atan( 375 / ( 2 *distance))*180 / Math.PI;
+	
+	
+	
+	//console.log(FOV);
 	// scene
 	scene = new THREE.Scene();
-	scene.fog = new THREE.FogExp2( 0x000000, 0.03 );
+	scene.fog = new THREE.FogExp2( 0x111111, 0.03 );
 	// camera
-	camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 0.01, 100 );
-	camera.position.set( 0, 5, 10 );
+	camera = new THREE.PerspectiveCamera( FOV, window.innerWidth / window.innerHeight, 0.5, 100 );
+	camera.position.set( 0, 2, 10 );
 	camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
 	camera.up = new THREE.Vector3(0,1,0);
 	scene.add( camera ); //required, since camera has a child light
@@ -125,13 +144,14 @@ function init() {
 
 	// axes & stats
 	//scene.add( new THREE.AxisHelper( 20 ) );
-	if(stats == true){
+	if(statistics == true){
 		stats = new Stats();
 		stats.showPanel( 1 );
 		container.appendChild( stats.dom );		
 	}
-	createNumberWalls();
-
+	if(showWalls == true){
+		createNumberWalls();
+	}
 	// content stuff
 
 	var material = new THREE.LineBasicMaterial();
@@ -157,16 +177,16 @@ function init() {
 		var year = 2018 + i;	
 		var yeartexture = createYears(year);
 		yeartextures.push(yeartexture);
-		yearmat = new THREE.MeshBasicMaterial({ map: yeartextures[i],specular: 0xffffff });
+		yearmat = new THREE.MeshPhongMaterial({ map: yeartextures[i],specular: 0xcac6c6 });
 		yearmat.side = THREE.DoubleSide;
 		yearmat.alphaTest= 0.5; // if transparent is false
 		yearmat.transparent= false;
 		yearmat.alphaMap = yeartextures[i];
-		var geometry = new THREE.PlaneGeometry( 2, 0.5, 0.5 );
+		var geometry = new THREE.PlaneGeometry( 1.6, 0.4, 1. );
+	
 		var plane = new THREE.Mesh( geometry, yearmat );
 		plane.position.set((boxwidth/2. * -1.)+1.,(boxheight/2. * -1.)-0.2, (-i*boxdepth)+(boxdepth/2.));
 		scene.add( plane );
-
 		} 
 
 	//	create lines
@@ -228,12 +248,44 @@ function init() {
 	workshopdot_deselect(timelineCount);
 	
 	window.addEventListener( 'resize', onWindowResize, false );
+
+	shiftControlPlane();
+		
 }
 
+var controlPlane;
 
+function shiftControlPlane(){
+	var geometry2 = new THREE.PlaneGeometry( 1., 1., 1. );	
+			
+	var splitmat = new THREE.MeshBasicMaterial({ 
+		color:0xff0000,
+		//specular: 0xcac6c6,
+		transparent: true,
+		opacity: 0.9,
+		//shininess: 10
+		});
+	controlPlane = new THREE.Mesh(geometry2,splitmat);
+	controlPlane.position.set(0,0, (controlPlanePosition*boxdepth)+(boxdepth/2.));
+	controlPlane.scale.set(boxwidth,boxheight,1.);
+	scene.add( controlPlane );
+	var startTime = new Date().getTime();
+	var interval = setInterval(function(){
+	if(controlPlanePosition > 10){
+		clearInterval(interval);
+		//alert('interval cleared')
+		controlPlanePosition = 0;	
+		return;
+	}
+	controlPlanePosition = (controlPlanePosition + 1);
+	controlPlane.position.set(0,0,(-1.*controlPlanePosition*boxdepth)+(boxdepth/2.));
+	console.log(controlPlane.position);	
+	}, 50);
+}
 
 function swapworkshop(num){
 	//console.log(num);
+	shiftControlPlane();
 	removePins();
 	drawPin(num,15);
 	for(var i = 0; i < timelineCount; i++){
@@ -260,6 +312,7 @@ function swapworkshop(num){
 }
 	
 function deselectworkshop(){
+
 	for(var i = 0; i < timelineCount; i++){
 			scene.getObjectByName("test"+i.toString()).material.color.setHex(metacontents[i].color.replace(/#/g , "0x"));				
 			scene.getObjectByName("test"+i.toString()).material.opacity = 1.;
@@ -288,7 +341,9 @@ function animate() {
 			moveBranch(i);
 		}
 	}
-	changeuniforms();
+	if(showWalls == true) {
+		changeuniforms();
+	}
 	requestAnimationFrame(animate);
 
 	
@@ -328,10 +383,10 @@ function animate() {
 	
 	if(setOverview == true){
 		camera.position.x += (0. - camera.position.x) * movespeed;
-		camera.position.y += (5. - camera.position.y) * movespeed;
+		camera.position.y += (2. - camera.position.y) * movespeed;
 		camera.position.z += (10. - camera.position.z) * movespeed;
 		currentLookX += ( 0. - currentLookX) * movespeed;
-		currentLookY += ( 0. - currentLookY) * movespeed;
+		currentLookY += ( -1. - currentLookY) * movespeed;
 		currentLookZ += ( -10. - currentLookZ) * movespeed;
 		camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
 	}
@@ -344,7 +399,7 @@ function animate() {
 	camera.lookAt(looky);*/
 
   	renderer.render(scene, camera);
-	if(stats == true){
+	if(statistics == true){
 		stats.update();
 	}
 }

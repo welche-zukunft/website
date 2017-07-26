@@ -310,7 +310,8 @@ function workshop_create_all_contents_3d(j) {
 function workshop_delete_all_events() {
   //$("div.dragbox").remove();
   removePins();
-initCamera();
+  initCamera();
+
 }
 
 function track_pos_handle(elem) {

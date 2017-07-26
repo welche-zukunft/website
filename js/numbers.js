@@ -122,7 +122,7 @@ function createNumberWalls(){
 		book.position.y = (box.getSize().y * 0.3)/2.;
 		book.position.z = -3.-(box.getSize().x * i * 0.3);
 		book.rotation.y = Math.PI/2 + (Math.PI*i);
-		book.scale.set(0.4,0.4,0.4);
+		book.scale.set(0.3,0.3,0.3);
 		books.push(book);
 		topy.add(book);
 	}

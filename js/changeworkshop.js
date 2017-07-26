@@ -19,7 +19,7 @@ function workshopdot_create(num , color) {
   });
 
   // add handle to div "handle_container"
-  $("#container > div.handle_container").append(handle);
+  $("div.handle_container").append(handle);
 }
 
 function workshopdot_deselect(num){
@@ -40,7 +40,7 @@ function workshopdot_deselect(num){
   });
 
   // add handle to div "handle_container"
-  $("#container > div.handle_container").append(handle);
+  $("div.handle_container").append(handle);
 }
 
 function reset_ws() {
@@ -53,7 +53,7 @@ function reset_ws() {
   var menu = $('#workshopmenu');
   menu.unbind("click");
   menu.click(function() {
-    handles = $('#container > div.handle_container');
+    handles = $('div.handle_container');
     highlight(handles);
   });
   var menu_content = $("#ws_menu_content");

@@ -6,7 +6,8 @@ section#container_section {
 
 #workshopmenu div.handle_container {
 }
-#container > .handle_container {
+.handle_container {
+  /*
   position: fixed;
   top: 100px;
   margin-left: 1ch;
@@ -15,10 +16,12 @@ section#container_section {
   overflow:display !important;
   column-count: 1;
   z-index:90;
-  /*
   column-gap: 10px;
   column-width: 30px;
   */
+  height: 33px;
+  display: flex;
+  text-align: center;
 }
 div.handle_container span {
   display: inline-block;
@@ -96,11 +99,9 @@ div.align_right {
   text-align: right;
 }
 div.handle_container span {
-  /*
   width: 20px;
   height: 20px;
-  */
-  margin-bottom: 0.5ch;
+  margin: 0.5ch;
 }
 div.vert-center {
   display: flex;
@@ -126,11 +127,6 @@ span.handle {
   cursor: pointer;
   border-radius: 50%;
   border: solid thin black;
-  position: absolute;
-  height: 3ch;
-  width: 3ch;
-  bottom: 0;
-  left: 0;
 }
 p.big {
   font-size: x-large;

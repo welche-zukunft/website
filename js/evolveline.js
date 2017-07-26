@@ -1,5 +1,5 @@
 // States
-var statistics = true;
+var statistics = false;
 var showWalls = true;
 
 // switches
@@ -14,7 +14,7 @@ var mesh = [];
 var wind = false;
 var batchescreated = false;
 var steps = 100;
-var timelineCount = 12;
+var timelineCount = 13;
 var eventCount = 15;
 var initialized = false;
 var time = new Date();
@@ -50,7 +50,11 @@ var boxheight = window.innerHeight*0.005;
 var boxdepth = 7.;
 
 var yearmat;
+var controlPlane;
 var controlPlanePosition = 0;
+var controlPlaneOpacity = 1.;
+
+var startpoint;
 
 document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
@@ -114,7 +118,7 @@ function init() {
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	container.appendChild( renderer.domElement );
 	
-	var distance = window.innerWidth - ( window.innerWidth * 0.05);
+	var distance = window.innerWidth - ( window.innerWidth * 0.1);
 	if(window.innerWidth > window.innerHeight){
 		distance = window.innerWidth - ( window.innerWidth * 0.50);
 	}
@@ -138,7 +142,7 @@ function init() {
 	scene.add( new THREE.AmbientLight( 0xffffff, 1. ) );
 	
 	// light
-	var light = new THREE.PointLight( 0xffffff, 0.7,50,0.3 );
+	var light = new THREE.PointLight( 0xffffff, 0.7,boxwidth,0.3 );
 	light.position.set( 0, 0, 0 );
 	camera.add( light );
 
@@ -166,7 +170,7 @@ function init() {
 		var mat = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 1} );
 		
 		var wireframe = new THREE.LineSegments( geo, mat );
-		wireframe.material.opacity = 0.25;
+		wireframe.material.opacity = 0.45;
 		wireframe.material.transparent = true;
 		meshes.push(wireframe);
 	
@@ -194,7 +198,8 @@ function init() {
 	for ( var h = 0; h < timelineCount; h ++ ) {
 		var next_z = 0;
 		var index = 0;
-		var positions = new Float32Array( 15 * 3 ); // 3 vertices per point
+		eventCount = metacontents[h].events.length;
+		var positions = new Float32Array( eventCount * 3 ); // 3 vertices per point
 
 		var line_particles = [];
 
@@ -213,7 +218,6 @@ function init() {
 		par_mat[h].name = "color"+h.toString();
 		
 		var events = [];
-		
 		for ( var i = 0; i < eventCount; i ++ ) {
 			
 			var particle = new THREE.Mesh( new THREE.SphereGeometry(0.05), par_mat[h] );
@@ -223,9 +227,6 @@ function init() {
 			particle.position.z = positions[index++] = next_z;
 			
 			next_z -= (Math.random() * (boxdepth*0.8)) + (boxdepth*0.2);
-			//particle.position.normalize();
-			//particle.position.multiplyScalar( Math.random() * 10 + 450 );
-
 
 			scene.add( particle );
 			events.push(particle);
@@ -243,51 +244,62 @@ function init() {
 		scene.add( line[h] );
 		workshopdot_create(h , metacontents[h].color);
 	}
-
+	var startmat = new THREE.MeshPhongMaterial( {
+			color: 0xffffff,
+			specular: 0x111010,
+			shininess: 90,
+			transparent: true
+			//opacity: 0.4,
+			//side: THREE.DoubleSide
+		} );
+	startpoint = new THREE.Mesh( new THREE.SphereGeometry(0.07), startmat);
+	startpoint.position.set(0.,-1.,0.);
+	scene.add(startpoint);
 	
 	workshopdot_deselect(timelineCount);
 	
 	window.addEventListener( 'resize', onWindowResize, false );
 
-	shiftControlPlane();
-		
-}
-
-var controlPlane;
-
-function shiftControlPlane(){
 	var geometry2 = new THREE.PlaneGeometry( 1., 1., 1. );	
 			
 	var splitmat = new THREE.MeshBasicMaterial({ 
 		color:0xff0000,
 		//specular: 0xcac6c6,
 		transparent: true,
-		opacity: 0.9,
+		opacity: controlPlaneOpacity,
 		//shininess: 10
 		});
 	controlPlane = new THREE.Mesh(geometry2,splitmat);
 	controlPlane.position.set(0,0, (controlPlanePosition*boxdepth)+(boxdepth/2.));
 	controlPlane.scale.set(boxwidth,boxheight,1.);
 	scene.add( controlPlane );
-	var startTime = new Date().getTime();
+	shiftControlPlane();
+	drawdax();	
+}
+
+
+
+
+function shiftControlPlane(){	
+	controlPlane.material.opacity = 1.;
 	var interval = setInterval(function(){
 	if(controlPlanePosition > 10){
 		clearInterval(interval);
-		//alert('interval cleared')
+		controlPlane.material.opacity = (0.);
 		controlPlanePosition = 0;	
 		return;
 	}
 	controlPlanePosition = (controlPlanePosition + 1);
 	controlPlane.position.set(0,0,(-1.*controlPlanePosition*boxdepth)+(boxdepth/2.));
-	console.log(controlPlane.position);	
-	}, 50);
+	}, 80);
 }
+
 
 function swapworkshop(num){
 	//console.log(num);
 	shiftControlPlane();
 	removePins();
-	drawPin(num,15);
+	drawPin(num,metacontents[num].events.length);
 	for(var i = 0; i < timelineCount; i++){
 		if(i == num){
 			scene.getObjectByName("test"+i.toString()).material.color.setHex(metacontents[i].color.replace(/#/g , "0x"));				
@@ -323,7 +335,10 @@ function deselectworkshop(){
 			}
 		}
 		workshop_delete_all_events();
-	
+		//colors
+		controlPlane.material.color.setHex(0xffffff);
+		$("#workshopmenu").css("background", "black");
+		shiftControlPlane();
 }
 var shifter = 0.;
 
@@ -345,8 +360,9 @@ function animate() {
 		changeuniforms();
 	}
 	requestAnimationFrame(animate);
-
-	
+	for(i = 0; i < daxes.length; i++){
+		shiftdax(i);
+	}
 
 	// contentboxes
 	// ???
@@ -507,7 +523,7 @@ window.addEventListener('wheel', throttle(function movecamera(e){
 	if(e.deltaY < 0) camposIntern += 1;
 	if(e.deltaY > 0) camposIntern -= 1;
 
-	if(camposIntern >=13) camposIntern = 13;
+	if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
 	
 	if(camposIntern < -1 ) {
 		camposIntern = -1;
@@ -520,7 +536,7 @@ window.addEventListener('wheel', throttle(function movecamera(e){
 		camposIntern = -1;
 	}
 	campos = camposIntern + 1;
-},200));
+},500));
 
 
 

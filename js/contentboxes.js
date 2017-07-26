@@ -311,6 +311,7 @@ function workshop_delete_all_events() {
   //$("div.dragbox").remove();
   removePins();
   initCamera();
+  startpoint.visible = true;
 
 }
 
@@ -337,6 +338,7 @@ function get_workshop_contentboxes(j) {
   current_workshop_id = j;
   workshop_create_all_contents_3d(j);
 	initCamera();
+	startpoint.visible = false;
 }
 
 function initCamera(){

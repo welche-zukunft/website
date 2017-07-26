@@ -19,7 +19,10 @@ function update_workshop_menu(j) {
   var namemoderator = metacontents[j].namemoderator;
   var vitamoderator = metacontents[j].vitamoderator;
   var material = metacontents[j].material;
-
+  
+  //colors
+  controlPlane.material.color.setHex(metacontents[j].color.replace(/#/g , "0x"));
+  $("#workshopmenu").css("background", metacontents[j].color);
   // menu elements
 
   // logline

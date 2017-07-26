@@ -60,8 +60,8 @@ function drawPin(index,j){
 		if(i & 1) side = 1;
 
 		//get size of text (lines) &&  create texture
-		var content = splitTextToLines(metacontents[2].events[i].text);
-		var title = splitTextToLines(metacontents[2].events[i].title);
+		var content = splitTextToLines(metacontents[index].events[i].text);
+		var title = splitTextToLines(metacontents[index].events[i].title);
 		var texture = createTexture(index,i,content,title);
 		pintextures.push(texture);
 		pin.computeFaceNormals();

@@ -21,25 +21,8 @@ mc.on("tap", function(ev) {
 	}
 	else{camposIntern += 1;}
 	if(camposIntern >=13) camposIntern = 13;
-	
-	if(camposIntern < -1 ) {
-		camposIntern = -1;
-		if(setOverview == false){
-			setOverview = true;
-			}
-	}
-	if(setOverview == true && camposIntern > -1 && batchescreated == true){
-		setOverview = false;
-		camposIntern = -1;
-	}
-	campos = camposIntern + 1;
-});
-/*
-mc.on("pandown", function(ev) {
-	camposIntern -= 1;
+		
 
-	if(camposIntern >=13) camposIntern = 13;
-	
 	if(camposIntern < -1 ) {
 		camposIntern = -1;
 		if(setOverview == false){
@@ -52,7 +35,7 @@ mc.on("pandown", function(ev) {
 	}
 	campos = camposIntern + 1;
 });
-*/
+
 mc.on("panright panleft", function(ev) {
 	mouseX = ( ev.pointers[0].layerX- windowHalfY  )*0.008;
 });

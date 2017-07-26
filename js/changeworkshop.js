@@ -32,7 +32,7 @@ function workshopdot_deselect(num){
   //handle.css('color', color);
   $(handle).css('background', '#ffffff', 'important');
   $(handle).css('color', '#ffffff');
-  $(handle).append('<span class="tooltiptext" style="background: #fff">'+'alle Workshops anzeigen'+'</span>');
+  $(handle).append('<span class="tooltiptext" style="background: #fff">'+'Workshopauswahl aufheben'+'</span>');
 
  
   $(handle).click(function() {

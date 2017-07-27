@@ -10,7 +10,7 @@ function addoptions(){
 
  $(function() {
         $('#wunsch_ws').change(function(){
-			if($(this).val() == -1){
+			if($(this).val() == 14){
 				$('#sprache').show();
 			}
 			else {$('#sprache').hide();}

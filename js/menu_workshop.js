@@ -23,6 +23,10 @@ function update_workshop_menu(j) {
   //colors
   controlPlane.material.color.setHex(metacontents[j].color.replace(/#/g , "0x"));
   $("#workshopmenu").css("background", metacontents[j].color);
+  $("#ws_menu_title").css("color","black");
+  $("#ws_menu_subtitle").css("color","black");
+  $("#workshopmenu").css("color","black");
+  $("#burger_icon").css("color","black");
   // menu elements
 
   // logline

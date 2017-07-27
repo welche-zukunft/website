@@ -62,7 +62,10 @@ function drawPin(index,j){
 		//get size of text (lines) &&  create texture
 		var content = splitTextToLines(metacontents[index].events[i].text);
 		var title = splitTextToLines(metacontents[index].events[i].title);
-		var texture = createTexture(index,i,content,title);
+		var result = createTexture(index,i,content,title);
+		var texture = result.tex;
+		var maxwidth = result.width;
+		console.log(maxwidth);
 		pintextures.push(texture);
 		pin.computeFaceNormals();
 		pin.computeVertexNormals();
@@ -91,8 +94,9 @@ function drawPin(index,j){
 		pincontent.vertices.push(
 			new THREE.Vector3( side*(shiftx+1+par_geometry[index].vertices[i].x), 1+par_geometry[index].vertices[i].y, 0+par_geometry[index].vertices[i].z ),
 
-			new THREE.Vector3( side*(shiftx+3+par_geometry[index].vertices[i].x), 1+par_geometry[index].vertices[i].y, 0+par_geometry[index].vertices[i].z ),
-			new THREE.Vector3( side*(shiftx+3+par_geometry[index].vertices[i].x), (1+(title.length + content.length)*0.075)+par_geometry[index].vertices[i].y, 0+par_geometry[index].vertices[i].z ),	
+			new THREE.Vector3( side*(shiftx+(1+2*maxwidth)+par_geometry[index].vertices[i].x), 1+par_geometry[index].vertices[i].y, 0+par_geometry[index].vertices[i].z ),
+			
+			new THREE.Vector3( side*(shiftx+(1+2*maxwidth)+par_geometry[index].vertices[i].x), (1+(title.length + content.length)*0.075)+par_geometry[index].vertices[i].y, 0+par_geometry[index].vertices[i].z ),	
 
 			new THREE.Vector3( side*(shiftx+1+par_geometry[index].vertices[i].x), (1+(title.length + content.length)*0.075)+par_geometry[index].vertices[i].y, 0+par_geometry[index].vertices[i].z )	
 		);
@@ -109,27 +113,27 @@ function drawPin(index,j){
 		if(side >= 0.){
 			pincontent.faceVertexUvs[0].push([
 				new THREE.Vector2(0,height),
-				new THREE.Vector2(width,height),
-				new THREE.Vector2(width,0),
+				new THREE.Vector2(width*maxwidth,height),
+				new THREE.Vector2(width*maxwidth,0),
 			]);
 
 			pincontent.faceVertexUvs[0].push([
 				new THREE.Vector2(0,height),
-				new THREE.Vector2(width,0),
+				new THREE.Vector2(width*maxwidth,0),
 				new THREE.Vector2(0,0)
 			]);
 		}
 		else{
 			pincontent.faceVertexUvs[0].push([
-				new THREE.Vector2(width,height),
+				new THREE.Vector2(width*maxwidth,height),
 				new THREE.Vector2(0,height),
 				new THREE.Vector2(0,0),
 			]);
 
 			pincontent.faceVertexUvs[0].push([
-				new THREE.Vector2(width,height),
+				new THREE.Vector2(width*maxwidth,height),
 				new THREE.Vector2(0,0),
-				new THREE.Vector2(width,0)
+				new THREE.Vector2(width*maxwidth,0)
 			]);	
 		}
 	
@@ -156,11 +160,12 @@ var paddingbottom = 20;
 var spaceHL = 15;
 
 function createTexture(index,eventnum,content,title){
+	var maxwidth = 0;
 	var d = document.createElement('canvas');
 	pincanvases.push(d);
 	var fontSize = 32;
 	if(content != undefined){
-		d.width = colwidth * fontSize/2. + paddingleft + paddingright;
+		d.width = (colwidth + 5) * fontSize/2. + paddingleft + paddingright;
 		d.height = ((title.length+content.length) * fontSize) + paddingtop + paddingbottom + spaceHL ;
 		var ctx = d.getContext('2d');
 		ctx.fillStyle = 'black';
@@ -171,12 +176,15 @@ function createTexture(index,eventnum,content,title){
 		ctx.textAlign = "left";
 		ctx.textBaseline = "top";
 		ctx.font = 'bold ' + fontSize+'px Monospace';
+
 		for (var x=0; x<title.length; x++) {
 			  ctx.fillText(title[x], paddingleft, paddingtop+x*fontSize);
+			  maxwidth = Math.max(maxwidth, ctx.measureText(title[x]).width);
 			}
 		ctx.font =  fontSize+'px Monospace';
 		for (var y=0; y<content.length; y++) {
 			  ctx.fillText(content[y], paddingleft, spaceHL+paddingtop+(title.length*fontSize)+(y*fontSize));
+			  maxwidth = Math.max(maxwidth, ctx.measureText(content[y]).width);
 			}
 	}
 	var tex = new THREE.Texture(d);
@@ -184,7 +192,10 @@ function createTexture(index,eventnum,content,title){
 	//tex.magFilter = THREE.NearestFilter;
 	tex.flipY = false;
 	tex.needsUpdate = true;
-	return tex;
+	return {
+		tex: tex,
+		width: (maxwidth+ paddingleft + paddingright) / d.width
+	};
 }
 
 function createYears(year){
@@ -209,24 +220,43 @@ function createYears(year){
 }
 
 function splitTextToLines(text) {
-        var idealSplit = 30,
+        var idealSplit = 40,
             maxSplit = colwidth,
             lineCounter = 0,
             lineIndex = 0,
             lines = [""],
-            ch, i;
+            ch, i,
+			lastindex = 0;
 			
         for (i = 0; i < text.length; i++) {
             ch = text[i];
-            if ((lineCounter >= idealSplit && ch === " ") || lineCounter >= maxSplit) {
+			
+			if(ch === " ") lastindex = lineCounter+1;		
+           
+		    if ((lineCounter >= idealSplit && ch === " ")) {
                 ch = "";
                 lineCounter = -1;
                 lineIndex++;
+				lastindex = 0;
                 lines.push("");
+			}
+			else if (lineCounter >= maxSplit){
+				var jump = lineCounter - lastindex;
+				var shortline = lines[lineIndex].slice(0,lastindex);
+				lines[lineIndex] = [];
+				lines[lineIndex] = shortline;
+				i = i - jump;
+				ch = text[i];
+                lineCounter = -1;
+				lastindex = 0;
+                lineIndex++;
+                lines.push("");				
             }
+
             lines[lineIndex] += ch;
             lineCounter++;
         }
 
         return lines;
     }
+	

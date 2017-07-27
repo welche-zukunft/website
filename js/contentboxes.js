@@ -236,8 +236,11 @@ function flush_boxes() {
   for (i = current_lines_group.children.length - 1; i >= 0; i--) {
     current_lines_group.remove(current_lines_group.children[i]);
   }
-  workshop_delete_all_events();
+  //workshop_delete_all_events();
 }
+
+
+
   var middle;
   var boxesLeft;
   var boxesRight;
@@ -312,7 +315,6 @@ function workshop_delete_all_events() {
   removePins();
   initCamera();
   startpoint.visible = true;
-
 }
 
 function track_pos_handle(elem) {

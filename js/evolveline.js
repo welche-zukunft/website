@@ -31,7 +31,7 @@ var years = [];
 var currentLookX = 0.;
 var currentLookY = 0.;
 var currentLookZ = -10.;
-var movespeed = 0.04;
+var movespeed = 0.03;
 
 //arrays for boxes
 var geometries = [];
@@ -86,6 +86,10 @@ if (Detector.webgl) {
     document.getElementById('container').appendChild(warning);
 }
 
+window.onbeforeunload = function () {
+		//10 because therwise timeline is not set active - but why?
+        window.scrollTo(0,10);
+}
 
 
 function get_metainformations(){
@@ -104,6 +108,10 @@ function get_metainformations(){
 		// contents via get in js/contentboxes.js
 		// reset_ws via changeworkshop.js
 		reset_ws();
+		$("#bottom_menus").css("display","block");
+		$("#topmenu").css("display","block");
+		$("#container").css("display","block");
+		$("#spinner").css("display","none");
 	});
 }
 
@@ -324,7 +332,6 @@ function swapworkshop(num){
 }
 	
 function deselectworkshop(){
-
 	for(var i = 0; i < timelineCount; i++){
 			scene.getObjectByName("test"+i.toString()).material.color.setHex(metacontents[i].color.replace(/#/g , "0x"));				
 			scene.getObjectByName("test"+i.toString()).material.opacity = 1.;
@@ -338,6 +345,10 @@ function deselectworkshop(){
 		//colors
 		controlPlane.material.color.setHex(0xffffff);
 		$("#workshopmenu").css("background", "black");
+		$("#ws_menu_title").css("color","white");
+		$("#ws_menu_subtitle").css("color","white");
+		$("#burger_icon").css("color","white");
+		$("#workshopmenu").css("color","white");
 		shiftControlPlane();
 }
 var shifter = 0.;
@@ -520,22 +531,25 @@ var campos = camposIntern + 1;
 var setOverview = true;
 
 window.addEventListener('wheel', throttle(function movecamera(e){
-	if(e.deltaY < 0) camposIntern += 1;
-	if(e.deltaY > 0) camposIntern -= 1;
-
-	if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
+	if(active == true){
 	
-	if(camposIntern < -1 ) {
-		camposIntern = -1;
-		if(setOverview == false){
-			setOverview = true;
-			}
+		if(e.deltaY < 0) camposIntern += 1;
+		if(e.deltaY > 0) camposIntern -= 1;
+
+		if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
+		
+		if(camposIntern < -1 ) {
+			camposIntern = -1;
+			if(setOverview == false){
+				setOverview = true;
+				}
+		}
+		if(setOverview == true && camposIntern > -1 && batchescreated == true){
+			setOverview = false;
+			camposIntern = -1;
+		}
+		campos = camposIntern + 1;
 	}
-	if(setOverview == true && camposIntern > -1 && batchescreated == true){
-		setOverview = false;
-		camposIntern = -1;
-	}
-	campos = camposIntern + 1;
 },500));
 
 

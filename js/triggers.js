@@ -1,5 +1,10 @@
 var active = false;
 
+function setstatus(sitestatus){
+	active = sitestatus;
+}
+
+
 // throttle function, enforces a minimum time interval
 function throttle(fn, interval) {
   var lastCall, timeoutId;
@@ -38,7 +43,8 @@ function select_active() {
   //if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
 
   // test whether we are on a specific section instead
-  if (toleratePosition >= sectionTop && toleratePosition <= sectionBottom ) {
+  if (toleratePosition >= sectionTop && toleratePosition <= sectionBottom) {
+	//console.log("set active");
     active = true;
     // disable scrolling out of container
     $("body").css("overflow", "hidden");
@@ -57,11 +63,13 @@ function select_active() {
       //$current.addClass('display');
       $current.removeClass('nodisplay');
     });
-  } else {
+  } 
+  else{
+	//console.log("set inactive");
     active = false;
     $("body").css("overflow", "initial");
-    flush_boxes();
-    reset_ws();
+    //flush_boxes();
+    //reset_ws();
     $("#topmenu").detach().appendTo("body");
     $("#signe_div").detach().appendTo("body");
     //$("#bottom_menu").detach().appendTo("body");

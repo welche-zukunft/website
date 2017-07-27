@@ -9,10 +9,9 @@
 	<style>
 		body {
 			font-family: 'Oxygen', sans-serif;
-			background-color: #f0f0f0;
+			background-color: #000000;
 			margin: 0px;
 		}´
-		@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 		
 	</style>
 	<link href="css/underconstruction2.css" rel="stylesheet">
@@ -23,37 +22,41 @@
 	<link href="css/activity.css" rel="stylesheet">
 	<link href="css/formular.css" rel="stylesheet">
 	<link href="css/tooltips.css" rel="stylesheet">
-
+	<link href="css/spinner.css" rel="stylesheet">
 </head>
 <body>
-
-	<div id="topmenu" class="foreground">
+	<div id="spinner" class="spinner">
+	  <div class="spintext"><p>WELCHE ZUKUNFT?! wird geladen ...</p></div>
+	  <div class="double-bounce1"></div>
+	  <div class="double-bounce2"></div>
+	</div>
+	<div id="topmenu" class="foreground" style="display: none">
 		<input class="burger-check" id="burger-check" type="checkbox">
 		<label for="burger-check" class="burger"></label>
 		<label class="left" for="burger-check" >Welche Zukunft?!</label>
 		<label class="center">16. September 2017 im Deutschen Theater Berlin</label>
-		<label class="right">Jetzt anmelden</label>
+		<label class="right"><a href="#anmeldung" class="undeco">Jetzt anmelden</a></label>
 		<nav id="navigation1" class="navigation">
 		<ul>
-			<li><a href="#start">Start</a></li>
-			<li><a href="#info">Das Projekt</a></li>
-			<li class="li-box"><span class="menu">Das Labor</span>
+			<li><a href="#container_section" onclick="setstatus(true);">Start</a></li>
+			<li><a href="#info" onclick="setstatus(false);">Das Projekt</a></li>
+			<li class="li-box" onclick="setstatus(false);"><span class="menu">Das Labor</span>
 				<ul>
-					<li><a href="#workshops">Ablauf</a>
-					<li><a href="#workshops">Workshops</a>
-					<li><a href="#container_section">Plenum</a>
+					<li><a href="#workshops" onclick="setstatus(false);">Ablauf</a>
+					<li><a href="#workshops" onclick="setstatus(false);">Workshops</a>
+					<li><a href="#container_section" onclick="setstatus(false);">Plenum</a>
 				</ul>
 			</li>
-			<li><a class="pseudo anmeldung">Anmeldung</a></li>
-			<li><a href="#team">Team & Partner</a></li>
-			<li><a href="#kontakt">Kontakt</a></li>
+			<li><a href="#anmeldung" class="pseudo anmeldung" onclick="setstatus(false);">Anmeldung</a></li>
+			<li><a href="#team" onclick="setstatus(false);">Team & Partner</a></li>
+			<li><a href="#kontakt" onclick="setstatus(false);">Kontakt</a></li>
 		</ul>
 		</nav>
 	</div><!-- topmenu -->
 
 <main>
 	<section id="container_section">
-		<div class="back" id="container">
+		<div class="back" id="container" style="display: none">
 			<!--
 			<div class="scroll-up nodisplay">
 				<a href="#workshops">
@@ -71,14 +74,7 @@
 	</section> <!-- container_section -->
 
 	<article>
-
-
-		<section id="start"> <div class="flex">
-			
-		</div><!-- flex --> </section><!-- start -->
-
-		<section id="info"> <div class="flex"> <div class="paper">
-				
+		<section id="info"> <div class="flex"> <div class="paper">		
 			<h1>Welche Zukunft?! </h1>
 			<p class="subtitle">Von Andres Veiel und Jutta Doberstein </p>
 			<h2>
@@ -242,9 +238,6 @@
 		-->
 
 		<section id="anmeldung"> <div class="flex"> <div class="paper">
-			<div class="align_right">
-				<a class="pseudo">&Chi;</a>
-			</div><!-- align_right -->
 			<div class="formular">
 				<div class="formmenu">
 					<p id="signup" class="hl_form">Anmeldung</p>
@@ -341,7 +334,7 @@
 
 	</article>
 
-	<div id="bottom_menus" class="foreground">
+	<div id="bottom_menus" class="foreground" style="display: none">
 		<!--
 		<div id="anmeldung_link">
 			<a class="pseudo anmeldung">&lt;&lt; zur Anmeldung</a>
@@ -349,7 +342,7 @@
 		<div class="handle_container" class="foreground"></div>
 		<div id="workshopmenu">
 			<input class="burger-ws-check" id="burger-ws-check" type="checkbox">
-			<label for="burger-ws-check" class="burger-ws"></label>
+			<label for="burger-ws-check" id="burger_icon" class="burger-ws"></label>
 			<label for="burger-ws-check" class="ws_content" id="ws_menu_title" class="title"></label>
 			<label for="burger-ws-check" class="ws_content" id="ws_menu_subtitle" class="subtitle"></label>
 			<div id="ws_menu_content" class="navigation paper"></div>

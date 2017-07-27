@@ -16,24 +16,26 @@ mc.on("pinch", function(ev){
 });
 
 mc.on("tap", function(ev) {
-	if(ev.pointers[0].layerY > window.innerHeight - (window.innerHeight*0.3)){
-	camposIntern -= 1;
-	}
-	else{camposIntern += 1;}
-	if(camposIntern >=13) camposIntern = 13;
-		
+	if(active == true){
+		if(ev.pointers[0].layerY > window.innerHeight - (window.innerHeight*0.3)){
+		camposIntern -= 1;
+		}
+		else{camposIntern += 1;}
+		if(camposIntern >=13) camposIntern = 13;
+			
 
-	if(camposIntern < -1 ) {
-		camposIntern = -1;
-		if(setOverview == false){
-			setOverview = true;
-			}
+		if(camposIntern < -1 ) {
+			camposIntern = -1;
+			if(setOverview == false){
+				setOverview = true;
+				}
+		}
+		if(setOverview == true && camposIntern > -1 && batchescreated == true){
+			setOverview = false;
+			camposIntern = -1;
+		}
+		campos = camposIntern + 1;
 	}
-	if(setOverview == true && camposIntern > -1 && batchescreated == true){
-		setOverview = false;
-		camposIntern = -1;
-	}
-	campos = camposIntern + 1;
 });
 
 mc.on("panright panleft", function(ev) {

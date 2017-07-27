@@ -1,3 +1,10 @@
+.undeco {
+	color: white !important;
+	background: none  !important;
+	
+}
+
+
 #topmenu {
   position: fixed;
   top: 0;

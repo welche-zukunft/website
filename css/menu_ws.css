@@ -43,7 +43,7 @@ label.burger-ws {
   display: block;
   float: left;
   margin: 10px;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-bottom: 0;
 }
 
@@ -108,7 +108,12 @@ label.burger-ws {
 #ws_menu_content {
   color: black;
   margin-top: 5px;
+  /*background: url(../images/bg_tex2.jpg);
+  background-repeat: repeat-y;
+  background-size: 100%;*/
 }
+
+
 
 #ws_menu_title {
   display: inline-block;
@@ -164,3 +169,4 @@ font-size: 1.4em !important;
 .ws_name {
  font-weight: bold;
 }
+

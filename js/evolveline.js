@@ -45,7 +45,7 @@ var windowHalfY = window.innerHeight / 2;
 
 
 //timeline width
-var boxwidth = window.innerWidth*0.01;
+var boxwidth = window.innerWidth*0.005;
 var boxheight = window.innerHeight*0.005;
 var boxdepth = 7.;
 
@@ -532,7 +532,7 @@ var campos = camposIntern + 1;
 var setOverview = true;
 
 window.addEventListener('wheel', throttle(function movecamera(e){
-	if(active == true){
+	if(active == true && wsIsOpen == false){
 	
 		if(e.deltaY < 0) camposIntern += 1;
 		if(e.deltaY > 0) camposIntern -= 1;

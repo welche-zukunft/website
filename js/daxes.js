@@ -42,21 +42,21 @@ function recalculateDax(i){
     positions[ index ++ ] = y;
     positions[ index ++ ] = z;
 
-	increment += ( Math.random() - 0.5 );
+	increment += ( Math.random() - 0.5 )*2.;
     x = boxwidth * -1. + (boxwidth*2)*i;
     y = ( Math.random() - 0.5 ) + increment;
-    z += ( Math.random() ) * -1;
+    z += ( Math.random() ) * -0.5;
 	}
-	daxspeeds[i] = Math.random() * 0.5;
+	daxspeeds[i] = (Math.random() * 0.5)+0.3;
 }
 
 function shiftdax(i){
 	drawCount[i] += daxspeeds[i];
-	if(drawCount[i] >= 500){
+	if(drawCount[i] >= 479){
 			drawCount[i] = 0;
 			recalculateDax(i);
 		}
 	var drawEnd = drawCount[i] + 20;
 	if(drawEnd >= 500) drawEnd = 500;
-	daxes[i].geometry.setDrawRange( Math.floor(drawCount[i]), Math.floor(drawEnd) );
+	daxes[i].geometry.setDrawRange( Math.floor(drawCount[i])+1, Math.floor(drawEnd) );
 }

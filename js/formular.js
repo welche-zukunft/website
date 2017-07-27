@@ -45,3 +45,9 @@ $( "#getnews" ).on( "click", function() {
   $('#signup').css('background-color','#f1f1f1' );
   $('#getinfos').css('background-color','#f1f1f1' );
 });
+
+
+
+
+
+

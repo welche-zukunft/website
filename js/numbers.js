@@ -39,7 +39,7 @@ function createNumberWalls(){
 
 	var j=0, ln=0,k = 0;
 
-	for (i=0; i<5000; i++) {
+	for (i=0; i<7000; i++) {
 		var num = Math.floor(Math.random()*16.)+45;
 					
 		var code = num;
@@ -72,7 +72,7 @@ function createNumberWalls(){
 		new THREE.Vector2( ox+off, oy ),
 		new THREE.Vector2( ox, oy )
 			]);
-		if (k  == 200) {
+		if (k  == 300) {
 		  ln--;
 		  j=0;
 		  k = 0;
@@ -94,8 +94,8 @@ function createNumberWalls(){
 		map : { type: "t", value: tex },
 		map2 : { type: "t", value: texture },
 		effectAmount : { type: "f", value: 0.0 },
-		amount : {type: "v2", value: new THREE.Vector2(1.,8.) },
-		resolution : {type: "v2",value: new THREE.Vector2(200.,25)},
+		amount : {type: "v2", value: new THREE.Vector2(1.,12.) },
+		resolution : {type: "v2",value: new THREE.Vector2(300.,25)},
 		speed : {type: "v2",value: new THREE.Vector2(speedx, speedy)}
 	};
 
@@ -118,11 +118,11 @@ function createNumberWalls(){
 		book.doubleSided = true;
 		var a = i/n * Math.PI*2 + Math.PI/2;
 		var box = new THREE.Box3().setFromObject( book );
-		book.position.x = -10. + (20.*i);
+		book.position.x = -1. * (boxwidth) + ((boxwidth*2)*i);
 		book.position.y = (box.getSize().y * 0.3)/2.;
-		book.position.z = -3.-(box.getSize().x * i * 0.3);
+		book.position.z = 3.-(box.getSize().x * i * 0.3);
 		book.rotation.y = Math.PI/2 + (Math.PI*i);
-		book.scale.set(0.3,0.3,0.3);
+		book.scale.set(0.35,0.35,0.35);
 		books.push(book);
 		topy.add(book);
 	}

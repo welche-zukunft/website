@@ -3,7 +3,9 @@ function addoptions(){
 		$("#wunsch_ws").append($('<option></option>').attr("value", i).text(metacontents[i].title[0] + ' - ' + metacontents[i].title[1] ));
 	}
 	$('#sprache').hide();
+	//deselect rider 2 & 3 in anmeldung
 	$('#anmeldeinfos').hide(); 
+	$('#newsletter').hide(); 
 }
 
  $(function() {
@@ -16,15 +18,30 @@ function addoptions(){
     });
 	
 $( "#signup" ).on( "click", function() {
- $('#anmeldeinfos').hide(); 
  $('#anmeldeformular').show();
- $('#getinfos').css('background-color', '#f1f1f1');
+ $('#anmeldeinfos').hide(); 
+ $('#newsletter').hide(); 
  $('#signup').css('background-color', '#e1e5e6');
+ $('#getinfos').css('background-color', '#f1f1f1');
+ $('#getnews').css('background-color', '#f1f1f1');
+
 });
 
 $( "#getinfos" ).on( "click", function() {
-  $('#anmeldeformular').hide();
   $('#anmeldeinfos').show();
+  $('#anmeldeformular').hide();
+  $('#newsletter').hide(); 
   $('#getinfos').css('background-color', '#e1e5e6');
-	$('#signup').css('background-color','#f1f1f1' );
+  $('#signup').css('background-color','#f1f1f1' );
+  $('#getnews').css('background-color','#f1f1f1' );
+});
+
+$( "#getnews" ).on( "click", function() {
+  $('#newsletter').show();
+  $('#anmeldeinfos').hide(); 
+  $('#anmeldeformular').hide();
+  $('#newletter').show();
+  $('#getnews').css('background-color', '#e1e5e6');
+  $('#signup').css('background-color','#f1f1f1' );
+  $('#getinfos').css('background-color','#f1f1f1' );
 });

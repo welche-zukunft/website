@@ -1,3 +1,6 @@
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+ 
+
 var myElement = document.getElementById('container');
 var currentscale = 1;
 
@@ -49,3 +52,5 @@ function createRemap(inMin, inMax, outMin, outMax) {
 }
 
 var scale = createRemap(0.,1.,1.2,0.8);
+
+}

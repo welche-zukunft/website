@@ -92,6 +92,7 @@ window.onbeforeunload = function () {
 }
 
 
+
 function get_metainformations(){
 	$.getJSON( metainfos, function(data){
 		metacontents = JSON.parse(JSON.stringify(data));

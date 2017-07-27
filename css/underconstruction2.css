@@ -174,6 +174,9 @@ body {
 				margin-bottom: 10px;
 			}
 			
+			
+			
+			
 			form  input
 			{
 			font-family:  'Oxygen', sans-serif;
@@ -188,7 +191,7 @@ body {
 			box-sizing: border-box;
 			-webkit-box-sizing: border-box;
 			-moz-box-sizing: border-box;
-			background-color: #e8eeef;
+			background-color:#ffffff;
 			color:#8a97a0;
 			-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 			box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -209,12 +212,14 @@ body {
 			box-sizing: border-box;
 			-webkit-box-sizing: border-box;
 			-moz-box-sizing: border-box;
-			background-color: #e8eeef;
+			background-color: #ffffff;
 			color:#8a97a0;
 			-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 			box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 			margin-bottom: 30px;
-			}			
+			}	
+
+			
 			.result{
 			text-align: center;
 			padding: 12px 77px 12px 77px;

@@ -42,9 +42,9 @@
 			<li><a href="#info" onclick="setstatus(false);">Das Projekt</a></li>
 			<li class="li-box" onclick="setstatus(false);"><span class="menu">Das Labor</span>
 				<ul>
-					<li><a href="#workshops" onclick="setstatus(false);">Ablauf</a>
+					<li><a href="#ablauf" onclick="setstatus(false);">Ablauf</a>
 					<li><a href="#workshops" onclick="setstatus(false);">Workshops</a>
-					<li><a href="#container_section" onclick="setstatus(false);">Plenum</a>
+					<li><a href="#plenum" onclick="setstatus(false);">Plenum</a>
 				</ul>
 			</li>
 			<li><a href="#anmeldung" class="pseudo anmeldung" onclick="setstatus(false);">Anmeldung</a></li>
@@ -131,6 +131,15 @@
 
 			<a href="#workshops"><p class="big center">&gt;&gt; zu den Workshops</p></a>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- intro -->
+		
+		<section id="ablauf"> <div class="flex"> <div class="paper">
+				
+			<h2>ABLAUF</h2>
+			<p>Am 16. September veranstalten wir von 10 bis 20 Uhr im gesamten Haus des Deutschen Theaters parallel 13 Workshops mit unterschiedlichen Themenschwerpunkten. Sie können sich zur Teilnahme an einem dieser Workshops anmelden und gemeinsam mit den ExpertInnen ein Szenario für die kommenden zehn Jahre entwerfen. Pro Workshop können 10 bis 25 Personen teilnehmen. Am Ende des Tages werden schließlich alle Workshops im Saal der Kammerspiele zusammenkommen, um die einzelnen Prognosen zu einer gemeinsamen Erzählung für die Zukunft zusammenzutragen. </p>
+
+		</div><!-- paper --> </div><!-- flex --> </section><!-- ablauf -->
+		
+
 
 		<section id="workshops"> <div class="flex"> <div class="paper">
 				
@@ -230,19 +239,23 @@
 			im Norden Schottlands gehören werden und wer sie jetzt schon plant.  </p>
 
 		</div><!-- paper --> </div><!-- flex --> </section><!-- workshops -->
+		
+		<section id="plenum"> <div class="flex"> <div class="paper">
+				
+			<h2>DAS PLENUM</h2>
+			<p>Am 16. September veranstalten wir von 10 bis 20 Uhr im gesamten Haus des Deutschen Theaters parallel 13 Workshops mit unterschiedlichen Themenschwerpunkten. Sie können sich zur Teilnahme an einem dieser Workshops anmelden und gemeinsam mit den ExpertInnen ein Szenario für die kommenden zehn Jahre entwerfen. Pro Workshop können 10 bis 25 Personen teilnehmen. Am Ende des Tages werden schließlich alle Workshops im Saal der Kammerspiele zusammenkommen, um die einzelnen Prognosen zu einer gemeinsamen Erzählung für die Zukunft zusammenzutragen. </p>
 
-		<!--
-		<section id="#inhalte">
-			test
-		</section>
-		-->
-
+		</div><!-- paper --> </div><!-- flex --> </section><!-- planum -->
+		
 		<section id="anmeldung"> <div class="flex"> <div class="paper">
 			<div class="formular">
+			
 				<div class="formmenu">
 					<p id="signup" class="hl_form">Anmeldung</p>
 					<p id="getinfos" class="hl_form">Infos</p>
+					<p id="getnews" class="hl_form">Newsletter</p>
 				</div><!-- formmenu -->
+				
 				<div id="anmeldeformular">
 					<form method="POST" action="/adduser" id="anmeldung_form">
 						<p>Anmeldezeitraum: 1. August bis 9. September 2017, 12 Uhr<br>
@@ -276,6 +289,8 @@
 						<p>Haben Sie schon eine Vorstellung, was in den nächsten 10 Jahren passieren könnte? Erzählen Sie uns, wenn Sie mögen davon!</p>
 						<textarea rows="15"></textarea>
 						<br>
+						<input class="agb_check" type="checkbox" name="gelesen" value="yes">
+						<label class="agbs">Ich habe die Infos und AGBs gelesen und bin damit einverstanden.</label>
 						<button type="submit">Jetzt anmelden</button>
 						<label id="form_result" class="result" style=""></label>
 					</form><!-- anmeldung -->
@@ -291,6 +306,22 @@
 					7. Frei gewordene Plätze werden am 14. und 15. September per Losverfahren an Anmelder/innen aus der Warteliste vergeben. Sie werden ebenso per E-Mail benachrichtigt.<br><br>
 					8. Und jetzt bitte anmelden! Die Zukunft wartet nicht. <br><br>
 				</div><!-- anmeldeinfos -->
+				<div id="newsletter">
+				<form method="POST" action="/index.php#newsletter" id="newslett">
+				<br>
+				<label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hier bitte ihren Namen und ihre Mailadresse ein.</label> 
+				<br>
+				<label >Vorname</label> 
+				<input type="text" name="vorname" id="vorname" value="<?php echo $name_first;?>">
+				<label >Name</label> 
+				<input type="text" name="name" id="name" value="<?php echo $name_last;?>">
+				<label >E-Mailadresse</label> 
+				<input type="text" name="mailadresse" id="mailadresse" value="<?php echo $sub_mail;?>">
+				<br>
+				<button type="submit">Newsletter abonnieren</button>
+				<label class="result" style="<?php echo $result_display;?>"><?php echo $feedback;?></label>
+				</form>
+				</div>
 			</div>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- anmeldung -->
 
@@ -364,9 +395,9 @@
 
 	<!-- contentboxes -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="js/jquery-ui/jquery-ui.min.js"></script>
+	<!--<script src="js/jquery-ui/jquery-ui.min.js"></script>-->
 	<!--<script src="js/jquery.getscrollbarwidth.js"></script>-->
-	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<!--<script src="js/jquery.ui.touch-punch.min.js"></script>-->
 	<!--<script src="js/dragscroll.js"></script>-->
 	<script> var handle_pos = {"x":0, "y":0, "z":0}; </script>
 	<script type='text/javascript' src='js/contentboxes.js'></script>

@@ -14,7 +14,7 @@ textarea {
 		outline: 0;
 		padding: 7px;
 		width: 100%;
-		background-color: #e8eeef;
+		background-color: #ffffff;
 		color:#8a97a0;
 		-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 		box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -49,9 +49,11 @@ textarea {
     display: block;
 }
 
-#getinfos {
+#getinfos, #getnews {
 	background:#f1f1f1;
 }
+
+
 
 .anmeldeinfos {
 	max-width: 700px;
@@ -61,3 +63,15 @@ textarea {
 	background: #e1e5e6;
 	border-radius: 0px 8px 8px 8px;	
 }
+
+.agbs {
+	display: inline-block;
+}
+
+
+.agb_check {
+  width: 20px !important;
+  position: relative;
+  margin: 10px auto;
+  }
+ 

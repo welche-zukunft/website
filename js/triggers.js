@@ -1,4 +1,4 @@
-var active = false;
+var active = true;
 
 function setstatus(sitestatus){
 	active = sitestatus;

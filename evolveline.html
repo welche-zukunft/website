@@ -257,7 +257,7 @@
 				</div><!-- formmenu -->
 				
 				<div id="anmeldeformular">
-					<form method="POST" action="/adduser" id="anmeldung_form">
+					<form method="POST" action="/adduser/" id="anmeldung_form">
 						<p>Anmeldezeitraum: 1. August bis 9. September 2017, 12 Uhr<br>
 						finale Rückmeldungen Ihrerseits: 10. bis 13. September 2017<br>
 						Vergabe frei gewordener Plätze an Anmelder/innen der Wartelisten: 14. September 2017<br>
@@ -287,9 +287,9 @@
 						<input type="text" name="mail_confirm" id="mailadresse" value="">
 						<label >Mein Zukunftsszenario</label>
 						<p>Haben Sie schon eine Vorstellung, was in den nächsten 10 Jahren passieren könnte? Erzählen Sie uns, wenn Sie mögen davon!</p>
-						<textarea rows="15"></textarea>
+						<textarea name="motivation" rows="15"></textarea>
 						<br>
-						<input class="agb_check" type="checkbox" name="gelesen" value="yes">
+						<input name="agb" class="agb_check" type="checkbox" value="yes">
 						<label class="agbs">Ich habe die Infos und AGBs gelesen und bin damit einverstanden.</label>
 						<button type="submit">Jetzt anmelden</button>
 						<label id="form_result" class="result" style=""></label>

@@ -19,12 +19,13 @@ mc.on("pinch", function(ev){
 });
 
 mc.on("tap", function(ev) {
-	if(active == true){
+	if(active == true && wsIsOpen == false){
+		
 		if(ev.pointers[0].layerY > window.innerHeight - (window.innerHeight*0.3)){
 		camposIntern -= 1;
 		}
 		else{camposIntern += 1;}
-		if(camposIntern >=13) camposIntern = 13;
+		if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
 			
 
 		if(camposIntern < -1 ) {
@@ -40,6 +41,9 @@ mc.on("tap", function(ev) {
 		campos = camposIntern + 1;
 	}
 });
+
+
+
 
 mc.on("panright panleft", function(ev) {
 	mouseX = ( ev.pointers[0].layerX- windowHalfY  )*0.008;

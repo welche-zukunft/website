@@ -65,7 +65,6 @@ function drawPin(index,j){
 		var result = createTexture(index,i,content,title);
 		var texture = result.tex;
 		var maxwidth = result.width;
-		console.log(maxwidth);
 		pintextures.push(texture);
 		pin.computeFaceNormals();
 		pin.computeVertexNormals();

@@ -97,3 +97,14 @@ if(namemoderator != ""){
 
 }
 
+var wsIsOpen = false;
+
+$("#burger_icon").on( "click", function() {
+	wsIsOpen = !wsIsOpen;
+});
+$("#ws_menu_title").on( "click", function() {
+	wsIsOpen = !wsIsOpen;
+});
+$("#ws_menu_subtitle").on( "click", function() {
+	wsIsOpen = !wsIsOpen;
+});

@@ -43,7 +43,10 @@ function select_active() {
   //if($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {
 
   // test whether we are on a specific section instead
-  if (toleratePosition >= sectionTop && toleratePosition <= sectionBottom) {
+  //if (toleratePosition >= sectionTop && toleratePosition <= sectionBottom) {
+
+  // allow 100px of tolerance from top
+  if($(window).scrollTop() <=  100) {
 	//console.log("set active");
     active = true;
     // disable scrolling out of container

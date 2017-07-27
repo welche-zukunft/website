@@ -244,7 +244,7 @@
 					<p id="getinfos" class="hl_form">Infos</p>
 				</div><!-- formmenu -->
 				<div id="anmeldeformular">
-					<form method="POST" action="/index.php#newsletter" id="anmeldung">
+					<form method="POST" action="/adduser" id="anmeldung_form">
 						<p>Anmeldezeitraum: 1. August bis 9. September 2017, 12 Uhr<br>
 						finale Rückmeldungen Ihrerseits: 10. bis 13. September 2017<br>
 						Vergabe frei gewordener Plätze an Anmelder/innen der Wartelisten: 14. September 2017<br>
@@ -252,13 +252,13 @@
 						Hinweis: Die Teilnahme am „Welche Zukunft?!“-Labor ist kostenlos. Die Teilnehmer/innenzahl unserer Workshops ist begrenzt. Je nach Workshop gibt es 10 bis 25 verfügbare Plätze. Daher bitten wir Sie um eine verbindliche Anmeldung.</p>
 						<br>
 						<label >Ich möchte mich für folgenden Workshop anmelden:</label>
-						<select id="wunsch_ws" name="wunschworkshop" size="1">
+						<select id="wunsch_ws" name="workshopId" size="1">
 							<option></option>
-							<option value='-1'>olympisch – Hauptsache dabei!</option>
+							<option value='0'>olympisch – Hauptsache dabei!</option>
 						</select>
 						<div id="sprache">
 							<label>Ich spreche folgende Sprache:</label>
-							<select size="1">
+							<select size="1" name="sprache">
 								<option>deutsch</option>
 								<option>english</option>
 								<option>beides/both</option>
@@ -267,17 +267,17 @@
 						<label >Vorname</label>
 						<input type="text" name="vorname" id="vorname" value="">
 						<label >Name</label>
-						<input type="text" name="name" id="name" value="">
+						<input type="text" name="nachname" id="name" value="">
 						<label >E-Mailadresse</label>
-						<input type="text" name="mailadresse" id="mailadresse" value="">
+						<input type="text" name="mail" id="mailadresse" value="">
 						<label >E-Mailadresse bestätigen</label>
-						<input type="text" name="mailadresse" id="mailadresse" value="">
+						<input type="text" name="mail_confirm" id="mailadresse" value="">
 						<label >Mein Zukunftsszenario</label>
 						<p>Haben Sie schon eine Vorstellung, was in den nächsten 10 Jahren passieren könnte? Erzählen Sie uns, wenn Sie mögen davon!</p>
 						<textarea rows="15"></textarea>
 						<br>
 						<button type="submit">Jetzt anmelden</button>
-						<label class="result" style=""></label>
+						<label id="form_result" class="result" style=""></label>
 					</form><!-- anmeldung -->
 				</div><!-- anmeldeformular -->
 				<div id="anmeldeinfos" class="anmeldeinfos"><br>
@@ -447,6 +447,7 @@
 	  }
 
 	</script>
+	<script type='text/javascript' src='js/form_submit.js'></script>
 	<script type='text/javascript' src='js/Detector.js'></script>
 	<script type='text/javascript' src='js/changeworkshop.js'></script>
 	<script type='text/javascript' src='js/numbers.js'></script>

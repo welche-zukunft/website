@@ -63,6 +63,7 @@ var startpoint;
 
 document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
+var platform = navigator.platform;
 
 /* SINUS PARAMETERS */
 
@@ -539,9 +540,14 @@ var setOverview = true;
 
 window.addEventListener('wheel', throttle(function movecamera(e){
 	if(active == true && wsIsOpen == false){
-	
+	if(platform == "MacIntel"){	
+		if(e.deltaY == -1) camposIntern += 1;
+		if(e.deltaY == 1) camposIntern -= 1;		
+	}
+	else {
 		if(e.deltaY < 0) camposIntern += 1;
-		if(e.deltaY > 0) camposIntern -= 1;
+		if(e.deltaY > 0) camposIntern -= 1;			
+	}
 
 		if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
 		
@@ -565,6 +571,7 @@ function throttle(func, interval) {
     var lastCall = 0;
     return function() {
         var now = Date.now();
+		//console.log("throt");
         if (lastCall + interval < now) {
             lastCall = now;
             return func.apply(this, arguments);

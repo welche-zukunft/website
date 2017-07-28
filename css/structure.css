@@ -163,7 +163,6 @@ div.flex {
 }
 section > div.flex > div.paper {
   padding: 2ch;
-  border-radius: 25px;
 }
 div.paper {
   background: white;

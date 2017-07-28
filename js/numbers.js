@@ -1,7 +1,7 @@
+
 var loader = new THREE.TextureLoader();
 var speedx, speedy = 0.;
 var uniforms;
-
 
 // CREATE FONT ALTAS WITH NUMBERS
 var fontSize = 64;
@@ -118,7 +118,7 @@ function createNumberWalls(){
 		book.doubleSided = true;
 		var a = i/n * Math.PI*2 + Math.PI/2;
 		var box = new THREE.Box3().setFromObject( book );
-		book.position.x = -1. * (boxwidth) + ((boxwidth*2)*i);
+		book.position.x = -1. * (boxwidth*aspect) + ((boxwidth*(aspect*2))*i);
 		book.position.y = (box.getSize().y * 0.3)/2.;
 		book.position.z = 3.-(box.getSize().x * i * 0.3);
 		book.rotation.y = Math.PI/2 + (Math.PI*i);

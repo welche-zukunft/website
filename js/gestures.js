@@ -19,7 +19,7 @@ mc.on("pinch", function(ev){
 });
 
 mc.on("tap", function(ev) {
-	if(active == true && wsIsOpen == false){
+	if(active == true && wsIsOpen == false && menuisOpen == false){
 		
 		if(ev.pointers[0].layerY > window.innerHeight - (window.innerHeight*0.3)){
 		camposIntern -= 1;
@@ -40,8 +40,8 @@ mc.on("tap", function(ev) {
 		}
 		campos = camposIntern + 1;
 	}
-});
 
+});
 
 
 

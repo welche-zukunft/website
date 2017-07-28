@@ -1,11 +1,13 @@
 var dynamicContent = getParameterByName('dc');
+var loadWorkshopdirect = false;
 
- $(document).ready(function() {
-	// Check if the URL parameter is workshop1
-	if (dynamicContent == 'workshop1') {
-		console.log("work shop 1");
-	} 
-});
+function checkurl() {
+	 if (dynamicContent != null && dynamicContent.indexOf("workshop") !=-1) {
+		var res = dynamicContent.replace("workshop", "");
+		loadWorkshopdirect = true;
+		workshopToLoad = res;
+	}
+}
 
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;

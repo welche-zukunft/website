@@ -20,7 +20,6 @@ section#container_section {
   column-width: 30px;
   */
   height: 33px;
-  display: flex;
   text-align: center;
 }
 div.handle_container span {

@@ -44,6 +44,7 @@
 #ws_labels {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 #ws_labels label {
 }
@@ -133,6 +134,7 @@ label.burger-ws {
 
 #workshopmenu label {
   text-transform: uppercase;
+    cursor: pointer;
 }
 
 #ws_image {

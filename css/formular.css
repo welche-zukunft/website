@@ -31,8 +31,6 @@ textarea {
 	margin-bottom: 0px;
 	max-width: 50%;
 	clear: both;
-	border-top-left-radius: 25px;
-	border-top-right-radius: 25px;
 	background:#e1e5e6;
 	display: inline-table;
 	cursor: pointer;
@@ -57,7 +55,6 @@ textarea {
 
 .anmeldeinfos {
 	max-width: 700px;
-	min-width:300px;
 	padding: 10px 20px;
 	margin: 0px 10px 10px 10px;;
 	background: #e1e5e6;

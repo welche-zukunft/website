@@ -25,3 +25,8 @@
     visibility: visible;
 }
 
+@media screen  and (max-width: 599px) {
+.tooltip:hover .tooltiptext {
+    visibility: hidden;
+}
+}

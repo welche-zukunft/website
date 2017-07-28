@@ -219,3 +219,6 @@ nav {
   padding-bottom: 0.5ch;
 }
 
+section > div.flex > div.paper {
+  max-width: calc( 100vw - 60px )
+}

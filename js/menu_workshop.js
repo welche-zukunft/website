@@ -98,14 +98,12 @@ if(namemoderator != ""){
 }
 
 var menuisOpen = false;
-$("#burger-check").on("click",function(){
+$("#burger-check").on('click touch',function(){
 	menuisOpen = !menuisOpen;
 });
 
 
-
-
-$('#navigation1 a').click(function() {
+$('#navigation1 a').on('click touch',function() {
 	console.log("ups");
      $('.burger-check[type=checkbox]').prop('checked',false);
 });
@@ -113,7 +111,7 @@ $('#navigation1 a').click(function() {
 
 var wsIsOpen = false;
 
-$("#ws_labels").click(function() {
+$("#ws_labels").on('click touch', function() {
 	//act only if workshop is selected
 	if(current_workshop_id != 13){
 		var setter = !wsIsOpen;
@@ -128,20 +126,20 @@ function closeWsMenu(){
 	wsIsOpen = setter;
 }
 
-$(document).click(function() {
+$(document).on('click touch', function() {
 	if(wsIsOpen == true){
 		$('.burger-ws-check[type=checkbox]').prop('checked',false);
 		wsIsOpen = false;
 	}
 });
 
-$("#ws_menu_content").click(function(event) {
+$("#ws_menu_content").on('click touchstart',function(event) {
 	event.stopPropagation();
 });
 
-$(".handle_container").click(function(event) {
+$(".handle_container").on('click touchstart',function(event) {
 	event.stopPropagation();
 });
-$("#ws_labels").click(function(event) {
+$("#ws_labels").on('click touchstart',function(event) {
 	event.stopPropagation();
 });

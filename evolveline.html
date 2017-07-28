@@ -14,6 +14,7 @@
 		}´
 		
 	</style>
+	<link href="css/spinner.css" rel="stylesheet">
 	<link href="css/underconstruction2.css" rel="stylesheet">
 	<link href="css/structure.css" rel="stylesheet">
 	<link href="css/menu.css" rel="stylesheet">
@@ -22,16 +23,11 @@
 	<link href="css/activity.css" rel="stylesheet">
 	<link href="css/formular.css" rel="stylesheet">
 	<link href="css/tooltips.css" rel="stylesheet">
-	<link href="css/spinner.css" rel="stylesheet">
 </head>
 <?php require './nl.php';?>
 <body>
-	<div id="spinner" class="spinner">
-	  <div class="spintext"><p>WELCHE ZUKUNFT?! wird geladen ...</p></div>
-	  <div class="double-bounce1"></div>
-	  <div class="double-bounce2"></div>
-	</div>
-	<div id="topmenu" class="foreground" style="display: none">
+	<script type='text/javascript' src='js/spinner.js'></script>
+	<div id="topmenu" class="foreground">
 		<input class="burger-check" id="burger-check" type="checkbox">
 		<label for="burger-check" class="burger"></label>
 		<label class="left" for="burger-check" >Welche Zukunft?!</label>
@@ -57,7 +53,7 @@
 
 <main>
 	<section id="container_section">
-		<div class="back" id="container" style="display: none">
+		<div class="back" id="container">
 			<!--
 			<div class="scroll-up nodisplay">
 				<a href="#workshops">
@@ -366,7 +362,7 @@
 
 	</article>
 
-	<div id="bottom_menus" class="foreground" style="display: none">
+	<div id="bottom_menus" class="foreground">
 		<!--
 		<div id="anmeldung_link">
 			<a class="pseudo anmeldung">&lt;&lt; zur Anmeldung</a>

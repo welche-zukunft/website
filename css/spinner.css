@@ -1,9 +1,21 @@
-.spinner {
+#spinner-container {
+  z-index: 900;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+#spinner {
   width: 80px;
   height: 80px;
 
   position: relative;
-  margin: 50% 0% 0% 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .double-bounce1, .double-bounce2 {
@@ -42,10 +54,11 @@
 
 .spintext{
 	white-space:nowrap;
-	display:block;
+	display:inline-block;
 	overflow:visible;
     position: relative;
     left: -100%;
     top: -50%;
 color: white;
+  font-family: sans-serif;
 }

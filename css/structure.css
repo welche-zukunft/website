@@ -1,5 +1,9 @@
 /* structure */
 
+section > div.flex > div.paper {
+  max-width: calc( 100vw - 40px )
+}
+
 section#container_section {
   height: 100vh;
 }

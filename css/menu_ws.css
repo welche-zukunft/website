@@ -48,13 +48,12 @@
 #ws_labels label {
 }
 #ws_text_labels {
-  display: inline-grid;
+  display: inline-block;
   margin-bottom: 0.5ch;
-  margin-top: 0.5ch;
   margin-right: 0.5ch;
 }
 #ws_text_labels label {
-  display: block;
+  display: inline-block;
   word-break: break-all;
   margin-bottom: 0;
   margin-top: 0;

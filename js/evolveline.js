@@ -30,7 +30,7 @@ var years = [];
 // cameraProperties
 var currentLookX = 0.;
 var currentLookY = 0.;
-var currentLookZ = -10.;
+var currentLookZ = -15.;
 var movespeed = 0.03;
 
 //arrays for boxes
@@ -419,7 +419,7 @@ function animate() {
 	if(setOverview == true){
 		camera.position.x += (0. - camera.position.x) * movespeed;
 		camera.position.y += (2. - camera.position.y) * movespeed;
-		camera.position.z += (10. - camera.position.z) * movespeed;
+		camera.position.z += (15. - camera.position.z) * movespeed;
 		currentLookX += ( 0. - currentLookX) * movespeed;
 		currentLookY += ( -1. - currentLookY) * movespeed;
 		currentLookZ += ( -10. - currentLookZ) * movespeed;

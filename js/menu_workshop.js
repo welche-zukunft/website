@@ -104,7 +104,6 @@ $("#burger-check").on('click touch',function(){
 
 
 $('#navigation1 a').on('click touch',function() {
-	console.log("ups");
      $('.burger-check[type=checkbox]').prop('checked',false);
 });
 
@@ -131,6 +130,13 @@ $(document).on('click touch', function() {
 		$('.burger-ws-check[type=checkbox]').prop('checked',false);
 		wsIsOpen = false;
 	}
+	if(active == false){
+		$('html, body').animate({
+        scrollTop: $("#container_section").offset().top
+		}, 1000);
+		setstatus(true);
+		reset_ws();
+	}
 });
 
 $("#ws_menu_content").on('click touchstart',function(event) {
@@ -141,5 +147,8 @@ $(".handle_container").on('click touchstart',function(event) {
 	event.stopPropagation();
 });
 $("#ws_labels").on('click touchstart',function(event) {
+	event.stopPropagation();
+});
+$(".paper").on('click touchstart',function(event) {
 	event.stopPropagation();
 });

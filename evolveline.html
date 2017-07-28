@@ -23,6 +23,7 @@
 	<link href="css/activity.css" rel="stylesheet">
 	<link href="css/formular.css" rel="stylesheet">
 	<link href="css/tooltips.css" rel="stylesheet">
+	<link href="css/tutorial.css" rel="stylesheet">
 </head>
 <?php require './nl.php';?>
 <body>
@@ -87,6 +88,8 @@
 			</div><!-- bottom_menus -->
 
 		</div> <!-- container -->
+		<div id="tutorial">
+		</div>
 	</section> <!-- container_section -->
 
 	<article>
@@ -324,8 +327,8 @@
 					8. Und jetzt bitte anmelden! Die Zukunft wartet nicht. <br><br>
 				</div><!-- anmeldeinfos -->
 				<div id="newsletter">
-				<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#newsletter" id="newsletter">
-					<label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hier bitte ihren Namen und ihre Mailadresse ein.</label>
+				<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+					<label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hier bitte ihren Namen und ihre Mailadresse ein. Sollten sie sich für den Workshoptag angemeldet haben erhalten Sie den Newsletter automatisch.</label>
 					<br>
 					<label >Vorname</label>
 					<input type="text" name="vorname" id="vorname" value="<?php echo $name_first;?>">
@@ -343,7 +346,7 @@
 
 		<section id="team"> <div class="flex"> <div class="paper">
 			<h2>TEAM</h2>
-			<p>Konzeption und Durchführung: Andres Veiel, Jutta Doberstein, Ulrich Beck, Daniel Hengst, Julia Kaschlinski, Michaela Barth</p>
+			<p>Konzeption und Durchführung: Andres Veiel, Jutta Doberstein, Ulrich Beck, Daniel Hengst, Julia Kaschlinski, Michaela Barth, Luisa Männel</p>
 			<h2>PARTNER</h2>
 			<p>„Welche Zukunft?!“ ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages</p>
 			<div class=logos>

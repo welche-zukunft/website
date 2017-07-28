@@ -104,6 +104,13 @@ $("#burger-check").on("click",function(){
 
 
 
+
+$('#navigation1 a').click(function() {
+	console.log("ups");
+     $('.burger-check[type=checkbox]').prop('checked',false);
+});
+
+
 var wsIsOpen = false;
 
 $("#ws_labels").click(function() {

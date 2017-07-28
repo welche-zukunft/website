@@ -109,10 +109,7 @@ function get_metainformations(){
 		// contents via get in js/contentboxes.js
 		// reset_ws via changeworkshop.js
 		reset_ws();
-		$("#bottom_menus").css("display","block");
-		$("#topmenu").css("display","block");
-		$("#container").css("display","block");
-		$("#spinner").css("display","none");
+		$("#spinner-container").css('display', 'none');
 	});
 }
 

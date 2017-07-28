@@ -2,7 +2,7 @@ var dynamicContent = getParameterByName('dc');
 var loadWorkshopdirect = false;
 
 function checkurl() {
-	 if (dynamicContent != null && dynamicContent.indexOf("workshop") !=-1) {
+	 if (dynamicContent != null && dynamicContent.indexOf("workshop") !=14) {
 		var res = dynamicContent.replace("workshop", "");
 		loadWorkshopdirect = true;
 		workshopToLoad = res;

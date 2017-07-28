@@ -116,6 +116,10 @@ function get_metainformations(){
 		// reset_ws via changeworkshop.js
 		reset_ws();
 		$("#spinner-container").css('display', 'none');
+		if(loadWorkshopdirect == true){
+			active = true;
+			swapworkshop(workshopToLoad);
+		}
 
 	});
 }

@@ -44,9 +44,14 @@ var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
 
 
+var aspect = window.innerWidth/window.innerHeight;
+if(window.innerHeight > window.innerWidth){
+	aspect = window.innerHeight/window.innerWidth*2.;
+}
+
 //timeline width
-var boxwidth = window.innerWidth*0.005;
-var boxheight = window.innerHeight*0.005;
+var boxwidth = window.innerWidth*(0.005*(aspect/2.));
+var boxheight = window.innerHeight*(0.005);
 var boxdepth = 7.;
 
 var yearmat;
@@ -80,6 +85,7 @@ var metacontents = [];
 
 if (Detector.webgl) {
     // Initiate function or other initializations here
+	checkurl();
     get_metainformations();
 } else {
     var warning = Detector.getWebGLErrorMessage();
@@ -98,9 +104,9 @@ function get_metainformations(){
 		metacontents = JSON.parse(JSON.stringify(data));
 	})
 	.done(function(){
-		console.log("database loaded");
 		//fill names of workshops to form
 		addoptions();
+
 		//start threejs
 		init();
 		animate();
@@ -110,6 +116,7 @@ function get_metainformations(){
 		// reset_ws via changeworkshop.js
 		reset_ws();
 		$("#spinner-container").css('display', 'none');
+
 	});
 }
 
@@ -129,10 +136,7 @@ function init() {
 		distance = window.innerWidth - ( window.innerWidth * 0.50);
 	}
 	FOV = 2 * Math.atan( 375 / ( 2 *distance))*180 / Math.PI;
-	
-	
-	
-	//console.log(FOV);
+
 	// scene
 	scene = new THREE.Scene();
 	scene.fog = new THREE.FogExp2( 0x111111, 0.03 );
@@ -302,7 +306,6 @@ function shiftControlPlane(){
 
 
 function swapworkshop(num){
-	//console.log(num);
 	shiftControlPlane();
 	removePins();
 	drawPin(num,metacontents[num].events.length);
@@ -368,11 +371,13 @@ function animate() {
 	if(showWalls == true) {
 		changeuniforms();
 	}
-	requestAnimationFrame(animate);
+	
+	
 	for(i = 0; i < daxes.length; i++){
 		shiftdax(i);
 	}
-
+	
+	requestAnimationFrame(animate);
 	// contentboxes
 	// ???
 	var current_workshop = workshops[current_workshop_id];

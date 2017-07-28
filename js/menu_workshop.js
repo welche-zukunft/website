@@ -108,3 +108,9 @@ $("#ws_menu_title").on( "click", function() {
 $("#ws_menu_subtitle").on( "click", function() {
 	wsIsOpen = !wsIsOpen;
 });
+
+var menuisOpen = false;
+
+$("#burger-check").on("click",function(){
+	menuisOpen = !menuisOpen;
+});

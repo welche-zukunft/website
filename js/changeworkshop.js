@@ -60,10 +60,13 @@ function reset_ws() {
   menu_content.html("");
   flush_boxes();
   deselectworkshop();
-  current_workshop_id = 0;
+  closeWsMenu();
+  current_workshop_id = 13;
   //content = $('#container > .handle_container').clone();
   //menu_content.html(
   //  content
   //);
 }
+
+
 

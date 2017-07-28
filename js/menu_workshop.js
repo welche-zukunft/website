@@ -97,20 +97,44 @@ if(namemoderator != ""){
 
 }
 
-var wsIsOpen = false;
-
-$("#burger_icon").on( "click", function() {
-	wsIsOpen = !wsIsOpen;
-});
-$("#ws_menu_title").on( "click", function() {
-	wsIsOpen = !wsIsOpen;
-});
-$("#ws_menu_subtitle").on( "click", function() {
-	wsIsOpen = !wsIsOpen;
-});
-
 var menuisOpen = false;
-
 $("#burger-check").on("click",function(){
 	menuisOpen = !menuisOpen;
+});
+
+
+
+var wsIsOpen = false;
+
+$("#ws_labels").click(function() {
+	//act only if workshop is selected
+	if(current_workshop_id != 13){
+		var setter = !wsIsOpen;
+		$('.burger-ws-check[type=checkbox]').prop('checked',setter);
+		wsIsOpen = setter;
+	}
+});
+
+function closeWsMenu(){
+	var setter = false;
+	$('.burger-ws-check[type=checkbox]').prop('checked',setter);
+	wsIsOpen = setter;
+}
+
+$(document).click(function() {
+	if(wsIsOpen == true){
+		$('.burger-ws-check[type=checkbox]').prop('checked',false);
+		wsIsOpen = false;
+	}
+});
+
+$("#ws_menu_content").click(function(event) {
+	event.stopPropagation();
+});
+
+$(".handle_container").click(function(event) {
+	event.stopPropagation();
+});
+$("#ws_labels").click(function(event) {
+	event.stopPropagation();
 });

@@ -154,7 +154,7 @@ function drawPin(index,j){
 var colwidth = 50;
 var paddingtop = 10;
 var paddingleft = 15;
-var paddingright = 80;
+var paddingright = 160;
 var paddingbottom = 20;
 var spaceHL = 15;
 

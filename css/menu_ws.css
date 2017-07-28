@@ -15,6 +15,7 @@
   border: 0;
   padding: 0;
 }
+/*
 .burger-ws:before {
   content: "";
   display: block;
@@ -38,6 +39,7 @@
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
 }
+*/
 
 #ws_labels {
   display: flex;
@@ -47,9 +49,11 @@
   margin: 1ch;
 }
 
+/*
 label.burger-ws {
   width: 28px;
 }
+*/
 
 .burger-ws-check {
   display: none;

@@ -39,15 +39,16 @@ div.handle_container span {
   bottom: 0;
 }
 #bottom_menus {
-  max-width: 100%;
+  width: 100%;
   max-height: calc( 100% - 100px);
   position: fixed;
   bottom: 0;
+  text-align: center;
 /*
   display: inline-table;
-*/
   left: 50%;
   transform: translateX(-50%);
+*/
 }
 #anmeldung_link, #workshopmenu {
   display: block;

@@ -3,42 +3,149 @@
 		"date": "23.07.2017",
 		"title": ["Ökonomie", "Fiskalische und andere Götterdämmerungen"],
 		"logline": "Für Prof. Dr. Rudolph Hickel sind soziale und ökonomische Krisen die Folge einer fehlgeleiteten Politik. Die Katastrophe kommt, aber alles könnte auch ganz anders sein.",
-		"intro_short": "",
-		"namemoderator": "",
-		"vitamoderator": "",
+		"intro_short": "Die Geister von Reagan und Thatcher… Prof. Dr. Rudolph Hickel vom Lehrstuhl für Politische Ökonomie in Bremen untersucht, wie sich die Deregulierung der US Banken durch Trump und die Austeritätspolitik Deutschlands auf das weltweite Finanzsystem auswirken wird. Die Megakrise von 2026 unterscheidet sich in ihrer Dimension von der weltweiten Finanzmarktkrise ab 2007. Sie löst eine Mega-Krise des gesamten Systems aus, einschliesslich seiner politischen Institutionen und ihrer demokratischen Legitimation.",
+		"namemoderator": "Alex Rühle",
+		"vitamoderator": "Alex Rühle ist ein deutscher Journalist. Seit 2001 ist er Redakteur der Süddeutschen Zeitung und Buchautor. Er studierte Allgemeine und Vergleichende Literaturwissenschaft, sowie Französisch, Theologie und Philosophie. Bekanntheit als Buchautor erlangte Rühle durch seinen Selbstversuch, für ein halbes Jahr ohne Internet und Smartphone zu leben und zu arbeiten. Seine Erlebnisse dokumentierte er 2010 in dem Buch „Ohne Netz“ (Klett-Cotta Verlag).",
 		"material": "",
 		"expert": "Prof. Dr. Rudolph Hickel (Universität Bremen, Lehrstuhl f. Finanzwissenschaft)",
 		"experten": [{
 			"name": "Prof. Dr. Rudolph Hickel",
-			"vita": "",
+			"vita": "<b>Prof. Dr. Rudolf Hickel</b> studierte als Stipendiant des Cusanus-Werks Wirtschaftswissenschaften an der Universität Tübingen. Er beteiligte sich aktiv an der wirtschaftswissenschaftlichen Studienreform und am Aufbau der Universität Bremen. Dort wurde er 1971 zunächst Professor für Politische Ökonomie, mit dem Schwerpunkt Öffentliche Finanzen. 1993 wechselte er zum Lehrstuhl für Finanzwissenschaft. Von 2001 bis 2009 war er Direktor des Instituts Arbeit und Wirtschaft (IAW) der Universität Bremen, anschließend wurde er Forschungsleiter für „Wirtschaft und Finanzen“ am IAW.",
 			"pic": "hickel.jpg"
 		}],
 		"events": [{
-			"order": "1",
-			"title": "ohne titel",
-			"text": "ohne text"
-		}]
+				"order": "1",
+				"title": "Demontage des Frank-Dodd-Acts",
+				"text": "Die Finanzmarktsysteme brechen erneut zusammen. Die Ursache liegt einerseits bei den Schattenbanken, die trotz vieler Ermahnungen nicht reguliert worden sind. Auch hat die Lobby es verstanden, viele Regulierungen nach der jüngsten Finanzmarktkrise wieder zurückzuschrauben. Die Vorreiterfunktion haben die USA übernommen (Demontage des Frank-Dodd-Acts). Mit dem Absturz der Finanzmärkte bricht auch die Realökonomie zusammen."
+			},
+			{
+				"order": "2",
+				"title": "SparerInnen in der EU verlieren ihre Einlagen",
+				"text": "Im Zuge der ausgebrochenen Finanzkrise verlieren die Sparerinnen und Sparer in der EU ihre Einlagen. Die EU-Regel, jeder behält maximal 100 000 €, kann nicht realisiert werden. Auf den Plätzen vor und innerhalb der Empfangshallen der Banken, vor allem bei den Sparkassen und Volksbanken, gibt es Demonstrationen durch die Kunden mit Schlägereien (vgl. Pleite Herstatt-Bank)."
+			},
+			{
+				"order": "3",
+				"title": "Einbruch der Produktion",
+				"text": "Da mit dem Einbruch der Produktion und den massiven Steuerausfällen die Staatsschulden nicht mehr bedient werden können, kommt es zur Krisenverschärfung. In den Staatsbudgets werden Sozialausgaben gekürzt."
+			},
+			{
+				"order": "4",
+				"title": "„Germany first“",
+				"text": "Das Euroland zerbricht auch unter der aggressiven Vormachtstellung Deutschlands mit dessen Strategie „Germany first“. Die Leistungsbilanzüberschüsse lassen auch Frankreich sowie andere Länder ächzen. Griechenland versinkt im Chaos und ist nicht mehr regierungsfähig."
+			},
+			{
+				"order": "5",
+				"title": "Schäuble Strategie",
+				"text": "Der Finanzminister in Deutschland setzt die Schäuble Strategie fort.  Mit der massiven Austeritätspolitik steigt die soziale Spaltung. Die Infrastruktur verliert bis zu den Bildungseinrichtungen an Substanz. Der deutsche Staat wird mit seinen Nachahmern  durch andere Staaten zum Krisentreiber."
+			},
+			{
+				"order": "6",
+				"title": "Trumponomics",
+				"text": "Die USA haben infolge der Trumponomics die Weltwirtschaft gespalten. Selbst in den USA sind damit keine Früchte zu ernten. Die USA verliert mit der Abschottungspolitik an Wettbewerbsfähigkeit. Einem Schwelbrand vergleichbar setzt sich weltweit der dort ausgelöste Protektionismus durch. Handelskriege vor allem mit China sind die Folge."
+			},
+			{
+				"order": "7",
+				"title": "Trutzburg Europa",
+				"text": "Überlagert wird die ökonomische Krise durch wachsende Migrationsströme. Die katastrophale Lage in den bisherigen Heimatstaaten sowie die Drohung, keine Migranten mehr in die Trutzburg Europa reinzulassen, treibt den Flüchtlingswahn an. Die Zahl der kalkulierten Toten als Folge der Gewalt gegen Flüchtlinge wird steigen."
+			},
+			{
+				"order": "8",
+				"title": "Das Wetter ist nicht mehr kalkulierbar",
+				"text": "Die sozial-ökonomischen Verlierer werden auch durch die entfesselte Klimakatastrophe schwer belastet. Das Wetter ist nicht mehr kalkulierbar. Unwetter in kurzer Abfolge zerstören die Mobilität: Bahnen, Autoverkehr und Flugverkehr brechen zusammen."
+			}
+		]
 	},
 	{
 		"color": "#fbb100",
 		"date": "23.07.2017",
 		"title": ["Ökonomie", "Patient Zero - der Indexpatient Deutsche Bank "],
 		"logline": "Too big to fail oder: Wie gefährlich ist die Deutsche Bank? - fragt Dr. Dieter Hein von fairesearch.",
-		"intro_short": "",
-		"namemoderator": "",
-		"vitamoderator": "",
+		"intro_short": "Die deutschen Banken sind nicht so sicher, wie es auf den ersten Blick auf die robuste deutsche Wirtschaft aussehen mag. <br>Regionale Krisen oder Fehlentwicklungen sowie die Pleite einer mittelgroßen Bank können in einer vernetzten globalen Wirtschaft zu einem weltweiten Flächenbrand führen bis hin zur Schwelle eines Kollapses des globalen Finanzsystems, wie die Finanzmarktkrise 2008 und der Bankrott der US-Bank Lehman Brothers gezeigt haben. Als Folge mussten in großen Volkswirtschaften wie den USA, Großbritannien oder Deutschland Banken und Versicherungen mit staatlichen Garantien, Beteiligungen und Verstaatlichungen gestützt werden und die Notenbanken weltweit (teilweise bis zum heutigen Tag) die Kapitalmärkte manipulieren und mit Liquidität fluten um eine Kernschmelze des Finanzsystems zu verhindern. <br>Als Folge der Finanzmarktkrise 2008 muss in Deutschland u.a. die ehemals größte öffentlich-rechtliche Bank, die West LB, abgewickelt werden, hat sich der Staat mit 25% bei der Commerzbank beteiligt, musste die Hypo Real Estate verstaatlicht und teilweise abgewickelt werden und droht aktuell der Landesbank HSH Nordbank ab 2018 ebenfalls die Abwicklung.<br>Wir wollen in unserem Workshop „Wie gefährlich/gefährdet sind Banken heute - wie hoch ist das Risiko einer neuen Finanzmarktkrise“ diskutieren, ob es den Regierungen gelungen ist, das Finanzsystem so sicher zu machen, dass in der Zukunft bei Krisen keine Banken oder Versicherungen mit Steuergeldern gerettet werden müssen. Und welche Krisenszenarien auf Unternehmensebene einen erneuten nationalen, europäischen oder gar weltweiten Flächenbrand auslösen könnten.<br>Interessante Fragen könnten dabei sein:<br>Sind die zuständigen Kontroll- und Aufsichtsinstitutionen (Aufsichtsrat, Bafin, EZB) unabhängig, kenntnisreich und effektiv genug um potentielle Risiken rechtzeitig zu erkennen und zu entschärfen?<br>Wie gefährdet ist die laut IWF riskanteste Bank der Welt, die Deutsche Bank? <br>Aus welchen Bereichen könnten sich neue Krisen entwickeln?",
+		"namemoderator": "Arne Storn",
+		"vitamoderator": "Arne Storn ist Journalist und befasst sich seit vielen Jahren mit Banken und Finanzen. Er  hat in Marburg, Köln und Dublin Volkswirtschaftslehre sowie Politikwissenschaften studiert. Nach dem Diplom besuchte der Volkswirt die Deutsche Journalistenschule in München. 2003 ging er als Redakteur zur Financial Times Deutschland, 2004 wechselte er in die Wirtschaftsredaktion der Hamburger Wochenzeitung DIE ZEIT.",
 		"material": "",
-		"expert": "Dr. Dieter Hein (fairesearch)",
+		"expert": "Dieter Hein (fairesearch)",
 		"experten": [{
-			"name": "Dr. Dieter Hein",
-			"vita": "",
+			"name": "Dieter Hein",
+			"vita": "<b>Dieter Hein</b> gilt als der renommierteste unabhängige Bankenanalyst in Deutschland. Er analysiert seit über 25 Jahren deutsche Banken. Bis 2003 arbeitete er als Aktienanalyst für verschiedene deutsche und internationale Banken, u. a. die Commerzbank und den Credit Lyonnais. Dort war er zusätzlich auch Head of German Institutional Sales. Anfang 2003 gründete er zusammen mit vier weiteren Aktienanalysten das unabhängige Researchunternehmen <i>fairesearch</i>.",
 			"pic": "hein.jpg"
 		}],
 		"events": [{
-			"order": "1",
-			"title": "ohne titel",
-			"text": "ohne text"
-		}]
+				"order": "1",
+				"title": "Die US-Bankenaufsicht entzieht der Deutschen Bank die Banklizenz in den USA",
+				"text": "Die Manipulationen von Märkten und Geschäften sowie Gesetzesverstößen führen ab 2018 zu hohen Vergleichszahlungen mit US-Behörden inklusive Schuldeingeständnissen. Die US-Bankenaufsicht entzieht daraufhin der Deutschen Bank die Banklizenz in den USA."
+			},
+			{
+				"order": "2",
+				"title": "Aktionäre verweigern Kapitalerhöhung für Strafzahlung",
+				"text": "Neue und alte Manipulationen von Märkten und Geschäften sowie Gesetzesverstößen führen zu hohen Straf- und Vergleichszahlungen innerhalb von drei aufeinanderfolgenden Jahren: von €8Mrd im ersten Jahr, €12Mrd im zweiten Jahr und €15Mrd im dritten Jahr. Die erste Zahlung von €8Mrd geht zu Lasten des Eigenkapitals der Bank. Die zweite Zahlung wird durch eine Kapitalerhöhung von €12Mrd ausgeglichen. Die dritte Zahlung soll erneut durch eine Kapitalerhöhung von €15Mrd aufgefangen werden, die der Kapitalmarkt, die Aktionäre jedoch verweigern."
+			},
+			{
+				"order": "3",
+				"title": "Gerüchte über Liquiditätsprobleme der Bank kommen auf",
+				"text": "Ein Verstoß der Deutschen Bank gegen Embargosanktionen der USA führt zu Ermittlungen des DoJ (Department of Justice). Gerüchte über eine anstehende Strafzahlung in Höhe von €20Mrd verunsichern die Märkte und Kunden. Institutionelle Kunden ziehen Gelder und Geschäft ab (wie im Herbst 2016). Gerüchte über Liquiditätsprobleme der Bank kommen auf. Privatkunden heben Einlagen ab. Die BaFin schließt für eine Woche die Filialen der Bank um weitere Liquiditätsabflüsse zu verhindern."
+			},
+			{
+				"order": "4",
+				"title": "WikiLeaks veröffentlicht Beweise über geheime Zahlungen und Lustreisen",
+				"text": "Ein Whistleblower legt der Staatsanwaltschaft Beweise über geheime Zahlungen und Lustreisen von Betriebsratsmitgliedern durch die Personalabteilung vor. Damit wurde die Zustimmung des Betriebsrates zu milliardenschweren, jährlichen Erfolgsboni für angelsächsische Investmentbanker bei gleichzeitigem tausendfachen Stellenabbau in Deutschland erkauft. Die Ermittlungsunterlagen und Beweise werden über WikiLeaks veröffentlicht."
+			},
+			{
+				"order": "5",
+				"title": "Kredite der Bank in Höhe von €10Mrd fallen aus.",
+				"text": "Ein großes deutsches Unternehmen geht pleite. Kredite der Bank in Höhe von €10Mrd an das Unternehmen und seine Zulieferer fallen aus."
+			},
+			{
+				"order": "6",
+				"title": "Anleihen in Höhe von €10Mrd fallen aus.",
+				"text": "Eine große Landesbank geht pleite. Anleihen in Höhe von €10Mrd an die Landesbank, ihre Töchter und das Bundesland fallen aus."
+			},
+			{
+				"order": "7",
+				"title": "Eine ausländische Bank in der Größe von Lehman Brothers geht pleite.",
+				"text": "Als gefährdet gelten besonders die großen italienischen Banken Unicredtit oder Monte de Paschi."
+			},
+			{
+				"order": "8",
+				"title": "Erneute Finanzkrise in Europa",
+				"text": "Ein Europäisches Land gerät in eine Finanzkrise wie in Griechenland und kann seine Schulden nicht bedienen. Die Banken müssen nach BaFin-Vorgaben 60% ihrer Kredite an dieses Land und Kreditnehmer in diesem Land abschreiben."
+			},
+			{
+				"order": "9",
+				"title": "Ein Großaktionär macht ein Übernahmeangebot für die Deutsche Bank.",
+				"text": "Ein neuer Großaktionär aus Katar oder China macht ein Übernahmeangebot für die Deutsche Bank."
+			},
+			{
+				"order": "10",
+				"title": "Großaktionäre verstricken Bank in Geldwäsche",
+				"text": "Neue Großaktionäre verstricken die Deutsche Bank in Geldwäsche- oder Embargoverstöße."
+			},
+			{
+				"order": "11",
+				"title": "Bank muss €50Mrd. abschreiben.",
+				"text": "Das Risikocontrolling im Investmentbanking versagt, die Bank muss €50Mrd. abschreiben."
+			},
+			{
+				"order": "12",
+				"title": "Ein Hedgefonds geht pleite",
+				"text": "Ein Hedgefonds, den die Bank finanziert hat, geht pleite. Hohe Abschreibungen für die Bank."
+			},
+			{
+				"order": "13",
+				"title": "Korruptionsskandal wird aufgedeckt",
+				"text": "Ein Bestechungs- und Korruptionsskandal wird in Deutschland durch die Justiz aufgedeckt. Das Ausmaß ist mit den Skandalen in Brasilien oder Südkorea vergleichbar. Die Deutsche Bank ist schwer involviert."
+			},
+			{
+				"order": "14",
+				"title": "Konjunktureinbruch in Europa und Deutschland",
+				"text": "Die Konjunktur in Europa und Deutschland bricht ein. Wie könnten die Folgen für die Bank aussehen?"
+			},
+			{
+				"order": "15",
+				"title": "Hackerangriff",
+				"text": "Ein Hackerangriff richtet so großen Schaden bei einer Bank/Zentralbank/globalen Settlementinstitut/dem Finanzsystem an, dass das Unternehmen/globale Finanzsystem kollabiert."
+			}									
+		]
 	},
 	{
 		"color": "#f87676",
@@ -65,7 +172,7 @@
 		"events": [{
 				"order": "1",
 				"title": "2018 – Kapitalflucht aus Italien",
-				"text": "Eine Wirtschaftskrise und Bankenkrise in Italien führt zur Kapitalflucht aus Italien. Die italienischen Zinsen steigen und die Gefahr, dass die Staatsverschuldung nicht mehr tragbar ist, wird immer größer. Die EZB kann wegen der Begrenzung durch das Bundesverfassungsgericht die Krise nicht stoppen. Das Rettungsprogramm für Italien scheitert wegen mangelnder Bereitschaft des italienischen Parlaments, Konditionen zu akzeptieren. Am Ende des Jahres scheidet Italien unter dem wachsenden Druck der Finanzmärkte aus der Eurozone aus."
+				"text": "Eine Wirtschaftskrise und Bankenkrise in Italien führt zur <b>Kapitalflucht aus Italien<\/b>. Die italienischen Zinsen steigen und die Gefahr, dass die Staatsverschuldung nicht mehr tragbar ist, wird immer größer. Die EZB kann wegen der Begrenzung durch das Bundesverfassungsgericht die Krise nicht stoppen. Das Rettungsprogramm für Italien scheitert wegen mangelnder Bereitschaft des italienischen Parlaments, Konditionen zu akzeptieren. Am Ende des Jahres scheidet Italien unter dem wachsenden Druck der Finanzmärkte aus der Eurozone aus."
 			},
 			{
 				"order": "2",
@@ -100,7 +207,7 @@
 			{
 				"order": "8",
 				"title": "2021 – Deutschland tritt aus EU aus",
-				"text": "Die Situation in Deutschland verschlechtert sich weiter. Die Arbeitslosenzahlen steigen erneut auf 4 Millionen. Die Bundesregierung sieht sich wegen der Schuldenbremse im Grundgesetz nur bedingt in der Lage, auf die Situation fiskalpolitisch zu reagieren. Bei der Bundestagswahl 2021 gewinnt die AfD 30% der Stimmen, weil die ungünstige wirtschaftliche Entwicklung vor allem auf den Euro geschoben wird. Die neugewählte Große Koalition entschließt sich unter dem starken Druck der Öffentlichkeit für einen Austritt aus dem Euro. Anstelle der Währungsunion gibt es jetzt wieder die nationalen Währungen."
+				"text": "Die Situation in Deutschland verschlechtert sich weiter. Die Arbeitslosenzahlen steigen erneut auf 4 Millionen. Die Bundesregierung sieht sich wegen der Schuldenbremse im Grundgesetz nur bedingt in der Lage, auf die Situation fiskalpolitisch zu reagieren. Bei der Bundestagswahl 2021 gewinnt die AfD 30 % der Stimmen, weil die ungünstige wirtschaftliche Entwicklung vor allem auf den Euro geschoben wird. Die neugewählte Große Koalition entschließt sich unter dem starken Druck der Öffentlichkeit für einen Austritt aus dem Euro. Anstelle der Währungsunion gibt es jetzt wieder die nationalen Währungen."
 			},
 			{
 				"order": "9",
@@ -120,7 +227,7 @@
 			{
 				"order": "12",
 				"title": "2023 – schwere Deflation in Deutschland",
-				"text": "In Deutschland wertet die D-Mark trotz der schlechten Wirtschaftslage immer weiter auf. Der deutsche Notenbank-Präsident sieht keinen Grund, dagegen vorzugehen. Die starke D-Mark wirke als Produktivitätspeitsche für die deutsche Wirtschaft. Bei der weiter steigenden Arbeitslosigkeit werden die Löhne pauschal um 15% gesenkt, wie das der Präsident des ifo-Instituts und auch der Sachverständigenrat vorgeschlagen hatten. Deutschland gerät in eine schwere Deflation. Die Verbraucherpreise sinken mit einer Jahresrate von 5%."
+				"text": "In Deutschland wertet die D-Mark trotz der schlechten Wirtschaftslage immer weiter auf. Der deutsche Notenbank-Präsident sieht keinen Grund, dagegen vorzugehen. Die starke D-Mark wirke als Produktivitätspeitsche für die deutsche Wirtschaft. Bei der weiter steigenden Arbeitslosigkeit werden die Löhne pauschal um 15 % gesenkt, wie das der Präsident des ifo-Instituts und auch der Sachverständigenrat vorgeschlagen hatten. Deutschland gerät in eine schwere Deflation. Die Verbraucherpreise sinken mit einer Jahresrate von 5 %."
 			},
 			{
 				"order": "13",
@@ -130,7 +237,7 @@
 			{
 				"order": "14",
 				"title": "2025 – Die AfD stellt den Bundeskanzler",
-				"text": "Es kommt zu politischen Unruhen in Deutschland. Viele Menschen haben in der Bankenkrise ihre Ersparnisse und Ansprüche aus Lebensversicherungen verloren. Die Regierung hat wegen der schlechten Wirtschaftslage die Renten um 25% gekürzt. Die meisten Rentner haben nur noch eine Rente in Höhe der Grundsicherung. Die AfD gewinnt mehrere Landtagswahlen und erreicht bei der Bundestagswahl 40%. Es kommt zu einer Koalition mit der FDP. Die AfD stellt den Bundeskanzler."
+				"text": "Es kommt zu politischen Unruhen in Deutschland. Viele Menschen haben in der Bankenkrise ihre Ersparnisse und Ansprüche aus Lebensversicherungen verloren. Die Regierung hat wegen der schlechten Wirtschaftslage die Renten um 25 % gekürzt. Die meisten Rentner haben nur noch eine Rente in Höhe der Grundsicherung. Die AfD gewinnt mehrere Landtagswahlen und erreicht bei der Bundestagswahl 40 %. Es kommt zu einer Koalition mit der FDP. Die AfD stellt den Bundeskanzler."
 			},
 			{
 				"order": "15",
@@ -238,33 +345,84 @@
 		"date": "23.07.2017",
 		"title": ["Wetter", "Eine neue Normalität"],
 		"logline": "Welche Rolle spielt jeder Einzelne in einem chaotischen System?",
-		"intro_short": "",
+		"intro_short": "Wir sind Zeugen eines beispiellosen Vorgangs der Erdgeschichte. Mit dem Eintritt ins Industriezeitalter wird die Menschheit zur treibenden geologischen Kraft und verändert das Erdklima durch den Ausstoß von Treibhausgasen. Zwar war das Erdklima schon immer Veränderungen unterworfen, doch die derzeitige Geschwindigkeit, mit der die Erderwärmung voranschreitet, übertrifft die letzten Erwärmungsphasen deutlich. Die damit einhergehenden Veränderungen für das Erdsystem haben schon jetzt ernstzunehmende Auswirkungen für uns Menschen. Spürbar wird dies insbesondere durch die Zunahme in der Intensität und Häufigkeit von extremen Wetterereignissen, wie Hitzewellen und Starkregen. Dürren gefährden die Ernährungssicherheit ganzer Regionen und fördern so regionale Konflikte und globale Fluchtbewegungen. In Deutschland allein haben sich in den letzten zwei Jahrzehnten bereits drei so genannte „Jahrhundertfluten“ ereignet. Das Wetter wird chaotischer. Auch im Winter haben extreme Kälteeinbrüche, wie beispielsweise an der Ostküste der USA in den letzten Wintern beobachtet, das Potenzial, ganze Städte und Regionen lahmzulegen. <br>Gehören Wetterextreme also bald zur neuen Normalität? Müssen wir uns in Zukunft auf immer häufigere und heftigere Wetterextreme einstellen? <br>In diesem Workshop werden wir anhand von verschiedenen Beispielen dieser Frage nachgehen. In diesem Zusammenhang wollen wir außerdem diskutieren, welche Regionen besonders vom Klimawandel betroffen sind und welche direkten und indirekten Konsequenzen daraus folgen. Welchen Einfluss hat der „Trump-Faktor“ und welche Rolle spielt jeder einzelne von uns? <br> Letztendlich werden die Teilnehmer das Schicksal in die eigene Hand nehmen und entscheiden, ob es in bestimmten Regionen zu schwerwiegenden Wetterextremen kommt oder nicht.",
 		"namemoderator": "",
 		"vitamoderator": "",
 		"material": "",
 		"expert": "Kornhuber, Kretschmer, Lehmann, Molnos (Potsdam-Institut für Klimafolgenforschung)",
 		"experten": [{
-			"name": "Kornhuber",
-			"vita": "",
-			"pic": "kornhuber.jpg"
+			"name": "Jascha Lehmann",
+			"vita": "<b>Jascha Lehmann</b> ist promovierter Klimaphysiker am Potsdam-Institut für Klimafolgenforschung. Sein Forschungsschwerpunkt ist die Analyse von dynamischen Änderungen in der Atmosphäre und deren Einfluss auf Wetterextreme wie Hitzewellen und Starkregen. Er arbeitete als wissenschaftlicher Referent des Direktors bevor er 2017 die Co-Projektleitung einer Nachwuchsgruppe übernahm. Seit 2016 arbeitet er zudem für den Wissenschaftstransferbereich des Instituts. <br><www.pik-potsdam.de/members/jlehmann>",
+			"pic": "lehmann.jpg"			
 		}, {
-			"name": "Kretschmer",
-			"vita": "",
+			"name": "Marlene Kretschmer",
+			"vita": "<b>Marlene Kretschmer</b> ist Diplom Mathematikerin und promoviert am Potsdam-Institut für Klimafolgenforschung im Bereich Atmosphären-Physik. Ihr Forschungsschwerpunkt ist die dynamische Interaktion zwischen Stratosphäre und Troposphäre im Winter und deren Auswirkung auf Extremwettereignisse. Sie verwendet dabei insbesondere Machine Learning Methoden und Causal Discovery Algorithmen, um kausale Prozesse in Zeitreihen zu detektieren und vorherzusagen.<br><www.pik-potsdam.de/members/marlenek>",
 			"pic": "kretschmer.jpg"
 		}, {
-			"name": "Lehmann",
-			"vita": "",
-			"pic": "lehmann.jpg"
+			"name": "Kai Kornhuber",
+			"vita": "Nach Abschluss des Physik-Studiums an der Freien Universität Berlin beschäftigt sich <b>Kai Kornhuber</b> im Rahmen seiner Promotion am Potsdam Institut für Klimafolgenforschung mit ungewöhnlichen Phasen der starken Höhenwinde und ihrer Verbindung zu globalen Hitzewellen und Starkregen-Ereignisse der letzten Jahre. Wenn diese Winde stark Mäandern führen sie zu synchron auftretenden Extremwetterereignissen in  der gesamten Hemisphäre mit schwerwiegenden Folgen. Kern seiner Arbeit ist es diesen Mechanismus in einer sich erwärmenden Welt besser zu verstehen.<br><www.pik-potsdam.de/members/kaikornh>",
+			"pic": "kornhuber.jpg"
 		}, {
 			"name": "Molnos",
-			"vita": "",
+			"vita": "<b>Sonja Molnos</b> ist Doktorandin am Potsdam-Institut für Klimafolgenforschung. Im Rahmen ihrer Doktorarbeit beschäftigt sie sich insbesondere mit den Folgen der Klimaerwärmung und verwendet diesbezüglich ein statistisch-dynamisches Atmosphärenmodell, welches im PIK entwickelt wurde. Des Weiteren analysiert sie Änderungen großräumige Zirkulationsmuster der Atmosphäre die möglicherweise Veränderungen von Häufigkeit & Intensität der Wetterextreme erklären können.<br><www.pik-potsdam.de/members/molnos>",
 			"pic": "molnos.jpg"
 		}],
 		"events": [{
-			"order": "1",
-			"title": "ohne titel",
-			"text": "ohne text"
-		}]
+				"order": "1",
+				"title": "Schneesturm an der Ostküste",
+				"text": "Ein starker Schneesturm an der Ostküste der USA legt New York für mehrere Tage komplett lahm. Unruhe an der Börse."
+			},
+			{
+				"order": "2",
+				"title": "Nordostpassage befahrbar",
+				"text": "Aufgrund des starken Rückganges des arktischen Meereises, ist die Nordostpassage im Sommer befahrbar. Es kommt zu politischen Spannungen und militärischen Drohgebärden im Streit um die Handelswege."
+			},
+			{
+				"order": "3",
+				"title": "Regenfälle überfluten weite Teile Großbritanniens",
+				"text": "Starke, langanhaltende Regenfälle im Winter überfluten weite Teile Großbritanniens. Da dies der dritte Winter in Folge ist, weigern sich zwei große Rückversicherer, die Verträge für Großbritannien weiter zu führen."
+			},
+			{
+				"order": "4",
+				"title": "Globale Weizenpreise steigen in die Höhe",
+				"text": "Zeitlich synchronisierte Hitzewellen in Russland und der USA lassen die globalen Weizenpreise in die Höhe steigen."
+			},
+			{
+				"order": "5",
+				"title": "Trockenperiode im 'Bible Belt'",
+				"text": "Eine Trockenperiode kurz vor der US Präsidentschaftswahl 2020 sorgt im 'Bible Belt' der USA für Wasserknappheit. Wasser wird rationiert. Texas und Kalifornien kündigen eine eigene Staatsgründung an."
+			},
+			{
+				"order": "6",
+				"title": "Starke Regenfälle im Frühling",
+				"text": "Starke Regenfälle im Frühling lassen die Oder über die Ufer treten und überschwemmen Dörfer und Städte in Ostdeutschland. Schäden in Milliardenhöhe führen zu einem veränderten Haushalt. Lange überfällige Infrastrukturmaßnahmen werden erneut aufgeschoben. Zwei große Rückversicherer weigern sich, die Verträge für die Oderregion weiter zu führen."
+			},
+			{
+				"order": "7",
+				"title": "Zahlreiche Hitzetote",
+				"text": "Ein Sommer mit neuen Hitzerekorden in Deutschland führt zu zahlreichen Hitzetoten. Die Stromnetze brechen aufgrund der zahlreichen mobilen Klimaanlagen zusammen."
+			},
+			{
+				"order": "8",
+				"title": "Great Barrier Reef stirbt",
+				"text": "Ein starker El Niño sorgt dafür, dass die Korallenriffe des Great Barrier Reef vor Australiens Küste nahezu aussterben."
+			},
+			{
+				"order": "9",
+				"title": "Globale Temperatur sinkt um 0,6°C",
+				"text": "Der Vulkan Pinatubo in den Philippinen bricht aus. Die globale Temperatur sinkt um ca. 0.6°C. Zwei große Rückversicherer gehen pleite."
+			},
+			{
+				"order": "10",
+				"title": "Probleme der Trinkwasserversorgung in den Alpen",
+				"text": "Während einer beispiellosen Hitzewelle in Südeuropa schmelzen die Alpengletscher vollständig ab. Dies führt zu erheblichen Problemen der Trinkwasserversorgung in den Alpen sowie im Umland und den Großstädten der Schweiz, Norditaliens, Südfrankreichs und Süddeutschland."
+			},
+			{
+				"order": "11",
+				"title": "Zusammenbruch der Stromversorgung",
+				"text": "Ein Winter ohne Schnee- und Regenfälle im Alpenraum führt zu einem Zusammenbruch der Stromversorgung der Schweiz, Frankreichs und Norditaliens. Zahlreiche Kohlekraftwerke in Deutschland und Österreich werden wieder in Betrieb genommen, um den Bedarf zu decken."
+			}
+		]
 	},
 	{
 		"color": "#4dac5b",
@@ -292,9 +450,9 @@
 		"date": "23.07.2017",
 		"title": ["Arbeit", "Zukunft ohne Arbeitgeber?"],
 		"logline": "Holokratie, Automatisierung, flexible Arbeitsformen, virtuelle Teams - der Workshop erarbeitet mögliche Entwicklungen für die Zukunft der Arbeit auf Basis dieser und anderer Trends.",
-		"intro_short": "",
-		"namemoderator": "",
-		"vitamoderator": "",
+		"intro_short": "In 10 Jahren wird es keine Arbeitsplätze im Bereich von Logistik und Retail geben. Und das ist nur die Robotik. Was passiert mit den Juristen, Bankangestellten und Medizinern, wenn künstliche Intelligenz den Markt übernimmt? Können wir uns darauf vorbereiten?<br><br><b>Zukunft der Arbeit – auf dem Weg in den Crash des Finanzsystems</b><br><br>Die hier dargestellten 10 Zukunftsereignisse bauen allesamt auf bereits heute (2017 und in den Jahren davor) beobachtbaren Trends und Tendenzen auf, also auf belegbaren Entwicklungen, die in entsprechenden Studien als möglicherweise disruptiv für die Zukunft der Arbeit identifiziert wurden. Sie denken diese für die nächste Dekade so weiter, dass Arbeit sich auf eine Art entwickeln würde, die einen Crash des Finanzsystems befördert.  In Summe stellen die 10 Punkte kein konsistentes Gesamtszenario dar, sondern jeweils einzelne Schlaglichter oder Mini-Szenarien, die andeuten, was in den nächsten Jahren geschehen könnte. Sie erzählen also jeweils aus einer möglichen Zukunft (zum Teil auch von widersprüchlichen Zukunftsbildern), und daneben stehen viele weitere denkbare Zukunftsereignisse. Die beschriebenen Ereignisse und Entwicklungen „berichten zudem aus der Zukunft“, also aus der Perspektive der Jahre 2018-2027.",
+		"namemoderator": "Leon Krenz",
+		"vitamoderator": "<b>Leon Krenz</b> ist selbstständiger Videoredakteur, Trainer und Berater. Er hat sich auf alle Fragen rund um die Kommunikation von Zukunftsbildern, 360°-, Mobile- und Socialvideo spezialisiert. Von Berlin aus arbeitet er international als Workshopleiter und Videojournalist und berät Medienhäuser in Videostrategiefragen. Sein fachliches Können hat er neben der praktischen Arbeit als Journalist, unter anderem bei ze.tt (Zeitverlag), dem öffentlich rechtlichen Rundfunk, durch ein Studium zum Diplom-Technikjournalisten und in der Trend- und Zukunftsforschung gesammelt.",
 		"material": "",
 		"expert": "Cornelia Daheim (Future Impacts)",
 		"experten": [{
@@ -304,30 +462,142 @@
 		}],
 		"events": [{
 			"order": "1",
-			"title": "ohne titel",
-			"text": "ohne text"
-		}]
+				"title": "Arbeitslosigkeit weltweit verdoppelt",
+				"text": "Bereits 2013 hat die Studie von Osborne und Frey für die USA über die Hälfte der Arbeitsplätze als automatisierungsgefährdet eingeschätzt, und zwischen 2014 bis 2017 warnten auch das World Economic Forum und Dutzende andere renommierte Einrichtungen vor möglichen deutlichen Verlusten von menschlichen Arbeitsplätzen an Maschinen. Erst im Juli 2017 schätzt z.B. auch das konservative Wirtschaftsforschungsforschungsinstitut IFO 10% der Industriearbeitsplätze in Deutschland wegen des kommenden Umstiegs auf Elektromobilität als gefährdet ein. Und genau so kommt es in den folgenden Jahren auch: Überall Roboter, Algorithmen, künstliche Intelligenz, cyberphysische Systeme: Maschinen übernehmen immer mehr Arbeit, weil so viele Technologien rapide Fortschritte machen und in Synergie wirken. Auch neu entstehende Berufe werden rasch automatisiert, so dass sich die Arbeitslosigkeit weltweit verdoppelt. Damit steigt der Druck auf die Sozialsysteme immens, und die öffentlichen Kosten explodieren. Viele ehemals wohlhabende westliche Länder müssen beginnen, den Sozialstaat radikal zurück zu bauen, es gibt plötzlich wieder wesentlich mehr Armut auch in den Industrieländern, und viel weniger Kaufkraft."
+			},
+			{
+				"order": "2",
+				"title": "Bürgerkriegsähnlichen Zustände, wenn Arbeitslose 3D-Printer-Hubs abreißen.",
+				"text": "Obwohl Ende der 2020er Jahre wieder viele neue Arbeitsplätze zu entstehen scheinen, gibt es vorher den großen Zusammenbruch: Einfach, weil ein neues Wirtschaftsparadigma entsteht. Zum Beispiel gibt es immer mehr dezentrale Produktion, weil mit Hilfe von 3D-Druckern Endkonsumentenprodukte und auch komplexe Produkte für die Industrie da hergestellt werden, wo sie benötigt werden. Schon 2017 waren ja 3D-Drucker in der Industrie für die Ersatzteilproduktion gängig, und es gab sogar schon 3D-Drucker für Nahrungsmittel auf den Hi-Tech-Messen. Diese verbreiten sich ab 2018 immer rascher. Im Zusammenspiel mit der Digitalisierung wird zum einen die Produktion „zurück“ aus den Schwellenländern in viele Industrieländer geholt, aber erstmal brechen auch unzählige Arbeitsplätze weg, zum Beispiel in der Transport- und Logistikindustrie. Eigentlich ist es wie zu Beginn der Industrialisierungswelle Anfang des 19. Jahrhunderts: damals gab es ausgehend von der Textilindustrie Aufstände (der “Luddites“ / Maschinenstürmer), in denen die Webstühle zertrümmert wurden, und genau so gibt es ab 2020 auch wieder in Europa große Aufstände mit fast bürgerkriegsähnlichen Zuständen, wenn Arbeitslose zum Beispiel 3D-Printer-Hubs abreißen."
+			},
+			{
+				"order": "3",
+				"title": "„nichts klappt mehr richtig“",
+				"text": "Weil Chatbots und künstliche Intelligenz so günstig geworden sind, wird nahezu jede Schnittstelle zu Kunden und Bürgern – von der Beratung beim Einkauf bis zum Bestellen eines neues Personalausweises - von großen Unternehmen und Institutionen automatisiert. Erst feiern alle den riesigen neuen Markt, auf dem großes Geld verdient wird, aber dann platzt nach und nach die Blase, denn mehr und mehr Fehler geschehen. Die Kommunikation zwischen Mensch und Maschine funktioniert einfach nicht so gut wie gedacht. Daher dauert vieles plötzlich länger, und „nichts klappt mehr richtig“ – viele Unternehmen klagen zum Beispiel darüber, dass ihre Mitarbeiter berufliche Reisen nicht antreten können, weil zum Beispiel Visa nicht früh genug ausgehändigt werden. Die gesamte Weltwirtschaft wird verlangsamt und die Börsen reagieren mit Nervosität."
+			},
+			{
+				"order": "4",
+				"title": "Bewertungsportalen für Arbeitgeber",
+				"text": "Schon seit 2010 sucht sich besonders die junge Generation ihre Jobs nicht mehr aus Stellenanzeigen, sondern auf Bewertungsportalen für Arbeitgeber. Hier liegen Banken und Steuerungseinrichtungen des Finanzsystems weit abgehängt auf den letzten Plätzen – ab 2020 will hier fast keiner mehr hier arbeiten. Die Arbeitgeber versuchen mit höheren Löhnen gegenzusteuern, aber können nicht ausreichend ausgleichen, und so werden ihre Mitarbeiter immer älter und weniger innovativer."
+			},
+			{
+				"order": "5",
+				"title": "Minimalismus wird Mainstream weil viele Unternehmen pleite gehen",
+				"text": "Minimalismus wird Mainstream: Ein Großteil der Weltbevölkerung setzt auf einen asketischeren Lebensstil („The Cult of Less“). Diese Bewegung hatte in den 2000er und 2010er-Jahren schon gute 5 bis 10% der westlichen Bevölkerung erfasst, und breitet sich dann nach und nach in die Schwellenländer aus. Der Grund ist ein sich lange schon abzeichnender Wertewandel, in dem Konsum und materieller Wohlstand besonders für die jüngeren Generationen immer weniger wichtig sind, und viele sich für Nachhaltigkeit und Klimaschutz einsetzen. Dass weniger konsumiert wird, ist aber hochproblematisch für das bestehende Wirtschaftssystem: Es wird so viel weniger gekauft, dass viele Unternehmen Pleite gehen. Aber auch Arbeit für Geld braucht es so immer weniger – und damit gewinnen Arbeitnehmer wieder mehr an Macht und die verbleibenden Unternehmen geraten noch mehr unter Druck."
+			},
+			{
+				"order": "6",
+				"title": "Das Durchschnittseinkommen fällt unter die Armutsgrenze",
+				"text": "Neue IT-basierte Unternehmen wie Uber und AirBnB haben gezeigt, wie Plattformen die Strukturen des Systems Arbeit verändern können. Aber: der Mehrwert verbleibt bei den Plattformen, und obwohl seit 2017 immer wieder Foodora- oder Uber-Fahrer streiken, gibt es doch noch genug Menschen, die gezwungen sind, diese immer schlechter bezahlten Jobs zu machen – einfach, weil keine besseren da sind. Das Durchschnittseinkommen fällt unter die Armutsgrenze, es wird immer weniger konsumiert."
+			},
+			{
+				"order": "7",
+				"title": "Superkommunen",
+				"text": "Zurück zur Selbstversorgung - Weil sie immer weniger Einkommen haben (und zum Teil auch, weil sie nachhaltiger leben wollen), kehren immer mehr Menschen dem Konsum den Rücken und versorgen sich in Städten über eigene Mikro-Farmen oder leben und arbeiten in ländlichen Regionen oder am Stadtrand in kooperativen ‚Superkommunen‘, die sich größtenteils selbst versorgen. Einkaufen, gar ‚Shopping‘ und klassische Vollzeit-Lohnarbeit werden zur Rarität, es wird weniger konsumiert und Unternehmen haben immer mehr Schwierigkeiten, ihre Produkte verkaufen zu können."
+			},
+			{
+				"order": "8",
+				"title": "Schwierigkeit für Unternehmen, Nachwuchs für Führungsaufgaben zu finden",
+				"text": "Immer mehr unbesetzte Stellen: Bekannt war in Deutschland, dass viele Ausbildungsstellen unbesetzt bleiben – schon seit 2010 liegt das Angebot hier über der Nachfrage. Und es sprach zwar niemand darüber, aber schon um 2017 hatten viele Behörden und Unternehmen Schwierigkeiten, Nachwuchs für Führungsaufgaben zu finden. Manchmal fehlen diejenigen mit der richtigen Ausbildung, oder es gibt nicht die Möglichkeit, sie ins Land zu holen, und manchmal will keiner. Dieses Problem verschlimmert sich in den Folgejahren, denn die nachrückende Generation sieht oft wenig für sie wertvolle Anreize, diese Rollen zu übernehmen. Viel Freizeit und wenig Stress sind wichtiger geworden als Status, Einkommen und klassische Karriere. Ab 2020 ist dann extremer Führungskräfte-Mangel: 50% der Führungspositionen, 70% gar im öffentlichen Sektor, können nicht mehr besetzt werden oder nur mit offensichtlich ungeeigneten Kandidaten. In der Konsequenz werden Behörden sogar zeitweise geschlossen, bis wieder Entscheidungsträger gefunden sind, die die Räder am Laufen halten."
+			},
+			{
+				"order": "9",
+				"title": "Dienst nach Vorschrift",
+				"text": "Viele große Unternehmen und Institutionen versuchen wie bereits seit 2014 auf agile Organisationsformen und flache Hierarchien umzusteigen, um mit dem rascheren Tempo des Wandels mit zu halten. Aber in den Jahren nach 2017 geht es nicht wie gehofft voran und führt so zu immer mehr Frustration aufgrund der hohen Erwartungen und mangelnden Umsetzung. In der Konsequenz hat ein Großteil der Mitarbeiter innerlich gekündigt und macht maximal Dienst nach Vorschrift – alles geht also langsamer und schlechter voran, die Produkt- und Innovationsqualität sinken."
+			},
+			{
+				"order": "10",
+				"title": "Burn-Out und Bore-out werden zum Massenphänomen",
+				"text": "Aufgrund mangelnden Vertrauens in die gesellschaftliche und wirtschaftliche Lage, Unzufriedenheit mit Möglichkeiten der Teilhabe und Selbstverwirklichung bei der Arbeit und einer großen Führungskrise werden Burn-Out und Bore-out zum Massenphänomen. Das Problem verschärft sich, als ab 2018 die „Generation ADHS“ in die Berufswelt Eintritt findet und sich nicht nur die Generationenkonflikte bei der Arbeit verschärfen, sondern auch die Kosten im Gesundheitssystem explodieren. Die Krankenkassen weigern sich, die Kosten für berufsbedingte Erkrankungen zu übernehmen, und es beginnen langwierige Rechtsstreitigkeiten zwischen Unternehmen und Sozialstaat, in dem die meisten Betroffenen „unter die Räder“ geraten. Die Kosten auf staatlicher und Unternehmensseite explodieren derart, dass weitere Überschuldung entsteht."
+			}
+			
+		]
 	},
 	{
 		"color": "#91b8df",
 		"date": "23.07.2017",
 		"title": ["Identitäten", "Heiße Luft"],
 		"logline": "Geschichte wiederholt sich nicht buchstäblich, sondern als Farce.",
-		"intro_short": "",
+		"intro_short": "Caveat: Das Bonmot Schlegels paraphrasierend, der gesagt hat, der Historiker sei ein umgekehrter Prophet, könnte man den Autor dieser Zeilen als umgekehrten Historiker lesen, mithin: als jemanden, der seine Prophetien nicht aus einer seherischen Begabung, sondern aus der Überzeugung ableitet, dass Geschichte sich wiederholt, nicht auf buchstäbliche Weise, sondern als Farce, als steter Ausleerungs- und Evakuierungsprozess. Wie hat es Karl Valentin so schön gesagt? Es ist alles gesagt, bloß noch nicht von allen. Und das ist der Witz aller Geschichte (zumal dort, wo jeder eine Stimme hat): dass eine Tatsache erst dann zur Kenntnis genommen wird, wenn das Geschrei groß ist, so groß, dass man die Moral der Geschichte schon gar nicht mehr heraushören kann.<br>- - -<br><i>Im Jahr 2026, auf dem Höhepunkt der Finanzkrise, wird mir ein Büchlein in die Hand fallen, das ich im Jahr 2013 geschrieben habe und das mit einem Digitalen Manifest endet. Altersmüde beginne ich zu lesen:</i><br><br>1. DIGITALE RENAISSANCE. Mit der digitalen Revolution erleben wir eine Transformation, die so tief ist wie der Zeitriss, der die Neuzeit vom Mittelalter getrennt hat. Das Grundgesetz des neuen Geisteskontinents ist bekannt, es lautet x=xn. Vor dieser Formel müssen die künftigen Ideen, Institutionen und Plastiken bestehen.<br>2. STAAT. Der Nationalstaat ist Geschichte. Weil schon jetzt das Internet den politischen Handlungsraum definiert, gilt es, die Exzesse der Nationalstaaten einzuhegen und jene Institutionen zu befördern, die dem Rahmen des Weltbürgers entsprechen. Im Jenseits der Ideologien muss man die Politik der Simulation als größtmögliche Aufgabe denken!<br>3. GELD. Die Glaubenskrise des Kapitalismus lässt erkennen, dass die versammelte Kopflosigkeit (= die Märkte) nichts als Schein produziert. Die Konsequenz: die Abschaffung jenes Finanzsystems, bei dem einzelne Akteure ganze Volkswirtschaften in Geiselhaft nehmen. Wenn aber wir diejenigen sind, die als lebende Münzen Geld emittieren, gibt es keine andere Deckung mehr als unsere Bedürfnisse. Die beunruhigende Frage: Wie werden wir, wenn wir nicht mehr der Metaphysik des Geldes Glauben schenken können, den eigenen Wert und den Wert der Dinge ermitteln können?<br>4. ARBEIT. Was wir für Arbeit halten, wird im Museum der Arbeit verschwinden. Dinge hingegen, die wir für Spielerei oder Orchideenliebhaberei halten, werden den Mehrwert der Zukunft darstellen. Unser Arbeitsethos wird der Kultivierung des Überflusses gelten. Da wir uns selbst produzieren, stellt die Vervollkommnung der sozialen Plastik das Ziel unserer Bemühungen dar. Arbeit wird das Medium sein, in dem wir unsere Verwandlung vorantreiben und uns zugleich dabei zuschauen können.<br>5. ÖKONOMIE. Am Ende der Podukte angelangt, werden wir selber zur Währung. Wenn unsere Aufgabe darin besteht, die Güte dieser Währung aufrecht zu erhalten, so heißt dies in einer beweglichen Welt: sich immer wieder neu erfinden zu müssen. Die Logik des Upgrades aber basiert darauf, dass man das Scheitern erlernt. Dies ist das Wesen der Digitalisierung: Zerstörung, mit dem Ziel, das Objekt in umso grandioserer Form wiederauferstehen zu lassen.<br>6. ICH. Das Individuum, das mit seiner Unterschrift eine lebenslange Verpflichtung eingeht, ist Geschichte. Wenn unser Sein im Austausch besteht, sind wir Dividuen, Schauspielern vergleichbar, die auf der Suche nach immer neuen Rollen und Herausforderungen sind. Ein solcher Rollenwechsel erfordert nicht mehr den Funktionär, sondern den ganzen Menschen.<br>7. KUNST. Es wird keine Künstler mehr geben, nurmehr die Kunst. Begreifen wir die Gesellschaft als Kunstwerk, geben wir ihr den Sinn für das Utopische, für ihre Möglichkeiten zurück.<br>8. MORAL. Die moralischen Fragen unserer Zeit gehen weit über den Sichtkreis unserer Individualmoral hinaus. Da wir gewissermaßen in Fernbeziehungen leben und der Tastendruck unseres Fingers einen Menschen am anderen Ende der Welt in Mitleidenschaft ziehen kann, ist auch die Ferne ein Modus der Nähe. Die Maxime: dass man sich löst von den Überlegenheitsvorstellungen der eigenen Religion und Kultur, dass die Nächstenliebe mit der Fernstenliebe verschmilzt.<br>9. BILDUNG. Die Bildung der Zukunft wird darauf beruhen, dass man nicht auswendig, sondern inwendig gelernt hat. Wissensakkumulation wird durch Neugierde, unveränderliche Wahrheiten werden durch Gedankenspiele ersetzt. Ein Gedanke, der den Denkenden ausgrenzt oder zu eliminieren versucht, ist per se wertlos. Auch die Natuwissenschaft (unsere Außenwelt) muss inwendig werden (Geisteswissenschaft).<br>10. DER MENSCH. Wer Kontrolle sucht, lebt das Leben der Anderen. Nur wenn wir uns von der Kontrollsucht befreien und aufhören, Insitutionen, Formeln und Maschinen zu fetischisieren, werden wir uns selbst finden können. Dieses Selbst ist kein Besitz, sondern die Fähigkeit, mit anderen Menschen in Kommunikation treten können. Nur in dem Maße, in dem wir unser Fetisch-Selbst auflösen, wird das Menschenbild der Zukunft in unsere Wahrnehmung eintreten.<br><i>Ich werde seufzen und mir eingestehen müssen, dass ich dem nicht viel hinzufügen kann.</i>",
 		"namemoderator": "",
 		"vitamoderator": "",
 		"material": "",
 		"expert": "Dr. Martin Burckhardt (Autor)",
 		"experten": [{
 			"name": "Dr. Martin Burckhardt",
-			"vita": "",
+			"vita": "<b>Martin Burckhardt</b> lebt in Berlin. Als Autor und Kulturtheoretiker verfasste er diverse Bücher zur Genealogie der Maschine. Zuletzt erschienen folgende von ihm verfasste Werke: Digitale Renaissance. Manifest für eine neue Welt. (Metrolit, 2014), der Roman Score (Knaus, 2015) sowie Alles und Nichts. (gem. mit Dirk Höfer, Matthes & Seitz 2015). Im Herbst 2018 wird Matthes & Seitz sein neustes Buch „Die Philosophie der Maschine.“ herausbringen.<br><http://martin-burckhardt.de>",
 			"pic": "burckhardt.jpg"
 		}],
 		"events": [{
 			"order": "1",
-			"title": "ohne titel",
-			"text": "ohne text"
-		}]
+				"title": "Im globalen Weimar verläuft die Kampfzone nicht mehr zwischen Links oder Rechts",
+				"text": "In einer langen Serie von Leaks werden die Troll-Fabriken (des Kreml?, Nordkoreas?, der Chinesen?) jeden Politiker, der sich in einer unserer westlichen Demokratien um ein höheres Amt bemüht, so nachdrücklich desavouieren, dass sich das Gefühl einstellt, man lebe in einer Bananenrepublik – womit sich die Appelle an das christliche Abendland nachgerade von selber erledigen. Die Intellektuellen werden Oswald Spengler zu neuer, fragwürdiger Blüte erwecken, die robusteren Geister werden sich an die Männer der Tat halten wollen. Im globalen Weimar, das darüber entsteht, verläuft die Kampfzone nicht mehr zwischen Links oder Rechts, sondern zwischen den beiden Spielarten der Realitätsverweigerung: religiösem Fundamentalismus oder Identitätsduselei. Neben dem Phantomschmerz, der sich in ein politisches Strategem übersetzt, wird es keine nennenswerten politischen Positionen mehr geben."
+			},
+			{
+				"order": "2",
+				"title": "Apple verliert seine Position als teuerste Firma der Welt",
+				"text": "Da das neue iPhone (das als Fetischobjekt bereits einen langen Niedergang erlebt hat) nicht zündet, verliert Apple seine Position als teuerste Firma der Welt. Tim Cook tritt als Apple Vorsitzender zurück, Diadochenkämpfe lähmen die Firma – und die große Kriegskasse, die noch immer auf den Cayman-Islands schlummert, befeuert die widerstreitenden Lager. Woche für Woche sickern unangenehme Details an die Öffentlichkeit. Haben die Jünger des Steve Jobs, die sich an seine 1984er-Werbekampagne erinnern, das libertäre Moment in Angedenken gehalten, glaubt man in den Leaks Belege für einen neuartigen digitalen Faschismus entdecken zu können."
+			},
+			{
+				"order": "3",
+				"title": "Brain enhancer bewirken sopziopathisches Verhalten",
+				"text": "Eine Studie ergibt, dass 50% der Studenten Brain enhancer zu sich nehmen, aber dass selbige, neben Chromosomenveränderungen, vor allem soziopathisches Verhalten bewirken: Depressionen, Psychosen, Anfälle ungezügelter Mordlust. In gewisser Hinsicht sind diese um sich greifenden individuellen Katastrophen (Selbstmordattentate Amokläufe) ein Advent der politischen Krise."
+			},
+			{
+				"order": "4",
+				"title": "Angela Merkel wird Pflaumenkuchen backen",
+				"text": "Angela Merkel wird sich aufs Gärtnern verlegen. Sie wird Pflaumenkuchen backen – und bei ihrem letzten großen Fernsehauftritt einer verblüfften Anne Will eröffnen, dass sie gerade an einem Buch über die Verwandtschaft von europäischer Geistesgeschichte und Inkakultur schreibt. Letztere sei insofern vorbildlich, als sie sich ebenso spurlos wie nachhaltig aus der Weltgeschichte verabschiedet habe. Man wird der eisernen Kanzlerin nachlächeln … und sich fragen: War's das? Wie konnte Mutti zur Führerin der freien Welt avancieren?"
+			},
+			{
+				"order": "5",
+				"title": "Zahlenmagie, die man als Glaube an das fiktive Kapital begreifen kann",
+				"text": "Eine Finanzkrise, die ihren Ausgang in China nimmt. Sie beginnt an einem Montag, den 4.4. – und schon von der Zahlenkombination her ein Katastrophen-Memento. Um 10:10 Uhr, just in der Minute, da die Zahlen-Konstellation in ihr finsterstes Stadium eintritt, stürzen die Kurse ins Bodenlose. Im Nachhinein werden sich die Kommentatoren (die wie beim letzten Mal schon alles zuvor gewusst haben wollen) über das Kreditgebaren der chinesischen Banken verwundern, die ihre Kredite (wie auch die Wahl ihrer Autokennzeichen und Handynummern) stets nach Glücksziffern ausgerichtet haben. Dabei ist die Spekulation auf die Glückszahl nur die radikale Ausprägung einer weitverbreiteten Zahlenmagie, die man, in materialistischer Terminologie, auch als Glaube an das fiktive Kapital begreifen kann. In jedem Falle aber müssen die Spekulanten entdecken, dass das, was ihre Fantasien angefeuert hat, nichts anderes war als: heiße Luft."
+			},
+			{
+				"order": "6",
+				"title": "Anders als 2008 kann man die Brandstifter nicht erneut zum Feuerlöschen einteilen.",
+				"text": "Die Effekte der neuen Finanzkrise sind vorhersehbar: die Zinsen werden auf jenes Maß zurück klettern, das man ehedem als Normalität genommen, in Zeiten der Großen Lockerung aber vollständig verdrängt hat. Da der Schleier des anstrengungslosen Gewinns gelüftet ist, entdeckt man, dass man sich die ganzen Jahre zuvor in einem Potjemkinschen Dorf eingerichtet hat, genauer noch: in einem Schneewittchensarg, dessen gläserner Deckel mit einem goldenen Schriftzug versehen worden ist. Was in der Vorkrisenzeit als Leistung hat durchgehen können, erweist sich als Vermögen, die Wirklichkeit nicht zur Kenntnis zu nehmen – die Politik der Insolvenzverschleppung, große Kunst. Nun aber, da der Zauber verflogen ist, stellt sich die überblendete, ausgebliebene Frage erneut: Was tun? Und wer, gegebenenfalls, wäre damit zu betrauen? Soviel jedenfalls ist klar: Anders als 2008 kann man die Brandstifter nicht erneut zum Feuerlöschen einteilen. "
+			},
+			{
+				"order": "7",
+				"title": "Zombiebanken kommen aus ihren Löchern hervor",
+				"text": "Weil das Klima rauer wird, kommen die Zombiebanken aus ihren Löchern hervor – taumelnde Monster, die als großer Lemmingszug die Kapitalen der Welt belagern. Neben den Todgeweihten reihen sich in diesen Zug auch all diejenigen eine, welche die Krise als Chance begreifen. Folglich werden die seit langem schon notleidenden Volkswirtschaften (Griechenland, Italien, Türkei etc.) eine günstige Gelegenheit erblicken, sich zu entschulden, mit einem gezielten, handstreichartig betriebenen Staatsbankrott. Da dieser dem Chaos nur eine weitere Fußnote hinzufügen wird, macht sich eine Art klammheimlicher Enthusiasmus breit, kann man doch hoffen, dass die Politik des Moral hazard auch in Zukunft noch greift. Im Abwärtsstrudel wird die Debatte um die Systemrelevanz wieder aufflammen, ein großes Wehklagen, bei dem nun jedermann seine individuelle Abwrackprämie einfordern wird (was den Unterschied zur Finanzkrise von 2008 darstellt, die nur einer kleinen Minderheit dieses Privileg eingeräumt hat)."
+			},
+			{
+				"order": "8",
+				"title": "Ein T-Shirt",
+				"text": "Der Renner der Saison: Ein T-Shirt mit dem Aufdruck: „Ich bin systemrelevant!”"
+			},
+			{
+				"order": "9",
+				"title": "Für die Internationale der Konsumenten wird Drohnen-Versorgung zum Bürgerrecht",
+				"text": "Die EZB verteilt Helikoptergeld und die EU ermannt sich zu einem allgemeinen bedingungslosen Grundeinkommen – beides Maßnahmen, denen ein phänomenaler Erfolg beschieden sein wird. Für die Internationale der Konsumenten wird Flachbildschirm, Netflix-Abonnement und Drohnen-Versorgung aus dem Amazon Store, Bürgerrecht – und Norbert Bolz (mit seinem Konsumistischen Manifest) wird posthum ein Requiem gesungen. Der einzige Malus, der im Trubel des Jahres allerdings in Vergessenheit gerät: die Grenzen Europas werden von Drohnen gesichert, die Festung Europa zur technologisch gestützten Realität."
+			},
+			{
+				"order": "10",
+				"title": "Kein Mensch zu sein, wird in der Arbeitswelt zu einem Erfolgsrezept",
+				"text": "… wenn nicht gar zur conditio sine qua non. Die Firmen, die in eine deflationäre Abwärtsspirale geraten, müssen, um überleben zu können, das Potenzialgefälle der Digitalisierung einlösen. Damit aber erlebt die Arbeitswelt, schockhaft, ihre große Freisetzung. All die Arbeitsplätze, in denen Menschen androide Arbeiten ausgeführt haben (die Sprechroboter der Callcenter, die dienstbeflissenenen Copy-Paster, die menschlichen Texteingabe-Dienstboten), werden durch machine learning Algorithmen substituiert ... Zurück bleibt die Kunst, sich auszumalen, was die Maschine nicht (oder noch nicht) zu denken vermag. Diese Disziplin allerdings wird nicht mehr von den Intellektuellen praktiziert, sondern allein von denjenigen, die sich die Programmierung der Welt auf die Fahne geschrieben haben."
+			},
+			{
+				"order": "11",
+				"title": "Deutsche Bank kauft den Fintech-Anbieter der Saison auf",
+				"text": "Die Deutsche Bank kauft – mit den letzten ihr verbliebenen Mitteln – den Fintech-Anbieter der Saison auf. Man rüstet sich mit Supercomputern aus und hofft, durch das Minen von Bitcoins und anderen Blockchain-Währungen über die Runden zu kommen."
+			},
+			{
+				"order": "12",
+				"title": "Neo-Punks",
+				"text": "Es entsteht eine neue, virulente Jugendbewegung, die sich, wie eine Art invertierter Punk-Bewegung, ein No-Future auf die Fahnen schreibt. War die Millennial-Generation bestrebt, sich in Sicherheiten zu flüchten (mit der Idealfigur des Beamten, als inkarnierter Komplexitätsreduktion), ähneln die Neo-Punks den Flagellanten des 14. Jahrhunderts. Man übt sich in öffentlichen Selbstgeißelungen, veganer Kost, Alkohol- und Social Media-Abstinenz (letzteres nicht sehr erfolgreich). Man lebt im innerweltlichen Purgatorium und ergeht sich in moralischen Selbstanklagen darüber, wie man Gott und die Welt ausgebeutet habe. Nicht nur das apokalyptische Denken wird hip, sondern auch die toten Philosophen werden aus den Gräbern gezerrt. (Ich werde mich darüber ärgern, dass ich das schon 2015 geplante Buch „Warten auf Savonarola“ nicht geschrieben habe. Aber wer liest, so tröste ich mich, zu dieser Zeit überhaupt noch?)"
+			},
+			{
+				"order": "13",
+				"title": "Gesellschaftsmaschine von einer Metapher in Wirklichkeit verwandelt",
+				"text": "Galt früher der blutsaugerische Kapitalist (der seine Arbeiter in die Maschinenhölle seiner Fabriken geschickt hat) als Inkarnation des Bösen, sind es nun die jungen, unterdes in die Jahre gekommenen Entrepreneure des Silicon Valley: Marc Zuckerberg, Elon Musk, Travis Kalanick und Konsorten. Ihr Wirken ist es, welches ganze Kohorten von Sachbearbeitern aus ihren Büros verbannt, die Finanzindustrie und die Verwaltung automatisiert, mit einer solchen Verve, dass sich der Begriff der Gesellschaftsmaschine von einer Metapher in eine Wirklichkeit verwandelt. Selbst im bürgerlichen Milieu, das seinen Müll getrennt, sich probiotisch ernährt und auf eine saubere Energiebilanz geachtet hat, werden Stimmen laut, die von der Verschwörung des Digitalkapitals sprechen. Findet sich nicht im kleinen Israel (mit seinen gerade mal 8-Millionen Einwohnern) die größte Startup-Dichte der Welt? Werden hier nicht die Algorithmen ausgeheckt, die für die Grenzsicherung unerlässlich sind. Was die Schuldknechtschaft für den Faschismus des frühen 20. Jahrhunderts war, wird der vermeintliche Datenraub des 21. Jahrhunderts sein. Wie hat unser Justizminister Heiko Maas schon im Jahr 2016 gesagt: Souverän ist, wer über seine Daten verfügt."
+			},{
+				"order": "14",
+				"title": "Datengier wird in den Rang einer Todsünde erhoben",
+				"text": "In dem Maße, in dem die Bankkonten ins Minus rutschen, wird man eine Werte-, ja eine Glaubenskrise des Kapitalismus diagnostizieren. Datengier wird in den Rang einer Todsünde erhoben – und bei den Kirchentagen (die sich erstaunlicherweise einer wachsenden Beliebtheit erfreuen) wird man sich fragen, ob eine Welt, die den Mensch als Maß aller Dinge hinter sich gelassen hat, nicht die Hölle auf Erden bedeutet."
+			}
+		]
 	},
 	{
 		"color": "#0092c3",
@@ -373,21 +643,10 @@
 		],
 		"events": [{
 			"order": "1",
-			"title": "ohne titel",
+			"title": "ohne titel ohne title ohne title",
 			"text": "ohne text"
-		},
-		{
+		},{
 			"order": "2",
-			"title": "ohne titel",
-			"text": "ohne text"
-		},
-		{
-			"order": "3",
-			"title": "ohne titel",
-			"text": "ohne text"
-		},
-		{
-			"order": "4",
 			"title": "ohne titel",
 			"text": "ohne text"
 		}]

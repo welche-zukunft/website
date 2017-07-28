@@ -237,7 +237,9 @@ body {
 				display: flex;
 				align-items: center;
 			}
+			.logos a {
+				display: inline-block;
+			}
 			.logos img{
 				margin-right: 30px;
-				max-width:191px;
 			}

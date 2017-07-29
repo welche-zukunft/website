@@ -460,48 +460,6 @@ var camposIntern = -1;
 var campos = camposIntern + 1;
 var setOverview = true;
 
-window.addEventListener('wheel', throttle(function movecamera(e){
-	if(active == true && wsIsOpen == false && current_workshop_id != 13){
-
-	if(platform == "MacIntel"){	
-		if(e.deltaY == -1) camposIntern += 1;
-		if(e.deltaY == 1) camposIntern -= 1;		
-	}
-	else {
-		if(e.deltaY < 0) camposIntern += 1;
-		if(e.deltaY > 0) camposIntern -= 1;			
-	}
-	
-	//delete tutorial on first zoom in
-	if(tutorialdiv == true && camposIntern >= 0){
-		tutorialdiv = false;
-		$(document).ready(function(){
-		setTimeout(function () {
-		$('#tutorial').find("span").animate({opacity:1},function(){$(this).animate({opacity:0});  
-		});
-		}, 200);
-		$('#tutorial').addClass('tutorial_unanimated');
-		$('#tutorial').removeClass('tutorialanimation');
-		$('#tutorial').remove();
-		});
-	}
-	
-		if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
-		
-		if(camposIntern < -1 ) {
-			camposIntern = -1;
-			if(setOverview == false){
-				setOverview = true;
-				}
-		}
-		if(setOverview == true && camposIntern > -1 && batchescreated == true){
-			setOverview = false;
-			camposIntern = -1;
-		}
-		campos = camposIntern + 1;
-	}
-},500));
-
 
 function throttle(func, interval) {
     var lastCall = 0;

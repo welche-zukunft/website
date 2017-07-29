@@ -123,11 +123,13 @@ function closeWsMenu(){
 	wsIsOpen = setter;
 }
 
-$(document).on('click touchstart', function() {
+$(document).on('click touchstart', function(e) {
+	//close WS Menu if click outside of opended WS Menu
 	if(wsIsOpen == true){
 		$('.burger-ws-check[type=checkbox]').prop('checked',false);
 		wsIsOpen = false;
 	}
+	// jump to start if click outside contentboxes on paper
 	if(active == false){
 		$('html, body').animate({
         scrollTop: $("#container_section").offset().top
@@ -135,6 +137,47 @@ $(document).on('click touchstart', function() {
 		setstatus(true);
 		reset_ws();
 	}
+	//navigate through timeline
+
+	if(active == true && wsIsOpen == false && menuisOpen == false && current_workshop_id != 13){
+	
+
+		if(e.pageY < window.innerHeight /2.) camposIntern += 1;
+		if(e.pageY > window.innerHeight /2.) camposIntern -= 1;			
+	
+	//delete tutorial on first zoom in
+	if(tutorialdiv == true && camposIntern >= 0){
+		tutorialdiv = false;
+		$(document).ready(function(){
+		setTimeout(function () {
+		$('#tutorial').find("span").animate({opacity:1},function(){$(this).animate({opacity:0});  
+		});
+		}, 200);
+		$('#tutorial').addClass('tutorial_unanimated');
+		$('#tutorial').removeClass('tutorialanimation');
+		$('#tutorial').remove();
+		});
+	}
+	
+		if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
+		
+		if(camposIntern < -1 ) {
+			camposIntern = -1;
+			if(setOverview == false){
+				setOverview = true;
+				}
+		}
+		if(setOverview == true && camposIntern > -1 && batchescreated == true){
+			setOverview = false;
+			camposIntern = -1;
+		}
+		campos = camposIntern + 1;
+	
+	
+
+	}
+
+
 });
 
 $("#ws_menu_content").on('click touchstart',function(event) {

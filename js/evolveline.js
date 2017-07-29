@@ -1,6 +1,7 @@
 // States
 var statistics = false;
 var showWalls = true;
+var showDax = true;
 
 // switches
 var contentboxes = 0;
@@ -123,14 +124,20 @@ function get_metainformations(){
 		}
 		setTimeout(function () {
 		$('#tutorial').find("span").animate({opacity:0},function(){
-		var tutorialtext = "Wähle einen Workshop und Scrolle vor und zurück um im Szenario zu navigieren.";
-		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-			tutorialtext = "Wähle einen Workshop und tappe in der oberen Hälfte deines Screens um im Szenario nach vorne und in der unteren Hälfte um zurück zu navigieren.";
-		}
+		if(language=="deu"){
+			var tutorialtext = "Wähle einen Workshop und Scrolle vor und zurück um im Szenario zu navigieren.";
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+				tutorialtext = "Wähle einen Workshop und tappe in der oberen Hälfte deines Screens um im Szenario nach vorne und in der unteren Hälfte um zurück zu navigieren.";
+		}}
+		else if(language=="eng"){
+			var tutorialtext = "Select a Workshop and scroll up and down to navigate through the scenario.";
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+				tutorialtext = "Select a workshop and tap in the upper half of your screen to navigate forward, and in the lower half to navigate backward through the scenario";
+		}}
         $(this).text(tutorialtext)
             .animate({opacity:1});  
 		});
-		}, 3000);
+		}, 1000);
 	});
 }
 
@@ -138,14 +145,14 @@ function get_metainformations(){
 //INIT ---------------------------------
 function init() {
 	// renderer
-	renderer = new THREE.WebGLRenderer({ antialias: true,logarithmicDepthBuffer: true });
+	renderer = new THREE.WebGLRenderer({ antialias: true,logarithmicDepthBuffer: false,precision: "highp" });
 	renderer.setPixelRatio( window.devicePixelRatio );
 	renderer.setSize( window.innerWidth, window.innerHeight );
+
 	container.appendChild( renderer.domElement );
-	
-	var distance = window.innerWidth - ( window.innerWidth * 0.1);
-	if(window.innerWidth > window.innerHeight){
-		distance = window.innerWidth - ( window.innerWidth * 0.50);
+	var distance = window.innerWidth - ( window.innerWidth * 0.5);
+	if(window.innerWidth < window.innerHeight){
+		distance = window.innerWidth + ( window.innerWidth * 0.5);
 	}
 	FOV = 2 * Math.atan( 375 / ( 2 *distance))*180 / Math.PI;
 
@@ -233,7 +240,7 @@ function init() {
 			color: metacontents[h].color,
 			specular: 0x111010,
 			shininess: 90,
-			transparent: true
+			transparent: false
 			//opacity: 0.4,
 			//side: THREE.DoubleSide
 		} ));
@@ -296,7 +303,7 @@ function init() {
 	controlPlane.scale.set(boxwidth,boxheight,1.);
 	scene.add( controlPlane );
 	shiftControlPlane();
-	drawdax();	
+	if(showDax==true) drawdax();	
 }
 
 
@@ -367,29 +374,17 @@ function deselectworkshop(){
 var shifter = 0.;
 
 function animate() {
-
-	//if(current_lines_group.children.length > 0) {
-	//	if(active == false) {
-	//		flush_boxes();
-	//	}
-	//}
-
-	if(wind == true){
-		console.log("wind");
-		for (var i = 0; i<12; i++){
-			moveBranch(i);
-		}
-	}
+	
 	if(showWalls == true) {
 		changeuniforms();
 	}
 	
-	
-	for(i = 0; i < daxes.length; i++){
-		shiftdax(i);
+	if(showDax==true){
+		for(i = 0; i < daxes.length; i++){
+			shiftdax(i);
+		}
 	}
 	
-	requestAnimationFrame(animate);
 	// contentboxes
 	// ???
 	var current_workshop = workshops[current_workshop_id];
@@ -433,92 +428,12 @@ function animate() {
 		camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
 	}
 
-
-
-
-
-	/*var looky = new THREE.Vector3(scene.position.x,scene.position.y,scene.position.z + (5.-camera.position.z * 0.005)*-1.);
-	camera.lookAt(looky);*/
-
+	requestAnimationFrame(animate);
   	renderer.render(scene, camera);
 	if(statistics == true){
 		stats.update();
 	}
 }
-
-
-function moveBranch(j){
-	//console.log(noise_objects[j]);
-
-  	noise_objects[j].sin_arg_x += 0.01;
-  	noise_objects[j].sin_arg_y += 0.01;
-  	noise_objects[j].sin_arg_z += 0.01;
-  	noise_objects[j].sin_arg_global += 0.01;
-
-
-  	if (Math.abs (Math.sin(noise_objects[j].z * noise_objects[j].sin_arg_global)) < 0.01){
- 		noise_objects[j].sin_arg_x = Math.PI * Math.random();
-  		noise_objects[j].sin_arg_y = Math.PI * Math.random();
-  		noise_objects[j].sin_arg_z = Math.PI * Math.random();
-
-  		noise_objects[j].a = Math.random() * 20;
-  		noise_objects[j].b = Math.random() * 20;
-  		noise_objects[j].c = Math.random() * 20;
-
-  		z = Math.random();
-  	}
-
-  	var index = 0;
-
-  	var random = Math.random();
-	if(wind == true){
-		var reposition = scene.getObjectByName("test"+j).geometry.attributes.position.array;
-		for ( var i = 0; i < 12; i ++ ) {
-				
-  			delta_x = (Math.random()) * Math.cos(noise_objects[j].z * noise_objects[j].sin_arg_global) * Math.cos(noise_objects[j].sin_arg_x *noise_objects[j].a) * Math.pow(i,1.6)/1000;
-  			delta_y = (Math.random()) * Math.cos(noise_objects[j].z * noise_objects[j].sin_arg_global) * Math.cos(noise_objects[j].sin_arg_y *noise_objects[j].b) * Math.pow(i,1.6)/1000;
-  			delta_z = (Math.random()) * Math.cos(noise_objects[j].z * noise_objects[j].sin_arg_global) * Math.cos(noise_objects[j].sin_arg_z *noise_objects[j].c) * Math.pow(i,1.6)/1000;
-
-			par_geometry[j].vertices[i].x += delta_x;
-			par_geometry[j].vertices[i].y += delta_y;
-			par_geometry[j].vertices[i].z += delta_z;
-
-			reposition[index] = reposition[index++] + delta_x;
-			reposition[index] = reposition[index++] + delta_y;
-			reposition[index] = reposition[index++] + delta_z;
-			
-		}
-		scene.getObjectByName("test"+j).geometry.attributes.position.needsUpdate = true; // required after the first render
-	}
-
-}
-
-
-
-
-
-// PRESS "1" TO (UN)REVEAL POINTERs ---------------------------------
-window.addEventListener( 'keydown', onKeyDown, false );
-var bunch = false;
-
-function onKeyDown(event){
-	var time = new Date();
-
-	switch ( event.keyCode ) {
-	case 49:
-	case 50:
-		if(wind == false){
-			steps = 100;
-			wind = true;
-		}
-		else{
-			wind = false;
-		}
-		break;
-	// 
-	}
-}
-
 
 function removeItem(v) {
 	v.material.dispose();
@@ -546,7 +461,7 @@ var campos = camposIntern + 1;
 var setOverview = true;
 
 window.addEventListener('wheel', throttle(function movecamera(e){
-	if(active == true && wsIsOpen == false){
+	if(active == true && wsIsOpen == false && current_workshop_id != 13){
 
 	if(platform == "MacIntel"){	
 		if(e.deltaY == -1) camposIntern += 1;
@@ -556,8 +471,8 @@ window.addEventListener('wheel', throttle(function movecamera(e){
 		if(e.deltaY < 0) camposIntern += 1;
 		if(e.deltaY > 0) camposIntern -= 1;			
 	}
-
-	//reset tutorial on first zoom in
+	
+	//delete tutorial on first zoom in
 	if(tutorialdiv == true && camposIntern >= 0){
 		tutorialdiv = false;
 		$(document).ready(function(){
@@ -565,9 +480,9 @@ window.addEventListener('wheel', throttle(function movecamera(e){
 		$('#tutorial').find("span").animate({opacity:1},function(){$(this).animate({opacity:0});  
 		});
 		}, 500);
+		$('#tutorial').find("span").switchClass( "tutorial", "tutorial_unanimated", 1000, "easeInOutQuad" );
 		});
 	}
-	
 	
 		if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
 		

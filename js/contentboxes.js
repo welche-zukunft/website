@@ -249,59 +249,6 @@ function flush_boxes() {
 
 
 
-// iterate over available content to create boxes for them
-function workshop_create_all_contents(j) {
-  var contents;
-  
-//calculate middle x for boxes
-  middle = 0.;
-  boxesLeft = new Array(metacontents[j].events.length);
-  boxesRight = new Array(metacontents[j].events.length);
-  for (i = 0; i < metacontents[j].events.length; i++) {
-	middle += particles[j][i].position.x;
-  }
-  middle = middle / metacontents[j].events.length;
-  //calculate postions
-  for (i = 0; i < metacontents[j].events.length; i++) {
-	if(particles[j][i].position.x > middle){
-		boxesLeft[i] = true;
-		}
-	if(particles[j][i].position.x <= middle){
-		boxesRight[i] = true;
-		}
-  }
-  
-   var count = 0;
-	  for(var i = 0; i < boxesLeft.length; ++i){
-		if(boxesLeft[i] == true)
-			count++;
-	  }
-   heightStepLeft = (innerHeight * 0.8) / count;
-	
-	count = 0;
-	  for(var i = 0; i < boxesRight.length; ++i){
-		if(boxesRight[i] == true)
-			count++;
-	  }
-
-   heightStepRight = (innerHeight * 0.8) / count;
-  // remove contentboxes and lines here and also in again in get, cause async
-  flush_boxes();
-  // ToDo: create workshop objects earlier (maybe at timeline creation)
-  var workshop = new workshop_obj(j);
-  workshops[j] = workshop;
- 
-  update_workshop_menu(j);
-
-  flush_boxes();
-
-  for (i = 0; i < metacontents[j].events.length; i++) {
-      contentbox_create(j, i, metacontents[j].events[i],metacontents[j].color,middle);
-    }
-    scene.add( current_lines_group );
-    
-}
-
 function workshop_create_all_contents_3d(j) {
   // ToDo: create workshop objects earlier (maybe at timeline creation)
   var workshop = new workshop_obj(j);

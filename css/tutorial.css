@@ -13,3 +13,14 @@
 @keyframes blinker {  
   50% { opacity: 0.5; }
 }
+
+#tutorial_unanimated{
+	font-size: 15px;
+	position: relative;
+	z-index: 100;
+	top: 90px;
+	color: white;
+	opacity: 0.;
+	text-align: center;
+	margin: 2vh;
+}

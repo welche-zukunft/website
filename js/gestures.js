@@ -52,8 +52,6 @@ mc.on("tap", function(ev) {
 
 });
 
-
-
 mc.on("panright panleft", function(ev) {
 	mouseX = ( ev.pointers[0].layerX- windowHalfY  )*0.008;
 });
@@ -65,5 +63,4 @@ function createRemap(inMin, inMax, outMin, outMax) {
 }
 
 var scale = createRemap(0.,1.,1.2,0.8);
-
 }

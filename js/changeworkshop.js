@@ -1,6 +1,6 @@
 
 
-var current_workshop_id = 0;
+var current_workshop_id = 13;
 
 function workshopdot_create(num , color) {
   // handle

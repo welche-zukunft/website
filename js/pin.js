@@ -13,7 +13,7 @@ var yearcanvases = [];
 
 var pinmat = new THREE.MeshPhongMaterial( {
 			color: 0xffffff,
-			transparent: true,
+			transparent: false,
 			//opacity: 0.4,
 			side: THREE.DoubleSide
 		} );
@@ -68,9 +68,9 @@ function drawPin(index,j){
 		pintextures.push(texture);
 		pin.computeFaceNormals();
 		pin.computeVertexNormals();
-		pinmat = new THREE.MeshPhongMaterial({ map: pintextures[i],specular: 0x373737 });
+		pinmat = new THREE.MeshPhongMaterial({ map: pintextures[i],specular: 0x373737,precision: "lowp"  });
 		pinmat.side = THREE.DoubleSide;
-		pinmat.shininess = 90;
+		pinmat.shininess = 20;
 		pinmat.transparent = false;
 		pinmat.shading = THREE.SmoothShading;
 		pinmat2.color.setHex(metacontents[index].color.replace(/#/g , "0x"));

@@ -123,9 +123,9 @@ function get_metainformations(){
 		}
 		setTimeout(function () {
 		$('#tutorial').find("span").animate({opacity:0},function(){
-		var tutorialtext = "Wähle einen Workshop und Scrolle vor und zurück um in der Timeline zu navigieren.";
+		var tutorialtext = "Wähle einen Workshop und Scrolle vor und zurück um im Szenario zu navigieren.";
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-			tutorialtext = "Wähle einen Workshop und tappe in der oberen Hälfte deines Screens um in der Timeline nach vorne und in der unteren Hälfte um zurück zu navigieren.";
+			tutorialtext = "Wähle einen Workshop und tappe in der oberen Hälfte deines Screens um im Szenario nach vorne und in der unteren Hälfte um zurück zu navigieren.";
 		}
         $(this).text(tutorialtext)
             .animate({opacity:1});  

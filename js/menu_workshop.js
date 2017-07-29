@@ -125,7 +125,7 @@ function closeWsMenu(){
 	wsIsOpen = setter;
 }
 
-$(document).on('click touch', function() {
+$(document).on('click touchstart', function() {
 	if(wsIsOpen == true){
 		$('.burger-ws-check[type=checkbox]').prop('checked',false);
 		wsIsOpen = false;
@@ -143,12 +143,20 @@ $("#ws_menu_content").on('click touchstart',function(event) {
 	event.stopPropagation();
 });
 
+$("#topmenu").on('click touchstart touch',function(event) {
+	event.stopPropagation();
+});
+
+$('#navigation1 a').on('click touchstart touch',function(event) {
+	event.stopPropagation();
+});
+
 $(".handle_container").on('click touchstart',function(event) {
 	event.stopPropagation();
 });
 $("#ws_labels").on('click touchstart',function(event) {
 	event.stopPropagation();
 });
-$(".paper").on('click touchstart',function(event) {
+$("#articleinfos").on('click touchstart',function(event) {
 	event.stopPropagation();
 });

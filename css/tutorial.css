@@ -1,7 +1,6 @@
 #tutorial{
 	font-size: 15px;
 	position: relative;
-	z-index: 100;
 	color: white;
 	opacity: 0.9;
 	text-align: center;
@@ -19,7 +18,6 @@
 .tutorial_unanimated{
 	font-size: 15px;
 	position: relative;
-	z-index: 100;
 	color: white;
 	opacity: 0.;
 	text-align: center;

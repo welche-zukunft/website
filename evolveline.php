@@ -74,6 +74,7 @@
 				<div id="anmeldung_link">
 					<a class="pseudo anmeldung">&lt;&lt; zur Anmeldung</a>
 				</div> --> <!-- anmeldung_link -->
+				<div id="tutorial" class="tutorialanimation"><span></span></div>
 				<div class="handle_container" class="foreground"></div>
 				<div id="workshopmenu">
 					<input class="burger-ws-check" id="burger-ws-check" type="checkbox">
@@ -89,8 +90,6 @@
 			</div><!-- bottom_menus -->
 
 		</div> <!-- container -->
-		<div id="tutorial" class="tutorialanimation"><span></span>
-		</div>
 	</section> <!-- container_section -->
 
 	<article id="articleinfos">

@@ -4,7 +4,16 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 var myElement = document.getElementById('container');
 var currentscale = 1;
 
-var mc = new Hammer(myElement);
+var mc = new Hammer(myElement, {
+
+	touchAction: 'auto',
+	recognizers: [
+		[Hammer.Pinch, { enable: true }],
+		[Hammer.Pan, { direction: Hammer.DIRECTION_VERTICAL }],
+	]
+
+});
+
 mc.get('pinch').set({
         enable: true
     });

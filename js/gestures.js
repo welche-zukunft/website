@@ -27,43 +27,6 @@ mc.on("pinch", function(ev){
 	camera.updateProjectionMatrix();
 });
 
-mc.on("tap", function(ev) {
-	if(active == true && wsIsOpen == false && menuisOpen == false){
-		
-		if(ev.pointers[0].layerY > window.innerHeight - (window.innerHeight*0.5)){
-		camposIntern -= 1;
-		}
-		else{camposIntern += 1;}
-		if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
-		
-		if(tutorialdiv == true && camposIntern >= 0){
-			tutorialdiv = false;
-			$(document).ready(function(){
-			setTimeout(function () {
-			$('#tutorial').find("span").animate({opacity:1},function(){$(this).animate({opacity:0});  
-			});
-			}, 200);
-			$('#tutorial').addClass('tutorial_unanimated');
-			$('#tutorial').removeClass('tutorialanimation');
-			$('#tutorial').remove();
-		});
-		}			
-
-		if(camposIntern < -1 ) {
-			camposIntern = -1;
-			if(setOverview == false){
-				setOverview = true;
-				}
-		}
-		if(setOverview == true && camposIntern > -1 && batchescreated == true){
-			setOverview = false;
-			camposIntern = -1;
-		}
-		campos = camposIntern + 1;
-	}
-
-});
-
 mc.on("panright panleft", function(ev) {
 	mouseX = ( ev.pointers[0].layerX- windowHalfY  )*0.008;
 });

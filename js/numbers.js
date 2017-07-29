@@ -117,10 +117,11 @@ function createNumberWalls(){
 		var book = new THREE.Mesh(geo,shaderMaterial);
 		book.doubleSided = true;
 		var a = i/n * Math.PI*2 + Math.PI/2;
-		var box = new THREE.Box3().setFromObject( book );
-		book.position.x = -1. * (boxwidth*aspect) + ((boxwidth*(aspect*2))*i);
-		book.position.y = (box.getSize().y * 0.3)/2.;
-		book.position.z = 3.-(box.getSize().x * i * 0.3);
+		var boxy = new THREE.Box3().setFromObject( book );
+		console.log(boxy.getSize().x);
+		book.position.x = -1. * (boxwidth) + (2*boxwidth*i);
+		book.position.y = (boxy.getSize().y * 0.3)/2.;
+		book.position.z = 3.-(boxy.getSize().x * i*0.1 );
 		book.rotation.y = Math.PI/2 + (Math.PI*i);
 		book.scale.set(0.35,0.35,0.35);
 		books.push(book);

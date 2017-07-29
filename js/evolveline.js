@@ -48,13 +48,13 @@ var windowHalfY = window.innerHeight / 2;
 
 var aspect = window.innerWidth/window.innerHeight;
 if(window.innerHeight > window.innerWidth){
-	aspect = window.innerHeight/window.innerWidth*2.;
+	aspect = window.innerHeight/window.innerWidth;
 	camerastart = 2.;
 }
 
 //timeline width
-var boxwidth = window.innerWidth*(0.005*(aspect/2.));
-var boxheight = window.innerHeight*(0.005);
+var boxwidth = window.innerWidth*(0.006);
+var boxheight = window.innerHeight*(0.01 / aspect);
 var boxdepth = 7.;
 
 var yearmat;
@@ -148,11 +148,11 @@ function init() {
 	renderer.setSize( window.innerWidth, window.innerHeight );
 
 	container.appendChild( renderer.domElement );
-	var distance = window.innerWidth - ( window.innerWidth * 0.5);
+	var distance = window.innerWidth + ( window.innerWidth * 0.9);
 	if(window.innerWidth < window.innerHeight){
-		distance = window.innerWidth + ( window.innerWidth * 0.5);
+		distance = window.innerWidth + ( window.innerWidth * 0.009);
 	}
-	FOV = 2 * Math.atan( 375 / ( 2 *distance))*180 / Math.PI;
+	FOV = 2 * Math.atan( window.innerWidth / ( 2 *distance))*180 / Math.PI;
 
 	// scene
 	scene = new THREE.Scene();

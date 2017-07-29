@@ -510,7 +510,6 @@
 	<script type='text/javascript' src='js/smoothscroll.js'></script>
 	<script type='text/javascript' src='js/dynamiccontent.js'></script>
 	<script type='text/javascript' src='js/menu_workshop.js'></script>
-	<script type='text/javascript' src='js/activity.js'></script>
 	<script type='text/javascript' src='js/formular.js'></script>
 	<script type='text/javascript' src='js/pin.js'></script>
 	<script type='text/javascript' src='js/daxes.js'></script>

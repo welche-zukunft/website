@@ -11,6 +11,7 @@ function workshopdot_create(num , color) {
   handle.className += " handle tooltip";
   $(handle).css('color', color);
   $(handle).css('background', color, 'important');
+  $(handle).html('&#8291;');
  $(handle).append('<span class="tooltiptext" style="background: '+color+'">'+metacontents[num].title[0] + ' - ' + metacontents[num].title[1]+'</span>');
  	
   $(handle).click(function() {
@@ -31,7 +32,8 @@ function workshopdot_deselect(num){
   handle.className += " handle tooltip";
   //handle.css('color', color);
   $(handle).css('background', '#ffffff', 'important');
-  $(handle).css('color', '#ffffff');
+  $(handle).css('color', 'black');
+  $(handle).html('×');
   $(handle).append('<span class="tooltiptext" style="background: #fff">'+'Workshopauswahl aufheben'+'</span>');
 
  

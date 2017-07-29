@@ -23,6 +23,7 @@ section#container_section {
   column-gap: 10px;
   column-width: 30px;
   */
+  margin-bottom: 1ch;
   text-align: center;
 }
 div.handle_container span {
@@ -109,6 +110,7 @@ div.handle_container span {
   width: 20px;
   height: 20px;
   margin: 0.5ch;
+  margin-bottom: 0;
 }
 div.vert-center {
   display: flex;

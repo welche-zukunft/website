@@ -60,6 +60,7 @@ var controlPlanePosition = 0;
 var controlPlaneOpacity = 1.;
 
 var startpoint;
+var tutorialdiv = true;
 
 document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
@@ -90,7 +91,6 @@ if (Detector.webgl) {
     get_metainformations();
 } else {
     var warning = Detector.getWebGLErrorMessage();
-    document.getElementById('container').appendChild(warning);
 }
 
 window.onbeforeunload = function () {
@@ -121,15 +121,22 @@ function get_metainformations(){
 			active = true;
 			swapworkshop(workshopToLoad);
 		}
-
+		setTimeout(function () {
+		$('#tutorial').find("span").animate({opacity:0},function(){
+		var tutorialtext = "Wähle einen Workshop und Scrolle vor und zurück um in der Timeline zu navigieren.";
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+			tutorialtext = "Wähle einen Workshop und tappe in der oberen Hälfte deines Screens um in der Timeline nach vorne und in der unteren Hälfte um zurück zu navigieren.";
+		}
+        $(this).text(tutorialtext)
+            .animate({opacity:1});  
+		});
+		}, 3000);
 	});
 }
 
 
 //INIT ---------------------------------
 function init() {
-
-
 	// renderer
 	renderer = new THREE.WebGLRenderer({ antialias: true,logarithmicDepthBuffer: true });
 	renderer.setPixelRatio( window.devicePixelRatio );
@@ -540,6 +547,7 @@ var setOverview = true;
 
 window.addEventListener('wheel', throttle(function movecamera(e){
 	if(active == true && wsIsOpen == false){
+
 	if(platform == "MacIntel"){	
 		if(e.deltaY == -1) camposIntern += 1;
 		if(e.deltaY == 1) camposIntern -= 1;		
@@ -549,6 +557,18 @@ window.addEventListener('wheel', throttle(function movecamera(e){
 		if(e.deltaY > 0) camposIntern -= 1;			
 	}
 
+	//reset tutorial on first zoom in
+	if(tutorialdiv == true && camposIntern >= 0){
+		tutorialdiv = false;
+		$(document).ready(function(){
+		setTimeout(function () {
+		$('#tutorial').find("span").animate({opacity:1},function(){$(this).animate({opacity:0});  
+		});
+		}, 500);
+		});
+	}
+	
+	
 		if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
 		
 		if(camposIntern < -1 ) {
@@ -564,7 +584,6 @@ window.addEventListener('wheel', throttle(function movecamera(e){
 		campos = camposIntern + 1;
 	}
 },500));
-
 
 
 function throttle(func, interval) {

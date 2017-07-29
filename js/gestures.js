@@ -21,12 +21,21 @@ mc.on("pinch", function(ev){
 mc.on("tap", function(ev) {
 	if(active == true && wsIsOpen == false && menuisOpen == false){
 		
-		if(ev.pointers[0].layerY > window.innerHeight - (window.innerHeight*0.3)){
+		if(ev.pointers[0].layerY > window.innerHeight - (window.innerHeight*0.5)){
 		camposIntern -= 1;
 		}
 		else{camposIntern += 1;}
 		if(camposIntern >=allpins.length-2) camposIntern = allpins.length-2;
-			
+		
+		if(tutorialdiv == true && camposIntern >= 0){
+			tutorialdiv = false;
+			$(document).ready(function(){
+			setTimeout(function () {
+			$('#tutorial').find("span").animate({opacity:1},function(){$(this).animate({opacity:0});  
+			});
+			}, 500);
+			});
+		}			
 
 		if(camposIntern < -1 ) {
 			camposIntern = -1;

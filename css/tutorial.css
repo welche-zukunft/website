@@ -1,11 +1,15 @@
 #tutorial{
-	font-size: 55px;
-	position: absolute;
-	right: 0;
-	width: 100%;
+	font-size: 15px;
+	position: relative;
 	z-index: 100;
-	top: 40%;
+	top: 90px;
 	color: white;
-	background-color: black;
-	opacity: 0.6;
+	opacity: 0.9;
+	text-align: center;
+	margin: 2vh;
+	animation: blinker 2s ease-in infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.5; }
 }

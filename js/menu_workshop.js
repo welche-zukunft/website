@@ -114,6 +114,9 @@ $("#ws_labels").on('click touch', function() {
 		var setter = !wsIsOpen;
 		$('.burger-ws-check[type=checkbox]').prop('checked',setter);
 		wsIsOpen = setter;
+	} else {
+		handles = $('div.handle_container');
+		highlight(handles);
 	}
 });
 

@@ -52,12 +52,6 @@ function reset_ws() {
   var subtitle = '';
   var menu_subtitle = $("#ws_menu_subtitle");
   menu_subtitle.html(subtitle);
-  var menu = $('#workshopmenu');
-  menu.unbind("click");
-  menu.click(function() {
-    handles = $('div.handle_container');
-    highlight(handles);
-  });
   var menu_content = $("#ws_menu_content");
   menu_content.html("");
   flush_boxes();

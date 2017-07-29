@@ -98,7 +98,7 @@ label.burger-ws {
 }
 
 #workshopmenu .burger-ws-check:checked ~ .navigation {
-  max-height: 500px;
+  max-height: calc( 100vh - 280px );
   -webkit-transition: max-height 0.5s ease-in-out;
   transition: max-height 0.5s ease-in-out;
 }

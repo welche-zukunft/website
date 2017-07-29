@@ -513,9 +513,9 @@
 	<script type='text/javascript' src='js/activity.js'></script>
 	<script type='text/javascript' src='js/formular.js'></script>
 	<script type='text/javascript' src='js/pin.js'></script>
-	<script type='text/javascript' src='js/hammer.min.js'></script>
-	<script type='text/javascript' src='js/gestures.js'></script>
 	<script type='text/javascript' src='js/daxes.js'></script>
 	<script type='text/javascript' src='js/evolveline.js'></script>
+	<script type='text/javascript' src='js/jquery-ui/jquery-ui.min.js'></script>
+	<script type='text/javascript' src='js/jquery.ui.touch-punch.min.js'></script>
 </body>
 </html>

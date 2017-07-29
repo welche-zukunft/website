@@ -38,8 +38,9 @@
 		<ul>
 			<li><a href="#container_section" onclick="setstatus(true);reset_ws();">Start</a></li>
 			<li><a href="#info" onclick="setstatus(false);">Das Projekt</a></li>
-			<li class="li-box" onclick="setstatus(false);"><span class="menu">Das Labor</span>
+			<li class="li-box"><span class="menu">Das Labor</span>
 				<ul>
+					<li><a href="#labor" onclick="setstatus(false);">Das Labor</a>
 					<li><a href="#ablauf" onclick="setstatus(false);">Ablauf</a>
 					<li><a href="#workshops" onclick="setstatus(false);">Workshops</a>
 					<li><a href="#plenum" onclick="setstatus(false);">Plenum</a>
@@ -95,175 +96,135 @@
 	<article id="articleinfos">
 		<section id="info"> <div class="flex"> <div class="paper">		
 			<h1>Welche Zukunft?! </h1>
-			<p class="subtitle">Von Andres Veiel und Jutta Doberstein </p>
-			<h2>
-			Samstag, 16. September 2017<br>
-			Deutsches Theater Berlin (im ganzen Haus)<br>
-			<p>Workshop- und Panels<br>
-			Von 10:00 bis 20:15 Uhr <br>
-			Kostenlose Teilnahme. Jetzt anmelden!</h2>
-			<br>
-
-			<p><i>Eurokrise, Robotik, Staatsbankrott, Dürrekatastrophen. Oder:
-			Bedingungsloses Grundeinkommen, Energiewende, globale Grundrechte. Was
-			steht uns bevor? Kommt die Zukunft über uns und wir sind nur die
-			Crash-Test Dummies der Geschichte? — Oder können wir selbst
-			gestalten und wählen?</i> </p>
-			<p>Auf Grundlage von Studien, Forschungsprojekten, Prognosen und
-			Szenarien entwirft <b>Welche Zukunft?!</b> eine mögliche Geschichte von
-			unserer Zukunft – und blickt dann von dort zurück in jene Zeit, in der
-			man „das Schlimmste hätte verhindern können“: ins Heute.</p>
-			<p>Am Deutschen Theater Berlin entwickeln Film- und
-			Theaterregisseur Andres Veiel (<i>Beuys, Das Himbeerreich</i>)
-			und Jutta Doberstein mit hochkarätigen Experten und dem Publikum
-			ein mögliches Zukunftsszenario für die kommenden 10 Jahre. Einen ganzen
-			Tag lang, in Workshops und Panels, am Samstag, dem 16. September,
-			im ganzen Haus des Deutschen Theaters.</p>
-			<p>Geleitet werden die Workshops von Vertretern namenhafter Institute:
-			PIK, IASS, Universität Oxford, Stratfor, Royal Dutch Shell, die
-			Universitäten Passau, Würzburg, Bremen, Fairesearch usw. Das Publikum
-			wird zum aktiven Mitgestalter. Besucher melden sich im Vorfeld für einen
-			der Workshops an, an dem sie den ganzen Tag teilnehmen und zusammen mit
-			den Experten verschiedene Szenarien entwerfen. Im gemeinsamen Plenum
-			werden diese Entwürfe schließlich zu einer plausiblen, faktenbasierten
-			Science Fiction Erzählung zusammengetragen.</p>
-			<p>Die Ergebnisse des <b>Welche Zukunft?!</b>-Labors fließen in ein
-			gleichnamiges Theaterstück ein, das im September 2018, am Deutschen
-			Theater uraufgeführt wird: In einem Untersuchungsausschuss wird diese
-			Zukunft auf den Prüfstand gestellt. Zeugen und Verantwortliche werden
-			einbestellt und wir fragen: Was hätten wir wissen können, wenn wir es
-			hätten wissen wollen? Was hätten wir verhindern können?  </p>
-
-			<hr>
-			<p><span class=italic>Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</span></p>
-			<div class=logos>
-			<a href="https://www.deutschestheater.de" target="_blank"><img src="image0.png" alt="logo"></a>
-			<a href="http://humboldtforum.com/de-DE/" target="_blank"><img src="image2.png" alt="logo"></a>
-			<a href="https://www.bundesregierung.de/Webs/Breg/DE/Bundesregierung/BeauftragtefuerKulturundMedien/beauftragte-fuer-kultur-und-medien.html" target="_blank"><img src="image1.png" alt="logo"></a>
-			</div><!-- logos -->
-			<p><span class=italic>Medienpartner:</span></p>
-			<div class=logos>
-			<a href="http://www.deutschlandfunkkultur.de" target="_blank"><img src="image3.png" alt="logo"></a>
-			</div><!-- logos -->
-			<br>
+			<p>Hubschrauber kreisen über dem Kurhaus von Heiligendamm. Polizeiboote patrouillieren die Ostseeküste, Möwen frieren am Strand. Drinnen, im Saal des Grandhotels, haben sich die Staats- und Regierungschefs der G12 versammelt. Es ist der 9.2. 2028 und dies ist das erste Treffen seit dem Crash, der 2026 die Weltwirtschaft lahmlegte. Die Gastgeberin, Kanzlerin von der Leyen, tritt vor das Mikrofon und begrüßt die Gäste. Ihre Rede ist kurz, formlos und endet mit einem eindringlichen Appell. </p>
+			<p>„Dies ist die letzte Chance, unsere Demokratie zu retten. Die Menschen haben den Glauben an uns verloren. Wir, die internationale Staatengemeinschaft, haben versagt. Wir haben zu wenig unternommen, zu spät reagiert. Nun. Müssen. Wir. Handeln.“ </p>
+			<p>Die versammelten Staats- und Regierungschefs werden nicht handeln. Sie werden sich aber dazu durchringen, einen Untersuchungsausschuss einzusetzen. Während draußen in den Städten Barrikaden brennen und Supermärkte geplündert werden, versucht ein internationales Panel in der Villa Perle, die Ursachen für den Zusammenbruch der Weltwirtschaft zu ermitteln, der vor zwei Jahren begonnen hat und dessen Ende nicht absehbar ist. </p>
+			<p>Zugegeben: es kann auch anders kommen. Es kann auch gut gehen. Die Krise wird abgewendet. Die Weltwirtschaft erholt sich. Die 17. Staffel von Games of Thrones wird gedreht, der Berliner Flughafen eröffnet. Wir wissen es nicht. </p>
+			<p>Aber wenn wir es wüssten - wenn wir mit Sicherheit wüssten, dass die Party im Jahr 2026 zu Ende ist, dass eine Bank oder ein Algorithmus oder ein Land die Weltwirtschaft vor die Wand fährt - was würden wir tun? Hier und jetzt, was würden wir unternehmen? Was können wir unternehmen? </p>
+			<p>„Welche Zukunft?!“ ist ein interdisziplinäres, partizipatives Forschungs- und Theaterprojekt, dass sich zur Aufgabe gestellt hat, diese Frage zu beantworten: Was können wir tun, um zu verhindern, dass uns die nächste Finanzkrise endgültig den Boden unter den Füßen wegzieht? </p>
+			
 			<hr>
 
 			<a href="#workshops"><p class="big center">&gt;&gt; zu den Workshops</p></a>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- intro -->
-		
-		<section id="ablauf"> <div class="flex"> <div class="paper">
-				
-			<h2>ABLAUF</h2>
-			<p>Am 16. September veranstalten wir von 10 bis 20 Uhr im gesamten Haus des Deutschen Theaters parallel 13 Workshops mit unterschiedlichen Themenschwerpunkten. Sie können sich zur Teilnahme an einem dieser Workshops anmelden und gemeinsam mit den ExpertInnen ein Szenario für die kommenden zehn Jahre entwerfen. Pro Workshop können 10 bis 25 Personen teilnehmen. Am Ende des Tages werden schließlich alle Workshops im Saal der Kammerspiele zusammenkommen, um die einzelnen Prognosen zu einer gemeinsamen Erzählung für die Zukunft zusammenzutragen. </p>
-
+		<section id="labor"> <div class="flex"> <div class="paper">
+		<h2>Das Labor </h2>
+		<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt des zwei-jährigen Veranstaltungszyklus. Wir laden Menschen ein, in diesem außergewöhnlichen Experiment gemeinsam mit Experten weltweit renommierter Forschungsinstitute, eine Geschichte der nächsten zehn Jahre zu schreiben, die möglichst plausibel erscheint. Hier verhandeln wir Fakten, Wissen, und Modelle – aber auch unsere Ängste, Hoffnungen und Wünsche. </p>
+		<p>Als Ausgangspunkt setzen wir eine fiktive Krise im Jahr 2026, die die Welt in eine Rezession stürzen wird. Fragen kommen auf, nach den Verantwortlichen, nach den Prozessen, die stattfinden oder abgewendet werden müssen. So entsteht ein Denkraum, in dem wir uns entscheiden können, ob wir diese Zukunft wollen - oder eben doch eine andere. Wenn sie uns nicht gefällt, müssen wir die Parameter der Laboranordnung, die unser Leben ist, verändern. Und das müssen wir jetzt tun. 
+		Das Labor versteht sich als partizipativer Prozess in dem Wissen geteilt und gemeinsam generiert wird. In 13 Workshops (Link zu Workshops) versammeln sich 250 Menschen, um Zukunftsszenarien zu entwerfen und der Krise ins Auge zu blicken. </p>
+		<p>In derselben Methode wollen wir in Zukunft Geschichte machen, über Politik entscheiden und Ressourcen verteilen. </p>
+		<p>
+		Welche Zukunft?!-Labor (Workshoptag)<br>
+		Samstag, 16. September 2017<br>
+		Deutsches Theater Berlin (im ganzen Haus)<br>
+		Von 10:00 bis 20:15 Uhr, im Anschluss Ausklang und Musik<br>
+		<a href="#anmeldung" onclick="setstatus(false);">Jetzt anmelden! </a></p>
+		</div><!-- paper --> </div><!-- flex --> </section><!-- labor -->
+		<section id="ablauf"> <div class="flex"> <div class="paper">	
+			<h2>Projektverlauf</h2>
+			<p>„Welche Zukunft?!“ ist ein auf zwei Jahre angelegtes Forschungs- und Theaterprojekt. Zusammen mit Wissenschaftlern und Publikum erforschen wir gemeinsam den Zusammenhang von Wissen, Vorhersage und Gestaltung. Irgendwo zwischen Agora, Science Fiction, mathematischem Modell und dem Zufall liegt die Geschichte der Zukunft. Müssen wir sie kennen, um sie zu ändern? </p>
+			<p>Das Projekt ist unterteilt in vier Schritte:</p>
+			<h2>Labor </h2>
+			<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt des zwei-jährigen Veranstaltungszyklus. Hier entwickeln wir auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien mit Experten und dem Publikum ein mögliches Zukunftsszenario für die kommenden 10 Jahre. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
+			<p><a href="#labor" onclick="setstatus(false);">>> mehr über das Labor</a></p>
+			<h2>Symposium </h2>
+			<p>Ein im März 2018 gemeinsam mit dem Humboldt Forum veranstaltetes Symposium setzt die Arbeit des Labors vertiefend fort. Wissenschaftler aus verschiedenen Disziplinen halten Vorträge, debattieren über die Ergebnisse des Labors und entwickeln sie weiter.</p>
+			<h2>Theaterstück</h2>
+			<p>Die Ergebnisse von Labor und Symposium fließen in ein gleichnamiges Theaterstück ein, das im September 2018, am Deutschen Theater Berlin uraufgeführt wird: In einem Untersuchungsausschuss wird die Frage nach der Verantwortung für die Ereignisse der Jahre 2018 – 2028 gestellt. Warum haben wir so und nicht anders gehandelt? Wer hätte das Schlimmste verhindern können? Experten und Schauspieler, Juristen und Politiker kommen für die Befragung zusammen. Es wird nicht über Schuld abgestimmt, sondern ermittelt, welche Entscheidungen welche Konsequenzen haben. </p>
+			<h2>Abschlusskonferenz</h2>
+			<p>Wie nun weiter?! Welche Zukunft… wird es werden?! Der vierte und letzte Teil im Herbst 2019 versucht in einer Abschlusskonferenz, die zweijährige Arbeit zu bilanzieren und konkrete Konzepte zu entwickeln. Wie könnte ein Wirtschaftssystem aussehen, das dem Menschen dient und nicht umgekehrt? In dem das Vermögen nicht nur dahin fließt, wo es den meisten Ertrag bringt, sondern dahin, wo es gebraucht wird – und das demokratisch legitimiert? Wie schon in Labor und Symposium sind Teilhabe und interdisziplinärer Austausch in diesem Prozess ebenso wesentlicher Bestandteil, wie die Inhalte, die verhandelt werden. </p>
+			<p>Ziel ist es, eine Debatte über unsere Zukunft anzuregen - aus der Stagnation heraus zu treten, die permanente Gegenwart zu verlassen. Fahren wir als Crashtest-Dummies der Geschichte vor die immer selbe Wand?</p>
+			<p>„Welche Zukunft?!“ erzählt die Geschichte der kommenden 10 Jahre, von 2018 bis 2028. </p>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- ablauf -->
 		
 
 
 		<section id="workshops"> <div class="flex"> <div class="paper">
 				
-			<h2>Die Workshops</h2>
-			<p>Am 16. September veranstalten wir von 10 bis 20 Uhr im gesamten Haus des Deutschen Theaters parallel 13 Workshops mit unterschiedlichen Themenschwerpunkten. Sie können sich zur Teilnahme an einem dieser Workshops anmelden und gemeinsam mit den ExpertInnen ein Szenario für die kommenden zehn Jahre entwerfen. Pro Workshop können 10 bis 25 Personen teilnehmen. Am Ende des Tages werden schließlich alle Workshops im Saal der Kammerspiele zusammenkommen, um die einzelnen Prognosen zu einer gemeinsamen Erzählung für die Zukunft zusammenzutragen. </p>
-			<h3>1 – Ökonomie: Fiskalische und andere Götterdämmerungen</h3>
-			<p class="workshop">Die Geister von Reagan und Thatcher... <span
-			class=bold>Prof. Dr. Rudolph Hickel</span> vom Lehrstuhl für Politische
-			Ökonomie in Bremen untersucht, wie sich die Deregulierung der US Banken
-			durch Trump auf das weltweite Finanzsystem auswirken wird.
+			<h2>Workshops</h2>
+			<p>250 Teilnehmer arbeiten in 13 Workshops in den Themen Wirtschaft, Gesellschaft, Klima, Ernährung und Identität. Die Workshops sind für alle offen, Vorwissen ist bei einigen Workshops von Vorteil, aber keinesfalls Bedingung. Die Teilnahme ist kostenlos. Man muss sich lediglich im Vorfeld dazu <a href="#anmeldung" onclick="setstatus(false);">anmelden</a> (first come, first serve). </p>
+			<p>In zwei Workshop-Sessions á 90 Minuten entwickeln die Teilnehmer und Experten gemeinsam Szenarien für den Verlauf der kommenden 10 Jahre in ihrem jeweiligen Themenfeld. </p>
+			<p>Die in den <a href="#container_section" onclick="setstatus(true);reset_ws();">Workshopbeschreibungen</a> vorgestellten Szenarien sind erste Vorschläge, Anregungen. Alles ist möglich: Die EU löst sich auf, die AfD stellt den Kanzler, die D-Mark kommt zurück, in China platzt die nächste Immobilienblase, ein neues VR Spiel hält die Menschen davon ab, zur Arbeit zu erscheinen, ein neues Medikament besiegt den Krebs, die Öl-Industrie rettet das Klima und Daniel Libeskind baut die neue Hauptstadt des vereinigten Korea in der entmilitarisierten Zone. </p>
+			<p>Wenn aber alles möglich ist – was halten wir für wahrscheinlich und plausibel? Und worauf sollten wir uns vorbereiten? Sollen wir Dämme bauen, oder die Flut verhindern? Die Banken stärker regulieren oder den gegenwärtigen Kasinokapitalismus gleich ganz abschaffen?</p>
+			<p>Die Ergebnisse werden von Moderatoren festgehalten und im Plenum (Link zum Plenum) vorgetragen und diskutiert. </p>
+			<p>Jeder Workshop hat ca. 20 Teilnehmer, jede Stimme zählt.</p> 
+			<a href="#container_section" onclick="setstatus(true);reset_ws();">>> Zu den Workshops</a><br>
+			<a href="#anmeldung" onclick="setstatus(false);">>> Zur Anmeldung</a>
+			<h2>Die Workshopthemen am 16. September </h2>
+			<h3>Ökonomie: Fiskalische und andere Götterdämmerungen</h3>
+			<p class="workshop">Soziale und ökonomische Krisen als Folge einer fehlgeleiteten Politik. Die Katastrophe kommt, aber alles könnte auch ganz anders sein.</p>
+			<p class="workshop">Experte: Prof. Dr. Rudolph Hickel (Institut für Arbeit und Wirtschaft in Bremen)</p>
 
-			<h3>2 – Ökonomie: Patient Zero - der Indexpatient Deutsche Bank</h3>
-			<p class="workshop">Too big to fail? Können Deutsche Bank,
-			Goldman-Sachs oder Credit Suisse die Weltwirtschaft lahmlegen? <span
-			class=bold>Dr. Dieter Hein</span> vom unabhängigen Analyse-Institut
-			Fairesearch entwickelt ein Szenario, in dem die Banken die Politik zum
-			nächsten Bail-out zwingen. </p>
+			<h3>Ökonomie: Patient Zero - der Indexpatient Deutsche Bank</h3>
+			<p class="workshop">Too big to fail oder: Wie gefährlich ist die Deutsche Bank?</p>
+			<p class="workshop">Experte: Dieter Hein (fairesearch)</p>
+			
+			<h3>Ökonomie: Armageddon</h3>
+			<p class="workshop">Wenn die AfD den Kanzler stellt… Protektionismus, Deflation und Währungskrisen.</p>
+			<p class="workshop">Experten: Prof Dr. Bofinger (Uni Würzburg) und Dr. Dirk Ehnts (Uni Chemnitz)</p>
 
-			<h3>3 – Ökonomie: Armageddon</h3>
-			<p class="workshop">Retten wir den Euro, und lassen dafür Italien und
-			Griechenland über die Klinge springen? <span class=bold>Prof. Dr. Peter
-			Bofinger</span>, dienstältestes Mitglied des Sachverständigenrates für
-			Wirtschaft und <span class=bold>Dr. Dirk Ehnts</span>, Spezialist für
-			Makroökonomie an der TU Chemnitz erforschen unsere Zukunft in einem
-			Weltmarkt, der aus den Fugen gerät und in dem uns auch die D-Mark nicht
-			mehr retten kann. </p>
+			<h3>Ökonomie: Der Weg zur Hölle ist mit guten Vorsätzen gepflastert</h3>
+			<p class="workshop">Was passiert, wenn Regulierung die Prozesse beschleunigt, die sie verhindern soll? </p>
+			<p class="workshop">Experte: Dr. Armin Haas (Institute for Advanced Sustainability Studies in Potsdam)</p>
+			
+			<h3>Recht und Gesetz: Staatsverluste?!</h3>
+			<p class="workshop">Staatsbankrott ist nur der letzte Schritt in einem langen Prozess. Welche Regeln herrschen im Chaos und wer setzt sie um? </p>
+			<p class="workshop">Experte: Prof. Dr. Kai von Lewinski (Professor für Öffentliches Recht, Uni Passau)</p>
+			
+			<h3>Risikomanagement: Guter Rat – Notvorrat …</h3>
+			<p class="workshop">Kann man sich gegen systemische Risiken versichern? Kann man sich überhaupt schützen?</p>
+			<p class="workshop">Experte: Prof. Dr. Volker Deville (Uni Bayreuth, ehemals Allianz Research)</p>
 
-			<h3>4 – Ökonomie: Der Weg zur Hölle ist mit guten Vorsätzen gepflastert</h3>
-			<p class="workshop">Können unsere sozialen Protokolle mit den
-			Algorithmen mithalten? <span class=bold>Dr. Armin Haas</span> vom
-			Institute for Advanced Sustainability Studies, Potsdam forscht zu
-			viraler Ansteckung im Markt und fragt, wie viel uns die Geschichte des
-			Marktes über seine Zukunft verrät. </p>
+			<h3>Energy transitions (in engl. Sprache)</h3>
+			<p class="workshop">After Oil - but not in the dark ages.</p>
+			<p class="workshop">Experts: Dr. Cho Khong and Geraldine Wessing (Royal Dutch Shell)</p>
+			
+			<h3> Wetter: Eine neue Normalität</h3>
+			<p class="workshop">Welche Rolle spielt jeder Einzelne in einem chaotischen System?</p>
+			<p class="workshop">Experten: Jascha Lehmann, Marlene Kretschmer, Kai Kornhuber, Sonja Molnos (Potsdam-Institut für Klimafolgenforschung)</p>
 
-			<h3>5 – Recht und Gesetz: Staatsverluste?!</h3>
-			<p class="workshop">Was, wenn Italien, Griechenland und Portugal den
-			Bankrott erklären und Deutschland auf den Schulden sitzen bleibt? Wenn
-			die Polizei nicht mehr zur Arbeit kommt? <span class=bold>Prof. Dr. Kai
-			von Lewinski</span> lehrt Öffentliches Recht an der Universität Passau
-			und kann die Folgen des Bankrott für unsere Gesellschaft anschaulich
-			beschreiben. War es das, was die Neo-Cons mit: „weniger Staat“ gemeint
-			haben?  </p>
+			
+			<h3>Geopolitics: Intersections (in engl. Sprache)</h3>
+			<p class="workshop">War and peace and who can afford it?</p>
+			<p class="workshop">Expert: Rodger Baker (Stratfor)</p>
+			
+			
+			<h3>Arbeit: Zukunft ohne Arbeitgeber?</h3>
+			<p class="workshop">Holokratie, Automatisierung, flexible Arbeitsformen, virtuelle Teams, lokale Produktion, Cult of Less, Armut oder Verzicht?</p>
+			<p class="workshop">Expertin: Cormelia Daheim (Future Impacts)</p>
+			
+			<h3>Identitäten: Heiße Luft</h3>
+			<p class="workshop">Geschichte wiederholt sich nicht buchstäblich, sondern als Farce.</p>
+			<p class="workshop">Experte: Martin Burckhardt (Autor und Kulturtheoretiker)</p>
+			
 
-			<h3>6 – Risikomanagement: Guter Rat – Notvorrat …</h3>
-			<p class="workshop"><span class=bold>Prof. Dr. Volker Deville</span>
-			von der Allianz Versicherung spielt mit Wild Cards: Ein Ausbruch der
-			Phlegräischen Felder in Italien oder ein Durchbruch bei der
-			Tumorforschung, der das Rentensystem endgültig zum Erliegen bringt. Die
-			Versicherer sind Experten für das Unerwartete, dafür entwickeln sie
-			Modelle. Sind die Versicherer die neuen Auguren?</p>
+			<h3>Elite & Demokratie: Rolle rückwärts</h3>
+			<p class="workshop">Die Eliten in den meisten wichtigen Ländern haben die Ursachen der letzten Krise nicht wirklich begriffen oder begreifen wollen.</p>
+			<p class="workshop">Experte: Michael Hartmann (Prof. i.R. für Soziologie, TU Darmstadt)</p>
 
-			<h3>7 – Energy supply: Titel fehlt noch (in engl. Sprache)</h3>
-			<p class="workshop">Transnationale Korporationen betrachten die
-			Zukunft nüchtern, analytisch. Es wird Krieg geben, oder nicht - wer weiß
-			das schon? Aber die Energiewende ist sicher. <span class=bold>Dr. Cho-On
-			Khong</span> ist Chief Analyst für Royal Dutch Shell. Von London aus
-			entwirft er Szenarien für die radikalen Umwälzungen, die der Firma - und damit auch uns - bevorstehen.</p>
-
-			<h3>8 – Wetter: Eine neue Normalität</h3>
-			<p class="workshop">Alle reden vom Klima - die vier Forscher <span class=bold>Kornhuber, Kretschmer, Lehmann und Molnos</span> aus der Arbeitsgruppe Earth Systems Analysis am PIK reden vom Wetter. Extreme Sommer, extreme Winter - die Vorboten des Klimawandels. Wann ist der „Point of No Return“? Wann ist Extrem-Wetter Normalität und wir treten den geordneten Rückzug ins Binnenland an?</p>
-
-			<h3>9 – Geopolitics: Intersections (in engl. Sprache)</h3>
-			<p class="workshop">Geopolitik - die Politik des Raumes. Ist der Traum der Welt ohne Grenzen bereits ausgeträumt und wir reden wieder von
-			lokalen Hegemonialmächten, Zugang zu Wasserwegen und einem Weltkrieg,
-			der im Weltall ausgetragen wird? <span class=bold>Dr. Rodger
-			Baker</span> von Stratfor berät Regierungen, Geheimdienste und Konzerne,
-			die über Krieg und Frieden entscheiden müssen.</p>
-
-			<h3>10 – Arbeit: Zukunft ohne Arbeitgeber?</h3>
-			<p class="workshop">In 10 Jahren wird es keine Arbeitsplätze im
-			Bereich von Logistik und Retail geben. Und das ist nur die Robotik. Was
-			passiert mit den Juristen, Bankangestellten und Medizinern, wenn
-			künstliche Intelligenz den Markt übernimmt? Können wir uns darauf
-			vorbereiten? <span class=bold>Cornelia Daheim</span> von Future Impacts
-			leitet die deutsche Vertretung des „Millenium Project“, das jährlich den
-			„State of the Future“ Report zur Zukunft der Arbeit veröffentlicht.</p>
-
-			<h3>11 – Identitäten: Heiße Luft</h3>
-			<p class="workshop"><span class=bold>Dr. Martin Burckhardt</span> hat
-			mit „Score“ seine eigene Vision von einer Gesellschaft entworfen, in der
-			Spiel und Arbeit identisch sind. Nach dem Zusammenbruch der
-			Weltwirtschaft wird unsere Identität Sinnstiftung und Währung zugleich.
-			Können wir konsumieren, was wir nicht produzieren?</p>
-
-			<h3>12 – Elite & Demokratie: Rolle rückwärts</h3>
-			<p class="workshop">Soziologe <span class=bold>Michael Hartmann</span>
-			forscht zu der Rolle der bundesrepublikanischen und europäischen
-			Leistungselite. Bleiben angesichts der Selbstrekrutierung dieser
-			Führungszirkel Chancengleichheit und Verteilungsgerechtigkeit leere
-			Versprechen? Und wie verstärkt die von Hartmann konstituierte soziale
-			Immobilität eine neue Wirtschafts- und Finanzkrise? Oder ist sie sogar
-			einer ihrer Ursachen? </p>
-
-			<h3>13 – Versorgungssicherheit: food/landgrabbing/agriculture (in engl. Sprache)</h3>
-			<p class="workshop">Wie viele Menschen können wir ernähren, wenn die Äcker und Obstgärten durch Klimawandel und Überdüngung vernichtet sind - wo sind die Anbauflächen der Zukunft und wem gehören sie? <span
-			class=bold>richtiger Text fehlt noch</span> erforscht diese Fragen in der Food Systems Group am Environmental Change Institute der University of Oxford. Es geht um unser Überleben, aber auch darum, wem die Weinberge
-			im Norden Schottlands gehören werden und wer sie jetzt schon plant.  </p>
+			<h3>Versorgungssicherheit: food/landgrabbing/agriculture (in engl. Sprache)</h3>
+			<p class="workshop">???</p>
+			<p class="workshop">Experts: Dr. Ariella Helfgott, Dr. George Garbutt & Patrick O’Reilly (University of Oxford)</p>
 
 		</div><!-- paper --> </div><!-- flex --> </section><!-- workshops -->
 		
 		<section id="plenum"> <div class="flex"> <div class="paper">
 				
-			<h2>DAS PLENUM</h2>
-			<p>Am 16. September veranstalten wir von 10 bis 20 Uhr im gesamten Haus des Deutschen Theaters parallel 13 Workshops mit unterschiedlichen Themenschwerpunkten. Sie können sich zur Teilnahme an einem dieser Workshops anmelden und gemeinsam mit den ExpertInnen ein Szenario für die kommenden zehn Jahre entwerfen. Pro Workshop können 10 bis 25 Personen teilnehmen. Am Ende des Tages werden schließlich alle Workshops im Saal der Kammerspiele zusammenkommen, um die einzelnen Prognosen zu einer gemeinsamen Erzählung für die Zukunft zusammenzutragen. </p>
-
+			<h2>PLENUM</h2>
+			<p>Zwei Mal treffen sich alle Teilnehmer der Workshops zum Plenum. Moderiert von Ulrike Hermann und Adrian Taylor werden die Ergebnisse der Workshops zusammen getragen und am Szenarientisch auf einer interaktiven Timeline so lange arrangiert und umarrangiert, bis aus den Fragmenten und Thesen eine plausible Erzählung entsteht. Geschichte wird gemacht… Das Szenario wird nicht immer eindeutig festzulegen sein, aber insgesamt muss der Ablauf der Ereignisse nachvollziehbar werden.</p>
+			<p>Die Teilnehmer beobachten, wie die Experten und Moderatoren ihre Ergebnisse verwerten, haben dabei immer die Möglichkeit, selbst zu kommentieren, zu ergänzen, Einspruch zu erheben. </p>
+			<h3>Am Kritikertisch: Joseph Vogl</h3>
+			<p>„Die Erhöhung von Redeangeboten in akademisch nicht formatierten Bereichen ist eine Einladung von Produktion von Quatsch“ *<br><br>
+			Joseph Vogl, von Hause aus Literatur – und Medienwissenschaftler an der Humboldt Universität, gilt als einer der scharfsinnigsten Analytiker der vorherrschenden ökonomischen Lehre. In seinem Buch „Gespenst des Kapitals“ hinterfragt er den noch weit verbreiteten Glauben an die unsichtbare Hand des Marktes. 
+			Zugleich ist Vogl auch ein Kritiker von „rhetorischen Schwellkörpern“. Ihm bereitet das Produzieren von Zuspitzungen, Pointen und handlichen Thesen grundsätzlich ein schlechtes Gewissen. <br><br>
+			Joseph Vogl wird den Labortag kritisch begleiten und uns eine abschließende Keynote auf den Weg geben. <br><br>
+			* Moritz von Uslar im Gespräch mit Joseph Vogl. Aus: Die ZEIT Nr 20 / 2017 vom 14.Mai
+			</p>
+			<h3>Moderatoren im Plenum am 16. September</h3>
+			<p><b>Ulrike Herrmann</b> absolvierte nach einer abgeschlossenen Lehre als Bankkauffrau die Henri-Nannen-Schule. Anschließend studierte sie Wirtschaftsgeschichte und Philosophie an der FU Berlin. Seit 2000 ist sie Wirtschaftskorrespondentin bei der Berliner taz. Dort war sie auch Parlamentskorrespondentin und leitete die Meinungsredaktion. Sie gehört auch zum Vorstand der taz-Verlagsgenossenschaft.</p>
+			<p><b>Adrian Taylor</b> gründete das Unternehmen 4Sing Foresight to Strategy for Security and Sustainability in Governance. Er unterstützt sowohl Kunden im öffentlichen wie im privaten Sektor, Vorhersagemethoden anzuwenden um nachhaltigere Strategien zu entwickeln. Er ist spezialisiert auf inhaltliche Beratung, Prozessdesign und Workshop-Moderation vor allem in den Themen Sicherheit und Nachhaltigkeit und hat breite Erfahrung in der Anwendung zahlreicher Methoden um zukünftige Veränderungen in der Welt zu prognostizieren. Bisher hat Adrian Taylor bereits in über 33 Ländern gearbeitet. Er gibt Workshops auf Englisch, Französisch und Deutsch.<br>
+			Vor Beginn seiner Selbständigkeit war er: Junior-Offizier in der britischen Armee, Lobbyist in EU-Angelegenheiten, Szenarien-Planer in einem Gemeinschaftsprojekt mit Global Business Network, Länderreferent für Indien bei der Europäischen Kommission, Gastwissenschaftler bei Georgie Tech, beschäftigt bei der European School of Governance und dort zugleich Präsident des European Open Source Intelligence Forums.<br>
+			Adrian Taylor absolvierte ein Studium der Philosophie, Politik und Wirtschaft am Trinity College Oxford und im Fach Europäische Studien eine Lizenz Spéciale (Master) „mit hoher Auszeichnung“ von der Université Libre deBruxelles. Adrian Taylor ist in London geboren und aufgewachsen und hat anschließend 24 Jahre an verschiedenen Orten gelebt, vor allem in Gibraltar, Brüssel, Atlanta, Zürich, New York und München. Er wohnt derzeit in Hamburg.</p>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- planum -->
 		
 		<section id="anmeldung"> <div class="flex"> <div class="paper">

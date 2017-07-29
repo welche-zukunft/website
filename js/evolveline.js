@@ -44,7 +44,7 @@ var mouseX = 0, mouseY = 0;
 //WINDOW SIZE
 var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
-
+var orientation = "horizontal";
 
 var aspect = window.innerWidth/window.innerHeight;
 if(window.innerHeight > window.innerWidth){
@@ -151,6 +151,7 @@ function init() {
 	var distance = window.innerWidth + ( window.innerWidth * 0.9);
 	if(window.innerWidth < window.innerHeight){
 		distance = window.innerWidth + ( window.innerWidth * 0.009);
+		orientation = "vertical";
 	}
 	FOV = 2 * Math.atan( window.innerWidth / ( 2 *distance))*180 / Math.PI;
 

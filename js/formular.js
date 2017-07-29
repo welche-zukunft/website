@@ -7,6 +7,12 @@ function addoptions(){
 	$('#anmeldeinfos').hide(); 
 	$('#newsletter').hide(); 
 	$('#agbs').hide();
+	
+	var headlines = $( "#workshops" ).find( "h3" );
+	for(i = 0; i < headlines.length; i++){
+		headlines[i].style.color = metacontents[i].color;
+	}
+	
 }
 
  $(function() {

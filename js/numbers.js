@@ -118,10 +118,12 @@ function createNumberWalls(){
 		book.doubleSided = true;
 		var a = i/n * Math.PI*2 + Math.PI/2;
 		var boxy = new THREE.Box3().setFromObject( book );
-		console.log(boxy.getSize().x);
 		book.position.x = -1. * (boxwidth) + (2*boxwidth*i);
+		if(orientation == "vertical"){
+			book.position.x = -1. * (boxwidth*2) + (4*boxwidth*i);
+		}
 		book.position.y = (boxy.getSize().y * 0.3)/2.;
-		book.position.z = 3.-(boxy.getSize().x * i*0.1 );
+		book.position.z = 3.-(boxy.getSize().x*0.35 * i );
 		book.rotation.y = Math.PI/2 + (Math.PI*i);
 		book.scale.set(0.35,0.35,0.35);
 		books.push(book);

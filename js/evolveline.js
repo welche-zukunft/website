@@ -215,10 +215,10 @@ function init() {
 		yearmat.alphaTest= 0.5; // if transparent is false
 		yearmat.transparent= false;
 		yearmat.alphaMap = yeartextures[i];
-		var geometry = new THREE.PlaneGeometry( 1.6, 0.4, 1. );
+		var geometry = new THREE.PlaneGeometry( 1.2, 0.3, 1. );
 	
 		var plane = new THREE.Mesh( geometry, yearmat );
-		plane.position.set((boxwidth/2. * -1.)+1.,(boxheight/2. * -1.)-0.2, (-i*boxdepth)+(boxdepth/2.));
+		plane.position.set((boxwidth/2. * -1.)+1.,(boxheight/2. * -1.)-0.2, (-i*boxdepth)+(boxdepth/2.)-0.2);
 		scene.add( plane );
 		} 
 

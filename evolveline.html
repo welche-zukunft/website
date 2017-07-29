@@ -311,9 +311,10 @@
 						<br>
 						<input name="agb" type="hidden" value="NO">
 						<input name="agb" class="agb_check" type="checkbox" value="YES">
-						<label class="agbs">Ich habe die Infos und AGBs gelesen und bin damit einverstanden.</label>
+						<label class="agbs">Ich habe die <a href="#agb_area" onclick="showagbs(true);">AGBs</a> gelesen und bin damit einverstanden.</label>
 						<button type="submit">Jetzt anmelden</button>
 						<label id="form_result" class="result" style=""></label>
+
 					</form><!-- anmeldung -->
 				</div><!-- anmeldeformular -->
 				<div id="anmeldeinfos" class="anmeldeinfos"><br>
@@ -338,10 +339,30 @@
 					<label >E-Mailadresse</label>
 					<input type="text" name="mailadresse" id="mailadresse" value="<?php echo $sub_mail;?>">
 					<br>
+					<input name="agb" type="hidden" value="NO">
+					<input name="agb" class="agb_check" type="checkbox" value="YES">
+					<label class="agbs">Ich habe die <a href="#agb_area" onclick="showagbs(true);">AGBs</a> gelesen und bin damit einverstanden.</label>
 					<button type="submit">Newsletter abonnieren</button>
 					<label class="result" style="<?php echo $result_display;?>"><?php echo $feedback;?></label>
 				</form>
 				</div>
+										<section id="agb_area">
+						<div id="agbs" class="agbtext">
+						<label ><a href="#anmeldung" onclick="showagbs(false);">AGBs schliessen</a></label>
+						<p >
+						Erhebung und Verwendung Ihrer Daten bei Anmeldung zum Workshop<br><br>
+						Die von Ihnen bei der Anmeldung zum Workshop eingegebenen Angaben werden auf dem Server von „Welche Zukunft?!“ gespeichert. Erforderliche Daten (Pflichtfelder) sind hierbei: Name, Mailadresse, ausgewählter Workshop und Sprache (letzteres nur bei Workshopauswahl „olympisch“). Die Angabe zu Ihrem Zukunftsszenario ist freiwillig und dient uns dazu …???. Wir behandeln die Daten vertraulich und verwenden sie ausschließlich zu organisatorischen Zwecken (wer nimmt an welchem Workshop teil) und zu Informationszwecken zum Workshoptag. Wir werden Wissenswertes zum Ablauf des Tages oder zum Workshopthema an Ihre E-Mail-Adresse versenden. Ihre Daten werden nur so lange gespeichert, wie es zur Organisation des Workshoptages erforderlich ist und spätestens im November 2017 gelöscht. Durch Abmelden vom Workshop durch den Nutzer werden die Daten nach maximal 6 Wochen unwiderruflich gelöscht. Möchten Sie dennoch weiter im Mailing-Verteiler von „Welche Zukunft?!“ vertreten sein und Informationen durch uns erhalten, melden Sie sich einfach für den Newsletter an.
+						<br><br>
+						Bild- und Tonaufnahmen am Workshoptag<br><br>
+						Während des "Welche Zukunft?!“-Labors am 16. September werden durch die Mitarbeiter des Deutschen Theaters Berlin Bild- und Tonaufnahmen von den Workshops und Plena angefertigt. Diese dienen der weiteren Recherche und einer späteren Veröffentlichung. 
+						<br><br>
+						Newsletter<br><br>
+						Um sich bei unserem E-Mail-Newsletterdienst anmelden zu können, benötigen wir mindestens Ihre E-Mail-Adresse, an die der Newsletter versendet werden soll. Etwaige weitere Angaben sind freiwillig und werden verwendet, um Sie persönlich ansprechen und den Inhalt des Newsletters persönlich ausgestalten zu können. Wir werden Ihnen erst dann den Newsletter zusenden, wenn Sie zuvor Ihre Anmeldung per von uns zugesendetem Link bestätigen. Damit möchten wir sicherstellen, dass nur Sie selbst sich als Inhaber der angegebenen E-Mail-Adresse zum Newsletter anmelden können. Ihre diesbezügliche Bestätigung muss binnen einer Woche nach Erhalt der Bestätigungs-E-Mail erfolgen, da andernfalls Ihre Newsletter-Anmeldung automatisch aus unserer Datenbank gelöscht wird. Sie können einen von Ihnen bei uns abonnierten Newsletter jederzeit abbestellen indem Sie ganz einfach über den Link am Ende des Newsletters eine Stornierung vornehmen.
+						<br><br>
+						Protokollierung<br><br>
+						Auf dem Server der Website werden standardmäßig Protokolleinträge Ihres Zugriffs aufgezeichnet. Diese werden von uns nicht ausgewertet oder in irgend einer Art weiterverwendet. </p>
+						</div>
+						</section>
 			</div>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- anmeldung -->
 

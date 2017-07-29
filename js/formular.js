@@ -6,6 +6,7 @@ function addoptions(){
 	//deselect rider 2 & 3 in anmeldung
 	$('#anmeldeinfos').hide(); 
 	$('#newsletter').hide(); 
+	$('#agbs').hide();
 }
 
  $(function() {
@@ -47,7 +48,10 @@ $( "#getnews" ).on( "click", function() {
 });
 
 
-
+function showagbs(show){
+	if(show ==true)	$('#agbs').show();
+	if(show ==false) $('#agbs').hide();
+}
 
 
 

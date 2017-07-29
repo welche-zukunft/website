@@ -22,6 +22,14 @@ textarea {
 		font-family: 'Oxygen', sans-serif;
 }
 
+#agbs{
+	display:block;
+}
+.agbtext {
+	margin-top:40px;
+	
+}
+
 .hl_form{
 	font-size: 26px;
 	text-align: center ;

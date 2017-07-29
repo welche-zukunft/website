@@ -33,8 +33,10 @@ mc.on("tap", function(ev) {
 			setTimeout(function () {
 			$('#tutorial').find("span").animate({opacity:1},function(){$(this).animate({opacity:0});  
 			});
-			}, 500);
-			});
+			}, 200);
+			$('#tutorial').addClass('tutorial_unanimated');
+			$('#tutorial').removeClass('tutorialanimation');
+		});
 		}			
 
 		if(camposIntern < -1 ) {

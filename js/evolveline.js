@@ -1,5 +1,5 @@
 // States
-var statistics = false;
+var statistics = true;
 var showWalls = true;
 var showDax = true;
 
@@ -479,8 +479,9 @@ window.addEventListener('wheel', throttle(function movecamera(e){
 		setTimeout(function () {
 		$('#tutorial').find("span").animate({opacity:1},function(){$(this).animate({opacity:0});  
 		});
-		}, 500);
-		$('#tutorial').find("span").switchClass( "tutorial", "tutorial_unanimated", 1000, "easeInOutQuad" );
+		}, 200);
+		$('#tutorial').addClass('tutorial_unanimated');
+		$('#tutorial').removeClass('tutorialanimation');
 		});
 	}
 	

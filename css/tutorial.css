@@ -7,6 +7,10 @@
 	opacity: 0.9;
 	text-align: center;
 	margin: 2vh;
+	
+}
+
+.tutorialanimation{
 	animation: blinker 2s ease-in infinite;
 }
 
@@ -14,7 +18,7 @@
   50% { opacity: 0.5; }
 }
 
-#tutorial_unanimated{
+.tutorial_unanimated{
 	font-size: 15px;
 	position: relative;
 	z-index: 100;

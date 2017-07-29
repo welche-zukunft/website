@@ -160,7 +160,7 @@ function init() {
 	scene = new THREE.Scene();
 	scene.fog = new THREE.FogExp2( 0x111111, 0.03 );
 	// camera
-	camera = new THREE.PerspectiveCamera( FOV, window.innerWidth / window.innerHeight, 0.5, 100 );
+	camera = new THREE.PerspectiveCamera( FOV, window.innerWidth / window.innerHeight, 1., 100 );
 	camera.position.set( 0, 2, 10 );
 	camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
 	camera.up = new THREE.Vector3(0,1,0);
@@ -461,7 +461,6 @@ var campos = camposIntern + 1;
 var setOverview = true;
 
 window.addEventListener('wheel', throttle(function movecamera(e){
-	console.log(active);
 	if(active == true && wsIsOpen == false && current_workshop_id != 13){
 
 	if(platform == "MacIntel"){	

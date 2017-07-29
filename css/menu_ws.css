@@ -160,6 +160,10 @@ label.ws_content {
   font-size: smaller;
 }
 
+#ws_pdf p {
+	margin-bottom: 125px;
+}
+
 #ws_image, #ws_content_span {
   margin: 0vh 2vh 1vh 2vh;
 }

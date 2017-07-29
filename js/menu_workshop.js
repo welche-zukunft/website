@@ -73,9 +73,6 @@ if(namemoderator != ""){
     + '<p class="ws_hl">'
 	+ "Moderation"
     + '</p>'
-	+ '<p class="ws_name">'
-    + namemoderator
-    + '</p>'
     + '<p>'
     + vitamoderator
     + '</p>'
@@ -84,7 +81,7 @@ if(namemoderator != ""){
 }
 	if(material != ""){
 	menu_content.append(
-	'<div id="ws_intro" class="ws_content">'
+	'<div id="ws_pdf" class="ws_content">'
 	+'<p>'
 	+ '<a href="./pdf/' + material + '" target="_blank">'
     + ">> Link zu Workshop-PDF"

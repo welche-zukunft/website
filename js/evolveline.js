@@ -19,6 +19,7 @@ var timelineCount = 13;
 var eventCount = 15;
 var initialized = false;
 var time = new Date();
+var camerastart = 1.;
 
 //arrays for lines
 var line = [];
@@ -48,6 +49,7 @@ var windowHalfY = window.innerHeight / 2;
 var aspect = window.innerWidth/window.innerHeight;
 if(window.innerHeight > window.innerWidth){
 	aspect = window.innerHeight/window.innerWidth*2.;
+	camerastart = 2.;
 }
 
 //timeline width
@@ -125,15 +127,11 @@ function get_metainformations(){
 		setTimeout(function () {
 		$('#tutorial').find("span").animate({opacity:0},function(){
 		if(language=="deu"){
-			var tutorialtext = "Wähle einen Workshop und Scrolle vor und zurück um im Szenario zu navigieren.";
-			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-				tutorialtext = "Wähle einen Workshop und tappe in der oberen Hälfte deines Screens um im Szenario nach vorne und in der unteren Hälfte um zurück zu navigieren.";
-		}}
+				tutorialtext = "Wähle einen Workshop und klicke oder tappe in der oberen Hälfte deines Screens um im Szenario nach vorne und in der unteren Hälfte um zurück zu navigieren.";
+		}
 		else if(language=="eng"){
-			var tutorialtext = "Select a Workshop and scroll up and down to navigate through the scenario.";
-			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-				tutorialtext = "Select a workshop and tap in the upper half of your screen to navigate forward, and in the lower half to navigate backward through the scenario";
-		}}
+				tutorialtext = "Select a workshop and click or tap in the upper half of your screen to navigate forward, and in the lower half to navigate backward through the scenario";
+		}
         $(this).text(tutorialtext)
             .animate({opacity:1});  
 		});

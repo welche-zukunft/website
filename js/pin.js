@@ -68,7 +68,7 @@ function drawPin(index,j){
 		pintextures.push(texture);
 		pin.computeFaceNormals();
 		pin.computeVertexNormals();
-		pinmat = new THREE.MeshPhongMaterial({ map: pintextures[i],specular: 0x373737,precision: "lowp"  });
+		pinmat = new THREE.MeshPhongMaterial({ map: pintextures[i],specular: 0x373737 });
 		pinmat.side = THREE.DoubleSide;
 		pinmat.shininess = 20;
 		pinmat.transparent = false;

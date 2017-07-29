@@ -36,6 +36,7 @@ mc.on("tap", function(ev) {
 			}, 200);
 			$('#tutorial').addClass('tutorial_unanimated');
 			$('#tutorial').removeClass('tutorialanimation');
+			$('#tutorial').remove();
 		});
 		}			
 

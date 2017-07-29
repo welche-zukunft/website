@@ -1,5 +1,5 @@
 // States
-var statistics = true;
+var statistics = false;
 var showWalls = true;
 var showDax = true;
 
@@ -461,6 +461,7 @@ var campos = camposIntern + 1;
 var setOverview = true;
 
 window.addEventListener('wheel', throttle(function movecamera(e){
+	console.log(active);
 	if(active == true && wsIsOpen == false && current_workshop_id != 13){
 
 	if(platform == "MacIntel"){	
@@ -482,6 +483,7 @@ window.addEventListener('wheel', throttle(function movecamera(e){
 		}, 200);
 		$('#tutorial').addClass('tutorial_unanimated');
 		$('#tutorial').removeClass('tutorialanimation');
+		$('#tutorial').remove();
 		});
 	}
 	

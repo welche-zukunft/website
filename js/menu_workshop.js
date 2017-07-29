@@ -105,6 +105,7 @@ $("#burger-check").on('click touch',function(){
 
 $('#navigation1 a').on('click touch',function() {
      $('.burger-check[type=checkbox]').prop('checked',false);
+	 menuisOpen = false;
 });
 
 

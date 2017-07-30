@@ -103,9 +103,6 @@
 			<p>Aber wenn wir es wüssten - wenn wir mit Sicherheit wüssten, dass die Party im Jahr 2026 zu Ende ist, dass eine Bank oder ein Algorithmus oder ein Land die Weltwirtschaft vor die Wand fährt - was würden wir tun? Hier und jetzt, was würden wir unternehmen? Was können wir unternehmen? </p>
 			<p>„Welche Zukunft?!“ ist ein interdisziplinäres, partizipatives Forschungs- und Theaterprojekt, dass sich zur Aufgabe gestellt hat, diese Frage zu beantworten: Was können wir tun, um zu verhindern, dass uns die nächste Finanzkrise endgültig den Boden unter den Füßen wegzieht? </p>
 			
-			<hr>
-
-			<a href="#workshops"><p class="big center">&gt;&gt; zu den Workshops</p></a>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- intro -->
 		<section id="labor"> <div class="flex"> <div class="paper">
 		<h2>Das Labor </h2>
@@ -146,7 +143,7 @@
 			<p>In zwei Workshop-Sessions á 90 Minuten entwickeln die Teilnehmer und Experten gemeinsam Szenarien für den Verlauf der kommenden 10 Jahre in ihrem jeweiligen Themenfeld. </p>
 			<p>Die in den <a href="#container_section" onclick="setstatus(true);reset_ws();">Workshopbeschreibungen</a> vorgestellten Szenarien sind erste Vorschläge, Anregungen. Alles ist möglich: Die EU löst sich auf, die AfD stellt den Kanzler, die D-Mark kommt zurück, in China platzt die nächste Immobilienblase, ein neues VR Spiel hält die Menschen davon ab, zur Arbeit zu erscheinen, ein neues Medikament besiegt den Krebs, die Öl-Industrie rettet das Klima und Daniel Libeskind baut die neue Hauptstadt des vereinigten Korea in der entmilitarisierten Zone. </p>
 			<p>Wenn aber alles möglich ist – was halten wir für wahrscheinlich und plausibel? Und worauf sollten wir uns vorbereiten? Sollen wir Dämme bauen, oder die Flut verhindern? Die Banken stärker regulieren oder den gegenwärtigen Kasinokapitalismus gleich ganz abschaffen?</p>
-			<p>Die Ergebnisse werden von Moderatoren festgehalten und im Plenum (Link zum Plenum) vorgetragen und diskutiert. </p>
+			<p>Die Ergebnisse werden von Moderatoren festgehalten und im <a href="#plenum" onclick="setstatus(false);">Plenum</a> vorgetragen und diskutiert. </p>
 			<p>Jeder Workshop hat ca. 20 Teilnehmer, jede Stimme zählt.</p> 
 			<a href="#container_section" onclick="setstatus(true);reset_ws();">>> Zu den Workshops</a><br>
 			<a href="#anmeldung" onclick="setstatus(false);">>> Zur Anmeldung</a>

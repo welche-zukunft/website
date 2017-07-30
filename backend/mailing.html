@@ -45,7 +45,7 @@
 		
 		
 		<!-- formular -->
-		<td class="breitespalte">	
+		<td class="mittespalte">	
 		<h4>Email versenden</h4>
 		<label for="zuname">An:</label> 
 		<br>
@@ -58,6 +58,8 @@
 		<select name="top5" size="1">
 				<option></option>
 				<option>alle</option>
+		</select>
+				<button type="button" id="hinzufügen">zu Empfängern hinzufügen</button>
 		</td>
 		<td width="30vh">
 		<label for="zuname">Workshopteilnehmer</label>
@@ -76,6 +78,7 @@
 				<option>Arbeit I</option>
 				<option>Arbeit II</option>
 			</select>
+			<button type="button" id="hinzufügen">zu Empfängern hinzufügen</button>
 		</td>
 		<td width="30vh">
 		<label for="zuname">Einzelperson</label>
@@ -92,6 +95,7 @@
 				<option>Siegmund Jähn</option>
 				<option>David Fehlmann</option>
 			</select>
+			<button type="button" id="hinzufügen">zu Empfängern hinzufügen</button>
 		</td>
 		</tr>
 		</table>
@@ -104,10 +108,36 @@
 		<textarea rows="30" cols="90"></textarea>
 		<table width="95%" border="1" class="thintable">
 		<tr class="headline">
-		<td width="70vh">
+			<td width="50%">		
+			<img src="../images/cat.jpg" alt="foto"> 
+			<p><u>Füge Pfad in Markup ein:</u></p>
+			<p>/path/to/cat.jpg</p>
+			</td>
+			
+			<td width="50%">
+			
+			<button type="reset">Bild hochladen</button>
+			<button type="reset">Bild löchen</button>
+			<br><br>
+			<p>Bereits hochgeladenes Bild einfügen</p>
+			<select name="top5" size="1">
+				<option></option>
+				<option>g20.jpg</option>
+				<option>lustigestaschenbuch.jpg</option>
+				<option>stabhochsprung.jpg</option>
+				<option>schoenekatze.jpg</option>
+			</select>
+			<br><br>		
+			</td>
+		</tr>
+		</table>
+<br><br>		
+		<table width="95%" border="1" class="thintable">
+		<tr class="headline">
+		<td width="50%">
 		<a href="infos.pdf">infos.pdf (239.7 kb)</a>
 		</td>
-		<td width="30vh">
+		<td width="50%">
 		<button type="reset">Anhang anfügen</button>
 		<button type="reset">Anhang löschen</button>
 		<br><br>
@@ -117,7 +147,30 @@
 		<button type="reset">senden</button>
 		<button type="reset">löschen</button>
 		</td>
-
+		<td class="rechtespalte">
+		<p>Markup Lexikon:</p>
+		<p>	<h4>Überschriften</h4>
+			# dies ist H1 #
+			<br>
+			## dies ist H2 ##
+			<br>
+			### Dies ist H3
+			<br><br>
+			<h4>Fettschrift</h4>
+			**dicker Text**
+			<br><br>
+			<h4>Link einfügen:</h4>
+			Bitte klicken sie diesen [Linktext][link].
+			<br>
+			[link]: http://www.link.org
+			<br><br>
+			<h4>Bild einfügen:</h4>
+			![alt text][id]
+			<br>
+			[id]: /path/to/img.jpg "Title"
+			<br><br>
+		</p>
+		</td>
 	  </tr>
 
 	</table>

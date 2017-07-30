@@ -44,7 +44,7 @@ var mouseX = 0, mouseY = 0;
 //WINDOW SIZE
 var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
-var orientation = "horizontal";
+var orientation_world = "horizontal";
 
 var aspect = window.innerWidth/window.innerHeight;
 if(window.innerHeight > window.innerWidth){
@@ -151,7 +151,7 @@ function init() {
 	var distance = window.innerWidth + ( window.innerWidth * 0.9);
 	if(window.innerWidth < window.innerHeight){
 		distance = window.innerWidth + ( window.innerWidth * 0.009);
-		orientation = "vertical";
+		orientation_world = "vertical";
 	}
 	FOV = 2 * Math.atan( window.innerWidth / ( 2 *distance))*180 / Math.PI;
 
@@ -160,6 +160,7 @@ function init() {
 	scene.fog = new THREE.FogExp2( 0x111111, 0.03 );
 	// camera
 	camera = new THREE.PerspectiveCamera( FOV, window.innerWidth / window.innerHeight, 1., 100 );
+	camera.name = "usercamera";
 	camera.position.set( 0, 2, 10 );
 	camera.lookAt(new THREE.Vector3(currentLookX,currentLookY,currentLookZ));
 	camera.up = new THREE.Vector3(0,1,0);

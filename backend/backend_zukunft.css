@@ -16,7 +16,8 @@
 		   vertical-align:top;
 		   height:100%;
 		}
-		.rechtespalte {
+	   .rechtespalte {
+		   min-width:40%;
 		   width: 40%;
 		   vertical-align:top;
 		   height:100%;	

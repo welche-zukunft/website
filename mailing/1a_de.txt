@@ -1,0 +1,19 @@
+Hallo!
+
+Herzlichen Dank für Ihre Anmeldung zum Labor von Welche Zukunft?! am 16. September im Deutschen Theater Berlin! 
+Sie haben sich für den Workshop [workshopname] angemeldet.
+
+Klicken Sie hier, um Ihre Anmeldung mit der Adresse
+
+[email]
+
+zu bestätigen. Erst dann gilt Ihre Anmeldung als bei uns eingegangen.
+
+Sollten Sie sich nicht angemeldet haben, ignorieren Sie diese Mail. Wir werden Ihnen dann keine weiteren Nachrichten zukommen lassen.
+
+Viele Grüße,
+Ihr Team von 'Welche Zukunft?!'
+------------------------
+[footer]
+[logos]
+[impressum]

@@ -119,7 +119,7 @@ function createNumberWalls(){
 		var a = i/n * Math.PI*2 + Math.PI/2;
 		var boxy = new THREE.Box3().setFromObject( book );
 		book.position.x = -1. * (boxwidth) + (2*boxwidth*i);
-		if(orientation == "vertical"){
+		if(orientation_world == "vertical"){
 			book.position.x = -1. * (boxwidth*2) + (4*boxwidth*i);
 		}
 		book.position.y = (boxy.getSize().y * 0.3)/2.;

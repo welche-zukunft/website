@@ -304,7 +304,7 @@
 					<label class="result" style="<?php echo $result_display;?>"><?php echo $feedback;?></label>
 				</form>
 				</div>
-										<section id="agb_area">
+					<section id="agb_area">
 						<div id="agbs" class="agbtext">
 						<label ><a href="#anmeldung" onclick="showagbs(false);">AGBs schliessen</a></label>
 						<p >
@@ -359,8 +359,61 @@
 			Luisa Männel <br>
 			<a href="mailto:maennel@welchezukunft.org">maennel@welchezukunft.org</a><br></p>
 			<br><br>
-			<p ><a class=impressum href="impressum.html">Impressum</a></p>
-		</div><!-- paper --> </div><!-- flex --> </section><!-- kontakt -->
+			<p ><a href="#impressum" onclick="showimpressum(true);">Impressum</a></p>
+		
+		<section id="impressum">
+		<div id="impressumtext">
+		<label ><a href="#kontakt" onclick="showimpressum(false);">Impressum schliessen</a></label>
+		<h3>Impressum</h3>
+		<p>Deutsches Theater<br>
+		Schumannstraße 13 A<br>
+		10117 Berlin<br>
+		Telefon: +49 30 28441-0<br>
+		service@deutschestheater.de<br>
+		www.deutschestheater.de<br><br>
+
+		Bei Fragen zu oder Problemen mit dieser Website, wenden Sie sich bitte an info@welchezukunft.org<br><br>
+
+		Intendant<br>
+		Ulrich Khuon<br><br>
+
+		Vertretungsberechtigter Geschäftsführer<br>
+		Klaus Steppat<br><br>
+
+		Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz<br>
+		Ust.-ID-Nr.: DE811984292<br><br>
+
+		Inhaltlich Verantwortlicher gemäß § 6 MDStV<br>
+		Kommunikation/Dramaturgie<br><br>
+
+
+		Haftungsausschluss:<br><br>
+
+		Inhalt des Webangebotes<br>
+		Das Deutsche Theater Berlin ist bemüht, sein Webangebot stets aktuell und inhaltlich richtig sowie vollständig anzubieten. Dennoch ist das Auftreten von Fehlern nicht völlig auszuschließen.<br>
+		Das Deutsche Theater Berlin übernimmt keine Haftung für die Aktualität, die inhaltliche Richtigkeit sowie für die Vollständigkeit der in seinem Webangebot eingestellten Informationen, es sei denn die Fehler wurden vorsätzlich oder grob fahrlässig aufgenommen. Dies bezieht sich auf eventuelle Schäden materieller oder ideeller Art Dritter, die durch die Nutzung dieses Webangebotes verursacht wurden.<br><br>
+
+		Copyright<br>
+		Das Layout der Homepage, die verwendeten Grafiken und Bilder sowie die einzelnen Beiträge sind urheberrechtlich geschützt.<br><br>
+
+		Externe Verweise und Links<br>
+		Das Deutsche Theater Berlin hat keinen Einfluss auf Gestaltung und Inhalte fremder Internetseiten. Es distanziert sich daher von allen fremden Inhalten, auch wenn von Seiten des Deutschen Theaters Berlin auf diese externe Seiten ein Link gesetzt wurde.<br><br>
+
+		Diese Erklärung gilt für alle auf unserer Website angezeigten Links und für alle Inhalte der Seiten, zu denen die bei uns angemeldeten Banner und Links führen.<br><br>
+
+		Datenschutz<br>
+		Sofern innerhalb des Internetangebotes die Möglichkeit der Eingabe von persönlichen Daten (E-Mail-Adresse, Namen, Anschriften) besteht, erfolgt diese freiwillig. Das Deutsche Theater Berlin erklärt ausdrücklich, dass es diese Daten nicht an Dritte weitergibt.<br><br>
+
+		Rechtswirksamkeit<br>
+		Dieser Haftungsausschluss ist Teil des Internetangebotes des Deutschen Theaters Berlin. Sofern einzelne Formulierungen oder Teile dieses Textes der geltenden Rechtslage nicht mehr oder nicht mehr vollständig entsprechen, bleiben die übrigen Teile dieser Erklärung davon unberührt.<br><br>
+
+		Konzeption & Technische Umsetzung<br>
+		Daniel Hengst, Alexander Hof, Lars Parmakerli<br><br>
+		</p>
+		</div>
+		</section>
+		</div><!-- paper --> 
+		</div><!-- flex --> </section><!-- kontakt -->
 
 	</article>
 

@@ -8,6 +8,7 @@ function addoptions(){
 	$('#anmeldeinfos').hide(); 
 	$('#newsletter').hide(); 
 	$('#agbs').hide();
+	$('#impressumtext').hide();
 	
 	var headlines = $( "#workshops" ).find( "h3" );
 	for(i = 0; i < headlines.length; i++){
@@ -58,6 +59,10 @@ $( "#getnews" ).on( "click", function() {
 function showagbs(show){
 	if(show ==true)	$('#agbs').show();
 	if(show ==false) $('#agbs').hide();
+}
+function showimpressum(show){
+	if(show ==true)	$('#impressumtext').show();
+	if(show ==false) $('#impressumtext').hide();
 }
 
 

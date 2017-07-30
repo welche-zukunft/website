@@ -4,7 +4,6 @@
   // config
   $domain = 'welchezukunft.org';
   $log_dir = '/var/newsletter';
-  $log_file = $log_dir.'/'.$ml_name;
   $err_sub_mail_missing = 'Bitte geben Sie eine Email-Adresse an.';
   $ok_sent_data_success = 'Daten erfolgreich übermittelt.' . "\r\n" .
     'Bitte bestätigen Sie die Email, welche Sie in Kürze von uns erhalten.';
@@ -56,6 +55,7 @@
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       // validate input and put into vars
       $ml_name = test_input($_POST["list"]);
+      $log_file = $log_dir.'/'.$ml_name;
       $sub_mail = test_input($_POST["mailadresse"]);
       $name_first = test_input($_POST["vorname"]);
       $name_last = test_input($_POST["name"]);

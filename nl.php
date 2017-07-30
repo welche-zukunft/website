@@ -3,7 +3,6 @@
 
   // config
   $domain = 'welchezukunft.org';
-  $ml_name = 'newsletter';
   $log_dir = '/var/newsletter';
   $log_file = $log_dir.'/'.$ml_name;
   $err_sub_mail_missing = 'Bitte geben Sie eine Email-Adresse an.';
@@ -56,6 +55,7 @@
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       // validate input and put into vars
+      $ml_name = test_input($_POST["list"]);
       $sub_mail = test_input($_POST["mailadresse"]);
       $name_first = test_input($_POST["vorname"]);
       $name_last = test_input($_POST["name"]);

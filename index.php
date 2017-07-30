@@ -323,6 +323,7 @@
 		<p>Ab  1. August 2017 unter <a href="http://www.welchezukunft.org">www.welchezukunft.org</a></p> 
 
 		<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#newsletter" id="newsletter">
+			<input type="hidden" name="list" id="list" value="newsletter">
 			<label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hier bitte ihren Namen und ihre Mailadresse ein.</label> 
 			<br>
 			<label >Vorname</label> 

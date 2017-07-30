@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
 	<title>WELCHE ZUKUNFT - PROTO</title>
@@ -76,14 +76,14 @@
 					<a class="pseudo anmeldung">&lt;&lt; zur Anmeldung</a>
 				</div> --> <!-- anmeldung_link -->
 				<div id="tutorial" class="tutorialanimation"><span></span></div>
-				<div class="handle_container" class="foreground"></div>
+				<div class="handle_container foreground"></div>
 				<div id="workshopmenu">
 					<input class="burger-ws-check" id="burger-ws-check" type="checkbox">
 					<div id="ws_labels">
 						<label  id="burger_icon" class="burger-ws">⇳</label>
 						<div id="ws_text_labels">
-							<label class="ws_content" id="ws_menu_title" class="title"></label>
-							<label  class="ws_content" id="ws_menu_subtitle" class="subtitle"></label>
+							<label class="ws_content title" id="ws_menu_title"></label>
+							<label  class="ws_content subtitle" id="ws_menu_subtitle"></label>
 						</div><!-- text labels -->
 					</div><!-- ws_labels -->
 					<div id="ws_menu_content" class="navigation paper"></div>
@@ -243,15 +243,15 @@
 						<br>
 						<label >Ich möchte mich für folgenden Workshop anmelden:</label>
 						<select id="wunsch_ws" name="workshopId" size="1">
-							<option></option>
+							<option disabled selected value> Bitte wählen </option>
 							<option value='14'>olympisch – Hauptsache dabei!</option>
 						</select>
 						<div id="sprache">
 							<label>Ich spreche folgende Sprache:</label>
 							<select size="1" name="sprache">
-								<option>deutsch</option>
-								<option>english</option>
-								<option>beides/both</option>
+								<option value="DEUTSCH">deutsch</option>
+								<option value="ENGLISH">english</option>
+								<option value="BEIDE">beides/both</option>
 							</select>
 						</div><!-- sprache -->
 						<label >Vorname</label>
@@ -261,7 +261,7 @@
 						<label >E-Mailadresse</label>
 						<input type="text" name="mail" id="mailadresse" value="">
 						<label >E-Mailadresse bestätigen</label>
-						<input type="text" name="mailConfirm" id="mailadresse" value="">
+						<input type="text" name="mailConfirm" value="">
 						<label >Mein Zukunftsszenario</label>
 						<p>Haben Sie schon eine Vorstellung, was in den nächsten 10 Jahren passieren könnte? Erzählen Sie uns, wenn Sie mögen davon!</p>
 						<textarea name="motivation" rows="15"></textarea>
@@ -291,11 +291,11 @@
 					<label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hier bitte ihren Namen und ihre Mailadresse ein. Sollten sie sich für den Workshoptag angemeldet haben erhalten Sie den Newsletter automatisch.</label>
 					<br>
 					<label >Vorname</label>
-					<input type="text" name="vorname" id="vorname" value="<?php echo $name_first;?>">
+					<input type="text" name="vorname" value="<?php echo $name_first;?>">
 					<label >Name</label>
-					<input type="text" name="name" id="name" value="<?php echo $name_last;?>">
+					<input type="text" name="name" value="<?php echo $name_last;?>">
 					<label >E-Mailadresse</label>
-					<input type="text" name="mailadresse" id="mailadresse" value="<?php echo $sub_mail;?>">
+					<input type="text" name="mailadresse" value="<?php echo $sub_mail;?>">
 					<br>
 					<input name="agb" type="hidden" value="NO">
 					<input name="agb" class="agb_check" type="checkbox" value="YES">
@@ -347,7 +347,7 @@
 			10117 Berlin<br>
 			Telefon: +49 30 28441-0<br>
 			<a href="mailto:service@deutschestheater.de">service@deutschestheater.de</a><br>
-			<a href="https://www.deutschestheater.de" traget="">www.deutschestheater.de</a><br><br>
+			<a href="https://www.deutschestheater.de">www.deutschestheater.de</a><br><br>
 
 			Bei Fragen zum Projekt, zur Webseite oder zur Anmeldung, wenden Sie sich bitte an <a href="mailto:info@deutschestheater.de">info@welchezukunft.org</a></p>
 			<p><span class=bold>Pressekontakt:</span><br>
@@ -417,10 +417,6 @@
 
 	</article>
 
-	<!--
-	<div class="after_container">
-
-	</div><!-- after_container -->
 </main>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

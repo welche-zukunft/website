@@ -1,6 +1,7 @@
 function addoptions(){
 	for(var i = 0; i < metacontents.length; i++){
-		$("#wunsch_ws").append($('<option></option>').attr("value", i).text(metacontents[i].title[0] + ' - ' + metacontents[i].title[1] ));
+		j = i + 1;
+		$("#wunsch_ws").append($('<option></option>').attr("value", j).text(metacontents[i].title[0] + ' - ' + metacontents[i].title[1] ));
 	}
 	$('#sprache').hide();
 	//deselect rider 2 & 3 in anmeldung

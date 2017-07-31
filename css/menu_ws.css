@@ -144,6 +144,8 @@ label.burger-ws {
 
 .ws_content p {
   margin: 2vh;
+  font-size: 14px;
+  line-height:24px;
 }
 
 label.ws_content {
@@ -169,6 +171,9 @@ label.ws_content {
 }
 #ws_intro, #ws_vita {
 	clear:both;
+}
+.moderation{
+	padding-top: 50px;
 }
 .ws_hl {
 font-size: 1.4em !important;

@@ -40,6 +40,7 @@ function update_workshop_menu(j) {
   $("#burger_icon").css("color","black");
 
   // all Experts in one line
+  /*
 	var expertstring = "";
 	var bezeichnung = "Experte";
 	if(name.length > 1){
@@ -51,7 +52,17 @@ function update_workshop_menu(j) {
 		if(i+1 < name.length){
 		expertstring += ', ';
 		}
+	}*/
+	var experthead = "";
+	var bezeichnung = "Experte";
+	if(language == "eng") bezeichnung = "Expert";
+	if(name.length > 1){
+		bezeichnung = "Experten";
+		if(language == "eng") bezeichnung = "Experts";
 	}
+	experthead += bezeichnung;
+	
+	
 
   // menu elements
 
@@ -62,9 +73,10 @@ function update_workshop_menu(j) {
     + '<p>'
     + logline
     + '</p>'
+	/*
     + '<p>'
 	+ expertstring
-    +'</p>'	
+    +'</p>'	*/
     + '</div>'
   );
   // title
@@ -81,7 +93,7 @@ function update_workshop_menu(j) {
     + intro_long
     + '</p>'
     + '<p class="ws_hl">'
-	+ "Experten"
+	+ experthead
     + '</p>'
 	+ '</div>'
   ); 
@@ -102,7 +114,7 @@ function update_workshop_menu(j) {
 if(namemoderator != ""){
 	menu_content.append(
     '<div id="ws_vita" class="ws_content">'
-    + '<p class="ws_hl">'
+    + '<p class="ws_hl moderation">'
 	+ "Moderation"
     + '</p>'
     + '<p>'

@@ -59,12 +59,12 @@
 	{
 		"color": "#fbb100",
 		"date": "23.07.2017",
-		"title": ["Ökonomie", "Patient Zero - der Indexpatient Deutsche Bank "],
+		"title": ["Ökonomie", "Patient Zero - der Indexpatient Deutsche Bank"],
 		"logline": "Too big to fail oder: Wie gefährlich ist die Deutsche Bank?",
 		"intro_short": "Too big to fail? Können Deutsche Bank, Goldman-Sachs oder Credit Suisse die Weltwirtschaft lahmlegen? Mit Fokus auf die Deutsche Bank fragt Dieter Hein vom unabhängigen Analyse-Institut Fairesearch, ob Kontrollgremien wie Aufsichtsrat, Bafin und EZB in der Lage sind, die nächste Krise abzuwenden. Und was, wenn nicht…?! Wird die Deutsche Bank Patient Zero für die Finanzkrise von 2026?",
 		"intro_long": "<br>- - -<br>Die deutschen Banken sind nicht so sicher, wie es auf den ersten Blick auf die robuste deutsche Wirtschaft aussehen mag. <br>Regionale Krisen oder Fehlentwicklungen sowie die Pleite einer mittelgroßen Bank können in einer vernetzten globalen Wirtschaft zu einem weltweiten Flächenbrand führen bis hin zur Schwelle eines Kollapses des globalen Finanzsystems, wie die Finanzmarktkrise 2008 und der Bankrott der US-Bank Lehman Brothers gezeigt haben. Als Folge mussten in großen Volkswirtschaften wie den USA, Großbritannien oder Deutschland Banken und Versicherungen mit staatlichen Garantien, Beteiligungen und Verstaatlichungen gestützt werden und die Notenbanken weltweit (teilweise bis zum heutigen Tag) die Kapitalmärkte manipulieren und mit Liquidität fluten um eine Kernschmelze des Finanzsystems zu verhindern. <br>Als Folge der Finanzmarktkrise 2008 muss in Deutschland u.a. die ehemals größte öffentlich-rechtliche Bank, die West LB, abgewickelt werden, hat sich der Staat mit 25% bei der Commerzbank beteiligt, musste die Hypo Real Estate verstaatlicht und teilweise abgewickelt werden und droht aktuell der Landesbank HSH Nordbank ab 2018 ebenfalls die Abwicklung.<br>Wir wollen in unserem Workshop „Wie gefährlich/gefährdet sind Banken heute - wie hoch ist das Risiko einer neuen Finanzmarktkrise“ diskutieren, ob es den Regierungen gelungen ist, das Finanzsystem so sicher zu machen, dass in der Zukunft bei Krisen keine Banken oder Versicherungen mit Steuergeldern gerettet werden müssen. Und welche Krisenszenarien auf Unternehmensebene einen erneuten nationalen, europäischen oder gar weltweiten Flächenbrand auslösen könnten.<br>Interessante Fragen könnten dabei sein:<br>Sind die zuständigen Kontroll- und Aufsichtsinstitutionen (Aufsichtsrat, Bafin, EZB) unabhängig, kenntnisreich und effektiv genug um potentielle Risiken rechtzeitig zu erkennen und zu entschärfen?<br>Wie gefährdet ist die laut IWF riskanteste Bank der Welt, die Deutsche Bank? <br>Aus welchen Bereichen könnten sich neue Krisen entwickeln?",
 		"namemoderator": "Arne Storn",
-		"vitamoderator": "Arne Storn ist Journalist und befasst sich seit vielen Jahren mit Banken und Finanzen. Er  hat in Marburg, Köln und Dublin Volkswirtschaftslehre sowie Politikwissenschaften studiert. Nach dem Diplom besuchte der Volkswirt die Deutsche Journalistenschule in München. 2003 ging er als Redakteur zur Financial Times Deutschland, 2004 wechselte er in die Wirtschaftsredaktion der Hamburger Wochenzeitung DIE ZEIT.",
+		"vitamoderator": "<b>Arne Storn</b> ist Journalist und befasst sich seit vielen Jahren mit Banken und Finanzen. Er  hat in Marburg, Köln und Dublin Volkswirtschaftslehre sowie Politikwissenschaften studiert. Nach dem Diplom besuchte der Volkswirt die Deutsche Journalistenschule in München. 2003 ging er als Redakteur zur Financial Times Deutschland, 2004 wechselte er in die Wirtschaftsredaktion der Hamburger Wochenzeitung DIE ZEIT.",
 		"material": "PDF_WelcheZukunft_WS-3_Oekonomie_Bofinger.pdf",
 		"expert": "Dieter Hein (fairesearch)",
 		"experten": [{
@@ -146,7 +146,7 @@
 				"order": "15",
 				"title": "Hackerangriff",
 				"text": "Ein Hackerangriff richtet so großen Schaden bei einer Bank/Zentralbank/globalen Settlementinstitut/dem Finanzsystem an, dass das Unternehmen/globale Finanzsystem kollabiert."
-			}									
+			}
 		]
 	},
 	{
@@ -174,77 +174,77 @@
 		],
 		"events": [{
 				"order": "1",
-				"title": "2018 – Kapitalflucht aus Italien",
+				"title": "Kapitalflucht aus Italien",
 				"text": "Eine Wirtschaftskrise und Bankenkrise in Italien führt zur Kapitalflucht aus Italien. Die italienischen Zinsen steigen und die Gefahr, dass die Staatsverschuldung nicht mehr tragbar ist, wird immer größer. Die EZB kann wegen der Begrenzung durch das Bundesverfassungsgericht die Krise nicht stoppen. Das Rettungsprogramm für Italien scheitert wegen mangelnder Bereitschaft des italienischen Parlaments, Konditionen zu akzeptieren. Am Ende des Jahres scheidet Italien unter dem wachsenden Druck der Finanzmärkte aus der Eurozone aus."
 			},
 			{
 				"order": "2",
-				"title": "2019 - Der Euro kostet jetzt US$ 1,60",
+				"title": "Der Euro kostet jetzt US$ 1,60",
 				"text": "Die Euro-Krise erfasst Spanien, Portugal und Griechenland. Die Regierungen dieser Länder beschließen ebenfalls den Euro-Austritt. Der Rest-Euro wird nun als starke Währung von den Devisenmärkten angesehen und wertet auf 1,60 Dollar/Euro auf."
 			},
 			{
 				"order": "3",
-				"title": "2019 - Globaler Handelskrieg",
+				"title": "Globaler Handelskrieg",
 				"text": "Der harte Brexit führt zum Handelskrieg zwischen der EU und GB. Die Wachsende Unzufriedenheit der US-Bevölkerung über die wirtschaftliche Situation in den Vereinigten Staaten führt dazu, dass Trump keine ausländischen PKW mehr auf den US-Markt lässt. Zur gleichen Zeit verschärft sich die Immobilien- und Finanzkrise in China. Die Chinesische Regierung versucht, die Situation durch Protektionismus zu lösen, insbesondere dürfen nur noch Elektromobile in China zugelassen werden. Die EU reagiert ihrerseits  mit höheren Zöllen für Produkte aus den USA und China."
 			},
 			{
 				"order": "4",
-				"title": "2020 – massive Streiks in Frankreich",
+				"title": "massive Streiks in Frankreich",
 				"text": "Die Macron-Reformen führen dazu, dass in Frankreich die Löhne nicht mehr steigen und die Arbeitnehmer wegen des Abbaus der sozialen Absicherung massive Streiks initiieren."
 			},
 			{
 				"order": "5",
-				"title": "2020 – Lohnsenkungen in Deutschland",
+				"title": "Lohnsenkungen in Deutschland",
 				"text": "Deutschland wird von den negativen globalen und europäischen Entwicklungen erfasst. Der starke Euro-Kurs, die schlechte wirtschaftliche Lage in Frankreich und die Absatzprobleme auf dem Weltmarkt führen zu Rezession und steigender Arbeitslosigkeit. Zudem versuchen die deutschen Tarifpartner durch Lohnsenkung die Wettbewerbsfähigkeit der Industrie wieder zu verbessern."
 			},
 			{
 				"order": "6",
-				"title": "2020 – EU-Raum paralysiert, Rezession und Deflation",
+				"title": "EU-Raum paralysiert, Rezession und Deflation",
 				"text": "Euro-Raum gerät in Rezession und Deflation. Der deutsche EZB-Präsident sieht mit Rücksicht auf den deutschen Sparer davon ab, die Situation durch negative Zinsen und umfassende Anleihekäufe zu stabilisieren. Fiskalpolitisch ist der Euroraum ebenfalls paralysiert. Die Banken sind wegen der neuen Regelungen zur Begrenzung der Ausleihungen an Staaten nicht mehr in der Lage, den Staaten die notwendigen Defizite zu finanzieren. Die EZB scheidet mit ihrem deutschen Präsidenten dafür ebenfalls aus."
 			},
 			{
 				"order": "7",
-				"title": "2020 – Trump wird wiedergewählt",
+				"title": "Trump wird wiedergewählt",
 				"text": "USA: Trump wird wiedergewählt und beschließt, die Einfuhrbeschränkungen noch weiter auszuweiten. EU und China reagieren mit weiteren Handelsbeschränkungen "
 			},
 			{
 				"order": "8",
-				"title": "2021 – Deutschland tritt aus EU aus",
+				"title": "Deutschland tritt aus EU aus",
 				"text": "Die Situation in Deutschland verschlechtert sich weiter. Die Arbeitslosenzahlen steigen erneut auf 4 Millionen. Die Bundesregierung sieht sich wegen der Schuldenbremse im Grundgesetz nur bedingt in der Lage, auf die Situation fiskalpolitisch zu reagieren. Bei der Bundestagswahl 2021 gewinnt die AfD 30 % der Stimmen, weil die ungünstige wirtschaftliche Entwicklung vor allem auf den Euro geschoben wird. Die neugewählte Große Koalition entschließt sich unter dem starken Druck der Öffentlichkeit für einen Austritt aus dem Euro. Anstelle der Währungsunion gibt es jetzt wieder die nationalen Währungen."
 			},
 			{
 				"order": "9",
-				"title": "2021 – Frankreich vom Streik gelähmt",
+				"title": "Frankreich vom Streik gelähmt",
 				"text": "In Frankreich wird die Situation immer instabiler. Bei der negativen Gesamtlage sind keinerlei positive Effekte der Reformen auf den Arbeitsmarkt zu erkennen. Im Gegenteil: Die Arbeitslosigkeit und vor allem die Jugendarbeitslosigkeit nehmen rapide zu. Streiks lähmen immer mehr das öffentliche Leben."
 			},
 			{
 				"order": "10",
-				"title": "2022 – China: Verstaatlichung aller Unternehmen",
+				"title": "China: Verstaatlichung aller Unternehmen",
 				"text": "In China gelingt es der Regierung nicht, die Lage nach der Immobilien- und Finanzkrise zu stabilisieren. Die Wirtschaft wächst kaum noch und es kommt zu zunehmender Arbeitslosigkeit. Alle ausländischen und auch die deutschen Unternehmen werden verstaatlicht."
 			},
 			{
 				"order": "11",
-				"title": "2022 – weitere Länder treten aus EU aus ",
+				"title": "weitere Länder treten aus EU aus ",
 				"text": "In Frankreich wird Marine Le Pen zur Präsidentin gewählt und das Land tritt aus der EU aus. Polen, Ungarn und die Tschechische Republik schließen sich diesem Schritt an."
 			},
 			{
 				"order": "12",
-				"title": "2023 – schwere Deflation in Deutschland",
+				"title": "schwere Deflation in Deutschland",
 				"text": "In Deutschland wertet die D-Mark trotz der schlechten Wirtschaftslage immer weiter auf. Der deutsche Notenbank-Präsident sieht keinen Grund, dagegen vorzugehen. Die starke D-Mark wirke als Produktivitätspeitsche für die deutsche Wirtschaft. Bei der weiter steigenden Arbeitslosigkeit werden die Löhne pauschal um 15 % gesenkt, wie das der Präsident des ifo-Instituts und auch der Sachverständigenrat vorgeschlagen hatten. Deutschland gerät in eine schwere Deflation. Die Verbraucherpreise sinken mit einer Jahresrate von 5 %."
 			},
 			{
 				"order": "13",
-				"title": "2024 – Bank Run in Deutschland",
+				"title": "Bank Run in Deutschland",
 				"text": "Die Situation der deutschen Banken verschlechtert sich massiv. Es kommt zu einem Bank Run, bei dem viele Banken zusammenbrechen, da die Politik ganz nach der Empfehlung führender Ökonomen sich dazu entschieden hat, keinen Bail-out der Gläubiger zu organisieren."
 			},
 			{
 				"order": "14",
-				"title": "2025 – Die AfD stellt den Bundeskanzler",
+				"title": "Die AfD stellt den Bundeskanzler",
 				"text": "Es kommt zu politischen Unruhen in Deutschland. Viele Menschen haben in der Bankenkrise ihre Ersparnisse und Ansprüche aus Lebensversicherungen verloren. Die Regierung hat wegen der schlechten Wirtschaftslage die Renten um 25 % gekürzt. Die meisten Rentner haben nur noch eine Rente in Höhe der Grundsicherung. Die AfD gewinnt mehrere Landtagswahlen und erreicht bei der Bundestagswahl 40 %. Es kommt zu einer Koalition mit der FDP. Die AfD stellt den Bundeskanzler."
 			},
 			{
 				"order": "15",
-				"title": "2026 – Welthandel kommt zum Erliegen",
+				"title": "Welthandel kommt zum Erliegen",
 				"text": "Mittlerweile ist der Welthandel wegen des sich ausweitenden Protektionismus weitgehend zum Erliegen gekommen. Wegen der allgemein schlechten Wirtschaftslage gibt es auch kaum noch Tourismus."
 			}
 		]
@@ -256,8 +256,8 @@
 		"logline": "Was passiert, wenn Regulierung die Prozesse beschleunigt, die sie verhindern soll.",
 		"intro_short": "Können unsere sozialen Protokolle mit den Algorithmen mithalten? Dr. Armin Haas vom Institut für transformative Nachhaltigkeitsforschung in Potsdam forscht zu viraler Ansteckung im Markt und fragt, wie viel uns die Geschichte des Marktes über seine Zukunft verrät.",
 		"intro_long": "<br>- - - <br>Im Workshop wird das Finanzsystem aus einer systemtheoretischen Perspektive betrachtet und Erkenntnisse aus Volkswirtschaftslehre, Wirtschaftsgeschichte, Politischer Wissenschaft, Soziologie und der allgemeinen Systemtheorie genutzt.<br><br>Es waren Menschen, die das Finanzsystem in all seiner derzeitigen Komplexität geschaffen haben. Dessen Schöpfung erfolgte aber nicht als Umsetzung eines konsistenten Planes, sondern war selbst Ergebnis eines komplexen sozialen Prozesses. Es sollte uns deshalb nicht verwundern, dass kein einzelner Mensch mehr in der Lage ist, das Finanzsystem in seiner Gesamtheit zu überblicken oder zu verstehen. Das wirft dann allerdings die Frage auf, wie wir ein System kontrollieren können, das wir nicht verstehen.<br><br>Ein herausragendes Beispiel für diese Herausforderung stellt das Einfrieren wesentlicher Teile des Finanzmarktes dar, nachdem Lehmann Brothers in Konkurs ging. Dieses Einfrieren war für viele professionelle Ökonomen bis dahin unvorstellbar oder zumindest eine äußerst unwahrscheinliche Möglichkeit. Entsprechend unvorbereitet waren viele der damalig Handelnden. Es bedurfte mehrerer Anläufe, um das System akut zu stabilisieren. Seither wurde einiges an Reformen umgesetzt, um das Finanzsystem stabiler zu machen. Es ist unter Ökonomen allerdings umstritten, in welchem Grade dies bisher gelang. <br><br>Ein der breiten Öffentlichkeit weitgehend unbekannter, aber zentraler Baustein für die Stabilisierung des Finanzsystems ist die Tatsache, dass sich die wichtigsten Zentralbanken gegenseitig unbeschränkten Zugang zu ihren Währungen eingeräumt haben. Wir werden gemeinsam ein Szenario erarbeiten, warum dieser Baustein im Jahre 2026 kollabiert und dieser Kollaps einen wesentlichen Beitrag liefert zum Zusammenbruch der Weltwirtschaft. Dabei werden wir immer wieder mit der Möglichkeit konfrontiert werden, dass gut gemeinte Maßnahmen das Gegenteil von gut sein können, wenn sie letztendlich das Gegenteil von dem erreichen, wozu sie gedacht waren.",
-		"namemoderator": "",
-		"vitamoderator": "",
+		"namemoderator": "Martina Kampmann",
+		"vitamoderator": "<b>Martina Kampmann</b> ist Senior Policy Expertin für strategische Partnerschaften, „multi-stakeholder knowledge sharing” und “mutual learning networks” in verschiedenen Politikbereichen. Von 2013 bis 2014 war sie Senior Counselor der 'Knowledge Sharing Alliance' (KSA) beim Generalsekretär der OECD. Zuvor war sie Senior Managerin bei der Deutschen Gesellschaft für Internationale Zusammenarbeit (GIZ). Heute ist sie Senior Associate bei dem von Adrian Taylor gegründeten Unternehmen 4Sing Foresight to Strategy for Security and Sustainability in Governance. Sie steht zudem mit mehreren globalen Stadtnetzwerken und Initiativen der Technischen Universität Berlin in Verbindung. Martina Kampmann studierte Politikwissenschaft, International Affairs, Wirtschaftswissenschaften und Sozialgeographie an der Ludwig-Maximilians-Universität München.",
 		"material": "PDF_WelcheZukunft_WS-3_Oekonomie_Bofinger.pdf",
 		"expert": "Dr. Armin Haas & Joseph Rini (IASS Potsdam)",
 		"experten": [{
@@ -309,7 +309,7 @@
 			{
 				"order": "8",
 				"title": "Weltweiter Cyber-Angriff auf die Elektrizitätsversorger",
-				"text": "Mitten im Winter führt eine globale Cyberattacke auf die Elektrizitätsversorger und die Netzbetreiber zu einem Zusammenbruch der Stromversorgung in mehreren großen Industrienationen. Die Netzbetreiber können den Ausfall auch nach mehreren Tagen nicht beheben. Bereits am zweiten Tag bricht in den betroffenen Staaten die allgemeine Kommunikationsinfrastruktur zusammen. Krankenhäuser melden Medikamentenengpässe, Lebensmittel in den Städten werden knapp, Hamsterkäufe setzen ein, Supermärkte werden geplündert. Aufgrund des Ausfalls der Kommunikationsmittel kann die Polizei die Lage nicht stabilisieren. In den betroffenen Staaten wird der Notstand ausgerufen, aber auch das Militär schafft es nicht mehr überall, die Ordnung aufrechtzuerhalten. Nach ca. einer Woche geht auch den letzten zivilen Notstromaggregaten der Treibstoff aus. Die internationalen Wertschöpfungsketten reißen und ziehen auch die Staaten in Mitleidenschaft, die selbst nicht von der Cyberattacke betroffen sind. Internationale Investoren, die noch handlungsfähig sind, geraten in Panik. Die noch handlungsfähigen Regierungen setzen daraufhin den Wertpapierhandel aus und verhängen Kapitalverkehrskontrollen. Das internationale Finanzsystem hört im Wesentlichen auf zu funktionieren, was wiederum zu einer Panik in der Realwirtschaft führt. Die meisten Staaten rufen daraufhin den Notstand aus."
+				"text": "Mitten im Winter führt eine globale Cyberattacke auf die Elektrizitätsversorger und Netzbetreiber zu einem Zusammenbruch der Stromversorgung in mehreren großen Industrienationen. Die Netzbetreiber können den Ausfall auch nach mehreren Tagen nicht beheben. Bereits am zweiten Tag bricht in den betroffenen Staaten die allgemeine Kommunikationsinfrastruktur zusammen. Krankenhäuser melden Medikamentenengpässe, Lebensmittel in den Städten werden knapp, Hamsterkäufe setzen ein, Supermärkte werden geplündert. Aufgrund des Ausfalls der Kommunikationsmittel kann die Polizei die Lage nicht stabilisieren. In den betroffenen Staaten wird der Notstand ausgerufen. Die internationalen Wertschöpfungsketten reißen und ziehen auch die Staaten in Mitleidenschaft, die selbst nicht von der Cyberattacke betroffen sind. Internationale Investoren, die noch handlungsfähig sind, geraten in Panik. Die noch handlungsfähigen Regierungen setzen daraufhin den Wertpapierhandel aus und verhängen Kapitalverkehrskontrollen. Das internationale Finanzsystem hört auf zu funktionieren, was wiederum zu einer Panik in der Realwirtschaft führt. Die meisten Staaten rufen daraufhin den Notstand aus."
 			},
 			{
 				"order": "9",
@@ -318,13 +318,13 @@
 			},
 			{
 				"order": "10",
-				"title": "Verbriefung (Securitisation) in der Kapitalmarktunion",
-				"text": "Zahlreiche europäische Banken haben zu viele faule Kredite in ihren Büchern und können diese kaum verkaufen. Um Abhilfe zu schaffen, regelt die EU-Kommission gesetzlich, die Verbriefung von Krediten zu erleichtern. Den Banken wird erlaubt, ihr gesamtes Kreditportfolio zu bündeln und als Paket zu verkaufen. De facto nützen viele Banken das Gesetz, ihre überwiegend notleidenden „faulen“ Kredite in Paketen verschnürt endlich loszuwerden. Rating-Agenturen bewerten die Produkte aufgrund der Mischung von sicheren und eher unsicheren Krediten als „solides Investment“. Ein boomender Verbriefungsmarkt entsteht, verbunden mit hohen Renditeversprechen. Dass die Risken damit nicht verschwinden, sondern nur attraktiv verpackt  an andere Banken, Investoren und die EZB weiter gereicht werden, wird weitgehend ignoriert. Gegenmaßnahmen werden nicht eingeleitet. Die Lage ändert sich drastisch, als Marine Le Pen zur Präsidentin gewählt wird, was einen Run auf die europäischen Banken auslöst. Die verbrieften Finanzprodukte verlieren drastisch an Wert und bringen einige Banken in Schieflage. EZB Präsident Weidmann, Kanzlerin von der Leyen und Finanzminister Söder entscheiden sich für einen harten Kurs und gewähren keine Notkredite an notleidende Banken. In Antizipation des Zusammenbruchs systemisch wichtiger Banken kollabieren zentral wichtige europäische Wertpapiermärkte und stellen den Handel ein. Dieser Prozess steckt innerhalb von wenigen Tagen die weltweiten Finanzmärkte an."
+				"title": "Rette sich wer kann - Verbriefung fauler Kredite",
+				"text": "Zahlreiche europäische Banken haben zu viele faule Kredite in ihren Büchern. Um Abhilfe zu schaffen, genehmigt die EU-Kommission den Banken, ihr gesamtes Kreditportfolio zu bündeln und als Paket zu verkaufen („Verbriefung von Krediten“). Viele Banken nützen das Gesetz, ihre überwiegend faulen Kredite auf diese Weise loszuwerden. Investmentbanken bündeln diese Kreditpakete zu neuen Produkten, Rating-Agenturen bewerten sie als „solides Investment“. Ein boomender Verbriefungsmarkt entsteht, verbunden mit hohen Renditeversprechen. Dass die Risken damit nicht verschwinden, sondern nur verpackt  an andere Banken, Investoren und die EZB weiter gereicht werden, wird von der Aufsicht ignoriert. Als Marine Le Pen zur Präsidentin gewählt wird, verlieren diese Produkte drastisch an Wert und bringen einige Banken in Schieflage. EZB Präsident Weidmann, Kanzlerin von der Leyen und Finanzminister Söder entscheiden sich für einen harten Kurs und gewähren keine Notkredite an notleidende Banken. In Antizipation des Zusammenbruchs systemisch wichtiger Banken kollabieren  wichtige europäische Wertpapiermärkte. Dieser Prozess steckt die weltweiten Finanzmärkte an."
 			},
 			{
 				"order": "11",
-				"title": "Die Stabilisierung des Finanzsystems führt zu einer unbeabsichtigten Revolution",
-				"text": "2019 verlässt Großbritannien die EU – ohne geregelte Vereinbarungen oder Zugangsrechte für die Londoner City. Daraufhin beschließt das deutsch/französische Tandem Schulz/Macron ehrgeizige Reformen für die EU-Finanzregulierung: Die sogenannten Schattenbanken werden zurückgedrängt, der Freiraum zur privaten Geldschöpfung von Banken und Nichtbanken drastisch beschränkt, eine ernsthafte Finanztransaktionssteuer eingeführt. Diese Maßnahmen finden weiten Anklang bei linken Kapitalismus-Kritikern, rechten Nationalisten und Umweltaktivisten der großen EU-Länder. Die Reformen werden in einer Zeit wirksam, als sich das globale Wachstum jedoch verlangsamt. Die Fähigkeit des europäischen Finanzsystems, dieser Tendenz gegenzuarbeiten, ist jedoch durch die Reformen weitgehend beseitigt – das System hat keinerlei Bewegungsspielräume mehr. Die Kreditvergabe verlangsamt sich, eine Deflation setzt ein. Die Schuldenlast für viele Unternehmen und Konsumenten führt zu einer Welle von Konkursen, explodierende Arbeitslosigkeit ist die Folge. Aufgrund der Deflation sinken auch die Lebensmittelpreise auf breiter Front, was die Landwirtschaft in Bedrängnis bringt. Die französischen Bauern rufen daraufhin einen Generalstreik aus und stürzen die Regierung Macron. Die soziale Bewegung der Neo-Jakobiner erzwingt eine „Wiederbelebung“ der Bürgertugenden „Freiheit, Gleichheit, Brüderlichkeit“. In deren Namen erfolgt eine weitgehende Verstaatlichung von Produktionsmitteln. Menschenmassen plündern den Pariser Finanzdistrikt und veranstalten Hexenjagden auf angebliche reiche Verräter, die „die Nation beraubt“ hätten, indem sie ihre Vermögenswerte ins Ausland verschafft hätten."
+				"title": "Die Stabilisierung des Finanzsystems und eine unbeabsichtigte Revolution",
+				"text": "2019 verlässt Großbritannien die EU – ohne geregelte Vereinbarungen für die Londoner City. Daraufhin beschließen Schulz/Macron ehrgeizige Reformen: Die Schattenbanken werden zurückgedrängt, der Freiraum zur privaten Geldschöpfung von Banken beschränkt, eine Finanztransaktionssteuer eingeführt. Diese Maßnahmen finden Anklang bei linken Kapitalismus-Kritikern, rechten Nationalisten und Umweltaktivisten. Die Reformen werden in einer Zeit wirksam, als sich das globale Wachstum verlangsamt. Durch die Reformen hat das europäische Finanz-System keinerlei Spielräume mehr, gegenzusteuern. Die Kreditvergabe verlangsamt sich, eine Deflation setzt ein, zahlreiche Unternehmen gehen konkurs, explodierende Arbeitslosigkeit ist die Folge. Aufgrund der Deflation sinken die Lebensmittelpreise. Die französischen Bauern rufen daraufhin einen Generalstreik aus und stürzen die Regierung Macron. Die soziale Bewegung der Neo-Jakobiner erzwingt eine weitgehende Verstaatlichung von Produktionsmitteln. Menschenmassen plündern den Pariser Finanzdistrikt und veranstalten Hexenjagden auf angebliche reiche Verräter, die „die Nation beraubt“ hätten, indem sie ihre Vermögenswerte ins Ausland verschafft hätten."
 			}
 		]
 	},
@@ -333,7 +333,7 @@
 		"date": "23.07.2017",
 		"title": ["Recht und Gesetz", "Staatsverluste?!"],
 		"logline": "Staatsbankrott ist nur der letzte Schritt in einem langen Prozess. Welche Regeln herrschen im Chaos und wer setzt sie um?",
-		"intro_short": "",
+		"intro_short": "Prof. Dr. Kai von Lewinski lehrt Öffentliches Recht an der Universität Passau und kann die Folgen des Bankrotts für unsere Gesellschaft anschaulich beschreiben. Ist der Verlust von staatlichen Handlungsmöglichkeiten und gar von Staatlichkeit das, was die Neo-Cons mit: „weniger Staat“ gemeint haben? Führt der Weg zur Sanierung der Staatsfinanzen nur über den Zusammenbruch?",
 		"intro_long": "",
 		"namemoderator": "Karl-Michael Schmidt",
 		"vitamoderator": "<b>Karl-Michael Schmidt</b> ist Rechtsanwalt und Partner in einer zivilrechtlich ausgerichteten Kanzlei, wo er überwiegend ausländische Mandanten in wirtschaftsrechtlichen Fragen berät. Er war 19 Jahre Geschäftsführer des Instituts für Anwaltsrecht der Humboldt-Universität zu Berlin und ist Adjunct Professor am College of Law and Justice der Victoria University, Melbourne sowie Dozent an der Hochschule Osnabrück.",
@@ -357,7 +357,7 @@
 			{
 				"order": "3",
 				"title": "soziales Existenzminimum kann erheblich sinken",
-				"text": ""
+				"text": "Durch die Änderung der entsprechenden Leistungsgesetze können die Ausgaben eines Staates jederzeit stark herabgesetzt oder gestrichen werden. Aus der Verfassung ergibt sich allerdings eine Grenze durch das „Grundrecht auf Gewährleistung des Existenzminimums“, das eine menschenwürdige materielle Existenz garantiert. Während insoweit das physische Existenzminimum (Wasser, Nahrung, Hygiene, Wohn- und Schlafgelegenheit) einen absoluten, allerdings sehr niedrigen Mindeststandard vorgibt, ist das soziale Existenzminimum (Art der Kleidung, Unterhaltung und Kommunikation, Größe des Wohnraums) relativ zum gesellschaftlichen Wohlstand (und kann mit diesem durchaus erheblich absinken). Teilweise wird auch das Aufrechterhalten von bestimmten staatlichen Infrastrukturen (Verkehrswege, Schule, Gerichte, Sicherheitsapparat) für notwendig gehalten (s.u. „Zusammenbruch“). – Staatsausgaben im konsumtiven, Infrastruktur- und kulturellen Bereich sind weitestgehend disponibel, lediglich die Leistungen für Bedürftige und grundlegende Infrastruktur dürfen nicht auf Null zurückgefahren werden."
 			},
 			{
 				"order": "4",
@@ -409,12 +409,12 @@
 		"intro_short": "2022, vier Jahre vor der großen Krise 2026, ist die Governance vieler für die Wirtschaft zentraler Systeme deutlich geschwächt. Neue internationale Regelwerke sind 2022 zwar angedacht, werden aber nicht verwirklicht. Gründe dafür sind die schnelle technische Entwicklung, das Fehlen von Experten in der Politik und divergierende internationale Interessen.<br><b>Prof. Dr. Volker Deville</b>, nach 28 Jahren bei der Allianz Versicherungsgruppe, spielt mit Wild Cards: Ein Ausbruch der Phlegräischen Felder in Italien oder ein Durchbruch bei der Tumorforschung, der das Rentensystem endgültig zum Erliegen bringt. Die Versicherer sind Experten für das Unerwartete, dafür entwickeln sie Modelle. Sind die Versicherer die neuen Auguren?",
 		"intro_long": "<br>- - - <br>Wo und wann immer Menschen zusammen leben und arbeiten, wird ihr Erfolg ermöglicht durch einen gemeinsamen Rahmen von Werten, Regeln und eingespielten Abläufen. Diesen Rahmen nennen wir Governance. Wenn die Governance nicht offensiv verteidigt wird, droht ihre Schwächung und langfristig instabile Verhältnisse, die nicht mehr regulierbar sind. <br><br>Zum jetzigen Zeitpunkt zeichnen sich drei Bereiche ab, in denen die Schwächung von good Governance bedrohliche Ausmaße angenommen hat: Globale Wirtschaft, Geld und Digitalisierung. <br><br>Die Rechtssysteme werden auf internationaler und regionaler Ebene unübersichtlich, widersprüchlich und lückenhaft. Recht kann häufig nicht mehr einheitlich durchgesetzt werden. Verwaltungen und Gerichte werden sehr langsam und können komplexe Situationen nicht mehr angemessen verarbeiten. Freihandel und Kapitalverkehr werden erratisch von schnell wechselnden Regierungen geändert. Große Finanzkonglomerate in Emerging Markets gehen in Konkurs; die systemische Risikovorsorge greift nicht.<br><br>Die Wertaufbewahrungsfunktion des Geldes wird zunehmend vernachlässigt. Manche Zentralbanken geraten außer Kontrolle: Sie drucken Geld zur Finanzierung maroder Staaten und Banken auf Kosten der Sparer, deren Altersvorsorge durch negative Realzinsen entwertet wird. Manche flüchten in Gold und künstliches Cybergeld, das explosiv wächst, aber wegen fehlender Regulierung auch über Nacht wertlos werden kann. Terrorangriffe auf die Finanzsysteme blockieren oder löschen nichts, sondern sie verfälschen erratisch einige wenige Daten und verstärken den Vertrauensverlust der Menschen in die Finanzsysteme.<br><br>Fehlende gemeinsame Standards zur Datenkommunikation führen zu 'Wildwest'-Manieren. Einige Staaten und militante NGOs hacken laufend finanzrelavante Mails und Daten, veröffentlichen sie selektiv und diskreditieren Marktteilnehmer. Fehlende Regeln für Künstliche Intelligenz (KI) führen zur Ausschaltung vieler menschlicher Kontrollen bei kriminellen Überweisungen, bei Steuerhinterziehungen, bei Umgehung der Aufsicht und im Handel von Wertpapieren, Devisen und Derivaten.",
 		"namemoderator": "Marie Sagenschneider",
-		"vitamoderator": "",
+		"vitamoderator": "<b>Marie Sagenschneider</b> studierte Philosophie/Geschichte/Italienisch und Politische Wissenschaften. Seit 1991 arbeitete sie RIAS Berlin (später Deutschlandradio), moderierte zahlreiche Sendungen und entwickelte die Sendung „neonlicht“. 2002 erschien ihr Buch „50 Klassiker. Prozesse. Berühmte Rechtsfälle von der Antike bis heute“ (Gerstenberg Verlag). Seit Juni 2017 leitet Marie Sagenschneider die Abteilung Aktuelle Kultur beim Deutschlandradio Kultur in Berlin und betreut die Sendungen „Radiofeuilleton“ und „Fazit“.",
 		"material": "PDF_WelcheZukunft_WS-3_Oekonomie_Bofinger.pdf",
-		"expert": "Prof. Dr. Volker Deville (Allianz Versicherung)",
+		"expert": "Prof. Dr. Volker Deville (Uni Bayreuth, ehemals Allianz Versicherung)",
 		"experten": [{
 			"name": "Prof. Dr. Volker Deville",
-			"vita": "Bio fehlt!! Prof. Dr. Volker Deville (Allianz Versicherung)",
+			"vita": "<b>Prof. Dr. Volker Deville</b>, Mathematiker und Ökonom, war ab 2005 Executive Vice President der Allianz SE und von 2015 bis 2017 Leiter Zukunftsthemen der Allianz Deutschland. Zur Zeit lehrt er lehrt Governance und International Management an der Uni Bayreuth.",
 			"pic": "deville.jpg"
 		}],
 		"events": [{
@@ -462,17 +462,17 @@
 	{
 		"color": "#b8d8d3",
 		"date": "23.07.2017",
-		"title": ["Energy supply", "Titel fehlt noch (in engl. Sprache)"],
-		"logline": "",
-		"intro_short": "",
+		"title": ["Energy transitions (in engl. Sprache)", ""],
+		"logline": "After Oil - but not in the dark ages.",
+		"intro_short": "Transnational corporations have to consider the future - objectively, analytically. Conflicts and turbulence could happen, but where and when will they do so?  The future is uncertain, but one thing is clear: We face a critical energy transition that will fundamentally reshape the types of energy we use; and how we use energy, both global and local, will have profound implications for climate change. <br><br>We are at a crossroads, undergoing other critical transitions in the global economy, in geopolitics and in governance. Dr. Cho Khong and Geraldine Wessing are members ofRoyal Dutch Shell’s scenarios team. From London they create focused and global scenarios for the radical changes their corporation - and therefore all of us - are facing.",
 		"intro_long": "",
-		"namemoderator": "",
-		"vitamoderator": "",
+		"namemoderator": "Christiane Grefe",
+		"vitamoderator": "Christiane Grefe studied Journalism and Politics in Munich. She worked as a freelance journalist for Nature, Geo, and for the Magazin of the broadsheet Süddeutsche Zeitung. Until 1999, she was a staff writer for the broadsheed Die ZEIT. She is the author of a number of books - most recently: „Global Gardening - bio economy. The new robber economy or the economical system of the future?“. She also co-authored: „What’s next - democracy does not go without saying“. (both published at Antje Kunstmann publishers).",
 		"material": "PDF_WelcheZukunft_WS-3_Oekonomie_Bofinger.pdf",
 		"expert": "Dr. Cho-Oon Khong & Geraldine Wessing (Royal Dutch Shell)",
 		"experten": [{
 			"name": "Dr. Cho-Oon Khong",
-			"vita": "<b>Cho-Oon Khong</b> is Chief Political Analyst in the Global Business Environment team, Shell International, based in London, with over 20 years’ experience leading and advising on country scenario projects.  Cho advises on political trends and political risk for the Shell Group, and leads the external environment assessments for Shell’s country reviews. Cho is an active scenarios practitioner, using scenarios in futures thinking. He has worked on a range of scenario projects with international organisations, governments, universities, research institutes and business companies around the world.  He is an Associate Fellow of the Said Business School, University of Oxford, where he teaches as a core faculty member on the Oxford Scenarios Programme; a member of the Brains Trust of the Evian Group, IMD, Lausanne; and an Academy Adjunct Faculty member, Chatham House.",
+			"vita": "<b>Dr. Cho-Oon Khong</b> is Chief Political Analyst in the Global Business Environment team, Shell International, based in London, with over 20 years’ experience leading and advising on country scenario projects.  Cho advises on political trends and political risk for the Shell Group, and leads the external environment assessments for Shell’s country reviews. Cho is an active scenarios practitioner, using scenarios in futures thinking. He has worked on a range of scenario projects with international organisations, governments, universities, research institutes and business companies around the world.  He is an Associate Fellow of the Said Business School, University of Oxford, where he teaches as a core faculty member on the Oxford Scenarios Programme; a member of the Brains Trust of the Evian Group, IMD, Lausanne; and an Academy Adjunct Faculty member, Chatham House.",
 			"pic": "khong.jpg"
 		}, {
 			"name": "Geraldine Wessing",
@@ -480,10 +480,61 @@
 			"pic": "wessing.jpg"
 		}],
 		"events": [{
-			"order": "1",
-			"title": "ohne titel",
-			"text": "ohne text"
-		}]
+				"order": "1",
+				"title": "Difficulties with the storage used lithium batteries",
+				"text": "Denmark is the first OECD country to declare Net Zero Emissions status; Germany is second. Shortly after, both countries run into serious difficulties with the storage used lithium batteries, installed in households and cars."
+			},
+			{
+				"order": "2",
+				"title": "India replaces China",
+				"text": "India becomes solar global manufacturing hub, replacing China which is de-industrialising and going through critical social and economic change."
+			},
+			{
+				"order": "3",
+				"title": "New climate accord signed in Mumbai",
+				"text": "Millennials revolt against the older generation – new climate accord signed in Mumbai replaces the Paris agreement, setting new mandatory target of no more than 1.5 degrees Celsius above pre-industrial norm, backed by threat of trade sanctions for non-compliance."
+			},
+			{
+				"order": "4",
+				"title": "Punitive tariffs slow down global trade",
+				"text": "Global carbon price of $80 per tonne, but not all countries enforce the regulations. Punitive tariffs are introduced and slow down global trade."
+			},
+			{
+				"order": "5",
+				"title": "Germany and Austria restart their coal power stations",
+				"text": "Europe and China move to dramatic electrification of their economies, based on renewables, hydro and nuclear. However, when a continuing drought in Switzerland leaves the reservoirs empty and the nuclear power plants in Belgium and France are closed due to stricter EU regulations, the European power grid collapses. Germany and Austria restart their coal power stations."
+			},
+			{
+				"order": "6",
+				"title": "Manufacturing boom in Middle East",
+				"text": "Middle East sheikh-up – ultra low cost solar electricity drives manufacturing boom in Middle East, bringing radical social change."
+			},
+			{
+				"order": "7",
+				"title": "100 million climate refugees globally",
+				"text": "Important national players backtrack on Paris. Meanwhile, around 100 million climate refugees globally, primarily from Asia and the Middle East are on the move, trying to escape extreme droughts and flooding."
+			},
+			{
+				"order": "8",
+				"title": "Electric vehicle sales surpass internal combustion engine vehicles globally",
+				"text": "Electric vehicle sales surpass internal combustion engine vehicles globally. In Europe, the German auto industry takes the lead. Or - Super-efficient internal combustion engines slow the introduction of electric vehicles."
+			},
+			{
+				"order": "9",
+				"title": "Slow the introduction of electric vehicles",
+				"text": "Or - Super-efficient internal combustion engines slow the introduction of electric vehicles."
+			},
+			{
+				"order": "10",
+				"title": "Time for new traffic rules",
+				"text": "Indiscriminate use of autonomous vehicles causing urban chaos – time for new traffic rules, but implementation does not progress as planned - some problems are harder to solve than the industry expected. Eventually, insurance costs force self-drive cars off the road, the entire debate on artificial intelligence is reignited and the technology suffers a severe backlash. Society is divided: those for and those against AI. Social unrest ensues."
+			},
+			{
+				"order": "11",
+				"title": "people are increasingly immobile",
+				"text": "Serious health crisis in developed countries as people are increasingly immobile – they walk less. The public health insurance industry collapses in most countries, only privately insured individuals have appropriate access to health care."
+			}
+		]
 	},
 	{
 		"color": "#72c2a9",
@@ -499,7 +550,7 @@
 		"experten": [{
 			"name": "Jascha Lehmann",
 			"vita": "<b>Jascha Lehmann</b> ist promovierter Klimaphysiker am Potsdam-Institut für Klimafolgenforschung. Sein Forschungsschwerpunkt ist die Analyse von dynamischen Änderungen in der Atmosphäre und deren Einfluss auf Wetterextreme wie Hitzewellen und Starkregen. Er arbeitete als wissenschaftlicher Referent des Direktors bevor er 2017 die Co-Projektleitung einer Nachwuchsgruppe übernahm. Seit 2016 arbeitet er zudem für den Wissenschaftstransferbereich des Instituts. <br><www.pik-potsdam.de/members/jlehmann>",
-			"pic": "lehmann.jpg"			
+			"pic": "lehmann.jpg"
 		}, {
 			"name": "Marlene Kretschmer",
 			"vita": "<b>Marlene Kretschmer</b> ist Diplom Mathematikerin und promoviert am Potsdam-Institut für Klimafolgenforschung im Bereich Atmosphären-Physik. Ihr Forschungsschwerpunkt ist die dynamische Interaktion zwischen Stratosphäre und Troposphäre im Winter und deren Auswirkung auf Extremwettereignisse. Sie verwendet dabei insbesondere Machine Learning Methoden und Causal Discovery Algorithmen, um kausale Prozesse in Zeitreihen zu detektieren und vorherzusagen.<br><www.pik-potsdam.de/members/marlenek>",
@@ -575,22 +626,68 @@
 		"date": "23.07.2017",
 		"title": ["Geopolitics", "Intersections (in engl. Sprache)"],
 		"logline": "War an peace and who can afford it?",
-		"intro_short": "",
-		"intro_long": "",
-		"namemoderator": "",
-		"vitamoderator": "",
+		"intro_short": "Geopolitics - the politics of space - but not just. The dream of a world without borders might already be over and done with - we’re back to talk of hegemonic powers, access to commercial routes, naval capacities and a world war fought in space. At Stratfor Rodger Baker advises governments, secret services and transnational corporations.",
+		"intro_long": "<br>- - -<br>Geopolitics studies the intersection of place and organized people over time, the way they interact with one another, the way strategic cultures are shaped, and the implications for the future. In building out a future scenario, there are several elements we will look at, taking a synthetic approach blending geography, politics, economics, military, society, technology and history. We will build off of historic trends, identify constraints and compulsions on states and nations, and identify where these trends are likely to bend, intersect or diverge.",
+		"namemoderator": "Dr. Angela Wilkinson",
+		"vitamoderator": "<b>Dr. Angela Wilkinson</b> is a leading strategic foresight and scenario planning expert, specialising in practice and scholarship of global futures thinking and design. She gives strategic advisory support to senior leaders in government, business, and civil society and many different business sectors. Wilkinson`s previous positions include: Head of Strategic Foresight, OECD; Director of Futures Research and Scenarios, University of Oxford; Shell Global Business Environment (‘Shell scenarios’). Currently she is Senior Director of Scenarios and Business Insights, World Energy Council https://www.worldenergy.org/",
 		"material": "PDF_WelcheZukunft_WS-3_Oekonomie_Bofinger.pdf",
 		"expert": "Dr. Rodger Baker (Stratfor)",
 		"experten": [{
 			"name": "Dr. Rodger Baker",
-			"vita": "Rodger Baker leads strategic analysis and guides the forecasting process for Stratfor, an Austin, Texas-based firm that provides globally engaged individuals and organizations with objective geopolitical intelligence and analysis that reveals the underlying significance and future implications of emerging world events. He develops custom reports for clients and frequently delivers executive briefings to investors, businesses and universities across the globe, from the National Defense University in Beijing to financial institutions in New York. He is regularly invited to participate in dialogues and panel discussions in China, Japan, Thailand, Mongolia and South Korea and often appears as an expert in major media. Stratfor was one of the first organizations to identify the growing problems with the Chinese economy, with Rodger Baker spearheading the company's assessment. Before joining Stratfor, Mr. Baker studied and worked in South Korea and graduated with honors from Southampton College, Long Island University. He also has a master's degree in military history from Norwich University, the oldest private military university in the United States.<br><https://www.stratfor.com/people/189108>",
+			"vita": "<b>Dr. Rodger Baker</b> leads strategic analysis and guides the forecasting process for Stratfor, an Austin, Texas-based firm that provides globally engaged individuals and organizations with objective geopolitical intelligence and analysis that reveals the underlying significance and future implications of emerging world events. He develops custom reports for clients and frequently delivers executive briefings to investors, businesses and universities across the globe, from the National Defense University in Beijing to financial institutions in New York. He is regularly invited to participate in dialogues and panel discussions in China, Japan, Thailand, Mongolia and South Korea and often appears as an expert in major media. Stratfor was one of the first organizations to identify the growing problems with the Chinese economy, with Rodger Baker spearheading the company's assessment. Before joining Stratfor, Mr. Baker studied and worked in South Korea and graduated with honors from Southampton College, Long Island University. He also has a master's degree in military history from Norwich University, the oldest private military university in the United States.<br><https://www.stratfor.com/people/189108>",
 			"pic": "baker.jpg"
 		}],
 		"events": [{
-			"order": "1",
-			"title": "ohne titel",
-			"text": "ohne text"
-		}]
+				"order": "1",
+				"title": "Washington is more tolerant of localized instability",
+				"text": "The United States is shifting its global posture following well over a decade of intensive military action abroad. This re-orientation means Washington is more selective in direct intervention abroad, more tolerant of regional and localized instability, and encourages its allies and partners to take a stronger regional role."
+			},
+			{
+				"order": "2",
+				"title": "intra-regional competition rises",
+				"text": "The world system continues to seek a new equilibrium following the 2009 global financial crisis, which broke the structure of the previous pillars of the global system - the United States, Europe and China. Informal blocs are formed, intra-regional competition over influence rises. The Middle East and East Asia are the most intense areas of internal competition."
+			},
+			{
+				"order": "3",
+				"title": "new bloc structures forming in Europe",
+				"text": "The European Union continues to face the dual drives of multilateralism and nationalism (and even sub-nationalism). European dis-integration will prevail, even if the Union itself does not disappear. A central core of Europe, dominated by Germany, strengthens connectivity, while the fringes of Europe formally or informally realign. There are new bloc structures forming in Europe based on shared primary concerns, from a Poland-centered security bloc looking cautiously at Russia to a core industrial section centered on Germany to a looser affiliation of the Mediterranean states."
+			},
+			{
+				"order": "4",
+				"title": "In China, revolution traditionally starts in the interior.",
+				"text": "China undergoes a very difficult economic transition, from an export-oriented economy to one based on domestic consumption. This is never something done easily or quickly, and Beijing is facing increasing internal pressures as it implements national macro-economic policies that contradict provincial and local interests. The Chinese leadership faces a major challenge from its population - while more than 400 million individuals are now part of China’s middle and upper class, that leaves 900 million who realize, that it will never be their turn at getting rich. In China, revolution traditionally starts in the interior."
+			},
+			{
+				"order": "5",
+				"title": "A military confrontation, rather than a political solution",
+				"text": "The resolution of North Korea’s nuclear crisis heads toward a military confrontation, rather than a political solution. The war in Korea quickly spreads to involve most of the large northeast Asian powers, and has tremendous humanitarian but also economic consequences. The cost of the post-war reconstruction will be massive."
+			},
+			{
+				"order": "6",
+				"title": "Moscow creates a stronger buffer space.",
+				"text": "The Russian leadership expands Moscow’s sphere of influence and insulates Russia ahead of an expected shift in demographics on top of an economic crisis. Russia’s peripheral policies, particularly along the European front, becomes more aggressive as Moscow creates a stronger buffer space. A crisis in Central Asia challenges Russian influence and Moscow’s relations with Beijing."
+			},
+			{
+				"order": "7",
+				"title": "Advanced manufacturing techniques coupled with increased economic nationalism",
+				"text": "...drives on-shoring of industry, leaving many developing nations without the traditional path of low-end manufacturing to climb through their development stages. In parts of the world, this is exacerbated by rising population rates in these areas. Global trade regimes move away from the multilateral and toward the bilateral, breaking down some of the broader globalized trade patterns."
+			},
+			{
+				"order": "8",
+				"title": "Competition for access to less developed resource exporters",
+				"text": "Advances in energy storage technologies, particularly large grid-storage solutions, trigger a new run on newer key commodities, creating competition among the developed states for access to less developed resource exporters."
+			},
+			{
+				"order": "9",
+				"title": "Narrowing space for upward mobility exacerbates resistance to traditional policies",
+				"text": "The narrowing space for upward mobility in developed “western” nations exacerbates social patterns and resistance to traditional policies, accelerating the turnover of fringe parties. This  is particularly strong among the youth, adding to the levels of uncertainty."
+			},
+			{
+				"order": "10",
+				"title": "Rise of robotized farming and health will allow for further opposition to immigration",
+				"text": "Aging populations in Asia in particular are driving technologies for farming and medical services. The rise of robotized farming and health and aging care counteracts some of the declines in population, but will also allow for further opposition to immigration. Many of the technologies also have rapid dual use applicability to military activities."
+			}
+		]
 	},
 	{
 		"color": "#add396",
@@ -609,7 +706,7 @@
 			"pic": "daheim.jpg"
 		}],
 		"events": [{
-			"order": "1",
+				"order": "1",
 				"title": "Arbeitslosigkeit weltweit verdoppelt",
 				"text": "Bereits 2013 hat die Studie von Osborne und Frey für die USA über die Hälfte der Arbeitsplätze als automatisierungsgefährdet eingeschätzt, und zwischen 2014 bis 2017 warnten auch das World Economic Forum und Dutzende andere renommierte Einrichtungen vor möglichen deutlichen Verlusten von menschlichen Arbeitsplätzen an Maschinen. Erst im Juli 2017 schätzt z.B. auch das konservative Wirtschaftsforschungsforschungsinstitut IFO 10% der Industriearbeitsplätze in Deutschland wegen des kommenden Umstiegs auf Elektromobilität als gefährdet ein. Und genau so kommt es in den folgenden Jahren auch: Überall Roboter, Algorithmen, künstliche Intelligenz, cyberphysische Systeme: Maschinen übernehmen immer mehr Arbeit, weil so viele Technologien rapide Fortschritte machen und in Synergie wirken. Auch neu entstehende Berufe werden rasch automatisiert, so dass sich die Arbeitslosigkeit weltweit verdoppelt. Damit steigt der Druck auf die Sozialsysteme immens, und die öffentlichen Kosten explodieren. Viele ehemals wohlhabende westliche Länder müssen beginnen, den Sozialstaat radikal zurück zu bauen, es gibt plötzlich wieder wesentlich mehr Armut auch in den Industrieländern, und viel weniger Kaufkraft."
 			},
@@ -658,7 +755,7 @@
 				"title": "Burn-Out und Bore-out werden zum Massenphänomen",
 				"text": "Aufgrund mangelnden Vertrauens in die gesellschaftliche und wirtschaftliche Lage, Unzufriedenheit mit Möglichkeiten der Teilhabe und Selbstverwirklichung bei der Arbeit und einer großen Führungskrise werden Burn-Out und Bore-out zum Massenphänomen. Das Problem verschärft sich, als ab 2018 die „Generation ADHS“ in die Berufswelt Eintritt findet und sich nicht nur die Generationenkonflikte bei der Arbeit verschärfen, sondern auch die Kosten im Gesundheitssystem explodieren. Die Krankenkassen weigern sich, die Kosten für berufsbedingte Erkrankungen zu übernehmen, und es beginnen langwierige Rechtsstreitigkeiten zwischen Unternehmen und Sozialstaat, in dem die meisten Betroffenen „unter die Räder“ geraten. Die Kosten auf staatlicher und Unternehmensseite explodieren derart, dass weitere Überschuldung entsteht."
 			}
-			
+
 		]
 	},
 	{
@@ -668,17 +765,17 @@
 		"logline": "Geschichte wiederholt sich nicht buchstäblich, sondern als Farce.",
 		"intro_short": "Caveat: Das Bonmot Schlegels paraphrasierend, der gesagt hat, der Historiker sei ein umgekehrter Prophet, könnte man den Autor dieser Zeilen als umgekehrten Historiker lesen, mithin: als jemanden, der seine Prophetien nicht aus einer seherischen Begabung, sondern aus der Überzeugung ableitet, dass Geschichte sich wiederholt, nicht auf buchstäbliche Weise, sondern als Farce, als steter Ausleerungs- und Evakuierungsprozess. Wie hat es Karl Valentin so schön gesagt? Es ist alles gesagt, bloß noch nicht von allen. Und das ist der Witz aller Geschichte (zumal dort, wo jeder eine Stimme hat): dass eine Tatsache erst dann zur Kenntnis genommen wird, wenn das Geschrei groß ist, so groß, dass man die Moral der Geschichte schon gar nicht mehr heraushören kann.",
 		"intro_long": "<br>- - -<br><i>Im Jahr 2026, auf dem Höhepunkt der Finanzkrise, wird mir ein Büchlein in die Hand fallen, das ich im Jahr 2013 geschrieben habe und das mit einem Digitalen Manifest endet. Altersmüde beginne ich zu lesen:</i><br><br>1. DIGITALE RENAISSANCE. Mit der digitalen Revolution erleben wir eine Transformation, die so tief ist wie der Zeitriss, der die Neuzeit vom Mittelalter getrennt hat. Das Grundgesetz des neuen Geisteskontinents ist bekannt, es lautet x=xn. Vor dieser Formel müssen die künftigen Ideen, Institutionen und Plastiken bestehen.<br>2. STAAT. Der Nationalstaat ist Geschichte. Weil schon jetzt das Internet den politischen Handlungsraum definiert, gilt es, die Exzesse der Nationalstaaten einzuhegen und jene Institutionen zu befördern, die dem Rahmen des Weltbürgers entsprechen. Im Jenseits der Ideologien muss man die Politik der Simulation als größtmögliche Aufgabe denken!<br>3. GELD. Die Glaubenskrise des Kapitalismus lässt erkennen, dass die versammelte Kopflosigkeit (= die Märkte) nichts als Schein produziert. Die Konsequenz: die Abschaffung jenes Finanzsystems, bei dem einzelne Akteure ganze Volkswirtschaften in Geiselhaft nehmen. Wenn aber wir diejenigen sind, die als lebende Münzen Geld emittieren, gibt es keine andere Deckung mehr als unsere Bedürfnisse. Die beunruhigende Frage: Wie werden wir, wenn wir nicht mehr der Metaphysik des Geldes Glauben schenken können, den eigenen Wert und den Wert der Dinge ermitteln können?<br>4. ARBEIT. Was wir für Arbeit halten, wird im Museum der Arbeit verschwinden. Dinge hingegen, die wir für Spielerei oder Orchideenliebhaberei halten, werden den Mehrwert der Zukunft darstellen. Unser Arbeitsethos wird der Kultivierung des Überflusses gelten. Da wir uns selbst produzieren, stellt die Vervollkommnung der sozialen Plastik das Ziel unserer Bemühungen dar. Arbeit wird das Medium sein, in dem wir unsere Verwandlung vorantreiben und uns zugleich dabei zuschauen können.<br>5. ÖKONOMIE. Am Ende der Podukte angelangt, werden wir selber zur Währung. Wenn unsere Aufgabe darin besteht, die Güte dieser Währung aufrecht zu erhalten, so heißt dies in einer beweglichen Welt: sich immer wieder neu erfinden zu müssen. Die Logik des Upgrades aber basiert darauf, dass man das Scheitern erlernt. Dies ist das Wesen der Digitalisierung: Zerstörung, mit dem Ziel, das Objekt in umso grandioserer Form wiederauferstehen zu lassen.<br>6. ICH. Das Individuum, das mit seiner Unterschrift eine lebenslange Verpflichtung eingeht, ist Geschichte. Wenn unser Sein im Austausch besteht, sind wir Dividuen, Schauspielern vergleichbar, die auf der Suche nach immer neuen Rollen und Herausforderungen sind. Ein solcher Rollenwechsel erfordert nicht mehr den Funktionär, sondern den ganzen Menschen.<br>7. KUNST. Es wird keine Künstler mehr geben, nurmehr die Kunst. Begreifen wir die Gesellschaft als Kunstwerk, geben wir ihr den Sinn für das Utopische, für ihre Möglichkeiten zurück.<br>8. MORAL. Die moralischen Fragen unserer Zeit gehen weit über den Sichtkreis unserer Individualmoral hinaus. Da wir gewissermaßen in Fernbeziehungen leben und der Tastendruck unseres Fingers einen Menschen am anderen Ende der Welt in Mitleidenschaft ziehen kann, ist auch die Ferne ein Modus der Nähe. Die Maxime: dass man sich löst von den Überlegenheitsvorstellungen der eigenen Religion und Kultur, dass die Nächstenliebe mit der Fernstenliebe verschmilzt.<br>9. BILDUNG. Die Bildung der Zukunft wird darauf beruhen, dass man nicht auswendig, sondern inwendig gelernt hat. Wissensakkumulation wird durch Neugierde, unveränderliche Wahrheiten werden durch Gedankenspiele ersetzt. Ein Gedanke, der den Denkenden ausgrenzt oder zu eliminieren versucht, ist per se wertlos. Auch die Natuwissenschaft (unsere Außenwelt) muss inwendig werden (Geisteswissenschaft).<br>10. DER MENSCH. Wer Kontrolle sucht, lebt das Leben der Anderen. Nur wenn wir uns von der Kontrollsucht befreien und aufhören, Insitutionen, Formeln und Maschinen zu fetischisieren, werden wir uns selbst finden können. Dieses Selbst ist kein Besitz, sondern die Fähigkeit, mit anderen Menschen in Kommunikation treten können. Nur in dem Maße, in dem wir unser Fetisch-Selbst auflösen, wird das Menschenbild der Zukunft in unsere Wahrnehmung eintreten.<br><i>Ich werde seufzen und mir eingestehen müssen, dass ich dem nicht viel hinzufügen kann.</i>",
-		"namemoderator": "",
-		"vitamoderator": "",
+		"namemoderator": "Svenja Flechtner",
+		"vitamoderator": "<b>Svenja Flechtner</b> ist Ökonomin an der Europa-Universität Flensburg. Sie beschäftigt sich mit wirtschaftlichen und sozialen Ungleichheiten und deren Auswirkungen auf gesellschaftliche Entwicklungen. Insbesondere interessiert sie sich für die Frage nach der Gestaltung zukunftsfähiger Ökonomien, die sozial und ökologisch nachhaltig sind. Svenja Flechtner studierte Sprachen, Wirtschafts- und Kulturraumstudien sowie Staatswissenschaften in Passau und Paris und promovierte an der Europa-Universität Flensburg.",
 		"material": "PDF_WelcheZukunft_WS-3_Oekonomie_Bofinger.pdf",
 		"expert": "Dr. Martin Burckhardt (Autor)",
 		"experten": [{
 			"name": "Dr. Martin Burckhardt",
-			"vita": "<b>Martin Burckhardt</b> lebt in Berlin. Als Autor und Kulturtheoretiker verfasste er diverse Bücher zur Genealogie der Maschine. Zuletzt erschienen folgende von ihm verfasste Werke: Digitale Renaissance. Manifest für eine neue Welt. (Metrolit, 2014), der Roman Score (Knaus, 2015) sowie Alles und Nichts. (gem. mit Dirk Höfer, Matthes & Seitz 2015). Im Herbst 2018 wird Matthes & Seitz sein neustes Buch „Die Philosophie der Maschine.“ herausbringen.<br><http://martin-burckhardt.de>",
+			"vita": "<b>Dr. Martin Burckhardt</b> lebt in Berlin. Als Autor und Kulturtheoretiker verfasste er diverse Bücher zur Genealogie der Maschine. Zuletzt erschienen folgende von ihm verfasste Werke: Digitale Renaissance. Manifest für eine neue Welt. (Metrolit, 2014), der Roman Score (Knaus, 2015) sowie Alles und Nichts. (gem. mit Dirk Höfer, Matthes & Seitz 2015). Im Herbst 2018 wird Matthes & Seitz sein neustes Buch „Die Philosophie der Maschine.“ herausbringen.<br><http://martin-burckhardt.de>",
 			"pic": "burckhardt.jpg"
 		}],
 		"events": [{
-			"order": "1",
+				"order": "1",
 				"title": "Im globalen Weimar verläuft die Kampfzone nicht mehr zwischen Links oder Rechts",
 				"text": "In einer langen Serie von Leaks werden die Troll-Fabriken (des Kreml?, Nordkoreas?, der Chinesen?) jeden Politiker, der sich in einer unserer westlichen Demokratien um ein höheres Amt bemüht, so nachdrücklich desavouieren, dass sich das Gefühl einstellt, man lebe in einer Bananenrepublik – womit sich die Appelle an das christliche Abendland nachgerade von selber erledigen. Die Intellektuellen werden Oswald Spengler zu neuer, fragwürdiger Blüte erwecken, die robusteren Geister werden sich an die Männer der Tat halten wollen. Im globalen Weimar, das darüber entsteht, verläuft die Kampfzone nicht mehr zwischen Links oder Rechts, sondern zwischen den beiden Spielarten der Realitätsverweigerung: religiösem Fundamentalismus oder Identitätsduselei. Neben dem Phantomschmerz, der sich in ein politisches Strategem übersetzt, wird es keine nennenswerten politischen Positionen mehr geben."
 			},
@@ -756,8 +853,8 @@
 		"logline": "Die Eliten in den meisten wichtigen Ländern haben die Ursachen der letzten Krise nicht wirklich begriffen oder begreifen wollen.",
 		"intro_short": "Der Soziologe Michael Hartmann forscht zu der Rolle der bundesrepublikanischen und europäischen Leistungselite. Bleiben angesichts der Selbstrekrutierung dieser Führungszirkel Chancengleichheit und Verteilungsgerechtigkeit leere Versprechen? Und wie verstärkt die soziale Immobilität eine neue Wirtschafts- und Finanzkrise?",
 		"intro_long": "<br>- - - <br>Je exklusiver sich die Eliten rekrutieren, umso stärker unterscheidet sich ihre Sichtweise auf die Finanzkrise. Arbeiterkinder sehen in der Deregulierung mit einer Mehrheit von zwei Dritteln die wesentliche Ursache, Bürger- und Großbürgerkinder dagegen die Staatsverschuldung im selben Verhältnis. <br><br<Eine Studie in der USA hat ergeben, dass seit dem 2. Weltkrieg eine Regel gilt: Wenn Arbeiter-und Mittelschichtskinder die Mehrheit unter den wichtigen Ministern stellen, bleiben die Einkommensunterschiede relativ gering, wenn Bürger- und Großbürgerkinder dominieren, wachsen sie an. Bis Carter dominierte erstgenannte, seit Reagan letztgenannte. <br><br>Diese Aussage gilt auch für Europa. In Skandinavien sind die Eliten sozial am offensten, die sozialen Unterschiede am geringsten. Schaut man sich unter diesem Gesichtspunkt die Regierung von Macron an, so ist es keine Überraschung, dass sie Reformen nach Schröders Vorbild als Ziel für den Arbeitsmarkt hat. Das wird die Ungleichheit verschärfen und damit die Voraussetzungen für eine neue Krise verbessern.<br><br>Die Eliten in den meisten wichtigen Ländern haben die Ursachen der letzten Krise nicht wirklich begriffen oder begreifen wollen. Die deutschen Eliten, so das Resultat unserer umfassenden Studie von 2012, sehen die Ursache der Finanzkrise nicht in der Deregulierung des Finanzsektors, sondern in den hohen Staatsverschuldung, mit den entsprechenden Konsequenzen (s. Griechenland).<br><br>Regulierungen im Finanzsektor sind deshalb allenfalls halbherzig durchgeführt worden. In den USA wird das Rad unter Trump und Mnuchin sogar zurückgedreht. Die britische Regierung sträubt sich gegen Regulierungen, weil sie den Finanzplatz London schützen will. Die deutsche Regierung drängt mit ihrem strikten Sparkurs viele südeuropäische Länder in die Rezession oder verhindert eine wirtschaftliche Erholung.<br><br>Die wachsende Ungleichheit der Einkommen und Vermögen, die viel Geld in die Finanzmärkte und in die Spekulation schleust, wird nicht mit steuerlichen Maßnahmen zurückgedrängt. Die Eliten, so die Studie, sehen dafür mit großer Mehrheit keinen Anlass und wenden sich gegen eine höhere Besteuerung. <br><br>Mit China gibt es eine gewichtige Wirtschaftsmacht, die aufgrund des sehr großen Staatseinflusses nicht den üblichen kapitalistischen Regeln gehorcht und wo die politische Elite gegenüber der wirtschaftlichen ganz anders vorgeht (regelmäßige Verhaftungen auch von Milliardären). Daher ist das Verhalten der Eliten im Fall einer drohenden Krise auf den Finanzmärkten nur schwer vorherzusagen.",
-		"namemoderator": "Moderator?",
-		"vitamoderator": "Moderator?",
+		"namemoderator": "Alex Rühle",
+		"vitamoderator": "<b>Alex Rühle</b> ist ein deutscher Journalist. Seit 2001 ist er Redakteur der Süddeutschen Zeitung und Buchautor. Er studierte Allgemeine und Vergleichende Literaturwissenschaft, sowie Französisch, Theologie und Philosophie. Bekanntheit als Buchautor erlangte Rühle durch seinen Selbstversuch, für ein halbes Jahr ohne Internet und Smartphone zu leben und zu arbeiten. Seine Erlebnisse dokumentierte er 2010 in dem Buch „Ohne Netz“ (Klett-Cotta Verlag).",
 		"material": "PDF_WelcheZukunft_WS-3_Oekonomie_Bofinger.pdf",
 		"expert": "Michael Hartmann (Prof. i.R. für Soziologie, TU Darmstadt)",
 		"experten": [{
@@ -810,14 +907,14 @@
 				"title": "Ausnahmezustand",
 				"text": "Nach der französischen Regierung verhängen auch die italienische und die spanische Regierung den Ausnahmezustand. Viele demokratische Grundrechte werden außer Kraft gesetzt und Polizei wie Militär gehen massiv gegen die Demonstranten vor."
 			}
-		
+
 		]
 	},
 	{
 		"color": "#01559e",
 		"date": "23.07.2017",
-		"title": ["Versorgungssicherheit", "food/landgrabbing/agriculture (in engl. Sprache)"],
-		"logline": "",
+		"title": ["Agriculture", "Coffee shortage and other inconveniences (in engl. Sprache)"],
+		"logline": "How far off are we from a time when people go hungry in Europe?",
 		"intro_short": "",
 		"intro_long": "",
 		"namemoderator": "",
@@ -841,9 +938,70 @@
 			}
 		],
 		"events": [{
-			"order": "1",
-			"title": "ohne titel",
-			"text": "ohne text"
-		}]
+				"order": "1",
+				"title": "Cold Turkey for Coffee Lovers",
+				"text": "Climate change results in the reduction in the area productivity of farming in equatorial and tropical areas. This leads to shortages in certain commodities coffee and cocoa production falls as does the production of fruit in water stressed areas. Coffee and Chocolate becomes more expensive, some tropical fruits become scarce. This leads to changes in consumer habits with a switch from imported to locally produced fruits. No clear coffee substitute exists so people are spending more on their coffee."
+			},
+			{
+				"order": "2",
+				"title": "Olive oil prices rise",
+				"text": "Water scarcity begins top affect Southern European this places further pressures on E.U. farm budgets and negatively impacts on the production of a number of commodities and products including wine, olive oil and rice."
+			},
+			{
+				"order": "3",
+				"title": "Farm Numbers Crash Across Europe",
+				"text": "Economic pressures within the E.U. leads to pressure on agricultural budgets and further rounds of Common Agriculture Policy (CAP) reform that result in reduced subsidies for production. This places a squeeze on smaller farmers, who rely on subsidies to maintain production. The numbers of farms across Europe falls particularly in Eastern Europe where there are larger numbers of small farmers. There is consolidation of remaining farmers into very large farms producing a highly concentrated farm sector producing commodity crops in input and capital intensive systems. There is more vertical integration with farming tied into large food production companies."
+			},
+			{
+				"order": "4",
+				"title": "Crisis in rural Europe as unemployment rises",
+				"text": "Small rural communites come under pressure as “green deserts” emerge, a landscape dominated by large scale farms and deserted rural villages. This increases the vulnerability of food sector to shocks the system is dependent on high levels of credit to fund production and capital investment."
+			},
+			{
+				"order": "5",
+				"title": "Calls for Measures to Tackle Green Deserts",
+				"text": "Land use changes result in changing ownership structures. Increasingly investment is dominated by larger multinational players who are able to buy up larger areas of land as long term investments. Some of this land is given over to forestry and other non-food uses this means that food production becomes concentrated on less land but production levels are maintained through greater intensification however this increases the vulnerability of the food system."
+			},
+			{
+				"order": "6",
+				"title": "Land Grab Anger Grows in Central Europe",
+				"text": "Changes in Land ownership breed resentment and there are calls for measures to control foreign land ownership. However, governments have largely stepped back from rural development and intervention in land ownership arguing that market forces are leading to changes in the food industry which are beyond their control and which they are powerless to stop. They are perceived to have failed to act in the interests of rural communities, this fuels the rise of extremist groups and land reform movements. Reduction in subsidy levels means that there is pressure on foods prices which are now fixed by the market rather than by government intervention. This is fine when the system is able to produce sufficient affordable food but makes food access for the poorest people in society vulnerable to changes in economic circumstances."
+			},
+			{
+				"order": "7",
+				"title": "Small farms survives by focussing on niche local products",
+				"text": "What small farms and food production remains survives by focussing on niche local products and there is a blossoming of local food movements in many parts of Europe. While this sees more diverse local food available it is more expensive and is limited to outlets such as food fairs and farmers markets."
+			},
+			{
+				"order": "8",
+				"title": "Nutritional inequality reduces life expectancy",
+				"text": "There is a growing divide between on the one hand those who can afford the money and time to buy more expensive local and imported foods and those on the other hand who depend on cheaper food produced from intensively produced commodity crops. This food is less nutritious and there is a growth in nutritional inequality with poorer consumers reliant on less nutritious carbohydrate rich diets. There is a concentration of non-communicable diseases in the less affluent parts of society while at the same time there is a decline in sympathy for the victims who are seen to be responsible for their own health problems because of poor food choices."
+			},
+			{
+				"order": "9",
+				"title": "Heavy Metal Contaminants entering the food chain",
+				"text": "Costs of farm inputs rise leading to general pressure on food prices, fertilisers become more expensive and scarce and those that are available are of poorer quality leading to heavy metal contamination in staples and creating food safety concerns."
+			},
+			{
+				"order": "10",
+				"title": "When the financial crisis peaks in 2026",
+				"text": "When the financial crisis peaks in 2026, its effects are to increase levels of unemployment and reduce credit available to large scale farms. The large input intensive food system is not resilient to these type of shocks this leads to a reduction in the quantity of food produced and increased prices."
+			},
+			{
+				"order": "11",
+				"title": "Credit Squeeze raises fears for food production",
+				"text": "The price of staples is particularly badly impacted and this has a disproportionately negative impact on the food security of the poorest. Food banks are overwhelmed and there is political disagreement between those who claim the crisis requires government intervention and those who claim that the market should be left alone. The latter group tends to blame food shortages on the victims. Strategic reserves and welfare systems have been rundown and there is limited scope for government intervention to address the problem. Charities try to make up the gap but they are overwhelmed."
+			},
+			{
+				"order": "12",
+				"title": "30% of children go to school hungry",
+				"text": "The scale of the problem is not understood as no-one believes there is food poverty in Europe. Some malnutrition deaths are reported but the main effects are an increase in begging petty theft and undernutrition. Resentment boils over and there are food riots in poor areas of major urban centres."
+			},
+			{
+				"order": "13",
+				"title": "Europe turns back the clock to solve food crisis",
+				"text": "Riots prompt governments to step in with basic food security programme. Land is taken into public ownership and brought back into food production. Some larger companies go out of business and are replaced with co-operative arrangements."
+			}
+		]
 	}
 ]

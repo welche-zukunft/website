@@ -29,6 +29,7 @@ function update_workshop_menu(j) {
   var intro_long = metacontents[j].intro_long;
   var namemoderator = metacontents[j].namemoderator;
   var vitamoderator = metacontents[j].vitamoderator;
+  var picmod = metacontents[j].picmod;
   var material = metacontents[j].material;
   
   //colors
@@ -114,9 +115,12 @@ function update_workshop_menu(j) {
 if(namemoderator != ""){
 	menu_content.append(
     '<div id="ws_vita" class="ws_content">'
-    + '<p class="ws_hl moderation">'
+	+ '<p class="ws_hl moderation">'
 	+ "Moderation"
     + '</p>'
+	+ '<img id="ws_image" src="./images/mod/'
+	+ picmod
+    + '.png" />'
     + '<p>'
     + vitamoderator
     + '</p>'

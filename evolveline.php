@@ -198,7 +198,7 @@
 			
 			<h3>Arbeit: Zukunft ohne Arbeitgeber?</h3>
 			<p class="workshop">Holokratie, Automatisierung, flexible Arbeitsformen, virtuelle Teams, lokale Produktion, Cult of Less, Armut oder Verzicht?</p>
-			<p class="workshop">xpertin: Cornelia Daheim (Future Impacts, Köln)</p>
+			<p class="workshop">Expertin: Cornelia Daheim (Future Impacts, Köln)</p>
 			
 			<h3>Identitäten: Heiße Luft</h3>
 			<p class="workshop">Geschichte wiederholt sich nicht buchstäblich, sondern als Farce.</p>

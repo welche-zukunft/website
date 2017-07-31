@@ -49,7 +49,7 @@
 			<li><a href="#anmeldung" class="pseudo anmeldung" onclick="setstatus(false);">Anmeldung</a></li>
 			<li><a href="#team" onclick="setstatus(false);">Team & Partner</a></li>
 			<li><a href="#kontakt" onclick="setstatus(false);">Kontakt</a></li>
-			<li><a href="evolveline_en.php">English</a></li>
+			<li><a href="evolveline.php">Deutsch</a></li>
 		</ul>
 		</nav>
 	</div><!-- topmenu -->
@@ -430,7 +430,7 @@
 
 	<!-- contentboxes -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script> var handle_pos = {"x":0, "y":0, "z":0}; var language="deu";</script>
+	<script> var handle_pos = {"x":0, "y":0, "z":0}; var language="eng";</script>
 	<script type='text/javascript' src='js/contentboxes.js'></script>
 	<script type='text/javascript' src='js/contentboxes_line_functions.js'></script>
 	<!-- contentboxes -->

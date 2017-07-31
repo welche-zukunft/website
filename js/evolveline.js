@@ -71,6 +71,7 @@ var controlPlaneOpacity = 1.;
 
 var startpoint;
 var tutorialdiv = true;
+var tutorialpart2 = false;
 
 document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 

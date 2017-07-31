@@ -1,6 +1,16 @@
 
 
 function update_workshop_menu(j) {
+		//change text on scenario select
+	if (tutorialdiv == true && tutorialpart2 == false){
+		if (language == "deu"){
+			$('#tutorial').find("span").html("Klicke obere Hälfte = Vorwärts <br> Klicke untere Hälfte = Rückwärts");
+		}
+		else if (language == "eng"){
+			$('#tutorial').find("span").html("click upper half = forward  <br> click lower half = backward");
+		}
+		tutorialpart2 = true;
+	}
 	//console.log(j);
   var workshop = workshops[j];
   //var contents = workshop.contents;
@@ -149,8 +159,9 @@ $(document).on('click touchstart', function(e) {
 		if(e.pageY < window.innerHeight /2.) camposIntern += 1;
 		if(e.pageY > window.innerHeight /2.) camposIntern -= 1;			
 	
+
 	//delete tutorial on first zoom in
-	if(tutorialdiv == true && camposIntern >= 0){
+	if(tutorialdiv == true && camposIntern >= 0 && tutorialpart2 == true){
 		tutorialdiv = false;
 		$(document).ready(function(){
 		setTimeout(function () {

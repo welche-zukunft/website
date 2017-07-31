@@ -26,6 +26,7 @@ function update_workshop_menu(j) {
   var title = metacontents[j].title[0];
   var title2 = metacontents[j].title[1]; 
   var intro_short = metacontents[j].intro_short;
+  var intro_long = metacontents[j].intro_long;
   var namemoderator = metacontents[j].namemoderator;
   var vitamoderator = metacontents[j].vitamoderator;
   var material = metacontents[j].material;
@@ -57,6 +58,9 @@ function update_workshop_menu(j) {
     '<div id="ws_intro" class="ws_content">'
     + '<p>'
     + intro_short
+    + '</p>'
+	+ '<p>'
+    + intro_long
     + '</p>'
     + '<p class="ws_hl">'
 	+ "Experten"

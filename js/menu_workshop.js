@@ -38,6 +38,21 @@ function update_workshop_menu(j) {
   $("#ws_menu_subtitle").css("color","black");
   $("#workshopmenu").css("color","black");
   $("#burger_icon").css("color","black");
+
+  // all Experts in one line
+	var expertstring = "";
+	var bezeichnung = "Experte";
+	if(name.length > 1){
+		bezeichnung = "Experten";
+	}
+	expertstring += bezeichnung + ": ";
+	for(var i = 0; i < name.length; i++){ 
+		expertstring += name[i];
+		if(i+1 < name.length){
+		expertstring += ', ';
+		}
+	}
+
   // menu elements
 
   // logline
@@ -47,6 +62,9 @@ function update_workshop_menu(j) {
     + '<p>'
     + logline
     + '</p>'
+    + '<p>'
+	+ expertstring
+    +'</p>'	
     + '</div>'
   );
   // title

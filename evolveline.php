@@ -289,7 +289,7 @@
 					8. Und jetzt bitte anmelden! Die Zukunft wartet nicht. <br><br>
 				</div><!-- anmeldeinfos -->
 				<div id="newsletter">
-				<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+				<form method="POST" id="nl_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 					<input type="hidden" name="list" id="list" value="newsletter">
 					<label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hier bitte ihren Namen und ihre Mailadresse ein. Sollten sie sich für den Workshoptag angemeldet haben erhalten Sie den Newsletter automatisch.</label>
 					<br>

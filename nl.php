@@ -95,6 +95,7 @@
     } else {
       $result_display = 'display:block;';
     }
+    echo $feedback;
   } else {
     // GET stuff
     if (!empty($_GET["ml"])) {

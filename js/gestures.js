@@ -1,5 +1,5 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
- 
+mobile = true;
 
 var myElement = document.getElementById('container');
 var currentscale = 1;
@@ -38,4 +38,14 @@ function createRemap(inMin, inMax, outMin, outMax) {
 }
 
 var scale = createRemap(0.,1.,1.2,0.8);
-}
+});
+
+$(window).bind('gesturestart touchmove', function(event) {
+    event = event.originalEvent || event;
+    if (event.scale !== 1) {
+         event.preventDefault();
+         document.body.style.transform = 'scale(1)'
+    }
+});
+
+

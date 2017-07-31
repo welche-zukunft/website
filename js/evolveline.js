@@ -3,6 +3,7 @@ var statistics = false;
 var showWalls = true;
 var showFakeWalls = false;
 var showDax = true;
+var mobile = false;
 
 if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ){
 	showWalls = false;
@@ -93,6 +94,8 @@ var metainfos = "./contents/database.json";
 
 var metacontents = [];
 // get meta info about workshops from json
+
+var shifter = 0.;
 
 if (Detector.webgl) {
     // Initiate function or other initializations here
@@ -303,7 +306,8 @@ function init() {
 	workshopdot_deselect(timelineCount);
 	
 	window.addEventListener( 'resize', onWindowResize, false );
-
+	window.addEventListener('orientationchange', doOnOrientationChange);
+	
 	var geometry2 = new THREE.PlaneGeometry( 1., 1., 1. );	
 			
 	var splitmat = new THREE.MeshBasicMaterial({ 
@@ -386,7 +390,7 @@ function deselectworkshop(){
 		$("#workshopmenu").css("color","white");
 		shiftControlPlane();
 }
-var shifter = 0.;
+
 
 function animate() {
 	
@@ -462,14 +466,35 @@ function onDocumentMouseMove(event) {
 		mouseY = ( event.clientY - windowHalfY  )*0.008;
 }
 
+
+
+
 	
 function onWindowResize() {
 	windowHalfX = window.innerWidth / 2;
 	windowHalfY = window.innerHeight / 2;
+	if(mobile === false){
+	div = document.getElementById("container");
+	container.width = div.clientWidth;
+	container.height = div.clientHeight;
+	renderer.setPixelRatio( window.devicePixelRatio );	
 	camera.aspect = window.innerWidth / window.innerHeight;
-	camera.updateProjectionMatrix();
+    camera.updateProjectionMatrix();
 	renderer.setSize( window.innerWidth, window.innerHeight );
+	}
+	//camera.aspect = window.innerWidth / window.innerHeight;
+	//camera.updateProjectionMatrix();
+	//renderer.setSize( window.innerWidth, window.innerHeight );
 	
+}
+function  doOnOrientationChange(){
+	div = document.getElementById("container");
+	container.width = div.clientWidth;
+	container.height = div.clientHeight;
+	renderer.setPixelRatio( window.devicePixelRatio );	
+	camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+	renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
 var camposIntern = -1;

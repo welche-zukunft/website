@@ -126,6 +126,7 @@ function closeWsMenu(){
 	wsIsOpen = setter;
 }
 
+
 $(document).on('click touchstart', function(e) {
 	//close WS Menu if click outside of opended WS Menu
 	if(wsIsOpen == true){

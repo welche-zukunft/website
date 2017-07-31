@@ -168,8 +168,6 @@ function createFakeWalls(){
 		if(orientation_world == "vertical"){
 			planer.position.x = -1. * (boxwidth*2.5) + (5*boxwidth*r);
 		}
-		/*planer.position.y = (boxy.getSize().y)/2.;
-		planer.position.z = 3.-(boxy.getSize().x * r );*/
 		planer.rotation.y = (Math.PI/2.)+(Math.PI*r);
 		fakewalls.push(planer);
 		faketopy.add(planer);

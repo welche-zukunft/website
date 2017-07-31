@@ -513,7 +513,6 @@
 	<script type='text/javascript' src='js/Detector.js'></script>
 	<script type='text/javascript' src='js/changeworkshop.js'></script>
 	<script type='text/javascript' src='js/numbers.js'></script>
-	<script type='text/javascript' src='js/changewindowsize.js'></script>
 	<script type='text/javascript' src='js/triggers.js'></script>
 	<script type='text/javascript' src='js/smoothscroll.js'></script>
 	<script type='text/javascript' src='js/dynamiccontent.js'></script>

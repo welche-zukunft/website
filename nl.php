@@ -15,12 +15,14 @@
   $ok_unsub_confirmed = 'Austragung aus dem Workshop/Newsletter erfolgreich bestätigt. //' . "\r\n" .
     'Unsubscription from workshop/newsletter succesfully confirmed.';
   $err_unknown_action = 'Keine oder unbekannte Anweisung.';
+  $err_agb_unaccepted = 'Sie müssen den AGB zustimmen. //' . "\r\n" .
+    'You must accept the conditions.';
 
   // define variables and set to empty values
   //// given via GET
   $subject = $action = $unsub_mail = $ml = "";
   //// given via POST
-  $sub_mail = $name_first = $name_last = "";
+  $sub_mail = $name_first = $name_last = $agb = "";
   //// used in form
   $feedback = $result_display = "";
   //// used only here
@@ -63,9 +65,10 @@
       $sub_mail = test_input($_POST["mail"]);
       $name_first = test_input($_POST["vorname"]);
       $name_last = test_input($_POST["nachname"]);
+      $agb = test_input($_POST["agb"]);
     // start doing sub stuff if mail address is provided
     // else throw error
-    if (filter_var($sub_mail, FILTER_VALIDATE_EMAIL)) {
+    if (filter_var($sub_mail, FILTER_VALIDATE_EMAIL) && $agb == "YES") {
       // set vars for mail to send
       //// we must replace '@' of the users address so we can mail ist to ezmlm
       $sub_mail_ezmlm = str_replace('@', '=', "$sub_mail");
@@ -82,6 +85,10 @@
       }
     } else {
       $feedback = $err_sub_mail_missing;
+    }
+    // Check for accepted conditions
+    if ($agb != "YES") {
+      $feedback = $err_agb_unaccepted;
     }
     if (empty($feedback)) {
       $result_display = 'display:none;';

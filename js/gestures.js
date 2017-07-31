@@ -26,10 +26,10 @@ mc.on("pinch", function(ev){
 	camera.fov = FOV * scale(currentscale);
 	camera.updateProjectionMatrix();
 });
-
+/*
 mc.on("panright panleft", function(ev) {
 	mouseX = ( ev.pointers[0].layerX- windowHalfY  )*0.008;
-});
+});*/
 
 function createRemap(inMin, inMax, outMin, outMax) {
     return function remaper(x) {

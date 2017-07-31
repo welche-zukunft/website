@@ -104,8 +104,8 @@ body {
 				font-size:14px;
 			}*/
 			h3 {
-				text-decoration:nonme;
-				color: rgb(204, 103, 91);
+				text-decoration:none;
+				color: black;
 				margin-bottom:1px;
 				font-weight:normal;
 			}
@@ -131,7 +131,7 @@ body {
 				color: #9dbaa1;
 			}
 			p {
-				line-height:22px;
+				line-height:26px;
 			}
 			.workshop {
 				margin-top: 0px;

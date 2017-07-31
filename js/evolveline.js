@@ -8,6 +8,7 @@ var mobile = false;
 if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ){
 	showWalls = false;
 	showFakeWalls = true;
+	mobile = true;
 }
 
 // switches
@@ -160,7 +161,7 @@ function init() {
 	
 	
 	//renderer.setSize( window.innerWidth/4., window.innerHeight/4. );
-	renderer.autoResize = true;
+	renderer.autoResize = false;
 	
 	//container.appendChild( renderer.domElement );
 	var distance = window.innerWidth + ( window.innerWidth * 0.9);
@@ -474,14 +475,14 @@ function onDocumentMouseMove(event) {
 function onWindowResize() {
 	windowHalfX = window.innerWidth / 2;
 	windowHalfY = window.innerHeight / 2;
-	if(mobile === false){
-	div = document.getElementById("container");
-	container.width = div.clientWidth;
-	container.height = div.clientHeight;
-	renderer.setPixelRatio( window.devicePixelRatio );	
-	camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-	renderer.setSize( window.innerWidth, window.innerHeight );
+	if(mobile == false){
+		div = document.getElementById("container");
+		container.width = div.clientWidth;
+		container.height = div.clientHeight;
+		renderer.setPixelRatio( window.devicePixelRatio );	
+		camera.aspect = window.innerWidth / window.innerHeight;
+		camera.updateProjectionMatrix();
+		renderer.setSize( window.innerWidth, window.innerHeight );
 	}
 	//camera.aspect = window.innerWidth / window.innerHeight;
 	//camera.updateProjectionMatrix();
@@ -489,12 +490,13 @@ function onWindowResize() {
 	
 }
 function  doOnOrientationChange(){
+	container = document.getElementById( "threejs" );
 	div = document.getElementById("container");
 	container.width = div.clientWidth;
 	container.height = div.clientHeight;
-	renderer.setPixelRatio( window.devicePixelRatio );	
 	camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
+	renderer.setPixelRatio( window.devicePixelRatio );	
 	renderer.setSize( window.innerWidth, window.innerHeight );
 }
 

@@ -31,24 +31,23 @@
 	<div id="topmenu" class="foreground">
 		<input class="burger-check" id="burger-check" type="checkbox">
 		<label for="burger-check" class="burger">⇳</label>
-		<label class="left" for="burger-check" >Welche Zukunft?!</label>
-		<label class="center">16. September 2017 im Deutschen Theater Berlin</label>
-		<label class="right"><a href="#anmeldung" class="undeco">Jetzt anmelden</a></label>
+		<label class="left" for="burger-check" >WHICH FUTURE?!</label>
+		<label class="center">16. September 2017 at Deutsches Theater Berlin</label>
+		<label class="right"><a href="#anmeldung" class="undeco">Register now</a></label>
 		<nav id="navigation1" class="navigation">
 		<ul>
 			<li><a href="#container_section" onclick="setstatus(true);reset_ws();">Start</a></li>
-			<li><a href="#info" onclick="setstatus(false);">Das Projekt</a></li>
-			<li class="li-box"><span class="menu">Das Labor</span>
+			<li><a href="#info" onclick="setstatus(false);">The Project</a></li>
+			<li class="li-box"><span class="menu">The Laboratory</span>
 				<ul>
-					<li><a href="#labor" onclick="setstatus(false);">Das Labor</a>
-					<li><a href="#ablauf" onclick="setstatus(false);">Ablauf</a>
+					<li><a href="#labor" onclick="setstatus(false);">Laboratory</a>
 					<li><a href="#workshops" onclick="setstatus(false);">Workshops</a>
-					<li><a href="#plenum" onclick="setstatus(false);">Plenum</a>
+					<li><a href="#plenum" onclick="setstatus(false);">Plenary</a>
 				</ul>
 			</li>
-			<li><a href="#anmeldung" class="pseudo anmeldung" onclick="setstatus(false);">Anmeldung</a></li>
+			<li><a href="#anmeldung" class="pseudo anmeldung" onclick="setstatus(false);">Registration</a></li>
 			<li><a href="#team" onclick="setstatus(false);">Team & Partner</a></li>
-			<li><a href="#kontakt" onclick="setstatus(false);">Kontakt</a></li>
+			<li><a href="#kontakt" onclick="setstatus(false);">Contact</a></li>
 			<li><a href="evolveline.php">Deutsch</a></li>
 		</ul>
 		</nav>
@@ -93,207 +92,218 @@
 		</div> <!-- container -->
 	</section> <!-- container_section -->
 
+	
 	<article id="articleinfos">
 		<section id="info"> <div class="flex"> <div class="paper">		
-			<h1>Welche Zukunft?! </h1>
-			<p>Hubschrauber kreisen über dem Kurhaus von Heiligendamm. Polizeiboote patrouillieren die Ostseeküste, Möwen frieren am Strand. Drinnen, im Saal des Grandhotels, haben sich die Staats- und Regierungschefs der G12 versammelt. Es ist der 9.2. 2028 und dies ist das erste Treffen seit dem Crash, der 2026 die Weltwirtschaft lahmlegte. Die Gastgeberin, Kanzlerin von der Leyen, tritt vor das Mikrofon und begrüßt die Gäste. Ihre Rede ist kurz, formlos und endet mit einem eindringlichen Appell. </p>
-			<p>„Dies ist die letzte Chance, unsere Demokratie zu retten. Die Menschen haben den Glauben an uns verloren. Wir, die internationale Staatengemeinschaft, haben versagt. Wir haben zu wenig unternommen, zu spät reagiert. Nun. Müssen. Wir. Handeln.“ </p>
-			<p>Die versammelten Staats- und Regierungschefs werden nicht handeln. Sie werden sich aber dazu durchringen, einen Untersuchungsausschuss einzusetzen. Während draußen in den Städten Barrikaden brennen und Supermärkte geplündert werden, versucht ein internationales Panel in der Villa Perle, die Ursachen für den Zusammenbruch der Weltwirtschaft zu ermitteln, der vor zwei Jahren begonnen hat und dessen Ende nicht absehbar ist. </p>
-			<p>Zugegeben: es kann auch anders kommen. Es kann auch gut gehen. Die Krise wird abgewendet. Die Weltwirtschaft erholt sich. Die 17. Staffel von Games of Thrones wird gedreht, der Berliner Flughafen eröffnet. Wir wissen es nicht. </p>
-			<p>Aber wenn wir es wüssten - wenn wir mit Sicherheit wüssten, dass die Party im Jahr 2026 zu Ende ist, dass eine Bank oder ein Algorithmus oder ein Land die Weltwirtschaft vor die Wand fährt - was würden wir tun? Hier und jetzt, was würden wir unternehmen? Was können wir unternehmen? </p>
-			<p>„Welche Zukunft?!“ ist ein interdisziplinäres, partizipatives Forschungs- und Theaterprojekt, dass sich zur Aufgabe gestellt hat, diese Frage zu beantworten: Was können wir tun, um zu verhindern, dass uns die nächste Finanzkrise endgültig den Boden unter den Füßen wegzieht? </p>
-			
+			<h1>WHICH FUTURE?!</h1>
+			<p class="italic">Helicopters hover over the kurhaus in Heiligendamm, Germany. Police boats are patrolling the baltic shores, black headed gulls huddle on the narrow beach. Inside, in the hall of the Grandhotel, the heads of state of the G 12 group have gathered. It is Feb. 9th 2028 and this is the first gathering since the global financial meltdown of 2026. The host, chancellor von der Leyen steps up to the microphone to welcome the guests. Her speech is short, informal and ends on an urgent plea. </p>
+			<p class="italic">„This is the last chance to save our democracy. The people of the world have lost their faith in us, in the political class. We, the governments of the industrialised nations, have failed. We have done too little, too late. Now we must act, and we must act now, without any further delay.“ </p>
+			<p class="italic">The heads of state gathered at the baltic shore will not act. They will, however, install an investigative committee. While outside in the cities barricades burn and the unemployed are looting the high streets, an international panel meets in the Villa Perle to investigate the causes for the crash of the global economy, which began 2026 and threw the world in a deep depression with no end in sight.  </p>
+			<p>Admittedly: the future might look completely different. It might be bright. The crisis will be averted. The global economy recovers. HBO commissions the 17th season of Games of Thrones. The Berlin airport opens. We do not know.  </p>
+			<p>But: if we knew - if we were absolutely certain the party would be over in 2026 - that a bank or an algorithm or a nation would crash the global economy… What would we do? Here and now - what would we do? </p>
+			<p>„Which Future?!“ is an interdisciplinary, participatory research and theatre project, dedicated to finding answers to these questions: What can we do to avert the next financial crisis, which would finally knock us off our feet for good. </p>
+		<h2>Course of events</h2>
+		<p>„Which Future?!“ is a research and theatre project, an event-cycle running over the course of two years. Together with scientists the audience we will be invited to explore the correlation of knowledge, prediction and design. Somewhere between agora, science fiction, math-based modeling and coincidence we can pinpoint the story of the future. Do we at least need an idea of what the future brings, if we want to have some influnce? </p>
+		<p>The goal is to instigate a debate on our future, to leave the gridlock behind, find an exit from the permanent presence. Because unless we take action, we will continue our existence as history’s crashtest-dummies, continuously driving straight into the same wall at full speed. </p>
+		<p>Three <a href="#workshopthemen" onclick="setstatus(false);">workshops</a> will be conducted in english. Simultaneous translation will be offered for the bilingual plenaries.  </p>
+		<p>The project structure is based on four events: </p>
+		<h2>Laboratory </h2>
+		<p>The Laboratory on Sept. 16th 2017 at Deutsches Theatre Berlin is the kickoff for the two-year event cycle. Based on studies, research projects, prognosis and scenario planning with experts we will be creating a narrative for the next 10 years. The full day of collaborative writing in workshops and plenaries at the Deutsches Theater in Berlin.  </p>
+		<p><a href="#labor" onclick="setstatus(false);">>> more about the Lab</a></p>
+		<h2>Symposium </h2>
+		<p>In March 2018 the Symposium together with Stiftung Humboldt Forum im Berliner Schloss continues and substantiates the work that has begun in the laboratory. Scientists from various disciplines give lectures, talks and debate the issues surrounding the narrative of our future. </p>
+		<h2>Stage play</h2>
+		<p>The results from the laboratory and the symposium will be the building blocks for a stage play, which will be performed in September 2018 at Deutsches Theater Berlin. It will be staged as an investigational hearing, where the question of accountability for the events leading up to the crisis of 2026 will be raised. How did certain decisions come about? Who could have averted the crisis? Experts, actors, lawmakers and politicians will gather for the hearing. There will be no vote on guilt, no judgement or punishment suggested. It will be an exploration into action and consequence. </p>
+		<h2>Conclusion </h2>
+		<p>How to move on from here?! Which future… is it going to be?! The fourth and last event will be a conference in autumn 2019, together with the Stiftung Humboldt Forum im Berliner Schloss. We will attempt to draw conclusions from two years of collaborative exploration. We will try to develop actual concepts for a - dare we say it? - better future. What could be the political and social strongholds that would safeguard us? How could an economic system operate that serves the people, rather than forcing people under its doctrine? Where financial assets are not only utilised to create profit but also applied where they are needed? <br>
+		Similar to the laboratory and the symposium collaborative  and interdisciplinary processes are as important as the content that is being negotiated.<p>
+		<p class=italic>„Which Future?!“ is a coproduction of Deutsches Theater Berlin with the Stiftung Humboldt Forum im Berliner Schloss, funded by the German Federal Government Commissioner for Culture and the Media according to a vote of the German parliament. </p>
+			<div class=logos>
+			<a href="https://www.deutschestheater.de" target="_blank"><img src="image0.png" alt="logo"></a>
+			<a href="http://humboldtforum.com/de-DE/" target="_blank"><img src="image2.png" alt="logo"></a>
+			<a href="https://www.bundesregierung.de/Webs/Breg/DE/Bundesregierung/BeauftragtefuerKulturundMedien/beauftragte-fuer-kultur-und-medien.html" target="_blank"><img src="image1.png" alt="logo"></a>
+			</div><!-- logos -->
+			<p><span class=italic>Media partner:</span></p>
+			<div class=logos>
+			<a href="http://www.deutschlandfunkkultur.de" target="_blank"><img src="image3.png" alt="logo"></a>
+			</div>	
 		</div><!-- paper --> </div><!-- flex --> </section><!-- intro -->
 		<section id="labor"> <div class="flex"> <div class="paper">
-		<h2>Das Labor </h2>
-		<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt des zwei-jährigen Veranstaltungszyklus. Wir laden Menschen ein, in diesem außergewöhnlichen Experiment gemeinsam mit Experten weltweit renommierter Forschungsinstitute, eine Geschichte der nächsten zehn Jahre zu schreiben, die möglichst plausibel erscheint. Hier verhandeln wir Fakten, Wissen, und Modelle – aber auch unsere Ängste, Hoffnungen und Wünsche. </p>
-		<p>Als Ausgangspunkt setzen wir eine fiktive Krise im Jahr 2026, die die Welt in eine Rezession stürzen wird. Fragen kommen auf, nach den Verantwortlichen, nach den Prozessen, die stattfinden oder abgewendet werden müssen. So entsteht ein Denkraum, in dem wir uns entscheiden können, ob wir diese Zukunft wollen - oder eben doch eine andere. Wenn sie uns nicht gefällt, müssen wir die Parameter der Laboranordnung, die unser Leben ist, verändern. Und das müssen wir jetzt tun. 
-		Das Labor versteht sich als partizipativer Prozess in dem Wissen geteilt und gemeinsam generiert wird. In 13 Workshops (Link zu Workshops) versammeln sich 250 Menschen, um Zukunftsszenarien zu entwerfen und der Krise ins Auge zu blicken. </p>
-		<p>In derselben Methode wollen wir in Zukunft Geschichte machen, über Politik entscheiden und Ressourcen verteilen. </p>
+		<h2>LABORATORY</h2>
+		<p>The laboratory on September 16th. 2017 at Deutsches Theater Berlin will be the kick off for the two-year project. We are inviting experts and citizens to collaboratively create the story of the next ten years - a plausible scenario of the future. We will negotiate facts, knowledge and models - but also our fears, hopes and wishes. </p>
+		<p>The narrative will be based on a fictitious event- a global financial meltdown in the year 2026 followed by a great depression. The possible chain of events leading up to it raise questions of responsibility, measures and counter measures. A space to speculate and ponder the future is created - we will have to decide, if this is the kind of future we want. And if not, we should change the customs settings in the lab that is our life. Sooner, rather than later. </p> 
+		<p>The laboratory will be a participatory process, where we generate and share knowledge. 250 people come together in 13 <a href="#workshops" onclick="setstatus(false);">Workshops</a> to create future scenarios and confront the crisis face on. </p>
+		<p>Three workshops will be conducted in english. Simultaneous translation will be offered for the bilingual plenaries. </p>
 		<p>
-		Welche Zukunft?!-Labor (Workshoptag)<br>
-		Samstag, 16. September 2017<br>
-		Deutsches Theater Berlin (im ganzen Haus)<br>
-		Von 10:00 bis 20:15 Uhr, im Anschluss Ausklang und Musik<br>
-		<a href="#anmeldung" onclick="setstatus(false);">Jetzt anmelden! </a></p>
-		</div><!-- paper --> </div><!-- flex --> </section><!-- labor -->
-		<section id="ablauf"> <div class="flex"> <div class="paper">	
-			<h2>Projektverlauf</h2>
-			<p>„Welche Zukunft?!“ ist ein auf zwei Jahre angelegtes Forschungs- und Theaterprojekt. Zusammen mit Wissenschaftlern und Publikum erforschen wir gemeinsam den Zusammenhang von Wissen, Vorhersage und Gestaltung. Irgendwo zwischen Agora, Science Fiction, mathematischem Modell und dem Zufall liegt die Geschichte der Zukunft. Müssen wir sie kennen, um sie zu ändern? </p>
-			<p>Das Projekt ist unterteilt in vier Schritte:</p>
-			<h2>Labor </h2>
-			<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt des zwei-jährigen Veranstaltungszyklus. Hier entwickeln wir auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien mit Experten und dem Publikum ein mögliches Zukunftsszenario für die kommenden 10 Jahre. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
-			<p><a href="#labor" onclick="setstatus(false);">>> mehr über das Labor</a></p>
-			<h2>Symposium </h2>
-			<p>Ein im März 2018 gemeinsam mit dem Humboldt Forum veranstaltetes Symposium setzt die Arbeit des Labors vertiefend fort. Wissenschaftler aus verschiedenen Disziplinen halten Vorträge, debattieren über die Ergebnisse des Labors und entwickeln sie weiter.</p>
-			<h2>Theaterstück</h2>
-			<p>Die Ergebnisse von Labor und Symposium fließen in ein gleichnamiges Theaterstück ein, das im September 2018, am Deutschen Theater Berlin uraufgeführt wird: In einem Untersuchungsausschuss wird die Frage nach der Verantwortung für die Ereignisse der Jahre 2018 – 2028 gestellt. Warum haben wir so und nicht anders gehandelt? Wer hätte das Schlimmste verhindern können? Experten und Schauspieler, Juristen und Politiker kommen für die Befragung zusammen. Es wird nicht über Schuld abgestimmt, sondern ermittelt, welche Entscheidungen welche Konsequenzen haben. </p>
-			<h2>Abschlusskonferenz</h2>
-			<p>Wie nun weiter?! Welche Zukunft… wird es werden?! Der vierte und letzte Teil im Herbst 2019 versucht in einer Abschlusskonferenz, die zweijährige Arbeit zu bilanzieren und konkrete Konzepte zu entwickeln. Wie könnte ein Wirtschaftssystem aussehen, das dem Menschen dient und nicht umgekehrt? In dem das Vermögen nicht nur dahin fließt, wo es den meisten Ertrag bringt, sondern dahin, wo es gebraucht wird – und das demokratisch legitimiert? Wie schon in Labor und Symposium sind Teilhabe und interdisziplinärer Austausch in diesem Prozess ebenso wesentlicher Bestandteil, wie die Inhalte, die verhandelt werden. </p>
-			<p>Ziel ist es, eine Debatte über unsere Zukunft anzuregen - aus der Stagnation heraus zu treten, die permanente Gegenwart zu verlassen. Fahren wir als Crashtest-Dummies der Geschichte vor die immer selbe Wand?</p>
-			<p>„Welche Zukunft?!“ erzählt die Geschichte der kommenden 10 Jahre, von 2018 bis 2028. </p>
+		„Which Future?!“-Laboratory <br>
+		Saturday, September 16. 2017<br>
+		Deutsches Theater Berlin <br>
+		From 10am  to 8pm followed by chill out with music and drinks <br>
+		<a href="#anmeldung" onclick="setstatus(false);">Register now  </a></p>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- ablauf -->
 		
 
 
-		<section id="workshops"> <div class="flex"> <div class="paper">
-				
-			<h2>Workshops</h2>
-			<p>250 Teilnehmer arbeiten in 13 Workshops in den Themen Wirtschaft, Gesellschaft, Klima, Ernährung und Identität. Die Workshops sind für alle offen, Vorwissen ist bei einigen Workshops von Vorteil, aber keinesfalls Bedingung. Die Teilnahme ist kostenlos. Man muss sich lediglich im Vorfeld dazu <a href="#anmeldung" onclick="setstatus(false);">anmelden</a> (first come, first serve). </p>
-			<p>In zwei Workshop-Sessions á 90 Minuten entwickeln die Teilnehmer und Experten gemeinsam Szenarien für den Verlauf der kommenden 10 Jahre in ihrem jeweiligen Themenfeld. </p>
-			<p>Die in den <a href="#container_section" onclick="setstatus(true);reset_ws();">Workshopbeschreibungen</a> vorgestellten Szenarien sind erste Vorschläge, Anregungen. Alles ist möglich: Die EU löst sich auf, die AfD stellt den Kanzler, die D-Mark kommt zurück, in China platzt die nächste Immobilienblase, ein neues VR Spiel hält die Menschen davon ab, zur Arbeit zu erscheinen, ein neues Medikament besiegt den Krebs, die Öl-Industrie rettet das Klima und Daniel Libeskind baut die neue Hauptstadt des vereinigten Korea in der entmilitarisierten Zone. </p>
-			<p>Wenn aber alles möglich ist – was halten wir für wahrscheinlich und plausibel? Und worauf sollten wir uns vorbereiten? Sollen wir Dämme bauen, oder die Flut verhindern? Die Banken stärker regulieren oder den gegenwärtigen Kasinokapitalismus gleich ganz abschaffen?</p>
-			<p>Die Ergebnisse werden von Moderatoren festgehalten und im <a href="#plenum" onclick="setstatus(false);">Plenum</a> vorgetragen und diskutiert. </p>
-			<p>Jeder Workshop hat ca. 20 Teilnehmer, jede Stimme zählt.</p> 
-			<a href="#container_section" onclick="setstatus(true);reset_ws();">>> Zu den Workshops</a><br>
-			<a href="#anmeldung" onclick="setstatus(false);">>> Zur Anmeldung</a>
-			<h2>Die Workshopthemen am 16. September </h2>
-			<h3>Ökonomie: Fiskalische und andere Götterdämmerungen</h3>
-			<p class="workshop">Soziale und ökonomische Krisen als Folge einer fehlgeleiteten Politik. Die Katastrophe kommt, aber alles könnte auch ganz anders sein.</p>
-			<p class="workshop">Experte: Prof. Dr. Rudolph Hickel (Institut für Arbeit und Wirtschaft in Bremen)</p>
+		<section id="workshops"> <div class="flex"> <div class="paper">	
+			<h2>WORKSHOPS</h2>
+			<p>In 13 Workshops 250 participants collaborate on  <a href="#workshopthemen" onclick="setstatus(false);">issues</a> like economy, society, climate and identity. The workshops are open to all, it helps to prepare with the texts provided after registration, no other specialised knowledge is required. Participation is free, but <a href="#anmeldung" onclick="setstatus(false);">registration</a> is mandatory - first come, first serve.</p>
+			<p>In two workshop sessions of 90 min. each, participants and experts will develop scenarios for the turn of events over the course of the next 10 years in their particular field of interest. </p>
+			<p>The scenarios presented in the <a href="#container_section" onclick="setstatus(true);reset_ws();">workshop descriptions</a> are suggestions, inspirations. Everything is possible: An election victory for Front National causes a banking crisis, the EU dissolves, the rightwing populist party will take over the government, the German Mark returns, the Chinese real estate bubble bursts, a new VR game stops people from going to work, new medication conquers cancer, the oil industry saves the climate and Daniel Libeskind builds the capitol of reunited Korea in the demilitarised zone. </p>
+			<p>But if everything is possible - what do we consider most likely, most plausible and what should we prepare for? </p>
+			<p>Moderators collect the results and present them in the <a href="#plenum" onclick="setstatus(false);">plenary</a> - where they are being discussed. Every workshop has 20 participants, every voice counts.</p>
+			<p>Three workshops will be conducted in English the others in German. </p> 
+			<a href="#container_section" onclick="setstatus(true);reset_ws();">>> Workshop overview</a><br>
+			<a href="#anmeldung" onclick="setstatus(false);">>> Register</a>
+			</div><!-- paper --> </div><!-- flex --> </section><!-- workshops -->
+			
+			<section id="workshopthemen"> <div class="flex"> <div class="paper">	
+			<h2>LABORATORY – Workshops</h2>
+			<h3>Economy: Fiscal and other twilights of the Gods </h3>
+			<p class="workshop">The social and economic crises’s originate in misguided politics. The catastrophe will catch up with us eventually-come what may. </p>
+			<p class="workshop">Expert: Prof. Dr. Rudolph Hickel (Institute for labour and economy)</p>
 
-			<h3>Ökonomie: Patient Zero - der Indexpatient Deutsche Bank</h3>
-			<p class="workshop">Too big to fail oder: Wie gefährlich ist die Deutsche Bank?</p>
-			<p class="workshop">Experte: Dieter Hein (fairesearch)</p>
+			<h3>Economy: Patient Zero: Index patient Deutsche Bank?</h3>
+			<p class="workshop">Too big to fail - or: How dangerous is Deutsche Bank? The workshop focuses on the role of banks in the system. </p>
+			<p class="workshop">Expert: Dieter Hein (fairesearch)</p>
 			
-			<h3>Ökonomie: Armageddon</h3>
-			<p class="workshop">Wenn die AfD den Kanzler stellt… Protektionismus, Deflation und Währungskrisen.</p>
-			<p class="workshop">Experten: Prof Dr. Bofinger (Uni Würzburg) und Dr. Dirk Ehnts (Uni Chemnitz)</p>
+			<h3>Economy: Armageddon</h3>
+			<p class="workshop">One day,  the German chancellor will be a AfD-member of the (German UKIP)… The workshop explores protectionism, deflation and currency crisis’ as hypothetical triggers for the 2026 meltdown.  </p>
+			<p class="workshop">Experts: Prof Dr. Bofinger (University of Würzburg) und Dr. Dirk Ehnts (University of Chemnitz)</p>
 
-			<h3>Ökonomie: Der Weg zur Hölle ist mit guten Vorsätzen gepflastert</h3>
-			<p class="workshop">Was passiert, wenn Regulierung die Prozesse beschleunigt, die sie verhindern soll? </p>
-			<p class="workshop">Experte: Dr. Armin Haas (Institute for Advanced Sustainability Studies in Potsdam)</p>
+			<h3>Economy: The road to hell is paved with good intentions </h3>
+			<p class="workshop">What if regulation enhances the processes it was implemented to avert?</p>
+			<p class="workshop">Expert: Dr. Armin Haas (Institute for Advanced Sustainability Studies in Potsdam)</p>
 			
-			<h3>Recht und Gesetz: Staatsverluste?!</h3>
-			<p class="workshop">Staatsbankrott ist nur der letzte Schritt in einem langen Prozess. Welche Regeln herrschen im Chaos und wer setzt sie um? </p>
-			<p class="workshop">Experte: Prof. Dr. Kai von Lewinski (Professor für Öffentliches Recht, Uni Passau)</p>
+			<h3>Law and order: Loosing state?!</h3>
+			<p class="workshop">State bankruptcy is only the last step along a long and winding path littered with loss. What are the rules amidst chaos and who will be left to enforce them? </p>
+			<p class="workshop">Expert: Prof. Dr. Kai von Lewinski (Professor for Public Law, University of Passau)</p>
 			
-			<h3>Risikomanagement: Guter Rat – Notvorrat …</h3>
-			<p class="workshop">Kann man sich gegen systemische Risiken versichern? Kann man sich überhaupt schützen?</p>
-			<p class="workshop">Experte: Prof. Dr. Volker Deville (Uni Bayreuth, ehemals Allianz Research)</p>
+			<h3>Risk management: Keep calm… and your supplies well stocked</h3>
+			<p class="workshop">Can I buy an insurance policy against systemic risk? What’s the best way to prepare for disaster?</p>
+			<p class="workshop">Expert: Prof. Dr. Volker Deville (former Allianz Insurance Group, now University of Bayreuth)</p>
 
-			<h3>Energy transitions (in engl. Sprache)</h3>
-			<p class="workshop">After Oil - but not in the dark ages.</p>
-			<p class="workshop">Experts: Dr. Cho Khong and Geraldine Wessing (Royal Dutch Shell)</p>
+			<h3>Energy transitions (in english)</h3>
+			<p class="workshop">After Oil – but not in the dark ages.</p>
+			<p class="workshop">Experts: Dr. Cho Khong and Geraldine Wessing (Royal Dutch Shell, London)</p>
 			
-			<h3> Wetter: Eine neue Normalität</h3>
-			<p class="workshop">Welche Rolle spielt jeder Einzelne in einem chaotischen System?</p>
-			<p class="workshop">Experten: Jascha Lehmann, Marlene Kretschmer, Kai Kornhuber, Sonja Molnos (Potsdam-Institut für Klimafolgenforschung)</p>
+			<h3>Weather: A new normal</h3>
+			<p class="workshop">What’s the role of the individual in a chaotic system?</p>
+			<p class="workshop">Experts: Jascha Lehmann, Marlene Kretschmer, Kai Kornhuber,  Sonja Molnos (Potsdam Institute for Climate Change Impact)</p>
 
 			
-			<h3>Geopolitics: Intersections (in engl. Sprache)</h3>
+			<h3>Geopolitics: Intersections (in english)</h3>
 			<p class="workshop">War and peace and who can afford it?</p>
-			<p class="workshop">Expert: Rodger Baker (Stratfor)</p>
+			<p class="workshop">Rodger Baker (Stratfor/Texas (USA))</p>
 			
 			
-			<h3>Arbeit: Zukunft ohne Arbeitgeber?</h3>
-			<p class="workshop">Holokratie, Automatisierung, flexible Arbeitsformen, virtuelle Teams, lokale Produktion, Cult of Less, Armut oder Verzicht?</p>
-			<p class="workshop">Expertin: Cormelia Daheim (Future Impacts)</p>
+			<h3>Labour: Will there be any employers left to fight?</h3>
+			<p class="workshop">Holacracy, automation, flexible hours, virtual teams, local production, the cult of less, poverty or self-denial? The workshop explores future trends for the way we work … and play.</p>
+			<p class="workshop">Expert: Cornelia Daheim (Future Impacts)</p>
 			
-			<h3>Identitäten: Heiße Luft</h3>
-			<p class="workshop">Geschichte wiederholt sich nicht buchstäblich, sondern als Farce.</p>
-			<p class="workshop">Experte: Martin Burckhardt (Autor und Kulturtheoretiker)</p>
+			<h3>Identities: Hot Air</h3>
+			<p class="workshop">History is not repeated literally, but as farce.</p>
+			<p class="workshop">Experte: Martin Burckhardt (author and cultural theorist)</p>
 			
 
-			<h3>Elite & Demokratie: Rolle rückwärts</h3>
-			<p class="workshop">Die Eliten in den meisten wichtigen Ländern haben die Ursachen der letzten Krise nicht wirklich begriffen oder begreifen wollen.</p>
-			<p class="workshop">Experte: Michael Hartmann (Prof. i.R. für Soziologie, TU Darmstadt)</p>
+			<h3>Elites & democracy: The wheel keeps turning – backwards</h3>
+			<p class="workshop">In most countries the elites could not - or did not want to - accept the causes for the last financial crisis.  </p>
+			<p class="workshop">Expert: Michael Hartmann (Prof. i.R. für Sociology, TU Darmstadt)</p>
 
-			<h3>Versorgungssicherheit: food/landgrabbing/agriculture (in engl. Sprache)</h3>
-			<p class="workshop">???</p>
+			<h3>Agriculture: Coffee shortage and other inconveniences (in english)</h3>
+			<p class="workshop">How far off are we from a time when people go hungry in Europe? </p>
 			<p class="workshop">Experts: Dr. Ariella Helfgott, Dr. George Garbutt & Patrick O’Reilly (University of Oxford)</p>
-
-		</div><!-- paper --> </div><!-- flex --> </section><!-- workshops -->
+		</div><!-- paper --> </div><!-- flex --> </section><!-- workshopthemen -->
 		
-		<section id="plenum"> <div class="flex"> <div class="paper">
-				
-			<h2>PLENUM</h2>
-			<p>Zwei Mal treffen sich alle Teilnehmer der Workshops zum Plenum. Moderiert von Ulrike Hermann und Adrian Taylor werden die Ergebnisse der Workshops zusammen getragen und am Szenarientisch auf einer interaktiven Timeline so lange arrangiert und umarrangiert, bis aus den Fragmenten und Thesen eine plausible Erzählung entsteht. Geschichte wird gemacht… Das Szenario wird nicht immer eindeutig festzulegen sein, aber insgesamt muss der Ablauf der Ereignisse nachvollziehbar werden.</p>
-			<p>Die Teilnehmer beobachten, wie die Experten und Moderatoren ihre Ergebnisse verwerten, haben dabei immer die Möglichkeit, selbst zu kommentieren, zu ergänzen, Einspruch zu erheben. </p>
-			<h3>Am Kritikertisch: Joseph Vogl</h3>
-			<p>„Die Erhöhung von Redeangeboten in akademisch nicht formatierten Bereichen ist eine Einladung von Produktion von Quatsch“ *<br><br>
-			Joseph Vogl, von Hause aus Literatur – und Medienwissenschaftler an der Humboldt Universität, gilt als einer der scharfsinnigsten Analytiker der vorherrschenden ökonomischen Lehre. In seinem Buch „Gespenst des Kapitals“ hinterfragt er den noch weit verbreiteten Glauben an die unsichtbare Hand des Marktes. 
-			Zugleich ist Vogl auch ein Kritiker von „rhetorischen Schwellkörpern“. Ihm bereitet das Produzieren von Zuspitzungen, Pointen und handlichen Thesen grundsätzlich ein schlechtes Gewissen. <br><br>
-			Joseph Vogl wird den Labortag kritisch begleiten und uns eine abschließende Keynote auf den Weg geben. <br><br>
-			* Moritz von Uslar im Gespräch mit Joseph Vogl. Aus: Die ZEIT Nr 20 / 2017 vom 14.Mai
+		<section id="plenum"> <div class="flex"> <div class="paper">	
+			<h2>PLENARY</h2>
+			<p>Twice, all participants of the laboratory meet in a plenary. Ulrike Hermann and Adrian Taylor will moderate the panel in charge of bringing the results together on one continuous timeline. Here, we will arrange and rearrange the narrative fragments and thesis’ until one plausible, relevant story is written. History is being made… The scenarios will not always be final or definite, but overall the events need to be in plausible order.  </p>
+			<p>While experts and moderators present and debate, the audience can comment, question and veto events while they unfold.  </p>
+			<p>The plenaries will be bilingual. English simultaneous translation will be provided. </p>
+			<h3>At the critic’s table: Prof. Dr. Joseph Vogl </h3>
+			<p class="italic">„The increase of speaking engagements in academic, non formatted areas is an invitation to the production of nonsense“ *</p>
+			<p>Joseph Vogl teaches literature, culture and media studies at Humboldt University and is considered one of the most astute analysts of current economical teaching. In his recent books „The ghost of capitalism“ and „The sovereignty effect“ he questions the widely established belief in the invisible hand of the market and the power structures in current financial regimes.  
+			 <br><br>
+			At the same time Vogl is an avid critic of „rhetorical cavernous bodies“. The production of punchlines, convenient thesis’ or aggravation constantly makes him feel guilty. <br><br>
+			Joseph Vogl will be our critical observer for the laboratory and offer his conclusions and recommendations for the next steps at the end of the day.  </p>
+			<p class="italic">*Moritz von Uslar in conversation with Joseph Vogl. from: Die ZEIT Nr 20 / 2017 May 14th.
 			</p>
-			<h3>Moderatoren im Plenum am 16. September</h3>
-			<p><b>Ulrike Herrmann</b> absolvierte nach einer abgeschlossenen Lehre als Bankkauffrau die Henri-Nannen-Schule. Anschließend studierte sie Wirtschaftsgeschichte und Philosophie an der FU Berlin. Seit 2000 ist sie Wirtschaftskorrespondentin bei der Berliner taz. Dort war sie auch Parlamentskorrespondentin und leitete die Meinungsredaktion. Sie gehört auch zum Vorstand der taz-Verlagsgenossenschaft.</p>
-			<p><b>Adrian Taylor</b> gründete das Unternehmen 4Sing Foresight to Strategy for Security and Sustainability in Governance. Er unterstützt sowohl Kunden im öffentlichen wie im privaten Sektor, Vorhersagemethoden anzuwenden um nachhaltigere Strategien zu entwickeln. Er ist spezialisiert auf inhaltliche Beratung, Prozessdesign und Workshop-Moderation vor allem in den Themen Sicherheit und Nachhaltigkeit und hat breite Erfahrung in der Anwendung zahlreicher Methoden um zukünftige Veränderungen in der Welt zu prognostizieren. Bisher hat Adrian Taylor bereits in über 33 Ländern gearbeitet. Er gibt Workshops auf Englisch, Französisch und Deutsch.<br>
-			Vor Beginn seiner Selbständigkeit war er: Junior-Offizier in der britischen Armee, Lobbyist in EU-Angelegenheiten, Szenarien-Planer in einem Gemeinschaftsprojekt mit Global Business Network, Länderreferent für Indien bei der Europäischen Kommission, Gastwissenschaftler bei Georgie Tech, beschäftigt bei der European School of Governance und dort zugleich Präsident des European Open Source Intelligence Forums.<br>
-			Adrian Taylor absolvierte ein Studium der Philosophie, Politik und Wirtschaft am Trinity College Oxford und im Fach Europäische Studien eine Lizenz Spéciale (Master) „mit hoher Auszeichnung“ von der Université Libre deBruxelles. Adrian Taylor ist in London geboren und aufgewachsen und hat anschließend 24 Jahre an verschiedenen Orten gelebt, vor allem in Gibraltar, Brüssel, Atlanta, Zürich, New York und München. Er wohnt derzeit in Hamburg.</p>
-		</div><!-- paper --> </div><!-- flex --> </section><!-- planum -->
+			</div><!-- paper --> </div><!-- flex --> </section><!-- plenum -->	
+			
+			<section id="moderatoren"> <div class="flex"> <div class="paper">
+			<h2>Plenary moderators on September 16th</h2>
+			<p><b>Ulrike Herrmann</b><br><br>After her apprenticeship as a bank clerk,Ulrike Herrmann attended the Henri Nannen School for Journalism. She then moved on to study economic history and philosophy at the Free University of Berlin. Since 2000, she is the economic correspondent at the taz newspaper, Berlin. Here, she also reported from parliament and headed the editorials. She is a board member of the taz publishers’ cooperative.</p>
+			<p><b>Adrian Taylor</b> <br><br>Founder 4Sing Foresight to Strategy for Security and Sustainability in Governance. His role is that of providing content input, process design as well as workshop moderation especially in security and sustainability related issues.  Adrian has previously been a junior officer in the British Army, a lobbyist on EU matters, a scenario planner in a joint venture with Global Business Network and Desk Officer for India at the European Commission, before joining the European School of Governance (eusg) –  He was also President of the European Open Source Intelligence Forum. His education includes: Degree in Philosophy, Politics and Economics Trinity College Oxford, and a License Spéciale (Masters) in European Studies. Adrian was born and raised in England and lived in Gibraltar, Brussels, Atlanta, Zurich, New York, and Munich before settling in Hamburg.</p>
+		</div><!-- paper --> </div><!-- flex --> </section><!-- moderatoren -->
 		
 		<section id="anmeldung"> <div class="flex"> <div class="paper">
 			<div class="formular">
 			
 				<div class="formmenu">
-					<p id="signup" class="hl_form">Anmeldung</p>
-					<p id="getinfos" class="hl_form">Infos</p>
+					<p id="signup" class="hl_form">Registration</p>
+					<p id="getinfos" class="hl_form">Information</p>
 					<p id="getnews" class="hl_form">Newsletter</p>
 				</div><!-- formmenu -->
 				
 				<div id="anmeldeformular">
 					<form method="POST" action="/adduser/" id="anmeldung_form">
-						<p>Anmeldezeitraum: 1. August bis 9. September 2017, 12 Uhr<br>
-						finale Rückmeldungen Ihrerseits: 10. bis 13. September 2017<br>
-						Vergabe frei gewordener Plätze an Anmelder/innen der Wartelisten: 14. September 2017<br>
+						<p>Registration deadline: September 9. 2017, 12 pm<br>
+						Final confirmation: September 10. - 13. 2017<br>
+						Waiting list succession: September 14.-15. 2017<br>
 						<br>
-						Hinweis: Die Teilnahme am „Welche Zukunft?!“-Labor ist kostenlos. Die Teilnehmer/innenzahl unserer Workshops ist begrenzt. Je nach Workshop gibt es 10 bis 25 verfügbare Plätze. Daher bitten wir Sie um eine verbindliche Anmeldung.</p>
+						Participation in the laboratory is free of charge. The number of participants is limited to between 10 and 25 places for the respective workshops. We therefor urgently ask you to commit to the day and/or inform us asap should you change your plans. Thank you.</p>
 						<br>
-						<label >Ich möchte mich für folgenden Workshop anmelden:</label>
+						<label >I want to register for the following workshop:</label>
 						<select id="wunsch_ws" name="workshopId" size="1">
-							<option disabled selected value> Bitte wählen </option>
-							<option value='14'>olympisch – Hauptsache dabei!</option>
+							<option disabled selected value> Please select </option>
+							<option value='14'>Olympic spirit - I don’t care, which workshop I’m allocated to</option>
 						</select>
 						<input type="hidden" name="list" id="list" value="">
 						<div id="sprache">
-							<label>Ich spreche folgende Sprache:</label>
+							<label>I'm speaking the following language(s):</label>
 							<select size="1" name="sprache">
-								<option value="DEUTSCH">deutsch</option>
+								<option value="DEUTSCH">german</option>
 								<option value="ENGLISH">english</option>
-								<option value="BEIDE">beides/both</option>
+								<option value="BEIDE">both</option>
 							</select>
 						</div><!-- sprache -->
-						<label >Vorname</label>
+						<label >First name </label>
 						<input type="text" name="vorname" id="vorname" value="">
 						<label >Name</label>
 						<input type="text" name="nachname" id="name" value="">
-						<label >E-Mailadresse</label>
+						<label >E-mail</label>
 						<input type="text" name="mail" id="mailadresse" value="">
-						<label >E-Mailadresse bestätigen</label>
+						<label >Confirm e-mail</label>
 						<input type="text" name="mailConfirm" value="">
-						<label >Mein Zukunftsszenario</label>
-						<p>Haben Sie schon eine Vorstellung, was in den nächsten 10 Jahren passieren könnte? Erzählen Sie uns, wenn Sie mögen davon!</p>
+						<label >Contribute a future scenario </label>
+						<p>Contribute one possible scenario or event, which that might occur within next 10 years.</p>
 						<textarea name="motivation" rows="15"></textarea>
 						<br>
 						<input name="agb" type="hidden" value="NO">
 						<input name="agb" class="agb_check" type="checkbox" value="YES">
-						<label class="agbs">Ich habe die <a href="#agb_area" onclick="showagbs(true);">AGBs</a> gelesen und bin damit einverstanden.</label>
+						<label class="agbs">I have read and agreed to the general<a href="#agb_area" onclick="showagbs(true);">terms and conditions.</a></label>
 
 
-						<button type="submit">Jetzt anmelden</button>
+						<button type="submit">Register now</button>
 						<label id="form_result" class="result" style=""></label>
 
 					</form><!-- anmeldung -->
 				</div><!-- anmeldeformular -->
 				<div id="anmeldeinfos" class="anmeldeinfos"><br>
-					So gestalten Sie mit uns die Zukunft (Anmeldung zum Workshop):<br><br>
-					1. Ausfüllen des Online-Formulars. Die Anmeldung ist nur einmalig möglich. Sie wählen einen Workshop, an dem Sie am 16. September den ganzen Tag aktiv mitarbeiten möchten. Ein „Hopping“ zwischen den Workshops ist nicht möglich.<br><br>
-					2. Es gilt das Prinzip 'first come first serve'. Sollten alle Plätze in Ihrem Wunschworkshop bereits belegt sein, erscheint im Auswahl-Menü hinter dem Workshopnamen „Warteliste“. Sie können sich dann für die Warteliste zum Workshop anmelden. Oder noch besser: Sie melden sich bei einem anderen, noch freien Workshop an. Für die Olympioniken unter Ihnen gibt es auch die Option „Hauptsache dabei!“. Dann übernehmen wir für Sie die Entscheidung und teilen Ihnen anschließend mit, an welchem Workshop Sie teilnehmen werden.<br><br>
-					3. Sie erhalten eine automatisch generierte E-Mail mit einem Bestätigungslink. Erst durch Anklicken dieses Links gilt Ihre Anmeldung – entweder für Ihren Wunsch-Workshop, die Warteliste oder einen Workshop, den wir für Sie bestimmen werden – als eingegangen. Diese Mail berechtigt jedoch noch nicht zur Teilnahme am Workshop-Tag am 16. September (siehe Punkt 6: finale Rückbestätigung & Punkt 7: Vergabe frei gewordener Plätze). <br><br>
-					4. Nach erfolgreicher Anmeldung werden Sie von uns entweder als Teilnehmer oder Interessent (Warteliste) für Ihren Wunsch-Workshop eingetragen. Haben Sie die Option „Hauptsache dabei!“ gewählt, suchen wir für Sie einen Workshop aus. Sie erhalten von uns per E-Mail eine personalisierte Teilnahmebestätigung oder eine Bestätigung über Ihren Wartelistenplatz. <br><br>
-					5. Ab sofort gehören Sie zur Community des jeweiligen Workshops und erhalten von uns interessantes Material zur Vorbereitung auf Ihren jeweiligen Workshop. Dieses Material ist nur für diesen Zweck vorgesehen und darf nicht an Dritte weitergegeben oder veröffentlicht werden. (Das Material erhalten Sie auch, wenn Sie auf der Warteliste für den Workshop stehen.)<br><br>
-					6. Am 9. September werden wir die vorläufig angemeldeten Teilnehmer/innen um eine finale Rückmeldung bitten (per Mail). Diese endgültige Bestätigung zur Teilnahme muss zwischen dem 10. und 13. September von Ihnen per Mail an uns erfolgen. Diese Rückbestätigung ist die Voraussetzung für Ihre Teilnahme am „Welche Zukunft?!“-Labor und dem jeweiligen Workshop.<br><br>
-					7. Frei gewordene Plätze werden am 14. und 15. September per Losverfahren an Anmelder/innen aus der Warteliste vergeben. Sie werden ebenso per E-Mail benachrichtigt.<br><br>
-					8. Und jetzt bitte anmelden! Die Zukunft wartet nicht. <br><br>
+					Information on your registration :<br><br>
+					1. Fill in your online form: You can register only once. Choose the workshop you wish to attend on Sept. 16th the entire day. Unfortunately, „workshop hopping“ will not be possible. <br><br>
+					2. Access is: „first come first serve“. Should the workshop of your choosing already be booked out, you can either choose to join the waiting list or register with a different workshop. Those of you who like to take it in their stride choose: „Olympic spirit - I don’t care, which workshop I’m allocated to“. We will surprise you … <br><br>
+					3. You will receive an automatically generated mail with a confirmation request. Only then will you be registered, for either the workshop or the waiting list. However, this mail will not guarantee you a place unless you return to confirm a couple of days before the event. (see 6/7)  <br><br>
+					4. After registration, you will be allocated to the workshop you have requested or allocated by us, if you wish. You will receive a personalised confirmation or be informed on your status on the waiting list.  <br><br>
+					5. From now on you will be part of the community of your respective workshop and receive reading material and recommendations. This material is only for your personal use and must not be passed on or published. (You will also receive this material, should you be on the waiting list.)<br><br>
+					6. On September 9. all participants will be asked to confirm attendance - deadline for this confirmation will be September 13. and mandatory for your participation. <br><br>
+					7. Free waiting list positions will be raffled on September 14. and allocated to those on the list. <br><br>
 				</div><!-- anmeldeinfos -->
 				<div id="newsletter">
-				<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+				<form method="POST" id="nl_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 					<input type="hidden" name="list" id="list" value="newsletter">
-					<label >Um über das Projekt auf dem laufenden zu bleiben, tragen Sie hier bitte ihren Namen und ihre Mailadresse ein. Sollten sie sich für den Workshoptag angemeldet haben erhalten Sie den Newsletter automatisch.</label>
+					<label >To keep in touch with current events of the project, please register here. Workshop participants receive information automatically.</label>
 					<br>
-					<label >Vorname</label>
+					<label >First name </label>
 					<input type="text" name="vorname" value="<?php echo $name_first;?>">
 					<label >Name</label>
 					<input type="text" name="nachname" value="<?php echo $name_last;?>">
@@ -302,36 +312,37 @@
 					<br>
 					<input name="agb" type="hidden" value="NO">
 					<input name="agb" class="agb_check" type="checkbox" value="YES">
-					<label class="agbs">Ich habe die <a href="#agb_area" onclick="showagbs(true);">AGBs</a> gelesen und bin damit einverstanden.</label>
-					<button type="submit">Newsletter abonnieren</button>
-					<label class="result" style="<?php echo $result_display;?>"><?php echo $feedback;?></label>
+					<label class="agbs">I have read and agreed to the general <a href="#agb_area" onclick="showagbs(true);">terms and conditions.</a></label>
+					<button type="submit">Subscribe</button>
+					<label id="nl_form_result" class="result" style="<?php echo $result_display;?>"><?php echo $feedback;?></label>
 				</form>
 				</div>
 					<section id="agb_area">
 						<div id="agbs" class="agbtext">
-						<label ><a href="#anmeldung" onclick="showagbs(false);">AGBs schliessen</a></label>
+						<label ><a href="#anmeldung" onclick="showagbs(false);">close terms and conditions</a></label>
 						<p >
-						Erhebung und Verwendung Ihrer Daten bei Anmeldung zum Workshop<br><br>
-						Die von Ihnen bei der Anmeldung zum Workshop eingegebenen Angaben werden auf dem Server von „Welche Zukunft?!“ gespeichert. Erforderliche Daten (Pflichtfelder) sind hierbei: Name, Mailadresse, ausgewählter Workshop und Sprache (letzteres nur bei Workshopauswahl „olympisch“). Die Angabe zu Ihrem Zukunftsszenario ist freiwillig und dient uns dazu …???. Wir behandeln die Daten vertraulich und verwenden sie ausschließlich zu organisatorischen Zwecken (wer nimmt an welchem Workshop teil) und zu Informationszwecken zum Workshoptag. Wir werden Wissenswertes zum Ablauf des Tages oder zum Workshopthema an Ihre E-Mail-Adresse versenden. Ihre Daten werden nur so lange gespeichert, wie es zur Organisation des Workshoptages erforderlich ist und spätestens im November 2017 gelöscht. Durch Abmelden vom Workshop durch den Nutzer werden die Daten nach maximal 6 Wochen unwiderruflich gelöscht. Möchten Sie dennoch weiter im Mailing-Verteiler von „Welche Zukunft?!“ vertreten sein und Informationen durch uns erhalten, melden Sie sich einfach für den Newsletter an.
+						Collection and use of your personal data during workshop registration <br><br>
+						The data you provide during the registration process will be stored on the „Which Future?!“ server. Mandatory fields will be: name, e-mail address , your chosen workshop and language (in case you do not specify, which workshop you choose). Writing your own future scenario is voluntary. It will be used as the foundation for the workshop, together with the scenarios provided by each workshop expert. <br> Your data will be treated in confidence and only used for organisational and informational purposes. We will provide information material and programme details to prepare the laboratory. Your data will only be saved as long as it is necessary to organise the laboratory and will be deleted in November 2017 at the latest. By unsubscribing from the workshop, your user data will be deleted six weeks later at the latest. If you want continue to follow updates of the „Which Future?!“ project you are welcome to subscribe to our Newsletter. 
 						<br><br>
-						Bild- und Tonaufnahmen am Workshoptag<br><br>
-						Während des "Welche Zukunft?!“-Labors am 16. September werden durch die Mitarbeiter des Deutschen Theaters Berlin Bild- und Tonaufnahmen von den Workshops und Plena angefertigt. Diese dienen der weiteren Recherche und einer späteren Veröffentlichung. 
+						Video and sound recording during the laboratory <br><br>
+						During the laboratory employees of the Deutsches Theater Berlin will produce sound recordings of the workshops and video recordings of the plenaries. The footage produced here will be edited and published in the context of the project. By attending workshops and plenary, you agree to this publication. 
 						<br><br>
 						Newsletter<br><br>
-						Um sich bei unserem E-Mail-Newsletterdienst anmelden zu können, benötigen wir mindestens Ihre E-Mail-Adresse, an die der Newsletter versendet werden soll. Etwaige weitere Angaben sind freiwillig und werden verwendet, um Sie persönlich ansprechen und den Inhalt des Newsletters persönlich ausgestalten zu können. Wir werden Ihnen erst dann den Newsletter zusenden, wenn Sie zuvor Ihre Anmeldung per von uns zugesendetem Link bestätigen. Damit möchten wir sicherstellen, dass nur Sie selbst sich als Inhaber der angegebenen E-Mail-Adresse zum Newsletter anmelden können. Ihre diesbezügliche Bestätigung muss binnen einer Woche nach Erhalt der Bestätigungs-E-Mail erfolgen, da andernfalls Ihre Newsletter-Anmeldung automatisch aus unserer Datenbank gelöscht wird. Sie können einen von Ihnen bei uns abonnierten Newsletter jederzeit abbestellen indem Sie ganz einfach über den Link am Ende des Newsletters eine Stornierung vornehmen.
+						When you subscribe to our mailing list, we will require one valid e-mail address. All other information is voluntary and will only be used to address you personally. We will only post e-mails if you have confirmed your registration with a link you will receive from us. This way we can confirm that only you yourself can register under the provided e-mail address. Your confirmation reply needs to be posted within a week, otherwise your mailing list registration will be deleted automatically from our database. <br> You can unsubscribe from the mailing list via the link at the end of each mail. 
 						<br><br>
-						Protokollierung<br><br>
-						Auf dem Server der Website werden standardmäßig Protokolleinträge Ihres Zugriffs aufgezeichnet. Diese werden von uns nicht ausgewertet oder in irgend einer Art weiterverwendet. </p>
+						Protocols <br><br>
+						By default the server of this website records protocol entries of your visits. Those will not be evaluated or utilised in any way.</p>
 						</div>
 						</section>
 			</div>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- anmeldung -->
 
 		<section id="team"> <div class="flex"> <div class="paper">
-			<h2>TEAM</h2>
-			<p>Konzeption und Durchführung: Andres Veiel, Jutta Doberstein, Ulrich Beck, Daniel Hengst, Julia Kaschlinski, Michaela Barth, Luisa Männel</p>
-			<h2>PARTNER</h2>
-			<p>„Welche Zukunft?!“ ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages</p>
+			<h2>TEAM & PARTNER</h2>
+			<h3>TEAM</h3>
+			<p>Concept and execution: Andres Veiel, Jutta Doberstein, Ulrich Beck, Daniel Hengst, Julia Kaschlinski, Michaela Barth, Luisa Männel</p>
+			<h3>PARTNER</h3>
+			<p class=italic>„Which Future?!“ is a coproduction of Deutsches Theater Berlin with the Stiftung Humboldt Forum im Berliner Schloss, funded by the German Federal Government Commissioner for Culture and the Media according to a vote of the German parliament. </p>
 			<div class=logos>
 			<a href="https://www.deutschestheater.de" target="_blank"><img src="image0.png" alt="logo"></a>
 			<a href="http://humboldtforum.com/de-DE/" target="_blank"><img src="image2.png" alt="logo"></a>
@@ -340,25 +351,25 @@
 			<p><span class=italic>Medienpartner:</span></p>
 			<div class=logos>
 			<a href="http://www.deutschlandfunkkultur.de" target="_blank"><img src="image3.png" alt="logo"></a>
-			</div>
+			</div>	
 		</div><!-- paper --> </div><!-- flex --> </section><!-- team -->
 
 		<section id="kontakt"> <div class="flex"> <div class="paper">
-			<h2>KONTAKT</h2>
+			<h2>CONTACT</h2>
 			<p>Deutsches Theater<br>
 			Schumannstraße 13 A<br>
 			10117 Berlin<br>
-			Telefon: +49 30 28441-0<br>
+			Fon: +49 30 28441-0<br>
 			<a href="mailto:service@deutschestheater.de">service@deutschestheater.de</a><br>
 			<a href="https://www.deutschestheater.de">www.deutschestheater.de</a><br><br>
 
-			Bei Fragen zum Projekt, zur Webseite oder zur Anmeldung, wenden Sie sich bitte an <a href="mailto:info@deutschestheater.de">info@welchezukunft.org</a></p>
-			<p><span class=bold>Pressekontakt:</span><br>
+			For questions regarding the project, website or registration please contact <a href="mailto:info@deutschestheater.de">info@welchezukunft.org</a></p>
+			<p><span class=bold>Contact press:</span><br>
 			Katharina Wenzel <br>
-			Leitung Presse und Kommunikation <br>
-			030-28441234<br>
+			Head of media and communication<br>
+			+49 30 28441234<br>
 			<a href="mailto:wenzel@deutschestheater.de">wenzel@deutschestheater.de</a><br>
-			In den Theaterferien zwischen 19. Juli und 28. August:<br>
+			During theatre holidays, July 19. - August 28.:<br>
 			Luisa Männel <br>
 			<a href="mailto:maennel@welchezukunft.org">maennel@welchezukunft.org</a><br></p>
 			<br><br>
@@ -371,46 +382,47 @@
 		<p>Deutsches Theater<br>
 		Schumannstraße 13 A<br>
 		10117 Berlin<br>
-		Telefon: +49 30 28441-0<br>
+		Fon : +49 30 28441-0<br>
 		service@deutschestheater.de<br>
 		www.deutschestheater.de<br><br>
 
-		Bei Fragen zu oder Problemen mit dieser Website, wenden Sie sich bitte an info@welchezukunft.org<br><br>
+		For questions please contact info@welchezukunft.org<br><br>
 
-		Intendant<br>
+		Director<br>
 		Ulrich Khuon<br><br>
 
-		Vertretungsberechtigter Geschäftsführer<br>
+		Managing director <br>
 		Klaus Steppat<br><br>
 
-		Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz<br>
-		Ust.-ID-Nr.: DE811984292<br><br>
+		VAT ID No according to § 27 a Value added tax act <br>
+		VAT.-ID-No:  DE811984292<br><br>
 
-		Inhaltlich Verantwortlicher gemäß § 6 MDStV<br>
-		Kommunikation/Dramaturgie<br><br>
+		Person responsible for content per § 6 MDStV<br>
+		Communication/Dramaturgy<br><br>
 
 
-		Haftungsausschluss:<br><br>
+		Disclaimer:<br><br>
 
-		Inhalt des Webangebotes<br>
-		Das Deutsche Theater Berlin ist bemüht, sein Webangebot stets aktuell und inhaltlich richtig sowie vollständig anzubieten. Dennoch ist das Auftreten von Fehlern nicht völlig auszuschließen.<br>
-		Das Deutsche Theater Berlin übernimmt keine Haftung für die Aktualität, die inhaltliche Richtigkeit sowie für die Vollständigkeit der in seinem Webangebot eingestellten Informationen, es sei denn die Fehler wurden vorsätzlich oder grob fahrlässig aufgenommen. Dies bezieht sich auf eventuelle Schäden materieller oder ideeller Art Dritter, die durch die Nutzung dieses Webangebotes verursacht wurden.<br><br>
+		Content of this internet service <br>
+		Deutsches Theater Berlin does everything in its power to ensure that its promotion offer is always up to date, correct with respect to content and complete. Nevertheless, the occurrence of errors cannot be completely ruled out.<br>
+		Deutsches Theater Berlin does not give any warranty in respect of the timelines, accuracy or completeness of material published unless the errors were made deliberately or by gross negligence. <br>
+		This refers to (material or non-material) loss or damage incurred by third parties arising from the use of content obtained from the web site.<br><br>
 
 		Copyright<br>
-		Das Layout der Homepage, die verwendeten Grafiken und Bilder sowie die einzelnen Beiträge sind urheberrechtlich geschützt.<br><br>
+		The layout of the homepage, graphics and pictures used and the collection of individual contributions are protected by copyright.<br><br>
 
-		Externe Verweise und Links<br>
-		Das Deutsche Theater Berlin hat keinen Einfluss auf Gestaltung und Inhalte fremder Internetseiten. Es distanziert sich daher von allen fremden Inhalten, auch wenn von Seiten des Deutschen Theaters Berlin auf diese externe Seiten ein Link gesetzt wurde.<br><br>
+		External references and links<br>
+		The Deutsches Theater Berlin does not have any influence on the design and the contents of external internet pages. Deutsches Theater therefore dissociates itself from all those contents, even if there are links from the pages of the Deutsches Theater Berlin to this external page.<br><br>
 
-		Diese Erklärung gilt für alle auf unserer Website angezeigten Links und für alle Inhalte der Seiten, zu denen die bei uns angemeldeten Banner und Links führen.<br><br>
+		This declaration is valid for all links listed on our website and for the entire contents of the websites to which the banners and links registered with us may lead.<br><br>
 
-		Datenschutz<br>
-		Sofern innerhalb des Internetangebotes die Möglichkeit der Eingabe von persönlichen Daten (E-Mail-Adresse, Namen, Anschriften) besteht, erfolgt diese freiwillig. Das Deutsche Theater Berlin erklärt ausdrücklich, dass es diese Daten nicht an Dritte weitergibt.<br><br>
+		Privacy<br>
+		If this internet service offers the possibility of entering personal or business data (e-mail addresses, names, addresses), the input of these data takes place expressly on a voluntary basis. The Deutsches Theater Berlin expressly declares that the information submitted will not be passed on to third parties.<br><br>
 
-		Rechtswirksamkeit<br>
-		Dieser Haftungsausschluss ist Teil des Internetangebotes des Deutschen Theaters Berlin. Sofern einzelne Formulierungen oder Teile dieses Textes der geltenden Rechtslage nicht mehr oder nicht mehr vollständig entsprechen, bleiben die übrigen Teile dieser Erklärung davon unberührt.<br><br>
+		Validity<br>
+		This disclaimer is part of the internet service of Deutsches Theater Berlin. Insofar as individual formulations or parts of this text should no longer or no longer fully comply with the current law, the remaining parts shall remain in legal effect.<br><br>
 
-		Konzeption & Technische Umsetzung<br>
+		Concept and technical implementation<br>
 		Daniel Hengst, Alexander Hof, Lars Parmakerli<br><br>
 		</p>
 		</div>

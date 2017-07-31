@@ -40,8 +40,7 @@
 			<li><a href="#info" onclick="setstatus(false);">Das Projekt</a></li>
 			<li class="li-box"><span class="menu">Das Labor</span>
 				<ul>
-					<li><a href="#labor" onclick="setstatus(false);">Das Labor</a>
-					<li><a href="#ablauf" onclick="setstatus(false);">Ablauf</a>
+					<li><a href="#labor" onclick="setstatus(false);">Labor</a>
 					<li><a href="#workshops" onclick="setstatus(false);">Workshops</a>
 					<li><a href="#plenum" onclick="setstatus(false);">Plenum</a>
 				</ul>
@@ -96,72 +95,83 @@
 	<article id="articleinfos">
 		<section id="info"> <div class="flex"> <div class="paper">		
 			<h1>Welche Zukunft?! </h1>
-			<p>Hubschrauber kreisen über dem Kurhaus von Heiligendamm. Polizeiboote patrouillieren die Ostseeküste, Möwen frieren am Strand. Drinnen, im Saal des Grandhotels, haben sich die Staats- und Regierungschefs der G12 versammelt. Es ist der 9.2. 2028 und dies ist das erste Treffen seit dem Crash, der 2026 die Weltwirtschaft lahmlegte. Die Gastgeberin, Kanzlerin von der Leyen, tritt vor das Mikrofon und begrüßt die Gäste. Ihre Rede ist kurz, formlos und endet mit einem eindringlichen Appell. </p>
-			<p>„Dies ist die letzte Chance, unsere Demokratie zu retten. Die Menschen haben den Glauben an uns verloren. Wir, die internationale Staatengemeinschaft, haben versagt. Wir haben zu wenig unternommen, zu spät reagiert. Nun. Müssen. Wir. Handeln.“ </p>
-			<p>Die versammelten Staats- und Regierungschefs werden nicht handeln. Sie werden sich aber dazu durchringen, einen Untersuchungsausschuss einzusetzen. Während draußen in den Städten Barrikaden brennen und Supermärkte geplündert werden, versucht ein internationales Panel in der Villa Perle, die Ursachen für den Zusammenbruch der Weltwirtschaft zu ermitteln, der vor zwei Jahren begonnen hat und dessen Ende nicht absehbar ist. </p>
-			<p>Zugegeben: es kann auch anders kommen. Es kann auch gut gehen. Die Krise wird abgewendet. Die Weltwirtschaft erholt sich. Die 17. Staffel von Games of Thrones wird gedreht, der Berliner Flughafen eröffnet. Wir wissen es nicht. </p>
-			<p>Aber wenn wir es wüssten - wenn wir mit Sicherheit wüssten, dass die Party im Jahr 2026 zu Ende ist, dass eine Bank oder ein Algorithmus oder ein Land die Weltwirtschaft vor die Wand fährt - was würden wir tun? Hier und jetzt, was würden wir unternehmen? Was können wir unternehmen? </p>
-			<p>„Welche Zukunft?!“ ist ein interdisziplinäres, partizipatives Forschungs- und Theaterprojekt, dass sich zur Aufgabe gestellt hat, diese Frage zu beantworten: Was können wir tun, um zu verhindern, dass uns die nächste Finanzkrise endgültig den Boden unter den Füßen wegzieht? </p>
-			
+			<p class="italic">Hubschrauber kreisen über dem Kurhaus von Heiligendamm, Polizeiboote patrouillieren an der Ostseeküste, Möwen frieren am Strand. Drinnen im Saal des Grandhotels haben sich die Staats- und Regierungschefs der G12 versammelt. Es ist der 9.2.2028 und dies ist das erste Treffen seit dem Crash, der 2026 die Weltwirtschaft lahmlegte. Die Gastgeberin, Kanzlerin von der Leyen, tritt vor das Mikrofon und begrüßt die Gäste. Ihre Rede ist kurz, formlos und endet mit einem eindringlichen Appell.  </p>
+			<p class="italic">„Dies ist die letzte Chance, unsere Demokratie zu retten. Die Menschen haben den Glauben an uns verloren. Wir, die internationale Staatengemeinschaft, haben versagt. Wir haben zu wenig unternommen, zu spät reagiert. Nun. Müssen. Wir. Handeln.“ </p>
+			<p class="italic">Die versammelten Staats- und Regierungschefs werden nicht handeln. Sie werden sich aber dazu durchringen, einen Untersuchungsausschuss einzusetzen. Während draußen in den Städten Barrikaden brennen und Supermärkte geplündert werden, versucht ein internationales Panel in der Villa Perle die Ursachen für den Zusammenbruch der Weltwirtschaft zu ermitteln, der vor zwei Jahren begonnen hat und dessen Ende nicht absehbar ist.  </p>
+			<p>Zugegeben: Es kann auch anders kommen. Es kann auch gut gehen. Die Krise wird abgewendet. Die Weltwirtschaft erholt sich. Die 17. Staffel von Games of Thrones wird gedreht, der Berliner Flughafen eröffnet. Wir wissen es nicht. </p>
+			<p>Aber wenn wir es wüssten – wenn wir mit Sicherheit wüssten, dass die Party im Jahr 2026 zu Ende ist, dass eine Bank oder ein Algorithmus oder ein Land die Weltwirtschaft vor die Wand fährt – was würden wir tun? Hier und jetzt, was würden wir unternehmen?  </p>
+			<p>„Welche Zukunft?!“ ist ein interdisziplinäres, partizipatives Forschungs- und Theaterprojekt, das sich zur Aufgabe gestellt hat, diese Frage zu beantworten: Was können wir tun, um zu verhindern, dass uns eine nächste Finanz- und Wirtschaftskrise endgültig den Boden unter den Füßen wegzieht? </p>
+		<h2>Projektverlauf</h2>
+		<p>„Welche Zukunft?!“ ist auf zwei Jahre angelegt. Zusammen mit Wissenschaftler_Innen und Publikum erforschen wir gemeinsam den Zusammenhang von Wissen, Vorhersage und Gestaltung. Irgendwo zwischen Agora, Science-Fiction, mathematischem Modell und dem Zufall liegt die Geschichte der Zukunft. Müssen wir nicht zumindest eine Vorstellung von ihr haben, um sie zu ändern? </p>
+		<p>Ziel ist es, aus der Stagnation heraus zu treten, die permanente Gegenwart zu verlassen und eine Debatte über unsere Zukunft anzuregen. Fahren wir als Crashtest-Dummies der Geschichte immer wieder gegen dieselbe Wand?</p>
+		<p>„Welche Zukunft?!“ erzählt die Geschichte der kommenden zehn Jahre, von 2018 bis 2028. </p>
+		<p>Das Projekt ist unterteilt in vier Schritte:</p>
+		<h2>Labor </h2>
+		<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt der zweijährigen Veranstaltungsreihe. Hier entwickeln wird auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien gemeinsam mit Expert_Innen und dem Publikum ein Zukunftsszenario für die kommenden zehn Jahre entwickelt. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
+		<p><a href="#labor" onclick="setstatus(false);">>> mehr über das Labor</a></p>
+		<h2>Symposium </h2>
+		<p>Ein im März 2018 gemeinsam mit der Stiftung Humboldt Forum im Berliner Schloss veranstaltetes Symposium setzt die Arbeit des Labors vertiefend fort. Wissenschaftler_Innen aus verschiedenen Disziplinen halten Vorträge, debattieren über die Ergebnisse des Labors und entwickeln sie weiter.</p>
+		<h2>Theaterstück</h2>
+		<p>Die Ergebnisse von Labor und Symposium fließen in ein gleichnamiges Theaterstück ein, das im September 2018 am Deutschen Theater Berlin uraufgeführt wird: In einem Untersuchungsausschuss wird die Frage nach der Verantwortung für die Ereignisse der Jahre 2018 bis 2028 gestellt. Warum haben wir so und nicht anders gehandelt? Wer hätte das Schlimmste verhindern können? Expert_Innen und Schauspieler_Innen, Jurist_Innen und Politiker_Innen kommen für die Befragung zusammen. Es wird nicht über Schuld abgestimmt, sondern ermittelt, welche Entscheidungen welche Konsequenzen hatten und noch haben. </p>
+		<h2>Abschlusskonferenz</h2>
+		<p>Wie nun weiter?! Welche Zukunft … wird es werden?! Der vierte und letzte Teil im Frühjahr 2020 versucht in einer mit der Stiftung Humboldt Forum im Berliner Schloss veranstalteten Abschlusskonferenz die zweijährige Arbeit zu bilanzieren. Welche ökonomischen, politischen und sozialen Barrieren können wir errichten, um die Katastrophe aufzuhalten? Oder besser noch: Wie können wir ein Wirtschaftssystem entwickeln, das dem Menschen dient und nicht umgekehrt? Ein System, in dem das Vermögen nicht  dahin fließt, wo es den meisten Ertrag bringt, sondern dahin, wo es gebraucht wird? Wie schon in Labor und Symposium sind Teilhabe und interdisziplinärer Austausch in dieser Konferenz ebenso wesentlich, wie die Inhalte, die verhandelt werden. <p>
+		<p class=italic>Welche Zukunft?! Ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</p>
+			<div class=logos>
+			<a href="https://www.deutschestheater.de" target="_blank"><img src="image0.png" alt="logo"></a>
+			<a href="http://humboldtforum.com/de-DE/" target="_blank"><img src="image2.png" alt="logo"></a>
+			<a href="https://www.bundesregierung.de/Webs/Breg/DE/Bundesregierung/BeauftragtefuerKulturundMedien/beauftragte-fuer-kultur-und-medien.html" target="_blank"><img src="image1.png" alt="logo"></a>
+			</div><!-- logos -->
+			<p><span class=italic>Medienpartner:</span></p>
+			<div class=logos>
+			<a href="http://www.deutschlandfunkkultur.de" target="_blank"><img src="image3.png" alt="logo"></a>
+			</div>	
 		</div><!-- paper --> </div><!-- flex --> </section><!-- intro -->
 		<section id="labor"> <div class="flex"> <div class="paper">
-		<h2>Das Labor </h2>
-		<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt des zwei-jährigen Veranstaltungszyklus. Wir laden Menschen ein, in diesem außergewöhnlichen Experiment gemeinsam mit Experten weltweit renommierter Forschungsinstitute, eine Geschichte der nächsten zehn Jahre zu schreiben, die möglichst plausibel erscheint. Hier verhandeln wir Fakten, Wissen, und Modelle – aber auch unsere Ängste, Hoffnungen und Wünsche. </p>
-		<p>Als Ausgangspunkt setzen wir eine fiktive Krise im Jahr 2026, die die Welt in eine Rezession stürzen wird. Fragen kommen auf, nach den Verantwortlichen, nach den Prozessen, die stattfinden oder abgewendet werden müssen. So entsteht ein Denkraum, in dem wir uns entscheiden können, ob wir diese Zukunft wollen - oder eben doch eine andere. Wenn sie uns nicht gefällt, müssen wir die Parameter der Laboranordnung, die unser Leben ist, verändern. Und das müssen wir jetzt tun. 
-		Das Labor versteht sich als partizipativer Prozess in dem Wissen geteilt und gemeinsam generiert wird. In 13 Workshops (Link zu Workshops) versammeln sich 250 Menschen, um Zukunftsszenarien zu entwerfen und der Krise ins Auge zu blicken. </p>
+		<h2>Labor</h2>
+		<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt der zweijährigen Veranstaltungsreihe. Wir laden Menschen ein, in diesem Experiment gemeinsam mit Expert_Innen internationaler, privater und öffentlicher Forschungsinstitute eine Geschichte der nächsten zehn Jahre zu schreiben, die möglichst plausibel erscheint. Hier verhandeln wir Fakten, Wissen und Modelle, aber auch unsere Ängste, Hoffnungen und Wünsche.  </p>
+		<p>Als Ausgangspunkt setzen wir eine fiktive Krise im Jahr 2026, die die Welt in eine Depression stürzen wird. Fragen kommen auf, nach den Verantwortlichen, nach den Prozessen, die stattfinden oder abgewendet werden müssen. So entsteht ein Denkraum, in dem wir uns entscheiden können, ob wir diese Zukunft wollen – oder eben doch eine andere. Wenn sie uns nicht gefällt, müssen wir die Parameter der Laboranordnung, die unser Leben ist, verändern. Und das müssen wir jetzt tun. </p> 
+		<p>Das Labor versteht sich als partizipativer Prozess, in dem Wissen geteilt und gemeinsam generiert wird. In 13 <a href="#workshops" onclick="setstatus(false);">Workshops</a> versammeln sich 250 Menschen, um Zukunftsszenarien zu entwerfen und der Krise ins Auge zu blicken.   </p>
 		<p>In derselben Methode wollen wir in Zukunft Geschichte machen, über Politik entscheiden und Ressourcen verteilen. </p>
 		<p>
 		Welche Zukunft?!-Labor (Workshoptag)<br>
 		Samstag, 16. September 2017<br>
 		Deutsches Theater Berlin (im ganzen Haus)<br>
-		Von 10:00 bis 20:15 Uhr, im Anschluss Ausklang und Musik<br>
-		<a href="#anmeldung" onclick="setstatus(false);">Jetzt anmelden! </a></p>
-		</div><!-- paper --> </div><!-- flex --> </section><!-- labor -->
-		<section id="ablauf"> <div class="flex"> <div class="paper">	
-			<h2>Projektverlauf</h2>
-			<p>„Welche Zukunft?!“ ist ein auf zwei Jahre angelegtes Forschungs- und Theaterprojekt. Zusammen mit Wissenschaftlern und Publikum erforschen wir gemeinsam den Zusammenhang von Wissen, Vorhersage und Gestaltung. Irgendwo zwischen Agora, Science Fiction, mathematischem Modell und dem Zufall liegt die Geschichte der Zukunft. Müssen wir sie kennen, um sie zu ändern? </p>
-			<p>Das Projekt ist unterteilt in vier Schritte:</p>
-			<h2>Labor </h2>
-			<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt des zwei-jährigen Veranstaltungszyklus. Hier entwickeln wir auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien mit Experten und dem Publikum ein mögliches Zukunftsszenario für die kommenden 10 Jahre. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
-			<p><a href="#labor" onclick="setstatus(false);">>> mehr über das Labor</a></p>
-			<h2>Symposium </h2>
-			<p>Ein im März 2018 gemeinsam mit dem Humboldt Forum veranstaltetes Symposium setzt die Arbeit des Labors vertiefend fort. Wissenschaftler aus verschiedenen Disziplinen halten Vorträge, debattieren über die Ergebnisse des Labors und entwickeln sie weiter.</p>
-			<h2>Theaterstück</h2>
-			<p>Die Ergebnisse von Labor und Symposium fließen in ein gleichnamiges Theaterstück ein, das im September 2018, am Deutschen Theater Berlin uraufgeführt wird: In einem Untersuchungsausschuss wird die Frage nach der Verantwortung für die Ereignisse der Jahre 2018 – 2028 gestellt. Warum haben wir so und nicht anders gehandelt? Wer hätte das Schlimmste verhindern können? Experten und Schauspieler, Juristen und Politiker kommen für die Befragung zusammen. Es wird nicht über Schuld abgestimmt, sondern ermittelt, welche Entscheidungen welche Konsequenzen haben. </p>
-			<h2>Abschlusskonferenz</h2>
-			<p>Wie nun weiter?! Welche Zukunft… wird es werden?! Der vierte und letzte Teil im Herbst 2019 versucht in einer Abschlusskonferenz, die zweijährige Arbeit zu bilanzieren und konkrete Konzepte zu entwickeln. Wie könnte ein Wirtschaftssystem aussehen, das dem Menschen dient und nicht umgekehrt? In dem das Vermögen nicht nur dahin fließt, wo es den meisten Ertrag bringt, sondern dahin, wo es gebraucht wird – und das demokratisch legitimiert? Wie schon in Labor und Symposium sind Teilhabe und interdisziplinärer Austausch in diesem Prozess ebenso wesentlicher Bestandteil, wie die Inhalte, die verhandelt werden. </p>
-			<p>Ziel ist es, eine Debatte über unsere Zukunft anzuregen - aus der Stagnation heraus zu treten, die permanente Gegenwart zu verlassen. Fahren wir als Crashtest-Dummies der Geschichte vor die immer selbe Wand?</p>
-			<p>„Welche Zukunft?!“ erzählt die Geschichte der kommenden 10 Jahre, von 2018 bis 2028. </p>
+		Von 10:00 bis 20:15 Uhr, im Anschluss Musik<br>
+		<a href="#anmeldung" onclick="setstatus(false);">Jetzt anmelden! </a><br>
+		Detaillierter Programmablauf folgt.</p>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- ablauf -->
 		
 
 
-		<section id="workshops"> <div class="flex"> <div class="paper">
-				
-			<h2>Workshops</h2>
-			<p>250 Teilnehmer arbeiten in 13 Workshops in den Themen Wirtschaft, Gesellschaft, Klima, Ernährung und Identität. Die Workshops sind für alle offen, Vorwissen ist bei einigen Workshops von Vorteil, aber keinesfalls Bedingung. Die Teilnahme ist kostenlos. Man muss sich lediglich im Vorfeld dazu <a href="#anmeldung" onclick="setstatus(false);">anmelden</a> (first come, first serve). </p>
-			<p>In zwei Workshop-Sessions á 90 Minuten entwickeln die Teilnehmer und Experten gemeinsam Szenarien für den Verlauf der kommenden 10 Jahre in ihrem jeweiligen Themenfeld. </p>
-			<p>Die in den <a href="#container_section" onclick="setstatus(true);reset_ws();">Workshopbeschreibungen</a> vorgestellten Szenarien sind erste Vorschläge, Anregungen. Alles ist möglich: Die EU löst sich auf, die AfD stellt den Kanzler, die D-Mark kommt zurück, in China platzt die nächste Immobilienblase, ein neues VR Spiel hält die Menschen davon ab, zur Arbeit zu erscheinen, ein neues Medikament besiegt den Krebs, die Öl-Industrie rettet das Klima und Daniel Libeskind baut die neue Hauptstadt des vereinigten Korea in der entmilitarisierten Zone. </p>
-			<p>Wenn aber alles möglich ist – was halten wir für wahrscheinlich und plausibel? Und worauf sollten wir uns vorbereiten? Sollen wir Dämme bauen, oder die Flut verhindern? Die Banken stärker regulieren oder den gegenwärtigen Kasinokapitalismus gleich ganz abschaffen?</p>
+		<section id="workshops"> <div class="flex"> <div class="paper">	
+			<h2>LABOR - Workshops</h2>
+			<p>250 Teilnehmer arbeiten in <a href="#workshopthemen" onclick="setstatus(false);">13 Workshops</a> in den Themen Wirtschaft, Gesellschaft, Klima, Ernährung und Identität. Die Teilnahme ist kostenlos. Man muss sich lediglich im Vorfeld für einen Workshop <a href="#anmeldung" onclick="setstatus(false);">anmelden</a> (first come, first serve). Die Workshops sind für alle offen, Vorwissen ist keinesfalls Bedingung. Es wird jedoch empfohlen, die Texte zu lesen, die nach der Anmeldung zur Verfügung gestellt werden. </p>
+			<p>Die Arbeitssprache des Labors ist deutsch, Ausnahme sind drei Workshops in Englisch ohne Simultanübersetzung. Das Plenum wird jeweils zweisprachig sein. </p>
+			<p>In zwei Workshop-Sessions à 90 Minuten entwickeln die Teilnehmer_Innen und Expert_Innen gemeinsam Szenarien für den Verlauf der kommenden zehn Jahre in ihrem jeweiligen Themenfeld. </p>
+			<p>Die in den <a href="#container_section" onclick="setstatus(true);reset_ws();">Workshopbeschreibungen</a> vorgestellten Szenarien sind erste Vorschläge, Anregungen. Alles ist möglich: Die EU löst sich auf, die AfD stellt den Kanzler, die D-Mark kommt zurück, in China platzt die nächste Immobilienblase, ein neues VR-Spiel hält die Menschen davon ab, zur Arbeit zu erscheinen, ein neues Medikament besiegt den Krebs, die Öl-Industrie rettet das Klima und Daniel Libeskind baut die neue Hauptstadt des vereinigten Korea in der entmilitarisierten Zone.  </p>
+			<p>Wenn aber alles möglich ist – was halten wir für wahrscheinlich und plausibel? Und worauf sollten wir uns vorbereiten? </p>
 			<p>Die Ergebnisse werden von Moderatoren festgehalten und im <a href="#plenum" onclick="setstatus(false);">Plenum</a> vorgetragen und diskutiert. </p>
 			<p>Jeder Workshop hat ca. 20 Teilnehmer, jede Stimme zählt.</p> 
 			<a href="#container_section" onclick="setstatus(true);reset_ws();">>> Zu den Workshops</a><br>
 			<a href="#anmeldung" onclick="setstatus(false);">>> Zur Anmeldung</a>
-			<h2>Die Workshopthemen am 16. September </h2>
+			</div><!-- paper --> </div><!-- flex --> </section><!-- workshops -->
+			
+			<section id="workshopthemen"> <div class="flex"> <div class="paper">	
+			<h2>LABOR - Die Workshopthemen am 16. September </h2>
 			<h3>Ökonomie: Fiskalische und andere Götterdämmerungen</h3>
-			<p class="workshop">Soziale und ökonomische Krisen als Folge einer fehlgeleiteten Politik. Die Katastrophe kommt, aber alles könnte auch ganz anders sein.</p>
+			<p class="workshop">Soziale und ökonomische Krisen als Folge einer fehlgeleiteten Politik.</p>
 			<p class="workshop">Experte: Prof. Dr. Rudolph Hickel (Institut für Arbeit und Wirtschaft in Bremen)</p>
 
-			<h3>Ökonomie: Patient Zero - der Indexpatient Deutsche Bank</h3>
+			<h3>Ökonomie: Patient Zero – der Indexpatient Deutsche Bank</h3>
 			<p class="workshop">Too big to fail oder: Wie gefährlich ist die Deutsche Bank?</p>
-			<p class="workshop">Experte: Dieter Hein (fairesearch)</p>
+			<p class="workshop">Experte: Dieter Hein (Fairesearch, Frankfurt a.M.)</p>
 			
 			<h3>Ökonomie: Armageddon</h3>
-			<p class="workshop">Wenn die AfD den Kanzler stellt… Protektionismus, Deflation und Währungskrisen.</p>
-			<p class="workshop">Experten: Prof Dr. Bofinger (Uni Würzburg) und Dr. Dirk Ehnts (Uni Chemnitz)</p>
+			<p class="workshop">Wenn die AfD den Kanzler stellt… Der Workshop untersucht Protektionismus, Deflation und Währungskriesen als Treiber für den hypothetischen Zusammenbruch der Weltwirtschaft im Jahr 2026. </p>
+			<p class="workshop">Experten: Prof Dr. Bofinger (Uni Würzburg; Mitglied des Sachverständigenrates der Bundesregierung) und Dr. Dirk Ehnts (Uni Chemnitz)</p>
 
 			<h3>Ökonomie: Der Weg zur Hölle ist mit guten Vorsätzen gepflastert</h3>
-			<p class="workshop">Was passiert, wenn Regulierung die Prozesse beschleunigt, die sie verhindern soll? </p>
+			<p class="workshop">Was passiert, wenn Regulierung die Prozesse beschleunigt, die sie verhindern soll?</p>
 			<p class="workshop">Experte: Dr. Armin Haas (Institute for Advanced Sustainability Studies in Potsdam)</p>
 			
 			<h3>Recht und Gesetz: Staatsverluste?!</h3>
@@ -170,59 +180,59 @@
 			
 			<h3>Risikomanagement: Guter Rat – Notvorrat …</h3>
 			<p class="workshop">Kann man sich gegen systemische Risiken versichern? Kann man sich überhaupt schützen?</p>
-			<p class="workshop">Experte: Prof. Dr. Volker Deville (Uni Bayreuth, ehemals Allianz Research)</p>
+			<p class="workshop">Experte: Prof. Dr. Volker Deville (Uni Bayreuth; ehemals Allianz Research)</p>
 
 			<h3>Energy transitions (in engl. Sprache)</h3>
-			<p class="workshop">After Oil - but not in the dark ages.</p>
-			<p class="workshop">Experts: Dr. Cho Khong and Geraldine Wessing (Royal Dutch Shell)</p>
+			<p class="workshop">After Oil – but not in the dark ages.</p>
+			<p class="workshop">Experts: Dr. Cho Khong and Geraldine Wessing (Royal Dutch Shell, London)</p>
 			
-			<h3> Wetter: Eine neue Normalität</h3>
+			<h3>Wetter: Eine neue Normalität</h3>
 			<p class="workshop">Welche Rolle spielt jeder Einzelne in einem chaotischen System?</p>
 			<p class="workshop">Experten: Jascha Lehmann, Marlene Kretschmer, Kai Kornhuber, Sonja Molnos (Potsdam-Institut für Klimafolgenforschung)</p>
 
 			
 			<h3>Geopolitics: Intersections (in engl. Sprache)</h3>
 			<p class="workshop">War and peace and who can afford it?</p>
-			<p class="workshop">Expert: Rodger Baker (Stratfor)</p>
+			<p class="workshop">Rodger Baker (Stratfor/Texas (USA))</p>
 			
 			
 			<h3>Arbeit: Zukunft ohne Arbeitgeber?</h3>
 			<p class="workshop">Holokratie, Automatisierung, flexible Arbeitsformen, virtuelle Teams, lokale Produktion, Cult of Less, Armut oder Verzicht?</p>
-			<p class="workshop">Expertin: Cormelia Daheim (Future Impacts)</p>
+			<p class="workshop">Expertin: Cornelia Daheim (Future Impacts, Köln)</p>
 			
 			<h3>Identitäten: Heiße Luft</h3>
 			<p class="workshop">Geschichte wiederholt sich nicht buchstäblich, sondern als Farce.</p>
-			<p class="workshop">Experte: Martin Burckhardt (Autor und Kulturtheoretiker)</p>
+			<p class="workshop">Experte: Martin Burckhardt (Autor und Kulturtheoretiker, Berlin)</p>
 			
 
 			<h3>Elite & Demokratie: Rolle rückwärts</h3>
-			<p class="workshop">Die Eliten in den meisten wichtigen Ländern haben die Ursachen der letzten Krise nicht wirklich begriffen oder begreifen wollen.</p>
+			<p class="workshop">Die Eliten in den meisten wichtigen Ländern haben die Ursachen der letzten Krise nicht wirklich begriffen oder begreifen wollen. </p>
 			<p class="workshop">Experte: Michael Hartmann (Prof. i.R. für Soziologie, TU Darmstadt)</p>
 
-			<h3>Versorgungssicherheit: food/landgrabbing/agriculture (in engl. Sprache)</h3>
-			<p class="workshop">???</p>
+			<h3>Agriculture: Coffee shortage and other inconveniences (in engl. Sprache)</h3>
+			<p class="workshop">How far off are we from a time when people go hungry in Europe? </p>
 			<p class="workshop">Experts: Dr. Ariella Helfgott, Dr. George Garbutt & Patrick O’Reilly (University of Oxford)</p>
-
-		</div><!-- paper --> </div><!-- flex --> </section><!-- workshops -->
+		</div><!-- paper --> </div><!-- flex --> </section><!-- workshopthemen -->
 		
-		<section id="plenum"> <div class="flex"> <div class="paper">
-				
-			<h2>PLENUM</h2>
-			<p>Zwei Mal treffen sich alle Teilnehmer der Workshops zum Plenum. Moderiert von Ulrike Hermann und Adrian Taylor werden die Ergebnisse der Workshops zusammen getragen und am Szenarientisch auf einer interaktiven Timeline so lange arrangiert und umarrangiert, bis aus den Fragmenten und Thesen eine plausible Erzählung entsteht. Geschichte wird gemacht… Das Szenario wird nicht immer eindeutig festzulegen sein, aber insgesamt muss der Ablauf der Ereignisse nachvollziehbar werden.</p>
+		<section id="plenum"> <div class="flex"> <div class="paper">	
+			<h2>LABOR - Plenum</h2>
+			<p>Zwei Mal treffen sich alle Teilnehmer der Workshops zum Plenum. Moderiert von Ulrike Hermann und Adrian Taylor werden die Ergebnisse der Workshops zusammengetragen und am Szenarientisch auf einer interaktiven Timeline so lange arrangiert und umarrangiert, bis aus den Fragmenten und Thesen eine plausible Erzählung entsteht. Geschichte wird gemacht… Das Szenario wird nicht immer eindeutig festzulegen sein, aber insgesamt muss der Ablauf der Ereignisse nachvollziehbar werden. </p>
 			<p>Die Teilnehmer beobachten, wie die Experten und Moderatoren ihre Ergebnisse verwerten, haben dabei immer die Möglichkeit, selbst zu kommentieren, zu ergänzen, Einspruch zu erheben. </p>
 			<h3>Am Kritikertisch: Joseph Vogl</h3>
-			<p>„Die Erhöhung von Redeangeboten in akademisch nicht formatierten Bereichen ist eine Einladung von Produktion von Quatsch“ *<br><br>
-			Joseph Vogl, von Hause aus Literatur – und Medienwissenschaftler an der Humboldt Universität, gilt als einer der scharfsinnigsten Analytiker der vorherrschenden ökonomischen Lehre. In seinem Buch „Gespenst des Kapitals“ hinterfragt er den noch weit verbreiteten Glauben an die unsichtbare Hand des Marktes. 
+			<p class="italic">„Die Erhöhung von Redeangeboten in akademisch nicht formatierten Bereichen ist eine Einladung zur Produktion von Quatsch“ *</p>
+			<p>Prof. Dr. Joseph Vogl von Hause aus Literatur-, Kultur- und Medienwissenschaftler an der Humboldt-Universität zu Berlin, gilt als einer der scharfsinnigsten Analytiker der vorherrschenden ökonomischen Lehre. In seinen letzten Büchern 'Das Gespenst des Kapitals' und 'Der Souveränitätseffekt' hinterfragt er den Glauben an die unsichtbare Hand des Marktes sowie die Machtstrukturen im gegenwärtigen Finanzregime. 
+			 <br><br>
 			Zugleich ist Vogl auch ein Kritiker von „rhetorischen Schwellkörpern“. Ihm bereitet das Produzieren von Zuspitzungen, Pointen und handlichen Thesen grundsätzlich ein schlechtes Gewissen. <br><br>
-			Joseph Vogl wird den Labortag kritisch begleiten und uns eine abschließende Keynote auf den Weg geben. <br><br>
-			* Moritz von Uslar im Gespräch mit Joseph Vogl. Aus: Die ZEIT Nr 20 / 2017 vom 14.Mai
+			Joseph Vogl wird den Labortag kritisch begleiten und uns eine abschließende Keynote auf den Weg geben. </p>
+			<p class="italic">* Moritz von Uslar im Gespräch mit Joseph Vogl. Aus: Die ZEIT Nr 20 / 2017 vom 14.Mai
 			</p>
-			<h3>Moderatoren im Plenum am 16. September</h3>
-			<p><b>Ulrike Herrmann</b> absolvierte nach einer abgeschlossenen Lehre als Bankkauffrau die Henri-Nannen-Schule. Anschließend studierte sie Wirtschaftsgeschichte und Philosophie an der FU Berlin. Seit 2000 ist sie Wirtschaftskorrespondentin bei der Berliner taz. Dort war sie auch Parlamentskorrespondentin und leitete die Meinungsredaktion. Sie gehört auch zum Vorstand der taz-Verlagsgenossenschaft.</p>
-			<p><b>Adrian Taylor</b> gründete das Unternehmen 4Sing Foresight to Strategy for Security and Sustainability in Governance. Er unterstützt sowohl Kunden im öffentlichen wie im privaten Sektor, Vorhersagemethoden anzuwenden um nachhaltigere Strategien zu entwickeln. Er ist spezialisiert auf inhaltliche Beratung, Prozessdesign und Workshop-Moderation vor allem in den Themen Sicherheit und Nachhaltigkeit und hat breite Erfahrung in der Anwendung zahlreicher Methoden um zukünftige Veränderungen in der Welt zu prognostizieren. Bisher hat Adrian Taylor bereits in über 33 Ländern gearbeitet. Er gibt Workshops auf Englisch, Französisch und Deutsch.<br>
-			Vor Beginn seiner Selbständigkeit war er: Junior-Offizier in der britischen Armee, Lobbyist in EU-Angelegenheiten, Szenarien-Planer in einem Gemeinschaftsprojekt mit Global Business Network, Länderreferent für Indien bei der Europäischen Kommission, Gastwissenschaftler bei Georgie Tech, beschäftigt bei der European School of Governance und dort zugleich Präsident des European Open Source Intelligence Forums.<br>
-			Adrian Taylor absolvierte ein Studium der Philosophie, Politik und Wirtschaft am Trinity College Oxford und im Fach Europäische Studien eine Lizenz Spéciale (Master) „mit hoher Auszeichnung“ von der Université Libre deBruxelles. Adrian Taylor ist in London geboren und aufgewachsen und hat anschließend 24 Jahre an verschiedenen Orten gelebt, vor allem in Gibraltar, Brüssel, Atlanta, Zürich, New York und München. Er wohnt derzeit in Hamburg.</p>
-		</div><!-- paper --> </div><!-- flex --> </section><!-- planum -->
+			</div><!-- paper --> </div><!-- flex --> </section><!-- plenum -->	
+			
+			<section id="moderatoren"> <div class="flex"> <div class="paper">
+			<h2>LABOR – Moderatoren im Plenum am 16. September</h2>
+			<p><b>Ulrike Herrmann</b> absolvierte nach einer abgeschlossenen Lehre als Bankkauffrau die Henri-Nannen-Schule. Anschließend studierte sie Wirtschaftsgeschichte und Philosophie an der Freien Universität Berlin. Seit 2000 ist sie Wirtschaftskorrespondentin bei der Berliner taz. Dort war sie auch Parlamentskorrespondentin und leitete die Meinungsredaktion. Sie gehört auch zum Vorstand der taz-Verlagsgenossenschaft.</p>
+			<p><b>Adrian Taylor</b> gründete das Unternehmen 4Sing Foresight to Strategy for Security and Sustainability in Governance. Er ist spezialisiert auf inhaltliche Beratung, Prozessdesign und Workshop-Moderation in den Themen Sicherheit und Nachhaltigkeit. Adrian war Junior-Offizier in der britischen Armee, Lobbyist in EU-Angelegenheiten, Szenarien-Planer in einem Gemeinschaftsprojekt mit Global Business Network, Länderreferent für Indien bei der Europäischen Kommission, beschäftigt bei der European School of Governance und dort zugleich Präsident des European Open Source Intelligence Forums. Er absolvierte ein Studium der Philosophie, Politik und Wirtschaft und hält im Fach Europäische Studien eine Lizenz Spéciale (Master). Adrian Taylor ist in London geboren und aufgewachsen und hat in Gibraltar, Brüssel, Atlanta, Zürich, New York und München gelebt. Er wohnt derzeit in Hamburg.</p>
+		</div><!-- paper --> </div><!-- flex --> </section><!-- moderatoren -->
 		
 		<section id="anmeldung"> <div class="flex"> <div class="paper">
 			<div class="formular">
@@ -237,9 +247,9 @@
 					<form method="POST" action="/adduser/" id="anmeldung_form">
 						<p>Anmeldezeitraum: 1. August bis 9. September 2017, 12 Uhr<br>
 						finale Rückmeldungen Ihrerseits: 10. bis 13. September 2017<br>
-						Vergabe frei gewordener Plätze an Anmelder/innen der Wartelisten: 14. September 2017<br>
+						Vergabe frei gewordener Plätze an Anmelder/innen der Wartelisten: 14. und 15. September 2017<br>
 						<br>
-						Hinweis: Die Teilnahme am „Welche Zukunft?!“-Labor ist kostenlos. Die Teilnehmer/innenzahl unserer Workshops ist begrenzt. Je nach Workshop gibt es 10 bis 25 verfügbare Plätze. Daher bitten wir Sie um eine verbindliche Anmeldung.</p>
+						Hinweis: Die Teilnahme am „Welche Zukunft?!“-Labor ist kostenlos. Die Arbeitssprache des Labors ist deutsch, Ausnahme sind drei Workshops in englisch ohne Simultanübersetzung. Die Teilnehmer/innenzahl unserer Workshops ist begrenzt. Je nach Workshop gibt es 10 bis 25 verfügbare Plätze. Daher bitten wir Sie um eine verbindliche Anmeldung.</p>
 						<br>
 						<label >Ich möchte mich für folgenden Workshop anmelden:</label>
 						<select id="wunsch_ws" name="workshopId" size="1">
@@ -312,10 +322,10 @@
 						<label ><a href="#anmeldung" onclick="showagbs(false);">AGBs schliessen</a></label>
 						<p >
 						Erhebung und Verwendung Ihrer Daten bei Anmeldung zum Workshop<br><br>
-						Die von Ihnen bei der Anmeldung zum Workshop eingegebenen Angaben werden auf dem Server von „Welche Zukunft?!“ gespeichert. Erforderliche Daten (Pflichtfelder) sind hierbei: Name, Mailadresse, ausgewählter Workshop und Sprache (letzteres nur bei Workshopauswahl „olympisch“). Die Angabe zu Ihrem Zukunftsszenario ist freiwillig und dient uns dazu …???. Wir behandeln die Daten vertraulich und verwenden sie ausschließlich zu organisatorischen Zwecken (wer nimmt an welchem Workshop teil) und zu Informationszwecken zum Workshoptag. Wir werden Wissenswertes zum Ablauf des Tages oder zum Workshopthema an Ihre E-Mail-Adresse versenden. Ihre Daten werden nur so lange gespeichert, wie es zur Organisation des Workshoptages erforderlich ist und spätestens im November 2017 gelöscht. Durch Abmelden vom Workshop durch den Nutzer werden die Daten nach maximal 6 Wochen unwiderruflich gelöscht. Möchten Sie dennoch weiter im Mailing-Verteiler von „Welche Zukunft?!“ vertreten sein und Informationen durch uns erhalten, melden Sie sich einfach für den Newsletter an.
+						Die von Ihnen bei der Anmeldung zum Workshop eingegebenen Angaben werden auf dem Server von „Welche Zukunft?!“ gespeichert. Erforderliche Daten (Pflichtfelder) sind hierbei: Name, Mailadresse, ausgewählter Workshop und Sprache (letzteres nur bei Workshopauswahl „olympisch“). Die Angaben zu Ihrem Zukunftsszenario sind freiwillig. Sie dienen - wie die Szenarien der Experten - als Grundlage für die Arbeit im Workshop. Wir behandeln die Daten vertraulich und verwenden sie ausschließlich zu organisatorischen Zwecken (wer nimmt an welchem Workshop teil) und zu Informationszwecken zum Workshoptag. Wir werden Wissenswertes zum Ablauf des Tages oder zum Workshopthema an Ihre E-Mail-Adresse versenden. Ihre Daten werden nur so lange gespeichert, wie es zur Organisation des Workshoptages erforderlich ist und spätestens im November 2017 gelöscht. Durch Abmelden vom Workshop durch den Nutzer werden die Daten nach maximal 6 Wochen unwiderruflich gelöscht. Möchten Sie dennoch weiter im Mailing-Verteiler von „Welche Zukunft?!“ vertreten sein und Informationen durch uns erhalten, melden Sie sich einfach für den Newsletter an.
 						<br><br>
 						Bild- und Tonaufnahmen am Workshoptag<br><br>
-						Während des "Welche Zukunft?!“-Labors am 16. September werden durch die Mitarbeiter des Deutschen Theaters Berlin Bild- und Tonaufnahmen von den Workshops und Plena angefertigt. Diese dienen der weiteren Recherche und einer späteren Veröffentlichung. 
+						Während des "Welche Zukunft?!“-Labors am 16. September werden durch die Mitarbeiter des Deutschen Theaters Berlin Bild- und Tonaufnahmen von den Workshops und Plena angefertigt. Diese dienen der weiteren Recherche und einer späteren Veröffentlichung. Indem Sie am Labor teilnehmen, stimmen Sie dieser Veröffentlichung zu.
 						<br><br>
 						Newsletter<br><br>
 						Um sich bei unserem E-Mail-Newsletterdienst anmelden zu können, benötigen wir mindestens Ihre E-Mail-Adresse, an die der Newsletter versendet werden soll. Etwaige weitere Angaben sind freiwillig und werden verwendet, um Sie persönlich ansprechen und den Inhalt des Newsletters persönlich ausgestalten zu können. Wir werden Ihnen erst dann den Newsletter zusenden, wenn Sie zuvor Ihre Anmeldung per von uns zugesendetem Link bestätigen. Damit möchten wir sicherstellen, dass nur Sie selbst sich als Inhaber der angegebenen E-Mail-Adresse zum Newsletter anmelden können. Ihre diesbezügliche Bestätigung muss binnen einer Woche nach Erhalt der Bestätigungs-E-Mail erfolgen, da andernfalls Ihre Newsletter-Anmeldung automatisch aus unserer Datenbank gelöscht wird. Sie können einen von Ihnen bei uns abonnierten Newsletter jederzeit abbestellen indem Sie ganz einfach über den Link am Ende des Newsletters eine Stornierung vornehmen.
@@ -328,10 +338,11 @@
 		</div><!-- paper --> </div><!-- flex --> </section><!-- anmeldung -->
 
 		<section id="team"> <div class="flex"> <div class="paper">
-			<h2>TEAM</h2>
+			<h2>TEAM & PARTNER</h2>
+			<h3>TEAM</h3>
 			<p>Konzeption und Durchführung: Andres Veiel, Jutta Doberstein, Ulrich Beck, Daniel Hengst, Julia Kaschlinski, Michaela Barth, Luisa Männel</p>
-			<h2>PARTNER</h2>
-			<p>„Welche Zukunft?!“ ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages</p>
+			<h3>PARTNER</h3>
+			<p class=italic>Welche Zukunft?! Ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</p>
 			<div class=logos>
 			<a href="https://www.deutschestheater.de" target="_blank"><img src="image0.png" alt="logo"></a>
 			<a href="http://humboldtforum.com/de-DE/" target="_blank"><img src="image2.png" alt="logo"></a>
@@ -340,7 +351,7 @@
 			<p><span class=italic>Medienpartner:</span></p>
 			<div class=logos>
 			<a href="http://www.deutschlandfunkkultur.de" target="_blank"><img src="image3.png" alt="logo"></a>
-			</div>
+			</div>	
 		</div><!-- paper --> </div><!-- flex --> </section><!-- team -->
 
 		<section id="kontakt"> <div class="flex"> <div class="paper">

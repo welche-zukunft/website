@@ -25,7 +25,7 @@ function addoptions(){
 	$('#agbs').hide();
 	$('#impressumtext').hide();
 	
-	var headlines = $( "#workshops" ).find( "h3" );
+	var headlines = $( "#workshopthemen" ).find( "h3" );
 	for(i = 0; i < headlines.length; i++){
 		headlines[i].style.color = metacontents[i].color;
 	}

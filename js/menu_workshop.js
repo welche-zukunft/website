@@ -29,6 +29,7 @@ function update_workshop_menu(j) {
   var intro_long = metacontents[j].intro_long;
   var namemoderator = metacontents[j].namemoderator;
   var vitamoderator = metacontents[j].vitamoderator;
+  var picmod = metacontents[j].picmod;
   var material = metacontents[j].material;
   
   //colors
@@ -38,6 +39,32 @@ function update_workshop_menu(j) {
   $("#ws_menu_subtitle").css("color","black");
   $("#workshopmenu").css("color","black");
   $("#burger_icon").css("color","black");
+
+  // all Experts in one line
+  /*
+	var expertstring = "";
+	var bezeichnung = "Experte";
+	if(name.length > 1){
+		bezeichnung = "Experten";
+	}
+	expertstring += bezeichnung + ": ";
+	for(var i = 0; i < name.length; i++){ 
+		expertstring += name[i];
+		if(i+1 < name.length){
+		expertstring += ', ';
+		}
+	}*/
+	var experthead = "";
+	var bezeichnung = "Experte";
+	if(language == "eng") bezeichnung = "Expert";
+	if(name.length > 1){
+		bezeichnung = "Experten";
+		if(language == "eng") bezeichnung = "Experts";
+	}
+	experthead += bezeichnung;
+	
+	
+
   // menu elements
 
   // logline
@@ -47,6 +74,10 @@ function update_workshop_menu(j) {
     + '<p>'
     + logline
     + '</p>'
+	/*
+    + '<p>'
+	+ expertstring
+    +'</p>'	*/
     + '</div>'
   );
   // title
@@ -63,7 +94,7 @@ function update_workshop_menu(j) {
     + intro_long
     + '</p>'
     + '<p class="ws_hl">'
-	+ "Experten"
+	+ experthead
     + '</p>'
 	+ '</div>'
   ); 
@@ -84,9 +115,12 @@ function update_workshop_menu(j) {
 if(namemoderator != ""){
 	menu_content.append(
     '<div id="ws_vita" class="ws_content">'
-    + '<p class="ws_hl">'
+	+ '<p class="ws_hl moderation">'
 	+ "Moderation"
     + '</p>'
+	+ '<img id="ws_image" src="./images/mod/'
+	+ picmod
+    + '.png" />'
     + '<p>'
     + vitamoderator
     + '</p>'
@@ -161,7 +195,7 @@ $(document).on('click touchstart', function(e) {
 	
 
 		if(e.pageY < window.innerHeight /2.) camposIntern += 1;
-		if(e.pageY > window.innerHeight /2.) camposIntern -= 1;			
+		else if(e.pageY > window.innerHeight /2.) camposIntern -= 1;			
 	
 
 	//delete tutorial on first zoom in

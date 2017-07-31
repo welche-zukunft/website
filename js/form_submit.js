@@ -31,11 +31,25 @@ function msg_map(msg) {
   return result;
 }
 
+
+function ValidateForm(id) {
+  var formInvalid = false;
+  $('#' + id + ' input').each(function() {
+    if ($(this).val() === '') {
+      formInvalid = true;
+    }
+  });
+  return formInvalid;
+}
+
 $(document).ready(function(){
   // WS form
-  var $form = $('#anmeldung_form');
+  var id = 'anmeldung_form';
+  var $form = $('#' + id);
+
   $form.submit(function(){
 
+    var result_label = $('#form_result');
     var data = {};
     var data_nl = $(this).serialize();
     $(this).serializeArray().map(function(x){data[x.name] = x.value;});
@@ -43,29 +57,33 @@ $(document).ready(function(){
     var request = JSON.stringify(data);
     //console.log(request);
 
-    jQuery.ajax ({
-      url: $(this).attr('action'),
-      type: "POST",
-      data: request,
-      dataType: "json",
-      contentType: "application/json; charset=utf-8",
-      success: function(response){
-        result = response.responseText;
-        result = msg_map(result);
-        result_label.html(result);
-      },
-      error: function(response){
-        result = response.responseText;
-        result = msg_map(result);
-        result_label.html(result);
-      }
-    });
+    var formInvalid = ValidateForm(id);
+    if (formInvalid == false) {
+      jQuery.ajax ({
+        url: $(this).attr('action'),
+        type: "POST",
+        data: request,
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function(response){
+          result = response.responseText;
+          result = msg_map(result);
+          result_label.html(result);
+        },
+        error: function(response){
+          result = response.responseText;
+          result = msg_map(result);
+          result_label.html(result);
+        }
+      });
 
-    $.post( "https://welchezukunft.org/nl.php", data_nl,  function( data ) {
-      //$( ".result" ).html( data );
-    });
-
-    var result_label = $('#form_result');
+      $.post( "https://welchezukunft.org/nl.php", data_nl,  function( data ) {
+        //$( ".result" ).html( data );
+      });
+    result_label.html(result);
+    } else {
+      result = 'Bitte füllen Sie das Formular aus.';
+    }
     result_label.html(result);
     result_label.css('display', 'block');
     return false;

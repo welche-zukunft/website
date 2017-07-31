@@ -341,7 +341,7 @@
 			<h2>TEAM & PARTNER</h2>
 			<h3>TEAM</h3>
 			<p>Konzeption und Durchführung: Andres Veiel, Jutta Doberstein, Ulrich Beck, Daniel Hengst, Julia Kaschlinski, Michaela Barth, Luisa Männel</p>
-			<h2>PARTNER</h2>
+			<h3>PARTNER</h3>
 			<p class=italic>Welche Zukunft?! Ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</p>
 			<div class=logos>
 			<a href="https://www.deutschestheater.de" target="_blank"><img src="image0.png" alt="logo"></a>

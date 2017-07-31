@@ -105,6 +105,7 @@ if (Detector.webgl) {
     get_metainformations();
 } else {
     var warning = Detector.getWebGLErrorMessage();
+	console.log(warning);
 }
 
 

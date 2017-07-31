@@ -11,7 +11,7 @@ double_bounce2.id = 'double_bounce2';
 spintext.className = 'spintext';
 double_bounce1.className = 'double-bounce1';
 double_bounce2.className = 'double-bounce2';
-spintext.innerHTML = '<p>WELCHE ZUKUNFT?! wird geladen ...</p>';
+spintext.innerHTML = '<p>loading WELCHE ZUKUNFT?! ...</p>';
 
 //document.getElementById('container').appendChild(spinner_container);
 document.body.appendChild(spinner_container);

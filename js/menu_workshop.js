@@ -191,7 +191,7 @@ $(document).on('click touchstart', function(e) {
 	
 
 		if(e.pageY < window.innerHeight /2.) camposIntern += 1;
-		if(e.pageY > window.innerHeight /2.) camposIntern -= 1;			
+		else if(e.pageY > window.innerHeight /2.) camposIntern -= 1;			
 	
 
 	//delete tutorial on first zoom in

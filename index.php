@@ -240,7 +240,7 @@
 		<link href="css/contentboxes.css" rel="stylesheet">
 
 	</head>
-		<?php require './nl.php';?>
+		<?php require './nlu.php';?>
 		<body>
 		<div id="banner">
 			<div class="marquee">

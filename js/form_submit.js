@@ -19,7 +19,12 @@ $(document).ready(function(){
       dataType: "json",
       contentType: "application/json; charset=utf-8",
       success: function(response){
-        result = response;
+        result = response.responseText;
+        result_label.html(result);
+      },
+      error: function(response){
+        result = response.responseText;
+        result_label.html(result);
       }
     });
 
@@ -28,7 +33,7 @@ $(document).ready(function(){
     });
 
     var result_label = $('#form_result');
-    //result_label.html(result);
+    result_label.html(result);
     result_label.css('display', 'block');
     return false;
   });

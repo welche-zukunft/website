@@ -520,6 +520,7 @@
 	  }
 
 	</script>
+	<script type='text/javascript' src='js/msg_map.js'></script>
 	<script type='text/javascript' src='js/form_submit.js'></script>
 	<script type='text/javascript' src='js/Detector.js'></script>
 	<script type='text/javascript' src='js/changeworkshop.js'></script>

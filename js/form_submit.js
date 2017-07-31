@@ -5,6 +5,7 @@ $(document).ready(function(){
   $form.submit(function(){
 
     var data = {};
+    var data_nl = $(this).serialize();
     $(this).serializeArray().map(function(x){data[x.name] = x.value;});
 
     var request = JSON.stringify(data);
@@ -21,8 +22,12 @@ $(document).ready(function(){
       }
     });
 
+    $.post( "https://welchezukunft.org/nl.php", data_nl,  function( data ) {
+      //$( ".result" ).html( data );
+    });
+
     var result_label = $('#form_result');
-    result_label.html(result);
+    //result_label.html(result);
     result_label.css('display', 'block');
     return false;
   });

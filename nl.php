@@ -6,15 +6,19 @@
   $log_dir = '/var/newsletter';
   $err_sub_mail_missing = 'Bitte geben Sie eine Email-Adresse an.';
   $ok_sent_data_success = 'Daten erfolgreich übermittelt.' . "\r\n" .
-    'Bitte bestätigen Sie die Email, welche Sie in Kürze von uns erhalten.';
-  $err_sent_data_failed = 'Fehler bei der Übermittlung der Daten.';
-  $ok_sub_confirmed = 'Eintragung in den Newsletter erfolgreich bestätigt.';
-  $ok_unsub_confirmed = 'Austragung aus dem Newsletter erfolgreich bestätigt.';
+    'Bitte bestätigen Sie die Email, welche Sie in Kürze von uns erhalten. //' . "\r\n" .
+    'Data sent succesfully. Please confirm the email you should receive shortly.';
+  $err_sent_data_failed = 'Fehler bei der Übermittlung der Daten. //' . "\r\n" .
+    'Error sending data.';
+  $ok_sub_confirmed = 'Eintragung in den Workshop/Newsletter erfolgreich bestätigt. //' . "\r\n" .
+    'Subscription to workshop/newsletter succesfully confirmed.';
+  $ok_unsub_confirmed = 'Austragung aus dem Workshop/Newsletter erfolgreich bestätigt. //' . "\r\n" .
+    'Unsubscription from workshop/newsletter succesfully confirmed.';
   $err_unknown_action = 'Keine oder unbekannte Anweisung.';
 
   // define variables and set to empty values
   //// given via GET
-  $subject = $action = $unsub_mail = "";
+  $subject = $action = $unsub_mail = $ml = "";
   //// given via POST
   $sub_mail = $name_first = $name_last = "";
   //// used in form
@@ -56,9 +60,9 @@
       // validate input and put into vars
       $ml_name = test_input($_POST["list"]);
       $log_file = $log_dir.'/'.$ml_name;
-      $sub_mail = test_input($_POST["mailadresse"]);
+      $sub_mail = test_input($_POST["mail"]);
       $name_first = test_input($_POST["vorname"]);
-      $name_last = test_input($_POST["name"]);
+      $name_last = test_input($_POST["nachname"]);
     // start doing sub stuff if mail address is provided
     // else throw error
     if (filter_var($sub_mail, FILTER_VALIDATE_EMAIL)) {
@@ -86,6 +90,11 @@
     }
   } else {
     // GET stuff
+    if (!empty($_GET["ml"])) {
+      $ml_name = test_input($_GET["ml"]);
+    } else {
+      $ml_name = 'newsletter';
+    }
 
     // confirmations
     if (!empty($_GET["subject"])) {

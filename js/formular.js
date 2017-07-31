@@ -1,3 +1,18 @@
+var ws_name = ["workshop-oekonomie-1",
+"workshop-oekonomie-2",
+"workshop-oekonomie-3",
+"workshop-oekonomie-4",
+"workshop-rechtundgesetz",
+"workshop-risikomanagement",
+"workshop-energysupply",
+"workshop-wetter",
+"workshop-geopolitics",
+"workshop-arbeit",
+"workshop-identitaeten",
+"workshop-eliteunddemokratie",
+"workshop-agriculturaleconomy",
+"workshop-olympisch"];
+
 function addoptions(){
 	for(var i = 0; i < metacontents.length; i++){
 		j = i + 1;
@@ -19,7 +34,9 @@ function addoptions(){
 
  $(function() {
         $('#wunsch_ws').change(function(){
-			if($(this).val() == 14){
+			var ws_num = $(this).val();
+			$("#list").val(ws_name[ws_num - 1]);
+			if(ws_num == 14){
 				$('#sprache').show();
 			}
 			else {$('#sprache').hide();}

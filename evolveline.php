@@ -246,6 +246,7 @@
 							<option disabled selected value> Bitte wählen </option>
 							<option value='14'>olympisch – Hauptsache dabei!</option>
 						</select>
+						<input type="hidden" name="list" id="list" value="">
 						<div id="sprache">
 							<label>Ich spreche folgende Sprache:</label>
 							<select size="1" name="sprache">
@@ -269,6 +270,8 @@
 						<input name="agb" type="hidden" value="NO">
 						<input name="agb" class="agb_check" type="checkbox" value="YES">
 						<label class="agbs">Ich habe die <a href="#agb_area" onclick="showagbs(true);">AGBs</a> gelesen und bin damit einverstanden.</label>
+
+
 						<button type="submit">Jetzt anmelden</button>
 						<label id="form_result" class="result" style=""></label>
 
@@ -293,9 +296,9 @@
 					<label >Vorname</label>
 					<input type="text" name="vorname" value="<?php echo $name_first;?>">
 					<label >Name</label>
-					<input type="text" name="name" value="<?php echo $name_last;?>">
+					<input type="text" name="nachname" value="<?php echo $name_last;?>">
 					<label >E-Mailadresse</label>
-					<input type="text" name="mailadresse" value="<?php echo $sub_mail;?>">
+					<input type="text" name="mail" value="<?php echo $sub_mail;?>">
 					<br>
 					<input name="agb" type="hidden" value="NO">
 					<input name="agb" class="agb_check" type="checkbox" value="YES">

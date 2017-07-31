@@ -329,9 +329,9 @@
 			<label >Vorname</label> 
 			<input type="text" name="vorname" id="vorname" value="<?php echo $name_first;?>">
 			<label >Name</label> 
-			<input type="text" name="name" id="name" value="<?php echo $name_last;?>">
+			<input type="text" name="nachname" id="name" value="<?php echo $name_last;?>">
 			<label >E-Mailadresse</label> 
-			<input type="text" name="mailadresse" id="mailadresse" value="<?php echo $sub_mail;?>">
+			<input type="text" name="mail" id="mailadresse" value="<?php echo $sub_mail;?>">
 			<br>
 			<button type="submit">Newsletter abonnieren</button>
 			<label class="result" style="<?php echo $result_display;?>"><?php echo $feedback;?></label>

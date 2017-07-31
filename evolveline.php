@@ -159,7 +159,7 @@
 			<section id="workshopthemen"> <div class="flex"> <div class="paper">	
 			<h2>LABOR - Die Workshopthemen am 16. September </h2>
 			<h3>Ökonomie: Fiskalische und andere Götterdämmerungen</h3>
-			<p class="workshop">Soziale und ökonomische Krisen als Folge einer fehlgeleiteten Politik. Die Katastrophe kommt, aber alles könnte auch ganz anders sein.</p>
+			<p class="workshop">Soziale und ökonomische Krisen als Folge einer fehlgeleiteten Politik.</p>
 			<p class="workshop">Experte: Prof. Dr. Rudolph Hickel (Institut für Arbeit und Wirtschaft in Bremen)</p>
 
 			<h3>Ökonomie: Patient Zero – der Indexpatient Deutsche Bank</h3>
@@ -167,7 +167,7 @@
 			<p class="workshop">Experte: Dieter Hein (Fairesearch, Frankfurt a.M.)</p>
 			
 			<h3>Ökonomie: Armageddon</h3>
-			<p class="workshop">Wenn die AfD den Kanzler stellt… Protektionismus, Deflation und Währungskrisen.</p>
+			<p class="workshop">Wenn die AfD den Kanzler stellt… Der Workshop untersucht Protektionismus, Deflation und Währungskriesen als Treiber für den hypothetischen Zusammenbruch der Weltwirtschaft im Jahr 2026. </p>
 			<p class="workshop">Experten: Prof Dr. Bofinger (Uni Würzburg; Mitglied des Sachverständigenrates der Bundesregierung) und Dr. Dirk Ehnts (Uni Chemnitz)</p>
 
 			<h3>Ökonomie: Der Weg zur Hölle ist mit guten Vorsätzen gepflastert</h3>

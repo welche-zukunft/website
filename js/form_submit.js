@@ -75,7 +75,9 @@ $(document).ready(function(){
   $form_nl.submit(function(){
     var data_nl = $(this).serialize();
     $.post( "https://welchezukunft.org/nl.php", data_nl, function( data ) {
-      $( ".result" ).html( data );
+      var nl_result_label = $( "#nl_form_result" );
+      nl_result_label.html( data );
+      nl_result_label.css('display', 'block');
     });
     return false;
   });

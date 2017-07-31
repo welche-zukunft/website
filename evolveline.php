@@ -304,7 +304,7 @@
 					<input name="agb" class="agb_check" type="checkbox" value="YES">
 					<label class="agbs">Ich habe die <a href="#agb_area" onclick="showagbs(true);">AGBs</a> gelesen und bin damit einverstanden.</label>
 					<button type="submit">Newsletter abonnieren</button>
-					<label class="result" style="<?php echo $result_display;?>"><?php echo $feedback;?></label>
+					<label id="nl_form_result" class="result" style="<?php echo $result_display;?>"><?php echo $feedback;?></label>
 				</form>
 				</div>
 					<section id="agb_area">

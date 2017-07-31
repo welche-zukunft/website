@@ -1,13 +1,19 @@
 // States
 var statistics = false;
 var showWalls = true;
+var showFakeWalls = false;
 var showDax = true;
+
+if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ){
+	showWalls = false;
+	showFakeWalls = true;
+}
 
 // switches
 var contentboxes = 0;
 
 //
-var renderer, scene, camera, controls, stats;
+var renderer, scene, camera, controls, stats,container;
 var FOV;
 var nEnd = 0, nMax, nStep = 90; 
 var geometry = [];
@@ -96,10 +102,7 @@ if (Detector.webgl) {
     var warning = Detector.getWebGLErrorMessage();
 }
 
-window.onbeforeunload = function () {
-		//10 because therwise timeline is not set active - but why?
-        window.scrollTo(0,10);
-}
+
 
 
 
@@ -127,10 +130,10 @@ function get_metainformations(){
 		setTimeout(function () {
 		$('#tutorial').find("span").animate({opacity:0},function(){
 		if(language=="deu"){
-				tutorialtext = "Wähle einen Workshop und klicke oder tappe in der oberen Hälfte deines Screens um im Szenario nach vorne und in der unteren Hälfte um zurück zu navigieren.";
+				tutorialtext = "↓ Wähle ein Szenario! ↓";
 		}
 		else if(language=="eng"){
-				tutorialtext = "Select a workshop and click or tap in the upper half of your screen to navigate forward, and in the lower half to navigate backward through the scenario";
+				tutorialtext = "↓ Select a scenario! ↓";
 		}
         $(this).text(tutorialtext)
             .animate({opacity:1});  
@@ -143,17 +146,25 @@ function get_metainformations(){
 //INIT ---------------------------------
 function init() {
 	// renderer
-	renderer = new THREE.WebGLRenderer({ antialias: true,logarithmicDepthBuffer: false,precision: "highp" });
+	container = document.getElementById( "threejs" );
+	var div = document.getElementById("container");
+	container.width = div.clientWidth;
+	container.height = div.clientHeight;
+	var devicePixelRatio = window.devicePixelRatio || 1;
+	renderer = new THREE.WebGLRenderer({ canvas: container, antialias: devicePixelRatio === 1,logarithmicDepthBuffer: false,precision: "highp" });
 	renderer.setPixelRatio( window.devicePixelRatio );
-	renderer.setSize( window.innerWidth, window.innerHeight );
-
-	container.appendChild( renderer.domElement );
+	
+	
+	//renderer.setSize( window.innerWidth/4., window.innerHeight/4. );
+	renderer.autoResize = true;
+	
+	//container.appendChild( renderer.domElement );
 	var distance = window.innerWidth + ( window.innerWidth * 0.9);
 	if(window.innerWidth < window.innerHeight){
-		distance = window.innerWidth + ( window.innerWidth * 0.009);
+		distance = window.innerWidth;
 		orientation_world = "vertical";
 	}
-	FOV = 2 * Math.atan( window.innerWidth / ( 2 *distance))*180 / Math.PI;
+	FOV = aspect * Math.atan( window.innerWidth / ( 2 *distance))*180 / Math.PI;
 
 	// scene
 	scene = new THREE.Scene();
@@ -180,11 +191,15 @@ function init() {
 	if(statistics == true){
 		stats = new Stats();
 		stats.showPanel( 1 );
-		container.appendChild( stats.dom );		
+		div.appendChild( stats.dom );		
 	}
 	if(showWalls == true){
 		createNumberWalls();
 	}
+	if(showFakeWalls == true){
+		createFakeWalls();	
+	}
+	
 	// content stuff
 
 	var material = new THREE.LineBasicMaterial();
@@ -454,6 +469,7 @@ function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
 	renderer.setSize( window.innerWidth, window.innerHeight );
+	
 }
 
 var camposIntern = -1;

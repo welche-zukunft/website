@@ -122,7 +122,7 @@ function createNumberWalls(){
 		if(orientation_world == "vertical"){
 			book.position.x = -1. * (boxwidth*2) + (4*boxwidth*i);
 		}
-		book.position.y = (boxy.getSize().y * 0.3)/2.;
+		book.position.y = (boxy.getSize().y * 0.35)/2.;
 		book.position.z = 3.-(boxy.getSize().x*0.35 * i );
 		book.rotation.y = Math.PI/2 + (Math.PI*i);
 		book.scale.set(0.35,0.35,0.35);
@@ -139,4 +139,41 @@ function changeuniforms(){
 	speedx += (Math.random() * 0.01) - 0.005;
 	speedy += (Math.random() * 0.01) - 0.005;
 	uniforms.speed.value = new THREE.Vector2(speedx, speedy);
+}
+var mat4;
+var geo2 = new THREE.PlaneGeometry( 160, 10., 1. );
+var textureLoader = new THREE.TextureLoader();
+var fakewalls = [];
+var faketopy = new THREE.Group();
+
+var fakenumbertexture = textureLoader.load('images/numbers.jpg',function (){
+	fakenumbertexture.wrapS = fakenumbertexture.wrapT = THREE.RepeatWrapping;
+	fakenumbertexture.repeat.set(10, 1);
+	fakenumbertexture.flipY = true;
+	fakenumbertexture.minFilter = THREE.LinearFilter;
+	fakenumbertexture.needsUpdate = true; 
+});
+
+
+
+function createFakeWalls(){
+	var n = 2;
+	for (var r=0; r<n; r++) {
+		mat4 = new THREE.MeshLambertMaterial({map:fakenumbertexture});
+		mat4.side = THREE.DoubleSide;
+		var planer = new THREE.Mesh( geo2, mat4 );
+		planer.doubleSided = true;
+		var boxy = new THREE.Box3().setFromObject( planer );
+		planer.position.x = -1.*(boxwidth) + (boxwidth*2*r);
+		if(orientation_world == "vertical"){
+			planer.position.x = -1. * (boxwidth*2.5) + (5*boxwidth*r);
+		}
+		/*planer.position.y = (boxy.getSize().y)/2.;
+		planer.position.z = 3.-(boxy.getSize().x * r );*/
+		planer.rotation.y = (Math.PI/2.)+(Math.PI*r);
+		fakewalls.push(planer);
+		faketopy.add(planer);
+
+		}
+	scene.add(faketopy);
 }

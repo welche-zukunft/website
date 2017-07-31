@@ -89,7 +89,7 @@
 					<div id="ws_menu_content" class="navigation paper"></div>
 				</div><!-- workshopmenu -->
 			</div><!-- bottom_menus -->
-
+		  <canvas id="threejs"></canvas>
 		</div> <!-- container -->
 	</section> <!-- container_section -->
 
@@ -513,9 +513,6 @@
 	<script type='text/javascript' src='js/Detector.js'></script>
 	<script type='text/javascript' src='js/changeworkshop.js'></script>
 	<script type='text/javascript' src='js/numbers.js'></script>
-
-
-
 	<script type='text/javascript' src='js/changewindowsize.js'></script>
 	<script type='text/javascript' src='js/triggers.js'></script>
 	<script type='text/javascript' src='js/smoothscroll.js'></script>

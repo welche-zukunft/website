@@ -20,7 +20,7 @@ function ws_option_check(response,ajax) {
 	if ( result == "free" || result == "full" ) {
 		status = msg_map(result);
 		var wstext = ws_option.text();
-		var wstext = ws_option.text() + status;
+		var wstext = status + ws_option.text();
 		ws_option.text(wstext);
 	}
 }

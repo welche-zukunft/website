@@ -19,7 +19,7 @@ function msg_map(msg) {
           result = 'Please fill in the whole form.';
           break;
       case "full":
-          result = ' - Waiting list';
+          result = '*WAITING LIST* - ';
           break;
       case "free":
           result = '';
@@ -54,7 +54,7 @@ function msg_map(msg) {
           result = msg;
           break;
       case "full":
-          result = ' - Warteliste';
+          result = '*WARTELISTE* - ';
           break;
       case "free":
           result = '';

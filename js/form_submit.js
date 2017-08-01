@@ -1,13 +1,19 @@
-var result = 'Anmeldung fehlgeschlagen. Bitte versuchen sie es später erneut.';
+var result = '';
+var formInvalid = false;
 
 function ValidateForm(id) {
-  var formInvalid = false;
+  var invalid = false;
   $('#' + id + ' input').each(function() {
     if ($(this).val() === '') {
-      formInvalid = true;
+      invalid = true;
     }
   });
-  return formInvalid;
+  $('#' + id + ' textarea').each(function() {
+    if ($(this).val() === '') {
+      invalid = true;
+    }
+  });
+  return invalid;
 }
 
 $(document).ready(function(){
@@ -26,7 +32,8 @@ $(document).ready(function(){
     //console.log(request);
 
     var formInvalid = ValidateForm(id);
-    if (formInvalid == false) {
+    if (formInvalid === false) {
+      result = 'data sent';
       jQuery.ajax ({
         url: $(this).attr('action'),
         type: "POST",
@@ -48,7 +55,6 @@ $(document).ready(function(){
       $.post( "https://welchezukunft.org/nl.php", data_nl,  function( data ) {
         //$( ".result" ).html( data );
       });
-    result_label.html(result);
     } else {
       result = 'Bitte füllen Sie das Formular aus.';
     }

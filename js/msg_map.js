@@ -21,6 +21,9 @@ function msg_map(msg) {
       case "ws full":
           result = 'Waiting list';
           break;
+      case "data sent":
+          result = 'Data sent.';
+          break;
       default:
           result = 'An error occurred.';
           break;
@@ -45,9 +48,13 @@ function msg_map(msg) {
           result = 'Bitte geben Sie ein gültige Email-Adresse an.';
           break;
       case "Bitte füllen Sie das Formular aus.":
+          result = msg;
           break;
       case "ws full":
           result = 'Warteliste';
+          break;
+      case "data sent":
+          result = 'Daten gesendet.';
           break;
       default:
           result = 'Es ist ein Fehler aufgetreten.';

@@ -116,9 +116,6 @@ div.vert-center {
   display: flex;
   align-items: center;
 }
-#anmeldung_link {
-  border-top-left-radius: 25px;
-}
 .foreground a {
   text-decoration: none;
   color: black;

@@ -8,11 +8,11 @@ function ValidateForm(id) {
       invalid = true;
     }
   });
-  $('#' + id + ' textarea').each(function() {
-    if ($(this).val() === '') {
-      invalid = true;
-    }
-  });
+  //$('#' + id + ' textarea').each(function() {
+  //  if ($(this).val() === '') {
+  //    invalid = true;
+  //  }
+  //});
   return invalid;
 }
 

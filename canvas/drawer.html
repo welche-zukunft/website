@@ -6,38 +6,35 @@
     <title>2d future</title>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.8.9/ocanvas.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
+	<style>
+	.content {
+		margin-top: 0px;
+		max-width: 60ch;
+		background-color:black;
+		color:white;
+		padding:30px;
+	}
+	</style>
 	
   </head>
   <body>
-  <div>
-   <canvas id="canvas" width="900px" height="400px"></canvas>
+  <div style="display: flex; max-height: 30%">
+  <div style="width:70%;height:20%;overflow-x: auto; ">
+   <canvas id="canvas" style="float: left;width:100%;height:100%"></canvas>
+   </div>
+	<div class="content" style="float: left;width:30%;overflow-y: auto;max-height: 20%">
+	<span id="headline" ></span>
+	<br><br>
+	<span id="contents" ></span>
+	</div>  
    </div>
    <button onclick="changecolor(1);">test1</button>	
    <button onclick="changecolor(2);">test2</button>
 	<button onclick="changecolor(3);">test3</button>
 	<button onclick="changecolor(14);">unload</button>
-	<div>
-	<span id="content"><span>
-	</div>
+
 	<script>
-	var metainfos = "../contents/database.json";
-	var metacontents = [];
-	function get_metainformations(){
-		$.getJSON( metainfos, function(data){
-			metacontents = JSON.parse(JSON.stringify(data));
-	})
-	.done(function(){
-			startdraw();
-		});
-	}
-	get_metainformations();
-	
-	
-	
-	
-	
-	
+
 	var buttons = [[]];
 	var lines = [[]];
 	var buttons_bw = [[]];
@@ -45,15 +42,24 @@
 	
 	var currentselection = 14;
 	var canvaswidth = $('#canvas').width();
+	console.log(canvaswidth);
+	if(canvaswidth < 800){
+		console.log("ja");
+		canvaswidth = 800;
+		$('canvas').css('width', canvaswidth + 'px');
+	}
 	var canvasheight = $('#canvas').height();
-	console.log(canvaswidth,canvasheight);
+
 	var margin = 20;
 
-		
 	var canvas = oCanvas.create({
 		canvas: "#canvas",
-		background: "#000"	
+		background: "#000"
 	});
+	canvas.width = canvaswidth;
+	canvas.height = canvasheight;
+	
+	
 	var button_1 = canvas.display.ellipse({
 		x: 0,
 		y: 0,
@@ -76,21 +82,21 @@
 	radius: 8,
 	start: 0,
 	end: 360,
-	stroke: "2px #0aa"
+	stroke: "4px #fff"
 	});
 	
 	function startdraw(){
 		//add scale of years
-		for(j=0;j<10;j++){
+		for(j=0;j<11;j++){
 			var liner = line_1.clone({
-				start: { x: (canvaswidth/10)*j+15, y: margin },
-				end: { x: (canvaswidth/10)*j+15, y: canvasheight-margin },
+				start: { x: (canvaswidth/11)*j+15, y: margin },
+				end: { x: (canvaswidth/11)*j+15, y: canvasheight-margin },
 				stroke: "1px #ffffff"
 				});
 			canvas.addChild(liner);
 			var year = String(2018+j);
 			var text = canvas.display.text({
-				x: (canvaswidth/10)*j + margin,
+				x: (canvaswidth/11)*j + margin,
 				y: margin,
 				origin: { x: "left", y: "top" },
 				font: "bold 10px sans-serif",
@@ -137,7 +143,7 @@
 					value: j,
 					value2: i,
 					fill: color,
-					radius: 4
+					radius: 6
 					});	
 				
 				button_color.bind("click tap", function () {
@@ -146,7 +152,8 @@
 					arc.y = this.y;
 					canvas.addChild(arc);
 					canvas.redraw();
-					$('#content').html(metacontents[this.value].events[this.value2].text);
+					$('#headline').html(metacontents[this.value].events[this.value2].title);
+					$('#contents').html(metacontents[this.value].events[this.value2].text);
 				});
 				
 				button_color.bind("mouseenter", function () {
@@ -231,6 +238,7 @@
 				}
 			}
 		}
+		// reset Workshopmenu
 		else if(num>= buttons.length){
 			for(i=0;i<buttons.length;i++){
 					var name = "menubw_"+String(i);
@@ -238,24 +246,25 @@
 					name = "menu_"+String(i);
 					canvas.scenes.load(name);
 					canvas.events.enabled = false;
+					$('#headline').html("");
+					$('#contents').html("");
 					}
 		}
 	}
-        
+ 	
+	var metainfos = "../contents/database.json";
+	var metacontents = [];
+	
+	function get_metainformations(){
+		$.getJSON( metainfos, function(data){
+			metacontents = JSON.parse(JSON.stringify(data));
+	})
+	.done(function(){
+			startdraw();
+		});
+	}
+	get_metainformations();       
 		
-		function resize_canvas(){
-            canvasy = document.getElementById("canvas");
-            if (canvasy.width  < window.innerWidth)
-            {
-                canvasy.width  = window.innerWidth;
-            }
-
-            if (canvasy.height < window.innerHeight)
-            {
-                canvasy.height = window.innerHeight;
-            }
-			canvas.redraw();
-        }
 	</script>
 
 

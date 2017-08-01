@@ -62,3 +62,11 @@
 color: white;
   font-family: sans-serif;
 }
+
+#error {
+	color: white;
+	max-width: 50ch;
+    position: absolute;
+    left: 33%;
+    text-align: center;
+}

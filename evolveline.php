@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-	<title>WELCHE ZUKUNFT - PROTO</title>
+	<title>WELCHE ZUKUNFT?!</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
@@ -24,6 +24,7 @@
 	<link href="css/formular.css" rel="stylesheet">
 	<link href="css/tooltips.css" rel="stylesheet">
 	<link href="css/tutorial.css" rel="stylesheet">
+	<link href="css/2dcanvas.css" rel="stylesheet">
 </head>
 <?php require './nl.php';?>
 <body>
@@ -107,7 +108,7 @@
 		<p>„Welche Zukunft?!“ erzählt die Geschichte der kommenden zehn Jahre, von 2018 bis 2028. </p>
 		<p>Das Projekt ist unterteilt in vier Schritte:</p>
 		<h2>Labor </h2>
-		<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt der zweijährigen Veranstaltungsreihe. Hier entwickeln wird auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien gemeinsam mit Expert_Innen und dem Publikum ein Zukunftsszenario für die kommenden zehn Jahre entwickelt. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
+		<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt der zweijährigen Veranstaltungsreihe. Hier entwickeln wir auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien gemeinsam mit Expert_Innen und dem Publikum ein Zukunftsszenario für die kommenden zehn Jahre. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
 		<p><a href="#labor" onclick="setstatus(false);">>> mehr über das Labor</a></p>
 		<h2>Symposium </h2>
 		<p>Ein im März 2018 gemeinsam mit der Stiftung Humboldt Forum im Berliner Schloss veranstaltetes Symposium setzt die Arbeit des Labors vertiefend fort. Wissenschaftler_Innen aus verschiedenen Disziplinen halten Vorträge, debattieren über die Ergebnisse des Labors und entwickeln sie weiter.</p>
@@ -220,7 +221,7 @@
 			<p>Die Teilnehmer beobachten, wie die Experten und Moderatoren ihre Ergebnisse verwerten, haben dabei immer die Möglichkeit, selbst zu kommentieren, zu ergänzen, Einspruch zu erheben. </p>
 			<h3>Am Kritikertisch: Joseph Vogl</h3>
 			<p class="italic">„Die Erhöhung von Redeangeboten in akademisch nicht formatierten Bereichen ist eine Einladung zur Produktion von Quatsch“ *</p>
-			<p>Prof. Dr. Joseph Vogl von Hause aus Literatur-, Kultur- und Medienwissenschaftler an der Humboldt-Universität zu Berlin, gilt als einer der scharfsinnigsten Analytiker der vorherrschenden ökonomischen Lehre. In seinen letzten Büchern 'Das Gespenst des Kapitals' und 'Der Souveränitätseffekt' hinterfragt er den Glauben an die unsichtbare Hand des Marktes sowie die Machtstrukturen im gegenwärtigen Finanzregime. 
+			<p>Prof. Dr. Joseph Vogl, von Hause aus Literatur-, Kultur- und Medienwissenschaftler an der Humboldt-Universität zu Berlin, gilt als einer der scharfsinnigsten Analytiker der vorherrschenden ökonomischen Lehre. In seinen letzten Büchern 'Das Gespenst des Kapitals' und 'Der Souveränitätseffekt' hinterfragt er den Glauben an die unsichtbare Hand des Marktes sowie die Machtstrukturen im gegenwärtigen Finanzregime. 
 			 <br><br>
 			Zugleich ist Vogl auch ein Kritiker von „rhetorischen Schwellkörpern“. Ihm bereitet das Produzieren von Zuspitzungen, Pointen und handlichen Thesen grundsätzlich ein schlechtes Gewissen. <br><br>
 			Joseph Vogl wird den Labortag kritisch begleiten und uns eine abschließende Keynote auf den Weg geben. </p>
@@ -230,7 +231,7 @@
 			
 			<section id="moderatoren"> <div class="flex"> <div class="paper">
 			<h2>LABOR – Moderatoren im Plenum am 16. September</h2>
-			<p><b>Ulrike Herrmann</b> absolvierte nach einer abgeschlossenen Lehre als Bankkauffrau die Henri-Nannen-Schule. Anschließend studierte sie Wirtschaftsgeschichte und Philosophie an der Freien Universität Berlin. Seit 2000 ist sie Wirtschaftskorrespondentin bei der Berliner taz. Dort war sie auch Parlamentskorrespondentin und leitete die Meinungsredaktion. Sie gehört auch zum Vorstand der taz-Verlagsgenossenschaft.</p>
+			<p><b>Ulrike Herrmann</b> absolvierte nach einer abgeschlossenen Lehre als Bankkauffrau die Henri-Nannen-Schule. Anschließend studierte sie Wirtschaftsgeschichte und Philosophie an der Freien Universität Berlin. Seit 2000 ist sie Wirtschaftskorrespondentin bei der Berliner taz. Dort war sie auch Parlamentskorrespondentin und leitete die Meinungsredaktion. Sie gehört auch zum Vorstand der taz-Verlagsgenossenschaft. Zahlreiche Buchveröffentlichungen, u.a. Der Sieg des Kapitals. Wie der Reichtum in die Welt kam. Die Geschichte von Wachstum, Geld und Krisen (2013) und Kein Kapitalismus ist auch keine Lösung. Die Krise der heutigen Ökonomie oder Was wir von Smith, Marx und Keynes lernen können (2016) </p>
 			<p><b>Adrian Taylor</b> gründete das Unternehmen 4Sing Foresight to Strategy for Security and Sustainability in Governance. Er ist spezialisiert auf inhaltliche Beratung, Prozessdesign und Workshop-Moderation in den Themen Sicherheit und Nachhaltigkeit. Adrian war Junior-Offizier in der britischen Armee, Lobbyist in EU-Angelegenheiten, Szenarien-Planer in einem Gemeinschaftsprojekt mit Global Business Network, Länderreferent für Indien bei der Europäischen Kommission, beschäftigt bei der European School of Governance und dort zugleich Präsident des European Open Source Intelligence Forums. Er absolvierte ein Studium der Philosophie, Politik und Wirtschaft und hält im Fach Europäische Studien eine Lizenz Spéciale (Master). Adrian Taylor ist in London geboren und aufgewachsen und hat in Gibraltar, Brüssel, Atlanta, Zürich, New York und München gelebt. Er wohnt derzeit in Hamburg.</p>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- moderatoren -->
 		
@@ -532,6 +533,10 @@
 	<script type='text/javascript' src='js/formular.js'></script>
 	<script type='text/javascript' src='js/pin.js'></script>
 	<script type='text/javascript' src='js/daxes.js'></script>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.8.9/ocanvas.min.js"></script>
+	<script type='text/javascript' src='js/2dcanvas.js'></script>
+
 	<script type='text/javascript' src='js/evolveline.js'></script>
 	<script type='text/javascript' src='js/jquery-ui/jquery-ui.min.js'></script>
 	<script type='text/javascript' src='js/jquery.ui.touch-punch.min.js'></script>

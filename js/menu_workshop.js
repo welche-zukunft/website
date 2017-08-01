@@ -2,15 +2,27 @@
 
 function update_workshop_menu(j) {
 		//change text on scenario select
-	if (tutorialdiv == true && tutorialpart2 == false){
-		if (language == "deu"){
-			$('#tutorial').find("span").html("Klicke obere Hälfte = Vorwärts <br> Klicke untere Hälfte = Rückwärts");
+		if (tutorialdiv == true && tutorialpart2 == false){
+			if (language == "deu"){
+				if(webgl == true){
+				$('#tutorial').find("span").html("Klicke obere Hälfte = Vorwärts <br> Klicke untere Hälfte = Rückwärts");
+				}
+				else if (webgl == false){
+				$('#tutorial').find("span").html("Wähle die Kreise im Szenario");
+				}
+			}
+			else if (language == "eng"){
+				if(webgl == true){
+				$('#tutorial').find("span").html("click upper half = forward  <br> click lower half = backward");
+				}
+				else if (webgl == false){
+				$('#tutorial').find("span").html("Select Circles in the scenario");
+				}
+			}
+			tutorialpart2 = true;
 		}
-		else if (language == "eng"){
-			$('#tutorial').find("span").html("click upper half = forward  <br> click lower half = backward");
-		}
-		tutorialpart2 = true;
-	}
+	
+	
 	//console.log(j);
   var workshop = workshops[j];
   //var contents = workshop.contents;
@@ -33,7 +45,9 @@ function update_workshop_menu(j) {
   var material = metacontents[j].material;
   
   //colors
+  if(webgl==true){
   controlPlane.material.color.setHex(metacontents[j].color.replace(/#/g , "0x"));
+  }
   $("#workshopmenu").css("background", metacontents[j].color);
   $("#ws_menu_title").css("color","black");
   $("#ws_menu_subtitle").css("color","black");
@@ -114,14 +128,16 @@ function update_workshop_menu(j) {
   }
 if(namemoderator != ""){
 	menu_content.append(
-    '<div id="ws_vita" class="ws_content">'
+    '<div id="ws_hl" class="ws_content">'
 	+ '<p class="ws_hl moderation">'
 	+ "Moderation"
     + '</p>'
-	+ '<img id="ws_image" src="./images/mod/'
+	+ '</div>'
+	+ '<div id="ws_vita" class="ws_content">'
+	+'<img id="ws_image" src="./images/mod/'
 	+ picmod
-    + '.png" />'
-    + '<p>'
+	+ '.png" />'
+    +'<p>'
     + vitamoderator
     + '</p>'
 	+ '</div>'
@@ -138,7 +154,7 @@ if(namemoderator != ""){
 	+ '</div>'
 	);
 }
-	//menu_content.append('</div>');
+	
 
 }
 

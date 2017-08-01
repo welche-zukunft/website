@@ -38,6 +38,9 @@ function workshopdot_deselect(num){
 
  
   $(handle).click(function() {
+	if(webgl == false){
+		changecolor(num);
+	}
     reset_ws();
   });
 
@@ -55,13 +58,16 @@ function reset_ws() {
   var menu_content = $("#ws_menu_content");
   menu_content.html("");
   flush_boxes();
-  deselectworkshop();
+  if(webgl == true) deselectworkshop();
+  if(webgl ==  false){
+	  	$("#workshopmenu").css("background", "black");
+		$("#ws_menu_title").css("color","white");
+		$("#ws_menu_subtitle").css("color","white");
+		$("#burger_icon").css("color","white");
+		$("#workshopmenu").css("color","white");  
+  }
   closeWsMenu();
   current_workshop_id = 13;
-  //content = $('#container > .handle_container').clone();
-  //menu_content.html(
-  //  content
-  //);
 }
 
 

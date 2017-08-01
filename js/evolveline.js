@@ -4,6 +4,13 @@ var showWalls = true;
 var showFakeWalls = false;
 var showDax = true;
 var mobile = false;
+var webgl = true;
+
+/*if(webgl == true){
+	var canvas3d = document.getElementById('threejs');
+	var gl = canvas3d.getContext('webgl');
+	var maxTextures = gl.getParameter(gl.MAX_TEXTURE_IMAGE_UNITS);
+}*/
 
 if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ){
 	showWalls = false;
@@ -104,11 +111,17 @@ if (Detector.webgl) {
 	checkurl();
     get_metainformations();
 } else {
-    var warning = Detector.getWebGLErrorMessage();
-	console.log(warning);
+    //var warning = Detector.getWebGLErrorMessage();
+	//console.log(warning);
+	webgl = false;
+	nowebgl();
 }
 
-
+function startwithoutwebgl(){
+	add2dcanvas();
+	get_metainformations();
+	
+}
 
 
 
@@ -121,6 +134,7 @@ function get_metainformations(){
 		addoptions();
 
 		//start threejs
+		if(webgl == true){
 		init();
 		animate();
 		// fire once at start
@@ -128,24 +142,43 @@ function get_metainformations(){
 		// contents via get in js/contentboxes.js
 		// reset_ws via changeworkshop.js
 		reset_ws();
+		}
+		
+		else if(webgl == false){
+			initnowebgl();
+			startdraw();
+		}
+		
 		$("#spinner-container").css('display', 'none');
 		if(loadWorkshopdirect == true){
 			active = true;
 			swapworkshop(workshopToLoad);
 		}
+		
+		
 		setTimeout(function () {
-		$('#tutorial').find("span").animate({opacity:0},function(){
-		if(language=="deu"){
-				tutorialtext = "↓ Wähle ein Szenario! ↓";
-		}
-		else if(language=="eng"){
-				tutorialtext = "↓ Select a scenario! ↓";
-		}
-        $(this).text(tutorialtext)
-            .animate({opacity:1});  
-		});
-		}, 1000);
+			$('#tutorial').find("span").animate({opacity:0},function(){
+			if(language=="deu"){
+					tutorialtext = "↓ Wähle ein Szenario! ↓";
+			}
+			else if(language=="eng"){
+					tutorialtext = "↓ Select a scenario! ↓";
+			}
+			$(this).text(tutorialtext)
+				.animate({opacity:1});  
+			});
+			}, 1000);
+		
 	});
+}
+
+function initnowebgl(){
+	for ( var h = 0; h < timelineCount; h ++ ) {
+		workshopdot_create(h , metacontents[h].color);
+	}
+	workshopdot_deselect(timelineCount);
+	select_active();
+	reset_ws();
 }
 
 
@@ -347,28 +380,33 @@ function shiftControlPlane(){
 
 
 function swapworkshop(num){
-	shiftControlPlane();
-	removePins();
-	drawPin(num,metacontents[num].events.length);
-	for(var i = 0; i < timelineCount; i++){
-		if(i == num){
-			scene.getObjectByName("test"+i.toString()).material.color.setHex(metacontents[i].color.replace(/#/g , "0x"));				
-			scene.getObjectByName("test"+i.toString()).material.opacity = 1.;
-			scene.getObjectByName("test"+i.toString()).material.transparent = false;
-			par_mat[i].color.setHex(metacontents[i].color.replace(/#/g , "0x"));
-			for(var j = 0; j < particles[i].length; j++){
-				particles[i][j].scale.set( 2., 2., 2. );
-			}
-		}
-		else {
-			scene.getObjectByName("test"+i.toString()).material.color.setHex(0xd3d3d3);
-			scene.getObjectByName("test"+i.toString()).material.opacity = 0.3;
-			scene.getObjectByName("test"+i.toString()).material.transparent = true;
-			par_mat[i].color.setHex( 0xd3d3d3);
-			for(var j = 0; j < particles[i].length; j++){
-				particles[i][j].scale.set( 1., 1., 1. );
+	if(webgl == true){
+		shiftControlPlane();
+		removePins();
+		drawPin(num,metacontents[num].events.length);
+		for(var i = 0; i < timelineCount; i++){
+			if(i == num){
+				scene.getObjectByName("test"+i.toString()).material.color.setHex(metacontents[i].color.replace(/#/g , "0x"));				
+				scene.getObjectByName("test"+i.toString()).material.opacity = 1.;
+				scene.getObjectByName("test"+i.toString()).material.transparent = false;
+				par_mat[i].color.setHex(metacontents[i].color.replace(/#/g , "0x"));
+				for(var j = 0; j < particles[i].length; j++){
+					particles[i][j].scale.set( 2., 2., 2. );
 				}
-			}	
+			}
+			else {
+				scene.getObjectByName("test"+i.toString()).material.color.setHex(0xd3d3d3);
+				scene.getObjectByName("test"+i.toString()).material.opacity = 0.3;
+				scene.getObjectByName("test"+i.toString()).material.transparent = true;
+				par_mat[i].color.setHex( 0xd3d3d3);
+				for(var j = 0; j < particles[i].length; j++){
+					particles[i][j].scale.set( 1., 1., 1. );
+					}
+				}	
+		}
+	}
+	if(webgl == false){
+		changecolor(num);
 	}
 	get_workshop_contentboxes(num);
 }

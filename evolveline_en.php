@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-	<title>WELCHE ZUKUNFT - PROTO</title>
+	<title>WELCHE ZUKUNFT?!</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
@@ -24,6 +24,7 @@
 	<link href="css/formular.css" rel="stylesheet">
 	<link href="css/tooltips.css" rel="stylesheet">
 	<link href="css/tutorial.css" rel="stylesheet">
+	<link href="css/2dcanvas.css" rel="stylesheet">
 </head>
 <?php require './nl.php';?>
 <body>
@@ -101,19 +102,19 @@
 			<p class="italic">The heads of state gathered at the baltic shore will not act. They will, however, install an investigative committee. While outside in the cities barricades burn and the unemployed are looting the high streets, an international panel meets in the Villa Perle to investigate the causes for the crash of the global economy, which began 2026 and threw the world in a deep depression with no end in sight.  </p>
 			<p>Admittedly: the future might look completely different. It might be bright. The crisis will be averted. The global economy recovers. HBO commissions the 17th season of Games of Thrones. The Berlin airport opens. We do not know.  </p>
 			<p>But: if we knew - if we were absolutely certain the party would be over in 2026 - that a bank or an algorithm or a nation would crash the global economy… What would we do? Here and now - what would we do? </p>
-			<p>„Which Future?!“ is an interdisciplinary, participatory research and theatre project, dedicated to finding answers to these questions: What can we do to avert the next financial crisis, which would finally knock us off our feet for good. </p>
+			<p>„Which Future?!“ is an interdisciplinary, participatory research and theatre project, dedicated to finding answers to these questions: What can we do to avert the next financial crisis, which would finally knock us off our feet for good? </p>
 		<h2>Course of events</h2>
-		<p>„Which Future?!“ is a research and theatre project, an event-cycle running over the course of two years. Together with scientists the audience we will be invited to explore the correlation of knowledge, prediction and design. Somewhere between agora, science fiction, math-based modeling and coincidence we can pinpoint the story of the future. Do we at least need an idea of what the future brings, if we want to have some influnce? </p>
+		<p>„Which Future?!“ is a research and theatre project, an event-cycle running over the course of two years. Together with scientists, the audience we will be invited to explore the correlation of knowledge, prediction and design. Somewhere between agora, science fiction, math-based modelling and coincidence, we can pinpoint the story of the future. Do we at least need an idea of what the future brings, if we want to have some influnce? </p>
 		<p>The goal is to instigate a debate on our future, to leave the gridlock behind, find an exit from the permanent presence. Because unless we take action, we will continue our existence as history’s crashtest-dummies, continuously driving straight into the same wall at full speed. </p>
-		<p>Three <a href="#workshopthemen" onclick="setstatus(false);">workshops</a> will be conducted in english. Simultaneous translation will be offered for the bilingual plenaries.  </p>
+		<p>Three of the 13 <a href="#workshopthemen" onclick="setstatus(false);">workshops</a> will be conducted in english. Simultaneous translation will be offered for the bilingual plenaries.  </p>
 		<p>The project structure is based on four events: </p>
 		<h2>Laboratory </h2>
-		<p>The Laboratory on Sept. 16th 2017 at Deutsches Theatre Berlin is the kickoff for the two-year event cycle. Based on studies, research projects, prognosis and scenario planning with experts we will be creating a narrative for the next 10 years. The full day of collaborative writing in workshops and plenaries at the Deutsches Theater in Berlin.  </p>
+		<p>The Laboratory on Sept. 16th 2017 at Deutsches Theater Berlin is the kickoff for the two-year event cycle. Based on scientific studies, prognosis and scenario planning with experts, we will be creating a narrative for the next 10 years. A full day of collaborative writing in workshops and plenaries at the Deutsches Theater in Berlin.  </p>
 		<p><a href="#labor" onclick="setstatus(false);">>> more about the Lab</a></p>
 		<h2>Symposium </h2>
-		<p>In March 2018 the Symposium together with Stiftung Humboldt Forum im Berliner Schloss continues and substantiates the work that has begun in the laboratory. Scientists from various disciplines give lectures, talks and debate the issues surrounding the narrative of our future. </p>
+		<p>In March 2018 the Symposium together with Stiftung Humboldt Forum im Berliner Schloss continues and substantiates the work that has begun in the laboratory. Scientists from various disciplines give talks and debate the issues surrounding the narrative of our future. </p>
 		<h2>Stage play</h2>
-		<p>The results from the laboratory and the symposium will be the building blocks for a stage play, which will be performed in September 2018 at Deutsches Theater Berlin. It will be staged as an investigational hearing, where the question of accountability for the events leading up to the crisis of 2026 will be raised. How did certain decisions come about? Who could have averted the crisis? Experts, actors, lawmakers and politicians will gather for the hearing. There will be no vote on guilt, no judgement or punishment suggested. It will be an exploration into action and consequence. </p>
+		<p>The results from the laboratory and the symposium will be the building blocks for a stage play to be performed in September 2018 at Deutsches Theater Berlin. It will be staged as an investigational hearing, where the question of accountability for the events leading up to the crisis of 2026 will be raised. How did certain decisions come about? Who could have averted the crisis? Experts, actors, lawmakers and politicians will gather for the hearing. There will be no vote on guilt, no judgement or punishment suggested. It will be an exploration into action and consequence. </p>
 		<h2>Conclusion </h2>
 		<p>How to move on from here?! Which future… is it going to be?! The fourth and last event will be a conference in autumn 2019, together with the Stiftung Humboldt Forum im Berliner Schloss. We will attempt to draw conclusions from two years of collaborative exploration. We will try to develop actual concepts for a - dare we say it? - better future. What could be the political and social strongholds that would safeguard us? How could an economic system operate that serves the people, rather than forcing people under its doctrine? Where financial assets are not only utilised to create profit but also applied where they are needed? <br>
 		Similar to the laboratory and the symposium collaborative  and interdisciplinary processes are as important as the content that is being negotiated.<p>
@@ -130,10 +131,10 @@
 		</div><!-- paper --> </div><!-- flex --> </section><!-- intro -->
 		<section id="labor"> <div class="flex"> <div class="paper">
 		<h2>LABORATORY</h2>
-		<p>The laboratory on September 16th. 2017 at Deutsches Theater Berlin will be the kick off for the two-year project. We are inviting experts and citizens to collaboratively create the story of the next ten years - a plausible scenario of the future. We will negotiate facts, knowledge and models - but also our fears, hopes and wishes. </p>
-		<p>The narrative will be based on a fictitious event- a global financial meltdown in the year 2026 followed by a great depression. The possible chain of events leading up to it raise questions of responsibility, measures and counter measures. A space to speculate and ponder the future is created - we will have to decide, if this is the kind of future we want. And if not, we should change the customs settings in the lab that is our life. Sooner, rather than later. </p> 
-		<p>The laboratory will be a participatory process, where we generate and share knowledge. 250 people come together in 13 <a href="#workshops" onclick="setstatus(false);">Workshops</a> to create future scenarios and confront the crisis face on. </p>
-		<p>Three workshops will be conducted in english. Simultaneous translation will be offered for the bilingual plenaries. </p>
+		<p>The laboratory on September 16th 2017 at Deutsches Theater Berlin will be the kick off for the two-year project. We are inviting experts and citizens to collaboratively create the story of the next ten years - a plausible scenario of the future. We will negotiate facts, knowledge and models - but also our fears, hopes and wishes. </p>
+		<p>The narrative will be based on a fictitious event- a global financial meltdown in the year 2026 followed by a great depression. The possible chain of events leading up to it raises questions of responsibility, measures and counter measures. A space to speculate and ponder the future is created - we will have to decide, if this is the kind of future we want. And if not, we should change the custom settings in the lab that is our life. Sooner, rather than later. </p> 
+		<p>The laboratory will be a participatory process, where we to share knowledge. 250 people come together in 13 <a href="#workshops" onclick="setstatus(false);">Workshops</a> to create future scenarios and confront the crisis face on. </p>
+		<p>Three of the 13 workshops will be conducted in english. Simultaneous translation will be offered for the bilingual plenaries. </p>
 		<p>
 		„Which Future?!“-Laboratory <br>
 		Saturday, September 16. 2017<br>
@@ -148,9 +149,9 @@
 			<h2>WORKSHOPS</h2>
 			<p>In 13 Workshops 250 participants collaborate on  <a href="#workshopthemen" onclick="setstatus(false);">issues</a> like economy, society, climate and identity. The workshops are open to all, it helps to prepare with the texts provided after registration, no other specialised knowledge is required. Participation is free, but <a href="#anmeldung" onclick="setstatus(false);">registration</a> is mandatory - first come, first serve.</p>
 			<p>In two workshop sessions of 90 min. each, participants and experts will develop scenarios for the turn of events over the course of the next 10 years in their particular field of interest. </p>
-			<p>The scenarios presented in the <a href="#container_section" onclick="setstatus(true);reset_ws();">workshop descriptions</a> are suggestions, inspirations. Everything is possible: An election victory for Front National causes a banking crisis, the EU dissolves, the rightwing populist party will take over the government, the German Mark returns, the Chinese real estate bubble bursts, a new VR game stops people from going to work, new medication conquers cancer, the oil industry saves the climate and Daniel Libeskind builds the capitol of reunited Korea in the demilitarised zone. </p>
+			<p>The scenarios presented in the <a href="#container_section" onclick="setstatus(true);reset_ws();">workshop descriptions</a> are suggestions, inspirations. Everything is possible: An election victory for Front National causes a banking crisis, the EU dissolves, the German Mark returns, the Chinese real estate bubble bursts, a new VR game stops people from going to work, new medication conquers cancer, the oil industry saves the climate and Daniel Libeskind builds the capitol of reunited Korea in the demilitarised zone. </p>
 			<p>But if everything is possible - what do we consider most likely, most plausible and what should we prepare for? </p>
-			<p>Moderators collect the results and present them in the <a href="#plenum" onclick="setstatus(false);">plenary</a> - where they are being discussed. Every workshop has 20 participants, every voice counts.</p>
+			<p>Moderators will present the results at the <a href="#plenum" onclick="setstatus(false);">plenary</a> - where they are being discussed. Every workshop has 20 participants, every voice counts.</p>
 			<p>Three workshops will be conducted in English the others in German. </p> 
 			<a href="#container_section" onclick="setstatus(true);reset_ws();">>> Workshop overview</a><br>
 			<a href="#anmeldung" onclick="setstatus(false);">>> Register</a>
@@ -159,7 +160,7 @@
 			<section id="workshopthemen"> <div class="flex"> <div class="paper">	
 			<h2>LABORATORY – Workshops</h2>
 			<h3>Economy: Fiscal and other twilights of the Gods </h3>
-			<p class="workshop">The social and economic crises’s originate in misguided politics. The catastrophe will catch up with us eventually-come what may. </p>
+			<p class="workshop">The social and economic crises’ originate in misguided politics. The catastrophe will catch up with us eventually-come what may. </p>
 			<p class="workshop">Expert: Prof. Dr. Rudolph Hickel (Institute for labour and economy)</p>
 
 			<h3>Economy: Patient Zero: Index patient Deutsche Bank?</h3>
@@ -167,8 +168,8 @@
 			<p class="workshop">Expert: Dieter Hein (fairesearch)</p>
 			
 			<h3>Economy: Armageddon</h3>
-			<p class="workshop">One day,  the German chancellor will be a AfD-member of the (German UKIP)… The workshop explores protectionism, deflation and currency crisis’ as hypothetical triggers for the 2026 meltdown.  </p>
-			<p class="workshop">Experts: Prof Dr. Bofinger (University of Würzburg) und Dr. Dirk Ehnts (University of Chemnitz)</p>
+			<p class="workshop">One day, Germany will be ruled by an AfD chancellor (German UKIP)… The workshop explores protectionism, deflation and currency crisis’ as hypothetical triggers for the 2026 meltdown.  </p>
+			<p class="workshop">Prof. Dr. Peter Bofinger (University of Würzburg, member of the German Council of Economic Experts) and Dr. Dirk Ehnts (University of Chemnitz)</p>
 
 			<h3>Economy: The road to hell is paved with good intentions </h3>
 			<p class="workshop">What if regulation enhances the processes it was implemented to avert?</p>
@@ -188,7 +189,7 @@
 			
 			<h3>Weather: A new normal</h3>
 			<p class="workshop">What’s the role of the individual in a chaotic system?</p>
-			<p class="workshop">Experts: Jascha Lehmann, Marlene Kretschmer, Kai Kornhuber,  Sonja Molnos (Potsdam Institute for Climate Change Impact)</p>
+			<p class="workshop">Experts: Jascha Lehmann, Marlene Kretschmer, Kai Kornhuber,  Sonja Molnos (Potsdam Institute for Climate Change Impact Research)</p>
 
 			
 			<h3>Geopolitics: Intersections (in english)</h3>
@@ -202,7 +203,7 @@
 			
 			<h3>Identities: Hot Air</h3>
 			<p class="workshop">History is not repeated literally, but as farce.</p>
-			<p class="workshop">Experte: Martin Burckhardt (author and cultural theorist)</p>
+			<p class="workshop">Experte: Dr. Martin Burckhardt  (author and cultural theorist)</p>
 			
 
 			<h3>Elites & democracy: The wheel keeps turning – backwards</h3>
@@ -218,7 +219,7 @@
 			<h2>PLENARY</h2>
 			<p>Twice, all participants of the laboratory meet in a plenary. Ulrike Hermann and Adrian Taylor will moderate the panel in charge of bringing the results together on one continuous timeline. Here, we will arrange and rearrange the narrative fragments and thesis’ until one plausible, relevant story is written. History is being made… The scenarios will not always be final or definite, but overall the events need to be in plausible order.  </p>
 			<p>While experts and moderators present and debate, the audience can comment, question and veto events while they unfold.  </p>
-			<p>The plenaries will be bilingual. English simultaneous translation will be provided. </p>
+			<p>The plenaries will be bilingual. English simultaneous translation will be available. </p>
 			<h3>At the critic’s table: Prof. Dr. Joseph Vogl </h3>
 			<p class="italic">„The increase of speaking engagements in academic, non formatted areas is an invitation to the production of nonsense“ *</p>
 			<p>Joseph Vogl teaches literature, culture and media studies at Humboldt University and is considered one of the most astute analysts of current economical teaching. In his recent books „The ghost of capitalism“ and „The sovereignty effect“ he questions the widely established belief in the invisible hand of the market and the power structures in current financial regimes.  
@@ -231,8 +232,8 @@
 			
 			<section id="moderatoren"> <div class="flex"> <div class="paper">
 			<h2>Plenary moderators on September 16th</h2>
-			<p><b>Ulrike Herrmann</b><br><br>After her apprenticeship as a bank clerk,Ulrike Herrmann attended the Henri Nannen School for Journalism. She then moved on to study economic history and philosophy at the Free University of Berlin. Since 2000, she is the economic correspondent at the taz newspaper, Berlin. Here, she also reported from parliament and headed the editorials. She is a board member of the taz publishers’ cooperative.</p>
-			<p><b>Adrian Taylor</b> <br><br>Founder 4Sing Foresight to Strategy for Security and Sustainability in Governance. His role is that of providing content input, process design as well as workshop moderation especially in security and sustainability related issues.  Adrian has previously been a junior officer in the British Army, a lobbyist on EU matters, a scenario planner in a joint venture with Global Business Network and Desk Officer for India at the European Commission, before joining the European School of Governance (eusg) –  He was also President of the European Open Source Intelligence Forum. His education includes: Degree in Philosophy, Politics and Economics Trinity College Oxford, and a License Spéciale (Masters) in European Studies. Adrian was born and raised in England and lived in Gibraltar, Brussels, Atlanta, Zurich, New York, and Munich before settling in Hamburg.</p>
+			<p><b>Ulrike Herrmann</b><br><br>After her apprenticeship as a bank clerk, Ulrike Herrmann attended the Henri Nannen School of Journalism. She then moved on to study economic history and philosophy at the Free University of Berlin. Since 2000, she is the economic correspondent at the taz newspaper, Berlin. Here, she also reported from parliament and headed the editorials. She is a board member of the taz publishers’ cooperative.</p>
+			<p><b>Adrian Taylor</b> <br><br>Founder of 4Sing Foresight to Strategy for Security and Sustainability in Governance. His role is that of providing content input, process design as well as workshop moderation especially in security and sustainability related issues.  Adrian has previously been a junior officer in the British Army, a lobbyist on EU matters, a scenario planner in a joint venture with Global Business Network and Desk Officer for India at the European Commission, before joining the European School of Governance (eusg) –  He was also President of the European Open Source Intelligence Forum. His education includes: Degree in Philosophy, Politics and Economics Trinity College Oxford, and a License Spéciale (Masters) in European Studies. Adrian was born and raised in England and lived in Gibraltar, Brussels, Atlanta, Zurich, New York, and Munich before settling in Hamburg.</p>
 		</div><!-- paper --> </div><!-- flex --> </section><!-- moderatoren -->
 		
 		<section id="anmeldung"> <div class="flex"> <div class="paper">
@@ -250,7 +251,7 @@
 						Final confirmation: September 10. - 13. 2017<br>
 						Waiting list succession: September 14.-15. 2017<br>
 						<br>
-						Participation in the laboratory is free of charge. The number of participants is limited to between 10 and 25 places for the respective workshops. We therefor urgently ask you to commit to the day and/or inform us asap should you change your plans. Thank you.</p>
+						Participation in the laboratory is free of charge. The number of participants is limited to between 10 and 25 places for the respective workshops. We therefore urgently ask you to commit to the day and/or inform us asap should you change your plans. Thank you.</p>
 						<br>
 						<label >I want to register for the following workshop:</label>
 						<select id="wunsch_ws" name="workshopId" size="1">
@@ -280,7 +281,7 @@
 						<br>
 						<input name="agb" type="hidden" value="NO">
 						<input name="agb" class="agb_check" type="checkbox" value="YES">
-						<label class="agbs">I have read and agreed to the general<a href="#agb_area" onclick="showagbs(true);">terms and conditions.</a></label>
+						<label class="agbs">I have read and agreed to the general <a href="#agb_area" onclick="showagbs(true);">terms and conditions.</a></label>
 
 
 						<button type="submit">Register now</button>
@@ -348,7 +349,7 @@
 			<a href="http://humboldtforum.com/de-DE/" target="_blank"><img src="image2.png" alt="logo"></a>
 			<a href="https://www.bundesregierung.de/Webs/Breg/DE/Bundesregierung/BeauftragtefuerKulturundMedien/beauftragte-fuer-kultur-und-medien.html" target="_blank"><img src="image1.png" alt="logo"></a>
 			</div><!-- logos -->
-			<p><span class=italic>Medienpartner:</span></p>
+			<p><span class=italic>Media partner:</span></p>
 			<div class=logos>
 			<a href="http://www.deutschlandfunkkultur.de" target="_blank"><img src="image3.png" alt="logo"></a>
 			</div>	
@@ -364,7 +365,7 @@
 			<a href="https://www.deutschestheater.de">www.deutschestheater.de</a><br><br>
 
 			For questions regarding the project, website or registration please contact <a href="mailto:info@deutschestheater.de">info@welchezukunft.org</a></p>
-			<p><span class=bold>Contact press:</span><br>
+			<p><span class=bold>Contact Media relations:</span><br>
 			Katharina Wenzel <br>
 			Head of media and communication<br>
 			+49 30 28441234<br>
@@ -532,6 +533,10 @@
 	<script type='text/javascript' src='js/formular.js'></script>
 	<script type='text/javascript' src='js/pin.js'></script>
 	<script type='text/javascript' src='js/daxes.js'></script>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.8.9/ocanvas.min.js"></script>
+	<script type='text/javascript' src='js/2dcanvas.js'></script>
+	
 	<script type='text/javascript' src='js/evolveline.js'></script>
 	<script type='text/javascript' src='js/jquery-ui/jquery-ui.min.js'></script>
 	<script type='text/javascript' src='js/jquery.ui.touch-punch.min.js'></script>

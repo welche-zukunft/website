@@ -286,8 +286,10 @@ function track_pos_handle(elem) {
 function get_workshop_contentboxes(j) {
   current_workshop_id = j;
   workshop_create_all_contents_3d(j);
-	initCamera();
-	startpoint.visible = false;
+ if(webgl==true){
+  initCamera();
+  startpoint.visible = false;
+ }
 }
 
 function initCamera(){

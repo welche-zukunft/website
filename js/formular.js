@@ -17,15 +17,22 @@ function addoptions(){
 	for(var i = 0; i < metacontents.length; i++){
 		j = i + 1;
 		var status = '';
-		//$.post( "https://welchezukunft.org/wsSeats", i, function( data ) {
-			// var result = data;
-			// var result = 'ws full'; //
-			var result = ''; //
-			if ( result != '' ) {
+		request = JSON.stringify(i);
+		jQuery.ajax ({
+			url: 'https://welchezukunft.org/isfull/',
+			type: "POST",
+			data: request,
+			dataType: "json",
+			contentType: "application/json; charset=utf-8",
+			success: function(response){
+				result = response.responseText;
 				status = msg_map(result);
 				status = ' - ' + status;
+			},
+			error: function(response){
 			}
-		//}
+		});
+
 		$("#wunsch_ws").append($('<option></option>').attr("value", j).text(metacontents[i].title[0] + ' - ' + metacontents[i].title[1] + status ));
 	}
 	$('#sprache').hide();

@@ -2,14 +2,3 @@ RewriteEngine On
 
 RewriteRule ^/?impressum$ /#kontakt [R=302,NC,NE,L]
 
-# hide extension
-# Let client find file
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ /$1.php
-# When it's found, hide the extension
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} ^(.+)\.php$
-RewriteCond %{THE_REQUEST} ^[A-Z]+\ (/[^\ ]*)\.php[?\ ]
-RewriteRule (.*)\.php$ /$1 [R=302,L]
-

@@ -261,7 +261,7 @@
 							<label>Ich spreche folgende Sprache:</label>
 							<select size="1" name="sprache">
 								<option value="DEUTSCH">deutsch</option>
-								<option value="ENGLISH">english</option>
+								<option value="ENGLISCH">english</option>
 								<option value="BEIDE">beides/both</option>
 							</select>
 						</div><!-- sprache -->

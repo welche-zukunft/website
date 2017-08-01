@@ -17,7 +17,7 @@ function ws_option_check(response,ajax) {
 	var ws = ajax.indexValue;
 	var ws_option = $('#wsoption' + ws );
 	result = response.responseText;
-	if ( result == "free"||"full" ) {
+	if ( result == "free" || result == "full" ) {
 		status = msg_map(result);
 		var wstext = ws_option.text();
 		var wstext = ws_option.text() + status;

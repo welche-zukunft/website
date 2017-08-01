@@ -18,8 +18,11 @@ function msg_map(msg) {
       case "Bitte füllen Sie das Formular aus.":
           result = 'Please fill in the whole form.';
           break;
-      case "ws full":
-          result = 'Waiting list';
+      case "full":
+          result = ' - Waiting list';
+          break;
+      case "free":
+          result = '';
           break;
       case "data sent":
           result = 'Data sent.';
@@ -50,8 +53,11 @@ function msg_map(msg) {
       case "Bitte füllen Sie das Formular aus.":
           result = msg;
           break;
-      case "ws full":
-          result = 'Warteliste';
+      case "full":
+          result = ' - Warteliste';
+          break;
+      case "free":
+          result = '';
           break;
       case "data sent":
           result = 'Daten gesendet.';

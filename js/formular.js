@@ -13,27 +13,38 @@ var ws_name = ["workshop-oekonomie-1",
 "workshop-agriculturaleconomy",
 "workshop-olympisch"];
 
+function ws_option_check(response,ajax) {
+	var ws = ajax.indexValue;
+	var ws_option = $('#wsoption' + ws );
+	result = response.responseText;
+	if ( result == "free"||"full" ) {
+		status = msg_map(result);
+		var wstext = ws_option.text();
+		var wstext = ws_option.text() + status;
+		ws_option.text(wstext);
+	}
+}
+
 function addoptions(){
 	for(var i = 0; i < metacontents.length; i++){
-		j = i + 1;
-		var status = '';
-		request = JSON.stringify(i);
+		var j = i + 1;
+		var status = 'free';
+		$("#wunsch_ws").append($('<option id="wsoption' + j + '"></option>').attr("value", j).text(metacontents[i].title[0] + ' - ' + metacontents[i].title[1] ));
+		request = JSON.stringify(j);
 		jQuery.ajax ({
+			indexValue: j,
 			url: 'https://welchezukunft.org/isfull/',
 			type: "POST",
 			data: request,
 			dataType: "json",
 			contentType: "application/json; charset=utf-8",
 			success: function(response){
-				result = response.responseText;
-				status = msg_map(result);
-				status = ' - ' + status;
+				ws_option_check(response,this);
 			},
 			error: function(response){
+				ws_option_check(response,this);
 			}
 		});
-
-		$("#wunsch_ws").append($('<option></option>').attr("value", j).text(metacontents[i].title[0] + ' - ' + metacontents[i].title[1] + status ));
 	}
 	$('#sprache').hide();
 	//deselect rider 2 & 3 in anmeldung

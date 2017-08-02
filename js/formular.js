@@ -55,7 +55,7 @@ function addoptions(){
 	
 	var headlines = $( "#workshopthemen" ).find( "h3" );
 	for(i = 0; i < headlines.length; i++){
-		headlines[i].style.color = metacontents[i].color;
+		headlines[i].style.background = metacontents[i].color;
 	}
 	
 }

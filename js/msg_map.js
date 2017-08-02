@@ -4,7 +4,7 @@ function msg_map(msg) {
   if ( language == 'eng' ) {
     switch(msg) {
       case "success":
-          result = 'Application successful. Please verify the email that you will receive shortly.';
+          result = 'Application successful. Please verify the email that you will receive shortly. Please also check your spam folder.';
           break;
       case "agb not accepted":
           result = 'The conditions must be accepted.';
@@ -39,7 +39,7 @@ function msg_map(msg) {
   } else {
     switch(msg) {
       case "success":
-          result = 'Anmeldung erfolgreich. Bitte bestätigen Sie die Email, die sie in Kürze erhalten.';
+          result = 'Anmeldung erfolgreich. Bitte bestätigen Sie die Email, die sie in Kürze erhalten. Prüfen Sie dazu am besten auch Ihren Spam-Ordner.';
           break;
       case "agb not accepted":
           result = 'Sie müssen die AGB akzeptieren.';

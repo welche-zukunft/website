@@ -109,7 +109,7 @@
 		<p>„Welche Zukunft?!“ erzählt die Geschichte der kommenden zehn Jahre, von 2018 bis 2028. </p>
 		<p>Das Projekt ist unterteilt in vier Schritte:</p>
 		<h2>Labor </h2>
-		<p>Das Labor am 16. September 2017 im <i>Deutschen Theater Berlin</i> bildet den Auftakt der zweijährigen Veranstaltungsreihe. Hier entwickeln wir auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien gemeinsam mit Expert_Innen und dem Publikum ein Zukunftsszenario für die kommenden zehn Jahre. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
+		<p>Das Labor am 16. September 2017 im <i>Deutschen Theater Berlin</i> bildet den Auftakt der zweijährigen Veranstaltungsreihe. Hier wird auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien gemeinsam mit Expert_Innen und dem Publikum ein Zukunftsszenario für die kommenden zehn Jahre entwickelt. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
 		<p><a href="#labor" onclick="setstatus(false);">>> mehr über das Labor</a></p>
 		<h2>Symposium </h2>
 		<p>Ein im März 2018 gemeinsam mit der <i>Stiftung Humboldt Forum im Berliner Schloss</i> veranstaltetes Symposium setzt die Arbeit des Labors vertiefend fort. Wissenschaftler_Innen aus verschiedenen Disziplinen halten Vorträge, debattieren über die Ergebnisse des Labors und entwickeln sie weiter.</p>

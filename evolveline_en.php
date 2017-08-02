@@ -534,7 +534,7 @@
 	<script type='text/javascript' src='js/pin.js'></script>
 	<script type='text/javascript' src='js/daxes.js'></script>
 	
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.8.9/ocanvas.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.8.9/ocanvas.min.js"></script>
 	<script type='text/javascript' src='js/2dcanvas.js'></script>
 	
 	<script type='text/javascript' src='js/evolveline.js'></script>

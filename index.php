@@ -273,7 +273,7 @@
 						<label >E-Mailadresse</label>
 						<input type="text" name="mail" id="mailadresse" value="">
 						<label >E-Mailadresse bestätigen</label>
-						<input type="text" name="mailConfirm" value="">
+						<input type="text" name="mailConfirm" id="mailadresse_confirm" value="">
 						<label >Mein Zukunftsszenario</label>
 						<p>Haben Sie schon eine Vorstellung, was in den nächsten 10 Jahren passieren könnte? Erzählen Sie uns, wenn Sie mögen davon!</p>
 						<textarea name="motivation" rows="15"></textarea>

@@ -24,6 +24,13 @@ $(document).ready(function(){
   $form.submit(function(){
 
     var result_label = $('#form_result');
+
+    // force mail addresses lowercase
+    var lc_email = $('#mailadresse').val().toLowerCase();
+    $('#mailadresse').val(lc_email);
+    var lc_email_c = $('#mailadresse_confirm').val().toLowerCase();
+    $('#mailadresse_confirm').val(lc_email_c);
+
     var data = {};
     var data_nl = $(this).serialize();
     $(this).serializeArray().map(function(x){data[x.name] = x.value;});

@@ -275,7 +275,7 @@
 						<label >E-mail</label>
 						<input type="text" name="mail" id="mailadresse" value="">
 						<label >Confirm e-mail</label>
-						<input type="text" name="mailConfirm" value="">
+						<input type="text" name="mailConfirm" id="mailadresse_confirm" value="">
 						<label >Contribute a future scenario </label>
 						<p>Contribute one possible scenario or event, which that might occur within next 10 years.</p>
 						<textarea name="motivation" rows="15"></textarea>

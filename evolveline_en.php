@@ -50,7 +50,7 @@
 			<li><a href="#anmeldung" class="pseudo anmeldung" onclick="setstatus(false);">Registration</a></li>
 			<li><a href="#team" onclick="setstatus(false);">Team & Partner</a></li>
 			<li><a href="#kontakt" onclick="setstatus(false);">Contact</a></li>
-			<li><a href="evolveline.php">Deutsch</a></li>
+			<li><a href="/">Deutsch</a></li>
 		</ul>
 		</nav>
 	</div><!-- topmenu -->

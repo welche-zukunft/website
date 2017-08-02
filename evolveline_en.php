@@ -217,7 +217,7 @@
 		
 		<section id="plenum"> <div class="flex"> <div class="paper">	
 			<h2>PLENARY</h2>
-			<p>Twice, all participants of the laboratory meet in a plenary. Ulrike Hermann and Adrian Taylor will moderate the panel in charge of bringing the results together on one continuous timeline. Here, we will arrange and rearrange the narrative fragments and thesis’ until one plausible, relevant story is written. History is being made… The scenarios will not always be final or definite, but overall the events need to be in plausible order.  </p>
+			<p>Twice, all participants of the laboratory meet in a plenary. <a href="#moderatoren">Ulrike Hermann and Adrian Taylor</a> will moderate the panel in charge of bringing the results together on one continuous timeline. Here, we will arrange and rearrange the narrative fragments and thesis’ until one plausible, relevant story is written. History is being made… The scenarios will not always be final or definite, but overall the events need to be in plausible order.  </p>
 			<p>While experts and moderators present and debate, the audience can comment, question and veto events while they unfold.  </p>
 			<p>The plenaries will be bilingual. English simultaneous translation will be available. </p>
 			<h3>At the critic’s table: Prof. Dr. Joseph Vogl </h3>

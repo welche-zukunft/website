@@ -95,28 +95,28 @@
 
 	<article id="articleinfos">
 		<section id="info"> <div class="flex"> <div class="paper">		
-			<h1>Welche Zukunft?! </h1>
-			<p class="italic">Hubschrauber kreisen über dem Kurhaus von Heiligendamm, Polizeiboote patrouillieren an der Ostseeküste, Möwen frieren am Strand. Drinnen im Saal des Grandhotels haben sich die Staats- und Regierungschefs der G12 versammelt. Es ist der 9.2.2028 und dies ist das erste Treffen seit dem Crash, der 2026 die Weltwirtschaft lahmlegte. Die Gastgeberin, Kanzlerin von der Leyen, tritt vor das Mikrofon und begrüßt die Gäste. Ihre Rede ist kurz, formlos und endet mit einem eindringlichen Appell.  </p>
-			<p class="italic">„Dies ist die letzte Chance, unsere Demokratie zu retten. Die Menschen haben den Glauben an uns verloren. Wir, die internationale Staatengemeinschaft, haben versagt. Wir haben zu wenig unternommen, zu spät reagiert. Nun. Müssen. Wir. Handeln.“ </p>
-			<p class="italic">Die versammelten Staats- und Regierungschefs werden nicht handeln. Sie werden sich aber dazu durchringen, einen Untersuchungsausschuss einzusetzen. Während draußen in den Städten Barrikaden brennen und Supermärkte geplündert werden, versucht ein internationales Panel in der Villa Perle die Ursachen für den Zusammenbruch der Weltwirtschaft zu ermitteln, der vor zwei Jahren begonnen hat und dessen Ende nicht absehbar ist.  </p>
-			<p>Zugegeben: Es kann auch anders kommen. Es kann auch gut gehen. Die Krise wird abgewendet. Die Weltwirtschaft erholt sich. Die 17. Staffel von Games of Thrones wird gedreht, der Berliner Flughafen eröffnet. Wir wissen es nicht. </p>
-			<p>Aber wenn wir es wüssten – wenn wir mit Sicherheit wüssten, dass die Party im Jahr 2026 zu Ende ist, dass eine Bank oder ein Algorithmus oder ein Land die Weltwirtschaft vor die Wand fährt – was würden wir tun? Hier und jetzt, was würden wir unternehmen?  </p>
-			<p>„Welche Zukunft?!“ ist ein interdisziplinäres, partizipatives Forschungs- und Theaterprojekt, das sich zur Aufgabe gestellt hat, diese Frage zu beantworten: Was können wir tun, um zu verhindern, dass uns eine nächste Finanz- und Wirtschaftskrise endgültig den Boden unter den Füßen wegzieht? </p>
+		<h1>Welche Zukunft?! </h1>
+		<p class="italic">Hubschrauber kreisen über dem Kurhaus von Heiligendamm, Polizeiboote patrouillieren an der Ostseeküste, Möwen frieren am Strand. Drinnen im Saal des Grandhotels haben sich die Staats- und Regierungschefs der G12 versammelt. Es ist der 9.2.2028 und dies ist das erste Treffen seit dem Crash, der 2026 die Weltwirtschaft lahmlegte. Die Gastgeberin, Kanzlerin von der Leyen, tritt vor das Mikrofon und begrüßt die Gäste. Ihre Rede ist kurz, formlos und endet mit einem eindringlichen Appell.  </p>
+		<p class="italic">„Dies ist die letzte Chance, unsere Demokratie zu retten. Die Menschen haben den Glauben an uns verloren. Wir, die internationale Staatengemeinschaft, haben versagt. Wir haben zu wenig unternommen, zu spät reagiert. Nun. Müssen. Wir. Handeln.“ </p>
+		<p class="italic">Die versammelten Staats- und Regierungschefs werden nicht handeln. Sie werden sich aber dazu durchringen, einen Untersuchungsausschuss einzusetzen. Während draußen in den Städten Barrikaden brennen und Supermärkte geplündert werden, versucht ein internationales Panel in der Villa Perle die Ursachen für den Zusammenbruch der Weltwirtschaft zu ermitteln, der vor zwei Jahren begonnen hat und dessen Ende nicht absehbar ist.  </p>
+		<p>Zugegeben: Es kann auch anders kommen. Es kann auch gut gehen. Die Krise wird abgewendet. Die Weltwirtschaft erholt sich. Die 17. Staffel von Game of Thrones wird gedreht, der Berliner Flughafen eröffnet. Wir wissen es nicht. </p>
+		<p>Aber wenn wir es wüssten – wenn wir mit Sicherheit wüssten, dass die Party im Jahr 2026 zu Ende ist, dass eine Bank oder ein Algorithmus oder ein Land die Weltwirtschaft vor die Wand fährt – was würden wir tun? Hier und jetzt, was würden wir unternehmen?  </p>
+		<p>„Welche Zukunft?!“ ist ein interdisziplinäres, partizipatives Forschungs- und Theaterprojekt, das sich zur Aufgabe gestellt hat, diese Frage zu beantworten: Was können wir tun, um zu verhindern, dass uns eine nächste Finanz- und Wirtschaftskrise endgültig den Boden unter den Füßen wegzieht? </p>
 		<h2>Projektverlauf</h2>
 		<p>„Welche Zukunft?!“ ist auf zwei Jahre angelegt. Zusammen mit Wissenschaftler_Innen und Publikum erforschen wir gemeinsam den Zusammenhang von Wissen, Vorhersage und Gestaltung. Irgendwo zwischen Agora, Science-Fiction, mathematischem Modell und dem Zufall liegt die Geschichte der Zukunft. Müssen wir nicht zumindest eine Vorstellung von ihr haben, um sie zu ändern? </p>
 		<p>Ziel ist es, aus der Stagnation heraus zu treten, die permanente Gegenwart zu verlassen und eine Debatte über unsere Zukunft anzuregen. Fahren wir als Crashtest-Dummies der Geschichte immer wieder gegen dieselbe Wand?</p>
 		<p>„Welche Zukunft?!“ erzählt die Geschichte der kommenden zehn Jahre, von 2018 bis 2028. </p>
 		<p>Das Projekt ist unterteilt in vier Schritte:</p>
 		<h2>Labor </h2>
-		<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt der zweijährigen Veranstaltungsreihe. Hier entwickeln wir auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien gemeinsam mit Expert_Innen und dem Publikum ein Zukunftsszenario für die kommenden zehn Jahre. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
+		<p>Das Labor am 16. September 2017 im <i>Deutschen Theater Berlin</i> bildet den Auftakt der zweijährigen Veranstaltungsreihe. Hier entwickeln wir auf Grundlage von Studien, Forschungsprojekten, Prognosen und Szenarien gemeinsam mit Expert_Innen und dem Publikum ein Zukunftsszenario für die kommenden zehn Jahre. Einen ganzen Tag lang, in Workshops und Panels, im ganzen Haus des Deutschen Theaters. </p>
 		<p><a href="#labor" onclick="setstatus(false);">>> mehr über das Labor</a></p>
 		<h2>Symposium </h2>
-		<p>Ein im März 2018 gemeinsam mit der Stiftung Humboldt Forum im Berliner Schloss veranstaltetes Symposium setzt die Arbeit des Labors vertiefend fort. Wissenschaftler_Innen aus verschiedenen Disziplinen halten Vorträge, debattieren über die Ergebnisse des Labors und entwickeln sie weiter.</p>
+		<p>Ein im März 2018 gemeinsam mit der <i>Stiftung Humboldt Forum im Berliner Schloss</i> veranstaltetes Symposium setzt die Arbeit des Labors vertiefend fort. Wissenschaftler_Innen aus verschiedenen Disziplinen halten Vorträge, debattieren über die Ergebnisse des Labors und entwickeln sie weiter.</p>
 		<h2>Theaterstück</h2>
-		<p>Die Ergebnisse von Labor und Symposium fließen in ein gleichnamiges Theaterstück ein, das im September 2018 am Deutschen Theater Berlin uraufgeführt wird: In einem Untersuchungsausschuss wird die Frage nach der Verantwortung für die Ereignisse der Jahre 2018 bis 2028 gestellt. Warum haben wir so und nicht anders gehandelt? Wer hätte das Schlimmste verhindern können? Expert_Innen und Schauspieler_Innen, Jurist_Innen und Politiker_Innen kommen für die Befragung zusammen. Es wird nicht über Schuld abgestimmt, sondern ermittelt, welche Entscheidungen welche Konsequenzen hatten und noch haben. </p>
+		<p>Die Ergebnisse von Labor und Symposium fließen in ein gleichnamiges Theaterstück ein, das im September 2018 am <i>Deutschen Theater Berlin</i> uraufgeführt wird: In einem Untersuchungsausschuss wird die Frage nach der Verantwortung für die Ereignisse der Jahre 2018 bis 2028 gestellt. Warum haben wir so und nicht anders gehandelt? Wer hätte das Schlimmste verhindern können? Expert_Innen und Schauspieler_Innen, Jurist_Innen und Politiker_Innen kommen für die Befragung zusammen. Es wird nicht über Schuld abgestimmt, sondern ermittelt, welche Entscheidungen welche Konsequenzen hatten und noch haben. </p>
 		<h2>Abschlusskonferenz</h2>
-		<p>Wie nun weiter?! Welche Zukunft … wird es werden?! Der vierte und letzte Teil im Frühjahr 2020 versucht in einer mit der Stiftung Humboldt Forum im Berliner Schloss veranstalteten Abschlusskonferenz die zweijährige Arbeit zu bilanzieren. Welche ökonomischen, politischen und sozialen Barrieren können wir errichten, um die Katastrophe aufzuhalten? Oder besser noch: Wie können wir ein Wirtschaftssystem entwickeln, das dem Menschen dient und nicht umgekehrt? Ein System, in dem das Vermögen nicht  dahin fließt, wo es den meisten Ertrag bringt, sondern dahin, wo es gebraucht wird? Wie schon in Labor und Symposium sind Teilhabe und interdisziplinärer Austausch in dieser Konferenz ebenso wesentlich, wie die Inhalte, die verhandelt werden. <p>
-		<p class=italic>Welche Zukunft?! Ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</p>
+		<p>Wie nun weiter?! Welche Zukunft … wird es werden?! Der vierte und letzte Teil im Frühjahr 2020 versucht in einer mit der <i>Stiftung Humboldt Forum im Berliner Schloss</i> veranstalteten Abschlusskonferenz die zweijährige Arbeit zu bilanzieren. Welche ökonomischen, politischen und sozialen Barrieren können wir errichten, um die Katastrophe aufzuhalten? Oder besser noch: Wie können wir ein Wirtschaftssystem entwickeln, das dem Menschen dient und nicht umgekehrt? Ein System, in dem das Vermögen nicht  dahin fließt, wo es den meisten Ertrag bringt, sondern dahin, wo es gebraucht wird? Wie schon in Labor und Symposium sind Teilhabe und interdisziplinärer Austausch in dieser Konferenz ebenso wesentlich, wie die Inhalte, die verhandelt werden. <p>
+		<p class=italic>"Welche Zukunft?!" ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</p>
 			<div class=logos>
 			<a href="https://www.deutschestheater.de" target="_blank"><img src="image0.png" alt="logo"></a>
 			<a href="http://humboldtforum.com/de-DE/" target="_blank"><img src="image2.png" alt="logo"></a>
@@ -128,11 +128,10 @@
 			</div>	
 		</div><!-- paper --> </div><!-- flex --> </section><!-- intro -->
 		<section id="labor"> <div class="flex"> <div class="paper">
-		<h2>Labor</h2>
-		<p>Das Labor am 16. September 2017 im Deutschen Theater Berlin bildet den Auftakt der zweijährigen Veranstaltungsreihe. Wir laden Menschen ein, in diesem Experiment gemeinsam mit Expert_Innen internationaler, privater und öffentlicher Forschungsinstitute eine Geschichte der nächsten zehn Jahre zu schreiben, die möglichst plausibel erscheint. Hier verhandeln wir Fakten, Wissen und Modelle, aber auch unsere Ängste, Hoffnungen und Wünsche.  </p>
+		<h2>LABOR</h2>
+		<p>Das Labor am 16. September 2017 im <i>Deutschen Theater Berlin</i> bildet den Auftakt der zweijährigen Veranstaltungsreihe. Wir laden Menschen ein, in diesem Experiment gemeinsam mit Expert_Innen internationaler, privater und öffentlicher Forschungsinstitute eine Geschichte der nächsten zehn Jahre zu schreiben, die möglichst plausibel erscheint. Hier verhandeln wir Fakten, Wissen und Modelle, aber auch unsere Ängste, Hoffnungen und Wünsche.  </p>
 		<p>Als Ausgangspunkt setzen wir eine fiktive Krise im Jahr 2026, die die Welt in eine Depression stürzen wird. Fragen kommen auf, nach den Verantwortlichen, nach den Prozessen, die stattfinden oder abgewendet werden müssen. So entsteht ein Denkraum, in dem wir uns entscheiden können, ob wir diese Zukunft wollen – oder eben doch eine andere. Wenn sie uns nicht gefällt, müssen wir die Parameter der Laboranordnung, die unser Leben ist, verändern. Und das müssen wir jetzt tun. </p> 
 		<p>Das Labor versteht sich als partizipativer Prozess, in dem Wissen geteilt und gemeinsam generiert wird. In 13 <a href="#workshops" onclick="setstatus(false);">Workshops</a> versammeln sich 250 Menschen, um Zukunftsszenarien zu entwerfen und der Krise ins Auge zu blicken.   </p>
-		<p>In derselben Methode wollen wir in Zukunft Geschichte machen, über Politik entscheiden und Ressourcen verteilen. </p>
 		<p>
 		Welche Zukunft?!-Labor (Workshoptag)<br>
 		Samstag, 16. September 2017<br>
@@ -168,7 +167,7 @@
 			<p class="workshop">Experte: Dieter Hein (Fairesearch, Frankfurt a.M.)</p>
 			
 			<h3>Ökonomie: Armageddon</h3>
-			<p class="workshop">Wenn die AfD den Kanzler stellt… Der Workshop untersucht Protektionismus, Deflation und Währungskriesen als Treiber für den hypothetischen Zusammenbruch der Weltwirtschaft im Jahr 2026. </p>
+			<p class="workshop">Wenn die AfD den Kanzler stellt… Der Workshop untersucht Protektionismus, Deflation und Währungskrisen als Treiber für den hypothetischen Zusammenbruch der Weltwirtschaft im Jahr 2026. </p>
 			<p class="workshop">Experten: Prof Dr. Bofinger (Uni Würzburg; Mitglied des Sachverständigenrates der Bundesregierung) und Dr. Dirk Ehnts (Uni Chemnitz)</p>
 
 			<h3>Ökonomie: Der Weg zur Hölle ist mit guten Vorsätzen gepflastert</h3>
@@ -217,7 +216,7 @@
 		
 		<section id="plenum"> <div class="flex"> <div class="paper">	
 			<h2>LABOR - Plenum</h2>
-			<p>Zwei Mal treffen sich alle Teilnehmer der Workshops zum Plenum. Moderiert von Ulrike Hermann und Adrian Taylor werden die Ergebnisse der Workshops zusammengetragen und am Szenarientisch auf einer interaktiven Timeline so lange arrangiert und umarrangiert, bis aus den Fragmenten und Thesen eine plausible Erzählung entsteht. Geschichte wird gemacht… Das Szenario wird nicht immer eindeutig festzulegen sein, aber insgesamt muss der Ablauf der Ereignisse nachvollziehbar werden. </p>
+			<p>Zwei Mal treffen sich alle Teilnehmer der Workshops zum Plenum. Moderiert von <a href="#moderatoren">Ulrike Hermann und Adrian Taylor</a> werden die Ergebnisse der Workshops zusammengetragen und am Szenarientisch auf einer interaktiven Timeline so lange arrangiert und umarrangiert, bis aus den Fragmenten und Thesen eine plausible Erzählung entsteht. Geschichte wird gemacht… Das Szenario wird nicht immer eindeutig festzulegen sein, aber insgesamt muss der Ablauf der Ereignisse nachvollziehbar werden. </p>
 			<p>Die Teilnehmer beobachten, wie die Experten und Moderatoren ihre Ergebnisse verwerten, haben dabei immer die Möglichkeit, selbst zu kommentieren, zu ergänzen, Einspruch zu erheben. </p>
 			<h3>Am Kritikertisch: Joseph Vogl</h3>
 			<p class="italic">„Die Erhöhung von Redeangeboten in akademisch nicht formatierten Bereichen ist eine Einladung zur Produktion von Quatsch“ *</p>
@@ -343,7 +342,7 @@
 			<h3>TEAM</h3>
 			<p>Konzeption und Durchführung: Andres Veiel, Jutta Doberstein, Ulrich Beck, Daniel Hengst, Julia Kaschlinski, Michaela Barth, Luisa Männel</p>
 			<h3>PARTNER</h3>
-			<p class=italic>Welche Zukunft?! Ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</p>
+			<p class=italic>"Welche Zukunft?!" ist eine Koproduktion des Deutschen Theaters Berlin mit der Stiftung Humboldt Forum im Berliner Schloss, gefördert von der Beauftragten der Bundesregierung für Kultur und Medien aufgrund eines Beschlusses des Deutschen Bundestages.</p>
 			<div class=logos>
 			<a href="https://www.deutschestheater.de" target="_blank"><img src="image0.png" alt="logo"></a>
 			<a href="http://humboldtforum.com/de-DE/" target="_blank"><img src="image2.png" alt="logo"></a>

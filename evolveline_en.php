@@ -264,7 +264,7 @@
 							<label>I'm speaking the following language(s):</label>
 							<select size="1" name="sprache">
 								<option value="DEUTSCH">german</option>
-								<option value="ENGLISH">english</option>
+								<option value="ENGLISCH">english</option>
 								<option value="BEIDE">both</option>
 							</select>
 						</div><!-- sprache -->
@@ -523,6 +523,7 @@
 	  }
 
 	</script>
+	<script type='text/javascript' src='js/msg_map.js'></script>
 	<script type='text/javascript' src='js/form_submit.js'></script>
 	<script type='text/javascript' src='js/Detector.js'></script>
 	<script type='text/javascript' src='js/changeworkshop.js'></script>

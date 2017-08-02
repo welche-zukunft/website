@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<style>
 		body {
 			font-family: 'Oxygen', sans-serif;

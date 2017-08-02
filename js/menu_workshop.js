@@ -8,7 +8,7 @@ function update_workshop_menu(j) {
 				$('#tutorial').find("span").html("Klicke obere Hälfte = Vorwärts <br> Klicke untere Hälfte = Rückwärts");
 				}
 				else if (webgl == false){
-				$('#tutorial').find("span").html("Wähle die Kreise im Szenario");
+				$('#tutorial').find("span").html("");
 				}
 			}
 			else if (language == "eng"){
@@ -16,7 +16,7 @@ function update_workshop_menu(j) {
 				$('#tutorial').find("span").html("click upper half = forward  <br> click lower half = backward");
 				}
 				else if (webgl == false){
-				$('#tutorial').find("span").html("Select Circles in the scenario");
+				$('#tutorial').find("span").html("");
 				}
 			}
 			tutorialpart2 = true;

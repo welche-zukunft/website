@@ -39,7 +39,7 @@ function workshopdot_deselect(num){
  
   $(handle).click(function() {
 	if(webgl == false){
-		changecolor(num);
+		//changecolor(num);
 	}
     reset_ws();
   });

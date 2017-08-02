@@ -146,7 +146,7 @@ function get_metainformations(){
 		
 		else if(webgl == false){
 			initnowebgl();
-			startdraw();
+			//startdraw();
 		}
 		
 		$("#spinner-container").css('display', 'none');
@@ -406,7 +406,7 @@ function swapworkshop(num){
 		}
 	}
 	if(webgl == false){
-		changecolor(num);
+		//changecolor(num);
 	}
 	get_workshop_contentboxes(num);
 }

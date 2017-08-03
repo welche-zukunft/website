@@ -293,7 +293,7 @@
 				<div id="anmeldeinfos" class="anmeldeinfos"><br>
 					Information on your registration :<br><br>
 					1. Fill in your online form: You can register only once. Choose the workshop you wish to attend on Sept. 16th the entire day. Unfortunately, „workshop hopping“ will not be possible. <br><br>
-					2. Access is: „first come first serve“. Should the workshop of your choosing already be booked out, you can either choose to join the waiting list or register with a different workshop. Those of you who like to take it in their stride choose: „Olympic spirit - I don’t care, which workshop I’m allocated to“. We will surprise you … <br><br>
+					2. Access is: „first come first serve“. Should the workshop of your choosing already be booked out, you can either choose to join the waiting list or register with a different workshop. <br><br>
 					3. You will receive an automatically generated mail with a confirmation request. Only then will you be registered, for either the workshop or the waiting list. However, this mail will not guarantee you a place unless you return to confirm a couple of days before the event. (see 6/7)  <br><br>
 					4. After registration, you will be allocated to the workshop you have requested or allocated by us, if you wish. You will receive a personalised confirmation or be informed on your status on the waiting list.  <br><br>
 					5. From now on you will be part of the community of your respective workshop and receive reading material and recommendations. This material is only for your personal use and must not be passed on or published. (You will also receive this material, should you be on the waiting list.)<br><br>

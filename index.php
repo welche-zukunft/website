@@ -255,7 +255,6 @@
 						<label >Ich möchte mich für folgenden Workshop anmelden:</label>
 						<select id="wunsch_ws" name="workshopId" size="1">
 							<option disabled selected value> Bitte wählen </option>
-							<option value='14'>olympisch – Hauptsache dabei!</option>
 						</select>
 						<input type="hidden" name="list" id="list" value="">
 						<div id="sprache">

@@ -257,7 +257,6 @@
 						<label >I want to register for the following workshop:</label>
 						<select id="wunsch_ws" name="workshopId" size="1">
 							<option disabled selected value> Please select </option>
-							<option value='14'>Olympic spirit - I don’t care, which workshop I’m allocated to</option>
 						</select>
 						<input type="hidden" name="list" id="list" value="">
 						<div id="sprache">

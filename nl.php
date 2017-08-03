@@ -2,7 +2,7 @@
   setlocale(LC_CTYPE, 'en_US.UTF-8');
 
   // config
-  $domain = 'welchezukunft.org';
+  $domain = 'mail.welchezukunft.org';
   $log_dir = '/var/newsletter';
   $err_sub_mail_missing = 'Bitte geben Sie eine Email-Adresse an.';
   $ok_sent_data_success = 'Daten erfolgreich übermittelt.' . "\r\n" .

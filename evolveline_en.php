@@ -356,7 +356,9 @@
 		</div><!-- paper --> </div><!-- flex --> </section><!-- team -->
 
 		<section id="kontakt"> <div class="flex"> <div class="paper">
-			<h2>CONTACT</h2>
+			<h2>CONTACT</h2>	
+			<a href="https://www.facebook.com/welchezukunft" target="_blank">facebook.com/welchezukunft</a><br><br>
+			<a href="https://twitter.com/welchezukunft" target="_blank">twitter.com/welchezukunft</a><br><br>
 			<p>Deutsches Theater<br>
 			Schumannstraße 13 A<br>
 			10117 Berlin<br>

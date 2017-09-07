@@ -382,7 +382,7 @@
 			<a href="mailto:service@deutschestheater.de">service@deutschestheater.de</a><br>
 			<a href="https://www.deutschestheater.de">www.deutschestheater.de</a><br><br>
 
-			Bei Fragen zum Projekt, zur Webseite oder zur Anmeldung, wenden Sie sich bitte an <a href="mailto:info@deutschestheater.de">info@welchezukunft.org</a></p>
+			Bei Fragen zum Projekt, zur Webseite oder zur Anmeldung, wenden Sie sich bitte an <a href="mailto:info@welchezukunft.org">info@welchezukunft.org</a></p>
 			<p><span class=bold>Pressekontakt:</span><br>
 			Katharina Wenzel <br>
 			Leitung Presse und Kommunikation <br>

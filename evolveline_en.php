@@ -366,7 +366,7 @@
 			<a href="mailto:service@deutschestheater.de">service@deutschestheater.de</a><br>
 			<a href="https://www.deutschestheater.de">www.deutschestheater.de</a><br><br>
 
-			For questions regarding the project, website or registration please contact <a href="mailto:info@deutschestheater.de">info@welchezukunft.org</a></p>
+			For questions regarding the project, website or registration please contact <a href="mailto:info@welchezukunft.org">info@welchezukunft.org</a></p>
 			<p><span class=bold>Contact Media relations:</span><br>
 			Katharina Wenzel <br>
 			Head of media and communication<br>
